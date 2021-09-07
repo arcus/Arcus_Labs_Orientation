@@ -41,14 +41,14 @@ These topics (and more!) are part of the more extended overview (especially "[Ne
 
 There are two kinds of labs available from Arcus, and they serve very different purposes.
 
-The first is computational labs, also called scientific labs. These are secure computational environments built for a specific team to conduct research. These are custom-built and there is a detailed approval process for use. For a more detailed explanation, see [the Arcus Computational Labs job aid](https://arcus-education-internal.s3.amazonaws.com/job-aids/arcus-lab-job-aid.pdf). Computational labs are also the focus of the rest of this guide. 
+The first is computational labs, also called scientific labs. These are secure computational environments built for a specific team to conduct research. These are custom-built and there is a detailed approval process for use. For a more detailed explanation, see [the Arcus Computational Labs job aid](https://arcus-education-internal.s3.amazonaws.com/job-aids/arcus-lab-job-aid.pdf). Computational labs are also the focus of the rest of this guide.
 
 The second type of lab is a training lab. These are just like computational labs except they are **not** intended for conducting research, and therefore have both limited resources and a very fast approval process. Training labs do provide access to real patient data, but only in **deidentified** form and **not the whole database of patients**. The goal of training labs is to create a space where researchers can do quick proof-of-concept checks before starting a full research program, and to give potential Arcus users a chance to try the system out. For a more detailed explanation, see the [Arcus training labs job aid](https://assets.arcus.chop.edu/education/job-aids/arcus-training-lab.pdf).
 
 
-## What to expect: Timeline for starting a new lab
+## What to expect: Timeline for starting a new computational lab
 
-This section covers the typical stages from initial request to deployment of a new lab. If you aren't interested in this process, or if you already have a lab ready, you may wish to skip directly to this section's [knowledge check](#knowledge-check-1).
+This section covers the typical stages from initial request to deployment of a new Arcus computational lab. If you aren't interested in this process, or if you already have a lab ready, you may wish to skip directly to this section's [knowledge check](#knowledge-check-1).
 
 ### The initial request
 
@@ -131,11 +131,13 @@ When you go to your lab's URL, you will be prompted to log in with your CHOP cre
 
 #### Project Members
 
-In the top left corner, you'll see a list of approved users for your lab. This will include everyone on your research team, your Project Owner, all of the members of the Arcus Education team (Arcus Education staff help with training and troubleshooting for all of the scientific labs), and any other Arcus staff associated with your project. If you notice someone missing from that list who should have access, or if you see someone you don't think should have access, alert your Project Owner.
+In the top left corner, you'll see a list of approved users for your lab. This will include everyone on your research team, your Project Owner, all of the members of the Arcus Education team (Arcus Education staff help with training and troubleshooting for all of the scientific labs), and any other Arcus staff associated with your project.
+
+If you notice someone missing from that list who should have access, or if you see someone you don't think should have access, alert your Project Owner.
 
 #### Lab status
 
-When your lab is running, you'll see a clock counting down until it will shut down. Labs cost a fair amount of computational power when they're running, so they are set to automatically shutdown after a period of time to save resources. If you need to keep your lab active for longer than that, you can always extend the time.
+When your lab is running, you'll see a clock counting down until it will shut down. Labs cost a fair amount of computational power when they're running, so they are set to automatically pause after a period of time to save resources. If you need to keep your lab active for longer than that, you can always extend the time.
 
 ![An Arcus lab currently running, showing clock](media/lab_clock.png)
 
@@ -158,6 +160,17 @@ This is a very important section for new Arcus users.
 Beneath the lab environment links, you will see a list of training videos available. These step through everything you need to get started in your lab. If you are new to Arcus, you will likely find most of your questions answered in these training videos.
 
 ![Arcus Education training videos](media/training_videos.png)
+
+Topics currently covered in the training videos include:
+
+- Logging in
+- Data dictionaries and intro to SQLPad
+- Obtaining data in SQLPad
+- Saving queries in SQLPad
+- Ingesting and analyzing data in Jupyter
+- Ingesting and analyzing data in RStudio
+- Working with files using a file browser
+
 
 ### Knowledge check 2
 
@@ -218,6 +231,34 @@ You are not limited to what's in the ADR! Many researchers bring in other data s
 
 When you are ready to place a request for additional data, you may do so through the [Arcus Help Center](https://pm.arcus.chop.edu/servicedesk/customer/portal/6/create/188). Keep in mind that all data requests are subject to review by the privacy team.
 
+### Knowledge check 3
+
+True or False: Each Arcus computational lab provides access to all of the data in the Arcus Data Repository (ADR)
+
+[( )] True
+[(X)] False
+***
+> Each Arcus lab is provisioned just with the data required for that project as determined in the data needs assessment. If you find you need additional data, you can always request more.
+***
+
+True or False: Arcus labs are limited to analysis of data from the ADR.
+
+[( )] True
+[(X)] False
+***
+> Although Arcus makes access to the ADR very easy, it's not your only option! Most researchers use a combination of ADR data and data from other sources.
+***
+
+True or False: The Arcus Data Repository (ADR) contains everything from Epic Clarity.
+
+[( )] True
+[(X)] False
+***
+> The ADR is a streamlined selection of information from Epic Clarity, not the entire thing. It includes the patient information most commonly requested by researchers (a sort of "greatest hits" of electronic health records), such as demographics, diagnoses, medications, encounters, etc.
+>
+> If you're used to working in Epic, this means there will be fields you're used to seeing that won't be in the ADR. If you want information that's not in the ADR, just ask and the Arcus data team should be able to add it to your lab for you.
+***
+
 ## Ongoing communication
 
 Once you have an approved lab request, your primary point of contact is your assigned **Project Owner**. This person will be an Arcus staff member, and their role is to act as a concierge connecting you with troubleshooting support and training to help make your scientific project experience a success. Whenever you have questions, reaching out to your Project Owner is a good place to start.
@@ -235,7 +276,7 @@ You can also submit general help questions there, although if you're not sure wh
 
 **Arcus Discourse** ([https://discourse.arcus.chop.edu/](https://discourse.arcus.chop.edu/)) is a question-and-answer site (it uses the same format as [StackOverflow](https://stackoverflow.com/), for those familiar with that). Users can post questions there, and Arcus staff will generally respond with answers very quickly during normal working hours. See this section for [tips on how to post a troubleshooting question to maximize the chance of getting a useful response](link). Arcus staff also use Discourse to post announcements about technical updates and fixes to labs, as well as how-to guides for frequently asked questions. You need to be behind the CHOP firewall to access Arcus Discourse.
 
-### Check your understanding
+### Knowledge check 4
 
 Which of the following best describes the role of the Project Owner?
 
@@ -282,6 +323,15 @@ Which of the following can you do when you are **outside** of CHOP's firewall? S
 
 ## Overview of tools
 
+In the Available Tools section of your lab landing page, you'll see a list of the tools in your lab. Each has a small question mark icon next to it; if you click the question mark icon, it will show more details about that tool, including links to documentation to help you get started.
+
+![Available Tools section of an Arcus Lab landing page](media/tools.png "Available Tools section of an Arcus Lab landing page, where the question mark icon next to SQLPad has been clicked to show details")
+
+Most Arcus users will use SQLPad and either RStudio or Jupyter, but other tools may not be needed. If you're not familiar with any of these tools, we recommend you start with SQLPad.
+
+[SQL](https://education.arcus.chop.edu/sql-intro/)
+[R or python?](https://education.arcus.chop.edu/statistical-programming-languages/)
+
 distinguish between platforms/engines/environments and languages
 
 ## How to set up your project: Files, directories, and version control
@@ -289,6 +339,8 @@ distinguish between platforms/engines/environments and languages
 project template
 
 file naming conventions
+
+[directories](https://education.arcus.chop.edu/file-paths/)
 
 [metadata](https://education.arcus.chop.edu/what-is-metadata/)
 
@@ -301,6 +353,8 @@ version control
 - Who writes the data dictionaries?
 
 # New to data science?
+
+Arcus Education [quickstart guide for data science](https://education.arcus.chop.edu/guides/data-sci-101/)
 
 ## Pivoting to data science
 - Typing computer commands when you’re used to point and click
