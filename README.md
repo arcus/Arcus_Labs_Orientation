@@ -1,16 +1,18 @@
 # How to use this guide
 
-If you're here because you've just started your first Arcus Lab:
-===
+**If you're here because you've just started your first Arcus Lab:**
 
 Congratulations! This goal of this guide is to get you up and running with your new lab, regardless of your research background and expertise.
 
-Everyone should start with the Quickstart section, since that will bring you up to speed fast on what to expect when you first open your lab and how to get started. If you're already comfortable with data science tools like SQL, R, python, and version control, then the Quickstart section may be enough to get you going. Most researchers will benefit from working through some or all of the other sections as well, though. New to data science? introduces helpful tools and tips for working on data science projects that will be useful to scientists coming from other types of research. Even if you have experience in data science already, you may find it worthwhile to skim the subtopics in that section so you know what's available should you want to come back to it to reference later. New to version control? will help you get started with git, a powerful program for helping you keep track of your research documents over time. If you don't currently use git or another form of version control, we strongly recommend you work through that section. Version control is an extremely valuable tool for reproducible research, and although there is a bit of a learning curve, it really pays off. New to SQL? New to R? and New to python? introduce you to the three languages most important to your work in an Arcus Lab: SQl, R, and python. You will need at least some familiarity with SQL in order to access your data, but you can pick whether to learn python or R. If you're new to SQL, R, and python, we recommend you focus on SQL first, since that's the first thing you'll need to be able to apply in your own lab.
+Everyone should start with the **Quickstart** section, since that will bring you up to speed fast on what to expect when you first open your lab and how to get started. If you're already comfortable with data science tools like SQL, R, python, and version control, then the Quickstart section may be enough to get you going. Most researchers will benefit from working through some or all of the other sections as well, though.
 
-As you learn about your lab, save a record of your studies and which resources are most valuable for your group. This can be a google doc, notebook, etc., whatever works best for you to keep track of your studies. If you like, you can start by copying this orientation document and then adding your own notes and deleting or editing parts that aren't useful to your group. **You'll find a copy of this document in your Arcus lab --- it's there for you to edit and make your own.** This is a markdown document; feel free to just write in it however you like and ignore the formatting, or if you want to learn markdown formatting, you can do so very quickly. It is a simple system that lets you add basic formatting to plain text documents, and there is a [great cheatsheet here](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf) (you only need section "3. Markdown", and can ignore the rest). No matter how you take notes, the goal is to compile a personalized list of tips and resources that you'll be able to go back to for you own reference and/or to train others in your lab.
+- **New to data science** introduces helpful tools and tips for working on data science projects that will be useful to scientists coming from other types of research. Even if you have experience in data science already, you may find it worthwhile to skim the subtopics in that section so you know what's available should you want to come back to it to reference later.
+- **New to version control** will help you get started with git, a powerful program for helping you keep track of your research documents over time. If you don't currently use git or another form of version control, we strongly recommend you work through that section. Version control is an extremely valuable tool for reproducible research, and although there is a bit of a learning curve, it really pays off.
+- **New to SQL**, **New to R** and **New to python** introduce you to the three languages most important to your work in an Arcus Lab: SQL, R, and python. You will need at least some familiarity with SQL in order to access your data, but you can pick whether to learn python or R. If you're new to SQL, R, and python, we recommend you focus on SQL first, since that's the first thing you'll need to be able to apply in your own lab.
 
-If you don't have an Arcus lab and you're just here to browse and learn:
-===
+As you learn about your lab, save a record of your studies and which resources are most valuable for your group. This can be a google doc, notebook, etc., whatever works best for you to keep track of your studies. If you like, you can start by copying this orientation document and then adding your own notes and deleting or editing parts that aren't useful to your group. **You'll find a copy of this document in your Arcus lab --- it's there for you to edit and make your own.** This is a markdown document; feel free to just write in it however you like and ignore the formatting, or if you want to learn markdown formatting, you can do so very quickly. It is a simple system that lets you add basic formatting to plain text documents, and there is a [great cheatsheet here](https://daringfireball.net/projects/markdown/basics). No matter how you take notes, the goal is to compile a personalized list of tips and resources that you'll be able to go back to for you own reference and/or to train others in your lab.
+
+**If you don't have an Arcus lab and you're just here to browse and learn:**
 
 Welcome! All of the examples here are designed for Arcus Labs, but much of this material is broadly applicable, even to folks who aren't working with Arcus. We hope you find it helpful. If you would like to learn more about what Arcus is and what we do, check out this [overview video](https://digitalrepository.chop.edu/arcus/1/) or this [Arcus-101 guide](https://education.arcus.chop.edu/guides/arcus-101/).
 
@@ -18,6 +20,12 @@ Welcome! All of the examples here are designed for Arcus Labs, but much of this 
 
 This is a quick overview of an Arcus lab. What it covers:
 
+- What to expect: Timeline for starting a new lab
+- Using your lab
+- Requesting data for your lab
+- Ongoing communication
+- Overview of tools in your lab
+- How to set up your project
 
 What the quickstart guide does NOT cover:
 
@@ -27,9 +35,11 @@ What the quickstart guide does NOT cover:
 - How to use version control on your lab files
 - Explanations of **why** you would want to do any of the above rather than using more traditional tools like Excel, SAS, or Stata
 
-These topics (and more!) are part of the more extended overview, which will be especially useful to researchers coming to Arcus without previous experience in data science.  
+These topics (and more!) are part of the more extended overview (especially "[New to data science?](new-to-data-science)"), which will be especially useful to researchers coming to Arcus without previous experience in data science.  
 
 ## What to expect: Timeline for starting a new lab
+
+This section covers the typical stages from initial request to deployment of a new lab. If you aren't interested in this process, or if you already have a lab ready, you may wish to skip directly to this section's [knowledge check](#knowledge-check-1).
 
 ### The initial request
 
@@ -43,7 +53,7 @@ The preliminary review is just to determine whether or not to engage in the full
 
 If your request is greenlighted for assessment, then you will be assigned a Project Owner among the Arcus staff who will help guide you through the project assessment. The goal of the project assessment is to clarify the needs for the project to make sure that it is something Arcus will be a good fit for.
 
-A major goal of the project assessment is to identify what, specifically, the scientific team will need from Arcus in terms of data, software, training, and support. One component of the project assessment is a **data needs assessment**, to discuss the definition of the cohort to be studied and what information on those patients will be needed (e.g. diagnoses, medications, notes, procedures, demographics, flowsheets). There will also be a **data contribution assessment** to discuss possible data contributions to the Arcus Archives at the end of the project; researchers using Arcus are expected to contribute their data when appropriate ([read more about the data contribution process here](https://assets.arcus.chop.edu/education/job-aids/arcus-data-sharing-sop.pdf)).
+A major goal of the project assessment is to identify what, specifically, the scientific team will need from Arcus in terms of data, software, training, and support. One component of the project assessment is a **data needs assessment**, to discuss the definition of the cohort to be studied and what information on those patients will be needed (e.g. diagnoses, medications, notes, procedures, demographics, flowsheets). There will also be a **data contribution assessment** to discuss possible data contributions to the [Arcus Archives](https://education.arcus.chop.edu/arcus-data-catalog/) at the end of the project; researchers using Arcus are expected to contribute their data when appropriate ([read more about the data contribution process here](https://assets.arcus.chop.edu/education/job-aids/arcus-data-sharing-sop.pdf)).
 The project assessment will also include a **privacy review** to identify and mitigate any potential privacy risks ([read more about the privacy review here](https://discourse.arcus.chop.edu/t/what-is-a-privacy-review-and-what-does-the-process-entail/190)).
 
 The project assessment can vary greatly in length, with particularly well-defined and straightforward projects being assessed in a matter of days and more complex projects or projects that are still in early stages of development taking months. For researchers working under a deadline (e.g. for a grant application), Arcus will try to accommodate your timeline; one of the first questions your Project Owner will ask you during the project assessment is if there are any time constraints we should be aware of.
@@ -64,7 +74,7 @@ When the lab is built, the Arcus data team will provision your lab with the requ
 
 You'll receive an email letting you know when your lab is available, and providing the URL for you to access your lab. Your Project Owner can meet with you and your team to introduce you to the lab environment.
 
-### Check your understanding
+### Knowledge check 1
 
 True or False: In most cases, your new Arcus lab will be made available to you immediately after your request.
 
@@ -130,7 +140,7 @@ This is a very important section for new Arcus users.
 
 Beneath the lab environment links, you will see a list of training videos available. These step through everything you need to get started in your lab. If you are new to Arcus, you will likely find most of your questions answered in these training videos.
 
-### Check your understanding
+### Knowledge check 2
 
 Which of the following best describes an Arcus lab?
 
@@ -177,7 +187,17 @@ If you're new to Arcus, what is the best place on the landing page to start?
 > The [training videos](#training-videos) walk through everything you need to get started in your lab. Most questions new users have are covered in those videos.  
 ***
 
-## Requesting data for your lab [https://education.arcus.chop.edu/arcus-clinical-cohorts/](https://education.arcus.chop.edu/arcus-clinical-cohorts/) [https://assets.arcus.chop.edu/education/job-aids/arcus-cohort-discovery.pdf](https://assets.arcus.chop.edu/education/job-aids/arcus-cohort-discovery.pdf)
+## Requesting data for your lab
+
+An initial data needs assessment takes place during the [project assessment](#review-and-assessment), which will determine the data that is provisioned to your lab to start. However, many researchers find that they need to modify their data request at some point during the life of their project. For both the initial data needs assessment and any further data requests, there are a number of useful tools in place.
+
+You can work on defining your [clinical cohort](https://education.arcus.chop.edu/arcus-clinical-cohorts/) by using the [Arcus cohort discovery tool](https://assets.arcus.chop.edu/education/job-aids/arcus-cohort-discovery.pdf). If you need help using Arcus cohort discovery, you can ask your Project Owner or submit a ticket at the [Arcus Help Center](https://pm.arcus.chop.edu/servicedesk/customer/portal/6/create/63) for assistance.
+
+To explore the tables and variables available in the [Arcus Data Repository (ADR)](https://education.arcus.chop.edu/arcus-data-repository/), you can use the [ADR Data Model Browser](adr-mdm.arcus.chop.edu). Note that the data model browser is most useful for folks who have already built some familiarity with the ADR --- if you're still finding your way around, then please reach out to Arcus staff for help deciding which tables and variables you will need.
+
+You are not limited to what's in the ADR! Many researchers bring in other data sources to analyze in Arcus. Talk to your Project Owner about any additional data needs (genomics data, [images](https://pm.arcus.chop.edu/servicedesk/customer/portal/6/group/50), data from other previous or ongoing research projects, etc.).
+
+When you are ready to place a request for additional data, you may do so through the [Arcus Help Center](https://pm.arcus.chop.edu/servicedesk/customer/portal/6/create/188). Keep in mind that all data requests are subject to review by the privacy team.
 
 ## Ongoing communication
 
@@ -193,7 +213,6 @@ The **Arcus Help Center** ([https://support.arcus.chop.edu/](https://support.arc
 - requesting lab enhancements, such as additional memory
 
 You can also submit general help questions there, although if you're not sure where to start, talking with your Project Owner first may make sense. You need to be behind CHOP's firewall to access the Arcus Help Center.
-
 
 **Arcus Discourse** ([https://discourse.arcus.chop.edu/](https://discourse.arcus.chop.edu/)) is a question-and-answer site (it uses the same format as [StackOverflow](https://stackoverflow.com/), for those familiar with that). Users can post questions there, and Arcus staff will generally respond with answers very quickly during normal working hours. See this section for [tips on how to post a troubleshooting question to maximize the chance of getting a useful response](link). Arcus staff also use Discourse to post announcements about technical updates and fixes to labs, as well as how-to guides for frequently asked questions. You need to be behind the CHOP firewall to access Arcus Discourse.
 
@@ -242,15 +261,19 @@ Which of the following can you do when you are **outside** of CHOP's firewall? S
 > The Arcus Help Center and Arucs Discourse are only available behind the firewall, so you'll need to be on CHOP's network or on the VPN to access them.
 ***
 
-## Logging in
+## Overview of tools
 
-## What’s in your lab
-
-## Overview of tools (distinguish between platforms/engines/environments and languages)
+distinguish between platforms/engines/environments and languages
 
 ## How to set up your project: Files, directories, and version control
 
-## Minimal example from setup to analysis result
+project template
+
+file naming conventions
+
+[metadata](https://education.arcus.chop.edu/what-is-metadata/)
+
+version control
 
 ## Arcus Labs under the hood: More advanced topics
 - Who builds it?
@@ -260,17 +283,20 @@ Which of the following can you do when you are **outside** of CHOP's firewall? S
 
 # New to data science?
 
-### Pivoting to data science
+## Pivoting to data science
 - Typing computer commands when you’re used to point and click
 - Programming when you’re used to spreadsheet data analysis
 - Version control and text files when you’re used to MS Office
 - Learning a lot of new things at once: How to prioritize, how to schedule
 - New rewards, and new frustrations
+
 literate statistical programming resources
 [https://education.arcus.chop.edu/modules/r-markdown/](https://education.arcus.chop.edu/modules/r-markdown/)
 [https://education.arcus.chop.edu/rmd-101/]](https://education.arcus.chop.edu/rmd-101/)
 
-### Problems in the data
+[writing readable code](https://education.arcus.chop.edu/readable-code/)
+
+## Problems in the data
 - Clinical data at CHOP: What is where? [https://education.arcus.chop.edu/clinical-data-at-chop/](https://education.arcus.chop.edu/clinical-data-at-chop/) NEEDS UPDATE [https://education.arcus.chop.edu/modules/arcus-LIS/](https://education.arcus.chop.edu/modules/arcus-LIS/)
 - Data dictionaries and variable names, translating Epic to Arcus
 - Different information across different tables
@@ -281,14 +307,14 @@ literate statistical programming resources
 - Missing values: None, NULL, NaN, etc. [https://education.arcus.chop.edu/do-patterns-in-missing-data-matter/](https://education.arcus.chop.edu/do-patterns-in-missing-data-matter/)
 - Sanity checks: What to do when you’ve got the data
 
-### Framing your questions so the computer will understand
+## Framing your questions so the computer will understand
 - Breaking ideas down into steps (pseudocode)
 - Finding where to start (what is already in the data vs. what will you need to refine/calculate/reformat)
 - Working directories: finding files [https://education.arcus.chop.edu/file-paths/](https://education.arcus.chop.edu/file-paths/)
 - Conventions for naming files, and things to avoid (spaces)
 - Translating ideas into questions, and questions into tests
 
-### Getting help and troubleshooting
+## Getting help and troubleshooting
 - How much troubleshooting is normal?
 - Imposter syndrome, stereotype threat, and other psychological challenges [https://xkcd.com/385/](https://xkcd.com/385/)
 - Troubleshooting on your own: Where to look and what to type?
@@ -299,7 +325,7 @@ literate statistical programming resources
   Pros and cons of different approaches. Writing questions vs. spoken, asking one person vs. asking a community (discourse, slack, office hours, email, user groups, web sources like SE, talking to peers, talking to PO, talking to Arcus staff, talking to Arcus ed team)
 - Inconsistencies/mysteries in the data and how to figure
 
-#### The reproducible example
+### The reproducible example
 
 When you encounter an issue with your code and want to ask for help, you'll find the concept of the **reproducible example** to be very useful.
 
@@ -371,13 +397,13 @@ Also, remember that you're asking someone else to take time to think about your 
 
 And sometimes the tinkering that goes into creating a reproducible example will actually solve your problem for you! In trying to create a minimal, reproducible version, you may figure out what the problem was all on your own.   
 
-### Checking your work: Once you have code, how do you know if it’s right?
+## Checking your work: Once you have code, how do you know if it’s right?
 - Peeking at the data
 - Summarizing the data (especially count and range)
 - Comparing the data (especially xtabs)
 - Visualizing the data / Plotting
 
-### Useful vocab in related bundles (cheatsheets?)
+## Useful vocab in related bundles (cheatsheets?)
 - strings, dates/datetimes, numeric/float/integer, factors, index/rownames
 - aggregated, wide, long, tidy
 - os, session
