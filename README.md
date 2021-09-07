@@ -37,6 +37,15 @@ What the quickstart guide does NOT cover:
 
 These topics (and more!) are part of the more extended overview (especially "[New to data science?](new-to-data-science)"), which will be especially useful to researchers coming to Arcus without previous experience in data science.  
 
+## Training lab vs. computational lab
+
+There are two kinds of labs available from Arcus, and they serve very different purposes.
+
+The first is computational labs, also called scientific labs. These are secure computational environments built for a specific team to conduct research. These are custom-built and there is a detailed approval process for use. For a more detailed explanation, see [the Arcus Computational Labs job aid](https://arcus-education-internal.s3.amazonaws.com/job-aids/arcus-lab-job-aid.pdf). Computational labs are also the focus of the rest of this guide. 
+
+The second type of lab is a training lab. These are just like computational labs except they are **not** intended for conducting research, and therefore have both limited resources and a very fast approval process. Training labs do provide access to real patient data, but only in **deidentified** form and **not the whole database of patients**. The goal of training labs is to create a space where researchers can do quick proof-of-concept checks before starting a full research program, and to give potential Arcus users a chance to try the system out. For a more detailed explanation, see the [Arcus training labs job aid](https://assets.arcus.chop.edu/education/job-aids/arcus-training-lab.pdf).
+
+
 ## What to expect: Timeline for starting a new lab
 
 This section covers the typical stages from initial request to deployment of a new lab. If you aren't interested in this process, or if you already have a lab ready, you may wish to skip directly to this section's [knowledge check](#knowledge-check-1).
@@ -118,27 +127,37 @@ Your Arcus lab is a secure computational environment that exists in your browser
 
 When you go to your lab's URL, you will be prompted to log in with your CHOP credentials. Then you will see the landing page for your lab.
 
-![An Arcus lab landing page](media/lab_landing_page.ong)
+![An Arcus lab landing page](media/lab_landing_page.png)
 
-#### Users
+#### Project Members
 
-In the top left corner, you'll see a list of approved users for your lab. This will include everyone on your research team, your Project Owner, and all of the members of the Arcus Education team (Arcus Education staff help with training and troubleshooting for all of the scientific labs). If you notice someone missing from that list who should have access, or if you see someone you don't think should have access, alert your Project Owner.
+In the top left corner, you'll see a list of approved users for your lab. This will include everyone on your research team, your Project Owner, all of the members of the Arcus Education team (Arcus Education staff help with training and troubleshooting for all of the scientific labs), and any other Arcus staff associated with your project. If you notice someone missing from that list who should have access, or if you see someone you don't think should have access, alert your Project Owner.
 
-#### Lab clock
+#### Lab status
 
-When your lab is running, you'll see a clock counting down until it will shut down. Labs cost a fair amount of computational power when they're running, so they are set to automatically shutdown after a period of time to save resources. If you need to keep your lab active for longer than that, you can always extend the time. If you finish using your lab before the clock runs out, please pause your lab using the button in the top right corner of your screen.
+When your lab is running, you'll see a clock counting down until it will shut down. Labs cost a fair amount of computational power when they're running, so they are set to automatically shutdown after a period of time to save resources. If you need to keep your lab active for longer than that, you can always extend the time.
+
+![An Arcus lab currently running, showing clock](media/lab_clock.png)
+
+If you finish using your lab before the clock runs out, please pause your lab using the button in the top right corner of your screen.
+
+![Pause lab button at the top right corner of Arcus Lab landing page](media/pause.png)
 
 #### The lab environment
 
-The top right part of the screen includes links to the tools in your lab environment itself. If you click any of those links, it will load your lab and open the tool in question. Note that it may take a moment for your lab to load.
+The top right part of the screen includes links to the tools in your lab environment itself. When you first access your lab, the tools will be greyed out with a note letting you know that your lab is paused. If you click on the tool section, it will load your lab. Note that it may take a moment for your lab to load.
 
-You won't see any data files in your lab when you log in; instead, you will be able to access the data via SQL queries and bring it into an analysis environment (e.g. using R or python). For initial exploration of your data, SQLPad is probably the best place to start. You can see examples of how to access your data via SQLPad, R Studio, and python Jupyter notebooks in the [training videos](#training-videos).
+Once your lab is running, you can open any of the tools by clicking on them.
+
+You won't see any data files in your lab when you log in; instead, you will be able to access the data via SQL queries and bring it into an analysis environment (e.g. using R or python). For initial exploration of your data, SQLPad is probably the best place to start. You can see examples of how to access your data via SQLPad, RStudio, and python Jupyter notebooks in the [training videos](#training-videos).
 
 #### Training videos
 
 This is a very important section for new Arcus users.
 
 Beneath the lab environment links, you will see a list of training videos available. These step through everything you need to get started in your lab. If you are new to Arcus, you will likely find most of your questions answered in these training videos.
+
+![Arcus Education training videos](media/training_videos.png)
 
 ### Knowledge check 2
 
@@ -205,14 +224,14 @@ Once you have an approved lab request, your primary point of contact is your ass
 
 There are also a number of other ways for you to contact Arcus for support, including submitting a ticket in the help center and posting a question on Discourse.
 
-The **Arcus Help Center** ([https://support.arcus.chop.edu/](https://support.arcus.chop.edu/)) is the system Arcus uses to organize and track requests from lab users and issues that need to be resolved. It is especially useful for defined, specific issues, such as the following:
+The **Arcus Help Center** ([https://support.arcus.chop.edu/](https://support.arcus.chop.edu/)) is the system Arcus uses to organize and track requests from lab users and issues that need to be resolved. There is a link to the Arcus Help Center on your lab's landing page, in the top left section titled "[Lab status](#lab-status)". The Help Center is especially useful for defined, specific issues, such as the following:
 
 - submitting a bug report if you think something is malfunctioning in your lab
 - requesting a new user be added to your lab
 - requesting additional data be supplied to your lab, including images
 - requesting lab enhancements, such as additional memory
 
-You can also submit general help questions there, although if you're not sure where to start, talking with your Project Owner first may make sense. You need to be behind CHOP's firewall to access the Arcus Help Center.
+You can also submit general help questions there, although if you're not sure where to start, talking with your Project Owner first may be more efficient. You need to be behind CHOP's firewall to access the Arcus Help Center.
 
 **Arcus Discourse** ([https://discourse.arcus.chop.edu/](https://discourse.arcus.chop.edu/)) is a question-and-answer site (it uses the same format as [StackOverflow](https://stackoverflow.com/), for those familiar with that). Users can post questions there, and Arcus staff will generally respond with answers very quickly during normal working hours. See this section for [tips on how to post a troubleshooting question to maximize the chance of getting a useful response](link). Arcus staff also use Discourse to post announcements about technical updates and fixes to labs, as well as how-to guides for frequently asked questions. You need to be behind the CHOP firewall to access Arcus Discourse.
 
@@ -420,7 +439,7 @@ And sometimes the tinkering that goes into creating a reproducible example will 
 [https://education.arcus.chop.edu/git-101/](https://education.arcus.chop.edu/git-101/)
 [https://education.arcus.chop.edu/git-102/](https://education.arcus.chop.edu/git-102/)
 
-For R users, check out this excellent resource: [Happy Git with R](https://happygitwithr.com/). It is a full and detailed set of instructions for how to get started using git if you're already using R and R Studio.
+For R users, check out this excellent resource: [Happy Git with R](https://happygitwithr.com/). It is a full and detailed set of instructions for how to get started using git if you're already using R and RStudio.
 
 # New to SQL?
 
