@@ -468,9 +468,17 @@ Writing reproducible examples is time consuming, but you'll find it pays off bec
 
 Also, remember that you're asking someone else to take time to think about your problem for you --- it's an act of respect to show you've done the work to make it as easy as possible for them to help you.
 
-And sometimes the tinkering that goes into creating a reproducible example will actually solve your problem for you! In trying to create a minimal, reproducible version, you may figure out what the problem was all on your own.   
+And sometimes the tinkering that goes into creating a reproducible example will actually solve your problem for you! In trying to create a minimal, reproducible version, you may figure out what the problem was all on your own.  
+
+An advantage of doing your work in the browser: Everyone is working in the same environment
+===
+
+There are many advantages to doing your work in an Arcus lab, including increased security, storage, and computing power, but another advantage is that when you ask for help, you can get support from someone who can work in the **exact same environment** you're working in and access the **exact same data**. This removes many of the barriers to being able to replicate issues.
+
+That means that something like Attempt 2 above might actually be sufficient, as long as you're asking for help from someone who has access to your computational lab. Whether you're going back and forth between your team members or working on an issue with Arcus staff, you can make your troubleshooting much more efficient by all working in the same environment with the same data. This can save your team a tremendous amount of time over the life of your project.
 
 ## Checking your work: Once you have code, how do you know if it’s right?
+
 - Peeking at the data
 - Summarizing the data (especially count and range)
 - Comparing the data (especially xtabs)
@@ -510,7 +518,9 @@ For an example of how to use SQL in your Arcus lab, start with the [training vid
 [https://education.arcus.chop.edu/functions-in-r/](https://education.arcus.chop.edu/functions-in-r/)
 [https://education.arcus.chop.edu/ordinary_linear_regression/](https://education.arcus.chop.edu/ordinary_linear_regression/)
 [https://education.arcus.chop.edu/swirl-clinical-data/](https://education.arcus.chop.edu/swirl-clinical-data/)
-[https://www.edx.org/course/data-science-r-basics](https://www.edx.org/course/data-science-r-basics)
+[https://www.edx.org/course/data-science-r-basics](https://www.edx.org/course/data-science-r-basics
+
+[Importing your data into R](https://bookdown.org/pdr_higgins/rmrwr/importing-your-data-into-r.html)
 
 # New to python?
 [https://education.arcus.chop.edu/python-lab-for-beginners/](https://education.arcus.chop.edu/python-lab-for-beginners/)
