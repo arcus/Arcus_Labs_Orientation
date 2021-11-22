@@ -10,7 +10,7 @@ Everyone should start with the **Quickstart** section, since that will bring you
 - **New to version control** will help you get started with git, a powerful program for helping you keep track of your research documents over time. If you don't currently use git or another form of version control, we strongly recommend you work through that section. Version control is an extremely valuable tool for reproducible research, and although there is a bit of a learning curve, it really pays off.
 - **New to SQL**, **New to R** and **New to python** introduce you to the three languages most important to your work in an Arcus Lab: SQL, R, and python. You will need at least some familiarity with SQL in order to access your data, but you can pick whether to learn python or R. If you're new to SQL, R, and python, we recommend you focus on SQL first, since that's the first thing you'll need to be able to apply in your own lab.
 
-As you learn about your lab, save a record of your studies and which resources are most valuable for your group. This can be a google doc, notebook, etc., whatever works best for you to keep track of your studies. If you like, you can start by copying this orientation document and then adding your own notes and deleting or editing parts that aren't useful to your group. **You'll find a copy of this document in your Arcus lab --- it's there for you to edit and make your own.** This is a markdown document; feel free to just write in it however you like and ignore the formatting, or if you want to learn markdown formatting, you can do so very quickly. It is a simple system that lets you add basic formatting to plain text documents, and there is a [great cheatsheet here](https://daringfireball.net/projects/markdown/basics). No matter how you take notes, the goal is to compile a personalized list of tips and resources that you'll be able to go back to for you own reference and/or to train others in your lab.
+As you learn about your lab, save a record of your studies and which resources are most valuable for your group. This can be a google doc, notebook, etc., whatever works best for you to keep track of your studies. If you like, you can start by copying this orientation document and then adding your own notes and deleting or editing parts that aren't useful to your group. **You'll find [a copy of this document on GitHub](https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md) --- copy paste or download it and edit to make it your own.** This is a markdown document; feel free to just write in it however you like and ignore the formatting, or if you want to learn markdown formatting, you can do so very quickly. It is a simple system that lets you add basic formatting to plain text documents, and there is a [great cheatsheet here](https://daringfireball.net/projects/markdown/basics). No matter how you take notes, the goal is to compile a personalized list of tips and resources that you'll be able to go back to for you own reference and/or to train others in your lab.
 
 **If you don't have an Arcus lab and you're just here to browse and learn:**
 
@@ -276,6 +276,17 @@ You can also submit general help questions there, although if you're not sure wh
 
 **Arcus Discourse** ([https://discourse.arcus.chop.edu/](https://discourse.arcus.chop.edu/)) is a question-and-answer site (it uses the same format as [StackOverflow](https://stackoverflow.com/), for those familiar with that). Users can post questions there, and Arcus staff will generally respond with answers very quickly during normal working hours. See this section for [tips on how to post a troubleshooting question to maximize the chance of getting a useful response](link). Arcus staff also use Discourse to post announcements about technical updates and fixes to labs, as well as how-to guides for frequently asked questions. You need to be behind the CHOP firewall to access Arcus Discourse.
 
+### Arcus Labs new user newsletter
+
+When you're first approved for an Arcus Lab, you'll start to receive an email newsletter with information to help you get started. Here's a little information about what to expect:
+
+- We have tried to introduce topics at a time in the life of your Arcus Lab when they will be most useful to you (e.g. questions about provisioning data early on, troubleshooting analysis code later), but of course different scientific teams will have different needs and move at different paces. If you want to go back to view old newsletters or see what's coming next, you can browse the archives: [link]
+- Each week should feature a range of content, targeting novices to advanced users on different topics relevant to your Arcus Lab. Depending on your own experience, comfort level, and preferences, you will find some articles more relevant to you than others. The goal is to provide access to a range of useful resources so you can pick what works for you --- please feel free to skip content that doesn't appear useful to you. Hopefully there will be at least one article in the newsletter each week that is a good fit for you and your team.
+- We recommend you keep notes about what resources have been most useful to you. This can be a handy reference for you later, and it also provides an excellent place to start when you need to onboard new team members.
+- This newsletter is written by the Arcus Data Education team. If you have feedback on the newsletter, please share it! [link] Thank you for taking the time to help us improve.
+- Your project owner also has access to this newsletter, so feel free to reach out to them with questions about content here. If they can't answer your questions, they'll try to connect you with someone who can. You can also reach out to the Education team directly by placing a request at the [Arcus Help Desk](https://support.arcus.chop.edu/servicedesk/customer/user/login?destination=portals)
+
+
 ### Knowledge check 4
 
 Which of the following best describes the role of the Project Owner?
@@ -473,13 +484,13 @@ This is now a **reproducible example**, and it will be much easier for folks to 
 
 Note that in addition to using **built-in datasets** like those that come with R, you can also make a reproducible example by **creating example data right in your example code** or by **linking to a publicly available external dataset**.
 
-#### Reproducible, minimal, and readable!
+### Reproducible, minimal, and readable!
 
 Although having your example be reproducible is key, you can write even better examples if you also work to keep them **minimal**, meaning there isn't any extra code beyond what is needed to illustrate your problem, and **readable**, meaning you've taken steps to make your example as easy as possible for someone else to read, like using simple, clear variable names.
 
 For more details on what makes a good example, see these [instructions on StackOverflow](https://stackoverflow.com/help/minimal-reproducible-example).
 
-#### But isn't that a lot of work just to ask a question?
+### But isn't that a lot of work just to ask a question?
 
 It's true: Good examples take time and thought to write. Since you can't just copy-paste your own code, you usually need to re-write the relevant bit of code from scratch, keeping just the elements important to your problem and making sure anyone helping you will be able to run it on their own machine.
 
@@ -489,7 +500,7 @@ Also, remember that you're asking someone else to take time to think about your 
 
 And sometimes the tinkering that goes into creating a reproducible example will actually solve your problem for you! In trying to create a minimal, reproducible version, you may figure out what the problem was all on your own.  
 
-#### An advantage of doing your work in the browser: Everyone is working in the same environment
+### An advantage of doing your work in the browser: Everyone is working in the same environment
 
 There are many advantages to doing your work in an Arcus lab, including increased security, storage, and computing power, but another advantage is that when you ask for help, you can get support from someone who can work in the **exact same environment** you're working in and access the **exact same data**. This removes many of the barriers to being able to replicate issues.
 
