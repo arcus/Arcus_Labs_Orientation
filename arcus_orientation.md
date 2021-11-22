@@ -382,15 +382,18 @@ An important aspect of research data management is the history of your files.
 [https://education.arcus.chop.edu/version-control-curriculum/](https://education.arcus.chop.edu/version-control-curriculum/)
 [https://education.arcus.chop.edu/git-101/](https://education.arcus.chop.edu/git-101/)
 [https://education.arcus.chop.edu/git-102/](https://education.arcus.chop.edu/git-102/)
+[GitHub's guide to getting started with git](https://docs.github.com/en/get-started/using-git/about-git)
 
 For R users, check out this excellent resource: [Happy Git with R](https://happygitwithr.com/). It is a full and detailed set of instructions for how to get started using git if you're already using R and RStudio.
 
 # New to data science?
 
-Arcus Education [quickstart guide for data science](https://education.arcus.chop.edu/guides/data-sci-101/)
+Arcus Education [quickstart guide for data science](https://education.arcus.chop.edu/guides/data-sci-101/).
 
 How open is your science? [Take the quiz.](https://plos.org/how-open-is-your-science/)
-[the p-acker app with fake data](https://shinyapps.org/apps/p-hacker/) and another [p-hacker app using real data](https://projects.fivethirtyeight.com/p-hacking/)
+
+What is p-hacking and why does it matter?
+Check out this [p-hacker app with fake data](https://shinyapps.org/apps/p-hacker/) and another [p-hacker app using real data](https://projects.fivethirtyeight.com/p-hacking/) to see a demonstration.
 
 ## Pivoting to data science
 - Typing computer commands when you’re used to point and click
@@ -399,9 +402,9 @@ How open is your science? [Take the quiz.](https://plos.org/how-open-is-your-sci
 - Learning a lot of new things at once: How to prioritize, how to schedule
 - New rewards, and new frustrations
 
-literate statistical programming resources
-[https://education.arcus.chop.edu/modules/r-markdown/](https://education.arcus.chop.edu/modules/r-markdown/)
-[https://education.arcus.chop.edu/rmd-101/]](https://education.arcus.chop.edu/rmd-101/)
+Literate statistical programming resources:
+A [video tutorial on R-Markdown](https://education.arcus.chop.edu/modules/r-markdown/) and our
+[R-Markdown 101 guide](https://education.arcus.chop.edu/rmd-101/).
 
 [writing readable code](https://education.arcus.chop.edu/readable-code/)
 
