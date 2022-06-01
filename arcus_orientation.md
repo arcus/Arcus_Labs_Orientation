@@ -65,11 +65,11 @@ The second type of lab is a training lab. These are just like computational labs
 
 This section covers the typical stages from initial request to deployment of a new Arcus computational lab. If you aren't interested in this process, or if you already have a lab ready, you may wish to skip directly to this section's [knowledge check](#knowledge-check-1).
 
-### The initial request
+<h3>The initial request</h3>
 
 Your first point of contact with Arcus may be informal conversations with one or more Arcus staff members to determine whether or not your project would be a good fit (emailing [arcus-support@chop.edu](mailto:arcus-support@chop.edu) is one great place to start), or you may go directly to [submitting a request for a new scientific project](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/307) (note that you need to be behind CHOP's firewall to submit a request).
 
-### Review and assessment
+<h3>Review and assessment</h3>
 
 When you submit a request for a lab, it goes through a preliminary review and then a more formal project assessment before your lab is created and made available to you.
 
@@ -592,33 +592,81 @@ That means that something like Attempt 2 above might actually be sufficient, as 
 - Visualizing the data / Plotting
 
 # New to version control and git?
+
+Git is installed in the command line of your lab and there is also a Git client within RStudio.
+
+Here are some resources written by Arcus staff:
+
+Training modules:
+
+* [Intro to Version Control](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/git_intro/git_intro.md)
+* [Setting Up Git in Mac and Linux](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/setting_up_git_mac_and_linux/setting_up_git_mac_and_linux.md#1)
+* [Setting Up Git in Windows](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/git_setup_windows/git_setup_windows.md#1)
+* [Creating a Git Repository](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/git_creation_and_tracking/git_creation_and_tracking.md)
+* [Exploring the History of a Git Repository](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/git_history_of_project/git_history_of_project.md)
+
+Articles:
+
 [https://education.arcus.chop.edu/version-control-curriculum/](https://education.arcus.chop.edu/version-control-curriculum/)
 [https://education.arcus.chop.edu/git-101/](https://education.arcus.chop.edu/git-101/)
 [https://education.arcus.chop.edu/git-102/](https://education.arcus.chop.edu/git-102/)
 
-For R users, check out this excellent resource: [Happy Git with R](https://happygitwithr.com/). It is a full and detailed set of instructions for how to get started using git if you're already using R and RStudio.
+For R users, check out this excellent resource: [Happy Git with R](https://happygitwithr.com/). It is a full and detailed set of instructions for how to get started using git if you're already using R and RStudio.  This will be very helpful in your scientific lab!
 
 # New to SQL?
 
-For an example of how to use SQL in your Arcus lab, start with the [training video](#training-videos) on your lab's landing page.
+For an example of how to use SQL in your Arcus lab, start with the [training videos](#training-videos) on your lab's landing page.
 
-[https://education.arcus.chop.edu/sql-intro/](https://education.arcus.chop.edu/sql-intro/)
+Here are some resources written by Arcus staff:
 
-- Order of lines of code, especially for joins
+Training modules:
+
+* [Demystifying SQL](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/demystifying_sql/demystifying_sql.md)
+* [SQL Basics](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/sql_basics/sql_basics.md)
+* [SQL Intermediate](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/sql_intermediate/sql_intermediate.md)
+
+Compendia of Resources:
+
+* Our ["SQL 101" Guide](https://education.arcus.chop.edu/guides/sql-101/) includes links to articles, webinars, and other materials on a variety of topics.
+
 
 # New to R?
-[https://education.arcus.chop.edu/modules/r-art-of-learning/](https://education.arcus.chop.edu/modules/r-art-of-learning/)
-[https://education.arcus.chop.edu/r-lab-for-beginners/](https://education.arcus.chop.edu/r-lab-for-beginners/)
-[https://education.arcus.chop.edu/modules/r-demyst/](https://education.arcus.chop.edu/modules/r-demyst/)
-[https://education.arcus.chop.edu/functions-in-r/](https://education.arcus.chop.edu/functions-in-r/)
-[https://education.arcus.chop.edu/ordinary_linear_regression/](https://education.arcus.chop.edu/ordinary_linear_regression/)
-[https://education.arcus.chop.edu/swirl-clinical-data/](https://education.arcus.chop.edu/swirl-clinical-data/)
-[https://www.edx.org/course/data-science-r-basics](https://www.edx.org/course/data-science-r-basics
 
-[Importing your data into R](https://bookdown.org/pdr_higgins/rmrwr/importing-your-data-into-r.html)
+For an example of how to use R in your Arcus lab, start with the [training videos](#training-videos) on your lab's landing page.
 
-# New to python?
-[https://education.arcus.chop.edu/python-lab-for-beginners/](https://education.arcus.chop.edu/python-lab-for-beginners/)
-[https://education.arcus.chop.edu/modules/python-demyst/](https://education.arcus.chop.edu/modules/python-demyst/)
-[https://education.arcus.chop.edu/jupyter101/](https://education.arcus.chop.edu/jupyter101/)
-[https://education.arcus.chop.edu/modules/python-seaborn/](https://education.arcus.chop.edu/modules/python-seaborn/)
+Here are some resources written by Arcus staff:
+
+Training modules:
+
+* [R Basics: Introduction](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_basics_introduction/r_basics_introduction.md)
+* [R Basics: Transform Data](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_basics_transform_data/r_basics_transform_data.md)
+* [R Basics: Visualize Data](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_basics_visualize_data/r_basics_visualize_data.md)
+* [Reshaping Data in R: Long and Wide Data](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_reshape_long_wide/r_reshape_long_wide.md)
+* [Missing Values in R](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_missing_values/r_missing_values.md)
+* [Data Visualization in ggplot2](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/data_visualization_in_ggplot2/data_visualization_ggplot2.md)
+
+Compendia of Resources:
+
+* Our ["R 101" Guide](https://education.arcus.chop.edu/guides/r-101/) includes links to articles, webinars, and other materials on a variety of topics.
+
+Other Resources:
+
+* [https://www.edx.org/course/data-science-r-basics](https://www.edx.org/course/data-science-r-basics
+* [Importing your data into R](https://bookdown.org/pdr_higgins/rmrwr/importing-your-data-into-r.html)
+
+# New to Python?
+
+For an example of how to use Python in your Arcus lab, start with the [training videos](#training-videos) on your lab's landing page.
+
+Here are some resources written by Arcus staff:
+
+Training modules:
+
+* [Demystifying Python](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/demystifying_python/demystifying_python.md)
+* [Python Basics: Writing Python Code](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/python_basics_writing_python_code/python_basics_writing_python_code.md)
+* [Transform Data with pandas](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/pandas_transform/pandas_transform.md)
+* [Data Visualization in seaborn](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/data_visualization_in_seaborn/data_visualization_in_seaborn.md)
+
+Compendia of Resources:
+
+* Our ["Python 101" Guide](https://education.arcus.chop.edu/guides/python-101/) includes links to articles, webinars, and other materials on a variety of topics.
