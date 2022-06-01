@@ -1,3 +1,8 @@
+<!--
+link:  https://chop-dbhi-arcus-education-website-assets.s3.amazonaws.com/css/styles.css
+script: https://kit.fontawesome.com/83b2343bd4.js
+-->
+
 # How to use this guide
 
 **If you're here because you've just started your first Arcus Lab:**
@@ -8,9 +13,19 @@ Everyone should start with the **Quickstart** section, since that will bring you
 
 - **New to data science** introduces helpful tools and tips for working on data science projects that will be useful to scientists coming from other types of research. Even if you have experience in data science already, you may find it worthwhile to skim the subtopics in that section so you know what's available should you want to come back to it to reference later.
 - **New to version control** will help you get started with git, a powerful program for helping you keep track of your research documents over time. If you don't currently use git or another form of version control, we strongly recommend you work through that section. Version control is an extremely valuable tool for reproducible research, and although there is a bit of a learning curve, it really pays off.
-- **New to SQL**, **New to R** and **New to python** introduce you to the three languages most important to your work in an Arcus Lab: SQL, R, and python. You will need at least some familiarity with SQL in order to access your data, but you can pick whether to learn python or R. If you're new to SQL, R, and python, we recommend you focus on SQL first, since that's the first thing you'll need to be able to apply in your own lab.
+- **New to SQL**, **New to R** and **New to Python** introduce you to the three languages most important to your work in an Arcus Lab: SQL, R, and python. You will need at least some familiarity with SQL in order to access your data, but you can pick whether to learn python or R. If you're new to SQL, R, and python, we recommend you focus on SQL first, since that's the first thing you'll need to be able to apply in your own lab.
 
-As you learn about your lab, save a record of your studies and which resources are most valuable for your group. This can be a google doc, notebook, etc., whatever works best for you to keep track of your studies. If you like, you can start by copying this orientation document and then adding your own notes and deleting or editing parts that aren't useful to your group. **You'll find [a copy of this document on GitHub](https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md) --- copy paste or download it and edit to make it your own.** This is a markdown document; feel free to just write in it however you like and ignore the formatting, or if you want to learn markdown formatting, you can do so very quickly. It is a simple system that lets you add basic formatting to plain text documents, and there is a [great cheatsheet here](https://daringfireball.net/projects/markdown/basics). No matter how you take notes, the goal is to compile a personalized list of tips and resources that you'll be able to go back to for you own reference and/or to train others in your lab.
+As you learn about your lab, save a record of your studies and which resources are most valuable for your group. This can be a google doc, notebook, etc., whatever works best for you to keep track of your studies. If you like, you can even start by copying this orientation document and then adding your own notes and deleting or editing parts that aren't useful to your group.
+
+You'll find [a copy of this document on GitHub](https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md) --- copy paste or download it and edit to make it your own.  
+
+<div class = "important">
+
+Note that nice formatting with a sidebar and pagination menu are made possible through [Liascript](https://liascript.github.io).  You can take documents written in markdown and use Liascript to render them in a way that's much easier to digest.  For example, this very document, [written in fairly simple markdown](https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md), looks much better when [viewed in Liascript](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md).  If you want to create your own training documents with instant formatting that make your markdown a bit nicer, all you need to do is publish a markdown document in a public GitHub project, with a few small optional additions to help with Liascript.
+
+</div>
+
+ This is a markdown document; feel free to just write in it however you like and ignore the formatting, or if you want to learn markdown formatting, you can do so very quickly. It is a simple system that lets you add basic formatting to plain text documents, and there is a [great cheatsheet here](https://daringfireball.net/projects/markdown/basics). No matter how you take notes, the goal is to compile a personalized list of tips and resources that you'll be able to go back to for you own reference and/or to train others in your lab.
 
 **If you don't have an Arcus lab and you're just here to browse and learn:**
 
@@ -52,7 +67,7 @@ This section covers the typical stages from initial request to deployment of a n
 
 ### The initial request
 
-Your first point of contact with Arcus may be informal conversations with one or more Arcus staff members to determine whether or not your project would be a good fit, or you may go directly to [submitting a request for a new scientific project](https://pm.arcus.chop.edu/servicedesk/customer/portal/1) (note that you need to be behind CHOP's firewall to submit a request).
+Your first point of contact with Arcus may be informal conversations with one or more Arcus staff members to determine whether or not your project would be a good fit (emailing [arcus-support@chop.edu](mailto:arcus-support@chop.edu) is one great place to start), or you may go directly to [submitting a request for a new scientific project](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/307) (note that you need to be behind CHOP's firewall to submit a request).
 
 ### Review and assessment
 
@@ -90,9 +105,15 @@ True or False: In most cases, your new Arcus lab will be made available to you i
 [( )] True
 [(X)] False
 ***
-> There is a preliminary review and then a more detailed project assessment to determine whether or not Arcus can support your project before your lab will be issued.
->
-> Note that if you're on a tight timeline, Arcus may be able to work with you to speed things up. Talk to your Project Owner.
+
+<div class = "answer">
+
+There is a preliminary review and then a more detailed project assessment to determine whether or not Arcus can support your project before your lab will be issued.
+
+Note that if you're on a tight timeline, Arcus may be able to work with you to speed things up. Talk to your Project Owner.
+
+</div>
+
 ***
 
 Which of the following are required to access **identified** patient data via Arcus? Select all that apply.
@@ -105,7 +126,13 @@ Which of the following are required to access **deidentified** data via Arcus? S
 [[X]] CITI training on human subjects research
 [[X]] read and agree to the Arcus Terms of Use
 ***
-> Everyone who will use your lab must have CITI training on file in order to access Arcus, regardless of the nature of the research.
+
+<div class = "answer">
+
+Everyone who will use your lab must have CITI training on file in order to access Arcus, regardless of the nature of the research.
+
+</div>
+
 ***
 
 Which of the following best describes Arcus data contributions?
@@ -114,9 +141,15 @@ Which of the following best describes Arcus data contributions?
 [(X)] Researchers using Arcus are required to contribute their data unless it would be inappropriate to do so
 [( )] Researchers using Arcus are required to contribute their data unless it would be inappropriate to do so, and for the data immediately available to other Arcus users without access restrictions
 ***
-> Researchers using Arcus are expected to contribute their data to the Arcus Archive, but there are a number of options in place to restrict access as appropriate, including the option to place a purpose-specific embargo or require approval according to scientific review criteria before access.
->
-> During your project assessment, you will meet with an archivist from the Arcus team to discuss potential data contributions from your project, and they will work with you to come up with an appropriate data storage and reuse plan. [See this job aid for more information about data contributions to Arcus](https://assets.arcus.chop.edu/education/job-aids/arcus-data-sharing-sop.pdf).  
+
+<div class = "answer">
+
+Researchers using Arcus are expected to contribute their data to the Arcus Archive, but there are a number of options in place to restrict access as appropriate, including the option to place a purpose-specific embargo or require approval according to scientific review criteria before access.
+
+During your project assessment, you will meet with an archivist from the Arcus team to discuss potential data contributions from your project, and they will work with you to come up with an appropriate data storage and reuse plan. [See this job aid for more information about data contributions to Arcus](https://assets.arcus.chop.edu/education/job-aids/arcus-data-sharing-sop.pdf).  
+
+</div>
+
 ***
 
 ## Using your lab
@@ -180,9 +213,15 @@ Which of the following best describes an Arcus lab?
 [( )] Your Arcus lab is a piece of software you will have to install on your machine to be able to use
 [(X)] Your Arcus lab is a secure environment for you to access and analyze your data within your web browser without downloading or installing anything
 ***
-> An Arcus lab is a secure computational environment that exists in your browser, so you don't have to install any software on your computer to be able to use it. You access and analyze your data all within this secure environment.
->
-> Note that "the systems and tools developed for Arcus are designed to further your work while protecting patient/study subject privacy and institutional security" (from the [Arcus Terms of Use](https://arcus.chop.edu/terms-of-use)). You may not download the data to analyze or store elsewhere.
+
+<div class = "answer">
+
+An Arcus lab is a secure computational environment that exists in your browser, so you don't have to install any software on your computer to be able to use it. You access and analyze your data all within this secure environment.
+
+Note that "the systems and tools developed for Arcus are designed to further your work while protecting patient/study subject privacy and institutional security" (from the [Arcus Terms of Use](https://arcus.chop.edu/terms-of-use)). You may not download the data to analyze or store elsewhere.
+
+</div>
+
 ***
 
 True or False: Each member of your team will have their own Arcus lab, but they'll all have access to the same data.
@@ -190,9 +229,14 @@ True or False: Each member of your team will have their own Arcus lab, but they'
 [( )] True
 [(X)] False
 ***
-> You will have one URL for your lab, and each member of your team will access it there.
->
-> Each team member will have personal folders within the lab that they can use to save work in progress or personal notes, but we strongly recommend that
+
+<div class = "answer">
+
+You will have one URL for your lab, and each member of your team will access it there.
+Each team member will have personal folders within the lab that they can use to save work in progress or personal notes, but we strongly recommend that
+
+</div>
+
 ***
 
 Which of the following is available on the landing page for your Arcus lab? Select all that apply.
@@ -204,7 +248,13 @@ Which of the following is available on the landing page for your Arcus lab? Sele
 [[X]] Links to open the software available to use in your lab
 [[X]] A link to the Arcus Help Center
 ***
-> Remember that you won't directly see your data in your lab (on the landing page, or in the applications). To access your data you need to use SQL queries to bring it into your analysis environment.
+
+<div class = "answer">
+
+Remember that you won't directly see your data in your lab (on the landing page, or in the applications). To access your data you need to use SQL queries to bring it into your analysis environment.
+
+</div>
+
 ***
 
 If you're new to Arcus, what is the best place on the landing page to start?
@@ -216,20 +266,26 @@ If you're new to Arcus, what is the best place on the landing page to start?
   /video/i.test(input);
 </script>
 ***
-> The [training videos](#training-videos) walk through everything you need to get started in your lab. Most questions new users have are covered in those videos.  
+
+<div class = "answer">
+
+The [training videos](#training-videos) walk through everything you need to get started in your lab. Most questions new users have are covered in those videos.  
+
+</div>
+
 ***
 
 ## Requesting data for your lab
 
 An initial data needs assessment takes place during the [project assessment](#review-and-assessment), which will determine the data that is provisioned to your lab to start. However, many researchers find that they need to modify their data request at some point during the life of their project. For both the initial data needs assessment and any further data requests, there are a number of useful tools in place.
 
-You can work on defining your [clinical cohort](https://education.arcus.chop.edu/arcus-clinical-cohorts/) by using the [Arcus cohort discovery tool](https://assets.arcus.chop.edu/education/job-aids/arcus-cohort-discovery.pdf). If you need help using Arcus cohort discovery, you can ask your Project Owner or submit a ticket at the [Arcus Help Center](https://pm.arcus.chop.edu/servicedesk/customer/portal/6/create/63) for assistance.
+You can work on defining your [clinical cohort](https://education.arcus.chop.edu/arcus-clinical-cohorts/) by using the [Arcus cohort discovery tool](https://assets.arcus.chop.edu/arcus_education_assets/job_aids/arcus_cohort_discovery.pdf). If you need help using Arcus cohort discovery, you can ask your Project Owner or submit a ticket at the [Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/302) for assistance.
 
-To explore the tables and variables available in the [Arcus Data Repository (ADR)](https://education.arcus.chop.edu/arcus-data-repository/), you can use the [ADR Data Model Browser](adr-mdm.arcus.chop.edu). Note that the data model browser is most useful for folks who have already built some familiarity with the ADR --- if you're still finding your way around, then please reach out to Arcus staff for help deciding which tables and variables you will need.
+To explore the tables and variables available in the [Arcus Data Repository (ADR)](https://education.arcus.chop.edu/arcus-data-repository/), you can use the [ADR Data Model Browser](https://adr-mdm.arcus.chop.edu/browser/). Note that the data model browser is most useful for folks who have already built some familiarity with the ADR --- if you're still finding your way around, then please reach out to Arcus staff for help deciding which tables and variables you will need.
 
-You are not limited to what's in the ADR! Many researchers bring in other data sources to analyze in Arcus. Talk to your Project Owner about any additional data needs (genomics data, [images](https://pm.arcus.chop.edu/servicedesk/customer/portal/6/group/50), data from other previous or ongoing research projects, etc.).
+You are not limited to what's in the ADR! Many researchers bring in other data sources to analyze in Arcus. Talk to your Project Owner about any additional data needs ([genomics data](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/270), [images](https://adr-mdm.arcus.chop.edu/browser/), [geospatial data](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/265), data from other previous or ongoing research projects, etc.).  Keep in mind that all data requests are subject to review by the privacy team.
 
-When you are ready to place a request for additional data, you may do so through the [Arcus Help Center](https://pm.arcus.chop.edu/servicedesk/customer/portal/6/create/188). Keep in mind that all data requests are subject to review by the privacy team.
+When you are ready to place a request for additional data, new services, or want to learn more about scientific labs or report a problem, you may do so through the [Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/portal/6/group/65).
 
 ### Knowledge check 3
 
@@ -238,7 +294,13 @@ True or False: Each Arcus computational lab provides access to all of the data i
 [( )] True
 [(X)] False
 ***
-> Each Arcus lab is provisioned just with the data required for that project as determined in the data needs assessment. If you find you need additional data, you can always request more.
+
+<div class = "answer">
+
+Each Arcus lab is provisioned just with the data required for that project as determined in the data needs assessment. If you find you need additional data, you can always request more.
+
+</div>
+
 ***
 
 True or False: Arcus labs are limited to analysis of data from the ADR.
@@ -246,7 +308,13 @@ True or False: Arcus labs are limited to analysis of data from the ADR.
 [( )] True
 [(X)] False
 ***
-> Although Arcus makes access to the ADR very easy, it's not your only option! Most researchers use a combination of ADR data and data from other sources.
+
+<div class = "answer">
+
+Although Arcus makes access to the ADR very easy, it's not your only option! Most researchers use a combination of ADR data and data from other sources.
+
+</div>
+
 ***
 
 True or False: The Arcus Data Repository (ADR) contains everything from Epic Clarity.
@@ -254,9 +322,15 @@ True or False: The Arcus Data Repository (ADR) contains everything from Epic Cla
 [( )] True
 [(X)] False
 ***
-> The ADR is a streamlined selection of information from Epic Clarity, not the entire thing. It includes the patient information most commonly requested by researchers (a sort of "greatest hits" of electronic health records), such as demographics, diagnoses, medications, encounters, etc.
->
-> If you're used to working in Epic, this means there will be fields you're used to seeing that won't be in the ADR. If you want information that's not in the ADR, just ask and the Arcus data team should be able to add it to your lab for you.
+
+<div class = "answer">
+
+The ADR is a streamlined selection of information from Epic Clarity, not the entire thing. It includes the patient information most commonly requested by researchers (a sort of "greatest hits" of electronic health records), such as demographics, diagnoses, medications, encounters, etc.
+
+If you're used to working in Epic, this means there will be fields you're used to seeing that won't be in the ADR. If you want information that's not in the ADR, just ask and the Arcus data team should be able to add it to your lab for you.
+
+</div>
+
 ***
 
 ## Ongoing communication
@@ -265,7 +339,7 @@ Once you have an approved lab request, your primary point of contact is your ass
 
 There are also a number of other ways for you to contact Arcus for support, including submitting a ticket in the help center and posting a question on Discourse.
 
-The **Arcus Help Center** ([https://support.arcus.chop.edu/](https://support.arcus.chop.edu/)) is the system Arcus uses to organize and track requests from lab users and issues that need to be resolved. There is a link to the Arcus Help Center on your lab's landing page, in the top left section titled "[Lab status](#lab-status)". The Help Center is especially useful for defined, specific issues, such as the following:
+The **Arcus Help Center** ([https://support.arcus.chop.edu/servicedesk/customer/portals](https://support.arcus.chop.edu/servicedesk/customer/portals)) is the system Arcus uses to organize and track requests from lab users and issues that need to be resolved. There is a link to the Arcus Help Center on your lab's landing page, in the top left section titled "[Lab status](#lab-status)". The Help Center is especially useful for defined, specific issues, such as the following:
 
 - submitting a bug report if you think something is malfunctioning in your lab
 - requesting a new user be added to your lab
