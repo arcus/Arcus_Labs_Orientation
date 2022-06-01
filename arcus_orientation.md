@@ -78,7 +78,7 @@ The preliminary review is just to determine whether or not to engage in the full
 If your request is greenlighted for assessment, then you will be assigned a Project Owner among the Arcus staff who will help guide you through the project assessment. The goal of the project assessment is to clarify the needs for the project to make sure that it is something Arcus will be a good fit for.
 
 A major goal of the project assessment is to identify what, specifically, the scientific team will need from Arcus in terms of data, software, training, and support. One component of the project assessment is a **data needs assessment**, to discuss the definition of the cohort to be studied and what information on those patients will be needed (e.g. diagnoses, medications, notes, procedures, demographics, flowsheets). There will also be a **data contribution assessment** to discuss possible data contributions to the [Arcus Archives](https://education.arcus.chop.edu/arcus-data-catalog/) at the end of the project; researchers using Arcus are expected to contribute their data when appropriate ([read more about the data contribution process here](https://assets.arcus.chop.edu/education/job-aids/arcus-data-sharing-sop.pdf)).
-The project assessment will also include a **privacy review** to identify and mitigate any potential privacy risks ([read more about the privacy review here](https://discourse.arcus.chop.edu/t/what-is-a-privacy-review-and-what-does-the-process-entail/190)).
+The project assessment will also include a **privacy review** to identify and mitigate any potential privacy risks ([read more about the privacy review here](https://forum.arcus.chop.edu/t/what-is-a-privacy-review-and-what-does-the-process-entail/190)).
 
 The project assessment can vary greatly in length, with particularly well-defined and straightforward projects being assessed in a matter of days and more complex projects or projects that are still in early stages of development taking months. For researchers working under a deadline (e.g. for a grant application), Arcus will try to accommodate your timeline; one of the first questions your Project Owner will ask you during the project assessment is if there are any time constraints we should be aware of.
 
@@ -233,7 +233,8 @@ True or False: Each member of your team will have their own Arcus lab, but they'
 <div class = "answer">
 
 You will have one URL for your lab, and each member of your team will access it there.
-Each team member will have personal folders within the lab that they can use to save work in progress or personal notes, but we strongly recommend that
+
+Each team member will have personal folders within the lab that they can use to save work in progress or personal notes, but we strongly recommend that you avail yourself of the `/shared` folder to collaborate and add resources like scripts that everyone can work with.
 
 </div>
 
@@ -327,7 +328,7 @@ True or False: The Arcus Data Repository (ADR) contains everything from Epic Cla
 
 The ADR is a streamlined selection of information from Epic Clarity, not the entire thing. It includes the patient information most commonly requested by researchers (a sort of "greatest hits" of electronic health records), such as demographics, diagnoses, medications, encounters, etc.
 
-If you're used to working in Epic, this means there will be fields you're used to seeing that won't be in the ADR. If you want information that's not in the ADR, just ask and the Arcus data team should be able to add it to your lab for you.
+If you're used to working in Epic, this means there will be fields you're used to seeing that won't be in the ADR. If you want information that's not in the ADR, you can make a request and the Arcus data and privacy teams can determine what's possible.
 
 </div>
 
@@ -337,7 +338,7 @@ If you're used to working in Epic, this means there will be fields you're used t
 
 Once you have an approved lab request, your primary point of contact is your assigned **Project Owner**. This person will be an Arcus staff member, and their role is to act as a concierge connecting you with troubleshooting support and training to help make your scientific project experience a success. Whenever you have questions, reaching out to your Project Owner is a good place to start.
 
-There are also a number of other ways for you to contact Arcus for support, including submitting a ticket in the help center and posting a question on Discourse.
+There are also a number of other ways for you to contact Arcus for support, including submitting a ticket in the help center and posting a question on the [Arcus Forum](https://forum.arcus.chop.edu/).
 
 The **Arcus Help Center** ([https://support.arcus.chop.edu/servicedesk/customer/portals](https://support.arcus.chop.edu/servicedesk/customer/portals)) is the system Arcus uses to organize and track requests from lab users and issues that need to be resolved. There is a link to the Arcus Help Center on your lab's landing page, in the top left section titled "[Lab status](#lab-status)". The Help Center is especially useful for defined, specific issues, such as the following:
 
@@ -348,7 +349,7 @@ The **Arcus Help Center** ([https://support.arcus.chop.edu/servicedesk/customer/
 
 You can also submit general help questions there, although if you're not sure where to start, talking with your Project Owner first may be more efficient. You need to be behind CHOP's firewall to access the Arcus Help Center.
 
-**Arcus Discourse** ([https://discourse.arcus.chop.edu/](https://discourse.arcus.chop.edu/)) is a question-and-answer site (it uses the same format as [StackOverflow](https://stackoverflow.com/), for those familiar with that). Users can post questions there, and Arcus staff will generally respond with answers very quickly during normal working hours. See this section for [tips on how to post a troubleshooting question to maximize the chance of getting a useful response](link). Arcus staff also use Discourse to post announcements about technical updates and fixes to labs, as well as how-to guides for frequently asked questions. You need to be behind the CHOP firewall to access Arcus Discourse.
+**Arcus Forum** ([https://forum.arcus.chop.edu/](https://forum.arcus.chop.edu/)) is a question-and-answer site (it uses the same format as [StackOverflow](https://stackoverflow.com/), for those familiar with that). Users can post questions there, and Arcus staff will generally respond with answers very quickly during normal working hours. See this section for [tips on how to post a troubleshooting question to maximize the chance of getting a useful response](link). Arcus staff also use the Arcus Forum to post announcements about technical updates and fixes to labs, as well as how-to guides for frequently asked questions. You need to be behind the CHOP firewall to access the Arcus Forum.
 
 ### Arcus Labs new user newsletter
 
@@ -369,9 +370,15 @@ Which of the following best describes the role of the Project Owner?
 [(X)] They act as a reference and point of connection between the project researcher(s) and Arcus staff
 [( )] They are available to assist with research project tasks like writing and checking code
 ***
-> The Project Owner acts as a concierge, connecting scientific project users with the right Arcus staff to resolve their issues, and checking to make sure the project is progressing smoothly.
->
-> Project Owners don't assist with research tasks like writing code or analyzing data, although they can help connect researchers to training and resources so they can do those things themselves.
+
+<div class = "answer">
+
+The Project Owner acts as a concierge, connecting scientific project users with the right Arcus staff to resolve their issues, and checking to make sure the project is progressing smoothly.
+
+Project Owners don't assist with research tasks like writing code or analyzing data, although they can help connect researchers to training and resources so they can do those things themselves.
+
+</div>
+
 ***
 
 True or False: The only way you should get in touch with Arcus is via your Project Owner.
@@ -379,31 +386,50 @@ True or False: The only way you should get in touch with Arcus is via your Proje
 [( )] True
 [(X)] False
 ***
-> Although your Project Owner is often the best place to start, you are welcome to get in touch with other Arcus staff in whatever way works best for you. Two useful avenues are the Arcus Help Desk and the Arcus Discourse site.
+
+<div class = "answer">
+
+Although your Project Owner is often the best place to start, you are welcome to get in touch with other Arcus staff in whatever way works best for you. Two useful avenues are the Arcus Help Desk and the Arcus Forum site.
+
+</div>
+
 ***
 
 If the data in your lab don't look right to you (e.g. you see twice as many patients as you were expecting), which of the following would be good ways to ask for help? Select all that apply.
 
 [[X]] email your Project Owner
 [[X]] submit a ticket at the Arcus Help Center
-[[X]] post a question on Discourse
+[[X]] post a question on the Arcus Forum
 ***
-> Any of these are fine ways to seek help!
->
-> If you have a clear idea of what's going wrong, the most efficient approach might be to submit a ticket in the Help Center for the Data team describing the problem.
-> If you're not sure what's going wrong, then approaching your Project Owner first may save time as they may be able to help you narrow down the issue and direct it to the right person.
-> If you post on Discourse, the people responding there won't have access to the details of your lab (as your PO or the Data team would), but they can help if you troubleshoot if you think the error may be in your SQL query, for example.
->
-> No matter what, whatever way you pick to ask for help, you can expect to be treated with compassion and respect. Whoever you get in touch with will do their best to connect you with the right solution as quickly as possible.
+
+<div class = "answer">
+
+Any of these are fine ways to seek help!
+
+If you have a clear idea of what's going wrong, the most efficient approach might be to submit a ticket in the Help Center for the Data team describing the problem.
+
+If you're not sure what's going wrong, then approaching your Project Owner first may save time as they may be able to help you narrow down the issue and direct it to the right person.
+
+If you post on the Arcus Forum, the people responding there won't necessarily have access to the details of your lab (as your PO or the Data team would), but they can help if you troubleshoot if you think the error may be in your SQL query, for example.
+
+No matter what, whatever way you pick to ask for help, you can expect to be treated with compassion and respect. Whoever you get in touch with will do their best to connect you with the right solution as quickly as possible.
+</div>
+
 ***
 
 Which of the following can you do when you are **outside** of CHOP's firewall? Select all that apply.
 
 [[X]] email your Project Owner
 [[ ]] submit a ticket at the Arcus Help Center
-[[ ]] post a question on Discourse
+[[ ]] post a question on the Arcus Forum
 ***
-> The Arcus Help Center and Arucs Discourse are only available behind the firewall, so you'll need to be on CHOP's network or on the VPN to access them.
+
+<div class = "answer">
+
+The Arcus Help Center and Arcus Forum are only available behind the firewall, so you'll need to be on CHOP's network or on the VPN to access them.
+
+</div>
+
 ***
 
 ## Overview of tools
@@ -427,7 +453,7 @@ It's designed to save researchers time, improve reproducibility, and make it eas
 
 Your lab will come with the project template already in place, so all you have to do is set up your workflows to conform to the template.
 
-To get learn more, read [this discourse post about Arcus's Project Template](https://discourse.arcus.chop.edu/t/the-arcus-project-template/255).  
+To get learn more, read [this Forum post about Arcus's Project Template](https://forum.arcus.chop.edu/t/the-arcus-project-template/255).  
 
 In addition to the project template, there are a number of other Research Data Management best practices you can implement to save yourself time.
 
@@ -507,8 +533,8 @@ A [video tutorial on R-Markdown](https://education.arcus.chop.edu/modules/r-mark
 - Getting help from someone else: Who to talk to and how to ask?
 - Arcus help desk
 - Research help desk
-- Discourse and Slack
-  Pros and cons of different approaches. Writing questions vs. spoken, asking one person vs. asking a community (discourse, slack, office hours, email, user groups, web sources like SE, talking to peers, talking to PO, talking to Arcus staff, talking to Arcus ed team)
+- Arcus Forum and Slack
+  Pros and cons of different approaches. Writing questions vs. spoken, asking one person vs. asking a community (Arcus Forum, slack, office hours, email, user groups, web sources like SE, talking to peers, talking to PO, talking to Arcus staff, talking to Arcus ed team)
 
 ### The reproducible example
 
