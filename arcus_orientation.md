@@ -1,9 +1,16 @@
 <!--
 link:  https://chop-dbhi-arcus-education-website-assets.s3.amazonaws.com/css/styles.css
 script: https://kit.fontawesome.com/83b2343bd4.js
+title: Arcus Labs Orientation
 -->
 
-## How to use this guide
+## How to Use This Guide
+
+<div class = "important">
+
+Hi!  This document is being piloted / proposed for use, and it's not perfect.  We apologize in advance for any broken links or unclear language.  We're sharing this now with a few pilot teams in the hopes that it's useful, and we invite your feedback!  
+
+</div>
 
 **If you're here because you've just started with a new Arcus Lab:**
 
@@ -29,7 +36,7 @@ This is a markdown document; feel free to just write in it however you like and 
 
 **If you don't have an Arcus lab and you're just here to browse and learn:**
 
-Welcome! All of the examples here are designed for Arcus Labs, but much of this material is broadly applicable, even to folks who aren't working with Arcus. We hope you find it helpful. If you would like to learn more about what Arcus is and what we do, check out this [overview video](https://digitalrepository.chop.edu/arcus/1/) or this [Arcus-101 guide](https://education.arcus.chop.edu/guides/arcus-101/).
+Welcome! Most of the information here is designed for Arcus Labs, but our linked material about various topics like R and SQL is broadly applicable, even to folks who aren't working with Arcus. We hope you find it helpful. If you would like to learn more about what Arcus is and what we do, check out this [overview video](https://digitalrepository.chop.edu/arcus/1/) or this [Arcus-101 guide](https://education.arcus.chop.edu/guides/arcus-101/).
 
 ## Quickstart
 
@@ -77,7 +84,7 @@ The preliminary review is just to determine whether or not to engage in the full
 
 If your request is greenlighted for assessment, then you will be assigned a Project Owner among the Arcus staff who will help guide you through the project assessment. The goal of the project assessment is to clarify the needs for the project to make sure that it is something Arcus will be a good fit for.
 
-A major goal of the project assessment is to identify what, specifically, the scientific team will need from Arcus in terms of data, software, training, and support. One component of the project assessment is a **data needs assessment**, to discuss the definition of the cohort to be studied and what information on those patients will be needed (e.g. diagnoses, medications, notes, procedures, demographics, flowsheets). There will also be a **data contribution assessment** to discuss possible data contributions to the [Arcus Archives](https://education.arcus.chop.edu/arcus-data-catalog/) at the end of the project; researchers using Arcus are expected to contribute their data when appropriate ([read more about the data contribution process here](https://assets.arcus.chop.edu/arcus_education_assets/job_aids/arcus_data-sharing_sop.pdf)).
+A major goal of the project assessment is to identify what, specifically, the scientific team will need from Arcus in terms of data, software, training, and support. One component of the project assessment is a **data needs assessment**, to discuss the definition of the cohort to be studied and what information on those patients will be needed (e.g. diagnoses, medications, notes, procedures, demographics, flowsheets). There will also be a **data contribution assessment** to discuss possible data contributions to the [Arcus Archives](https://education.arcus.chop.edu/arcus-data-catalog/) at the end of the project; researchers using Arcus are expected to contribute their data when appropriate.
 
 The project assessment will also include a **privacy review** to identify and mitigate any potential privacy risks ([read more about the privacy review here](https://forum.arcus.chop.edu/t/what-is-a-privacy-review-and-what-does-the-process-entail/190)).
 
@@ -131,7 +138,7 @@ Which of the following are required to access **deidentified** data via Arcus? S
 
 <div class = "answer">
 
-Everyone who will use your lab must have CITI training on file in order to access Arcus, regardless of the nature of the research.
+This answer applies to both questions above.  Everyone who will use your lab must have CITI training on file in order to access Arcus, regardless of the nature of the research.
 
 </div>
 
@@ -432,8 +439,10 @@ In the Available Tools section of your lab landing page, you'll see a list of th
 
 Most Arcus users will use SQLPad and either RStudio or Jupyter, but other tools may not be needed. If you're not familiar with any of these tools, we recommend you start with SQLPad.
 
-[SQL](https://education.arcus.chop.edu/sql-intro/)
-[R or python?](https://education.arcus.chop.edu/statistical-programming-languages/)
+Here are some introductory materials that might be helpful:
+
+* [SQL](https://education.arcus.chop.edu/sql-intro/)
+* [R or python?](https://education.arcus.chop.edu/statistical-programming-languages/)
 
 ## How to set up your project: Files, directories, and version control
 
@@ -503,10 +512,10 @@ Pivoting to a data science methodology, one that prioritizes writing code and us
 
 Literate statistical programming resources you might find useful include:
 
-[Literate Statistical Programming](https://education.arcus.chop.edu/literate-statistical-programming/)
-A [video tutorial on R-Markdown](https://education.arcus.chop.edu/materials/r-markdown/) and our
-[R-Markdown 101 guide](https://education.arcus.chop.edu/rmd-101/).
-[Code Readability](https://education.arcus.chop.edu/readable-code/)
+* [Literate Statistical Programming](https://education.arcus.chop.edu/literate-statistical-programming/)
+* A [video tutorial on R-Markdown](https://education.arcus.chop.edu/materials/r-markdown/) and our
+* [R-Markdown 101 guide](https://education.arcus.chop.edu/rmd-101/).
+* [Code Readability](https://education.arcus.chop.edu/readable-code/)
 
 ### Problems in the data
 
