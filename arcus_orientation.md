@@ -5,7 +5,7 @@ script: https://kit.fontawesome.com/83b2343bd4.js
 
 ## How to use this guide
 
-**If you're here because you've just started your first Arcus Lab:**
+**If you're here because you've just started with a new Arcus Lab:**
 
 Congratulations! This goal of this guide is to get you up and running with your new lab, regardless of your research background and expertise.
 
@@ -21,7 +21,7 @@ You'll find [a copy of this document on GitHub](https://raw.githubusercontent.co
 
 <div class = "important">
 
-Note that nice formatting with a sidebar and pagination menu are made possible through [Liascript](https://liascript.github.io).  You can take documents written in markdown and use Liascript to render them in a way that's much easier to digest.  For example, this very document, [written in fairly simple markdown](https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md), looks much better when [viewed in Liascript](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md).  If you want to create your own training documents with instant formatting that make your markdown a bit nicer, all you need to do is publish a markdown document in a public GitHub project, with a few small optional additions to help with Liascript.
+Note that nice formatting with a sidebar and pagination menu are made possible through [Liascript](https://liascript.github.io).  You can take documents written in markdown and use Liascript to render them in a way that's much easier to digest.  For example, this very document, [written in fairly simple markdown](https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md), looks much better when [viewed in Liascript](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md).  If you want to create your own training documents with instant formatting that make your markdown a bit nicer, all you need to do is publish a markdown document in a public GitHub project, with a few small optional additions to help with Liascript formatting details (like a logo or special styling).
 
 </div>
 
@@ -77,18 +77,20 @@ The preliminary review is just to determine whether or not to engage in the full
 
 If your request is greenlighted for assessment, then you will be assigned a Project Owner among the Arcus staff who will help guide you through the project assessment. The goal of the project assessment is to clarify the needs for the project to make sure that it is something Arcus will be a good fit for.
 
-A major goal of the project assessment is to identify what, specifically, the scientific team will need from Arcus in terms of data, software, training, and support. One component of the project assessment is a **data needs assessment**, to discuss the definition of the cohort to be studied and what information on those patients will be needed (e.g. diagnoses, medications, notes, procedures, demographics, flowsheets). There will also be a **data contribution assessment** to discuss possible data contributions to the [Arcus Archives](https://education.arcus.chop.edu/arcus-data-catalog/) at the end of the project; researchers using Arcus are expected to contribute their data when appropriate ([read more about the data contribution process here](https://assets.arcus.chop.edu/education/job-aids/arcus-data-sharing-sop.pdf)).
+A major goal of the project assessment is to identify what, specifically, the scientific team will need from Arcus in terms of data, software, training, and support. One component of the project assessment is a **data needs assessment**, to discuss the definition of the cohort to be studied and what information on those patients will be needed (e.g. diagnoses, medications, notes, procedures, demographics, flowsheets). There will also be a **data contribution assessment** to discuss possible data contributions to the [Arcus Archives](https://education.arcus.chop.edu/arcus-data-catalog/) at the end of the project; researchers using Arcus are expected to contribute their data when appropriate ([read more about the data contribution process here](https://assets.arcus.chop.edu/arcus_education_assets/job_aids/arcus_data-sharing_sop.pdf)).
+
 The project assessment will also include a **privacy review** to identify and mitigate any potential privacy risks ([read more about the privacy review here](https://forum.arcus.chop.edu/t/what-is-a-privacy-review-and-what-does-the-process-entail/190)).
 
 The project assessment can vary greatly in length, with particularly well-defined and straightforward projects being assessed in a matter of days and more complex projects or projects that are still in early stages of development taking months. For researchers working under a deadline (e.g. for a grant application), Arcus will try to accommodate your timeline; one of the first questions your Project Owner will ask you during the project assessment is if there are any time constraints we should be aware of.
 
 ### Access to Arcus
 
-Before your lab can be approved, everyone who will have access to your lab will need to have verification of their CITI training on file (this is a requirement for all Arcus users and will be the case even if you'll only be accessing deidentified data). They will also need to agree to the Arcus Terms of Use.
+Before your lab can be approved, everyone who will have access to your lab will need to have verification of their [CITI training](https://about.citiprogram.org/) on file (this is a requirement for all Arcus users and will be the case even if you'll only be accessing deidentified data). They will also need to agree to the Arcus Terms of Use.
 
-To check that they meet these requirements, everyone who will need access to your lab should go to [https://arcus.chop.edu](https://arcus.chop.edu) (only accessible behind CHOP's firewall) and log in with their CHOP credentials using the button in the top right corner of the screen. If your CITI training is on file and you've agreed to the Terms of Use, then you should see two green checkmarks under "Your Account".
-
+To check that they meet these requirements, everyone who will need access to your lab should go to [https://arcus.chop.edu](https://arcus.chop.edu) (only accessible behind CHOP's firewall) and log in with their CHOP credentials using the button in the top right corner of the screen. If your CITI training is on file and you've agreed to the Terms of Use, then you should see two green checkmarks under "Your Account".  
 ![Arcus home screen showing green checkmarks for CITI training and Arcus Terms of Use](media/Arcus_login.png)
+
+Note that for work in Arcus labs, human subjects protection training is required, which in CHOP's CITI account resolves to the  courses titled "Social-Behavioral-Educational Researchers" and "Biomedical Researchers".  Either course fulfills the human research protections training required to participate fully in Arcus labs.  For more information about signing up with CITI, please see [instructions on the CHOP Research Institute](https://www.research.chop.edu/sites/default/files/web/sites/default/files/pdfs/CITI_Basic_Course_Instructions.pdf).
 
 ### When your lab is approved
 
@@ -96,7 +98,7 @@ When the project assessment is complete and your lab is approved, then the team 
 
 When the lab is built, the Arcus data team will provision your lab with the required data, as determined during your project assessment. For more information about the data in Arcus, see [requesting data for your lab](#requesting-data-for-your-lab).
 
-You'll receive an email letting you know when your lab is available, and providing the URL for you to access your lab. Your Project Owner can meet with you and your team to introduce you to the lab environment.
+You'll receive an email letting you know when your lab is available, and providing the URL for you to access your lab. Your Project Owner will meet with you and your team to introduce you to the lab environment.
 
 ### Knowledge check 1
 
@@ -247,7 +249,7 @@ Which of the following is available on the landing page for your Arcus lab? Sele
 [[X]] A clock showing time remaining until your lab pauses
 [[X]] A list of training videos that show you how to get started in your new lab
 [[X]] Links to open the software available to use in your lab
-[[X]] A link to the Arcus Help Center
+[[X]] A link to the [Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/portals)
 ***
 
 <div class = "answer">
@@ -270,7 +272,7 @@ If you're new to Arcus, what is the best place on the landing page to start?
 
 <div class = "answer">
 
-The [training videos](#training-videos) walk through everything you need to get started in your lab. Most questions new users have are covered in those videos.  
+The [training videos](#training-videos) walk through everything you need to get started in your lab. Many questions new users have are covered in those videos.  We aim to make these brief enough to not slow you down but helpful enough so that you can get started.  These videos are not intended to be deep data science training education, but we have suggestions for how to get that training, too!
 
 </div>
 
@@ -280,11 +282,11 @@ The [training videos](#training-videos) walk through everything you need to get 
 
 An initial data needs assessment takes place during the [project assessment](#review-and-assessment), which will determine the data that is provisioned to your lab to start. However, many researchers find that they need to modify their data request at some point during the life of their project. For both the initial data needs assessment and any further data requests, there are a number of useful tools in place.
 
-You can work on defining your [clinical cohort](https://education.arcus.chop.edu/arcus-clinical-cohorts/) by using the [Arcus cohort discovery tool](https://assets.arcus.chop.edu/arcus_education_assets/job_aids/arcus_cohort_discovery.pdf). If you need help using Arcus cohort discovery, you can ask your Project Owner or submit a ticket at the [Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/302) for assistance.
+If you're planning on using clinical data from the Arcus Data Repository, you can work on defining your [clinical cohort](https://education.arcus.chop.edu/arcus-clinical-cohorts/) by using the [Arcus cohort discovery tool](https://assets.arcus.chop.edu/arcus_education_assets/job_aids/arcus_cohort_discovery.pdf). If you need help using Arcus cohort discovery, you can ask your Project Owner or submit a ticket at the [Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/302) for assistance.
 
 To explore the tables and variables available in the [Arcus Data Repository (ADR)](https://education.arcus.chop.edu/arcus-data-repository/), you can use the [ADR Data Model Browser](https://adr-mdm.arcus.chop.edu/browser/). Note that the data model browser is most useful for folks who have already built some familiarity with the ADR --- if you're still finding your way around, then please reach out to Arcus staff for help deciding which tables and variables you will need.
 
-You are not limited to what's in the ADR! Many researchers bring in other data sources to analyze in Arcus. Talk to your Project Owner about any additional data needs ([genomics data](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/270), [images](https://adr-mdm.arcus.chop.edu/browser/), [geospatial data](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/265), data from other previous or ongoing research projects, etc.).  Keep in mind that all data requests are subject to review by the privacy team.
+You are not limited to what's in the ADR! Many researchers bring in other data sources to analyze in Arcus. Talk to your Project Owner about any additional data needs ([genomics data](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/270), [images](https://adr-mdm.arcus.chop.edu/browser/), [geospatial data](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/265), data from other previous or ongoing research projects, etc.).  Keep in mind that all data requests are subject to review by the privacy team and that changing the scope of your project once it has been launched may result in delays or costs.  It's best to know what data you'd like to use at the project assessment phase.
 
 When you are ready to place a request for additional data, new services, or want to learn more about scientific labs or report a problem, you may do so through the [Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/portal/6/group/65).
 
@@ -336,20 +338,20 @@ If you're used to working in Epic, this means there will be fields you're used t
 
 ## Ongoing communication
 
-Once you have an approved lab request, your primary point of contact is your assigned **Project Owner**. This person will be an Arcus staff member, and their role is to act as a concierge connecting you with troubleshooting support and training to help make your scientific project experience a success. Whenever you have questions, reaching out to your Project Owner is a good place to start.
+Once you have an approved lab request, your primary point of contact is your assigned **Project Owner**. This person will be an Arcus staff member, and their role is to act as a concierge ensuring that your project is set up with what you need to help make your scientific project experience a success.
 
-There are also a number of other ways for you to contact Arcus for support, including submitting a ticket in the help center and posting a question on the [Arcus Forum](https://forum.arcus.chop.edu/).
+There are also a number of other ways for you to contact Arcus for support, including submitting a ticket in the [Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/portals) and posting a question on the [Arcus Forum](https://forum.arcus.chop.edu/).
 
-The **Arcus Help Center** ([https://support.arcus.chop.edu/servicedesk/customer/portals](https://support.arcus.chop.edu/servicedesk/customer/portals)) is the system Arcus uses to organize and track requests from lab users and issues that need to be resolved. There is a link to the Arcus Help Center on your lab's landing page, in the top left section titled "[Lab status](#lab-status)". The Help Center is especially useful for defined, specific issues, such as the following:
+The **Arcus Help Center** ([https://support.arcus.chop.edu/servicedesk/customer/portals](https://support.arcus.chop.edu/servicedesk/customer/portals)) is the system Arcus uses to organize and track requests from lab users and issues that need to be resolved. There is a link to the Arcus Help Center on your lab's landing page, in the top left section titled "[Lab status](#lab-status)". The [Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/portals) is especially useful for defined, specific issues, such as the following:
 
 - submitting a bug report if you think something is malfunctioning in your lab
 - requesting a new user be added to your lab
 - requesting additional data be supplied to your lab, including images
 - requesting lab enhancements, such as additional memory
 
-You can also submit general help questions there, although if you're not sure where to start, talking with your Project Owner first may be more efficient. You need to be behind CHOP's firewall to access the Arcus Help Center.
+You need to be behind CHOP's firewall to access the [Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/portals).
 
-**Arcus Forum** ([https://forum.arcus.chop.edu/](https://forum.arcus.chop.edu/)) is a question-and-answer site (it uses the same format as [StackOverflow](https://stackoverflow.com/), for those familiar with that). Users can post questions there, and Arcus staff will generally respond with answers very quickly during normal working hours. See this section for [tips on how to post a troubleshooting question to maximize the chance of getting a useful response](link). Arcus staff also use the Arcus Forum to post announcements about technical updates and fixes to labs, as well as how-to guides for frequently asked questions. You need to be behind the CHOP firewall to access the Arcus Forum.
+**Arcus Forum** ([https://forum.arcus.chop.edu/](https://forum.arcus.chop.edu/)) is a question-and-answer site (it uses the same format as [StackOverflow](https://stackoverflow.com/), for those familiar with that). Arcus staff also use the [Arcus Forum](https://forum.arcus.chop.edu/) to post announcements about technical updates and fixes to labs, as well as how-to guides for frequently asked questions. You need to be behind the CHOP firewall to access the [Arcus Forum](https://forum.arcus.chop.edu/).
 
 
 ### Knowledge check 4
@@ -363,9 +365,9 @@ Which of the following best describes the role of the Project Owner?
 
 <div class = "answer">
 
-The Project Owner acts as a concierge, connecting scientific project users with the right Arcus staff to resolve their issues, and checking to make sure the project is progressing smoothly.
+The Project Owner acts as a concierge, connecting scientific project users with the right Arcus staff to set up a scientific project in the most helpful way possible.
 
-Project Owners don't assist with research tasks like writing code or analyzing data, although they can help connect researchers to training and resources so they can do those things themselves.
+Project Owners don't assist with research tasks like writing code or analyzing data, although they can help connect researchers to training and resources so they can do those things themselves.  The [Data Science and Biostatistics Unit](https://www.research.chop.edu/data-science-and-biostatistics-unit) is a fee-for-service team within DBHi that can be hired as additional help for scientists who need help working in their Arcus labs.
 
 </div>
 
@@ -379,7 +381,7 @@ True or False: The only way you should get in touch with Arcus is via your Proje
 
 <div class = "answer">
 
-Although your Project Owner is often the best place to start, you are welcome to get in touch with other Arcus staff in whatever way works best for you. Two useful avenues are the Arcus Help Desk and the Arcus Forum site.
+Although your Project Owner is one option, you are welcome to get in touch with other Arcus staff in whatever way works best for you. Two useful avenues are the [Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/portals) and the [Arcus Forum](https://forum.arcus.chop.edu/) site.
 
 </div>
 
@@ -388,19 +390,19 @@ Although your Project Owner is often the best place to start, you are welcome to
 If the data in your lab don't look right to you (e.g. you see twice as many patients as you were expecting), which of the following would be good ways to ask for help? Select all that apply.
 
 [[X]] email your Project Owner
-[[X]] submit a ticket at the Arcus Help Center
-[[X]] post a question on the Arcus Forum
+[[X]] submit a ticket at the [Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/portals)
+[[X]] post a question on the [Arcus Forum](https://forum.arcus.chop.edu/)
 ***
 
 <div class = "answer">
 
 Any of these are fine ways to seek help!
 
-If you have a clear idea of what's going wrong, the most efficient approach might be to submit a ticket in the Help Center for the Data team describing the problem.
+If you have a clear idea of what's going wrong, the most efficient approach might be to submit a ticket in the [Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/portals) for the Data team describing the problem.
 
 If you're not sure what's going wrong, then approaching your Project Owner first may save time as they may be able to help you narrow down the issue and direct it to the right person.
 
-If you post on the Arcus Forum, the people responding there won't necessarily have access to the details of your lab (as your PO or the Data team would), but they can help if you troubleshoot if you think the error may be in your SQL query, for example.
+If you post on the [Arcus Forum](https://forum.arcus.chop.edu/), the people responding there won't necessarily have access to the details of your lab (as your PO or the Data team would), but they can help if you troubleshoot if you think the error may be in your SQL query, for example.
 
 No matter what, whatever way you pick to ask for help, you can expect to be treated with compassion and respect. Whoever you get in touch with will do their best to connect you with the right solution as quickly as possible.
 </div>
@@ -410,13 +412,13 @@ No matter what, whatever way you pick to ask for help, you can expect to be trea
 Which of the following can you do when you are **outside** of CHOP's firewall? Select all that apply.
 
 [[X]] email your Project Owner
-[[ ]] submit a ticket at the Arcus Help Center
-[[ ]] post a question on the Arcus Forum
+[[ ]] submit a ticket at the [Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/portals)
+[[ ]] post a question on the [Arcus Forum](https://forum.arcus.chop.edu/)
 ***
 
 <div class = "answer">
 
-The Arcus Help Center and Arcus Forum are only available behind the firewall, so you'll need to be on CHOP's network or on the VPN to access them.
+The [Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/portals) and [Arcus Forum](https://forum.arcus.chop.edu/) are only available behind the firewall, so you'll need to be on CHOP's network or on the VPN to access them.
 
 </div>
 
@@ -432,8 +434,6 @@ Most Arcus users will use SQLPad and either RStudio or Jupyter, but other tools 
 
 [SQL](https://education.arcus.chop.edu/sql-intro/)
 [R or python?](https://education.arcus.chop.edu/statistical-programming-languages/)
-
-distinguish between platforms/engines/environments and languages
 
 ## How to set up your project: Files, directories, and version control
 
@@ -467,7 +467,7 @@ For more background on this topic, see this [post that answers the question "Wha
 
 ### Version control
 
-An important aspect of research data management is the history of your files.
+An important aspect of research data management is the history of your files.  Git is already installed in your lab, and you can also use the Git client native to RStudio.
 
 [https://education.arcus.chop.edu/version-control-curriculum/](https://education.arcus.chop.edu/version-control-curriculum/)
 [https://education.arcus.chop.edu/git-101/](https://education.arcus.chop.edu/git-101/)
@@ -476,57 +476,67 @@ An important aspect of research data management is the history of your files.
 
 For R users, check out this excellent resource: [Happy Git with R](https://happygitwithr.com/). It is a full and detailed set of instructions for how to get started using git if you're already using R and RStudio.
 
-# New to data science?
+## New to data science?
 
-Arcus Education [quickstart guide for data science](https://education.arcus.chop.edu/guides/data-sci-101/).
+<div class = "important">
 
-How open is your science? [Take the quiz.](https://plos.org/how-open-is-your-science/)
+We're still working out what might be most useful here for people who are new to working with data.  Let us know what you think of these materials and what else you'd like to see!
 
-What is p-hacking and why does it matter?
-Check out this [p-hacker app with fake data](https://shinyapps.org/apps/p-hacker/) and another [p-hacker app using real data](https://projects.fivethirtyeight.com/p-hacking/) to see a demonstration.
+</div>
 
-## Pivoting to data science
-- Typing computer commands when you’re used to point and click
-- Programming when you’re used to spreadsheet data analysis
-- Version control and text files when you’re used to MS Office
-- Learning a lot of new things at once: How to prioritize, how to schedule
-- New rewards, and new frustrations
+First, some various and sundry things that might interest you:
 
-Literate statistical programming resources:
-A [video tutorial on R-Markdown](https://education.arcus.chop.edu/modules/r-markdown/) and our
+* Learning data science may be different than what you're used to.  Check out our [Learning How to Learn Data Science](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/learning_to_learn/learning_to_learn.md) short course.
+* If you're new to working with data, Arcus Education provides a [quickstart guide for data science](https://education.arcus.chop.edu/guides/data-sci-101/).
+* How open is your science? [Take the quiz.](https://plos.org/how-open-is-your-science/)
+* What is p-hacking and why does it matter? Check out this [p-hacker app with fake data](https://shinyapps.org/apps/p-hacker/) and another [p-hacker app using real data](https://projects.fivethirtyeight.com/p-hacking/) to see a demonstration.
+
+### Pivoting to data science
+
+Pivoting to a data science methodology, one that prioritizes writing code and using version control, can be challenging!  We invite you to consider an overview of why this approach is helpful in a training module called [Reproducibility](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/reproducibility/reproducibility.md).  This can help give you additional motivation when you're struggling with common challenges like:
+
+- Typing computer commands when you're used to point and click
+- Programming when you're used to spreadsheet data analysis
+- Version control and text files when you're used to MS Office
+- Learning a lot of new things at once and aren't certain how to prioritize and schedule learning tasks
+- New rewards and new frustrations
+
+Literate statistical programming resources you might find useful include:
+
+[Literate Statistical Programming](https://education.arcus.chop.edu/literate-statistical-programming/)
+A [video tutorial on R-Markdown](https://education.arcus.chop.edu/materials/r-markdown/) and our
 [R-Markdown 101 guide](https://education.arcus.chop.edu/rmd-101/).
+[Code Readability](https://education.arcus.chop.edu/readable-code/)
 
-[writing readable code](https://education.arcus.chop.edu/readable-code/)
+### Problems in the data
 
-## Problems in the data
-- Clinical data at CHOP: What is where? [https://education.arcus.chop.edu/clinical-data-at-chop/](https://education.arcus.chop.edu/clinical-data-at-chop/) NEEDS UPDATE [https://education.arcus.chop.edu/modules/arcus-LIS/](https://education.arcus.chop.edu/modules/arcus-LIS/)
-- Data dictionaries and variable names, translating Epic to Arcus
-- Different information across different tables
-- Errors, outliers, and typos
-- Multiple versions of a variable [https://education.arcus.chop.edu/date-pairing-in-r/](https://education.arcus.chop.edu/date-pairing-in-r/)
-- Information stored across rows, or across columns
-- Variable types
-- Missing values: None, NULL, NaN, etc. [https://education.arcus.chop.edu/do-patterns-in-missing-data-matter/](https://education.arcus.chop.edu/do-patterns-in-missing-data-matter/)
-- Sanity checks: What to do when you’ve got the data
+If you aren't used to working with raw data that hasn't been pre-groomed, you might feel overwhelmed.  Here's a few things to consider that can help!
 
-## Framing your questions so the computer will understand
-- Breaking ideas down into steps (pseudocode)
-- Finding where to start (what is already in the data vs. what will you need to refine/calculate/reformat)
-- Working directories: finding files [https://education.arcus.chop.edu/file-paths/](https://education.arcus.chop.edu/file-paths/)
-- Conventions for naming files, and things to avoid (spaces)
-- Translating ideas into questions, and questions into tests
+- Clinical data at CHOP: What is where? [https://education.arcus.chop.edu/clinical-data-at-chop/](https://education.arcus.chop.edu/clinical-data-at-chop/)
+- Data dictionaries and variable names: make sure you watch the SQL training videos in your lab, where we go over the use of `dd_field` and `dd_table`, to help you work with data dictionaries.
+- Errors, outliers, and typos do exist, because people make mistakes in charting, and the medical record system isn't foolproof.  What will you do with unexpected or unlikely data?
+- Repeated versions of a variable [https://education.arcus.chop.edu/date-pairing-in-r/](https://education.arcus.chop.edu/date-pairing-in-r/)
+- Missing values: None, NULL, NaN, etc. may also be a challenge.  Consider [https://education.arcus.chop.edu/do-patterns-in-missing-data-matter/](https://education.arcus.chop.edu/do-patterns-in-missing-data-matter/).
 
-## Getting help and troubleshooting
-- How much troubleshooting is normal?
-- Imposter syndrome, stereotype threat, and other psychological challenges [https://xkcd.com/385/](https://xkcd.com/385/)
-- Troubleshooting on your own: Where to look and what to type?
-- Getting help from someone else: Who to talk to and how to ask?
-- Arcus help desk
-- Research help desk
-- Arcus Forum and Slack
-  Pros and cons of different approaches. Writing questions vs. spoken, asking one person vs. asking a community (Arcus Forum, slack, office hours, email, user groups, web sources like SE, talking to peers, talking to PO, talking to Arcus staff, talking to Arcus ed team)
 
-### The reproducible example
+### Framing your questions so the computer will understand
+
+Sometimes, facing an empty screen without any code yet written can feel like an unwieldy problem without any hand holds.  How do you even get started?  We encourage you to think about:
+
+- Breaking ideas down into steps (for example, use pseudocode, a fancy word for "steps written out in fake code" to plan your data selection and data analysis)
+- Finding where to start (what fields already exist in the data vs. what will you need to refine/calculate/reformat)
+- Learning to work with your lab directory structure.  A resource that might help is our short [Directories and File Paths](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/directories_and_file_paths/directories_and_file_paths.md) course or the article [https://education.arcus.chop.edu/file-paths/](https://education.arcus.chop.edu/file-paths/)
+- Conventions for naming files.  You want to be on the same page as the rest of the team and watch out for things to avoid (like spaces in file names, which can be annoying in some environments).
+- Translating ideas into questions, and questions into tests: what is your algorithm to get from data to publication?
+
+### Getting help and troubleshooting
+
+How much troubleshooting is normal?  It's tricky.  When you're first getting started, some of your questions and challenges are the kinds of things that a more experienced user could sort out in a moment or two.  That's why it makes sense to reach out before you get too frustrated and exhausted and ask for help in your very early steps. But as your research advances, you'll be doing novel things that few others do in quite the same way, so you can expect to do much more of the heavy lifting yourself.  It could be that no one has yet answered the question of "how do I do this thing", so that asking for and getting help will require a lot of work on your part.
+
+There's a great [How to Troubleshoot](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/how_to_troubleshoot/how_to_troubleshoot.md) course that might be helpful, and don't forget about the [Arcus Forum](https://forum.arcus.chop.edu/).  For questions in R, Python, and SQL, consider checking out the [educational support available through the Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/portal/6/group/61).
+
+
+## An important topic: the reproducible example
 
 When you encounter an issue with your code and want to ask for help, you'll find the concept of the **reproducible example** to be very useful.
 
@@ -534,9 +544,9 @@ A reproducible example is a piece of code that 1) demonstrates your problem and 
 
 To illustrate, let's consider an example of a user having trouble with the `xtabs` function in R. You don't need to understand the code to follow this example, this is just to show different methods of asking a question. Let's take a look at a few different ways they could ask for help.
 
-#### Attempt 1
+### Attempt 1
 
-> Hi, I'm trying to get a crosstab table from my data using the `xtabs` function, but it's not working. I'm getting an error that says "‘sum’ not meaningful for factors". Can you help?
+> Hi, I'm trying to get a crosstab table from my data using the `xtabs` function, but it's not working. I'm getting an error that says "‘sum' not meaningful for factors". Can you help?
 
 Although this is a clear and specific request, someone trying to answer this question actually doesn't have a lot to go on --- the problem might be in the data themselves, or there might be a mistake in how the user is writing the code, or maybe the code is actually fine and the problem is just that the user is misunderstanding what this function does so they're using `xtabs` when actually they should be using a different function altogether. Or it could be something else entirely! It's impossible to know.
 
@@ -544,7 +554,7 @@ The way to fix code --- your own or someone else's --- is to test it until it wo
 
 If you want someone to help with your code, you need to give them the chance to run it.
 
-#### Attempt 2
+### Attempt 2
 
 > Hi, I'm trying to get a crosstab table from my data using the `xtabs` function, but it's not working.
 >
@@ -553,22 +563,22 @@ If you want someone to help with your code, you need to give them the chance to 
 > xtabs(A ~ B, my_data)
 
 Error in Summary.factor(1:5, na.rm = TRUE) :
-  ‘sum’ not meaningful for factors
+  ‘sum' not meaningful for factors
 ```
 
 Although it looks like this is providing a lot more information than the request in Attempt 1, it's actually not. We can see exactly what the user did here, which is somewhat helpful, but since we don't know what the variables A and B are like, we can't tell whether there's a problem in how they're being used in this function.
 
 Having access to your code doesn't mean someone will be able to run it.
 
-#### Attempt 3
+### Attempt 3
 
-> Hi, I'm trying to get a crosstab table from my data using the `xtabs` function, but it's not working. I'm getting an error that says "‘sum’ not meaningful for factors". Can you help?
+> Hi, I'm trying to get a crosstab table from my data using the `xtabs` function, but it's not working. I'm getting an error that says "‘sum' not meaningful for factors". Can you help?
 >
 > Here's an example of the issue using the `warpbreaks` data:
 ```
 > xtabs(wool ~ tension, warpbreaks)
 Error in Summary.factor(c(1L, 1L, 1L, 1L, ... :
-  ‘sum’ not meaningful for factors
+  ‘sum' not meaningful for factors
 ```
 
 Here, the user is relying on one of the many [example datasets that come built into R](http://www.sthda.com/english/wiki/r-built-in-data-sets) for just this reason. That means anyone who has R installed will already have the `warpbreaks` data ready and available, whether they realize it or not. If you like, you can open R right now and copy-paste `xtabs(wool ~ tension, warpbreaks)` and you'll see the error the user reports.
@@ -593,21 +603,29 @@ Also, remember that you're asking someone else to take time to think about your 
 
 And sometimes the tinkering that goes into creating a reproducible example will actually solve your problem for you! In trying to create a minimal, reproducible version, you may figure out what the problem was all on your own.  
 
-### An advantage of doing your work in the browser: Everyone is working in the same environment
+## An advantage of doing your work in the browser: Everyone is working in the same environment
 
 There are many advantages to doing your work in an Arcus lab, including increased security, storage, and computing power, but another advantage is that when you ask for help, you can get support from someone who can work in the **exact same environment** you're working in and access the **exact same data**. This removes many of the barriers to being able to replicate issues.
 
 That means that something like Attempt 2 above might actually be sufficient, as long as you're asking for help from someone who has access to your computational lab. Whether you're going back and forth between your team members or working on an issue with Arcus staff, you can make your troubleshooting much more efficient by all working in the same environment with the same data. This can save your team a tremendous amount of time over the life of your project.
 
-## Checking your work: Once you have code, how do you know if it’s right?
+## Checking your work: Once you have code, how do you know if it's right?
+
+<div class = "important">
+
+We're still working out what might be most useful here for people who are new to working with data.  Let us know what you think of these materials and what else you'd like to see!
+
+</div>
+
+A few things to keep in mind:
 
 - [Data Preparation](https://education.arcus.chop.edu/data-preparation/)
-- Peeking at the data
-- Summarizing the data (especially count and range)
-- Comparing the data (especially xtabs)
-- Visualizing the data / Plotting
+- Peeking at the data (using commands like `head()` in R or `.head()` in Python)
+- Summarizing the data (especially data counts and range)
+- Comparing the data (for example, using R's `xtabs`)
+- Visualizing the data / plotting
 
-# New to version control and git?
+## New to version control and git?
 
 Git is installed in the command line of your lab and there is also a Git client within RStudio.
 
