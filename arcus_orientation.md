@@ -603,13 +603,15 @@ Also, remember that you're asking someone else to take time to think about your 
 
 And sometimes the tinkering that goes into creating a reproducible example will actually solve your problem for you! In trying to create a minimal, reproducible version, you may figure out what the problem was all on your own.  
 
-## An advantage of doing your work in the browser: Everyone is working in the same environment
+## Advantages to Arcus Labs
 
 There are many advantages to doing your work in an Arcus lab, including increased security, storage, and computing power, but another advantage is that when you ask for help, you can get support from someone who can work in the **exact same environment** you're working in and access the **exact same data**. This removes many of the barriers to being able to replicate issues.
 
 That means that something like Attempt 2 above might actually be sufficient, as long as you're asking for help from someone who has access to your computational lab. Whether you're going back and forth between your team members or working on an issue with Arcus staff, you can make your troubleshooting much more efficient by all working in the same environment with the same data. This can save your team a tremendous amount of time over the life of your project.
 
-## Checking your work: Once you have code, how do you know if it's right?
+## Checking Your Work
+
+Checking your work: once you have code, how do you know if it's right?
 
 <div class = "important">
 
@@ -647,7 +649,7 @@ Articles:
 
 For R users, check out this excellent resource: [Happy Git with R](https://happygitwithr.com/). It is a full and detailed set of instructions for how to get started using git if you're already using R and RStudio.  This will be very helpful in your scientific lab!
 
-# New to SQL?
+## New to SQL?
 
 For an example of how to use SQL in your Arcus lab, start with the [training videos](#training-videos) on your lab's landing page.
 
@@ -664,7 +666,7 @@ Compendia of Resources:
 * Our ["SQL 101" Guide](https://education.arcus.chop.edu/guides/sql-101/) includes links to articles, webinars, and other materials on a variety of topics.
 
 
-# New to R?
+## New to R?
 
 For an example of how to use R in your Arcus lab, start with the [training videos](#training-videos) on your lab's landing page.
 
@@ -688,7 +690,7 @@ Other Resources:
 * [https://www.edx.org/course/data-science-r-basics](https://www.edx.org/course/data-science-r-basics
 * [Importing your data into R](https://bookdown.org/pdr_higgins/rmrwr/importing-your-data-into-r.html)
 
-# New to Python?
+## New to Python?
 
 For an example of how to use Python in your Arcus lab, start with the [training videos](#training-videos) on your lab's landing page.
 
