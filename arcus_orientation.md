@@ -25,13 +25,13 @@ Note that nice formatting with a sidebar and pagination menu are made possible t
 
 </div>
 
- This is a markdown document; feel free to just write in it however you like and ignore the formatting, or if you want to learn markdown formatting, you can do so very quickly. It is a simple system that lets you add basic formatting to plain text documents, and there is a [great cheatsheet here](https://daringfireball.net/projects/markdown/basics). No matter how you take notes, the goal is to compile a personalized list of tips and resources that you'll be able to go back to for you own reference and/or to train others in your lab.
+This is a markdown document; feel free to just write in it however you like and ignore the formatting, or if you want to learn markdown formatting, you can do so very quickly. It is a simple system that lets you add basic formatting to plain text documents, and there is a [great cheatsheet here](https://daringfireball.net/projects/markdown/basics). No matter how you take notes, the goal is to compile a personalized list of tips and resources that you'll be able to go back to for you own reference and/or to train others in your lab.
 
 **If you don't have an Arcus lab and you're just here to browse and learn:**
 
 Welcome! All of the examples here are designed for Arcus Labs, but much of this material is broadly applicable, even to folks who aren't working with Arcus. We hope you find it helpful. If you would like to learn more about what Arcus is and what we do, check out this [overview video](https://digitalrepository.chop.edu/arcus/1/) or this [Arcus-101 guide](https://education.arcus.chop.edu/guides/arcus-101/).
 
-# Quickstart
+## Quickstart
 
 This is a quick overview of an Arcus lab. What it covers:
 
@@ -48,7 +48,7 @@ What the quickstart guide does NOT cover:
 - How to analyze your data in R or python
 - How to use Jupyter notebooks or R-markdown notebooks to document your analysis code
 - How to use version control on your lab files
-- Explanations of **why** you would want to do any of the above rather than using more traditional tools like Excel, SAS, or Stata
+- Explanations of **why** you would want to do any of the above rather than using tools like Excel, SAS, or Stata
 
 These topics (and more!) are part of the more extended overview (especially "[New to data science?](new-to-data-science)"), which will be especially useful to researchers coming to Arcus without previous experience in data science.  
 
@@ -144,7 +144,7 @@ Which of the following best describes Arcus data contributions?
 
 <div class = "answer">
 
-Researchers using Arcus are expected to contribute their data to the Arcus Archive, but there are a number of options in place to restrict access as appropriate, including the option to place a purpose-specific embargo or require approval according to scientific review criteria before access.
+Researchers using Arcus are expected to contribute data to the Arcus Archive, but there are a number of options in place to restrict access as appropriate, including the option to place a purpose-specific embargo or require approval according to scientific review criteria before access.
 
 During your project assessment, you will meet with an archivist from the Arcus team to discuss potential data contributions from your project, and they will work with you to come up with an appropriate data storage and reuse plan. [See this job aid for more information about data contributions to Arcus](https://assets.arcus.chop.edu/education/job-aids/arcus-data-sharing-sop.pdf).  
 
@@ -350,16 +350,6 @@ The **Arcus Help Center** ([https://support.arcus.chop.edu/servicedesk/customer/
 You can also submit general help questions there, although if you're not sure where to start, talking with your Project Owner first may be more efficient. You need to be behind CHOP's firewall to access the Arcus Help Center.
 
 **Arcus Forum** ([https://forum.arcus.chop.edu/](https://forum.arcus.chop.edu/)) is a question-and-answer site (it uses the same format as [StackOverflow](https://stackoverflow.com/), for those familiar with that). Users can post questions there, and Arcus staff will generally respond with answers very quickly during normal working hours. See this section for [tips on how to post a troubleshooting question to maximize the chance of getting a useful response](link). Arcus staff also use the Arcus Forum to post announcements about technical updates and fixes to labs, as well as how-to guides for frequently asked questions. You need to be behind the CHOP firewall to access the Arcus Forum.
-
-### Arcus Labs new user newsletter
-
-When you're first approved for an Arcus Lab, you'll start to receive an email newsletter with information to help you get started. Here's a little information about what to expect:
-
-- We have tried to introduce topics at a time in the life of your Arcus Lab when they will be most useful to you (e.g. questions about provisioning data early on, troubleshooting analysis code later), but of course different scientific teams will have different needs and move at different paces. If you want to go back to view old newsletters or see what's coming next, you can browse the archives: [link]
-- Each week should feature a range of content, targeting novices to advanced users on different topics relevant to your Arcus Lab. Depending on your own experience, comfort level, and preferences, you will find some articles more relevant to you than others. The goal is to provide access to a range of useful resources so you can pick what works for you --- please feel free to skip content that doesn't appear useful to you. Hopefully there will be at least one article in the newsletter each week that is a good fit for you and your team.
-- We recommend you keep notes about what resources have been most useful to you. This can be a handy reference for you later, and it also provides an excellent place to start when you need to onboard new team members.
-- This newsletter is written by the Arcus Data Education team. If you have feedback on the newsletter, please share it! [link] Thank you for taking the time to help us improve.
-- Your project owner also has access to this newsletter, so feel free to reach out to them with questions about content here. If they can't answer your questions, they'll try to connect you with someone who can. You can also reach out to the Education team directly by placing a request at the [Arcus Help Desk](https://support.arcus.chop.edu/servicedesk/customer/user/login?destination=portals)
 
 
 ### Knowledge check 4
