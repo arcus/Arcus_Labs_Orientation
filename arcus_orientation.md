@@ -3,7 +3,7 @@ link:  https://chop-dbhi-arcus-education-website-assets.s3.amazonaws.com/css/sty
 script: https://kit.fontawesome.com/83b2343bd4.js
 -->
 
-# How to use this guide
+## How to use this guide
 
 **If you're here because you've just started your first Arcus Lab:**
 
@@ -50,7 +50,7 @@ What the quickstart guide does NOT cover:
 - How to use version control on your lab files
 - Explanations of **why** you would want to do any of the above rather than using tools like Excel, SAS, or Stata
 
-These topics (and more!) are part of the more extended overview (especially "[New to data science?](new-to-data-science)"), which will be especially useful to researchers coming to Arcus without previous experience in data science.  
+These topics (and more!) are part of the more extended overview (especially "[New to data science?](#new-to-data-science)"), which will be especially useful to researchers coming to Arcus without previous experience in data science.  
 
 ## Training lab vs. computational lab
 
