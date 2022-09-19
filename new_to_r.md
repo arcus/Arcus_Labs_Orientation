@@ -42,7 +42,7 @@ CHOP has a vibrant R User Group made up of employees from all over the instituti
 
 To join, please visit [https://bit.ly/chopRusers](https://bit.ly/chopRusers)!  This will add you to the Outlook distribution list for emails as well as give you instructions on how to add yourself to our Slack workspace, where people ask coding questions (and answer them!).
 
-Joining the R User Group means you'll be informed about periodic intro to R workshops, R User Group talks, and other resources you'll find useful.  Especially if you're the only person in your lab who uses R, it can be important to find a community of practice that can help guide you.
+Joining the R User Group means you'll be informed about periodic intro to R workshops, R User Group talks, and other resources you'll find useful.  Especially if you're the only person in your lab who uses R, it can be important to find a community of practice that can help guide you.  Intro to R workshops are given a few times a year and include five hours of hands-on, synchronous work intended to get you started working with R as a brand-new beginner.  To learn more about the course, visit the [course website](https://arcus.github.io/intro-to-r-for-clinicians-chop/).
 
 As you gain expertise, we also invite you to participate by leading an R User Group meeting!  You don't have to be an expert for years in order to share your skills.  Even if you only know a little, you know more than some people, and you can share pitfalls to avoid and the routes to success for data analysis tasks you conducted on your type of research data.
 
@@ -87,13 +87,13 @@ Training modules:
 
 Additionally, beyond the NIH grant, we have other articles and miscellany we suggest, whether those are resources we've created in Arcus, or things we recommend from the larger R community.
 
-Compendia of Resources:
+**Compendia of Resources**:
 
 * Our ["R 101" Guide](https://education.arcus.chop.edu/guides/r-101/) includes links to articles, webinars, and other materials on a variety of topics.
 
-Other Resources:
+**Other Resources**:
 
-* [EdX Data Science in R](https://www.edx.org/course/data-science-r-basics
+* [EdX Data Science in R](https://www.edx.org/course/data-science-r-basics)
 * [Coursera Data Science in R Specialization by Johns Hopkins University](https://www.coursera.org/specializations/jhu-data-science)
 * [Importing your data into R](https://bookdown.org/pdr_higgins/rmrwr/importing-your-data-into-r.html)
 * [R for Data Science (English)](https://r4ds.had.co.nz/)
