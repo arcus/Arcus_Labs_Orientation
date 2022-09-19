@@ -8,7 +8,7 @@ title: Arcus Labs Orientation
 
 <div class = "important">
 
-Hi!  This document is being piloted / proposed for use, and it's not perfect.  We apologize in advance for any broken links or unclear language.  We're sharing this now with a few pilot teams in the hopes that it's useful, and we invite your feedback!  
+Hi!  This document is still under construction and testing.  We apologize in advance for any broken links or unclear language.  We invite your feedback.  Please add a [support ticket](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/249) or [email Arcus Education](mailto:paytonk@chop.edu) to let us know what we can improve or suggest additional topics.
 
 </div>
 
@@ -16,15 +16,15 @@ Hi!  This document is being piloted / proposed for use, and it's not perfect.  W
 
 Congratulations! This goal of this guide is to get you up and running with your new lab, regardless of your research background and expertise.
 
-Everyone should start with the **Quickstart** section, since that will bring you up to speed fast on what to expect when you first open your lab and how to get started. If you're already comfortable with data science tools like SQL, R, python, and version control, then the Quickstart section may be enough to get you going. Most researchers will benefit from working through some or all of the other sections as well, though.
+Everyone should start with the **Quickstart** section (look in the table of contents on the left), since that will bring you up to speed fast on what to expect when you first open your lab and how to get started. If you're already comfortable with data science tools like SQL, R, python, and version control, then the Quickstart section may be enough to get you going. Most researchers will benefit from working through some or all of the other linked documents as well, though.
 
-- **New to data science** introduces helpful tools and tips for working on data science projects that will be useful to scientists coming from other types of research. Even if you have experience in data science already, you may find it worthwhile to skim the subtopics in that section so you know what's available should you want to come back to it to reference later.
-- **New to version control** will help you get started with git, a powerful program for helping you keep track of your research documents over time. If you don't currently use git or another form of version control, we strongly recommend you work through that section. Version control is an extremely valuable tool for reproducible research, and although there is a bit of a learning curve, it really pays off.
-- **New to SQL**, **New to R** and **New to Python** introduce you to the three languages most important to your work in an Arcus Lab: SQL, R, and python. You will need at least some familiarity with SQL in order to access your data, but you can pick whether to learn python or R. If you're new to SQL, R, and python, we recommend you focus on SQL first, since that's the first thing you'll need to be able to apply in your own lab.
+- **[New to data science](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_data_science.md)** is a document that introduces helpful tools and tips for working on data science projects that will be useful to scientists coming from other types of research. Even if you have experience in data science already, you may find it worthwhile to skim the subtopics in that section so you know what's available should you want to come back to it to reference later.
+- **[New to version control](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_version_control.md)** is a document that will help you get started with git, a powerful program for helping you keep track of your research documents over time. If you don't currently use git or another form of version control, we strongly recommend you work through that section. Version control is an extremely valuable tool for reproducible research, and although there is a bit of a learning curve, it really pays off.
+- **[New to SQL](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_sql.md)**, **[New to R](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_r.md)** and **[New to Python](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_python.md)** are documents that introduce you to the three languages most important to your work in an Arcus Lab: SQL, R, and python. You will need at least some familiarity with SQL in order to access any tabular data in your lab (data that takes the forms of rows and columns). Depending on your research needs, you can pick whether to learn Python or R or use some of both. If you're new to SQL, R, and Python, we recommend you focus on SQL first, since that's the first thing you'll need to be able to apply in your own lab.
 
-As you learn about your lab, save a record of your studies and which resources are most valuable for your group. This can be a google doc, notebook, etc., whatever works best for you to keep track of your studies. If you like, you can even start by copying this orientation document and then adding your own notes and deleting or editing parts that aren't useful to your group.
+As you learn about your lab, save a record of your studies and which resources are most valuable for your group. This can be a google doc, notebook, etc., whatever works best for you to keep track of your studies. If you like, you can even start by copying (or forking, if you're comfortable with GitHub!) this orientation document and then adding your own notes and deleting or editing parts that aren't useful to your group.
 
-You'll find [a copy of this document on GitHub](https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md) --- copy paste or download it and edit to make it your own.  
+You'll find [a "raw" copy of this document on GitHub](https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md) --- copy/paste or download it and edit to make it your own.  Or, if you're comfortable using GitHub, check out the repository for this and other Arcus Lab Orientation materials at [https://github.com/arcus/Arcus_Labs_Orientation](https://github.com/arcus/Arcus_Labs_Orientation).
 
 <div class = "important">
 
@@ -49,7 +49,7 @@ This is a quick overview of an Arcus lab. What it covers:
 - Overview of tools in your lab
 - How to set up your project
 
-What the quickstart guide does NOT cover:
+What the quickstart guide does **NOT** cover:
 
 - How to write SQL queries to access your data
 - How to analyze your data in R or python
@@ -57,15 +57,15 @@ What the quickstart guide does NOT cover:
 - How to use version control on your lab files
 - Explanations of **why** you would want to do any of the above rather than using tools like Excel, SAS, or Stata
 
-These topics (and more!) are part of the more extended overview (especially "[New to data science?](#new-to-data-science)"), which will be especially useful to researchers coming to Arcus without previous experience in data science.  
+These topics (and more!) are part of the more extended overview (especially "[New to data science?](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_data_science.md)"), which will be especially useful to researchers coming to Arcus without previous experience in data science.  
 
 ## Training lab vs. computational lab
 
 There are two kinds of labs available from Arcus, and they serve very different purposes.
 
-The first is computational labs, also called scientific labs. These are secure computational environments built for a specific team to conduct research. These are custom-built and there is a detailed approval process for use. For a more detailed explanation, see [the Arcus Computational Labs job aid](https://arcus-education-internal.s3.amazonaws.com/job-aids/arcus-lab-job-aid.pdf). Computational labs are also the focus of the rest of this guide.
+The first is computational labs, also called scientific labs. These are secure computational environments built for a specific team to conduct research. These are custom-built and there is a detailed approval process for use. For a more detailed explanation, see [the Arcus Computational Labs job aid](https://assets.arcus.chop.edu/arcus_education_assets/job_aids/arcus_lab_job_aid.pdf). Computational labs are also the focus of the rest of this guide.
 
-The second type of lab is a training lab. These are just like computational labs except they are **not** intended for conducting research, and therefore have both limited resources and a very fast approval process. Training labs do provide access to real patient data, but only in **deidentified** form and **not the whole database of patients**. The goal of training labs is to create a space where researchers can do quick proof-of-concept checks before starting a full research program, and to give potential Arcus users a chance to try the system out. For a more detailed explanation, see the [Arcus training labs job aid](https://assets.arcus.chop.edu/education/job-aids/arcus-training-lab.pdf).
+The second type of lab is a training lab. These are just like computational labs except they are **not** intended for conducting research, and therefore have both limited resources and a very fast approval process. Training labs do provide access to real patient data, but only in **deidentified** form and **not the whole database of patients**. The goal of training labs is to create a space where researchers can do quick proof-of-concept checks before starting a full research program, and to give potential Arcus users a chance to try the system out. For a more detailed explanation, see the [Arcus training labs job aid](https://assets.arcus.chop.edu/arcus_education_assets/job_aids/arcus_training_lab.pdf).
 
 
 ## What to expect: Timeline for starting a new computational lab
@@ -94,8 +94,10 @@ The project assessment can vary greatly in length, with particularly well-define
 
 Before your lab can be approved, everyone who will have access to your lab will need to have verification of their [CITI training](https://about.citiprogram.org/) on file (this is a requirement for all Arcus users and will be the case even if you'll only be accessing deidentified data). They will also need to agree to the Arcus Terms of Use.
 
+![Arcus home screen showing green checkmarks for CITI training and Arcus Terms of Use](media/login.png)<!-- style = "max-width:400px; float:left; margin-right: 2rem; margin-bottom: 2rem;"-->
+
 To check that they meet these requirements, everyone who will need access to your lab should go to [https://arcus.chop.edu](https://arcus.chop.edu) (only accessible behind CHOP's firewall) and log in with their CHOP credentials using the button in the top right corner of the screen. If your CITI training is on file and you've agreed to the Terms of Use, then you should see two green checkmarks under "Your Account".  
-![Arcus home screen showing green checkmarks for CITI training and Arcus Terms of Use](media/Arcus_login.png)
+
 
 Note that for work in Arcus labs, human subjects protection training is required, which in CHOP's CITI account resolves to the  courses titled "Social-Behavioral-Educational Researchers" and "Biomedical Researchers".  Either course fulfills the human research protections training required to participate fully in Arcus labs.  For more information about signing up with CITI, please see [instructions on the CHOP Research Institute](https://www.research.chop.edu/sites/default/files/web/sites/default/files/pdfs/CITI_Basic_Course_Instructions.pdf).
 
@@ -167,9 +169,9 @@ Your Arcus lab is a secure computational environment that exists in your browser
 
 ### What's in your lab
 
-When you go to your lab's URL, you will be prompted to log in with your CHOP credentials. Then you will see the landing page for your lab.
+![An Arcus lab landing page](media/lab_landing_page.png)<!-- style = "max-width:400px; float:left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
-![An Arcus lab landing page](media/lab_landing_page.png)
+When you go to your lab's URL, you will be prompted to log in with your CHOP credentials. Then you will see the landing page for your lab.
 
 #### Project Members
 
@@ -179,13 +181,13 @@ If you notice someone missing from that list who should have access, or if you s
 
 #### Lab status
 
-When your lab is running, you'll see a clock counting down until it will shut down. Labs cost a fair amount of computational power when they're running, so they are set to automatically pause after a period of time to save resources. If you need to keep your lab active for longer than that, you can always extend the time.
+![An Arcus lab currently running, showing clock](media/lab_clock.png)<!-- style = "max-width:400px; float:left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
-![An Arcus lab currently running, showing clock](media/lab_clock.png)
+When your lab is running, you'll see a clock counting down until it will shut down. Labs cost a fair amount of computational power when they're running, so they are set to automatically pause after a period of time to save resources. If you need to keep your lab active for longer than that, you can always extend the time.
 
 If you finish using your lab before the clock runs out, please pause your lab using the button in the top right corner of your screen.
 
-![Pause lab button at the top right corner of Arcus Lab landing page](media/pause.png)
+![Pause lab button at the top right corner of Arcus Lab landing page](media/pause.png)<!-- style = "max-width:400px; float:left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 #### The lab environment
 
@@ -199,9 +201,9 @@ You won't see any data files in your lab when you log in; instead, you will be a
 
 This is a very important section for new Arcus users.
 
-Beneath the lab environment links, you will see a list of training videos available. These step through everything you need to get started in your lab. If you are new to Arcus, you will likely find most of your questions answered in these training videos.
+![Arcus Education training videos](media/training_videos.png)<!-- style = "max-width:400px; float:left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
-![Arcus Education training videos](media/training_videos.png)
+Beneath the lab environment links, you will see a list of training videos available. These step through everything you need to get started in your lab. If you are new to Arcus, you will likely find most of your questions answered in these training videos.
 
 Topics currently covered in the training videos include:
 
@@ -212,7 +214,6 @@ Topics currently covered in the training videos include:
 - Ingesting and analyzing data in Jupyter
 - Ingesting and analyzing data in RStudio
 - Working with files using a file browser
-
 
 ### Knowledge check 2
 
@@ -485,64 +486,7 @@ An important aspect of research data management is the history of your files.  G
 
 For R users, check out this excellent resource: [Happy Git with R](https://happygitwithr.com/). It is a full and detailed set of instructions for how to get started using git if you're already using R and RStudio.
 
-## New to data science?
 
-<div class = "important">
-
-We're still working out what might be most useful here for people who are new to working with data.  Let us know what you think of these materials and what else you'd like to see!
-
-</div>
-
-First, some various and sundry things that might interest you:
-
-* Learning data science may be different than what you're used to.  Check out our [Learning How to Learn Data Science](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/learning_to_learn/learning_to_learn.md) short course.
-* If you're new to working with data, Arcus Education provides a [quickstart guide for data science](https://education.arcus.chop.edu/guides/data-sci-101/).
-* How open is your science? [Take the quiz.](https://plos.org/how-open-is-your-science/)
-* What is p-hacking and why does it matter? Check out this [p-hacker app with fake data](https://shinyapps.org/apps/p-hacker/) and another [p-hacker app using real data](https://projects.fivethirtyeight.com/p-hacking/) to see a demonstration.
-
-### Pivoting to data science
-
-Pivoting to a data science methodology, one that prioritizes writing code and using version control, can be challenging!  We invite you to consider an overview of why this approach is helpful in a training module called [Reproducibility](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/reproducibility/reproducibility.md).  This can help give you additional motivation when you're struggling with common challenges like:
-
-- Typing computer commands when you're used to point and click
-- Programming when you're used to spreadsheet data analysis
-- Version control and text files when you're used to MS Office
-- Learning a lot of new things at once and aren't certain how to prioritize and schedule learning tasks
-- New rewards and new frustrations
-
-Literate statistical programming resources you might find useful include:
-
-* [Literate Statistical Programming](https://education.arcus.chop.edu/literate-statistical-programming/)
-* A [video tutorial on R-Markdown](https://education.arcus.chop.edu/materials/r-markdown/) and our
-* [R-Markdown 101 guide](https://education.arcus.chop.edu/rmd-101/).
-* [Code Readability](https://education.arcus.chop.edu/readable-code/)
-
-### Problems in the data
-
-If you aren't used to working with raw data that hasn't been pre-groomed, you might feel overwhelmed.  Here's a few things to consider that can help!
-
-- Clinical data at CHOP: What is where? [https://education.arcus.chop.edu/clinical-data-at-chop/](https://education.arcus.chop.edu/clinical-data-at-chop/)
-- Data dictionaries and variable names: make sure you watch the SQL training videos in your lab, where we go over the use of `dd_field` and `dd_table`, to help you work with data dictionaries.
-- Errors, outliers, and typos do exist, because people make mistakes in charting, and the medical record system isn't foolproof.  What will you do with unexpected or unlikely data?
-- Repeated versions of a variable [https://education.arcus.chop.edu/date-pairing-in-r/](https://education.arcus.chop.edu/date-pairing-in-r/)
-- Missing values: None, NULL, NaN, etc. may also be a challenge.  Consider [https://education.arcus.chop.edu/do-patterns-in-missing-data-matter/](https://education.arcus.chop.edu/do-patterns-in-missing-data-matter/).
-
-
-### Framing your questions so the computer will understand
-
-Sometimes, facing an empty screen without any code yet written can feel like an unwieldy problem without any hand holds.  How do you even get started?  We encourage you to think about:
-
-- Breaking ideas down into steps (for example, use pseudocode, a fancy word for "steps written out in fake code" to plan your data selection and data analysis)
-- Finding where to start (what fields already exist in the data vs. what will you need to refine/calculate/reformat)
-- Learning to work with your lab directory structure.  A resource that might help is our short [Directories and File Paths](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/directories_and_file_paths/directories_and_file_paths.md) course or the article [https://education.arcus.chop.edu/file-paths/](https://education.arcus.chop.edu/file-paths/)
-- Conventions for naming files.  You want to be on the same page as the rest of the team and watch out for things to avoid (like spaces in file names, which can be annoying in some environments).
-- Translating ideas into questions, and questions into tests: what is your algorithm to get from data to publication?
-
-### Getting help and troubleshooting
-
-How much troubleshooting is normal?  It's tricky.  When you're first getting started, some of your questions and challenges are the kinds of things that a more experienced user could sort out in a moment or two.  That's why it makes sense to reach out before you get too frustrated and exhausted and ask for help in your very early steps. But as your research advances, you'll be doing novel things that few others do in quite the same way, so you can expect to do much more of the heavy lifting yourself.  It could be that no one has yet answered the question of "how do I do this thing", so that asking for and getting help will require a lot of work on your part.
-
-There's a great [How to Troubleshoot](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/how_to_troubleshoot/how_to_troubleshoot.md) course that might be helpful, and don't forget about the [Arcus Forum](https://forum.arcus.chop.edu/).  For questions in R, Python, and SQL, consider checking out the [educational support available through the Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/portal/6/group/61).
 
 
 ## An important topic: the reproducible example
@@ -635,83 +579,3 @@ A few things to keep in mind:
 - Summarizing the data (especially data counts and range)
 - Comparing the data (for example, using R's `xtabs`)
 - Visualizing the data / plotting
-
-## New to version control and git?
-
-Git is installed in the command line of your lab and there is also a Git client within RStudio.
-
-Here are some resources written by Arcus staff:
-
-Training modules:
-
-* [Intro to Version Control](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/git_intro/git_intro.md)
-* [Setting Up Git in Mac and Linux](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/setting_up_git_mac_and_linux/setting_up_git_mac_and_linux.md#1)
-* [Setting Up Git in Windows](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/git_setup_windows/git_setup_windows.md#1)
-* [Creating a Git Repository](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/git_creation_and_tracking/git_creation_and_tracking.md)
-* [Exploring the History of a Git Repository](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/git_history_of_project/git_history_of_project.md)
-
-Articles:
-
-[https://education.arcus.chop.edu/version-control-curriculum/](https://education.arcus.chop.edu/version-control-curriculum/)
-[https://education.arcus.chop.edu/git-101/](https://education.arcus.chop.edu/git-101/)
-[https://education.arcus.chop.edu/git-102/](https://education.arcus.chop.edu/git-102/)
-
-For R users, check out this excellent resource: [Happy Git with R](https://happygitwithr.com/). It is a full and detailed set of instructions for how to get started using git if you're already using R and RStudio.  This will be very helpful in your scientific lab!
-
-## New to SQL?
-
-For an example of how to use SQL in your Arcus lab, start with the [training videos](#training-videos) on your lab's landing page.
-
-Here are some resources written by Arcus staff:
-
-Training modules:
-
-* [Demystifying SQL](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/demystifying_sql/demystifying_sql.md)
-* [SQL Basics](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/sql_basics/sql_basics.md)
-* [SQL Intermediate](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/sql_intermediate/sql_intermediate.md)
-
-Compendia of Resources:
-
-* Our ["SQL 101" Guide](https://education.arcus.chop.edu/guides/sql-101/) includes links to articles, webinars, and other materials on a variety of topics.
-
-
-## New to R?
-
-For an example of how to use R in your Arcus lab, start with the [training videos](#training-videos) on your lab's landing page.
-
-Here are some resources written by Arcus staff:
-
-Training modules:
-
-* [R Basics: Introduction](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_basics_introduction/r_basics_introduction.md)
-* [R Basics: Transform Data](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_basics_transform_data/r_basics_transform_data.md)
-* [R Basics: Visualize Data](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_basics_visualize_data/r_basics_visualize_data.md)
-* [Reshaping Data in R: Long and Wide Data](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_reshape_long_wide/r_reshape_long_wide.md)
-* [Missing Values in R](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_missing_values/r_missing_values.md)
-* [Data Visualization in ggplot2](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/data_visualization_in_ggplot2/data_visualization_ggplot2.md)
-
-Compendia of Resources:
-
-* Our ["R 101" Guide](https://education.arcus.chop.edu/guides/r-101/) includes links to articles, webinars, and other materials on a variety of topics.
-
-Other Resources:
-
-* [https://www.edx.org/course/data-science-r-basics](https://www.edx.org/course/data-science-r-basics
-* [Importing your data into R](https://bookdown.org/pdr_higgins/rmrwr/importing-your-data-into-r.html)
-
-## New to Python?
-
-For an example of how to use Python in your Arcus lab, start with the [training videos](#training-videos) on your lab's landing page.
-
-Here are some resources written by Arcus staff:
-
-Training modules:
-
-* [Demystifying Python](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/demystifying_python/demystifying_python.md)
-* [Python Basics: Writing Python Code](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/python_basics_writing_python_code/python_basics_writing_python_code.md)
-* [Transform Data with pandas](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/pandas_transform/pandas_transform.md)
-* [Data Visualization in seaborn](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/data_visualization_in_seaborn/data_visualization_in_seaborn.md)
-
-Compendia of Resources:
-
-* Our ["Python 101" Guide](https://education.arcus.chop.edu/guides/python-101/) includes links to articles, webinars, and other materials on a variety of topics.
