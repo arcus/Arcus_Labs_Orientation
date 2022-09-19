@@ -8,10 +8,9 @@ Title: New to R?
 
 # New to R?
 
-## What is R?  RStudio?
+**What is R?  RStudio?**
 
-![](media/rstudio.png)<!--
-style = "max-width:300px; float:left;"-->
+![](media/rstudio.png)<!-- style = "max-width:400px; float:left; margin-right: 2em;"-->
 
 R is a free, open source language that is specifically focused on statistical data analysis.  It is increasing in market share among researchers ([second only to SPSS and outpacing SAS, Stata, JMP, Matlab, and other solutions you may have used](https://r4stats.com/articles/popularity/)) and has multiple advantages over "point and click" statistical data analysis.
 
@@ -19,19 +18,18 @@ RStudio is a free tool made by Posit (formerly RStudio) that makes using R much 
 
 ## CHOP Has an R User Group!
 
-![](media/chopr_hex.png)<!--
-style = "max-width:200px; float:left;"-->
+![](media/chopr_hex.png)<!-- style = "max-width:200px; float:left; margin-right: 2em;"-->
 
 CHOP has a vibrant R User Group made up of employees from all over the institution who use R for many different use cases.  This is a great place to start connecting with other people, asking for help, and seeking advice.
 
-To join, please visit https://bit.ly/chopRusers!  This will add you to the Outlook distribution list for emails as well as give you instructions on how to add yourself to our Slack workspace, where people ask coding questions (and answer them!).
+To join, please visit [https://bit.ly/chopRusers](https://bit.ly/chopRusers)!  This will add you to the Outlook distribution list for emails as well as give you instructions on how to add yourself to our Slack workspace, where people ask coding questions (and answer them!).
 
 Joining the R User Group means you'll be informed about periodic intro to R workshops, R User Group talks, and other resources you'll find useful.
 
 ## Arcus-Specific R Training
 
 ![](media/training_videos.png)<!--
-style = "max-width:300px; float:right;"-->
+style = "max-width:400px; float:right; margin-left: 2em;"-->
 
 For an example of how to use R in your Arcus lab, start with the training videos on your lab's landing page.
 

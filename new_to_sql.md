@@ -8,10 +8,9 @@ title: New to SQL
 
 # New to SQL?
 
-## What is SQL?
+**What is SQL? SQLPad?**
 
-![](media/sqlpad.png)<!--
-style = "max-width:300px; float:left;"-->
+![](media/sqlpad.png)<!-- style = "max-width:500px; float:left; margin-right:2rem;"-->
 
 SQL, or Structured Query Language, is a way to interact with data that is stored in a special kind of storage called a relational database.  This kind of data is stored in tables which have rows and columns.
 
@@ -19,8 +18,7 @@ SQLPad is a software package that allows you to send SQL queries to a connected 
 
 ## Arcus-Specific SQL Training
 
-![](media/training_videos.png)<!--
-style = "max-width:300px; float:right;"-->
+![](media/training_videos.png)<!-- style = "max-width:500px; float:right; margin-right: 2em;"-->
 
 For an example of how to use SQL data in your Arcus lab, start with the training videos on your lab's landing page.
 
@@ -53,8 +51,10 @@ Training modules:
 * [SQL Basics](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/sql_basics/sql_basics.md)
 * [SQL Intermediate](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/sql_intermediate/sql_intermediate.md)
 
+-----
+
 Additionally, beyond the NIH grant, we have other articles and miscellany we suggest, whether those are resources we've created in Arcus, or materials from outside CHOP.
 
-Compendia of Resources:
+**Compendia of Resources**:
 
 * Our ["SQL 101" Guide](https://education.arcus.chop.edu/guides/sql-101/) includes links to articles, webinars, and other materials on a variety of topics.
