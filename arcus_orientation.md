@@ -4,7 +4,7 @@ script: https://kit.fontawesome.com/83b2343bd4.js
 title: Arcus Labs Orientation
 -->
 
-## How to Use This Guide
+## Arcus Lab Orientation
 
 <div class = "important">
 
@@ -14,7 +14,7 @@ Hi!  This document is still under construction and testing.  We apologize in adv
 
 **If you're here because you've just started with a new Arcus Lab:**
 
-![](media/lab_landing_page.png)<!-- style = "max-width:400px; float:left; margin-right: 2rem; margin-bottom: 2rem;"-->
+![](media/lab_landing_page.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px;"-->
 
 Congratulations! This goal of this guide is to get you up and running with your new lab, regardless of your research background and expertise.
 
@@ -60,7 +60,7 @@ What the quickstart guide does **NOT** cover:
 - How to use version control on your lab files (see [New to version control](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_version_control.md) for more information)
 - Explanations of **why** you would want to do any of the above rather than using tools like Excel, SAS, or Stata (see [New to data science?](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_data_science.md) for more information)
 
-## Training lab vs. computational lab
+## Training Lab vs. Computational Lab
 
 There are two kinds of labs available from Arcus, and they serve very different purposes.
 
@@ -69,7 +69,7 @@ The first is computational labs, also called scientific labs. These are secure c
 The second type of lab is a training lab. These are just like computational labs except they are **not** intended for conducting research, and therefore have both limited resources and a very fast approval process. Training labs do provide access to real patient data, but only in **deidentified** form and **not the whole database of patients**. The goal of training labs is to create a space where researchers can do quick proof-of-concept checks before starting a full research program, and to give potential Arcus users a chance to try the system out. For a more detailed explanation, see the [Arcus training labs job aid](https://assets.arcus.chop.edu/arcus_education_assets/job_aids/arcus_training_lab.pdf).
 
 
-## What to expect: Timeline for starting a new computational lab
+## What to Expect: Timeline for Starting a New Computational Lab
 
 This section covers the typical stages from initial request to deployment of a new Arcus computational lab. If you aren't interested in this process, or if you already have a lab ready, you may wish to skip directly to this section's [knowledge check](#knowledge-check-1).
 
@@ -95,14 +95,14 @@ The project assessment can vary greatly in length, with particularly well-define
 
 Before your lab can be approved, everyone who will have access to your lab will need to have verification of their [CITI training](https://about.citiprogram.org/) on file (this is a requirement for all Arcus users and will be the case even if you'll only be accessing deidentified data). They will also need to agree to the Arcus Terms of Use.
 
-![`Arcus home screen showing green checkmarks for CITI training and Arcus Terms of Use`](media/login.png) <!-- style = "max-width:400px; float:left; margin-right: 2rem; margin-bottom: 2rem;"-->
+![Arcus home screen showing green checkmarks for CITI training and Arcus Terms of Use](media/login.png)<!-- style = "max-width:400px; float:left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 To check that they meet these requirements, everyone who will need access to your lab should go to [https://arcus.chop.edu](https://arcus.chop.edu) (only accessible behind CHOP's firewall) and log in with their CHOP credentials using the button in the top right corner of the screen. If your CITI training is on file and you've agreed to the Terms of Use, then you should see two green checkmarks under "Your Account".  
 
 
 Note that for work in Arcus labs, human subjects protection training is required, which in CHOP's CITI account resolves to the  courses titled "Social-Behavioral-Educational Researchers" and "Biomedical Researchers".  Either course fulfills the human research protections training required to participate fully in Arcus labs.  For more information about signing up with CITI, please see [instructions on the CHOP Research Institute](https://www.research.chop.edu/sites/default/files/web/sites/default/files/pdfs/ORC_CITI.pdf).
 
-### When your lab is approved
+### When Your Lab is Approved
 
 When the project assessment is complete and your lab is approved, then the team of Arcus developers will build a computational lab environment for you, based on the needs determined during your project assessment.
 
@@ -110,7 +110,7 @@ When the lab is built, the Arcus data team will provision your lab with the requ
 
 You'll receive an email letting you know when your lab is available, and providing the URL for you to access your lab. Your Project Owner will meet with you and your team to introduce you to the lab environment.
 
-### Knowledge check 1
+### Knowledge Check 1
 
 True or False: In most cases, your new Arcus lab will be made available to you immediately after your request.
 
@@ -164,13 +164,13 @@ During your project assessment, you will meet with an archivist from the Arcus t
 
 ***
 
-## Using your lab
+## Using Your Lab
 
 Your Arcus lab is a secure computational environment that exists in your browser. You don't need to download or install anything, you (and your team members) just go to your lab's URL and you'll have everything you need there to access and analyze your data. Note that you always need to be behind CHOP's firewall to access your lab.
 
-### What's in your lab
+### What's In Your Lab
 
-![`An Arcus lab landing page`](media/lab_landing_page.png)<!-- style = "max-width:400px; float:left; margin-right: 2rem; margin-bottom: 2rem;"-->
+![An Arcus lab landing page](media/lab_landing_page.png)<!-- style = "max-width:400px; float:left;"-->
 
 When you go to your lab's URL, you will be prompted to log in with your CHOP credentials. Then you will see the landing page for your lab.
 
@@ -180,7 +180,7 @@ In the top left corner, you'll see a list of approved users for your lab. This w
 
 If you notice someone missing from that list who should have access, or if you see someone you don't think should have access, alert your Project Owner.
 
-#### Lab status
+#### Lab Status
 
 ![`An Arcus lab currently running, showing clock`](media/lab_clock.png)<!-- style = "max-width:400px; float:left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
@@ -190,7 +190,7 @@ If you finish using your lab before the clock runs out, please pause your lab us
 
 ![`Pause lab button at the top right corner of Arcus Lab landing page`](media/pause.png)<!-- style = "max-width:400px; float:left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
-#### The lab environment
+#### The Lab Environment
 
 The top right part of the screen includes links to the tools in your lab environment itself. When you first access your lab, the tools will be greyed out with a note letting you know that your lab is paused. If you click on the tool section, it will load your lab. Note that it may take a moment for your lab to load.
 
@@ -198,7 +198,7 @@ Once your lab is running, you can open any of the tools by clicking on them.
 
 You won't see any data files in your lab when you log in; instead, you will be able to access the data via SQL queries and bring it into an analysis environment (e.g. using R or python). For initial exploration of your data, SQLPad is probably the best place to start. You can see examples of how to access your data via SQLPad, RStudio, and python Jupyter notebooks in the [training videos](#training-videos).
 
-#### Training videos
+#### Training Videos
 
 This is a very important section for new Arcus users.
 
@@ -218,7 +218,7 @@ Topics currently covered in the training videos include:
 - Ingesting and analyzing data in RStudio
 - Working with files using a file browser
 
-### Knowledge check 2
+### Knowledge Check 2
 
 Which of the following best describes an Arcus lab?
 
@@ -289,7 +289,7 @@ The [training videos](#training-videos) walk through everything you need to get 
 
 ***
 
-## Requesting data for your lab
+## Requesting Data For Your Lab
 
 An initial data needs assessment takes place during the project assessment, which will determine the data that is provisioned to your lab to start. However, many researchers find that they need to modify their data request at some point during the life of their project. For both the initial data needs assessment and any further data requests, there are a number of useful tools in place.
 
@@ -301,7 +301,7 @@ You are not limited to what's in the ADR! Many researchers bring in other data s
 
 When you are ready to place a request for additional data, new services, or want to learn more about scientific labs or report a problem, you may do so through the [Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/portal/6/group/65).
 
-### Knowledge check 3
+### Knowledge Check 3
 
 True or False: Each Arcus computational lab provides access to all of the data in the Arcus Data Repository (ADR)
 
@@ -347,7 +347,7 @@ If you're used to working in Epic, this means there will be fields you're used t
 
 ***
 
-## Ongoing communication
+## Ongoing Communication
 
 Once you have an approved lab request, your primary point of contact is your assigned **Project Owner**. This person will be an Arcus staff member, and their role is to act as a concierge ensuring that your project is set up with what you need to help make your scientific project experience a success.
 
@@ -365,7 +365,7 @@ You need to be behind CHOP's firewall to access the [Arcus Help Center](https://
 **Arcus Forum** ([https://forum.arcus.chop.edu/](https://forum.arcus.chop.edu/)) is a question-and-answer site (it uses the same format as [StackOverflow](https://stackoverflow.com/), for those familiar with that). Arcus staff also use the [Arcus Forum](https://forum.arcus.chop.edu/) to post announcements about technical updates and fixes to labs, as well as how-to guides for frequently asked questions. You need to be behind the CHOP firewall to access the [Arcus Forum](https://forum.arcus.chop.edu/).
 
 
-### Knowledge check 4
+### Knowledge Check 4
 
 Which of the following best describes the role of the Project Owner?
 
@@ -435,7 +435,7 @@ The [Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/port
 
 ***
 
-## Overview of tools
+## Overview of Tools
 
 In the Available Tools section of your lab landing page, you'll see a list of the tools in your lab. Each has a small question mark icon next to it; if you click the question mark icon, it will show more details about that tool, including links to documentation to help you get started.
 
@@ -463,7 +463,7 @@ To get learn more, read [this Forum post about Arcus's Project Template](https:/
 
 In addition to the project template, there are a number of other Research Data Management best practices you can implement to save yourself time.
 
-### File naming
+### File Naming
 
 The Arcus Library Science team has compiled some excellent resources to help you decide on a file naming and organization system that will suit your needs.
 
@@ -471,7 +471,7 @@ The Arcus Library Science team has compiled some excellent resources to help you
 - [File naming conventions and activity sheet](https://storage.googleapis.com/arcus-edu-libsci/Arcus%20RDM%20Resources/arcus_rdm_filenaming_activity.pdf)
 - [Recommended practices for README files](https://storage.googleapis.com/arcus-edu-libsci/Arcus%20RDM%20Resources/Arcus%20RDM%20Data%20Dictionaries%20Best%20Practices.pdf)
 
-### Data documentation
+### Data Documentation
 
 The Arcus Library Science team has put together some great templates and best practices for good data documentation:
 
@@ -481,7 +481,7 @@ The Arcus Library Science team has put together some great templates and best pr
 
 For more background on this topic, see this [post that answers the question "What is metadata?"](https://education.arcus.chop.edu/what-is-metadata/).
 
-### Version control
+### Version Control
 
 An important aspect of research data management is the history of your files.  Git is already installed in your lab, and you can also use the Git client native to RStudio.
 
@@ -492,7 +492,7 @@ To go more in depth, consider:
 
 For R users, check out this excellent resource: [Happy Git with R](https://happygitwithr.com/). It is a full and detailed set of instructions for how to get started using git if you're already using R and RStudio.
 
-## An important topic: the reproducible example
+## Troubleshooting: the Reproducible Example
 
 When you encounter an issue with your code and want to ask for help, you'll find the concept of the **reproducible example** to be very useful.
 
@@ -559,7 +559,7 @@ Also, remember that you're asking someone else to take time to think about your 
 
 And sometimes the tinkering that goes into creating a reproducible example will actually solve your problem for you! In trying to create a minimal, reproducible version, you may figure out what the problem was all on your own.  
 
-## Troubleshooting in Arcus Labs
+### Troubleshooting in Arcus Labs
 
 There are many advantages to doing your work in an Arcus lab, including increased security, storage, and computing power, but another advantage is that when you ask for help, you can get support from someone who can work in the **exact same environment** you're working in and access the **exact same data**. This removes many of the barriers to being able to replicate issues.
 
