@@ -10,11 +10,29 @@ Title: New to R?
 
 **What is R?  RStudio?**
 
-![](media/rstudio.png)<!-- style = "max-width:400px; float:left; margin-right: 2em;"-->
+![](media/rstudio.png)<!-- style = "max-width:400px; float:left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
-R is a free, open source language that is specifically focused on statistical data analysis.  It is increasing in market share among researchers ([second only to SPSS and outpacing SAS, Stata, JMP, Matlab, and other solutions you may have used](https://r4stats.com/articles/popularity/)) and has multiple advantages over "point and click" statistical data analysis.
+R is a free, open source language that is specifically focused on statistical data analysis.  It is [increasing in market share among researchers](https://r4stats.com/articles/popularity/) (second only to SPSS and outpacing SAS, Stata, JMP, Matlab, and other solutions you may have used) and has multiple advantages over "point and click" statistical data analysis.
 
-RStudio is a free tool made by Posit (formerly RStudio) that makes using R much simpler than using R alone.  RStudio is provided as a tool in Arcus labs and is nearly identical to the RStudio you might be accustomed to using in CHOP's HPC, on CHOP's RStudio Connect server, or on your computer.  It allows you analyze data stored in your lab for your research project.
+RStudio is a free tool made by Posit (formerly RStudio) that makes using R much simpler than using R alone.  RStudio is provided as a tool in Arcus labs and is nearly identical to the RStudio you might be accustomed to using in CHOP's HPC, on CHOP's RStudio Connect server, or on your computer.  It allows you to analyze data stored in your lab for your research project.
+
+In R, you write scripts.  Scripts are computer code that record a series of operations you want to perform on your data.  Operations could include things like:
+
+* Ingesting data (bringing it into R) from an outside source like a .csv or a database
+* Cleaning data (say, removing rows in which not every likert scale question was answered)
+* Performing statistical tests (like a T-test on subjects and controls)
+* Visualizing data (for example, creating an ROC)
+* And much more!
+
+**Why is R Popular?**
+
+By using a script, you simply execute the code that could have multiple steps, such as combining data, de-identifying and cleaning data, performing analysis and statistical tests, and creating visualizations. If more data get added, you simply run the script again. You already did the hard work of writing the script, so now all you have to do is essentially hit "run".
+
+If you realize that your workflow needs a bit of tweaking toward the beginning, you can update that part of your script and leave the rest untouched. Again, you just run the script with your changes, and you've saved yourself a lot of time compared to when changing something far upstream of your analysis meant hours of manual cleaning of data or re-creation of new files.
+
+**What Makes R Difficult?**
+
+Unless you recently left graduate school, you probably learned a different paradigm of data analysis, one that depended on point-and-click software.  Or perhaps you don't work directly with data but hire a statistician to do that work for you.  Learning to "DIY" is rewarding but can definitely feel frustrating, especially when you already have a system that works.  It is difficult to transition from using a system you're comfortable with to one that you're less adept at.  We do think that the gains of using R, in terms of research reproducibility, greater publication options, and more fine-grained control over things like visualizations, outweigh the annoyances of having to learn to write code.
 
 ## CHOP Has an R User Group!
 
@@ -24,7 +42,9 @@ CHOP has a vibrant R User Group made up of employees from all over the instituti
 
 To join, please visit [https://bit.ly/chopRusers](https://bit.ly/chopRusers)!  This will add you to the Outlook distribution list for emails as well as give you instructions on how to add yourself to our Slack workspace, where people ask coding questions (and answer them!).
 
-Joining the R User Group means you'll be informed about periodic intro to R workshops, R User Group talks, and other resources you'll find useful.
+Joining the R User Group means you'll be informed about periodic intro to R workshops, R User Group talks, and other resources you'll find useful.  Especially if you're the only person in your lab who uses R, it can be important to find a community of practice that can help guide you.
+
+As you gain expertise, we also invite you to participate by leading an R User Group meeting!  You don't have to be an expert for years in order to share your skills.  Even if you only know a little, you know more than some people, and you can share pitfalls to avoid and the routes to success for data analysis tasks you conducted on your type of research data.
 
 ## Arcus-Specific R Training
 
