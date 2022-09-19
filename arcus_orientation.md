@@ -559,7 +559,7 @@ Also, remember that you're asking someone else to take time to think about your 
 
 And sometimes the tinkering that goes into creating a reproducible example will actually solve your problem for you! In trying to create a minimal, reproducible version, you may figure out what the problem was all on your own.  
 
-## Advantages to Arcus Labs
+## Troubleshooting in Arcus Labs
 
 There are many advantages to doing your work in an Arcus lab, including increased security, storage, and computing power, but another advantage is that when you ask for help, you can get support from someone who can work in the **exact same environment** you're working in and access the **exact same data**. This removes many of the barriers to being able to replicate issues.
 
