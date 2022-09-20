@@ -1,6 +1,7 @@
 <!--
 link:  https://chop-dbhi-arcus-education-website-assets.s3.amazonaws.com/css/styles.css
 script: https://kit.fontawesome.com/83b2343bd4.js
+script: https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
 title: Arcus Labs Orientation
 -->
 
@@ -69,17 +70,57 @@ The second type of lab is a training lab. These are just like computational labs
 
 This section covers the typical stages from initial request to deployment of a new Arcus computational lab. If you aren't interested in this process, or if you already have a lab ready, you may wish to skip directly to this section's [knowledge check](#knowledge-check-1).
 
-**The initial request**
 
-Your first point of contact with Arcus may be informal conversations with one or more Arcus staff members to determine whether or not your project would be a good fit (emailing [arcus-support@chop.edu](mailto:arcus-support@chop.edu) is one great place to start), or you may go directly to [submitting a request for a new scientific project](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/307) (note that you need to be behind CHOP's firewall to submit a request).
+<script style="display: block" run-once="true" modify="false">
+mermaid.initialize({});
 
-**Review and assessment**
+var svg = mermaid.render(
+'approval_flowchart',
+`flowchart LR
+  A[Initial Request\\nfor Consideration] --> B{Preliminary Review\\nand Assessment};
+  B -- Advanced --> C[Project Owner Assigned];
+  B -- Declined --> D[Request Closed];
+  C --> E[Privacy Review];
+  C --> F[Data Needs Assessment];
+  C --> G[Data Contribution Assessment];
+  C --> H[CITI Training Verification];
+  E --> I{Final Approval};
+  F --> I;
+  G --> I;
+  H --> I;
+  I -- Approved --> J[Scientific Project Begins];
+  I -- Declined --> D;
+`,
+function(g) {
+    return true;
+})
+
+"HTML: " + svg
+</script>
+
+
+**Initial Request for Consideration**
+
+Your first point of contact with Arcus may be informal conversations with one or more Arcus staff members to determine whether or not your project would be a good fit.
+
+Emailing [`arcus-support@chop.edu`](mailto:arcus-support@chop.edu) is one great place to start a request, or you may go directly to [submitting a request for a new scientific project](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/307). Note that you need to be on the CHOP network to submit a request.
+
+We try to get sufficient information about your proposed project to understand your needs and constraints.  We'll want to know things like:
+
+* What data, if any, are you interested in from the clinical data in the Arcus Data Repository?
+* What data already under your stewardship, if any, will you be bringing to the project?
+* Who needs to be able to participate in this project?
+* Do you have an IRB protocol?
+* What is your research question?
+
+
+**Preliminary Review and Assessment**
 
 When you submit a request for a lab, it goes through a preliminary review and then a more formal project assessment before your lab is created and made available to you.
 
 The preliminary review is just to determine whether or not to engage in the full project assessment.
 
-If your request is greenlighted for assessment, then you will be assigned a Project Owner among the Arcus staff who will help guide you through the project assessment. The goal of the project assessment is to clarify the needs for the project to make sure that it is something Arcus will be a good fit for.
+If your request is greenlighted for assessment, then you will be assigned a **Project Owner** among the Arcus staff who will help guide you through the project assessment. The goal of the project assessment is to clarify the needs for the project to make sure that it is something Arcus will be a good fit for.
 
 A major goal of the project assessment is to identify what, specifically, the scientific team will need from Arcus in terms of data, software, training, and support. One component of the project assessment is a **data needs assessment**, to discuss the definition of the cohort to be studied and what information on those patients will be needed (e.g. diagnoses, medications, notes, procedures, demographics, flowsheets). There will also be a **data contribution assessment** to discuss possible data contributions to the [Arcus Archives](https://education.arcus.chop.edu/arcus-data-catalog/) at the end of the project; researchers using Arcus are expected to contribute their data when appropriate.
 
@@ -87,20 +128,40 @@ The project assessment will also include a **privacy review** to identify and mi
 
 The project assessment can vary greatly in length, with particularly well-defined and straightforward projects being assessed in a matter of days and more complex projects or projects that are still in early stages of development taking months. For researchers working under a deadline (e.g. for a grant application), Arcus will try to accommodate your timeline; one of the first questions your Project Owner will ask you during the project assessment is if there are any time constraints we should be aware of.
 
-### Access to Arcus
-
 Before your lab can be approved, everyone who will have access to your lab will need to have verification of their [CITI training](https://about.citiprogram.org/) on file (this is a requirement for all Arcus users and will be the case even if you'll only be accessing deidentified data). They will also need to agree to the Arcus Terms of Use.
 
 ![Arcus home screen showing green checkmarks for CITI training and Arcus Terms of Use](media/login.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 To check that they meet these requirements, everyone who will need access to your lab should go to [https://arcus.chop.edu](https://arcus.chop.edu) (only accessible behind CHOP's firewall) and log in with their CHOP credentials using the button in the top right corner of the screen. If your CITI training is on file and you've agreed to the Terms of Use, then you should see two green checkmarks under "Your Account".  
 
-
 Note that for work in Arcus labs, human subjects protection training is required, which in CHOP's CITI account resolves to the  courses titled "Social-Behavioral-Educational Researchers" and "Biomedical Researchers".  Either course fulfills the human research protections training required to participate fully in Arcus labs.  For more information about signing up with CITI, please see [instructions on the CHOP Research Institute](https://www.research.chop.edu/sites/default/files/web/sites/default/files/pdfs/ORC_CITI.pdf).
 
 ### When Your Lab is Approved
 
 When the project assessment is complete and your lab is approved, then the team of Arcus developers will build a computational lab environment for you, based on the needs determined during your project assessment.
+
+<script style="display: block" run-once="true" modify="false">
+mermaid.initialize({});
+
+var svg = mermaid.render(
+'lab_process_flowchart',
+`flowchart LR
+  J[Scientific Project Begins] --> K[Project Owner\\nCoordinates Resources];
+  K --> L[Provision Data];
+  K --> M[Provision\\nScientific Lab];
+  K --> N[Other Tasks\\nAs Needed];
+  L --> O[Project Owner\\nVerifies Resources];
+  M --> O;
+  N --> O;
+  O --> P[Project Owner\\nDelivers Lab\\nTo Requestor];
+  P --> Q[Requestor Begins\\nData Analysis Work];
+`,
+function(g) {
+    return true;
+})
+
+"HTML: " + svg
+</script>
 
 When the lab is built, the Arcus data team will provision your lab with the required data, as determined during your project assessment. For more information about the data in Arcus, see [requesting data for your lab](#requesting-data-for-your-lab).
 
