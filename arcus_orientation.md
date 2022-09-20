@@ -14,7 +14,7 @@ Hi!  This document is still under construction and testing.  We apologize in adv
 
 **If you're here because you've just started with a new Arcus Lab:**
 
-![](media/lab_landing_page.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px;"-->
+![](media/lab_landing_page.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 Congratulations! This goal of this guide is to get you up and running with your new lab, regardless of your research background and expertise.
 
@@ -95,7 +95,7 @@ The project assessment can vary greatly in length, with particularly well-define
 
 Before your lab can be approved, everyone who will have access to your lab will need to have verification of their [CITI training](https://about.citiprogram.org/) on file (this is a requirement for all Arcus users and will be the case even if you'll only be accessing deidentified data). They will also need to agree to the Arcus Terms of Use.
 
-![`Arcus home screen showing green checkmarks for CITI training and Arcus Terms of Use`](media/login.png) <!-- style = "max-width:400px; float:left; margin-right: 2rem; margin-bottom: 2rem;"-->
+![Arcus home screen showing green checkmarks for CITI training and Arcus Terms of Use](media/login.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 To check that they meet these requirements, everyone who will need access to your lab should go to [https://arcus.chop.edu](https://arcus.chop.edu) (only accessible behind CHOP's firewall) and log in with their CHOP credentials using the button in the top right corner of the screen. If your CITI training is on file and you've agreed to the Terms of Use, then you should see two green checkmarks under "Your Account".  
 
@@ -170,7 +170,7 @@ Your Arcus lab is a secure computational environment that exists in your browser
 
 ### What's In Your Lab
 
-![An Arcus lab landing page](media/lab_landing_page.png)<!-- style = "max-width:400px; float:left;"-->
+![An Arcus lab landing page](media/lab_landing_page.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 When you go to your lab's URL, you will be prompted to log in with your CHOP credentials. Then you will see the landing page for your lab.
 
@@ -182,13 +182,13 @@ If you notice someone missing from that list who should have access, or if you s
 
 #### Lab Status
 
-![`An Arcus lab currently running, showing clock`](media/lab_clock.png)<!-- style = "max-width:400px; float:left; margin-right: 2rem; margin-bottom: 2rem;"-->
+![`An Arcus lab currently running, showing clock`](media/lab_clock.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 When your lab is running, you'll see a clock counting down until it will shut down. Labs cost a fair amount of computational power when they're running, so they are set to automatically pause after a period of time to save resources. If you need to keep your lab active for longer than that, you can always extend the time.
 
 If you finish using your lab before the clock runs out, please pause your lab using the button in the top right corner of your screen.
 
-![`Pause lab button at the top right corner of Arcus Lab landing page`](media/pause.png)<!-- style = "max-width:400px; float:left; margin-right: 2rem; margin-bottom: 2rem;"-->
+![`Pause lab button at the top right corner of Arcus Lab landing page`](media/pause.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 #### The Lab Environment
 
@@ -202,7 +202,7 @@ You won't see any data files in your lab when you log in; instead, you will be a
 
 This is a very important section for new Arcus users.
 
-![Arcus Education training videos](media/training_videos.png)<!-- style = "max-width:400px; float:left; margin-right: 2rem; margin-bottom: 2rem;"-->
+![Arcus Education training videos](media/training_videos.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 Beneath the lab environment links, you will see a list of training videos available. These step through everything you need to get started in your lab. If you are new to Arcus, you will likely find most of your questions answered in these training videos.
 
@@ -439,7 +439,7 @@ The [Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/port
 
 In the Available Tools section of your lab landing page, you'll see a list of the tools in your lab. Each has a small question mark icon next to it; if you click the question mark icon, it will show more details about that tool, including links to documentation to help you get started.
 
-![Available Tools section of an Arcus Lab landing page](media/tools.png "Available Tools section of an Arcus Lab landing page, where the question mark icon next to SQLPad has been clicked to show details")
+![Available Tools section of an Arcus Lab landing page](media/tools.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 Most Arcus users will use SQLPad and either RStudio or Jupyter, but other tools may not be needed. If you're not familiar with any of these tools, we recommend you start with SQLPad.
 
