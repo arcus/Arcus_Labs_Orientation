@@ -10,17 +10,25 @@ title: Arcus Labs Orientation
 
 Hi!  This document is still under construction and testing.  We apologize in advance for any broken links or unclear language.  We invite your feedback.  Please add a [support ticket](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/249) or [email Arcus Education](mailto:paytonk@chop.edu) to let us know what we can improve or suggest additional topics.
 
+Please note that **many of the links here will only work if you're on the CHOP network**.
+
 </div>
+
+![](media/lab_landing_page.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 600px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 **If you're here because you've just started with a new Arcus Lab:**
 
-![](media/lab_landing_page.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
-
 Congratulations! This goal of this guide is to get you up and running with your new lab, regardless of your research background and expertise.
 
-Everyone should start with the [**Quickstart** section](#quickstart), since that will bring you up to speed fast on what to expect when you first open your lab and how to get started.
+You should begin by working in this document, which constitutes an Arcus Lab Overview.  The aim of this document is to bring you up to speed fast on:
 
-If you're already comfortable with data science tools like SQL, R, python, and version control, then the [Quickstart section](#quickstart) may be enough to get you going. Most researchers will benefit from working through some or all of the other linked documents as well, though:
+* What the Arcus Lab includes
+* What to expect when working with Arcus
+* Links to how to perform the data science DIY you'll need to do
+
+<div style = "clear: both"></div>
+
+If you're already comfortable with data science tools like SQL, R, python, and version control, then this document may be enough to get you going. Most researchers will benefit from working through some or all of the other linked documents as well, though:
 
 - **[New to data science](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_data_science.md)** is a document that introduces helpful tools and tips for working on data science projects that will be useful to scientists coming from other types of research. Even if you have experience in data science already, you may find it worthwhile to skim the subtopics in that section so you know what's available should you want to come back to it to reference later.
 - **[New to version control](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_version_control.md)** is a document that will help you get started with git, a powerful program for helping you keep track of your research documents over time. If you don't currently use git or another form of version control, we strongly recommend you work through that section. Version control is an extremely valuable tool for reproducible research, and although there is a bit of a learning curve, it really pays off.
@@ -47,18 +55,6 @@ Welcome! Most of the information here is designed for Arcus Labs, but our linked
 * [New to R](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_r.md)
 * [New to Python](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_python.md)
 * [New to version control](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_version_control.md)
-
-## Quickstart
-
-This is a quick overview of an Arcus lab. It covers content such as how to obtain a lab, understand what tools are available, and how to communicate with Arcus about your lab.
-
-What the quickstart guide does **NOT** cover:
-
-- How to write SQL queries to access your data (see [New to SQL](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_sql.md) for more information)
-- How to analyze your data in R or Python (see [New to R](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_r.md) and [New to Python](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_python.md) for more information)
-- How to use Jupyter notebooks or R Markdown notebooks to document your analysis code (see [New to R](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_r.md) and [New to Python](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_python.md) for more information)
-- How to use version control on your lab files (see [New to version control](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_version_control.md) for more information)
-- Explanations of **why** you would want to do any of the above rather than using tools like Excel, SAS, or Stata (see [New to data science?](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_data_science.md) for more information)
 
 ## Training Lab vs. Computational Lab
 

@@ -10,7 +10,7 @@ Title: New to R?
 
 **What is R?  RStudio?**
 
-![](media/rstudio.png)<!-- style = "max-width:400px; float:left; margin-right: 2rem; margin-bottom: 2rem;"-->
+![](media/rstudio.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 600px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 R is a free, open source language that is specifically focused on statistical data analysis.  It is [increasing in market share among researchers](https://r4stats.com/articles/popularity/) (second only to SPSS and outpacing SAS, Stata, JMP, Matlab, and other solutions you may have used) and has multiple advantages over "point and click" statistical data analysis.
 
@@ -36,7 +36,7 @@ Unless you recently left graduate school, you probably learned a different parad
 
 ## CHOP Has an R User Group!
 
-![](media/chopr_hex.png)<!-- style = "max-width:200px; float:left; margin-right: 2em;"-->
+![](media/chopr_hex.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 200px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 CHOP has a vibrant R User Group made up of employees from all over the institution who use R for many different use cases.  This is a great place to start connecting with other people, asking for help, and seeking advice.
 
@@ -48,8 +48,7 @@ As you gain expertise, we also invite you to participate by leading an R User Gr
 
 ## Arcus-Specific R Training
 
-![](media/training_videos.png)<!--
-style = "max-width:400px; float:right; margin-left: 2em;"-->
+![](media/training_videos.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 600px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 For an example of how to use R in your Arcus lab, start with the training videos on your lab's landing page.
 
