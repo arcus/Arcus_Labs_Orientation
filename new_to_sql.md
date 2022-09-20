@@ -10,7 +10,7 @@ title: New to SQL
 
 **What is SQL? SQLPad?**
 
-![](media/sqlpad.png)<!-- style = "max-width:500px; float:left; margin-right:2rem;"-->
+![](media/sqlpad.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 600px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 SQL, or Structured Query Language, is a way to interact with data that is stored in a special kind of storage called a relational database.  This kind of data is stored in tables which have rows and columns.
 
@@ -18,7 +18,7 @@ SQLPad is a software package that allows you to send SQL queries to a connected 
 
 ## Arcus-Specific SQL Training
 
-![](media/training_videos.png)<!-- style = "max-width:500px; float:right; margin-right: 2em;"-->
+![](media/training_videos.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 600px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 For an example of how to use SQL data in your Arcus lab, start with the training videos on your lab's landing page.
 
