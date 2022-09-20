@@ -101,7 +101,18 @@ function(g) {
 
 **Initial Request for Consideration**
 
-Your first point of contact with Arcus may be informal conversations with one or more Arcus staff members to determine whether or not your project would be a good fit (emailing [arcus-support@chop.edu](mailto:arcus-support@chop.edu) is one great place to start), or you may go directly to [submitting a request for a new scientific project](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/307) (note that you need to be behind CHOP's firewall to submit a request).
+Your first point of contact with Arcus may be informal conversations with one or more Arcus staff members to determine whether or not your project would be a good fit.
+
+Emailing [`arcus-support@chop.edu`](mailto:arcus-support@chop.edu) is one great place to start a request, or you may go directly to [submitting a request for a new scientific project](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/307). Note that you need to be on the CHOP network to submit a request.
+
+We try to get sufficient information about your proposed project to understand your needs and constraints.  We'll want to know things like:
+
+* What data, if any, are you interested in from the clinical data in the Arcus Data Repository?
+* What data already under your stewardship, if any, will you be bringing to the project?
+* Who needs to be able to participate in this project?
+* Do you have an IRB protocol?
+* What is your research question?
+
 
 **Preliminary Review and Assessment**
 
