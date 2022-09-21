@@ -236,33 +236,47 @@ We recommend using the Chrome browser to access your lab.
 
 When you go to your lab's URL, you will be prompted to log in with your CHOP credentials. Then (assuming your CITI credentials and Terms of Use agreement are up to date), you will see the landing page for your lab.  We'll go over the various panes that appear in your landing page in the next few sections.
 
-### Project Members
-
-In the top left corner, you'll see a list of approved users for your lab. This will include everyone on your research team, your Project Owner, all of the members of the Arcus Education team (Arcus Education staff help with training and troubleshooting for all of the scientific labs), and any other Arcus staff associated with your project.
-
-If you notice someone missing from that list who should have access, or if you see someone you don't think should have access, alert your Project Owner.
-
-### Lab Status
+### Lab Status Pane
 
 ![`An Arcus lab currently running, showing clock`](media/lab_clock.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 When your lab is running, you'll see a clock counting down until it will shut down. Labs cost a fair amount of computational power when they're running, so they are set to automatically pause after a period of time to save resources. If you need to keep your lab active for longer than that, you can always extend the time.  Don't worry, your lab "shutting down" doesn't delete any files or data!  It's more akin to your computer going into "sleep" mode after a period of inactivity.
 
-If you finish using your lab before the clock runs out, please pause your lab using the button in the top right corner of your screen.
+If you finish using your lab before the clock runs out, please pause your lab using the "power" button in the top right corner of your screen or the toggle switch in the "Lab Status" pane.
 
 ![`Pause lab button at the top right corner of Arcus Lab landing page`](media/pause.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
-### The Lab Environment
+### Project Members Pane
 
-The top right part of the screen includes links to the tools in your lab environment itself. When you first access your lab, the tools will be greyed out with a note letting you know that your lab is paused. If you click on the tool section, it will load your lab. Note that it may take a moment for your lab to load.
+On the left side of your lab, you'll see a list of approved users for your lab. This will include everyone on your research team, your Project Owner, all of the members of the Arcus Education team (Arcus Education staff help with training and troubleshooting for all of the scientific labs), and any other Arcus staff associated with your project.
 
-Once your lab is running, you can open any of the tools by clicking on them.
+If you notice someone missing from that list who should have access, or if you see someone you don't think should have access, alert your Project Owner.
+
+### Arcus Lab Tools Pane
+
+The top right part of the screen includes links to the tools in your lab environment itself. When you first access your lab (or access it after a time of inactivity), most of the tools will be greyed out and labeled as "Currently Offline".
+
+Once your lab is running, you can open any of the tools by clicking on them. Each tool has a small question mark icon next to it; if you click the question mark icon, it will show more details about that tool, including links to documentation to help you get started.
+
+![Available Tools section of an Arcus Lab landing page](media/tools.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
+
+Most Arcus users working with tabular data (data in rows and columns) will use SQLPad and either RStudio or Jupyter.
+
+<div style = "clear: both;"></div>
+
+Here are some introductory materials that might be helpful:
+
+* [New to SQL](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_sql.md)
+* [New to R](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_r.md)
+* [New to Python](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_python.md)
+* [SQL Article](https://education.arcus.chop.edu/sql-intro/)
+* [R or Python?](https://education.arcus.chop.edu/statistical-programming-languages/)
 
 You won't see any data files in your lab when you log in; instead, you will be able to access the data via SQL queries and bring it into an analysis environment (e.g. using R or Python). For initial exploration of your data, SQLPad is probably the best place to start. You can see examples of how to access your data via SQLPad, RStudio, and python Jupyter notebooks in the [training videos](#training-videos).
 
-### Training Videos
+### Education Resources Pane
 
-This is a very important section for new Arcus users.
+This is a very important section for new Arcus users.  The Education Resources pane has important links to help you get started as well as useful training videos.
 
 ![Arcus Education training videos](media/training_videos.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
@@ -502,24 +516,6 @@ The [Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/port
 </div>
 
 ***
-
-## Overview of Tools
-
-In the Available Tools section of your lab landing page, you'll see a list of the tools in your lab. Each has a small question mark icon next to it; if you click the question mark icon, it will show more details about that tool, including links to documentation to help you get started.
-
-![Available Tools section of an Arcus Lab landing page](media/tools.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
-
-Most Arcus users will use SQLPad and either RStudio or Jupyter, but other tools may not be needed. If you're not familiar with any of these tools, we recommend you start with SQLPad.
-
-<div style = "clear: both;"></div>
-
-Here are some introductory materials that might be helpful:
-
-* [New to SQL](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_sql.md)
-* [New to R](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_r.md)
-* [New to Python](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_python.md)
-* [SQL Article](https://education.arcus.chop.edu/sql-intro/)
-* [R or Python?](https://education.arcus.chop.edu/statistical-programming-languages/)
 
 ## Organizing Your Project
 
