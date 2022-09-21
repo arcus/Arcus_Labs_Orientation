@@ -70,9 +70,9 @@ The first is computational labs, also called scientific labs. These are secure c
 The second type of lab is a training lab. These are just like computational labs except they are **not** intended for conducting research, and therefore have both limited resources and a very fast approval process. Training labs do provide access to real patient data, but only in **deidentified** form and **not the whole database of patients**. The goal of training labs is to create a space where researchers can do quick proof-of-concept checks before starting a full research program, and to give potential Arcus users a chance to try the system out. For a more detailed explanation, see the [Arcus training labs job aid](https://assets.arcus.chop.edu/arcus_education_assets/job_aids/arcus_training_lab.pdf).
 
 
-## What to Expect: Timeline for Starting a New Computational Lab
+## What to Expect in an Arcus Scientific Project
 
-This section covers the typical stages from initial request to deployment of a new Arcus computational lab. If you aren't interested in this process, or if you already have a lab ready, you may wish to skip directly to this section's [knowledge check](#knowledge-check-1).  
+This section covers the typical stages from initial scientific project request to deployment of a new Arcus computational lab associated with the project. If you aren't interested in this process, or if you already have a lab ready, you may wish to skip directly to this section's [knowledge check](#knowledge-check-1).  
 
 There are multiple stages in the approval process for a scientific project in Arcus.  The diagram below shows an overview of this process, and we go into more detail about the various stages in the description following the diagram.
 
@@ -236,13 +236,13 @@ We recommend using the Chrome browser to access your lab.
 
 When you go to your lab's URL, you will be prompted to log in with your CHOP credentials. Then (assuming your CITI credentials and Terms of Use agreement are up to date), you will see the landing page for your lab.  We'll go over the various panes that appear in your landing page in the next few sections.
 
-#### Project Members
+### Project Members
 
 In the top left corner, you'll see a list of approved users for your lab. This will include everyone on your research team, your Project Owner, all of the members of the Arcus Education team (Arcus Education staff help with training and troubleshooting for all of the scientific labs), and any other Arcus staff associated with your project.
 
 If you notice someone missing from that list who should have access, or if you see someone you don't think should have access, alert your Project Owner.
 
-#### Lab Status
+### Lab Status
 
 ![`An Arcus lab currently running, showing clock`](media/lab_clock.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
@@ -252,7 +252,7 @@ If you finish using your lab before the clock runs out, please pause your lab us
 
 ![`Pause lab button at the top right corner of Arcus Lab landing page`](media/pause.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
-#### The Lab Environment
+### The Lab Environment
 
 The top right part of the screen includes links to the tools in your lab environment itself. When you first access your lab, the tools will be greyed out with a note letting you know that your lab is paused. If you click on the tool section, it will load your lab. Note that it may take a moment for your lab to load.
 
@@ -260,7 +260,7 @@ Once your lab is running, you can open any of the tools by clicking on them.
 
 You won't see any data files in your lab when you log in; instead, you will be able to access the data via SQL queries and bring it into an analysis environment (e.g. using R or Python). For initial exploration of your data, SQLPad is probably the best place to start. You can see examples of how to access your data via SQLPad, RStudio, and python Jupyter notebooks in the [training videos](#training-videos).
 
-#### Training Videos
+### Training Videos
 
 This is a very important section for new Arcus users.
 
@@ -351,11 +351,17 @@ The [training videos](#training-videos) walk through everything you need to get 
 
 ***
 
-## Requesting Data For Your Lab
+## Data in Labs
 
 An initial data needs assessment takes place during the project assessment, which will determine the data that is provisioned to your lab to start. However, some researchers find that they need to modify their data request at some point during the life of their project. For both the initial data needs assessment and any further data requests, there are a number of useful tools in place.
 
-If you're planning on using clinical data from the Arcus Data Repository, you can work on defining your [clinical cohort](https://education.arcus.chop.edu/arcus-clinical-cohorts/) by using the [Arcus cohort discovery tool](https://assets.arcus.chop.edu/arcus_education_assets/job_aids/arcus_cohort_discovery.pdf). If you need help using Arcus cohort discovery, you can ask your Project Owner or submit a ticket at the [Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/302) for assistance.
+If you're planning on using clinical data, you'll likely be receiving data from the Arcus Data Repository, which is a simplified version of data from CHOP's EHR.  
+
+The Arcus Data Repository (ADR) contains many frequently used fields from Epic data, but is not a complete duplicate of Epic.  Additionally, data in the ADR has been shaped into tables that are more intuitive than raw data from Epic.
+
+Requesting data means describing both the cohort you want data from (for example, male patients currently aged 13 or above who have an ICD E or F diagnosis code) and the fields you want (for example, demographic data, diagnoses, and emergency department encounter information).
+
+If you need help determining which data you need from the Arcus Data Repository, you can work on defining your [clinical cohort](https://education.arcus.chop.edu/arcus-clinical-cohorts/) by using the [Arcus cohort discovery tool](https://assets.arcus.chop.edu/arcus_education_assets/job_aids/arcus_cohort_discovery.pdf). If you need help using Arcus cohort discovery, you can ask your Project Owner or submit a ticket at the [Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/302) for assistance.
 
 To explore the tables and variables available in the [Arcus Data Repository (ADR)](https://education.arcus.chop.edu/arcus-data-repository/), you can use the [ADR Data Model Browser](https://adr-mdm.arcus.chop.edu/browser/). Note that the data model browser is most useful for folks who have already built some familiarity with the ADR --- if you're still finding your way around, then please reach out to Arcus staff for help deciding which tables and variables you will need.
 
@@ -505,6 +511,8 @@ In the Available Tools section of your lab landing page, you'll see a list of th
 
 Most Arcus users will use SQLPad and either RStudio or Jupyter, but other tools may not be needed. If you're not familiar with any of these tools, we recommend you start with SQLPad.
 
+<div style = "clear: both;"></div>
+
 Here are some introductory materials that might be helpful:
 
 * [New to SQL](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_sql.md)
@@ -513,7 +521,7 @@ Here are some introductory materials that might be helpful:
 * [SQL Article](https://education.arcus.chop.edu/sql-intro/)
 * [R or Python?](https://education.arcus.chop.edu/statistical-programming-languages/)
 
-## How to set up your project: Files, directories, and version control
+## Organizing Your Project
 
 Arcus projects use a project template implemented by our Library Science team. It's a basic recommended file directory structure for organizing all of the various files related to your study.
 
@@ -611,7 +619,7 @@ Although having your example be reproducible is key, you can write even better e
 
 For more details on what makes a good example, see these [instructions on StackOverflow](https://stackoverflow.com/help/minimal-reproducible-example).
 
-### But isn't that a lot of work just to ask a question?
+**But isn't that a lot of work just to ask a question?**
 
 It's true: Good examples take time and thought to write. Since you can't just copy-paste your own code, you usually need to re-write the relevant bit of code from scratch, keeping just the elements important to your problem and making sure anyone helping you will be able to run it on their own machine.
 
