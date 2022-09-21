@@ -76,6 +76,8 @@ This section covers the typical stages from initial scientific project request t
 
 There are multiple stages in the approval process for a scientific project in Arcus.  The diagram below shows an overview of this process, and we go into more detail about the various stages in the description following the diagram.
 
+<div style = "background-color:white;">
+
 <script style="display: block" run-once="true" modify="false">
 mermaid.initialize({});
 
@@ -103,6 +105,7 @@ function(g) {
 "HTML: " + svg
 </script>
 
+</div>
 
 **Initial Request for Consideration**
 
