@@ -21,13 +21,17 @@ Please note that **many of the links here will only work if you're on the CHOP n
 
 Congratulations! This goal of this guide is to get you up and running with your new lab, regardless of your research background and expertise.
 
-You should begin by working in this document, which constitutes an Arcus Lab Overview.  The aim of this document is to bring you up to speed fast on:
+You should begin by working in this document, which constitutes an Arcus Lab Overview.  
+
+<div style = "clear: both;"></div>
+
+The aim of this document is to bring you up to speed fast on:
 
 * What the Arcus Lab includes
 * What to expect when working with Arcus
 * Links to how to perform the data science DIY you'll need to do
 
-<div style = "clear: both"></div>
+<div style = "clear: both;"></div>
 
 If you're already comfortable with data science tools like SQL, R, python, and version control, then this document may be enough to get you going. Most researchers will benefit from working through some or all of the other linked documents as well, though:
 
@@ -68,8 +72,9 @@ The second type of lab is a training lab. These are just like computational labs
 
 ## What to Expect: Timeline for Starting a New Computational Lab
 
-This section covers the typical stages from initial request to deployment of a new Arcus computational lab. If you aren't interested in this process, or if you already have a lab ready, you may wish to skip directly to this section's [knowledge check](#knowledge-check-1).
+This section covers the typical stages from initial request to deployment of a new Arcus computational lab. If you aren't interested in this process, or if you already have a lab ready, you may wish to skip directly to this section's [knowledge check](#knowledge-check-1).  
 
+There are multiple stages in the approval process for a scientific project in Arcus.  The diagram below shows an overview of this process, and we go into more detail about the various stages in the description following the diagram.
 
 <script style="display: block" run-once="true" modify="false">
 mermaid.initialize({});
@@ -77,8 +82,8 @@ mermaid.initialize({});
 var svg = mermaid.render(
 'approval_flowchart',
 `flowchart LR
-  A[Initial Request\\nfor Consideration] --> B{Preliminary Review\\nand Assessment};
-  B -- Advanced --> C[Project Owner Assigned];
+  A[Initial Request\\nfor Consideration] --> B{Preliminary Review};
+  B -- Advanced --> C[Project Owner Assigned\\nto Conduct Assessment];
   B -- Declined --> D[Request Closed];
   C --> E[Privacy Review];
   C --> F[Data Needs Assessment];
@@ -188,12 +193,12 @@ Note that if you're on a tight timeline, Arcus may be able to work with you to s
 Which of the following are required to access **identified** patient data via Arcus? Select all that apply.
 
 [[X]] CITI training on human subjects research
-[[X]] read and agree to the Arcus Terms of Use
+[[X]] Read and agree to the Arcus Terms of Use
 
 Which of the following are required to access **deidentified** data via Arcus? Select all that apply.
 
 [[X]] CITI training on human subjects research
-[[X]] read and agree to the Arcus Terms of Use
+[[X]] Read and agree to the Arcus Terms of Use
 ***
 
 <div class = "answer">
@@ -223,13 +228,13 @@ During your project assessment, you will meet with an archivist from the Arcus t
 
 ## Using Your Lab
 
-Your Arcus lab is a secure computational environment that exists in your browser. You don't need to download or install anything, you (and your team members) just go to your lab's URL and you'll have everything you need there to access and analyze your data. Note that you always need to be behind CHOP's firewall to access your lab.
+Your Arcus lab is a secure computational environment that you interact with via a web browser. You don't need to download or install anything to your local computer, you (and your team members) just go to your lab's URL and you'll have everything you need there to access and analyze your data. Note that you always need to be behind CHOP's firewall to access your lab.
 
-### What's In Your Lab
+We recommend using the Chrome browser to access your lab.
 
 ![An Arcus lab landing page](media/lab_landing_page.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
-When you go to your lab's URL, you will be prompted to log in with your CHOP credentials. Then you will see the landing page for your lab.
+When you go to your lab's URL, you will be prompted to log in with your CHOP credentials. Then (assuming your CITI credentials and Terms of Use agreement are up to date), you will see the landing page for your lab.  We'll go over the various panes that appear in your landing page in the next few sections.
 
 #### Project Members
 
@@ -241,7 +246,7 @@ If you notice someone missing from that list who should have access, or if you s
 
 ![`An Arcus lab currently running, showing clock`](media/lab_clock.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
-When your lab is running, you'll see a clock counting down until it will shut down. Labs cost a fair amount of computational power when they're running, so they are set to automatically pause after a period of time to save resources. If you need to keep your lab active for longer than that, you can always extend the time.
+When your lab is running, you'll see a clock counting down until it will shut down. Labs cost a fair amount of computational power when they're running, so they are set to automatically pause after a period of time to save resources. If you need to keep your lab active for longer than that, you can always extend the time.  Don't worry, your lab "shutting down" doesn't delete any files or data!  It's more akin to your computer going into "sleep" mode after a period of inactivity.
 
 If you finish using your lab before the clock runs out, please pause your lab using the button in the top right corner of your screen.
 
@@ -253,7 +258,7 @@ The top right part of the screen includes links to the tools in your lab environ
 
 Once your lab is running, you can open any of the tools by clicking on them.
 
-You won't see any data files in your lab when you log in; instead, you will be able to access the data via SQL queries and bring it into an analysis environment (e.g. using R or python). For initial exploration of your data, SQLPad is probably the best place to start. You can see examples of how to access your data via SQLPad, RStudio, and python Jupyter notebooks in the [training videos](#training-videos).
+You won't see any data files in your lab when you log in; instead, you will be able to access the data via SQL queries and bring it into an analysis environment (e.g. using R or Python). For initial exploration of your data, SQLPad is probably the best place to start. You can see examples of how to access your data via SQLPad, RStudio, and python Jupyter notebooks in the [training videos](#training-videos).
 
 #### Training Videos
 
@@ -261,7 +266,7 @@ This is a very important section for new Arcus users.
 
 ![Arcus Education training videos](media/training_videos.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
-Beneath the lab environment links, you will see a list of training videos available. These step through everything you need to get started in your lab. If you are new to Arcus, you will likely find most of your questions answered in these training videos.
+Beneath the lab environment links, you will see a list of training videos available. These step through everything you need to get started in your lab. If you are new to Arcus, you will likely find most of your questions answered in these training videos.  We **urge** you to watch all of the videos.  This will take about an hour of your time but we think that it is time well spent.  Even if a topic doesn't seem applicable to you, please watch the associated video -- we aim to make them short and general.
 
 <div style = "clear: both"></div>
 
@@ -328,10 +333,10 @@ Remember that you won't directly see your data in your lab (on the landing page,
 
 ***
 
-If you're new to Arcus, what is the best place on the landing page to start?
+If you're new to Arcus, what is the best place on the landing page to start?  We're looking for a two-word answer (all lowercase).
 
-[[the training videos]]
-[[?]] Hint: Check [this section](#training-videos) again.
+[[training videos]]
+[[?]] Hint: Check [this section](#training-videos) again.  The answer rhymes with "braining videos".
 <script>
   let input = "@input".trim();
   /video/i.test(input);
@@ -348,7 +353,7 @@ The [training videos](#training-videos) walk through everything you need to get 
 
 ## Requesting Data For Your Lab
 
-An initial data needs assessment takes place during the project assessment, which will determine the data that is provisioned to your lab to start. However, many researchers find that they need to modify their data request at some point during the life of their project. For both the initial data needs assessment and any further data requests, there are a number of useful tools in place.
+An initial data needs assessment takes place during the project assessment, which will determine the data that is provisioned to your lab to start. However, some researchers find that they need to modify their data request at some point during the life of their project. For both the initial data needs assessment and any further data requests, there are a number of useful tools in place.
 
 If you're planning on using clinical data from the Arcus Data Repository, you can work on defining your [clinical cohort](https://education.arcus.chop.edu/arcus-clinical-cohorts/) by using the [Arcus cohort discovery tool](https://assets.arcus.chop.edu/arcus_education_assets/job_aids/arcus_cohort_discovery.pdf). If you need help using Arcus cohort discovery, you can ask your Project Owner or submit a ticket at the [Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/302) for assistance.
 
