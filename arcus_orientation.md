@@ -148,6 +148,8 @@ Note that for work in Arcus labs, human subjects protection training is required
 
 When the project assessment is complete and your lab is approved, then the team of Arcus developers will build a computational lab environment for you, based on the needs determined during your project assessment.
 
+<div style = "background-color:white;">
+
 <script style="display: block" run-once="true" modify="false">
 mermaid.initialize({});
 
@@ -170,6 +172,8 @@ function(g) {
 
 "HTML: " + svg
 </script>
+
+</div>
 
 When the lab is built, the Arcus data team will provision your lab with the required data, as determined during your project assessment. For more information about the data in Arcus, see [requesting data for your lab](#requesting-data-for-your-lab).
 
