@@ -244,7 +244,6 @@ When your lab is running, you'll see a clock counting down until it will shut do
 
 If you finish using your lab before the clock runs out, please pause your lab using the "power" button in the top right corner of your screen or the toggle switch in the "Lab Status" pane.
 
-![`Pause lab button at the top right corner of Arcus Lab landing page`](media/pause.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 ### Project Members Pane
 
