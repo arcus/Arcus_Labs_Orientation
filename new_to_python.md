@@ -20,7 +20,7 @@ Additionally, Python is widely used in machine learning, a computational method 
 
 Like R, Python is free and open source, and promotes research reproducibility.
 
-## Arcus-Specific R Training
+## Arcus-Specific Python Training
 
 ![](media/training_videos.png)<!--
 style = "max-width:400px; float:right; margin-left: 2em;"-->
