@@ -69,8 +69,13 @@ If you prefer something a bit more "just in time", however, we suggest some reso
 This grant includes the creation of dozens of modules that are aimed at being 1 hour or less in duration and each have a narrow focus and clear learning objectives.  They are asynchronous and you can take them at any time!
 
 <div class = "warning">
-If you think you'd like to participate in a research study about the educational effectiveness of data science training modules, please reach out to Arcus Education's DART program at dart@chop.edu, and consider **not** consuming these modules.
+If you think you'd like to participate in a research study about the educational effectiveness of data science training modules, please reach out to Arcus Education's DART program via:
 
+* Our interest form at https://redcap.link/dart-interest
+* Taking the screening for participation in the study at https://redcap.link/DART-survey
+* Emailing us at dart@chop.edu
+
+and consider **not** consuming these modules.
 Consuming these modules will **render you ineligible to participate** in our research.  However, we know that they're useful on their own, outside of our conduct of research, so we're fast-tracking access to these materials.
 
 </div>
