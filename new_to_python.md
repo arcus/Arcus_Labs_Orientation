@@ -8,7 +8,7 @@ title: Arcus Labs Orientation
 
 **What is Python?**
 
-![](media/jupyterlab.png)<!-- style = "max-width:400px; float:left; margin-right: 2rem; margin-bottom: 2rem;"-->
+![""](media/jupyterlab.png)<!-- style = "max-width:400px; float:left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 Python is a general purpose programming language that can be used in a number of settings, from website development to robotics.  For our purposes, one common usage of Python is in data analysis and machine learning.  
 
@@ -22,7 +22,7 @@ Like R, Python is free and open source, and promotes research reproducibility.
 
 ## Arcus-Specific Python Training
 
-![](media/training_videos.png)<!--
+![""](media/training_videos.png)<!--
 style = "max-width:400px; float:right; margin-left: 2em;"-->
 
 For an example of how to use Python / JupyterLab in your Arcus lab, start with the training videos on your lab's landing page.
