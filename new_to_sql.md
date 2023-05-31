@@ -39,6 +39,7 @@ If you prefer something a bit more "just in time", however, we suggest some reso
 This grant includes the creation of dozens of modules that are aimed at being 1 hour or less in duration and each have a narrow focus and clear learning objectives.  They are asynchronous and you can take them at any time!
 
 <div class = "cool-fact">
+
 If you think you'd like to participate in a research study about the educational effectiveness of data science training modules, please reach out to Arcus Education's DART program via:
 
 * Our interest form at https://redcap.link/dart-interest
@@ -46,6 +47,7 @@ If you think you'd like to participate in a research study about the educational
 * Emailing us at dart@chop.edu
 
 If you meet our research criteria and decide to enroll as a study participant, you'll receive additional data science learning support, including a customized curriculum of materials and the peership and support of a community of learners like you. 
+
 </div>
 
 Training modules:
