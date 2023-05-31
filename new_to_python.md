@@ -52,8 +52,8 @@ This grant includes the creation of dozens of modules that are aimed at being 1 
 
 If you think you'd like to participate in a research study about the educational effectiveness of data science training modules, please reach out to Arcus Education's DART program via:
 
-* Our interest form at https://redcap.link/dart-interest
-* Taking the screening for participation in the study at https://redcap.link/DART-survey
+* Filling out our [interest form](https://redcap.link/dart-interest)
+* Taking the [screening for participation in the study](https://redcap.link/DART-survey)
 * Emailing us at dart@chop.edu
 
 If you meet our research criteria and decide to enroll as a study participant, you'll receive additional data science learning support, including a customized curriculum of materials and the peership and support of a community of learners like you. 
