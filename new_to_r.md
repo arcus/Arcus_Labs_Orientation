@@ -10,7 +10,7 @@ Title: New to R?
 
 **What is R?  RStudio?**
 
-![](media/rstudio.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 600px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
+![""](media/rstudio.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 600px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 R is a free, open source language that is specifically focused on statistical data analysis.  It is [increasing in market share among researchers](https://r4stats.com/articles/popularity/) (second only to SPSS and outpacing SAS, Stata, JMP, Matlab, and other solutions you may have used) and has multiple advantages over "point and click" statistical data analysis.
 
@@ -36,19 +36,19 @@ Unless you recently left graduate school, you probably learned a different parad
 
 ## CHOP Has an R User Group!
 
-![](media/chopr_hex.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 200px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
+![""](media/chopr_hex.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 200px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 CHOP has a vibrant R User Group made up of employees from all over the institution who use R for many different use cases.  This is a great place to start connecting with other people, asking for help, and seeking advice.
 
-To join, please visit [https://bit.ly/chopRusers](https://bit.ly/chopRusers)!  This will add you to the Outlook distribution list for emails as well as give you instructions on how to add yourself to our Slack workspace, where people ask coding questions (and answer them!).
+Please fill out this form to [join the CHOPR User Group](https://bit.ly/chopRusers)!  This will add you to the Outlook distribution list for emails as well as give you instructions on how to add yourself to our Slack workspace, where people ask coding questions (and answer them!).
 
-Joining the R User Group means you'll be informed about periodic intro to R workshops, R User Group talks, and other resources you'll find useful.  Especially if you're the only person in your lab who uses R, it can be important to find a community of practice that can help guide you.  Intro to R workshops are given a few times a year and include five hours of hands-on, synchronous work intended to get you started working with R as a brand-new beginner.  To learn more about the course, visit the [course website](https://arcus.github.io/intro-to-r-for-clinicians-chop/).
+Joining the R User Group means you'll be informed about periodic intro to R workshops, R User Group talks, and other resources you'll find useful.  Especially if you're the only person in your lab who uses R, it can be important to find a community of practice that can help guide you.  Intro to R workshops are given a few times a year and include five hours of hands-on, synchronous work intended to get you started working with R as a brand-new beginner.  To learn more about the course, visit the [R101 course website](https://arcus.github.io/intro-to-r-for-clinicians-chop/).
 
 As you gain expertise, we also invite you to participate by leading an R User Group meeting!  You don't have to be an expert for years in order to share your skills.  Even if you only know a little, you know more than some people, and you can share pitfalls to avoid and the routes to success for data analysis tasks you conducted on your type of research data.
 
 ## Arcus-Specific R Training
 
-![](media/training_videos.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 600px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
+![""](media/training_videos.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 600px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 For an example of how to use R in your Arcus lab, start with the training videos on your lab's landing page.
 
@@ -72,8 +72,8 @@ This grant includes the creation of dozens of modules that are aimed at being 1 
 
 If you think you'd like to participate in a research study about the educational effectiveness of data science training modules, please reach out to Arcus Education's DART program via:
 
-* Our interest form at https://redcap.link/dart-interest
-* Taking the screening for participation in the study at https://redcap.link/DART-survey
+* Filling out our [interest form](https://redcap.link/dart-interest)
+* Taking the [screening for participation in the study](https://redcap.link/DART-survey)
 * Emailing us at dart@chop.edu
 
 If you meet our research criteria and decide to enroll as a study participant, you'll receive additional data science learning support, including a customized curriculum of materials and the peership and support of a community of learners like you. 
