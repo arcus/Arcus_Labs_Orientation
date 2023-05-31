@@ -10,7 +10,7 @@ title: New to SQL
 
 **What is SQL? SQLPad?**
 
-![](media/sqlpad.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 600px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
+![""](media/sqlpad.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 600px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 SQL, or Structured Query Language, is a way to interact with data that is stored in a special kind of storage called a relational database.  This kind of data is stored in tables which have rows and columns.
 
@@ -18,7 +18,7 @@ SQLPad is a software package that allows you to send SQL queries to a connected 
 
 ## Arcus-Specific SQL Training
 
-![](media/training_videos.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 600px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
+![""](media/training_videos.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 600px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 For an example of how to use SQL data in your Arcus lab, start with the training videos on your lab's landing page.
 
@@ -42,8 +42,8 @@ This grant includes the creation of dozens of modules that are aimed at being 1 
 
 If you think you'd like to participate in a research study about the educational effectiveness of data science training modules, please reach out to Arcus Education's DART program via:
 
-* Our interest form at https://redcap.link/dart-interest
-* Taking the screening for participation in the study at https://redcap.link/DART-survey
+* Filling out our [interest form](https://redcap.link/dart-interest)
+* Taking the [screening for participation in the study](https://redcap.link/DART-survey)
 * Emailing us at dart@chop.edu
 
 If you meet our research criteria and decide to enroll as a study participant, you'll receive additional data science learning support, including a customized curriculum of materials and the peership and support of a community of learners like you. 
