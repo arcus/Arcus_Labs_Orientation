@@ -44,7 +44,7 @@ Additionally, beyond the NIH grant, we have other articles and miscellany we sug
 
 ## Pivoting to data science
 
-Pivoting to a data science methodology, one that prioritizes writing code and using version control, can be challenging!  We invite you to consider an overview of why this approach is helpful in our NIH R25 training module called [Reproducibility](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/reproducibility/reproducibility.md).  This can help give you additional motivation when you're struggling with common challenges like:
+Pivoting to a data science methodology, one that prioritizes writing code and using version control, can be challenging!  We invite you to consider an overview of why this approach is helpful in our [Reproducibility training module](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/reproducibility/reproducibility.md).  This can help give you additional motivation when you're struggling with common challenges like:
 
 - Typing computer commands when you're used to point and click
 - Programming when you're used to spreadsheet data analysis
@@ -63,11 +63,11 @@ Literate statistical programming resources you might find useful include:
 
 If you aren't used to working with raw data that hasn't been pre-groomed, you might feel overwhelmed.  Here's a few things to consider that can help!
 
-- Clinical data at CHOP: What is where? [https://education.arcus.chop.edu/clinical-data-at-chop/](https://education.arcus.chop.edu/clinical-data-at-chop/)
+- [Clinical data at CHOP: What is where?](https://education.arcus.chop.edu/clinical-data-at-chop/)
 - Data dictionaries and variable names: make sure you watch the SQL training videos in your lab, where we go over the use of `dd_field` and `dd_table`, to help you work with data dictionaries.
 - Errors, outliers, and typos do exist, because people make mistakes in charting, and the medical record system isn't foolproof.  What will you do with unexpected or unlikely data?
-- Repeated versions of a variable [https://education.arcus.chop.edu/date-pairing-in-r/](https://education.arcus.chop.edu/date-pairing-in-r/)
-- Missing values: None, NULL, NaN, etc. may also be a challenge.  Consider [https://education.arcus.chop.edu/do-patterns-in-missing-data-matter/](https://education.arcus.chop.edu/do-patterns-in-missing-data-matter/).
+- Repeated versions of a variable -- Here's [an article that looks at repeated variable versions in R](https://education.arcus.chop.edu/date-pairing-in-r/)
+- Missing values: None, NULL, NaN, etc. may also be a challenge.  Check out this [article on missing data](https://education.arcus.chop.edu/do-patterns-in-missing-data-matter/).
 
 
 ## Framing your questions so the computer will understand
@@ -76,7 +76,7 @@ Sometimes, facing an empty screen without any code yet written can feel like an 
 
 - Breaking ideas down into steps (for example, use pseudocode, a fancy word for "steps written out in fake code" to plan your data selection and data analysis)
 - Finding where to start (what fields already exist in the data vs. what will you need to refine/calculate/reformat)
-- Learning to work with your lab directory structure.  A resource that might help is our short [Directories and File Paths](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/directories_and_file_paths/directories_and_file_paths.md) course or the article [https://education.arcus.chop.edu/file-paths/](https://education.arcus.chop.edu/file-paths/)
+- Learning to work with your lab directory structure.  A resource that might help is our short [Directories and File Paths](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/directories_and_file_paths/directories_and_file_paths.md) course or the article [File Paths for Data Scientists](https://education.arcus.chop.edu/file-paths/)
 - Conventions for naming files.  You want to be on the same page as the rest of the team and watch out for things to avoid (like spaces in file names, which can be annoying in some environments).
 - Translating ideas into questions, and questions into tests: what is your algorithm to get from data to publication?
 
