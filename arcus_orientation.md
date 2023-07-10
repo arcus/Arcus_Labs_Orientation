@@ -1,7 +1,7 @@
 <!--
 author:   Arcus Education
 email:    arcus-support@chop.edu
-version:  1.0.1
+version:  1.0.2
 language: en
 narrator: US English Female
 title: Arcus Lab Orientation
@@ -24,7 +24,7 @@ script:  https://kit.fontawesome.com/83b2343bd4.js
 
 link:  https://chop-dbhi-arcus-education-website-assets.s3.amazonaws.com/css/styles.css
 script: https://kit.fontawesome.com/83b2343bd4.js
-script: https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
+script: https://cdn.jsdelivr.net/npm/mermaid@9.4.3/dist/mermaid.min.js
 title: Arcus Labs Orientation
 -->
 
