@@ -19,13 +19,8 @@ After completion of this training module, learners will be able to:
 @end
 
 link:  https://chop-dbhi-arcus-education-website-assets.s3.amazonaws.com/css/styles.css
-
-script:  https://kit.fontawesome.com/83b2343bd4.js
-
-link:  https://chop-dbhi-arcus-education-website-assets.s3.amazonaws.com/css/styles.css
 script: https://kit.fontawesome.com/83b2343bd4.js
 script: https://cdn.jsdelivr.net/npm/mermaid@9.4.3/dist/mermaid.min.js
-title: Arcus Labs Orientation
 -->
 
 ## Arcus Lab Orientation
@@ -242,6 +237,17 @@ In addition to [CITI training](https://about.citiprogram.org/), you must also co
 * Agree to the [Arcus Terms of Use](https://arcus.chop.edu/terms-of-use)
 * Have an approved Arcus Scientific Project that requires a computational space to work with data.
 
+<div class = "important">
+
+**When do you need to contact the IRB?**
+
+If your planned analysis does not involve human subjects research (for example, you are working with deidentified data or a Limited Data Set), we highly encourage you to put in a request for a Determination of the Need for IRB Review in eIRB **before** beginning your research. 
+If you fail to apply for a Determination of the Need for IRB Review prior to beginning your research activities, you may not be able to publish the results. 
+
+Our privacy team has provided language you can use in your IRB application to explain that you're working with non human subjects research data in Arcus in an [Arcus forum post on when to apply for a Determination of the Need for IRB Review](https://forum.arcus.chop.edu/t/when-to-apply-for-a-determination-of-the-need-for-irb-review/513).
+
+</div>
+
 ### Lab Types
 
 Arcus provides Computational Labs, which we've been discussing to this point. These are secure computational environments built for a specific team to conduct research. These are custom-built and there is a detailed approval process for use. 
@@ -385,18 +391,36 @@ Note that if you're on a tight timeline, Arcus may be able to work with you to s
 
 Which of the following are required to access **identified** patient data via Arcus? Select all that apply.
 
-[[X]] CITI training on human subjects research
+[[X]] CITI training
 [[X]] Read and agree to the Arcus Terms of Use
 
 Which of the following are required to access **deidentified** data via Arcus? Select all that apply.
 
-[[X]] CITI training on human subjects research
+[[X]] CITI training
 [[X]] Read and agree to the Arcus Terms of Use
 ***
 
 <div class = "answer">
 
-This answer applies to both questions above.  Everyone who will use your lab must have CITI training on file in order to access Arcus, regardless of the nature of the research.
+This answer applies to both questions above. Everyone who will use your lab must have at least one version of CITI training on file in order to access Arcus, regardless of the nature of the research.
+
+For identified data, you'll need CITI training on human subjects research. For deidentified data, you can have CITI training on either human subjects research or non human subjects research (e.g. the “Arcus and/or CDW” course).
+
+</div>
+
+***
+
+True or False: If you'll be working only with deidentified data in Arcus, you don't need to contact the IRB before beginning your research.
+
+[( )] True
+[(X)] False
+***
+
+<div class = "answer">
+
+Although work with purely deidentified data will not count as human subjects research and therefore does not require IRB oversight, you still need to put in a request for a Determination of Not Human Subjects Research from the IRB **before** beginning your research. 
+
+For more details, see this [Arcus forum post from our legal team on when to apply for a Determination of the Need for IRB Review](https://forum.arcus.chop.edu/t/when-to-apply-for-a-determination-of-the-need-for-irb-review/513).
 
 </div>
 
