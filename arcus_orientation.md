@@ -237,6 +237,17 @@ In addition to [CITI training](https://about.citiprogram.org/), you must also co
 * Agree to the [Arcus Terms of Use](https://arcus.chop.edu/terms-of-use)
 * Have an approved Arcus Scientific Project that requires a computational space to work with data.
 
+<div class = "important">
+
+**When do you need to contact the IRB?**
+
+If your planned analysis does not involve human subjects research, you need to put in a request for a Determination of Not Human Subjects Research from the IRB **before** beginning your research. 
+If you fail to apply for a Determination of Not Human Subjects Research prior to beginning your research activities, you may not be able to publish the results. 
+
+Our legal team has provided language you can use in your IRB application to explain that you're working with non human subjects research data in Arcus in an [Arcus forum post on when to apply for a Determination of the Need for IRB Review](https://forum.arcus.chop.edu/t/when-to-apply-for-a-determination-of-the-need-for-irb-review/513).
+
+</div>
+
 ### Lab Types
 
 Arcus provides Computational Labs, which we've been discussing to this point. These are secure computational environments built for a specific team to conduct research. These are custom-built and there is a detailed approval process for use. 
@@ -392,6 +403,22 @@ Which of the following are required to access **deidentified** data via Arcus? S
 <div class = "answer">
 
 This answer applies to both questions above.  Everyone who will use your lab must have CITI training on file in order to access Arcus, regardless of the nature of the research.
+
+</div>
+
+***
+
+True or False: If you'll be working only with deidentified data in Arcus, you don't need to contact the IRB before beginning your research.
+
+[( )] True
+[(X)] False
+***
+
+<div class = "answer">
+
+Although work with purely deidentified data will not count as human subjects research and therefore does not require IRB oversight, you still need to put in a request for a Determination of Not Human Subjects Research from the IRB **before** beginning your research. 
+
+For more details, see this [Arcus forum post from our legal team on when to apply for a Determination of the Need for IRB Review](https://forum.arcus.chop.edu/t/when-to-apply-for-a-determination-of-the-need-for-irb-review/513).
 
 </div>
 
