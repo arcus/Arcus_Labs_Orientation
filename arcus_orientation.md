@@ -241,10 +241,10 @@ In addition to [CITI training](https://about.citiprogram.org/), you must also co
 
 **When do you need to contact the IRB?**
 
-If your planned analysis does not involve human subjects research, you need to put in a request for a Determination of Not Human Subjects Research from the IRB **before** beginning your research. 
-If you fail to apply for a Determination of Not Human Subjects Research prior to beginning your research activities, you may not be able to publish the results. 
+If your planned analysis does not involve human subjects research (for example, you are working with deidentified data or a Limited Data Set), we highly encourage you to put in a request for a Determination of the Need for IRB Review in eIRB **before** beginning your research. 
+If you fail to apply for a Determination of the Need for IRB Review prior to beginning your research activities, you may not be able to publish the results. 
 
-Our legal team has provided language you can use in your IRB application to explain that you're working with non human subjects research data in Arcus in an [Arcus forum post on when to apply for a Determination of the Need for IRB Review](https://forum.arcus.chop.edu/t/when-to-apply-for-a-determination-of-the-need-for-irb-review/513).
+Our privacy team has provided language you can use in your IRB application to explain that you're working with non human subjects research data in Arcus in an [Arcus forum post on when to apply for a Determination of the Need for IRB Review](https://forum.arcus.chop.edu/t/when-to-apply-for-a-determination-of-the-need-for-irb-review/513).
 
 </div>
 
@@ -391,18 +391,20 @@ Note that if you're on a tight timeline, Arcus may be able to work with you to s
 
 Which of the following are required to access **identified** patient data via Arcus? Select all that apply.
 
-[[X]] CITI training on human subjects research
+[[X]] CITI training
 [[X]] Read and agree to the Arcus Terms of Use
 
 Which of the following are required to access **deidentified** data via Arcus? Select all that apply.
 
-[[X]] CITI training on human subjects research
+[[X]] CITI training
 [[X]] Read and agree to the Arcus Terms of Use
 ***
 
 <div class = "answer">
 
-This answer applies to both questions above.  Everyone who will use your lab must have CITI training on file in order to access Arcus, regardless of the nature of the research.
+This answer applies to both questions above. Everyone who will use your lab must have at least one version of CITI training on file in order to access Arcus, regardless of the nature of the research.
+
+For identified data, you'll need CITI training on human subjects research. For deidentified data, you can have CITI training on either human subjects research or non human subjects research (e.g. the “Arcus and/or CDW” course).
 
 </div>
 
