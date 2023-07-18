@@ -86,13 +86,13 @@ Broadly speaking, Open Science Initiatives promote making publicly funded resear
 
 #### FAIR Data
 
-(Findability, Accessibility, Interoperability, and Reusability)[https://force11.org/info/the-fair-data-principles/] (FAIR) are four guiding principles that emphasize the need to standardize how machines find and utilize data. They were introduced in 2016 for scientific data management and stewardship.
+[Findability, Accessibility, Interoperability, and Reusability](https://force11.org/info/the-fair-data-principles/) (FAIR) are four guiding principles that emphasize the need to standardize how machines find and utilize data. They were introduced in 2016 for scientific data management and stewardship.
 
 Arcus has put in place research data archives and library-based discovery services for searching those archives to assist the depositing, management, discovery, and reuse of data. Together with the rest of the Arcus team, a group of librarians and digital archivists establishes the archival procedures and standards and defines the metadata schemas that will direct the creation of the FAIR-compliant data discovery catalog and other services.
 
 ### Cost savings 
 
-Depositing your data in Arcus removes the headaches associated with ongoing maintenance such as technology going stale or conflicting version histories. Arcus provides a citation standard for all archived datasets that facilitates the publication process and enables the tracking of future uses of your research. Sample grant language and citation examples can be found at (this post)[https://forum.arcus.chop.edu/t/arcus-citation-and-recognition/316] on the Arcus Forum.
+Depositing your data in Arcus removes the headaches associated with ongoing maintenance such as technology going stale or conflicting version histories. Arcus provides a citation standard for all archived datasets that facilitates the publication process and enables the tracking of future uses of your research. Sample grant language and citation examples can be found at [this post](https://forum.arcus.chop.edu/t/arcus-citation-and-recognition/316) on the Arcus Forum.
 
 ### Preservation of data and study  
 
@@ -107,7 +107,7 @@ All data archived with Arcus is available to other CHOP researchers for reuse. T
 **Arcus Omics Variant Browse**: view and filter all annotated variant information for all genomic files in the Arcus archives
 **Gene Data Catalog**: view the metadata (data about the data) for all the research collections within Arcus, and easily request to use the data
 
-The (Gene Data Catalog)[https://chop.alationcloud.com] is available to everyone with CHOP credentials. Access to Arcus Cohort Discovery and Omics Variant Browser require that you have completed CITI Human Subjects Protection training and agreed to the Arcus Terms of Use, in addition to having CHOP credentials. For more information about accessing the Arcus tools, (see this Job Aid)[https://assets.arcus.chop.edu/arcus_education_assets/job_aids/arcus_cohort_discovery.pdf].
+The [Gene Data Catalog](https://chop.alationcloud.com) is available to everyone with CHOP credentials. Access to Arcus Cohort Discovery and Omics Variant Browser require that you have completed CITI Human Subjects Protection training and agreed to the Arcus Terms of Use, in addition to having CHOP credentials. For more information about accessing the Arcus tools, [see this Job Aid](https://assets.arcus.chop.edu/arcus_education_assets/job_aids/arcus_cohort_discovery.pdf).
 
 If a researcher would like to use the data in a research project, they will have it delivered to a Scientific Project with an Arcus lab. Arcus vets all requests to work with data according to the nature of the request and the limitations of the data in question.
 
@@ -116,7 +116,7 @@ If a researcher would like to use the data in a research project, they will have
 Arcus Cohort Discovery (ACD) is a filtering and exploration tool for un-identified clinical CHOP date pulled from Electronic Health Records (EHR). IT is ideal for is ideal for feasibility analysis and research planning allowing for preliminary cohort building for future research projects.  
 The EHR data is simplified to commonly used fields in data requests – things like age, sex, race, ICD codes, and recency of care. This tool allows you to do basic searches to identify cohorts (groups of patients) that share common features, filtering along inclusion and exclusion criteria. EHR data can also be filtered using researcher created reference cohorts research datasets, and biospecimen samples available in CHOP’s Biorepository. ACD enriches the research datasets, as users can see further detail related to the research collection cohort, or see the overlap of participants between research collections.
 
-For mor information about Arcus Cohort Discovery, please see the (general job aid)[https://assets.arcus.chop.edu/arcus_education_assets/job_aids/arcus_cohort_discovery.pdf], and the (job aid for data filtering)[https://assets.arcus.chop.edu/arcus_education_assets/job_aids/arcus_cohort_discovery_filters.pdf].
+For mor information about Arcus Cohort Discovery, please see the [general job aid](https://assets.arcus.chop.edu/arcus_education_assets/job_aids/arcus_cohort_discovery.pdf), and the [job aid for data filtering](https://assets.arcus.chop.edu/arcus_education_assets/job_aids/arcus_cohort_discovery_filters.pdf).
 
 ### Arcus Variant Browser
 
@@ -124,7 +124,7 @@ The Omics Variant Browser is an application for browsing annotated variant call 
 
 Arcus intends to add all collections with Whole Genome or Whole Exome Sequenced files to the Omics Variant Browser.
 
-For more information about this tool, see this (Arcus Forum post)[https://assets.arcus.chop.edu/arcus_education_assets/job_aids/arcus_cohort_discovery_filters.pdf].
+For more information about this tool, see this [Arcus Forum post](https://assets.arcus.chop.edu/arcus_education_assets/job_aids/arcus_cohort_discovery_filters.pdf).
 
 ### Gene Data Catalog
 
@@ -138,13 +138,13 @@ Gene is CHOP’s enterprise data catalog co-managed by Arcus and the Information
 
 In Gene, users can search and browse all research data collection metadata. This includes, among other values: project descriptions, filetypes in the collection, Principal Investigators, and data use restrictions. If a user finds a collection they would like to use in research, they are able to start the request process with Arcus in Gene.
 
-For an introduction to Gene see the (Gene 101 introduction page)[https://chop.alationcloud.com/article/912/gene-101-intro-to-gene]. For information about Arcus cohort and research data information in Gene, see the (Arcus and Gene article)[https://chop.alationcloud.com/article/912/gene-101-intro-to-gene].
+For an introduction to Gene see the [Gene 101 introduction page](https://chop.alationcloud.com/article/912/gene-101-intro-to-gene). For information about Arcus cohort and research data information in Gene, see the [Arcus and Gene article](https://chop.alationcloud.com/article/912/gene-101-intro-to-gene).
 
 ### SCIT labs
 
-When a request for archival data is approved, it will be delivered to an Arcus Computational Labs (or Arcus labs for short). Arcus labs are remote and secure computational environments for clinical data focused research. Labs are configured to meet the requirements of the data or research project requested, with appropriate memory, CPU, and storage capabilities as needed. All labs are configured with open source statistical and data analytics software, including: JupyterLab with language kernels such as Python, RStudio using R, and SQL browser. Arcus Labs is accessed on the web using a URL and all members of your team with access to the lab will have the same environment and data. By default, data is not exportable by Arcus labs, they are designed for all exploration and analysis to occur within the secure environment. Exporting data for publications or other dissemination is possible but governed by Arcus according to the (Arcus Terms of Use)[https://arcus.chop.edu/terms-of-use] and privacy controls.
+When a request for archival data is approved, it will be delivered to an Arcus Computational Labs (or Arcus labs for short). Arcus labs are remote and secure computational environments for clinical data focused research. Labs are configured to meet the requirements of the data or research project requested, with appropriate memory, CPU, and storage capabilities as needed. All labs are configured with open source statistical and data analytics software, including: JupyterLab with language kernels such as Python, RStudio using R, and SQL browser. Arcus Labs is accessed on the web using a URL and all members of your team with access to the lab will have the same environment and data. By default, data is not exportable by Arcus labs, they are designed for all exploration and analysis to occur within the secure environment. Exporting data for publications or other dissemination is possible but governed by Arcus according to the [Arcus Terms of Use](https://arcus.chop.edu/terms-of-use) and privacy controls.
 
-For more information about requesting and using an Arcus Lab, please see the (Arcus Lab Orientation module)[https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1].
+For more information about requesting and using an Arcus Lab, please see the [Arcus Lab Orientation module](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1).
 
 ## Pre-Data Contribution 
 
@@ -175,7 +175,7 @@ In addition, data and files that provide valuable context and support reusabilit
 
 ### Privacy Review  
 
-Privacy analyst will review IRB and data, and determine if it can be shared, and any restrictions on reuse. Help submit amendments and make modifications as needed. Our privacy team has an extensive set of templated language that expedites this process. Based on review, create and sign Data Contribution Agreement. The Data Contribution Agreement is an agreement between the Data Contributor and Arcus staff that outlines a Contributor’s role in contributing archival data to Arcus and allowing for the sharing and use of such archival data. A general version of this agreement is viewable at (this link)[https://arcus.chop.edu/privacy-and-forms/data-contribution-agreement]. Your research data is tagged with the appropriate access and use conditions in Arcus discovery tools once it is fully archived.
+Privacy analyst will review IRB and data, and determine if it can be shared, and any restrictions on reuse. Help submit amendments and make modifications as needed. Our privacy team has an extensive set of templated language that expedites this process. Based on review, create and sign Data Contribution Agreement. The Data Contribution Agreement is an agreement between the Data Contributor and Arcus staff that outlines a Contributor’s role in contributing archival data to Arcus and allowing for the sharing and use of such archival data. A general version of this agreement is viewable at [this link](https://arcus.chop.edu/privacy-and-forms/data-contribution-agreement). Your research data is tagged with the appropriate access and use conditions in Arcus discovery tools once it is fully archived.
 
 ### Technical Considerations   
 
