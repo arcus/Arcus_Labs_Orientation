@@ -172,7 +172,7 @@ For more information about requesting and using an Arcus Lab, please see the [Ar
 
 <em> What data will be transferred? How will we transfer it? Tools like Isilon, AWS and RedCap. Support from Arcus. Filenameing guidelines. </em>
 
-### Scope of Contribution\*\*
+### Scope of Contribution
 
 Arcus has standards for contributing data that require some remediation and the second module of this series [link] we go into the data preparation workflow in greater detail. If your research is deliberately phased or continually enrolls participants, we can establish a plan of work and cadence for your data submissions
 
