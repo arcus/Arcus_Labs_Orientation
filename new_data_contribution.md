@@ -18,7 +18,7 @@ estimated_time: 30 minutes
 
 @end
 
-@learning_objectives
+@learning_objectives:
 
 After the completion of this training module, learners will be able to:
 - Justify archiving research data with Arcus
@@ -84,9 +84,7 @@ When you are ready to archive your lab data, please reach out to your Scientific
 
 During the orientation for your Arcus Lab, you should have received an orientation to the Project Template structure. A review of this information is available in Module 2 [ADD LINK LATER] and in this [Arcus forum post](https://forum.arcus.chop.edu/t/the-arcus-project-template/255). Prior to archiving, the research data and all associated reference information needs to be organized in the project template preloaded into your lab. If you need assistance in arranging your data, please reach out to the Library Science team at dlarcuslibraryscience@chop.edu
 
-## Reasons to Contribute
-
-### Why contribute?
+## Why contribute?
 
 One of the primary functions of Arcus is to link otherwise disparate data sources to enable new opportunities for CHOP researchers and to accelerate the path to discovery. Contributing data to Arcus allows us to achieve this goal in that research data sets can be discovered along with and linked to other research data sets, clinical data sources, and computational tools.
 
@@ -94,17 +92,17 @@ We have designed the data contribution process to be iterative and to complement
 
 ### Data Reuse
 
-#### Collate data in Arcus for use in lab 
+**Collate data in Arcus for use in lab**
 
 As mentioned, contributing research data is prerequisite to working with that data in an Arcus lab. Once data is stored in Arcus it can be both integrated with a variety of data sources and successfully delivered to a lab. Our privacy team has regulatory language that allows for expansive and evolving integration. Arcus labs are available at a persistent web URL that facilitates collaborative research across multiple users.
 
-#### Open Science initiatives 
+**Open Science initiatives**
 
 Broadly speaking, Open Science Initiatives promote making publicly funded research data more widely available and collecting and organizing these data in a way that makes them reusable. For example, as of 2023, all NIH funded studies regardless of size must develop a [data management and sharing plan](https://www.research.chop.edu/sites/default/files/2022-11/DBHi_Converting_Resource_DMSP.pdf) which stipulates data is ultimately deposited in a searchable data repository. Archiving your data in Arcus ensures that your data is in compliance with this requirement.
 
 ### Grant Requirements
 
-#### FAIR Data
+**FAIR Data**
 
 [Findability, Accessibility, Interoperability, and Reusability](https://force11.org/info/the-fair-data-principles/) (FAIR) are four guiding principles that emphasize the need to standardize how machines find and utilize data. They were introduced in 2016 for scientific data management and stewardship.
 
@@ -112,9 +110,11 @@ Arcus has put in place research data archives and library-based discovery servic
 
 ### Cost savings 
 
+**Version control and citation standard**
+
 Depositing your data in Arcus removes the headaches associated with ongoing maintenance such as technology going stale or conflicting version histories. Arcus provides a citation standard for all archived datasets that facilitates the publication process and enables the tracking of future uses of your research. Sample grant language and citation examples can be found at [this post](https://forum.arcus.chop.edu/t/arcus-citation-and-recognition/316) on the Arcus Forum.
 
-### Preservation of data and study  
+**Preservation of data and study**
 
 <em> Secure and preserved in AWS and GCS servers. </em>
 
@@ -168,9 +168,11 @@ For more information about requesting and using an Arcus Lab, please see the [Ar
 
 ## Pre-Data Contribution 
 
-### Scope of Contribution
-
 <em> Meet with the archivist and determine what data will be contributed. Talk about the data contribution process and figure out responsibilities for preparing information. </em>
+
+<em> What data will be transferred? How will we transfer it? Tools like Isilon, AWS and RedCap. Support from Arcus. Filenameing guidelines. </em>
+
+### Scope of Contribution\*\*
 
 Arcus has standards for contributing data that require some remediation and the second module of this series [link] we go into the data preparation workflow in greater detail. If your research is deliberately phased or continually enrolls participants, we can establish a plan of work and cadence for your data submissions
 
@@ -198,8 +200,6 @@ In addition, data and files that provide valuable context and support reusabilit
 Privacy analyst will review IRB and data, and determine if it can be shared, and any restrictions on reuse. Help submit amendments and make modifications as needed. Our privacy team has an extensive set of templated language that expedites this process. Based on review, create and sign Data Contribution Agreement. The Data Contribution Agreement is an agreement between the Data Contributor and Arcus staff that outlines a Contributor’s role in contributing archival data to Arcus and allowing for the sharing and use of such archival data. A general version of this agreement is viewable at [this link](https://arcus.chop.edu/privacy-and-forms/data-contribution-agreement). Your research data is tagged with the appropriate access and use conditions in Arcus discovery tools once it is fully archived.
 
 ### Technical Considerations   
-
-<em> What data will be transferred? How will we transfer it? Tools like Isilon, AWS and RedCap. Support from Arcus. Filenameing guidelines. </em>
 
 The transfer of study data files and the required contextual information is the final step before the archiving process kicks off. Depending on the size of your dataset, a variety of technical solutions are available at CHOP to facilitate the transfer. For omics scale or longitudinally collected clinical datasets, a secure cloud to cloud transfer or use of an especially provisioned Isilon share is the most computationally sensible solution. For smaller datasets, granting permission to a shared REDCap or a Github project or within OneDrive will be technically sufficient. Arcus has user resources available to help with the organization of your data at any stage in your research timeline.
 
