@@ -18,7 +18,7 @@ estimated_time: 30 minutes
 
 @end
 
-@learning_objectives
+@learning_objectives:
 
 After the completion of this training module, learners will be able to:
 - Justify archiving research data with Arcus
