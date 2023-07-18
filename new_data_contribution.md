@@ -8,15 +8,11 @@ module_type: standard
 docs_version: 1.1.0
 language: en
 narrator: UK English Female
-mode: Textbook
-
 title: Arcus Data Contribution Orientation
-
 comment:  Learn about archiving research data with Arcus
-
 long_description: Arcus Archives is the canonical repository for research data at CHOP. Archiving research data preserves the important research performed at CHOP according to archival standards while facilitating data sharing. This module reviews reasons to archive research data at Arcus, and the data scoping, privacy review and technical considerations taken before receiving data. Module 2 covers the steps of archiving the data at Arcus.
 
-estimated_time_in_minutes: 30 minutes
+estimated_time: 30 minutes
 
 @pre_reqs: It's helpful to have reviewed the [Arcus website](https://arcus.chop.edu) at  (available only on the CHOP network), to understand Arcus’s overall goals.
 
@@ -39,6 +35,30 @@ import: https://raw.githubusercontent.com/arcus/education_modules/main/_module_t
 ## Overview
 
 @comment
+
+### Is this module right for me?
+
+@long_description
+
+### Details
+
+**Estimated time to completion**: @estimated_time
+
+**Pre-requisites**: It's helpful to have reviewed the Arcus website at https://arcus.chop.edu (available only on the CHOP network), to understand Arcus overall goals.
+
+**Learning Objectives**:
+
+@learning_objectives
+
+</div>
+
+<div class = "important">
+
+Hi! This document is still under construction and testing. We apologize in advance for any broken links or unclear language. We invite your feedback. Please add a [support ticket](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/249) or [email Arcus Library Sciences](mailto:dlarcuslibraryscience@chop.edu) to let us know what we can improve or suggest additional topics.
+
+Please note that **many of the links here will only work if you're on the CHOP network**.
+
+</div>
 
 ## Audience
 
