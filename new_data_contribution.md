@@ -18,12 +18,13 @@ estimated_time: 30 minutes
 
 @end
 
-@learning_objectives:
+@learning_objectives
 
 After the completion of this training module, learners will be able to:
 - Justify archiving research data with Arcus
 - Know the tools Arcus uses for sharing data at CHOP
 - Understand the steps taken before transferring data to Arcus for archiving.
+
 @end
 
 
@@ -225,7 +226,14 @@ In addition, data and files that provide valuable context and support reusabilit
 
 ### Privacy Review  
 
-Privacy analyst will review IRB and data, and determine if it can be shared, and any restrictions on reuse. Help submit amendments and make modifications as needed. Our privacy team has an extensive set of templated language that expedites this process. Based on review, create and sign Data Contribution Agreement. The Data Contribution Agreement is an agreement between the Data Contributor and Arcus staff that outlines a Contributor’s role in contributing archival data to Arcus and allowing for the sharing and use of such archival data. A general version of this agreement is viewable at [this link](https://arcus.chop.edu/privacy-and-forms/data-contribution-agreement). Your research data is tagged with the appropriate access and use conditions in Arcus discovery tools once it is fully archived.
+Privacy analyst will review IRB and data, and determine if it can be shared, and any restrictions on reuse. Help submit amendments and make modifications as needed. Our privacy team has an extensive set of templated language that expedites this process. Based on review, create and sign Data Contribution Agreement. The Data Contribution Agreement is an agreement between the Data Contributor and Arcus staff that outlines a Contributor’s role in contributing archival data to Arcus and allowing for the sharing and use of such archival data.
+
+<div class = "learn-more">
+<b style="color: rgb(var(--color-highlight));">Learning connection</b><br>
+
+A general version of this agreement is viewable at [this link](https://arcus.chop.edu/privacy-and-forms/data-contribution-agreement). Your research data is tagged with the appropriate access and use conditions in Arcus discovery tools once it is fully archived. Arcus has an [additional agreement](https://arcus.chop.edu/privacy-and-forms/t-and-c-for-previous-datasets) that authorizes the use of previously collected research data sets. Other Arcus Library Sciences privacy documents are available on PolicyManager including the [Collection Management Policy](https://chop.policymedical.net/policymed/anonymous/docViewer?stoken=14de2fa8-d9f5-4188-983b-29545b20809f&dtoken=5ec24efe-4ad6-4eb6-88ed-6814e94ad45e) and the [Data Sharing and Attribution Policy](https://chop.policymedical.net/policymed/anonymous/docViewer?stoken=14de2fa8-d9f5-4188-983b-29545b20809f&dtoken=83ad177b-a806-4ddd-8fbb-a42acf9b889d).
+
+</div>
 
 ### Technical Considerations   
 
