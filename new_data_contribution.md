@@ -65,7 +65,7 @@ Please note that **many of the links here will only work if you're on the CHOP n
 
 ## Audience
 
-The purpose of this module is to introduce the CHOP community to archiving research data in Arcus. This module is useful for any faculty, staff or fellow that is involved in creating, managing or analyzing reserach data at CHOP. 
+This module introduces the CHOP community to archiving research data in Arcus. It is useful to ANYONE at CHOP involved in creating, managing or analyzing reserach data at CHOP. 
 
 Archiving and resusing research data is a core element of the Arcus program in the Department of Biomedical and Health Informatics. Arcus is a suite of tools and services for CHOP’s research community that seamlessly links biological, clinical, research, and environmental data. The Arcus team is comprised of seasoned professionals at support the CHOP community in:
 - Discovering and analyzing rich data about our patients and research participants using datasets from across CHOP
@@ -146,16 +146,16 @@ Digital preservation is more than file transfers and secure storage, it’s abou
 
 ## How is it shared?
 
-![Graphic representation that shows the lifecycle of research data in Arcus](https://github.com/arcus/Arcus_Labs_Orientation/blob/data-contribution/media/data_life_cycle.png"Arcus Research Data LifeCycle")
+![Graphic representation that shows the lifecycle of research data in Arcus](https://github.com/arcus/Arcus_Labs_Orientation/blob/data-contribution/media/data_life_cycle.png "Arcus Research Data LifeCycle")
 
 Arcus maintains a lifecycle of all archived research data. All data archived with Arcus is available to other CHOP researchers for reuse. This data is discoverable through three CHOP supported data discovery platforms: Arcus Cohort Discovery, Arcus Variant Browser and the Gene Data Catalog.  
-**Arcus Cohort Discovery**: filter unidentified clinical data based on the cohort for the research data set
-**Arcus Omics Variant Browse**: view and filter all annotated variant information for all genomic files in the Arcus archives
-**Gene Data Catalog**: view the metadata (data about the data) for all the research collections within Arcus, and easily request to use the data
+- **Arcus Cohort Discovery**: filters unidentified clinical data based on the cohort for the research data set
+- **Arcus Omics Variant Browse**: view and filter all annotated variant information for all genomic files in the Arcus archives
+- **Gene Data Catalog**: view the metadata (data about the data) for all the research collections within Arcus, and easily request data
 
-The [Gene Data Catalog](https://chop.alationcloud.com) is available to everyone with CHOP credentials. Access to Arcus Cohort Discovery and Omics Variant Browser require that you have completed CITI Human Subjects Protection training and agreed to the Arcus Terms of Use, in addition to having CHOP credentials. For more information about accessing the Arcus tools, [see this Job Aid](https://assets.arcus.chop.edu/arcus_education_assets/job_aids/arcus_cohort_discovery.pdf).
+The [Gene Data Catalog](https://chop.alationcloud.com) is available to everyone with CHOP credentials. Access to Arcus Cohort Discovery and Omics Variant Browser requires completion of the CITI Human Subjects Protection training and agreement to the Arcus Terms of Use, in addition to CHOP credentials. For more information about accessing the Arcus tools, [see this Job Aid](https://assets.arcus.chop.edu/arcus_education_assets/job_aids/arcus_cohort_discovery.pdf).
 
-If a researcher would like to use the data in a research project, they will have it delivered to a Scientific Project with an Arcus lab. Arcus vets all requests to work with data according to the nature of the request and the limitations of the data in question. Research results from Arcus Scientific projects will be archvied as new reaserch data collections in Arcus.
+If a researcher would like to use the archived data in a research project, it will be delivered to an Arcus Scientific Project with an Arcus Computational lab. Arcus vets all requests to work with data according to the nature of the request and the limitations of the data in question. Research results from Arcus Scientific projects will be archvied as new reaserch data collections in Arcus.
 
 ### Arcus Cohort Discovery
 
@@ -215,9 +215,9 @@ For more information about requesting and using an Arcus Lab, please see the [Ar
 
 ## Pre-Data Contribution 
 
-<em> Meet with the archivist and determine what data will be contributed. Talk about the data contribution process and figure out responsibilities for preparing information. </em>
+Before transfering the data, data contributors will meet with an Arcus Digital Archivist to determine whether the data is appropriate for archiving in Arcus. These conversation will determine the data to be contributed, discuss the data contribution process and figure out responsibilities for preparing information.
 
-<em> What data will be transferred? How will we transfer it? Tools like Isilon, AWS and RedCap. Support from Arcus. Filenameing guidelines. </em>
+Before transfering any data, the Digital Archivist will manage the process of: **Scoping waht data is contributed**, **reviewing the data for privacy and regulatory issues**, and **creating a plan for the technical considerations of preparing and transfering data**.
 
 ### Scope of Contribution
 
@@ -244,11 +244,11 @@ In addition, data and files that provide valuable context and support reusabilit
 
 ### Privacy Review  
 
-Before any data is archived in Arcus, it goes through a through review by an Arcus Privacy Analyst to identify potential privacy and regulatory issues. The Privacy analyst will review IRB, consent agreements and data, and determine if it can be shared, and any restrictions on reuse. If the IRB needs to be amended to allow or clarify data resuse, the Privacy Analyst will offer advice on completing the amendment, including an extensive set of templated language that expedites this process. Arcus can accept a full range of Data Contributions, from those that are completely de-identified to those that are fully identified and including ones that must remain coded. For coded data sets, Arcus offers honest broker services so that data retains its linkages without violating the privacy concerns of patients and researchers.
+Before any data is archived in Arcus, it is throughly reviewed by an Arcus Privacy Analyst to identify potential privacy and regulatory issues. The Privacy Analyst will review the IRB, consent agreements and data, to determine if it can be shared, and any restrictions on reuse. If the IRB needs to be amended to allow or clarify data resuse, the Privacy Analyst will consult on completing the amendment, including an extensive set of templated language that expedites this process. Arcus can accept a full range of Data Contributions, from those that are completely de-identified to those that are fully identified and including ones that must remain coded. For coded data sets, Arcus offers honest broker services so that data retains its linkages without violating the privacy concerns of patients and researchers.
 
 Based on the privacy review, a Data Contribution Agreement will be created that will be signed by the Principal Investigator. The Data Contribution Agreement is an agreement between the Data Contributor and Arcus staff that outlines a Contributor’s role in contributing archival data to Arcus and allowing for the sharing and use of such archival data. 
 
-As part of the archiving and metadata process, data use terms specified in the Data Contribution Agreement will be added to the description with the collection. The description will also include information about the academic attribution of the data and creators. When data is requested for reuse, these terms will be reviewed and followed before data delivery. Though Arcus does not do embargos or restrictions on reuse outside what is required by the IRB and consent documents, we can inform you when the data is reused in a new project if requested.
+As part of the archiving and metadata process, data use terms specified in the Data Contribution Agreement will be added to the description for the collection. The description will also include information about the academic attribution of the data and creators. When data is requested for reuse, these terms will be reviewed and followed before data delivery. Though Arcus does not do embargos or restrictions on data reuse outside what is required by the IRB and consent documents, we can inform you when the data is reused in a new project if requested.
 
 <div class = "learn-more">
 <b style="color: rgb(var(--color-highlight));">Learning connection</b><br>
