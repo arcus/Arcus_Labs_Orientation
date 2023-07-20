@@ -65,7 +65,24 @@ Please note that **many of the links here will only work if you're on the CHOP n
 
 ## Audience
 
-Add more general purpose section about Arcus and type of audiences.
+The purpose of this module is to introduce the CHOP community to archiving research data in Arcus. This module is useful for any faculty, staff or fellow that is involved in creating, managing or analyzing reserach data at CHOP. 
+
+Archiving and resusing research data is a core element of the Arcus program in the Department of Biomedical and Health Informatics. Arcus is a suite of tools and services for CHOP’s research community that seamlessly links biological, clinical, research, and environmental data. The Arcus team is comprised of seasoned professionals at support the CHOP community in:
+- Discovering and analyzing rich data about our patients and research participants using datasets from across CHOP
+- Direct access to clinical data and annotations of clinical notes
+- Performing analysis in a secure computational environment
+- Preserving and discovering research data
+- Connect with other researchers to spur new ideas, efforts, collaborations
+
+All Arcus tools and servies are free and open to all CHOP faculty, staff or fellow!
+
+<div class = "learn-more">
+<b style="color: rgb(var(--color-highlight));">Learning connection</b><br>
+
+For more information about Arcus and the data and tools and support available through the program, please see the [Arcus homepage](https://www.research.chop.edu/applications/arcus). 
+
+</div>
+
 
 ### In progress data contributors  
 
@@ -129,16 +146,14 @@ Digital preservation is more than file transfers and secure storage, it’s abou
 
 ## How is it shared?
 
-Use learn more boxes for all of the internal tool linking and add image of Julie's graphic
-
-All data archived with Arcus is available to other CHOP researchers for reuse. This data is discoverable through three CHOP supported data discovery platforms: Arcus Cohort Discovery, Arcus Variant Browser and the Gene Data Catalog.  
+Arcus maintains a lifecycle of all archived research data. All data archived with Arcus is available to other CHOP researchers for reuse. This data is discoverable through three CHOP supported data discovery platforms: Arcus Cohort Discovery, Arcus Variant Browser and the Gene Data Catalog.  
 **Arcus Cohort Discovery**: filter unidentified clinical data based on the cohort for the research data set
 **Arcus Omics Variant Browse**: view and filter all annotated variant information for all genomic files in the Arcus archives
 **Gene Data Catalog**: view the metadata (data about the data) for all the research collections within Arcus, and easily request to use the data
 
 The [Gene Data Catalog](https://chop.alationcloud.com) is available to everyone with CHOP credentials. Access to Arcus Cohort Discovery and Omics Variant Browser require that you have completed CITI Human Subjects Protection training and agreed to the Arcus Terms of Use, in addition to having CHOP credentials. For more information about accessing the Arcus tools, [see this Job Aid](https://assets.arcus.chop.edu/arcus_education_assets/job_aids/arcus_cohort_discovery.pdf).
 
-If a researcher would like to use the data in a research project, they will have it delivered to a Scientific Project with an Arcus lab. Arcus vets all requests to work with data according to the nature of the request and the limitations of the data in question.
+If a researcher would like to use the data in a research project, they will have it delivered to a Scientific Project with an Arcus lab. Arcus vets all requests to work with data according to the nature of the request and the limitations of the data in question. Research results from Arcus Scientific projects will be archvied as new reaserch data collections in Arcus.
 
 ### Arcus Cohort Discovery
 
