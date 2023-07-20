@@ -146,9 +146,10 @@ Digital preservation is more than file transfers and secure storage, it’s abou
 
 ## How is it shared?
 
-![Graphic representation that shows the lifecycle of research data in Arcus](https://github.com/arcus/Arcus_Labs_Orientation/blob/data-contribution/media/data_life_cycle.png "Arcus Research Data LifeCycle")
+![Graphic representation that shows the lifecycle of research data in Arcus](https://github.com/arcus/Arcus_Labs_Orientation/blob/data-contribution/media/data_life_cycle.png)
 
 Arcus maintains a lifecycle of all archived research data. All data archived with Arcus is available to other CHOP researchers for reuse. This data is discoverable through three CHOP supported data discovery platforms: Arcus Cohort Discovery, Arcus Variant Browser and the Gene Data Catalog.  
+
 - **Arcus Cohort Discovery**: filters unidentified clinical data based on the cohort for the research data set
 - **Arcus Omics Variant Browse**: view and filter all annotated variant information for all genomic files in the Arcus archives
 - **Gene Data Catalog**: view the metadata (data about the data) for all the research collections within Arcus, and easily request data
@@ -217,7 +218,7 @@ For more information about requesting and using an Arcus Lab, please see the [Ar
 
 Before transfering the data, data contributors will meet with an Arcus Digital Archivist to determine whether the data is appropriate for archiving in Arcus. These conversation will determine the data to be contributed, discuss the data contribution process and figure out responsibilities for preparing information.
 
-Before transfering any data, the Digital Archivist will manage the process of: **Scoping waht data is contributed**, **reviewing the data for privacy and regulatory issues**, and **creating a plan for the technical considerations of preparing and transfering data**.
+Before transfering any data, the Digital Archivist will manage the process of: **scoping of what data to contribute**, **reviewing the research project for privacy and regulatory issues**, and **creating a plan for the technical considerations of preparing and transfering data**.
 
 ### Scope of Contribution
 
