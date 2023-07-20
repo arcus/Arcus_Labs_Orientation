@@ -218,7 +218,7 @@ For more information about requesting and using an Arcus Lab, please see the [Ar
 
 Before transfering the data, data contributors will meet with an Arcus Digital Archivist to determine whether the data is appropriate for archiving in Arcus. These conversation will determine the data to be contributed, discuss the data contribution process and figure out responsibilities for preparing information.
 
-Before transfering any data, the Digital Archivist will manage the process of: **scoping of what data to contribute**, **reviewing the research project for privacy and regulatory issues**, and **creating a plan for the technical considerations of preparing and transfering data**.
+Before transfering any data, the Digital Archivist will manage the process of: **scoping of data to contribute**, **reviewing the research project for privacy and regulatory issues**, and **creating a plan for the technical considerations of preparing and transfering data**.
 
 ### Scope of Contribution
 
