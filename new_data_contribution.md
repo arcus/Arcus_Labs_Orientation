@@ -266,6 +266,6 @@ The transfer of study data files and the required contextual information is the 
 
 Depending on the size of your dataset, a variety of technical solutions are available at CHOP to facilitate the transfer. For large collections, like many omics projects or longitudinally collected clinical datasets, Arcus will provision a secure cloud to cloud transfer or set up an especially provisioned Isilon share. Isilon shares are NAS (network attached storage) arrays configured and managed by [CHOP's Research Information Services](https://www.research.chop.edu/ris-infrastructure-services). They are provisioned using Microsoft Active Directory permissions, and are easy to set up access for any CHOP credentialed staff memeber. 
 
-For smaller datasets, the Digital Archivist can often compelte the file transfer, once given permission to the project file location within CHOP applications. This can include [RedCap](https://redcap.chop.edu), a GitHub project, or a OneDrive folder.
+For smaller datasets, the Digital Archivist can complete the file transfer, once given permission to the project file location within CHOP applications. This includes [RedCap](https://redcap.chop.edu), a GitHub project, or a OneDrive folder.
 
 Arcus has user resources available to help with the organization of your data at any stage in your research timeline. The Digital Archivists and technical experts at Arcus are partners in transferring the data. If needed, they can advise and support transferring files and formatting the needed metadata.
