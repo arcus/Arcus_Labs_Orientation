@@ -146,7 +146,7 @@ Digital preservation is more than file transfers and secure storage, it’s abou
 
 ## How is it shared?
 
-![Graphic representation that shows the lifecycle of research data in Arcus](https://github.com/arcus/Arcus_Labs_Orientation/blob/data-contribution/media/data_life_cycle.png)
+![Graphic representation of the lifecycle of research data in Arcus](media/data_life_cycle.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 600px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 Arcus maintains a lifecycle of all archived research data. All data archived with Arcus is available to other CHOP researchers for reuse. This data is discoverable through three CHOP supported data discovery platforms: Arcus Cohort Discovery, Arcus Variant Browser and the Gene Data Catalog.  
 
