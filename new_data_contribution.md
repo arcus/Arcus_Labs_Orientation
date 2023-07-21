@@ -68,6 +68,7 @@ Please note that **many of the links here will only work if you're on the CHOP n
 This module introduces the CHOP community to archiving research data in Arcus. It is useful to ANYONE at CHOP involved in creating, managing or analyzing reserach data at CHOP. 
 
 Archiving and resusing research data is a core element of the Arcus program in the Department of Biomedical and Health Informatics. Arcus is a suite of tools and services for CHOP’s research community that seamlessly links biological, clinical, research, and environmental data. The Arcus team is comprised of seasoned professionals at support the CHOP community in:
+
 - Discovering and analyzing rich data about our patients and research participants using datasets from across CHOP
 - Direct access to clinical data and annotations of clinical notes
 - Performing analysis in a secure computational environment
@@ -146,7 +147,8 @@ Digital preservation is more than file transfers and secure storage, it’s abou
 
 ## How is it shared?
 
-![Graphic representation of the lifecycle of research data in Arcus](media/data_life_cycle.png)
+![Graphic representation of the lifecycle of research data in Arcus](media/data_life_cycle.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 600px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
+
 
 Arcus maintains a lifecycle of all archived research data. All data archived with Arcus is available to other CHOP researchers for reuse. This data is discoverable through three CHOP supported data discovery platforms: Arcus Cohort Discovery, Arcus Variant Browser and the Gene Data Catalog.  
 
