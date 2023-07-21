@@ -65,17 +65,17 @@ Please note that **many of the links here will only work if you're on the CHOP n
 
 ## Audience
 
-This module introduces the CHOP community to archiving research data in Arcus. It is useful to ANYONE at CHOP involved in creating, managing or analyzing reserach data at CHOP. 
+This module introduces the CHOP community to archiving research data in Arcus. It is useful to ANYONE at CHOP involved in creating, managing or analyzing reserach data. 
 
-Archiving and resusing research data is a core element of the Arcus program in the Department of Biomedical and Health Informatics. Arcus is a suite of tools and services for CHOP’s research community that seamlessly links biological, clinical, research, and environmental data. The Arcus team is comprised of seasoned professionals at support the CHOP community in:
+Archiving and resusing research data is a core element of the Arcus program. Arcus is a suite of tools and services for CHOP’s research community that seamlessly links biological, clinical, research, and environmental data. The Arcus team is comprised of seasoned professionals at support the CHOP community in:
 
-- Discovering and analyzing rich data about our patients and research participants using datasets from across CHOP
+- Discovering and analyzing rich data about patients and research participants using datasets from across CHOP
 - Direct access to clinical data and annotations of clinical notes
 - Performing analysis in a secure computational environment
 - Preserving and discovering research data
-- Connect with other researchers to spur new ideas, efforts, collaborations
+- Connecting with other researchers to spur new ideas, efforts, collaborations
 
-All Arcus tools and servies are free and open to all CHOP faculty, staff or fellow!
+All Arcus tools and servies are free and open to all CHOP affliated faculty, staff and fellows!
 
 <div class = "learn-more">
 <b style="color: rgb(var(--color-highlight));">Learning connection</b><br>
