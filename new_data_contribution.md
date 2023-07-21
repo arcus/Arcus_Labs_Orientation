@@ -47,7 +47,7 @@ import: https://raw.githubusercontent.com/arcus/education_modules/main/_module_t
 
 **Estimated time to completion**: @estimated_time
 
-**Pre-requisites**: It's helpful to have reviewed the Arcus website at https://arcus.chop.edu (available only on the CHOP network), to understand Arcus overall goals.
+**Pre-requisites**: It's helpful to have reviewed the Arcus website at https://arcus.chop.edu (available only on the CHOP network), to understand Arcus overall goals. MAKE HYPER LINK
 
 **Learning Objectives**:
 
@@ -65,7 +65,7 @@ Please note that **many of the links here will only work if you're on the CHOP n
 
 ## Audience
 
-This module introduces the CHOP community to archiving research data in Arcus. It is useful to ANYONE at CHOP involved in creating, managing or analyzing reserach data. 
+This module introduces the CHOP community to archiving research data in Arcus. It is useful to ANYONE at CHOP involved in creating, managing or analyzing research data. 
 
 Archiving and resusing research data is a core element of the Arcus program. Arcus is a suite of tools and services for CHOP’s research community that seamlessly links biological, clinical, research, and environmental data. The Arcus team is comprised of seasoned professionals at support the CHOP community in:
 
@@ -75,7 +75,7 @@ Archiving and resusing research data is a core element of the Arcus program. Arc
 - Preserving and discovering research data
 - Connecting with other researchers to spur new ideas, efforts, collaborations
 
-All Arcus tools and servies are free and open to all CHOP affliated faculty, staff and fellows!
+All Arcus tools and services are free and open to all CHOP affliated faculty, staff, fellows and approved NTP (non-traditional personel)!
 
 <div class = "learn-more">
 <b style="color: rgb(var(--color-highlight));">Learning connection</b><br>
@@ -127,6 +127,7 @@ Broadly speaking, Open Science Initiatives promote making publicly funded resear
 
 **FAIR Data**
 
+![FAIR data principles image](media/FAIR_data_principles.png)
 Add image of FAIR acronym
 
 [Findability, Accessibility, Interoperability, and Reusability](https://force11.org/info/the-fair-data-principles/) (FAIR) are four guiding principles that emphasize the need to standardize how machines find and utilize data. They were introduced in 2016 for scientific data management and stewardship.
