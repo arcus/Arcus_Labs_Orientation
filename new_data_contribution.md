@@ -146,7 +146,7 @@ Digital preservation is more than file transfers and secure storage, it’s abou
 
 ## How is it shared?
 
-![Graphic representation of the lifecycle of research data in Arcus](media/data_life_cycle.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 600px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
+![Graphic representation of the lifecycle of research data in Arcus](media/data_life_cycle.png)
 
 Arcus maintains a lifecycle of all archived research data. All data archived with Arcus is available to other CHOP researchers for reuse. This data is discoverable through three CHOP supported data discovery platforms: Arcus Cohort Discovery, Arcus Variant Browser and the Gene Data Catalog.  
 
@@ -260,10 +260,10 @@ A general version of this agreement is viewable at [this link](https://arcus.cho
 
 ### Technical Considerations   
 
-The transfer of study data files and the required contextual information is the final step before the archiving process kicks off. All contributed files will be arranged in the our Project Template Directory structure, this will be covered in the next module [LINK] and a [GitHub](https://github.research.chop.edu/arcus/rdm-project-template)repo with more detail about the structure.
+The transfer of study data files and the required contextual information is the final step before the archiving process kicks off. All contributed files will be arranged in the our Project Template Directory structure, this will be covered in the next module [LINK] and a [GitHub](https://github.research.chop.edu/arcus/rdm-project-template) repo with more detail about the structure.
 
 Depending on the size of your dataset, a variety of technical solutions are available at CHOP to facilitate the transfer. For large collections, like many omics projects or longitudinally collected clinical datasets, Arcus will provision a secure cloud to cloud transfer or set up an especially provisioned Isilon share. Isilon shares are NAS (network attached storage) arrays configured and managed by [CHOP's Research Information Services](https://www.research.chop.edu/ris-infrastructure-services). They are provisioned using Microsoft Active Directory permissions, and are easy to set up access for any CHOP credentialed staff memeber. 
 
-For smaller datasets, the Digital Archivist can often compelte the file transfer, once given permission to the project file location within CHOP applications. This can include (RedCap)[https://redcap.chop.edu], a GitHub project, or a OneDrive folder.
+For smaller datasets, the Digital Archivist can often compelte the file transfer, once given permission to the project file location within CHOP applications. This can include [RedCap](https://redcap.chop.edu), a GitHub project, or a OneDrive folder.
 
 Arcus has user resources available to help with the organization of your data at any stage in your research timeline. The Digital Archivists and technical experts at Arcus are partners in transferring the data. If needed, they can advise and support transferring files and formatting the needed metadata.
