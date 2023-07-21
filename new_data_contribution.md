@@ -47,7 +47,7 @@ import: https://raw.githubusercontent.com/arcus/education_modules/main/_module_t
 
 **Estimated time to completion**: @estimated_time
 
-**Pre-requisites**: It's helpful to have reviewed the Arcus website at https://arcus.chop.edu (available only on the CHOP network), to understand Arcus overall goals. MAKE HYPER LINK
+**Pre-requisites**: It's helpful to have reviewed the [Arcus website](https://arcus.chop.edu) (available only on the CHOP network), to understand Arcus overall goals.
 
 **Learning Objectives**:
 
@@ -127,8 +127,7 @@ Broadly speaking, Open Science Initiatives promote making publicly funded resear
 
 **FAIR Data**
 
-![FAIR data principles image](media/FAIR_data_principles.png)
-Add image of FAIR acronym
+![FAIR data principles graphic](media/FAIR_data_principles.png)
 
 [Findability, Accessibility, Interoperability, and Reusability](https://force11.org/info/the-fair-data-principles/) (FAIR) are four guiding principles that emphasize the need to standardize how machines find and utilize data. They were introduced in 2016 for scientific data management and stewardship.
 
@@ -151,10 +150,10 @@ Digital preservation is more than file transfers and secure storage, it’s abou
 ![Graphic representation of the lifecycle of research data in Arcus](media/data_life_cycle.png)
 
 
-Arcus maintains a lifecycle of all archived research data. All data archived with Arcus is available to other CHOP researchers for reuse. This data is discoverable through three CHOP supported data discovery platforms: Arcus Cohort Discovery, Arcus Variant Browser and the Gene Data Catalog.  
+Arcus maintains a lifecycle of all archived research data. All data archived with Arcus is available to other CHOP researchers for reuse. This data is discoverable through three Arcus data discovery tools: Arcus Cohort Discovery, Arcus Variant Browser and the Gene Data Catalog.  
 
 - **Arcus Cohort Discovery**: filters unidentified clinical data based on the cohort for the research data set
-- **Arcus Omics Variant Browse**: view and filter all annotated variant information for all genomic files in the Arcus archives
+- **Arcus Omics Variant Browser**: view and filter all annotated variant information for all genomic files in the Arcus archives
 - **Gene Data Catalog**: view the metadata (data about the data) for all the research collections within Arcus, and easily request data
 
 The [Gene Data Catalog](https://chop.alationcloud.com) is available to everyone with CHOP credentials. Access to Arcus Cohort Discovery and Omics Variant Browser requires completion of the CITI Human Subjects Protection training and agreement to the Arcus Terms of Use, in addition to CHOP credentials. For more information about accessing the Arcus tools, [see this Job Aid](https://assets.arcus.chop.edu/arcus_education_assets/job_aids/arcus_cohort_discovery.pdf).
@@ -218,6 +217,9 @@ For more information about requesting and using an Arcus Lab, please see the [Ar
 </div>
 
 ## Pre-Data Contribution 
+
+![Graphic of a server with a plus sign](media/data_contribution_server.png)
+
 
 Before transfering the data, data contributors will meet with an Arcus Digital Archivist to determine whether the data is appropriate for archiving in Arcus. These conversation will determine the data to be contributed, discuss the data contribution process and figure out responsibilities for preparing information.
 
