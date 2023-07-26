@@ -14,7 +14,8 @@ long_description: Arcus Archives is the canonical repository for research data a
 
 estimated_time: 30 minutes
 
-@pre_reqs: It's helpful to have reviewed the [Arcus website](https://arcus.chop.edu) at  (available only on the CHOP network), to understand Arcus’s overall goals.
+@pre_reqs
+It's helpful to have reviewed the [Arcus website](https://arcus.chop.edu) at  (available only on the CHOP network), to understand Arcus’s overall goals.
 
 @end
 
