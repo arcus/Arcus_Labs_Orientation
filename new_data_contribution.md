@@ -93,19 +93,17 @@ This module can be used as a reference while you navigate the archiving process,
 
 ### Future contributor
 
-This module is a great overview of archiving data with Arcus. We are happy to meet with researchers at all phases of research for research data management consultations and planning for future archival contributions. We can help set up a project
-template file directory structure for storing data and recommend metadata and
-organization best practices. In addition to this module, there are additional data management resources available on CHOP’s [Arcus resources page](https://www.research.chop.edu/applications/arcus/resources).
+This module is an overview of archiving data with Arcus. We are happy to meet with researchers at all phases of research for research data management consultations and planning for future archival contributions. This includes early in your research project, as we can help set up a project template file directory structure for storing data and recommend metadata and organization best practices. In addition to this module, there are additional data management resources available on CHOP’s [Arcus resources page](https://www.research.chop.edu/applications/arcus/resources).
 
 If after viewing this module, you are prepared to archive data with Arcus, please fill out [the following request](https://pm.arcus.chop.edu/servicedesk/customer/portal/6/create/256) to start the process.
 
 ### Arcus Lab users who might be ready to contribute  
 
-When appropriate, archiving your research in Arcus is expected with a Scientific Project with an Arcus Lab. This is documented in the [Arcus Terms of Use](https://arcus.chop.edu/terms-of-use). Archiving is required if you would like to move any data created within an Arcus Lab to a new Scientific Project with an Arcus Lab.
+When appropriate, archiving your research in Arcus is expected with a Scientific Project with an Arcus Lab. This is documented in the [Arcus Terms of Use](https://arcus.chop.edu/terms-of-use). Archiving is required if you would like to move any data created within an Arcus Lab to a new Scientific Project with an Arcus Lab or if other research teams would like to re-use your data.
 
-When you are ready to archive your lab data, please reach out to your Scientific Project Owner using the [Arcus Help Center](https://arcus.chop.edu/terms-of-use).
+When you are ready to archive your lab data, please submit the following request in the [Arcus Help Center](https://pm.arcus.chop.edu/servicedesk/customer/portal/6/create/256) to begin the data contribution process.
 
-During the orientation for your Arcus Lab, you should have received an orientation to the Project Template structure. A review of this information is available in Module 2 [ADD LINK LATER] and in this [Arcus forum post](https://forum.arcus.chop.edu/t/the-arcus-project-template/255). Prior to archiving, the research data and all associated reference information needs to be organized in the project template preloaded into your lab. If you need assistance in arranging your data, please reach out to the Library Science team at dlarcuslibraryscience@chop.edu
+During the orientation for your Arcus Lab, you should have received an orientation to the Project Template structure. A review of this information is available in Module 2 [ADD LINK LATER] and in this [Arcus forum post](https://forum.arcus.chop.edu/t/the-arcus-project-template/255). Prior to archiving, the research data and all associated reference information needs to be organized in the project template directory preloaded into your lab. If you need assistance in arranging your data, please request a consultation by the Arcus Library Sciences team using the [following link](https://jira.arcus.chop.edu:8443/servicedesk/customer/portal/6/create/278?q=rdm&q_time=1690816635148).
 
 ## Why contribute?
 
@@ -181,7 +179,7 @@ Arcus intends to add all collections with Whole Genome or Whole Exome Sequenced 
 <div class = "learn-more">
 <b style="color: rgb(var(--color-highlight));">Learning connection</b><br>
 
-For more information about this tool, see this [Arcus Forum post](https://assets.arcus.chop.edu/arcus_education_assets/job_aids/arcus_cohort_discovery_filters.pdf).
+For more information about this tool, see this [Arcus Forum post](https://forum.arcus.chop.edu/t/omics-variant-browser/493).
 
 </div>
 
