@@ -520,6 +520,12 @@ Topics currently covered in the training videos include:
 - Ingesting and analyzing data in RStudio
 - Working with files using a file browser
 
+### Exporting 
+
+Arcus labs are built to be like "clean rooms" or gloveboxes, in that your data and tools are provided for you in a specific way, and you cannot, as a researcher, bring data in or out of your lab.
+
+But you have to have tables, figures, and statistical test outputs for your publications!  What to do?  Arcus distinguishes between individual-level data, the export of which is generally prohibited, and aggregate data, such as group-level summary statistics or data visualizations for figures.  This latter type of data can be downloaded by [request](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/348).  Once your request is approved, you can [download data](https://forum.arcus.chop.edu/t/how-do-i-download-files-from-labs/512) to use for publications.  
+
 ### Knowledge Check 3
 
 Which of the following best describes an Arcus lab?
