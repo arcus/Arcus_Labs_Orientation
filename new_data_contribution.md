@@ -98,7 +98,7 @@ This module is an overview of archiving data with Arcus. We are happy to meet wi
 
 If after viewing this module, you are prepared to archive data with Arcus, please fill out [the following request](https://pm.arcus.chop.edu/servicedesk/customer/portal/6/create/256) to start the process.
 
-### Arcus Lab users who might be ready to contribute  
+### Arcus Lab users who have data to contribute  
 
 When appropriate, archiving your research in Arcus is expected with a Scientific Project with an Arcus Lab. This is documented in the [Arcus Terms of Use](https://arcus.chop.edu/terms-of-use). Archiving is required if you would like to move any data created within an Arcus Lab to a new Scientific Project with an Arcus Lab or if other research teams would like to re-use your data.
 
