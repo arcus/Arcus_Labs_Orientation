@@ -79,12 +79,13 @@
 
 - participant*manifest.csv matches participants/patients to cohorts and biosample IDs. Ideally, biosample_id links to the CHOP biobank. When you cannot link the the biobank, treat biosample_id as the IDs you use for samples taken from participants. If you deal with only one sample type, you might use the participant ID. If you run a treatment/control experiment, you might use {participantID}\_treat and {participantID}\_control as as a biosample ID scheme. If you work with different tissue samples from participants, you might use {participantID}*{tissue} as a biosample ID scheme.
 
-column,definition,type
-local_participant_id,"This ID uniquely defined a person, and can be linked to an MRN.",String
-cohort,"Use this column to group participants into cohorts that will be cwmpared (For example, case vs healthy control).",String
-biosample_id,"Ideally, this ID can link to the CHOP biobank. When this is not possible, use the sample ID from your project.",String
-family_id,"When participants are related, use family_id to group related participants. With trios or duos, the proband ID is often used.",String
-family_role,"Use a term from eHB_relationship_types_as_of_10_30.json to indicate mother, father, proband, sister, etc..",String
+| column               | definition                                                                                                                    | type   |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------ |
+| local_participant_id | This ID uniquely defined a person, and can be linked to an MRN.                                                               | String |
+| cohort               | Use this column to group participants into cohorts that will be cwmpared (For example, case vs healthy control).              | String |
+| biosample_id         | Ideally, this ID can link to the CHOP biobank. When this is not possible, use the sample ID from your project.                | String |
+| family_id            | When participants are related, use family_id to group related participants. With trios or duos, the proband ID is often used. | String |
+| family_role          | Use a term from eHB_relationship_types_as_of_10_30.json to indicate mother, father, proband, sister, etc..                    | String |
 
 ### manifests/participant_manifest clinical example
 
@@ -102,57 +103,63 @@ auth_participant_id,Authorative Id of the participant. (Often MRN),String,Use an
 
 - participant_family_role.csv If you have family data, use this file to describe relationships with terms from data_dicts/eHB_relationship_types_as_of_10_30.json.
 
-local_participant_id,local_relative_id,relative_family_role
-participant1,participant2,biological mother
-participant2,participant1,biological son
-participant1,participant3,biological father
-participant3,participant1,biological son
-participant1,participant4,biological sister
-participant4,participant1,biological brother
+| local_participant_id | local_relative_id | relative_family_role |
+| -------------------- | ----------------- | -------------------- |
+| participant1         | participant2      | biological mother    |
+| participant2         | participant1      | biological son       |
+| participant1         | participant3      | biological father    |
+| participant3         | participant1      | biological son       |
+| participant1         | participant4      | biological sister    |
+| participant4         | participant1      | biological brother   |
 
-column,defintion,type
-local_participant_id,The local id of a participant.,String
-local_relative_id,The local id of a relative to the participant.,String
-relative_family_role,"The familial relationship of the relative to the participant. Use terms from eHB_relationship_types_as_of_10_30.json.",String
+| column               | defintion                                                                                                             | type   |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------- | ------ |
+| local_participant_id | The local id of a participant.                                                                                        | String |
+| local_relative_id    | The local id of a relative to the participant.                                                                        | String |
+| relative_family_role | The familial relationship of the relative to the participant. Use terms from eHB_relationship_types_as_of_10_30.json. | String |
 
 - familyid_crosswalk.csv This manifest should be used with trio and cohort. A trio will contain three participants, a cohort can contain hundreds. This file walks the name for the trio or cohort file with the local_participant_id's included in it.
 
-family_id,individual_id,paternal_id,maternal_id,sex
-LML100,101354,,,2
-LML100,101355,,101354,1
-LML101,102454,,,2
-LML101,102455,102456,102454,1
-LML101,102456,,,1
-LML102,103767,,,1
-LML102,103768,,,2
-LML102,103769,103767,103768,2
-LML103,108976,108977,108978,1
-LML103,108977,,,1
-LML103,108978,,,2
-LML104,104666,104667,104668,2
-LML104,104667,-9,-9,1
-LML104,104668,-9,-9,2
+| family_id | individual_id | paternal_id | maternal_id | sex |
+| --------- | ------------- | ----------- | ----------- | --- |
+| LML100    | 101354        |             |             | 2   |
+| LML100    | 101355        |             | 101354      | 1   |
+| LML101    | 102454        |             |             | 2   |
+| LML101    | 102455        | 102456      | 102454      | 1   |
+| LML101    | 102456        |             |             | 1   |
+| LML102    | 103767        |             |             | 1   |
+| LML102    | 103768        |             |             | 2   |
+| LML102    | 103769        | 103767      | 103768      | 2   |
+| LML103    | 108976        | 108977      | 108978      | 1   |
+| LML103    | 108977        |             |             | 1   |
+| LML103    | 108978        |             |             | 2   |
+| LML104    | 104666        | 104667      | 104668      | 2   |
+| LML104    | 104667        | -9          | -9          | 1   |
+| LML104    | 104668        | -9          | -9          | 2   |
 
-family_id,"Required, the family_id for the trio data"
-local_participant_id,"Required, the local_particpant_id for each of the participants included in the trio"
-paternal_id,"Optional, the local_participant_id for the father of the participant"
-maternal_id,"Optional, the local_participant_id for the mother of the participant"
-sex,"Optional, the sex of the participant. 1 for male, 2 for female"
+| family_id            | Required, the family_id for the trio data                                           |
+| -------------------- | ----------------------------------------------------------------------------------- |
+| local_participant_id | Required, the local_particpant_id for each of the participants included in the trio |
+| paternal_id          | Optional, the local_participant_id for the father of the participant                |
+| maternal_id          | Optional, the local_participant_id for the mother of the participant                |
+| sex                  | Optional, the sex of the participant. 1 for male, 2 for female                      |
 
 ### manifests/file_derivation.csv
 
 - file_derivation.csv describes the relationships between files in a pipeline or workflow.
 
-column,definition,type
-destination_file_group,The files in this file group is derived from source_file_group.,String
-source_file_group,File group used to derive the destination_file_group.,String
+| column                 | definition                                                      | type   |
+| ---------------------- | --------------------------------------------------------------- | ------ |
+| destination_file_group | The files in this file group is derived from source_file_group. | String |
+| source_file_group      | File group used to derive the destination_file_group.           | String |
 
 ### manifests/env_manifest.csv
 
 - Environment files are necessary for all scripts and machine models, and document the environment in which it was created and run. The environment_manifest.csv links the script or machine model and the environment file stored within the configs directory.
 
-programming_filegroup,"Enter the highest level folder that the environment file relates to. If the file relates to an entire directory, then put the whole direcotry file path. If the file relates to a suddirectory, enter that filepath. If it relates to a single file, enter the file path and filename."
-related_environment,Enter the environment filename. Some environment files will be entered multiple times as they relate to multiple files.
+| programming_filegroup | Enter the highest level folder that the environment file relates to. If the file relates to an entire directory, then put the whole direcotry file path. If the file relates to a suddirectory, enter that filepath. If it relates to a single file, enter the file path and filename. |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| related_environment   | Enter the environment filename. Some environment files will be entered multiple times as they relate to multiple files.                                                                                                                                                                |
 
 ## src/
 
