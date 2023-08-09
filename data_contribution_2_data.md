@@ -254,7 +254,7 @@ Below is further description about the metadata elements in a sample fastq proto
 
 - **info_provider**: Name and job title for the person that provided the information. May be the same as the creator.
 
-to be filled with sample data:
+_to be filled with sample data_:
 
 ---
 
@@ -271,16 +271,17 @@ sequencing_center:
 run_date:
 targeted_depth:
 
-# for RNA-seq files
+_for RNA-seq files_
 
 stranded:
 strand_name:
 
-#information about this file
+_information about this file_
+
 creator:
 info_provider:
 
-# information about this template
+_information about this template_
 
 meta:
 version: 2.0.0
