@@ -247,6 +247,37 @@ Below is further description about the metadata elements in a sample fastq proto
 
 - **info_provider**: Name and job title for the person that provided the information. May be the same as the creator.
 
+to be filled with sample data:
+
+---
+
+sequencing_type:
+platform_name:
+instrument_model:
+platform_unit:
+capture_roi:
+capture_kit:
+process_description:
+read_group_id:
+genome_build:
+sequencing_center:
+run_date:
+targeted_depth:
+
+# for RNA-seq files
+
+stranded:
+strand_name:
+
+#information about this file
+creator:
+info_provider:
+
+# information about this template
+
+meta:
+version: 2.0.0
+
 # reports/
 
 - Content used for producing papers, presentations, websites, metrics, etc.
