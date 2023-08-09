@@ -157,9 +157,11 @@ auth_participant_id,Authorative Id of the participant. (Often MRN),String,Use an
 
 - Environment files are necessary for all scripts and machine models, and document the environment in which it was created and run. The environment_manifest.csv links the script or machine model and the environment file stored within the configs directory.
 
-| programming_filegroup | Enter the highest level folder that the environment file relates to. If the file relates to an entire directory, then put the whole direcotry file path. If the file relates to a suddirectory, enter that filepath. If it relates to a single file, enter the file path and filename. |
-| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| related_environment   | Enter the environment filename. Some environment files will be entered multiple times as they relate to multiple files.                                                                                                                                                                |
+| column                | definition                                                                                                                                                                                                                                                                          | type   |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| programming_filegroup | Enter the highest level folder that the environment file relates to. If the file relates to an entire directory then put the whole directory file path. If the file relates to a suddirectory enter that filepath. If it relates to a single file enter the file path and filename. | String |
+| related_environment   | Enter the environment filename. Some environment files will be entered multiple times as they relate to multiple files.                                                                                                                                                             | String |
+|  |
 
 ## src/
 
