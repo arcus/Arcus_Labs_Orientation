@@ -126,7 +126,7 @@ Broadly speaking, Open Science Initiatives promote making publicly funded resear
 
 **FAIR Data**
 
-![FAIR data principles graphic](media/FAIR_data_principles.png)
+![FAIR data principles graphic](media/FAIR_data_principles.png)<!-- style = "max-width: 600px" -->
 
 [Findability, Accessibility, Interoperability, and Reusability](https://force11.org/info/the-fair-data-principles/) (FAIR) are four guiding principles that emphasize the need to standardize how machines find and utilize data. They were introduced in 2016 for scientific data management and stewardship.
 
