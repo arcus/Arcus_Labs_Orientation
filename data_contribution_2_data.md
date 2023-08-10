@@ -209,6 +209,10 @@ An introduction to the next section, asking the user to choose examples.
 - For a registry, database, or any other type of clinical dataset the raw data will be the research directly collected from subjects whether managed by automated processes or via manual entry.
 - This version of the dataset often contains identifiable information and is most critical for secondary use.
 
+* **_If you collect data in REDCap, there is an option to both tag data with this label at the onset of a project as well as export data with all identifiable fields tagged._**
+* CSV, TSV, XML formats are a great option for archiving from an external data source to be contributed for archiving.
+* Clinical research conducted in an Arcus Scientific Lab is delivered to users in the BigQuery format to optimize search capabilities and performance within the EHR, we have an existing workflow with the ADR team for preseving this work in this format.
+
 ### data/interim
 
 - Managed by study team.
@@ -239,6 +243,11 @@ An introduction to the next section, asking the user to choose examples.
 - vcf files usually contain multiple samples, and are the starting point for most reserach project's analysis. They are not appropriate for constructing cohorts from multiple projects because they are missing necessary information contained in the gvcf files. We collect the compressed version of a vcf file, which can be made with a lossless compression utility tool like gzip. The variant calls in these files might differ from those in a gvcf file because they are made by considering information from all samples. A researcher would want to use these files when considering each project separately.
 
 #### data/endpoints clinical example
+
+- Endpoints clinical data usually entails an analyzed version of a dataset.
+- Deidentified versions of the initially collected data often reside here as well.
+- Sometimes these files can be more cohort scoped or present a refinement into an initial research questions.
+- This data is highly valuable for reuse because often errors in the clinical record emerge from this process and can be illustrative for researchers in an overlapping or similar specialty.
 
 ### data/ref-data
 
