@@ -104,7 +104,7 @@ When appropriate, archiving your research in Arcus is expected with a Scientific
 
 When you are ready to archive your lab data, please submit the following request in the [Arcus Help Center](https://pm.arcus.chop.edu/servicedesk/customer/portal/6/create/256) to begin the data contribution process.
 
-During the orientation for your Arcus Lab, you should have received an orientation to the Project Template structure. A review of this information is available in Module 2 [ADD LINK LATER] and in this [Arcus forum post](https://forum.arcus.chop.edu/t/the-arcus-project-template/255). Prior to archiving, the research data and all associated reference information needs to be organized in the project template directory preloaded into your lab. If you need assistance in arranging your data, please request a consultation by the Arcus Library Sciences team using the [following link](https://jira.arcus.chop.edu:8443/servicedesk/customer/portal/6/create/278?q=rdm&q_time=1690816635148).
+During the orientation for your Arcus Lab, you should have received an orientation to the Project Template structure. A review of this information will be arriving soon in a second training module here, and is also available  in this [Arcus forum post](https://forum.arcus.chop.edu/t/the-arcus-project-template/255). Prior to archiving, the research data and all associated reference information needs to be organized in the project template directory preloaded into your lab. If you need assistance in arranging your data, please request a consultation by the Arcus Library Sciences team using the [following link](https://jira.arcus.chop.edu:8443/servicedesk/customer/portal/6/create/278?q=rdm&q_time=1690816635148).
 
 ## Why contribute?
 
