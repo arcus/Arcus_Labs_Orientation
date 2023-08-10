@@ -280,19 +280,35 @@ An introduction to the next section, asking the user to choose examples.
 
 ### manifests/file_manifest clinical example
 
+- Since clinical research efforts don't always collect biospecimen data.
+- The list of required files we collect for this file are as follows:
+
+> - instance_id
+> - file_path
+> - file_groups
+
 ### manifests/participant_manifest omics example
 
-- participant*manifest.csv matches participants/patients to cohorts and biosample IDs. Ideally, biosample_id links to the CHOP biobank. When you cannot link the the biobank, treat biosample_id as the IDs you use for samples taken from participants. If you deal with only one sample type, you might use the participant ID. If you run a treatment/control experiment, you might use {participantID}\_treat and {participantID}\_control as as a biosample ID scheme. If you work with different tissue samples from participants, you might use {participantID}*{tissue} as a biosample ID scheme.
+- participant_manifest.csv matches participants/patients to cohorts and biosample IDs. Ideally, biosample_id links to the CHOP biobank. When you cannot link the the biobank, treat biosample_id as the IDs you use for samples taken from participants. If you deal with only one sample type, you might use the participant ID. If you run a treatment/control experiment, you might use {participantID}\_treat and {participantID}\_control as as a biosample ID scheme. If you work with different tissue samples from participants, you might use {participantID}\*{tissue} as a biosample ID scheme.
 
 | column               | definition                                                                                                                    | type   |
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------ |
 | local_participant_id | This ID uniquely defined a person, and can be linked to an MRN.                                                               | String |
-| cohort               | Use this column to group participants into cohorts that will be cwmpared (For example, case vs healthy control).              | String |
+| cohort               | Use this column to group participants into cohorts that will be cwopared (For example, case vs healthy control).              | String |
 | biosample_id         | Ideally, this ID can link to the CHOP biobank. When this is not possible, use the sample ID from your project.                | String |
 | family_id            | When participants are related, use family_id to group related participants. With trios or duos, the proband ID is often used. | String |
 | family_role          | Use a term from eHB_relationship_types_as_of_10_30.json to indicate mother, father, proband, sister, etc..                    | String |
 
 ### manifests/participant_manifest clinical example
+
+- Since clinical research efforts don't always collect biospecimen data.
+- When you cannot link the the biobank, treat instance_id as the IDs you use for samples taken from participants
+- The list of required files we collect for this file are as follows:
+
+> - participant_manifest.csv
+> - local_participant_id
+> - cohort
+> - instance_id
 
 ### manifests/participant_crosswalk
 
