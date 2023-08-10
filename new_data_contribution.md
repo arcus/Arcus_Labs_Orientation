@@ -216,7 +216,7 @@ For more information about requesting and using an Arcus Lab, please see the [Ar
 
 ## Pre-Data Contribution 
 
-![Graphic of a server with a plus sign](media/data_contribution_server.png)
+![Graphic of a server with a plus sign](media/data_contribution_server.png)<!-- style = "max-width: 150px;" -->
 
 Before transfering the data, data contributors will meet with an Arcus Digital Archivist to determine whether the data is appropriate for archiving in Arcus. These conversation will determine the data to be contributed, discuss the data contribution process and figure out responsibilities for preparing information.
 
