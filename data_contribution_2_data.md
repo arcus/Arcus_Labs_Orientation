@@ -130,13 +130,13 @@ The CHOP project template evolved through iterations and feedback from CHOP rese
 
 The Arcus template also prioritizes streamlined archiving and reproducible research pathways. It strives to archive various research types from the Research Institute, accessible through tools like [Arcus Cohort Discovery](https://arcus.chop.edu), [Gene](https://chop.alationcloud.com), and [Omics Variant Browser](https://arcus.chop.edu). This template facilitates organizing diverse research data in a single directory structure, enabling automated archiving, metadata management, and data delivery throughout the research data lifecycle. This file directory structure is used for the entire lifecycle of research data within Arcus:
 
-[FIGURE]
+![Graphic representation of the lifecycle of the project template in Arcus](media/ProjectTemplate_Lifecycle.png)
 
 The project template provides a shared structure so that institutional knowledge previously held locally by various members of the data creation team becomes centralized.  
 
 The utility of the project template for lab drive organization and integration with the Arcus archives is summarized in the graphic below.
 
-[FIGURE]
+![Graphic representation of the workflow of research data and the project tempalte](media/ProjectTemplate_workflow.png)
 
 ### Data Management for Grant Requirements
 
@@ -170,7 +170,7 @@ The project template structure outlines a number of directories that are intende
 
 Below is an image of the entire Project Templat Directory, with more detail about each section:
 
-https://storage.googleapis.com/arcus-edu-libsci/Project%20Template%20Lab%20Resources/Project%20Template%20Structure.pdf
+![Graphic respresentation of the Project template with a short explanation of all the different sections](media/ProjectTemplate_Description.png)
 
 ### Research Data
 
