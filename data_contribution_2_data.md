@@ -132,7 +132,7 @@ The Arcus template also prioritizes streamlined archiving and reproducible resea
 
 ![Graphic representation of the lifecycle of the project template in Arcus](media/ProjectTemplate_Lifecycle.png)
 
-The project template provides a shared structure so that institutional knowledge previously held locally by various members of the data creation team becomes centralized.  
+The project template provides a shared structure so that institutional knowledge previously held locally by various members of the data creation team becomes centralized.
 
 The utility of the project template for lab drive organization and integration with the Arcus archives is summarized in the graphic below.
 
@@ -210,9 +210,15 @@ An introduction to the next section, asking the user to choose examples.
 - For a registry, database, or any other type of clinical dataset the raw data will be the research directly collected from subjects whether managed by automated processes or via manual entry.
 - This version of the dataset often contains identifiable information and is most critical for secondary use.
 
-* **_If you collect data in REDCap, there is an option to both tag data with this label at the onset of a project as well as export data with all identifiable fields tagged._**
 * CSV, TSV, XML formats are a great option for archiving from an external data source to be contributed for archiving.
 * Clinical research conducted in an Arcus Scientific Lab is delivered to users in the BigQuery format to optimize search capabilities and performance within the EHR, we have an existing workflow with the ADR team for preseving this work in this format.
+
+<div class = "important">
+<b style="color: rgb(var(--color-highlight));">Important note</b><br>
+
+- REDCap is a great application for clinical data projects of all sizes available to all CHOP personnel. The REDCap team at CHOP has great resources for [data collection best practices](https://storage.googleapis.com/arcus-edu-libsci/PDFs/Best%20Practices%20for%20REDCap%20Data%20Collection.pdf) for new projects and how to [import data](https://storage.googleapis.com/arcus-edu-libsci/PDFs/REDCap_Data_Import_Instructions.pdf) residing in a different application for complete projects ready to be archived. If you automate data collection directly from patients encounters in the EHR there it way to feed that data directly into [REDCap via an API](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/using_redcap_api/using_redcap_api.md#1). If you collect data in REDCap, there is an option to both tag data with an identifiability label at the onset of a project as well as export data with all identifiable fields tagged.
+
+</div>
 
 ### data/interim
 
@@ -221,14 +227,14 @@ An introduction to the next section, asking the user to choose examples.
 - Not necessary to save long term.
 - Recommend establishing retention schedules for regular review/clean-up.
 
+#### data/interim/ omics example
+
+- QC metrics Quality Control (QC) metrics are reported at various stages of analysis pipelines and give information about the quality of the data generated. QC metrics files should be in a tabular file format, with .type_metrics or .duplicate_metrics as the extension. QC metrics files will always be stored in the sources/data/interim directory.
+
 #### data/interim clinical example
 
 - Scratchwork generated during clincal research is not valuable for posterity's sake.
 - However, it can be a good insight into the research process and can be archived.
-
-#### data/interim/ omics example
-
-- QC metrics Quality Control (QC) metrics are reported at various stages of analysis pipelines and give information about the quality of the data generated. QC metrics files should be in a tabular file format, with .type_metrics or .duplicate_metrics as the extension. QC metrics files will always be stored in the sources/data/interim directory.
 
 ### data/endpoints
 
@@ -440,7 +446,7 @@ auth_participant_id,Authorative Id of the participant. (Often MRN),String,Use an
 - In addition to documenting data fields, your data dictionary should also include an overarching description of the dataset itself.
 - If you have more than one dataset, or more than one data table, include a description for each. The descriptions for data tables and datasets should include some idea of the scope of data included, as well as the purpose in collecting or creating the data and its intended use.
 
-#### Sample Data Dictionary from the PEDSnet Data Contribution
+#### Sample Data Dictionary from the [PEDSnet Data Contribution](https://chop.alationcloud.com/article/3810/)
 
 | table_name | field_name               | description                                                                                                | type       | phi | ordinal_position | crosswalk_needed | crosswalk_note |
 | ---------- | ------------------------ | ---------------------------------------------------------------------------------------------------------- | ---------- | --- | ---------------- | ---------------- | -------------- |
@@ -494,37 +500,35 @@ Below is further description about the metadata elements in a sample fastq proto
 
 - **info_provider**: Name and job title for the person that provided the information. May be the same as the creator.
 
-_to be filled with sample data_:
+> - Sample Protocol for a RNA-seq Sequencing Run
 
+```yaml
 ---
-
-sequencing_type:
-platform_name:
-instrument_model:
-platform_unit:
+sequencing_type: RNA-seq
+platform_name: Illumina
+instrument_model: Illumina HiSeq 2500
+platform_unit: H06HDADXX130110.1.ATCACGAT
 capture_roi:
 capture_kit:
-process_description:
-read_group_id:
-genome_build:
-sequencing_center:
-run_date:
-targeted_depth:
+process_description: Total RNA with RIN values above 6 was normalized to 400ng, converted to cDNA, then used to prepare each library using the Illumina TruSeq Stranded Messenger RNA Library Kit and the IDT for Illumina Unique Dual Index Kit in an automated Sciclone Liquid Handler Instrument. Final libraries were analyzed on a Perkin Elmer Labchip GX for quantification and QC.
+read_group_id: flowcell_laneNameAndNumber
+genome_build: HG38 human reference genome
+sequencing_center: Children's Hospital of Philadelphia (CHOP) Division of Genomic Diagnostics (DGD)
+run_date: 01202019
+targeted_depth: 30
 
-_for RNA-seq files_
+# for RNA-seq files
+stranded: true
+strand_name: Illumina TruSeq Stranded Messenger RNA Library Kit
 
-stranded:
-strand_name:
+# information about this file
+creator: Joe Smith, Digital Archivist
+info_provider: Doctor Quinn, Bioinformatics Scientist
 
-_information about this file_
-
-creator:
-info_provider:
-
-_information about this template_
-
+# information about this template
 meta:
-version: 2.0.0
+  version: 2.0.0
+```
 
 # reports/
 
