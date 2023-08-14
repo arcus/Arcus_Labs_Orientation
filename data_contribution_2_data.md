@@ -174,7 +174,7 @@ Below is an image of the entire Project Templat Directory, with more detail abou
 
 ### Research Data
 
-I was thinking of doing a further explanation of the 'sections' (research data, access tools and contextual files) but I am not sure that is neccessary.
+This will be a description of Research data sections in the Project Template. This is likely repetitive for the next part of template, we may instead do a conclusion using the Research data + Access Tools + Contextual files as a conclusion.
 
 ### Access Tools
 
@@ -182,7 +182,19 @@ I was thinking of doing a further explanation of the 'sections' (research data, 
 
 ## Intro
 
-An introduction to the next section, asking the user to choose examples.
+The next part of this module will walk through each sub-directory of the project template in detail. Though the Project Template is flexible enough to handle a wide range of research data, it's application and the information will be different depending on the type of project. For this reason, we have two differnt examples: clinical data or omics data. Please select the examples below, you can choose both, or none.
+
+Regardless of project type, Arcus follows industry standard guidelines for digital archiving and apply these standrds to incoming data contributions. File names should follow a consistent and clear schema, and not contain and spaces, periods or special characters. Further recomendations for filenaming are below:
+* [File naming tips sheet](https://storage.googleapis.com/arcus-edu-libsci/Arcus%20RDM%20Resources/fileNaming_bestPractices_MIT.pdf)
+* [File naming conventions and activity sheet](https://storage.googleapis.com/arcus-edu-libsci/Arcus%20RDM%20Resources/arcus_rdm_filenaming_activity.pdf)
+* [Recommended practices for README files](https://storage.googleapis.com/arcus-edu-libsci/Arcus%20RDM%20Resources/Arcus%20RDM%20Data%20Dictionaries%20Best%20Practices.pdf)
+
+Whenever feasible, Arcus preferes to archive non-proprietary file formats as opposed to proprietary ones. Proprietary formats necessitate specific software for access or utilization, while non-proprietary formats are frequently open-source. Whenever you have the option, it's advisable to store data in a non-proprietary (open) file format. This choice enhances the accessibility of your content to others, enabling effortless reuse across various software platforms. Furthermore, this approach guarantees the continued utility of the file in the long term. In contrast, proprietary files carry the risk of becoming obsolete due to potential software incompatibility or restricted access. When it is necessary to save files in a proprietary format, consider including a README file that documents the name and version of the software used to generate the file, as well as the company who made the software. This could help down the road if we need to figure out how to open these files again.
+
+For both the clinical data and omics examples in the Project Template walk through, we reference our preferred data formats for each type of data. Below are some general resources to help in choosing file formats:
+
+* [Library of Congress Recommended Formats Statement](https://www.loc.gov/preservation/resources/rfs/)
+* MORE!!
 
 ## data/
 
@@ -310,6 +322,7 @@ An introduction to the next section, asking the user to choose examples.
 
 - Since clinical research efforts don't always collect biospecimen data.
 - When you cannot link the the biobank, treat instance_id as the IDs you use for samples taken from participants
+- Can use Epic Patient ID (start with Z) as the local_participant_id
 - The list of required files we collect for this file are as follows:
 
 > - participant_manifest.csv
