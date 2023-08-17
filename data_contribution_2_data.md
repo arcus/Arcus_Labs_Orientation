@@ -210,6 +210,8 @@ For both the clinical data and omics examples in the Project Template walk throu
 
 #### data/raw omics example
 
+!?[Omics data/raw]( https://media.giphy.com/media/v8C2A9EWVJfsLnoVWk/giphy.gif)
+
 - Most sequencing providers will generate a [**fastq**](https://maq.sourceforge.net/fastq.shtml) file or [**cram**](https://samtools.github.io/hts-specs/CRAMv3.pdf) file.
 
 * These files contain genomic sequences called reads. With paired reads, there are two fastq files per sample. Cram files are single files aligned to a reference genome.
