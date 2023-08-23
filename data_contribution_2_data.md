@@ -185,16 +185,18 @@ This will be a description of Research data sections in the Project Template. Th
 The next part of this module will walk through each sub-directory of the project template in detail. Though the Project Template is flexible enough to handle a wide range of research data, it's application and the information will be different depending on the type of project. For this reason, we have two differnt examples: clinical data or omics data. Please select the examples below, you can choose both, or none.
 
 Regardless of project type, Arcus follows industry standard guidelines for digital archiving and apply these standrds to incoming data contributions. File names should follow a consistent and clear schema, and not contain and spaces, periods or special characters. Further recomendations for filenaming are below:
-* [File naming tips sheet](https://storage.googleapis.com/arcus-edu-libsci/Arcus%20RDM%20Resources/fileNaming_bestPractices_MIT.pdf)
-* [File naming conventions and activity sheet](https://storage.googleapis.com/arcus-edu-libsci/Arcus%20RDM%20Resources/arcus_rdm_filenaming_activity.pdf)
-* [Recommended practices for README files](https://storage.googleapis.com/arcus-edu-libsci/Arcus%20RDM%20Resources/Arcus%20RDM%20Data%20Dictionaries%20Best%20Practices.pdf)
+
+- [File naming tips sheet](https://storage.googleapis.com/arcus-edu-libsci/Arcus%20RDM%20Resources/fileNaming_bestPractices_MIT.pdf)
+- [File naming conventions and activity sheet](https://storage.googleapis.com/arcus-edu-libsci/Arcus%20RDM%20Resources/arcus_rdm_filenaming_activity.pdf)
+- [Recommended practices for README files](https://storage.googleapis.com/arcus-edu-libsci/Arcus%20RDM%20Resources/Arcus%20RDM%20Data%20Dictionaries%20Best%20Practices.pdf)
 
 Whenever feasible, Arcus preferes to archive non-proprietary file formats as opposed to proprietary ones. Proprietary formats necessitate specific software for access or utilization, while non-proprietary formats are frequently open-source. Whenever you have the option, it's advisable to store data in a non-proprietary (open) file format. This choice enhances the accessibility of your content to others, enabling effortless reuse across various software platforms. Furthermore, this approach guarantees the continued utility of the file in the long term. In contrast, proprietary files carry the risk of becoming obsolete due to potential software incompatibility or restricted access. When it is necessary to save files in a proprietary format, consider including a README file that documents the name and version of the software used to generate the file, as well as the company who made the software. This could help down the road if we need to figure out how to open these files again.
 
 For both the clinical data and omics examples in the Project Template walk through, we reference our preferred data formats for each type of data. Below are some general resources to help in choosing file formats:
 
-* [Library of Congress Recommended Formats Statement](https://www.loc.gov/preservation/resources/rfs/)
-* MORE!!
+- [Library of Congress Recommended Formats Statement](https://www.loc.gov/preservation/resources/rfs/)
+- [UCSC Glossary of Omics File Formats](https://genome.ucsc.edu/FAQ/FAQformat.html)
+- [NIH Clinical Trials Data Formats Overview](https://rethinkingclinicaltrials.org/chapters/conduct/acquiring-real-world-data/data-formats/#:~:text=XML%20is%20used%20as%20the,number%20of%20defined%20document%20templates.)
 
 ## data/
 
@@ -224,7 +226,8 @@ For both the clinical data and omics examples in the Project Template walk throu
 - For a registry, database, or any other type of clinical dataset the raw data will be the research directly collected from subjects whether managed by automated processes or via manual entry.
 - This version of the dataset often contains identifiable information and is most critical for secondary use.
 
-* CSV, TSV, XML formats are a great option for archiving from an external data source to be contributed for archiving.
+* CSV and TSV formats are a great option for archiving flat file documents from an external data source to be contributed for archiving.
+* Structured data in the [HL7's FHIR format](https://www.hl7.org/fhir/) or another ontology in the XML or JSON standard are also a preferred option.
 * Clinical research conducted in an Arcus Scientific Lab is delivered to users in the BigQuery format to optimize search capabilities and performance within the EHR, we have an existing workflow with the ADR team for preseving this work in this format.
 
 <div class = "important">
@@ -437,6 +440,10 @@ auth_participant_id,Authorative Id of the participant. (Often MRN),String,Use an
 - Some data dictionaries are extensively detailed, but even a basic minimal data dictionary is better than none at all. Data dictionaries are usually used for tabular datasets, but can be used for data in other formats as well!
 - Below are the fields you can consider including in your data dictionary. Only a few are considered truly **required** - the rest are optional but can be extremely helpful, so you should consider whether they make sense to collect in your case.
 - You may also have additional fields to include that are not listed here; you know your data best!
+
+* If your data model follows a specific ontology it is crucial to denote that in your included documentation.
+* NIH has fantastic tools through its Unified Medical Language System (UMLS).
+* These include [extensive vocabulary lists of nearly 200 ontologies](https://www.nlm.nih.gov/research/umls/sourcereleasedocs/index.html) and a [metathesaurus application](https://www.nlm.nih.gov/research/umls/knowledge_sources/metathesaurus/index.html) that crosswalks between validated ontologies.
 
 **Name​**: (required) provide the name of the data element you are describing as it appears in the dataset.
 
