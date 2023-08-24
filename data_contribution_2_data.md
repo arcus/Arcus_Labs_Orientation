@@ -153,8 +153,6 @@ To learn more about Research Data Management, check out the [following module](h
 
 ## Project Template
 
-Overview. Show the whole template.
-
 Arcus' goal for research data management and the project template is to provide tools that are relevant throughout the entire lifecycle of research data. The project template is adaptabtable and iterative, as opposed to being a rigid, inflexible solution. The project template exhibits the required flexibility to encompass diverse data capturing needs, while also maintaining a universal quality that facilitates seamless communication among various projects spanning different domains, thereby promoting effective data sharing.
 
 The project template structure outlines a number of directories that are intended to capture three major aspects of a research effort: the data (data), the tools needed to work with that data (access tools), and the contextual information needed to understand the effort and its constituent parts (contextual). The high level directories are as follows (items with asterix are required):
@@ -168,17 +166,21 @@ The project template structure outlines a number of directories that are intende
 - **_Requirements_** (contextual)
 - **_SRC_** (access tools)
 
-Below is an image of the entire Project Templat Directory, with more detail about each section:
+Below is an image of the entire Project Template Directory, with more detail about each section:
 
 ![Graphic respresentation of the Project template with a short explanation of all the different sections](media/ProjectTemplate_Description.png)
 
 ### Research Data
 
-This will be a description of Research data sections in the Project Template. This is likely repetitive for the next part of template, we may instead do a conclusion using the Research data + Access Tools + Contextual files as a conclusion.
+![Graphic respresentation of the Project template with that denotes research data sections](media/research_data.png)
 
 ### Access Tools
 
+![Graphic respresentation of the Project template with that denotes access tool sections](media/access_tools.png)
+
 ### Contextual files
+
+![Graphic respresentation of the Project template with that denotes contextual files sections](media/contextual_files.png)
 
 ## Intro
 
