@@ -573,6 +573,8 @@ meta:
 
 ## configs/environments
 
+image here showing structure in ujo
+
 ### Capturing an Analysis Environment
 
 - For each script/notebook in src, each model in models, and any files in data/endpoints, there should be an env._ file (here env._ refers to a file named env with any extension, so env.yaml or env.txt, for example) that describes the environment in which it was created or run.
