@@ -71,11 +71,11 @@ Please note that **many of the links here will only work if you're on the CHOP n
 
 This module introduces the CHOP community to the Project Template, a structured file directory for managing research data. It is useful to ANYONE at CHOP involved in creating, managing or analyzing research data.
 
-The Project Template offers an easy to use and flexible structure for organizing data providing structure and context to project files and documents. It provides a shared, documented framework for organizing a research effort. This achieves multiple goals:
+The Project Template offers an easy to use and flexible structure for organizing data, and ensures necesary context is preserved for project files and documents. It provides a shared, documented framework for organizing a research effort. This achieves multiple goals:
 
 - It assists research teams in building transparency and reproducible workflows
-- It establishes a structure that allows for easier long-term preservation
-- It provides context to assist in future reuse of research either for collaborators or for the original researcher themselves
+- It establishes a structure for easier long-term preservation
+- It preserves context needed for future reuse of research by collaborators or for the original researcher
 - It organizes a research project for archiving within Arcus
 
 <div class = "learn-more">
@@ -87,21 +87,21 @@ The Project Template is useful in creating reproduceable, generalized and reusea
 
 ### In progress data contributors
 
-Thank you for agreeing to contribute your data, all contributed research data will be arranged in the Project Template structure. This module describes all sections of the project template structure, what data goes in each section, and give examples of research data arranged in the template.
+Thank you for agreeing to contribute your data, all contributed research data will be arranged in CHOP's Project Template structure. This module describes all sections of the project template structure, what data goes in each section, and shows examples of research data arranged in the template.
 
 This module can be used as a reference while you navigate the archiving process, please reach out to the Digital Archivist if you have further questions. Please share this module with others on your research team involved with preparing the data contribution, or other researchers that may be interested in archiving data with Arcus.
 
 ### Future data contributors
 
-This module is an overview of CHOP's Project Template Directory structure, all contributed data is aranged in this structure for archiving in Arcus. The Project Template is useful at all stages of research, we suggest implementing it as early as possible in your research as it provides a shared, documented framework for organizing a research effort.
+This module is an overview of CHOP's Project Template structure, all contributed data is aranged in this structure for archiving in Arcus. The Project Template is useful at all stages of research, we suggest implementing it as early as possible in your research as it provides a shared, documented framework for organizing a research effort.
 
-We are happy to meet with researchers at all phases of research for research data management consultations and planning for future archival contributions. This includes early in your research project, as we can help set up a project template file directory structure for storing data and recommend metadata and organization best practices. In addition to this module, there are additional data management resources available on CHOP’s [Arcus resources page](https://www.research.chop.edu/applications/arcus/resources).
+Arcus's Library Science team is happy to meet with researchers at all phases of research for research data management consultations and planning for future archival contributions. This includes early in your research project, as we can help set up a project template file directory structure for storing data and recommend metadata and organization best practices. In addition to this module, there are additional data management resources available on CHOP’s [Arcus resources page](https://www.research.chop.edu/applications/arcus/resources).
 
 If after viewing this module, you are prepared to archive data with Arcus, please fill out [the following request](https://pm.arcus.chop.edu/servicedesk/customer/portal/6/create/256) to start the process.
 
 ### Arcus Lab Users
 
-The Project Template is added to all Arcus Scientific Computing Labs (Arcus Lab), so all you have to do is set up your workflows to conform to the template. This module describes all sections of the project template structure, what data goes in each section, and give examples of Arcus lab research data arranged in the template.
+The Project Template is added to all Arcus Scientific Computing Labs (Arcus Lab), so all you have to do is set up your workflows to conform to the template. This module describes all sections of the project template structure, what data goes in each section, and shows examples of research data arranged in the template.
 
 As part of the Arcus Lab deployment, your team should have received a Project Template orientation by a member of the Library Science team. If you missed the orientation, or need a refresher on the orientation, please see this [video of the orientation](https://www.youtube.com/watch?v=YJvA_cryI1s). Much of the content covered in the video is also in this module.
 
@@ -109,9 +109,9 @@ When appropriate, archiving your research in Arcus is expected with a Scientific
 
 When you are ready to archive your lab data, please submit the following request in the [Arcus Help Center](https://pm.arcus.chop.edu/servicedesk/customer/portal/6/create/256) to begin the data contribution process.
 
-### Arcus Data Lifecycle
+## Arcus Data Lifecycle
 
-Before describing the template in detail, give background of its history and integration into Arcus data lifecycle. The project template is integral to Arcus data sharing.
+Arcus' goal for research data management and the project template is to provide tools that are relevant throughout the entire lifecycle of research data. The project template is adaptabtable and iterative, as opposed to being a rigid, inflexible solution. The project template exhibits the required flexibility to encompass diverse data capturing needs, while also maintaining a universal quality that facilitates seamless communication among various projects spanning different domains, thereby promoting effective data sharing. 
 
 **How was this structure developed?**
 
@@ -128,7 +128,7 @@ The CHOP project template evolved through iterations and feedback from CHOP rese
 
 **How is the Project Template used at Arcus?**
 
-The Arcus template also prioritizes streamlined archiving and reproducible research pathways. It strives to archive various research types from the Research Institute, accessible through tools like [Arcus Cohort Discovery](https://arcus.chop.edu), [Gene](https://chop.alationcloud.com), and [Omics Variant Browser](https://arcus.chop.edu). This template facilitates organizing diverse research data in a single directory structure, enabling automated archiving, metadata management, and data delivery throughout the research data lifecycle. This file directory structure is used for the entire lifecycle of research data within Arcus:
+The Project Template prioritizes streamlined archiving and reproducible research pathways. It archives a wide range of research types from the Research Institute, making them discoverable through tools like [Arcus Cohort Discovery](https://arcus.chop.edu), [Gene](https://chop.alationcloud.com), and [Omics Variant Browser](https://arcus.chop.edu). The Project Template facilitates organizing diverse research data in a single directory structure, enabling automated archiving, metadata management, and data delivery throughout the research data lifecycle. This file directory structure is used for the entire lifecycle of research data within Arcus:
 
 ![Graphic representation of the lifecycle of the project template in Arcus](media/ProjectTemplate_Lifecycle.png)
 
@@ -138,22 +138,7 @@ The utility of the project template for lab drive organization and integration w
 
 ![Graphic representation of the workflow of research data and the project tempalte](media/ProjectTemplate_workflow.png)
 
-### Data Management for Grant Requirements
-
-The new NIH data management and sharing policy became effective January 25, 2023. All grant applications or renewals that generate scientific data must now include a detailed Data Management and Sharing Plan (DMSP). The DMSP documents the lifecylce of the data generated in the research project. The plan offers information on data collection for storage, access, sharing and reproducibility of your results.
-
-Use of the Project Template and archiving in Arcus will build a robust and detailed plan for how you will manage and share data during the entire funded period. Detailed information about Arcus resources for developing and writing a DMSP are available at [this link](https://www.research.chop.edu/applications/arcus/resources)
-
-<div class = "learn-more">
-<b style="color: rgb(var(--color-highlight));">Learning connection</b><br>
-
-To learn more about Research Data Management, check out the [following module](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/data_management_basics/data_management_basics.md#1) from the Arcus Education team.
-
-</div>
-
 ## Project Template
-
-Arcus' goal for research data management and the project template is to provide tools that are relevant throughout the entire lifecycle of research data. The project template is adaptabtable and iterative, as opposed to being a rigid, inflexible solution. The project template exhibits the required flexibility to encompass diverse data capturing needs, while also maintaining a universal quality that facilitates seamless communication among various projects spanning different domains, thereby promoting effective data sharing.
 
 The project template structure outlines a number of directories that are intended to capture three major aspects of a research effort: the data (data), the tools needed to work with that data (access tools), and the contextual information needed to understand the effort and its constituent parts (contextual). The high level directories are as follows (items with asterix are required):
 
@@ -171,14 +156,19 @@ Below is an image of the entire Project Template Directory, with more detail abo
 ![Graphic respresentation of the Project template with a short explanation of all the different sections](media/ProjectTemplate_Description.png)
 
 ### Research Data
+The Project Template brings together three categories of information: Research Data, Access Tools and Contextual files. Research data is the actual data collected during the course of research processes used for analysis. The manifests describe this data, crosswalking files to participants. Research data (with manifests) is the minimun required information for all Arcus data contributions.
 
 ![Graphic respresentation of the Project template with that denotes research data sections](media/research_data.png)
 
 ### Access Tools
 
+Access Tools are the code used to do the analysis. This can include machine models, scripts and Jupyter notebooks.
+
 ![Graphic respresentation of the Project template with that denotes access tool sections](media/access_tools.png)
 
-### Contextual files
+### Contextual Files
+
+Contextual Files provide information needed to understand the data and analysis. This can include omics protocols, data dictionaries, reports and diagrams.
 
 ![Graphic respresentation of the Project template with that denotes contextual files sections](media/contextual_files.png)
 
@@ -192,7 +182,7 @@ Regardless of project type, Arcus follows industry standard guidelines for digit
 - [File naming conventions and activity sheet](https://storage.googleapis.com/arcus-edu-libsci/Arcus%20RDM%20Resources/arcus_rdm_filenaming_activity.pdf)
 - [Recommended practices for README files](https://storage.googleapis.com/arcus-edu-libsci/Arcus%20RDM%20Resources/Arcus%20RDM%20Data%20Dictionaries%20Best%20Practices.pdf)
 
-Whenever feasible, Arcus preferes to archive non-proprietary file formats as opposed to proprietary ones. Proprietary formats necessitate specific software for access or utilization, while non-proprietary formats are frequently open-source. Whenever you have the option, it's advisable to store data in a non-proprietary (open) file format. This choice enhances the accessibility of your content to others, enabling effortless reuse across various software platforms. Furthermore, this approach guarantees the continued utility of the file in the long term. In contrast, proprietary files carry the risk of becoming obsolete due to potential software incompatibility or restricted access. When it is necessary to save files in a proprietary format, consider including a README file that documents the name and version of the software used to generate the file, as well as the company who made the software. This could help down the road if we need to figure out how to open these files again.
+Whenever feasible, Arcus prefers to archive non-proprietary file formats as opposed to proprietary ones. Proprietary formats necessitate specific software for access or utilization, while non-proprietary formats are frequently open-source. Whenever you have the option, it's advisable to store data in a non-proprietary (open) file format. This choice enhances the accessibility of your content to others, enabling effortless reuse across various software platforms. Furthermore, this approach guarantees the continued utility of the file in the long term. In contrast, proprietary files carry the risk of becoming obsolete due to potential software incompatibility or restricted access. When it is necessary to save files in a proprietary format, consider including a README file that documents the name and version of the software used to generate the file, as well as the company who made the software. This could help down the road if we need to figure out how to open these files again.
 
 For both the clinical data and omics examples in the Project Template walk through, we reference our preferred data formats for each type of data. Below are some general resources to help in choosing file formats:
 
