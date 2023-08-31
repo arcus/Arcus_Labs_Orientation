@@ -111,7 +111,7 @@ When you are ready to archive your lab data, please submit the following request
 
 ## Arcus Data Lifecycle
 
-Arcus' goal for research data management and the project template is to provide tools that are relevant throughout the entire lifecycle of research data. The project template is adaptabtable and iterative, as opposed to being a rigid, inflexible solution. The project template exhibits the required flexibility to encompass diverse data capturing needs, while also maintaining a universal quality that facilitates seamless communication among various projects spanning different domains, thereby promoting effective data sharing. 
+Arcus' goal for research data management and the project template is to provide tools that are relevant throughout the entire lifecycle of research data. The project template is adaptabtable and iterative, as opposed to being a rigid, inflexible solution. The project template exhibits the required flexibility to encompass diverse data capturing needs, while also maintaining a universal quality that facilitates seamless communication among various projects spanning different domains, thereby promoting effective data sharing.
 
 **How was this structure developed?**
 
@@ -156,6 +156,7 @@ Below is an image of the entire Project Template Directory, with more detail abo
 ![Graphic respresentation of the Project template with a short explanation of all the different sections](media/ProjectTemplate_Description.png)
 
 ### Research Data
+
 The Project Template brings together three categories of information: Research Data, Access Tools and Contextual files. Research data is the actual data collected during the course of research processes used for analysis. The manifests describe this data, crosswalking files to participants. Research data (with manifests) is the minimun required information for all Arcus data contributions.
 
 ![Graphic respresentation of the Project template with that denotes research data sections](media/research_data.png)
@@ -411,10 +412,23 @@ auth_participant_id,Authorative Id of the participant. (Often MRN),String,Use an
 ### src/subfolders
 
 - Some example options are as follows
-- notebooks: Jupyter, Beaker, Zeppelin, WDL, etc.
+- notebooks: Jupyter, Beaker, Zeppelin, WDL, CWL etc.
 - scripts: custom software, code, tools
 - rules: for computational workflows
 - test: unit testing for code, customizable to team needs
+
+### src/subfolders clinical example
+
+- [DART Module on Reproducibility in Research](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/reproducibility/reproducibility.md#5) - add more narrative on reproducibility in research
+- The suite of computational tools available in the Arcus lab environment translate well to conducting reproducible research in the Arcus project template.
+- History of saved queries in SQLPad can be extracted directly from the sqlite database and saved for archiving.
+- Code written in the command line interface can be saved in scripts.
+- Work done in the R or Jupyter notebook applications can be saved in notebooks.
+
+### src/subfolders omics example
+
+- [Workflow Development Language](https://terra.bio/deciphering-a-mystery-workflow-written-in-wdl/) or WDL and [Common Workflow Language](https://www.commonwl.org) or CWL are open standard tools for managing computionally intensive bioinformatics workflows.
+- These are not definitionally programming languages but more clearly and interoperably explain parameters for running complex omics command line operations across bioinformatics pipelines.
 
 ## models/
 
