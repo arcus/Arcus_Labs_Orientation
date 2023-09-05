@@ -205,7 +205,7 @@ For both the clinical data and omics examples in the Project Template walk throu
 
 #### data/raw omics example
 
-![Omics data/raw](media/project_template/Omics_Data_Raw.gif)
+![Omics data/raw](media/project_template/raw_omics.gif)
 
 - Most sequencing providers will generate a [**fastq**](https://maq.sourceforge.net/fastq.shtml) file or [**cram**](https://samtools.github.io/hts-specs/CRAMv3.pdf) file.
 
@@ -215,6 +215,8 @@ For both the clinical data and omics examples in the Project Template walk throu
 - Cram files are human readable and highly space efficient by using reference-based compression of sequence data. These files enable us to run a complete re-analysis of the data. Cram files require a companion index file, crai.
 
 #### data/raw clinical example
+
+![Clinical data/raw](media/project_template/raw_clinical.gif)
 
 - For a registry, database, or any other type of clinical dataset the raw data will be the research directly collected from subjects whether managed by automated processes or via manual entry.
 - This version of the dataset often contains identifiable information and is most critical for secondary use.
@@ -239,9 +241,13 @@ For both the clinical data and omics examples in the Project Template walk throu
 
 #### data/interim/ omics example
 
+![Omics data/interim](media/project_template/interim_omics.gif)
+
 - QC metrics Quality Control (QC) metrics are reported at various stages of analysis pipelines and give information about the quality of the data generated. QC metrics files should be in a tabular file format, with .type_metrics or .duplicate_metrics as the extension. QC metrics files will always be stored in the sources/data/interim directory.
 
 #### data/interim clinical example
+
+![Clinical data/interim](media/project_template/interim_clinical.gif)
 
 - Scratchwork generated during clincal research is not valuable for posterity's sake.
 - However, it can be a good insight into the research process and can be archived.
@@ -255,11 +261,15 @@ For both the clinical data and omics examples in the Project Template walk throu
 
 #### data/endpoints omics example
 
+![Omics data/endpoints](media/project_template/endpoints_omics.gif)
+
 - gvcf files contain variant information, describing genomic regions with no variants for a single sample. They are used to compare variant calls across samples to make vcf files. We collect them to enable the easy construction of larger cohorts.
 - We collect the compressed version of a gvcf file, which can be made with a lossless compression utility tool like gzip.
 - vcf files usually contain multiple samples, and are the starting point for most reserach project's analysis. They are not appropriate for constructing cohorts from multiple projects because they are missing necessary information contained in the gvcf files. We collect the compressed version of a vcf file, which can be made with a lossless compression utility tool like gzip. The variant calls in these files might differ from those in a gvcf file because they are made by considering information from all samples. A researcher would want to use these files when considering each project separately.
 
 #### data/endpoints clinical example
+
+![Clinical data/endpoints](media/project_template/endpoints_clinical.gif)
 
 - Endpoints clinical data usually entails an analyzed version of a dataset.
 - Deidentified versions of the initially collected data often reside here as well.
