@@ -429,11 +429,14 @@ auth_participant_id,Authorative Id of the participant. (Often MRN),String,Use an
 
 ### src/subfolders clinical example
 
-- [DART Module on Reproducibility in Research](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/reproducibility/reproducibility.md#5) - add more narrative on reproducibility in research
+- Reproducibility in research is a major goal of the Arcus program and organizing and documentating code so that it can be used beyond the confines of the originally collected dataset is critical to achieving this aim.
+- See the [DART Module on Reproducibility in Research](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/reproducibility/reproducibility.md#5) for more information on this topic.
 - The suite of computational tools available in the Arcus lab environment translate well to conducting reproducible research in the Arcus project template.
 - History of saved queries in SQLPad can be extracted directly from the sqlite database and saved for archiving.
 - Code written in the command line interface can be saved in scripts.
 - Work done in the R or Jupyter notebook applications can be saved in notebooks.
+
+* If you work in Stata or SAS a non propriterary text version of your .dta or .SAS file can be saved so that your analysis workflow can be accessed and interpreted by a secondary user.
 
 ### src/subfolders omics example
 
