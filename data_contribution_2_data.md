@@ -443,6 +443,8 @@ auth_participant_id,Authorative Id of the participant. (Often MRN),String,Use an
 - [Workflow Development Language](https://terra.bio/deciphering-a-mystery-workflow-written-in-wdl/) or WDL and [Common Workflow Language](https://www.commonwl.org) or CWL are open standard tools for managing computionally intensive bioinformatics workflows.
 - These are not definitionally programming languages but more clearly and interoperably explain parameters for running complex omics command line operations across bioinformatics pipelines.
 
+![Genomic Data Commons Pipeline that converts reads (CRAM or BAM) to FASTQ and (re)aligns them to the latest human reference genome ](media/sample_gatk_WDL)
+
 ## models/
 
 - machine learning models, model predictions, model summaries, datasheets for model training data
