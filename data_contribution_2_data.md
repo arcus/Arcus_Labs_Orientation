@@ -320,7 +320,7 @@ try {
 
 #### data/endpoints omics example
 
-![Omics data/endpoints](media/project_template/endpoints_omics.gif)<!-- style = "max-width: 800px;" -->
+![Omics data/endpoints](media/project_template/endpoints_omics.gif)<!-- style = "max-height: 500px;" -->
 
 
 - gvcf files contain variant information, describing genomic regions with no variants for a single sample. They are used to compare variant calls across samples to make vcf files. We collect them to enable the easy construction of larger cohorts.
