@@ -30,6 +30,7 @@ After the completion of this training module, learners will be able to:
 @end
 
 @contingent_text
+
 <script modify="false">
 try {
   let data_type = @input(`data_type`)
@@ -39,6 +40,7 @@ try {
   } else send.clear()
 } catch(e) { }
 </script>
+
 @end
 
 import: https://raw.githubusercontent.com/arcus/education_modules/main/_module_templates/macros.md
@@ -226,7 +228,7 @@ try {
   let data_type = @input(`data_type`)
 
   if(data_type[0]) {
-    send.liascript(`###Omics Data
+    send.liascript(`### Omics Data
 
 
 ![Omics data/raw](media/project_template/raw_omics.gif)
