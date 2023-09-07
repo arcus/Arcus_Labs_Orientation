@@ -153,7 +153,7 @@ The utility of the project template for lab drive organization and integration w
 
 ## Project Template
 
-The project template structure outlines a number of directories that are intended to capture three major aspects of a research effort: the data (data), the tools needed to work with that data (access tools), and the contextual information needed to understand the effort and its constituent parts (contextual). The high level directories are as follows (items with asterix are required):
+The project template structure includes directories for capturing three major aspects of a research effort: the data (data), the tools needed to work with that data (access tools), and the contextual information needed to understand the effort and its constituent parts (contextual). The high level directories are as follows (items with asterix are required):
 
 - **_Configs_** (contextual)
 - **_Data_** (data)\*
@@ -186,7 +186,7 @@ Contextual Files provide information needed to understand the data and analysis.
 
 ![Graphic respresentation of the Project template with that denotes contextual files sections](media/project_template/contextual_files.png)
 
-## Intro
+## Project Template Directories
 
 The next part of this module will walk through each sub-directory of the project template in detail. Though the project template is flexible enough to handle a wide range of research data, it's application and the filetypes in each directory will be different depending on the type of project. For this reason, we have two differnt examples: clinical data or omics data. In many of the following sections, you can select the option to view examples and specific information for the data type.
 
@@ -206,17 +206,20 @@ For both the clinical data and omics examples in the Project Template walk throu
 
 ## data/
 
-- Research data: Information collected during the course of research processes used for analysis
-- Maintains descriptions of authoritative source data and their associated files and metadata in both raw and processed formats
+The data folder is where the data files are organized. Data is the information collected during the course of research processes used for analysis. The data directory maintains descriptions of authoritative source data and their associated files and metadata in both raw and processed formats. There are four sub-directories within the data folder for organizing the data: *raw/*, *interim/*, *endpoints/*, and *ref-data*. 
+
+All files within the **data/** folder and its subdirectories will be listed in the **file_manifest.csv**. The manifests are detailed in the [manifests](#manifests)section of this course.
 
 ### data/raw
 
-- Arcus-delivered data goes here.
-- Study team generated data brought into Arcus goes here.
-- Authoritative source data that should never be deleted.
-- Organize in subdirectories if necessary.
+This directory holds authoritative source data that should never be deleted. This folder is where the original, unmodified data for the research project is stored. In a research process, this is the data used for the initial analysis. Further sub-directories can be added to organize data, if necessary.
 
-Please select what type(s) of data you would like more information about, you can select both:
+**Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
+- Arcus delivered archival data will be found here.
+- Study team generated data brought into Arcus goes here.
+- This data is managed by Arcus, and should not be modified by the research team
+
+**Raw** data is differnt depending on the type of research. Please select what type(s) of data you would like more information about, you can select both:
 
 - [ ] omics data
 - [ ] clinical data
@@ -233,8 +236,7 @@ try {
 
 ![Omics data/raw](media/project_template/raw_omics.gif)
 
-- Most sequencing providers will generate a [**fastq**](https://maq.sourceforge.net/fastq.shtml) file or [**cram**](https://samtools.github.io/hts-specs/CRAMv3.pdf) file.
-
+For omics data, the raw folder contains the sequencing data. Most sequencing providers will generate a [**fastq**](https://maq.sourceforge.net/fastq.shtml) file or [**cram**](https://samtools.github.io/hts-specs/CRAMv3.pdf) file, we prefer these filetypes for archiving.
 * These files contain genomic sequences called reads. With paired reads, there are two fastq files per sample. Cram files are single files aligned to a reference genome.
 
 - We collect the compressed fastq form fastq.gz, which can be made with lossless compression utility tools like gzip. fastq metadata are described in the fastq directory.
@@ -255,17 +257,18 @@ try {
 
 ![Clinical data/raw](media/project_template/raw_clinical.gif)
 
-- For a registry, database, or any other type of clinical dataset the raw data will be the research directly collected from subjects whether managed by automated processes or via manual entry.
-- This version of the dataset often contains identifiable information and is most critical for secondary use.
+For a registry, database, or any other type of clinical dataset the raw data will be the research directly collected from subjects whether managed by automated processes or via manual entry. This version of the dataset often contains identifiable information and is most critical for secondary use.
 
-* CSV and TSV formats are a great option for archiving flat file documents from an external data source to be contributed for archiving.
-* Structured data in the [HL7's FHIR format](https://www.hl7.org/fhir/) or another ontology in the XML or JSON standard are also a preferred option.
-* Clinical research conducted in an Arcus Scientific Lab is delivered to users in the BigQuery format to optimize search capabilities and performance within the EHR, we have an existing workflow with the ADR team for preseving this work in this format.
+- CSV and TSV formats are a great option for archiving flat file documents from an external data source to be contributed for archiving.
+- Structured data in the [HL7's FHIR format](https://www.hl7.org/fhir/) or another ontology in the XML or JSON standard are also a preferred option.
+
+**Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
+- Clinical data is often delivered to users in the BigQuery format to optimize search capabilities and performance. This data is accessed using SQL pad, which is preloaded into the lab. For Electronic Health Record (EHR) data, we have an existing workflow with the ADR team for preseving work in this format.
 
 <div class = "important">
 <b style="color: rgb(var(--color-highlight));">Important note</b><br>
 
-- REDCap is a great application for clinical data projects of all sizes available to all CHOP personnel. The REDCap team at CHOP has great resources for [data collection best practices](https://storage.googleapis.com/arcus-edu-libsci/PDFs/Best%20Practices%20for%20REDCap%20Data%20Collection.pdf) for new projects and how to [import data](https://storage.googleapis.com/arcus-edu-libsci/PDFs/REDCap_Data_Import_Instructions.pdf) residing in a different application for complete projects ready to be archived. If you automate data collection directly from patients encounters in the EHR there it way to feed that data directly into [REDCap via an API](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/using_redcap_api/using_redcap_api.md#1). If you collect data in REDCap, there is an option to both tag data with an identifiability label at the onset of a project as well as export data with all identifiable fields tagged.
+- REDCap is a great application for clinical data projects of all sizes available to all CHOP personnel. The REDCap team at CHOP has great resources for [data collection best practices](https://storage.googleapis.com/arcus-edu-libsci/PDFs/Best%20Practices%20for%20REDCap%20Data%20Collection.pdf) for new projects and how to [import data](https://storage.googleapis.com/arcus-edu-libsci/PDFs/REDCap_Data_Import_Instructions.pdf) residing in a different application for complete projects ready to be archived. If you automate data collection directly from patients encounters in the EHR, there are options to feed that data directly into [REDCap via an API](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/using_redcap_api/using_redcap_api.md#1). If you collect data in REDCap, there is an option to both tag data with an identifiability label at the onset of a project as well as export data with all identifiable fields tagged.
 
 </div>
 `)
@@ -288,12 +291,17 @@ try {
 </script>
 
 ### data/interim
+ Interim data is for storing outputs of data processing and analysis completed using the original, unmodified data store in **data/raw**. Further sub-directories can be added to organize data, if necessary.
 
-- Managed by study team.
-- Unregulated space for intermediate and temporary files.
-- Not necessary to save long term.
-- Recommend establishing retention schedules for regular review/clean-up.
+**Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
+- Data in this directory is managed by the study team
+- It should be used as an unregulated space for intermediate and temporary files.
+- Recommend establishing retention schedules for regular review/clean-up of data in this folder.
 
+**Interim** data is differnt depending on the type of research. Please select what type(s) of data you would like more information about, you can select both:
+
+- [ ] omics data
+- [ ] clinical data
 @contingent_text(0,`More clinical info, including a comma.`)
 
 @contingent_text(1,`This content is about omics.`)
@@ -302,14 +310,15 @@ try {
 
 ![Omics data/interim](media/project_template/interim_omics.gif)
 
-- QC metrics Quality Control (QC) metrics are reported at various stages of analysis pipelines and give information about the quality of the data generated. QC metrics files should be in a tabular file format, with .type_metrics or .duplicate_metrics as the extension. QC metrics files will always be stored in the sources/data/interim directory.
+This directory is for the quality control and other reporting created during a bioinformatics workflow, using the sequnce files stored in the *data/raw* directory. 
+
+- QC metrics Quality Control (QC) metrics are reported at various stages of analysis pipelines and give information about the quality of the data generated. QC metrics files should be in a tabular file format, with .type_metrics or .duplicate_metrics as the extension. 
 
 #### data/interim clinical example
 
 ![Clinical data/interim](media/project_template/interim_clinical.gif)
 
-- Scratchwork generated during clincal research is not valuable for posterity's sake.
-- However, it can be a good insight into the research process and can be archived.
+This directory is for practice work generated during clincal research when analyzing and sharing original, unmodified data saved in *data/raw*. This can provide be a good insight into the research process and will be archived on a case by case basis. Additionaly, alternatively formatted data, data sets created for sharing, or excluded data can be saved in the interim directory.
 
 ### data/endpoints
 
