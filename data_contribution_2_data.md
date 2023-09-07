@@ -300,7 +300,7 @@ try {
 
 #### data/interim/ omics example
 
-![Omics data/interim](media/project_template/interim_omics.gif)<!-- style = "max-width: 1000px;" -->
+![Omics data/interim](media/project_template/interim_omics.gif)
 
 - QC metrics Quality Control (QC) metrics are reported at various stages of analysis pipelines and give information about the quality of the data generated. QC metrics files should be in a tabular file format, with .type_metrics or .duplicate_metrics as the extension. QC metrics files will always be stored in the sources/data/interim directory.
 
@@ -320,7 +320,8 @@ try {
 
 #### data/endpoints omics example
 
-![Omics data/endpoints](media/project_template/endpoints_omics.gif)
+![Omics data/endpoints](media/project_template/endpoints_omics.gif)<!-- style = "max-width: 800px;" -->
+
 
 - gvcf files contain variant information, describing genomic regions with no variants for a single sample. They are used to compare variant calls across samples to make vcf files. We collect them to enable the easy construction of larger cohorts.
 - We collect the compressed version of a gvcf file, which can be made with a lossless compression utility tool like gzip.
