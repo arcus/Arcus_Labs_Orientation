@@ -29,6 +29,17 @@ After the completion of this training module, learners will be able to:
 
 @end
 
+@contingent_text
+<script modify="false">
+try {
+  let data_type = @input(`data_type`)
+
+  if(data_type[@0]) {
+    send.liascript(`@1`)
+  } else send.clear()
+} catch(e) { }
+</script>
+@end
 
 import: https://raw.githubusercontent.com/arcus/education_modules/main/_module_templates/macros.md
 -->
@@ -130,13 +141,13 @@ The CHOP project template evolved through iterations and feedback from CHOP rese
 
 The Project Template prioritizes streamlined archiving and reproducible research pathways. It archives a wide range of research types from the Research Institute, making them discoverable through tools like [Arcus Cohort Discovery](https://arcus.chop.edu), [Gene](https://chop.alationcloud.com), and [Omics Variant Browser](https://arcus.chop.edu). The Project Template facilitates organizing diverse research data in a single directory structure, enabling automated archiving, metadata management, and data delivery throughout the research data lifecycle. This file directory structure is used for the entire lifecycle of research data within Arcus:
 
-![Graphic representation of the lifecycle of the project template in Arcus](media/ProjectTemplate_Lifecycle.png)
+![Graphic representation of the lifecycle of the project template in Arcus](media/project_template/ProjectTemplate_Lifecycle.png)
 
 The project template provides a shared structure so that institutional knowledge previously held locally by various members of the data creation team becomes centralized.
 
 The utility of the project template for lab drive organization and integration with the Arcus archives is summarized in the graphic below.
 
-![Graphic representation of the workflow of research data and the project tempalte](media/ProjectTemplate_workflow.png)
+![Graphic representation of the workflow of research data and the project tempalte](media/project_template/ProjectTemplate_workflow.png)
 
 ## Project Template
 
@@ -153,29 +164,29 @@ The project template structure outlines a number of directories that are intende
 
 Below is an image of the entire Project Template Directory, with more detail about each section:
 
-![Graphic respresentation of the Project template with a short explanation of all the different sections](media/ProjectTemplate_Description.png)
+![Graphic respresentation of the Project template with a short explanation of all the different sections](media/project_template/ProjectTemplate_Description.png)
 
 ### Research Data
 
 The Project Template brings together three categories of information: Research Data, Access Tools and Contextual files. Research data is the actual data collected during the course of research processes used for analysis. The manifests describe this data, crosswalking files to participants. Research data (with manifests) is the minimun required information for all Arcus data contributions.
 
-![Graphic respresentation of the Project template with that denotes research data sections](media/research_data.png)
+![Graphic respresentation of the Project template with that denotes research data sections](media/project_template/research_data.png)
 
 ### Access Tools
 
 Access Tools are the code used to do the analysis. This can include machine models, scripts and Jupyter notebooks.
 
-![Graphic respresentation of the Project template with that denotes access tool sections](media/access_tools.png)
+![Graphic respresentation of the Project template with that denotes access tool sections](media/project_template/access_tools.pngaccess_tools.png)
 
 ### Contextual Files
 
 Contextual Files provide information needed to understand the data and analysis. This can include omics protocols, data dictionaries, reports and diagrams.
 
-![Graphic respresentation of the Project template with that denotes contextual files sections](media/contextual_files.png)
+![Graphic respresentation of the Project template with that denotes contextual files sections](media/project_template/contextual_files.png)
 
 ## Intro
 
-The next part of this module will walk through each sub-directory of the project template in detail. Though the Project Template is flexible enough to handle a wide range of research data, it's application and the information will be different depending on the type of project. For this reason, we have two differnt examples: clinical data or omics data. Please select the examples below, you can choose both, or none.
+The next part of this module will walk through each sub-directory of the project template in detail. Though the project template is flexible enough to handle a wide range of research data, it's application and the filetypes in each directory will be different depending on the type of project. For this reason, we have two differnt examples: clinical data or omics data. In many of the following sections, you can select the option to view examples and specific information for the data type.
 
 Regardless of project type, Arcus follows industry standard guidelines for digital archiving and apply these standrds to incoming data contributions. File names should follow a consistent and clear schema, and not contain and spaces, periods or special characters. Further recomendations for filenaming are below:
 
@@ -203,7 +214,20 @@ For both the clinical data and omics examples in the Project Template walk throu
 - Authoritative source data that should never be deleted.
 - Organize in subdirectories if necessary.
 
-#### data/raw omics example
+Please select what type(s) of data you have:
+
+- [ ] clinical data
+- [ ] omics data
+<script output="data_type">"@input"</script>
+
+
+<script modify="false">
+try {
+  let data_type = @input(`data_type`)
+
+  if(data_type[0]) {
+    send.liascript(`**Omics Data** 
+
 
 ![Omics data/raw](media/project_template/raw_omics.gif)
 
@@ -214,7 +238,18 @@ For both the clinical data and omics examples in the Project Template walk throu
 - We collect the compressed fastq form fastq.gz, which can be made with lossless compression utility tools like gzip. fastq metadata are described in the fastq directory.
 - Cram files are human readable and highly space efficient by using reference-based compression of sequence data. These files enable us to run a complete re-analysis of the data. Cram files require a companion index file, crai.
 
-#### data/raw clinical example
+`)
+  } else send.clear()
+} catch(e) { }
+</script>
+
+<script modify="false">
+try {
+  let data_type = @input(`data_type`)
+
+  if(data_type[1]) {
+    send.liascript(`### Clinical Data
+
 
 ![Clinical data/raw](media/project_template/raw_clinical.gif)
 
@@ -231,6 +266,24 @@ For both the clinical data and omics examples in the Project Template walk throu
 - REDCap is a great application for clinical data projects of all sizes available to all CHOP personnel. The REDCap team at CHOP has great resources for [data collection best practices](https://storage.googleapis.com/arcus-edu-libsci/PDFs/Best%20Practices%20for%20REDCap%20Data%20Collection.pdf) for new projects and how to [import data](https://storage.googleapis.com/arcus-edu-libsci/PDFs/REDCap_Data_Import_Instructions.pdf) residing in a different application for complete projects ready to be archived. If you automate data collection directly from patients encounters in the EHR there it way to feed that data directly into [REDCap via an API](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/using_redcap_api/using_redcap_api.md#1). If you collect data in REDCap, there is an option to both tag data with an identifiability label at the onset of a project as well as export data with all identifiable fields tagged.
 
 </div>
+`)
+  } else send.clear()
+} catch(e) { }
+</script>
+
+
+<script modify="false">
+try {
+  let data_type = @input(`data_type`)
+
+  if(!data_type[0] & !data_type[1]) {
+    send.liascript(`**Nothing is selected** 
+<br>
+Pick the data type you want to learn about above! You can select more than one if you like.
+`)
+  } else send.clear()
+} catch(e) { }
+</script>
 
 ### data/interim
 
