@@ -300,7 +300,7 @@ try {
 
 #### data/interim/ omics example
 
-![Omics data/interim](media/project_template/interim_omics.gif)
+![Omics data/interim](media/project_template/interim_omics.gif)<!-- style = "max-width: 1000px;" -->
 
 - QC metrics Quality Control (QC) metrics are reported at various stages of analysis pipelines and give information about the quality of the data generated. QC metrics files should be in a tabular file format, with .type_metrics or .duplicate_metrics as the extension. QC metrics files will always be stored in the sources/data/interim directory.
 
