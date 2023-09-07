@@ -214,10 +214,10 @@ For both the clinical data and omics examples in the Project Template walk throu
 - Authoritative source data that should never be deleted.
 - Organize in subdirectories if necessary.
 
-Please select what type(s) of data you have:
+Please select what type(s) of data you would like more information about, you can select both:
 
-- [ ] clinical data
 - [ ] omics data
+- [ ] clinical data
 <script output="data_type">"@input"</script>
 
 
@@ -226,7 +226,7 @@ try {
   let data_type = @input(`data_type`)
 
   if(data_type[0]) {
-    send.liascript(`**Omics Data** 
+    send.liascript(`###Omics Data
 
 
 ![Omics data/raw](media/project_template/raw_omics.gif)
@@ -279,7 +279,7 @@ try {
   if(!data_type[0] & !data_type[1]) {
     send.liascript(`**Nothing is selected** 
 <br>
-Pick the data type you want to learn about above! You can select more than one if you like.
+
 `)
   } else send.clear()
 } catch(e) { }
@@ -291,6 +291,10 @@ Pick the data type you want to learn about above! You can select more than one i
 - Unregulated space for intermediate and temporary files.
 - Not necessary to save long term.
 - Recommend establishing retention schedules for regular review/clean-up.
+
+@contingent_text(0,`More clinical info, including a comma.`)
+
+@contingent_text(1,`This content is about omics.`)
 
 #### data/interim/ omics example
 
