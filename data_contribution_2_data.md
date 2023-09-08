@@ -302,6 +302,8 @@ try {
 
 - [ ] omics data
 - [ ] clinical data
+<script output="data_type">"@input"</script>
+
 @contingent_text(0,`More clinical info, including a comma.`)
 
 @contingent_text(1,`This content is about omics.`)
