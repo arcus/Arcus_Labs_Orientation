@@ -212,11 +212,11 @@ All files within the **data/** folder and its subdirectories will be listed in t
 
 This directory holds authoritative source data that should never be deleted. This folder is where the original, unmodified data for the research project is stored. In a research process, this is the data used for the initial analysis. Further sub-directories can be added to organize data, if necessary.
 
-**Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
-
-- Arcus delivered archival data will be found here.
-- Study team generated data brought into Arcus goes here.
-- This data is managed by Arcus, and should not be modified by the research team
+> **Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
+>
+> - Arcus delivered archival data will be found here.
+> - Study team generated data brought into Arcus goes here.
+> - This data is managed by Arcus, and should not be modified by the research team
 
 **Raw** data is differnt depending on the type of research. Please select what type(s) of data you would like more information about, you can select both:
 
@@ -302,6 +302,8 @@ try {
 
 - [ ] omics data
 - [ ] clinical data
+<script output="data_type">"@input"</script>
+
 @contingent_text(0,`More clinical info, including a comma.`)
 @contingent_text(1,`This content is about omics.`)
 
@@ -499,7 +501,7 @@ auth_participant_id,Authorative Id of the participant. (Often MRN),String,Use an
 |                       |
 
 ## src/
-
+The src or sources folder 
 - Managed by study team.
 - Access tools required of the research data itself.
 - Version control is important!
