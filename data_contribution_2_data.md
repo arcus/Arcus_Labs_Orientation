@@ -304,8 +304,7 @@ try {
 
 - [ ] omics data
 - [ ] clinical data
-<script output="data_type">"@input"</script>
-
+<script output="data_type">"@input"
 @contingent_text(0,`### Omics Data
 ![Omics data/interim](media/project_template/interim_omics.gif)
 
@@ -318,7 +317,7 @@ This directory is for the quality control and other reporting created during a b
 
 This directory is for practice work generated during clincal research when analyzing and sharing original, unmodified data saved in *data/raw*. This can provide be a good insight into the research process and will be archived on a case by case basis. Additionaly, alternatively formatted data, or excluded data can be saved in the interim directory. Data should be saved as a tsv, csv, xml or json file if possible.
 `)
-
+</script>
 #### data/interim/ omics example
 
 ![Omics data/interim](media/project_template/interim_omics.gif)
