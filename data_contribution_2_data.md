@@ -30,7 +30,6 @@ After the completion of this training module, learners will be able to:
 @end
 
 @contingent_text
-
 <script modify="false">
 try {
   let data_type = @input(`data_type`)
@@ -40,7 +39,6 @@ try {
   } else send.clear()
 } catch(e) { }
 </script>
-
 @end
 
 import: https://raw.githubusercontent.com/arcus/education_modules/main/_module_templates/macros.md
@@ -304,20 +302,11 @@ try {
 
 - [ ] omics data
 - [ ] clinical data
-<script output="data_type">"@input"
-@contingent_text(0,`### Omics Data
-![Omics data/interim](media/project_template/interim_omics.gif)
+@contingent_text(0,`More clinical info, including a comma.`)
 
-This directory is for the quality control and other reporting created during a bioinformatics workflow, using the sequnce files stored in the *data/raw* directory. 
+@contingent_text(1,`This content is about omics.`)
 
-- QC metrics Quality Control (QC) metrics are reported at various stages of analysis pipelines and give information about the quality of the data generated. QC metrics files should be in a tabular file format, with .type_metrics or .duplicate_metrics as the extension. 
-`)
-@contingent_text(1,`### Clinical Data
-![Clinical data/interim](media/project_template/interim_clinical.gif)
 
-This directory is for practice work generated during clincal research when analyzing and sharing original, unmodified data saved in *data/raw*. This can provide be a good insight into the research process and will be archived on a case by case basis. Additionaly, alternatively formatted data, or excluded data can be saved in the interim directory. Data should be saved as a tsv, csv, xml or json file if possible.
-`)
-</script>
 #### data/interim/ omics example
 
 ![Omics data/interim](media/project_template/interim_omics.gif)
