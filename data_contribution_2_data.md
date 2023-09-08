@@ -215,6 +215,7 @@ All files within the **data/** folder and its subdirectories will be listed in t
 This directory holds authoritative source data that should never be deleted. This folder is where the original, unmodified data for the research project is stored. In a research process, this is the data used for the initial analysis. Further sub-directories can be added to organize data, if necessary.
 
 **Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
+
 - Arcus delivered archival data will be found here.
 - Study team generated data brought into Arcus goes here.
 - This data is managed by Arcus, and should not be modified by the research team
@@ -294,6 +295,7 @@ try {
  The interim directory is for storing outputs of data processing and analysis completed using the original, unmodified data store in **data/raw**. Further sub-directories can be added to organize data, if necessary.
 
 **Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
+
 - Data in this directory is managed by the study team
 - It should be used as an unregulated space for intermediate and temporary files.
 - Recommend establishing retention schedules for regular review/clean-up of data in this folder.
@@ -304,8 +306,18 @@ try {
 - [ ] clinical data
 <script output="data_type">"@input"</script>
 
-@contingent_text(0,`More clinical info, including a comma.`)
-@contingent_text(1,`This content is about omics.`)
+@contingent_text(0,`### Omics Data
+![Omics data/interim](media/project_template/interim_omics.gif)
+
+This directory is for the quality control and other reporting created during a bioinformatics workflow, using the sequnce files stored in the *data/raw* directory. 
+
+- QC metrics Quality Control (QC) metrics are reported at various stages of analysis pipelines and give information about the quality of the data generated. QC metrics files should be in a tabular file format, with .type_metrics or .duplicate_metrics as the extension. 
+`)
+@contingent_text(1,`### Clinical Data
+![Clinical data/interim](media/project_template/interim_clinical.gif)
+
+This directory is for practice work generated during clincal research when analyzing and sharing original, unmodified data saved in *data/raw*. This can provide be a good insight into the research process and will be archived on a case by case basis. Additionaly, alternatively formatted data, or excluded data can be saved in the interim directory. Data should be saved as a tsv, csv, xml or json file if possible.
+`)
 
 #### data/interim/ omics example
 
@@ -326,6 +338,7 @@ This directory is for practice work generated during clincal research when analy
 The endpoints directory are for the final results created as part of a research analysis. Often, these are files created to support papers or grants, and other dissemination. Further sub-directories can be added to organize data, if necessary.
 
 **Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
+
 - Data in this directory is managed by the study team.
 - Data in this directory will be saved if the project is archived in Arcus.
 
@@ -358,6 +371,7 @@ This directory contains an analyzed version of a dataset or deidentified dataset
 This directory is for any external or public datasets not created by the study team neccessary to understand or repeat the anlysis for the project.
 
 **Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
+
 - External or public datasets not supplied by Research IS or your lab, such as census data, will be available in this directory.
 
 **Ref-data** data is differnt depending on the type of research. Please select what below if need need more information about omics data for this directory:
