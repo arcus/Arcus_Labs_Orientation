@@ -374,13 +374,37 @@ This directory is for any external or public datasets not created by the study t
 
 ## manifests/
 
-- Managed by Arcus
-- Inventory of all raw & endpoint data
-- Inventory of all participants and their related cohorts/samples/family roles, as applicable.
-- Associates IDs with all data files.
-- Documents relationships between files in pipelines/workflows.
+Manifests are an inventory of all data in the collection, and provide a mapping between research data in the ~data~ folders, and participant information. The manifests also create a mapping between data and associated pipeline and technical information about workflows. There are three main manifests that are mandatory for every archival collection:
 
-### manifests/file_manifest omics examples
+- ~file_manifest.csv~
+- ~participant_manifest.csv~
+- ~partcipant-crosswalk.txt~
+
+Additional manifests are only required if needed for the data or collection type. These files are detailed in the next sections. The graphic below illustrates the linking between the files:
+
+![ID Crosswalks between manifests](media/project_template/manifests_linkages.png)
+
+**Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
+
+- Managed by Arcus, you will not need to create these for yourselves
+- This will only appear in the lab if archival data is delivered
+
+
+### manifests/file_manifest 
+
+The ~file_manifest.csv~ matches the biosample_id to each file in the ~data folders~. Below is more detail about each section in the file:
+
+- biosample_id is an ID number for each file. For some studies, each file is derived about specific biosamples, so we suggest using the sample id. deally, biosample_id links to the CHOP biobank. When you cannot link the the biobank, treat biosample_id as the IDs you use for samples taken from participants. For studies where there are no biosamples, the biosample_id can be the file name.
+- file_type is the type of file, indicated by the file extension
+- protocol is only for omics data, select the omics data example below for more information
+- file_path is the file path for each file in the ~data~ folders. File paths should start with ~data/~ and end with the full file name with extension
+
+The **file_manifest.csv** may look differnt depending on the type of research. Please select what below if need need more information about omics data for this directory:
+
+- [ ] omics data
+- [ ] clinical data
+
+#### manifests/file_manifest omics examples
 
 - file_manifest.csv matches biosample IDs to data files and experimental protocols, described in yaml files. Many files might share the same experimental protocol. These yaml protocol files describe experiment and data processing details (described later).
 
@@ -393,7 +417,7 @@ This directory is for any external or public datasets not created by the study t
 | file_groups             | Files in the same group are related. Paired fastq files belong in the same group. A bam file and its index belong in the same group. Plink bfiles belong in the same group.                                                                                                                                                      | String |
 | derived_from_file_group | This column describes relations between file groups. We want to capture consecutive pipeline steps. For example, a bam file is derived from a paired fastq group. Use the name of the file_groups used to construct this file. Delimit multiple groups with a semicolon. Use NA when there are no prior step files to reference. | String |
 
-### manifests/file_manifest clinical example
+#### manifests/file_manifest clinical example
 
 - Since clinical research efforts don't always collect biospecimen data.
 - The list of required files we collect for this file are as follows:
@@ -402,7 +426,20 @@ This directory is for any external or public datasets not created by the study t
 > - file_path
 > - file_groups
 
-### manifests/participant_manifest omics example
+### manifests/participant_manifest
+
+The participant_manifest.csv links identifies which participants information links to each files in the file_manifest. Below is more detail about each section of the file:
+
+- local_patient_id is a local identifier the study team used to identify the patient
+- The biosample_id will be the same as the one listed in the file_manifests.csv. Linking a local_participant_id to a biosample_id identifies which patients information is related to the file. 
+- cohort is optional, please fill this in if there is additional cohort information or identification needed.
+
+The **participant_manifest.csv** may look differnt depending on the type of research. Please select what below if need need more information about omics data for this directory:
+
+- [ ] omics data
+- [ ] clinical data
+
+#### manifests/participant_manifest omics example
 
 - participant_manifest.csv matches participants/patients to cohorts and biosample IDs. Ideally, biosample_id links to the CHOP biobank. When you cannot link the the biobank, treat biosample_id as the IDs you use for samples taken from participants. If you deal with only one sample type, you might use the participant ID. If you run a treatment/control experiment, you might use {participantID}\_treat and {participantID}\_control as as a biosample ID scheme. If you work with different tissue samples from participants, you might use {participantID}\*{tissue} as a biosample ID scheme.
 
@@ -414,7 +451,7 @@ This directory is for any external or public datasets not created by the study t
 | family_id            | When participants are related, use family_id to group related participants. With trios or duos, the proband ID is often used. | String |
 | family_role          | Use a term from eHB_relationship_types_as_of_10_30.json to indicate mother, father, proband, sister, etc..                    | String |
 
-### manifests/participant_manifest clinical example
+#### manifests/participant_manifest clinical example
 
 - Since clinical research efforts don't always collect biospecimen data.
 - When you cannot link the the biobank, treat instance_id as the IDs you use for samples taken from participants
@@ -436,7 +473,9 @@ local_participant_id,Id that is used in PARTICIPANT_MANIFEST,String,
 auth_id_type,The type of participant id(chop),String,This will always be chop.
 auth_participant_id,Authorative Id of the participant. (Often MRN),String,Use an 8 digit MRN. Left-pad the MRN with zeroes as necessary.
 
-### manifests/participant_family_role omics example
+### manifests/participant_family_role 
+
+The participant_family_role.csv file is only needed for some omics data MORE DETAIL. 
 
 - participant_family_role.csv If you have family data, use this file to describe relationships with terms from data_dicts/eHB_relationship_types_as_of_10_30.json.
 
@@ -483,6 +522,8 @@ auth_participant_id,Authorative Id of the participant. (Often MRN),String,Use an
 
 ### manifests/file_derivation.csv
 
+The file_derivation.csv is only required for omics contributions with multiple file type generated through a bioinformatics pipeline or workflow.
+
 - file_derivation.csv describes the relationships between files in a pipeline or workflow.
 
 | column                 | definition                                                      | type   |
@@ -492,7 +533,8 @@ auth_participant_id,Authorative Id of the participant. (Often MRN),String,Use an
 
 ### manifests/env_manifest.csv
 
-- Environment files are necessary for all scripts and machine models, and document the environment in which it was created and run. The environment_manifest.csv links the script or machine model and the environment file stored within the configs directory.
+For each script/notebook in ~src~, and each model in ~models/~, there should be an env.* file (here env.* refers to a file named env with any extension, so env.yaml or env.txt, for example) that describes the environment in which it was created or run. Environment files should be named as follows: descriptiveName_env.* and placed in a folder called environments within the configs/ directory. Either individuals files or entire folders(whichever is the appropriate level) in scripts and notebooks within the ~src/~ directory, or the ~models/~ directory will need to be added to the env_manifest.csv file, matching them with their related environment file. See the see below for more infromation about this file:
+
 
 | column                | definition                                                                                                                                                                                                                                                                          | type   |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
