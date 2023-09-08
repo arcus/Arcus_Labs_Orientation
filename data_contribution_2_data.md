@@ -291,7 +291,7 @@ try {
 </script>
 
 ### data/interim
- Interim data is for storing outputs of data processing and analysis completed using the original, unmodified data store in **data/raw**. Further sub-directories can be added to organize data, if necessary.
+ The interim directory is for storing outputs of data processing and analysis completed using the original, unmodified data store in **data/raw**. Further sub-directories can be added to organize data, if necessary.
 
 **Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
 - Data in this directory is managed by the study team
@@ -302,8 +302,9 @@ try {
 
 - [ ] omics data
 - [ ] clinical data
-@contingent_text(0,`More clinical info, including a comma.`)
+<script output="data_type">"@input"</script>
 
+@contingent_text(0,`More clinical info, including a comma.`)
 @contingent_text(1,`This content is about omics.`)
 
 #### data/interim/ omics example
@@ -318,40 +319,55 @@ This directory is for the quality control and other reporting created during a b
 
 ![Clinical data/interim](media/project_template/interim_clinical.gif)
 
-This directory is for practice work generated during clincal research when analyzing and sharing original, unmodified data saved in *data/raw*. This can provide be a good insight into the research process and will be archived on a case by case basis. Additionaly, alternatively formatted data, data sets created for sharing, or excluded data can be saved in the interim directory.
+This directory is for practice work generated during clincal research when analyzing and sharing original, unmodified data saved in *data/raw*. This can provide be a good insight into the research process and will be archived on a case by case basis. Additionaly, alternatively formatted data, or excluded data can be saved in the interim directory. Data should be saved as a tsv, csv, xml or json file if possible.
 
 ### data/endpoints
 
-- Managed by study team.
-- Final results from research analysis.
-- Files generated to support papers or grants.
-- Organize in subdirectories if necessary.
+The endpoints directory are for the final results created as part of a research analysis. Often, these are files created to support papers or grants, and other dissemination. Further sub-directories can be added to organize data, if necessary.
+
+**Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
+- Data in this directory is managed by the study team.
+- Data in this directory will be saved if the project is archived in Arcus.
+
+**Endpoints** data is differnt depending on the type of research. Please select what type(s) of data you would like more information about, you can select both:
+
+- [ ] omics data
+- [ ] clinical data
 
 #### data/endpoints omics example
 
 ![Omics data/endpoints](media/project_template/endpoints_omics.gif)<!-- style = "max-height: 500px;" -->
 
+This directory is for files created at the end of a bioinformatics workflow, like gvcf and vcf files.
 
-- gvcf files contain variant information, describing genomic regions with no variants for a single sample. They are used to compare variant calls across samples to make vcf files. We collect them to enable the easy construction of larger cohorts.
-- We collect the compressed version of a gvcf file, which can be made with a lossless compression utility tool like gzip.
-- vcf files usually contain multiple samples, and are the starting point for most reserach project's analysis. They are not appropriate for constructing cohorts from multiple projects because they are missing necessary information contained in the gvcf files. We collect the compressed version of a vcf file, which can be made with a lossless compression utility tool like gzip. The variant calls in these files might differ from those in a gvcf file because they are made by considering information from all samples. A researcher would want to use these files when considering each project separately.
+- **gvcf** files contain variant information, describing genomic regions with no variants for a single sample. They are used to compare variant calls across samples to make vcf files. We collect them to enable the easy construction of larger cohorts. We collect the compressed version of a gvcf file (g.vcf.gz) which can be made with a lossless compression utility tool like [gzip](https://www.gzip.org). All gvcf files should include an index file, .tbi
+- **vcf** files usually contain multiple samples, and are the starting point for most reserach project's analysis. They are not appropriate for constructing cohorts from multiple projects because they are missing necessary information contained in the gvcf files. We collect the compressed version of a vcf file (vcf.gz), which can be made with a lossless compression utility tool like gzip[gzip](https://www.gzip.org). The variant calls in these files might differ from those in a gvcf file because they are made by considering information from all samples. A researcher would want to use these files when considering each project separately. All vcf files should include an index file, .tbi
 
 #### data/endpoints clinical example
 
 ![Clinical data/endpoints](media/project_template/endpoints_clinical.gif)
 
-- Endpoints clinical data usually entails an analyzed version of a dataset.
-- Deidentified versions of the initially collected data often reside here as well.
+This directory contains an analyzed version of a dataset or deidentified datasets.
+
 - Sometimes these files can be more cohort scoped or present a refinement into an initial research questions.
 - This data is highly valuable for reuse because often errors in the clinical record emerge from this process and can be illustrative for researchers in an overlapping or similar specialty.
+- Data should be saved as a tsv, csv, xml or json file if possible.
 
 ### data/ref-data
 
-- External or public datasets not supplied by Research IS or your lab, such as census data.
+This directory is for any external or public datasets not created by the study team neccessary to understand or repeat the anlysis for the project.
+
+**Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
+- External or public datasets not supplied by Research IS or your lab, such as census data, will be available in this directory.
+
+**Ref-data** data is differnt depending on the type of research. Please select what below if need need more information about omics data for this directory:
+
+- [ ] omics data
 
 #### data/ref-data/platform_data omics example
 
 - As cram files are a compressed format, some information is needed as a seperate file. If possible we collect a fasta file for the reference genome used. The fasta file describes offsets for each contig, to compute exactly where to find a particular reference base at specific genomic coordinates. Each fasta file requires an index file as fasta.fai
+- bed files are a text file format used to store genomic regions as coordinates and associated annotations, see [documentation](https://samtools.github.io/hts-specs/BEDv1.pdf) for more information on the format. If available, we collect this file as a .bed extension. 
 
 ## manifests/
 
