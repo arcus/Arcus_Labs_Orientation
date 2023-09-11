@@ -212,11 +212,11 @@ All files within the **data/** folder and its subdirectories will be listed in t
 
 This directory holds authoritative source data that should never be deleted. This folder is where the original, unmodified data for the research project is stored. In a research process, this is the data used for the initial analysis. Further sub-directories can be added to organize data, if necessary.
 
-> **Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
->
-> - Arcus delivered archival data will be found here.
-> - Study team generated data brought into Arcus goes here.
-> - This data is managed by Arcus, and should not be modified by the research team
+**Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
+
+ - Arcus delivered archival data will be found here.
+ - Study team generated data brought into Arcus goes here.
+ - This data is managed by Arcus, and should not be modified by the research team
 
 **Raw** data is differnt depending on the type of research. Please select what type(s) of data you would like more information about, you can select both:
 
@@ -291,11 +291,11 @@ try {
 
 The interim directory is for storing outputs of data processing and analysis completed using the original, unmodified data store in **data/raw**. Further sub-directories can be added to organize data, if necessary.
 
-> **Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
->
-> - Data in this directory is managed by the study team
-> - It should be used as an unregulated space for intermediate and temporary files.
-> - Recommend establishing retention schedules for regular review/clean-up of data in this folder.
+ **Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
+
+ - Data in this directory is managed by the study team
+ - It should be used as an unregulated space for intermediate and temporary files.
+ - Recommend establishing retention schedules for regular review/clean-up of data in this folder.
 
 **Interim** data is differnt depending on the type of research. Please select what type(s) of data you would like more information about, you can select both:
 
@@ -322,7 +322,7 @@ This directory is for practice work generated during clincal research when analy
 
 ### data/endpoints
 
-The endpoints directory are for the final results created as part of a research analysis. Often, these are files created to support papers or grants, and other dissemination. Further sub-directories can be added to organize data, if necessary.
+The endpoints directory are holds the final results created as part of a research analysis. Often, these are files created to support papers or grants, and other dissemination. Further sub-directories can be added to organize data, if necessary.
 
 **Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
 
@@ -374,9 +374,9 @@ This directory is for any external or public datasets not created by the study t
 
 Manifests are an inventory of all data in the collection, and provide a mapping between research data in the ~data~ folders, and participant information. The manifests also create a mapping between data and associated pipeline and technical information about workflows. There are three main manifests that are mandatory for every archival collection:
 
-- ~file_manifest.csv~
-- ~participant_manifest.csv~
-- ~partcipant-crosswalk.txt~
+- file_manifest.csv
+- participant_manifest.csv
+- partcipant-crosswalk.txt
 
 Additional manifests are only required if needed for the data or collection type. These files are detailed in the next sections. The graphic below illustrates the linking between the files:
 
@@ -389,12 +389,12 @@ Additional manifests are only required if needed for the data or collection type
 
 ### manifests/file_manifest
 
-The ~file_manifest.csv~ matches the biosample_id to each file in the ~data folders~. Below is more detail about each section in the file:
+The _file_manifest.csv_ matches the biosample_id to each file in the ~data folders~. Below is more detail about each section in the file:
 
 - biosample_id is an ID number for each file. For some studies, each file is derived about specific biosamples, so we suggest using the sample id. deally, biosample_id links to the CHOP biobank. When you cannot link the the biobank, treat biosample_id as the IDs you use for samples taken from participants. For studies where there are no biosamples, the biosample_id can be the file name.
 - file_type is the type of file, indicated by the file extension
 - protocol is only for omics data, select the omics data example below for more information
-- file_path is the file path for each file in the ~data~ folders. File paths should start with ~data/~ and end with the full file name with extension
+- file_path is the file path for each file in the _data_ folders. File paths should start with ~data/~ and end with the full file name with extension
 
 The **file_manifest.csv** may look differnt depending on the type of research. Please select what below if need need more information about omics data for this directory:
 
@@ -519,7 +519,7 @@ The participant_family_role.csv file is only needed for some omics data MORE DET
 
 ### manifests/file_derivation.csv
 
-The file_derivation.csv is only required for omics contributions with multiple file type generated through a bioinformatics pipeline or workflow.
+The file_derivation.csv is only required for omics contributions with multiple filetypes generated through a bioinformatics pipeline or workflow.
 
 - file_derivation.csv describes the relationships between files in a pipeline or workflow.
 
@@ -530,7 +530,7 @@ The file_derivation.csv is only required for omics contributions with multiple f
 
 ### manifests/env_manifest.csv
 
-For each script/notebook in ~src~, and each model in ~models/~, there should be an env._ file (here env._ refers to a file named env with any extension, so env.yaml or env.txt, for example) that describes the environment in which it was created or run. Environment files should be named as follows: descriptiveName_env.\* and placed in a folder called environments within the configs/ directory. Either individuals files or entire folders(whichever is the appropriate level) in scripts and notebooks within the ~src/~ directory, or the ~models/~ directory will need to be added to the env_manifest.csv file, matching them with their related environment file. See the see below for more infromation about this file:
+For each script/notebook in _src/_, and each model in _models/_, there should be an env._ file (here env._ refers to a file named env with any extension, so env.yaml or env.txt, for example) that describes the environment in which it was created or run. Environment files should be named as follows: descriptiveName_env.\* and placed in a folder called environments within the _configs/_ directory. Either individuals files or entire folders (whichever is the appropriate level) in scripts and notebooks within the _src/_ directory, or the _models/_ directory will need to be added to the env_manifest.csv file, matching them with their related environment file. See the see below for more infromation about this file:
 
 | column                | definition                                                                                                                                                                                                                                                                          | type   |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
@@ -540,43 +540,43 @@ For each script/notebook in ~src~, and each model in ~models/~, there should be 
 
 ## src/
 
-The src or sources folder
+The src or sources folder stores the access tools required to work with the research data and repeat the analysis. The need for access tools is dependent on the type of research, not all research has rules, scripts or notebooks. Any scripts saved in the src folder require an environment manifest to document the computing environment the code is run in, see the [environment manifest page](#manifestsenv_manifestcsv) for more information. Subdirectory folders can be customized and added as needed, below are the common directories or data types used in scientific research:
 
-- Managed by study team.
-- Access tools required of the research data itself.
-- Version control is important!
-- Subdirectory folders can be customized and added as needed.
+- **notebooks**: Jupyter, Beaker, Zeppelin, WDL, CWL etc.
+- **scripts**: custom software, code, tools
+- **rules**: for computational workflows
+- **test**: unit testing for code, customizable to team needs
 
-### src/subfolders
+<div class = "important">
+<b style="color: rgb(var(--color-highlight));">Important note</b><br>
+Version Control is important when working collaboratively with access tools like scripts and workflows. For a description of version control and version control systems, see the Arcus Education module, [Intro to version control](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/git_intro/git_intro.md#1)
+</div>
 
-- Some example options are as follows
-- notebooks: Jupyter, Beaker, Zeppelin, WDL, CWL etc.
-- scripts: custom software, code, tools
-- rules: for computational workflows
-- test: unit testing for code, customizable to team needs
+**src** files may look differnt depending on the type of research. Please select what below if need need more information about omics data for this directory:
+
+- [ ] omics data
+- [ ] clinical data
 
 ### src/subfolders clinical example
 
-- Reproducibility in research is a major goal of the Arcus program and organizing and documentating code so that it can be used beyond the confines of the originally collected dataset is critical to achieving this aim.
-- See the [DART Module on Reproducibility in Research](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/reproducibility/reproducibility.md#5) for more information on this topic.
-- The suite of computational tools available in the Arcus lab environment translate well to conducting reproducible research in the Arcus project template.
-- History of saved queries in SQLPad can be extracted directly from the sqlite database and saved for archiving.
-- Code written in the command line interface can be saved in scripts.
-- Work done in the R or Jupyter notebook applications can be saved in notebooks.
+Reproducibility in research is a major goal of the Arcus program and organizing and documentating code so that it can be used beyond the confines of the originally collected dataset is critical to achieving this aim. See the [DART Module on Reproducibility in Research](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/reproducibility/reproducibility.md#5) for more information on this topic. Below are some examples of the type of information commonly saved in the _src_ directory:
 
-* If you work in Stata or SAS a non propriterary text version of your .dta or .SAS file can be saved so that your analysis workflow can be accessed and interpreted by a secondary user.
+- History of saved queries in SQLPad can be extracted directly from the sqlite database into the _src/scripts_ directory
+- Code written in the command line interface can be saved in the _src/scripts_ directory
+- Work done in the R or Jupyter notebook applications can be saved in _src/notebooks_ directory
+- Though Arcus preferes to archive non-proprietary filetypes, some common data analysis programs are not easily exported out of their proprietary formats, such as Stata or SAS. If you work in Stata or SAS, a non propriterary text version of your .dta or .SAS file can be saved in the src folder so that your analysis workflow can be accessed and interpreted by a secondary user. Additionaly for Sata and SAS analysis, if possible export the workflow steps as a txt file.
 
 ### src/subfolders omics example
 
-- [Workflow Development Language](https://terra.bio/deciphering-a-mystery-workflow-written-in-wdl/) or WDL and [Common Workflow Language](https://www.commonwl.org) or CWL are open standard tools for managing computionally intensive bioinformatics workflows.
-- These are not definitionally programming languages but more clearly and interoperably explain parameters for running complex omics command line operations across bioinformatics pipelines.
-- For example, the diagram below displays a Genomic Data Commons Pipeline that converts reads (CRAM or BAM) to FASTQ and (re)aligns them to the latest human reference genome.
+[Workflow Development Language](https://terra.bio/deciphering-a-mystery-workflow-written-in-wdl/) or WDL and [Common Workflow Language](https://www.commonwl.org) or CWL are open standard tools for managing computionally intensive bioinformatics workflows. These are not definitionally programming languages but more clearly and interoperably explain parameters for running complex omics command line operations across bioinformatics pipelines. WDL and CWL are commonly used in bioinformatics pipelines to describe and share data processing and analysis workflows. For example, the diagram below displays a Genomic Data Commons Pipeline that converts reads (CRAM or BAM) to FASTQ and (re)aligns them to the latest human reference genome.
 
 ![Genomic Data Commons Pipeline that converts reads (CRAM or BAM) to FASTQ and (re)aligns them to the latest human reference genome ](media/sample_gatk_WDL.png)
 
+Workflows documented in WDL or CWL are incredibly useful for both understanding and recreating a bioinformatics workflow. These scripts should be saved in the _src/notebooks_ directory.
+
 ## models/
 
-- machine learning models, model predictions, model summaries, datasheets for model training data
+The models directory is for saving any type of machine learning models, model predictions, model summaries, datasheets for model training data. Please consult with the Library Science team on your specific model type for more information about formats and directory structure for archiving.
 
 ## references/
 
