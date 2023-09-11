@@ -176,7 +176,7 @@ The Project Template brings together three categories of information: Research D
 
 Access Tools are the code used to do the analysis. This can include machine models, scripts and Jupyter notebooks.
 
-![Graphic respresentation of the Project template with that denotes access tool sections](media/project_template/access_tools.pngaccess_tools.png)
+![Graphic respresentation of the Project template with that denotes access tool sections](media/project_template/access_tools.png)
 
 ### Contextual Files
 
@@ -204,7 +204,7 @@ For both the clinical data and omics examples in the Project Template walk throu
 
 ## data/
 
-The data folder is where the data files are organized. Data is the information collected during the course of research processes used for analysis. The data directory maintains descriptions of authoritative source data and their associated files and metadata in both raw and processed formats. There are four sub-directories within the data folder for organizing the data: *raw/*, *interim/*, *endpoints/*, and *ref-data*. 
+The data folder is where the data files are organized. Data is the information collected during the course of research processes used for analysis. The data directory maintains descriptions of authoritative source data and their associated files and metadata in both raw and processed formats. There are four sub-directories within the data folder for organizing the data: _raw/_, _interim/_, _endpoints/_, and _ref-data_.
 
 All files within the **data/** folder and its subdirectories will be listed in the **file_manifest.csv**. The manifests are detailed in the [manifests](#manifests)section of this course.
 
@@ -212,18 +212,17 @@ All files within the **data/** folder and its subdirectories will be listed in t
 
 This directory holds authoritative source data that should never be deleted. This folder is where the original, unmodified data for the research project is stored. In a research process, this is the data used for the initial analysis. Further sub-directories can be added to organize data, if necessary.
 
->**Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
+> **Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
 >
->- Arcus delivered archival data will be found here.
->- Study team generated data brought into Arcus goes here.
->- This data is managed by Arcus, and should not be modified by the research team
+> - Arcus delivered archival data will be found here.
+> - Study team generated data brought into Arcus goes here.
+> - This data is managed by Arcus, and should not be modified by the research team
 
 **Raw** data is differnt depending on the type of research. Please select what type(s) of data you would like more information about, you can select both:
 
 - [ ] omics data
 - [ ] clinical data
 <script output="data_type">"@input"</script>
-
 
 <script modify="false">
 try {
@@ -275,7 +274,6 @@ For a registry, database, or any other type of clinical dataset the raw data wil
 } catch(e) { }
 </script>
 
-
 <script modify="false">
 try {
   let data_type = @input(`data_type`)
@@ -290,13 +288,14 @@ try {
 </script>
 
 ### data/interim
- The interim directory is for storing outputs of data processing and analysis completed using the original, unmodified data store in **data/raw**. Further sub-directories can be added to organize data, if necessary.
 
->**Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
+The interim directory is for storing outputs of data processing and analysis completed using the original, unmodified data store in **data/raw**. Further sub-directories can be added to organize data, if necessary.
+
+> **Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
 >
->- Data in this directory is managed by the study team
->- It should be used as an unregulated space for intermediate and temporary files.
->- Recommend establishing retention schedules for regular review/clean-up of data in this folder.
+> - Data in this directory is managed by the study team
+> - It should be used as an unregulated space for intermediate and temporary files.
+> - Recommend establishing retention schedules for regular review/clean-up of data in this folder.
 
 **Interim** data is differnt depending on the type of research. Please select what type(s) of data you would like more information about, you can select both:
 
@@ -307,20 +306,19 @@ try {
 @contingent_text(0,`More clinical info, including a comma.`)
 @contingent_text(1,`This content is about omics.`)
 
-
 #### data/interim/ omics example
 
 ![Omics data/interim](media/project_template/interim_omics.gif)
 
-This directory is for the quality control and other reporting created during a bioinformatics workflow, using the sequnce files stored in the *data/raw* directory. 
+This directory is for the quality control and other reporting created during a bioinformatics workflow, using the sequnce files stored in the _data/raw_ directory.
 
-- QC metrics Quality Control (QC) metrics are reported at various stages of analysis pipelines and give information about the quality of the data generated. QC metrics files should be in a tabular file format, with .type_metrics or .duplicate_metrics as the extension. 
+- QC metrics Quality Control (QC) metrics are reported at various stages of analysis pipelines and give information about the quality of the data generated. QC metrics files should be in a tabular file format, with .type_metrics or .duplicate_metrics as the extension.
 
 #### data/interim clinical example
 
 ![Clinical data/interim](media/project_template/interim_clinical.gif)
 
-This directory is for practice work generated during clincal research when analyzing and sharing original, unmodified data saved in *data/raw*. This can provide be a good insight into the research process and will be archived on a case by case basis. Additionaly, alternatively formatted data, or excluded data can be saved in the interim directory. Data should be saved as a tsv, csv, xml or json file if possible.
+This directory is for practice work generated during clincal research when analyzing and sharing original, unmodified data saved in _data/raw_. This can provide be a good insight into the research process and will be archived on a case by case basis. Additionaly, alternatively formatted data, or excluded data can be saved in the interim directory. Data should be saved as a tsv, csv, xml or json file if possible.
 
 ### data/endpoints
 
@@ -370,7 +368,7 @@ This directory is for any external or public datasets not created by the study t
 #### data/ref-data/platform_data omics example
 
 - As cram files are a compressed format, some information is needed as a seperate file. If possible we collect a fasta file for the reference genome used. The fasta file describes offsets for each contig, to compute exactly where to find a particular reference base at specific genomic coordinates. Each fasta file requires an index file as fasta.fai
-- bed files are a text file format used to store genomic regions as coordinates and associated annotations, see [documentation](https://samtools.github.io/hts-specs/BEDv1.pdf) for more information on the format. If available, we collect this file as a .bed extension. 
+- bed files are a text file format used to store genomic regions as coordinates and associated annotations, see [documentation](https://samtools.github.io/hts-specs/BEDv1.pdf) for more information on the format. If available, we collect this file as a .bed extension.
 
 ## manifests/
 
@@ -389,8 +387,7 @@ Additional manifests are only required if needed for the data or collection type
 - Managed by Arcus, you will not need to create these for yourselves
 - This will only appear in the lab if archival data is delivered
 
-
-### manifests/file_manifest 
+### manifests/file_manifest
 
 The ~file_manifest.csv~ matches the biosample_id to each file in the ~data folders~. Below is more detail about each section in the file:
 
@@ -431,7 +428,7 @@ The **file_manifest.csv** may look differnt depending on the type of research. P
 The participant_manifest.csv links identifies which participants information links to each files in the file_manifest. Below is more detail about each section of the file:
 
 - local_patient_id is a local identifier the study team used to identify the patient
-- The biosample_id will be the same as the one listed in the file_manifests.csv. Linking a local_participant_id to a biosample_id identifies which patients information is related to the file. 
+- The biosample_id will be the same as the one listed in the file_manifests.csv. Linking a local_participant_id to a biosample_id identifies which patients information is related to the file.
 - cohort is optional, please fill this in if there is additional cohort information or identification needed.
 
 The **participant_manifest.csv** may look differnt depending on the type of research. Please select what below if need need more information about omics data for this directory:
@@ -473,9 +470,9 @@ local_participant_id,Id that is used in PARTICIPANT_MANIFEST,String,
 auth_id_type,The type of participant id(chop),String,This will always be chop.
 auth_participant_id,Authorative Id of the participant. (Often MRN),String,Use an 8 digit MRN. Left-pad the MRN with zeroes as necessary.
 
-### manifests/participant_family_role 
+### manifests/participant_family_role
 
-The participant_family_role.csv file is only needed for some omics data MORE DETAIL. 
+The participant_family_role.csv file is only needed for some omics data MORE DETAIL.
 
 - participant_family_role.csv If you have family data, use this file to describe relationships with terms from data_dicts/eHB_relationship_types_as_of_10_30.json.
 
@@ -533,8 +530,7 @@ The file_derivation.csv is only required for omics contributions with multiple f
 
 ### manifests/env_manifest.csv
 
-For each script/notebook in ~src~, and each model in ~models/~, there should be an env.* file (here env.* refers to a file named env with any extension, so env.yaml or env.txt, for example) that describes the environment in which it was created or run. Environment files should be named as follows: descriptiveName_env.* and placed in a folder called environments within the configs/ directory. Either individuals files or entire folders(whichever is the appropriate level) in scripts and notebooks within the ~src/~ directory, or the ~models/~ directory will need to be added to the env_manifest.csv file, matching them with their related environment file. See the see below for more infromation about this file:
-
+For each script/notebook in ~src~, and each model in ~models/~, there should be an env._ file (here env._ refers to a file named env with any extension, so env.yaml or env.txt, for example) that describes the environment in which it was created or run. Environment files should be named as follows: descriptiveName_env.\* and placed in a folder called environments within the configs/ directory. Either individuals files or entire folders(whichever is the appropriate level) in scripts and notebooks within the ~src/~ directory, or the ~models/~ directory will need to be added to the env_manifest.csv file, matching them with their related environment file. See the see below for more infromation about this file:
 
 | column                | definition                                                                                                                                                                                                                                                                          | type   |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
@@ -543,7 +539,9 @@ For each script/notebook in ~src~, and each model in ~models/~, there should be 
 |                       |
 
 ## src/
-The src or sources folder 
+
+The src or sources folder
+
 - Managed by study team.
 - Access tools required of the research data itself.
 - Version control is important!
