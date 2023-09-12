@@ -301,7 +301,43 @@ The interim directory is for storing outputs of data processing and analysis com
 
 - [ ] omics data
 - [ ] clinical data
-<script output="data_type">"@input"</script>
+<script output="data_type_interim">"@input"</script>
+
+
+<script modify="false">
+try {
+  let data_type = @input(`data_type_interim`)
+
+  if(data_type[0]) {
+    send.liascript(`
+    #### data/interim/ omics example
+
+![Omics data/interim](media/project_template/interim_omics.gif)
+
+This directory is for the quality control and other reporting created during a bioinformatics workflow, using the sequnce files stored in the \_data/raw\_ directory.
+
+- QC metrics Quality Control (QC) metrics are reported at various stages of analysis pipelines and give information about the quality of the data generated. QC metrics files should be in a tabular file format, with .type\_metrics or .duplicate\_metrics as the extension.
+    `)
+  } else send.clear()
+} catch(e) { }
+</script>
+
+<script modify="false">
+try {
+  let data_type = @input(`data_type_interim`)
+
+  if(data_type[1]) {
+    send.liascript(`
+    #### data/interim clinical example
+
+![Clinical data/interim](media/project_template/interim_clinical.gif)
+
+This directory is for practice work generated during clincal research when analyzing and sharing original, unmodified data saved in _data/raw_. This can provide be a good insight into the research process and will be archived on a case by case basis. Additionaly, alternatively formatted data, or excluded data can be saved in the interim directory. Data should be saved as a tsv, csv, xml or json file if possible.
+    `)
+  } else send.clear()
+} catch(e) { }
+</script>
+
 
 @contingent_text(0,`More clinical info, including a comma.`)
 @contingent_text(1,`This content is about omics.`)
