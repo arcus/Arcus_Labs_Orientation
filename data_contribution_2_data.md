@@ -580,20 +580,21 @@ The models directory is for saving any type of machine learning models, model pr
 
 ## references/
 
-- contains general information about the research effort such as IRB documents, reference papers, sample information, lab prep information, data dictionaries.
-- Protocols: experimental protocols
-- Further subdirectories can be customized.
+This directory contains general information about the research effort such as IRB documents, reference papers, sample information, lab prep information, and data dictionaries. This directory holds the technical information needed to understand the research data. Further subdirectories can be customized depending on the collection.
+
+**references** files may look differnt depending on the type of research. Please select what below if need need more information about omics data for this directory:
+
+- [ ] omics data
+- [ ] clinical data
 
 ### references/data_dictionary clinical example
 
-- A data dictionary will help people better understand the scope, purpose, and nuance of the data you are collecting.
-- Some data dictionaries are extensively detailed, but even a basic minimal data dictionary is better than none at all. Data dictionaries are usually used for tabular datasets, but can be used for data in other formats as well!
-- Below are the fields you can consider including in your data dictionary. Only a few are considered truly **required** - the rest are optional but can be extremely helpful, so you should consider whether they make sense to collect in your case.
-- You may also have additional fields to include that are not listed here; you know your data best!
+If you are contributing a dataset, them you should includes a data dictionary in the _references/_ directory, in a subdirectory titled _data_dictionary_. A data dictionary will help people better understand the scope, purpose, and nuance of the data you are collecting. Some data dictionaries are extensively detailed, but even a basic minimal data dictionary is better than none at all. Data dictionaries are usually used for tabular datasets, but can be used for data in other formats as well.
+
+Below are the fields you can consider including in your data dictionary. Only a few are considered truly **required** - the rest are optional but can be extremely helpful, so you should consider whether they make sense to collect in your case. You may also have additional fields to include that are not listed here; you know your data best!
 
 * If your data model follows a specific ontology it is crucial to denote that in your included documentation.
-* NIH has fantastic tools through its Unified Medical Language System (UMLS).
-* These include [extensive vocabulary lists of nearly 200 ontologies](https://www.nlm.nih.gov/research/umls/sourcereleasedocs/index.html) and a [metathesaurus application](https://www.nlm.nih.gov/research/umls/knowledge_sources/metathesaurus/index.html) that crosswalks between validated ontologies.
+* NIH has fantastic tools through its Unified Medical Language System (UMLS). These include [extensive vocabulary lists of nearly 200 ontologies](https://www.nlm.nih.gov/research/umls/sourcereleasedocs/index.html) and a [metathesaurus application](https://www.nlm.nih.gov/research/umls/knowledge_sources/metathesaurus/index.html) that crosswalks between validated ontologies.
 
 **Name​**: (required) provide the name of the data element you are describing as it appears in the dataset.
 
@@ -635,6 +636,10 @@ The models directory is for saving any type of machine learning models, model pr
 | concept_ancestor | The CONCEPT_ANCESTOR table is designed to simplify observational analysis by providing the complete hierarchical relationships between Concepts. Only direct parent-child relationships between Concepts are stored in the CONCEPT_RELATIONSHIP table. To determine higher level ancestry connections, all individual direct relationships would have to be navigated at analysis time. The CONCEPT_ANCESTOR table includes records for all parent-child relationships, as well as grandparent-grandchild relationships and those of any other level of lineage. Using the CONCEPT_ANCESTOR table allows for querying for all descendants of a hierarchical concept. For example, drug ingredients and drug products are all descendants of a drug class ancestor. This table is entirely derived from the CONCEPT, CONCEPT_RELATIONSHIP and RELATIONSHIP tables. |
 
 ### references/protocols omics examples
+
+For Omics data, protocols are the metadata that document the processes, tools and standards used to generate sequencing data. Protocols are important to complete, as the information will be needed for future analysis, pipelines or workflows with the data.
+
+Arcus documents the protocol information in structured yaml files. The YAML structure and information captured depends on the sequencing method (such as High-Throughput sequencing, Microarray or Metabolics) and the file type (like FASTQ, CRAM, VCF, etc.). High-Throughput sequencing data includes whole genome sequencing, whole exome sequencing and RNA-seq data. Microarrays include SNP data. A new yaml file should be created whenever the process, tools or standards are different for a set of files. The protocol yaml is linked to the files in the file_manifest.csv file. Below are descriptions of the information requested in the protocols, a template for all of these is downloadable in a public GitHub repository, [arcus/omics-protocols](https://github.research.chop.edu/arcus/omics-protocols).
 
 Below is further description about the metadata elements in a sample fastq protocol:
 
@@ -704,11 +709,11 @@ meta:
 
 # reports/
 
-- Content used for producing papers, presentations, websites, metrics, etc.
+The reports holds published papers and content used for producing papers, presentations, websites, metrics, etc. It can additionaly hold the following information:
 - Figures & tables: generated metrics and graphics for supporting reports
 - Log.md: computational notebook (if one was used to create the content)
 - Methods.md: version controlled methods section for the project
-- Further subdirectories can be customized.
+- Further subdirectories can be customized based on the needs of the collection.
 
 # requirements/
 
