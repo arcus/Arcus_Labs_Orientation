@@ -785,11 +785,10 @@ image here showing structure in ujo
 
 # Concluding Quiz
 
-1. Data in the raw directory can be edited.
+1. True or False: Data in the raw directory can be edited.
 
 [( )] TRUE
 [(X)] FALSE
-
 ***
 <div class = "answer">
 
@@ -798,11 +797,10 @@ FALSE. This directory holds authoritative source data that should never be delet
 </div>
 ***
 
-2. MRNs are preferred for use as both the local biosample and/or participant id and the authoritative id.
+2. True or False: MRNs are preferred for use as both the local biosample and/or participant id and the authoritative id.
 
 [( )] TRUE
 [(X)] FALSE
-
 ***
 <div class = "answer">
 
@@ -813,12 +811,11 @@ FALSE. MRNs should only be used as the authoritative id in the participant-cross
 
 3. Which folders in the project template are minimally required?
 
-[( )] references
-[( )] src
-[(X)] data
-[(X)] manifests
-[( )] src
-
+[[ ]] references
+[[ ]] src
+[[X]] data
+[[X]] manifests
+[[ ]] src
 ***
 <div class = "answer">
 
