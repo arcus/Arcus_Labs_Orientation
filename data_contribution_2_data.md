@@ -503,15 +503,17 @@ The **participant_manifest.csv** may look differnt depending on the type of rese
 
 ### manifests/participant_crosswalk
 
-- participant-crosswalk.txt is a tab delimited file with no header that links local_participant_id in PARTICIPANT_MANIFEST to MRNs.
+- participant-crosswalk.txt is a tab delimited file with no header that links local\_participant\_id in PARTICIPANT_MANIFEST to MRNs.
 
-column,definition,type,notes
-local\_id\_type,The type of participant id (local).,String,This will always be local.
-local\_participant\_id,Id that is used in PARTICIPANT*MANIFEST,String,
-auth_id*\type,The type of participant id(chop),String,This will always be chop.
-auth\_participant\_id,Authorative Id of the participant. (Often MRN),String,Use an 8 digit MRN. Left-pad the MRN with zeroes as necessary.
+|column                |definition                                    |type  |notes                                                         |
+|----------------------|----------------------------------------------|------|--------------------------------------------------------------|
+|local\_id\_type       |The type of participant id (local).           |String|This will always be local.                                    |
+|local\_participant\_id|Id that is used in PARTICIPANT_MANIFEST       |String|                                                              |
+|auth\_id\_type        |The type of participant id(chop)              |String|This will always be chop.                                     |
+|auth\_participant\_id |Authorative Id of the participant. (Often MRN)|String|Use an 8 digit MRN. Left-pad the MRN with zeroes as necessary.|
 
-### manifests/participant_family_role
+
+### manifests/participant\_family\_role
 
 The participant\_family\_role.csv file is only needed for some omics data MORE DETAIL.
 
