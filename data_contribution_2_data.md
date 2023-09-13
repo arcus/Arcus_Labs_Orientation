@@ -188,13 +188,20 @@ Contextual Files provide information needed to understand the data and analysis.
 
 The next part of this module will walk through each sub-directory of the project template in detail. Though the project template is flexible enough to handle a wide range of research data, it's application and the filetypes in each directory will be different depending on the type of project. For this reason, we have two differnt examples: clinical data or omics data. In many of the following sections, you can select the option to view examples and specific information for the data type.
 
-Regardless of project type, Arcus follows industry standard guidelines for digital archiving and apply these standrds to incoming data contributions. File names should follow a consistent and clear schema, and not contain and spaces, periods or special characters. Further recomendations for filenaming are below:
+Regardless of project type, Arcus follows industry standard guidelines for digital archiving and apply these standrds to incoming data contributions. File names should follow a consistent and clear schema, and not contain and spaces, periods or special characters. Further recommendations for filenaming are below:
 
 - [File naming tips sheet](https://storage.googleapis.com/arcus-edu-libsci/Arcus%20RDM%20Resources/fileNaming_bestPractices_MIT.pdf)
 - [File naming conventions and activity sheet](https://storage.googleapis.com/arcus-edu-libsci/Arcus%20RDM%20Resources/arcus_rdm_filenaming_activity.pdf)
 - [Recommended practices for README files](https://storage.googleapis.com/arcus-edu-libsci/Arcus%20RDM%20Resources/Arcus%20RDM%20Data%20Dictionaries%20Best%20Practices.pdf)
 
-Whenever feasible, Arcus prefers to archive non-proprietary file formats as opposed to proprietary ones. Proprietary formats necessitate specific software for access or utilization, while non-proprietary formats are frequently open-source. Whenever you have the option, it's advisable to store data in a non-proprietary (open) file format. This choice enhances the accessibility of your content to others, enabling effortless reuse across various software platforms. Furthermore, this approach guarantees the continued utility of the file in the long term. In contrast, proprietary files carry the risk of becoming obsolete due to potential software incompatibility or restricted access. When it is necessary to save files in a proprietary format, consider including a README file that documents the name and version of the software used to generate the file, as well as the company who made the software. This could help down the road if we need to figure out how to open these files again.
+Whenever feasible, Arcus prefers to archive non-proprietary file formats as opposed to proprietary ones. Proprietary formats necessitate specific software for access or utilization, while non-proprietary formats are frequently open-source. Whenever you have the option, it's advisable to store data in a non-proprietary (open) file format. This choice enhances the accessibility of your content to others, enabling effortless reuse across various software platforms. Furthermore, this approach guarantees the continued utility of the file in the long term. In contrast, proprietary files carry the risk of becoming obsolete due to potential software incompatibility or restricted access.
+
+<div class = "important">
+<b style="color: rgb(var(--color-highlight));">Important note</b><br>
+
+When it is necessary to save files in a proprietary format, consider including a README file that documents the name and version of the software used to generate the file, as well as the company who made the software. This could help down the road if we need to figure out how to open these files again.
+
+</div>
 
 For both the clinical data and omics examples in the Project Template walk through, we reference our preferred data formats for each type of data. Below are some general resources to help in choosing file formats:
 
@@ -206,7 +213,7 @@ For both the clinical data and omics examples in the Project Template walk throu
 
 The data folder is where the data files are organized. Data is the information collected during the course of research processes used for analysis. The data directory maintains descriptions of authoritative source data and their associated files and metadata in both raw and processed formats. There are four sub-directories within the data folder for organizing the data: _raw/_, _interim/_, _endpoints/_, and _ref-data_.
 
-All files within the **data/** folder and its subdirectories will be listed in the **file_manifest.csv**. The manifests are detailed in the [manifests](#manifests)section of this course.
+All files within the **data/** folder and its subdirectories will be listed in the **file_manifest.csv**. The manifests are detailed in the [manifests](## manifests) section of this course.
 
 ### data/raw
 
@@ -214,11 +221,11 @@ This directory holds authoritative source data that should never be deleted. Thi
 
 **Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
 
- - Arcus delivered archival data will be found here.
- - Study team generated data brought into Arcus goes here.
- - This data is managed by Arcus, and should not be modified by the research team
+- Arcus delivered archival data will be found here.
+- Study team generated data brought into Arcus goes here.
+- This data is managed by Arcus, and should not be modified by the research team.
 
-**Raw** data is differnt depending on the type of research. Please select what type(s) of data you would like more information about, you can select both:
+**Raw** data is different depending on the type of research. Please select what type(s) of data you would like more information about, you can select both:
 
 - [ ] omics data
 - [ ] clinical data
@@ -291,18 +298,17 @@ try {
 
 The interim directory is for storing outputs of data processing and analysis completed using the original, unmodified data store in **data/raw**. Further sub-directories can be added to organize data, if necessary.
 
- **Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
+**Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
 
- - Data in this directory is managed by the study team
- - It should be used as an unregulated space for intermediate and temporary files.
- - Recommend establishing retention schedules for regular review/clean-up of data in this folder.
+- Data in this directory is managed by the study team
+- It should be used as an unregulated space for intermediate and temporary files.
+- Recommend establishing retention schedules for regular review/clean-up of data in this folder.
 
-**Interim** data is differnt depending on the type of research. Please select what type(s) of data you would like more information about, you can select both:
+**Interim** data is different depending on the type of research. Please select what type(s) of data you would like more information about, you can select both:
 
 - [ ] omics data
 - [ ] clinical data
 <script output="data_type_interim">"@input"</script>
-
 
 <script modify="false">
 try {
@@ -332,12 +338,11 @@ try {
 
 ![Clinical data/interim](media/project_template/interim_clinical.gif)
 
-This directory is for practice work generated during clincal research when analyzing and sharing original, unmodified data saved in _data/raw_. This can provide be a good insight into the research process and will be archived on a case by case basis. Additionaly, alternatively formatted data, or excluded data can be saved in the interim directory. Data should be saved as a tsv, csv, xml or json file if possible.
+This directory is for practice work generated during clincal research when analyzing and sharing original, unmodified data saved in \_data/raw\_. This can provide be a good insight into the research process and will be archived on a case by case basis. Additionaly, alternatively formatted data, or excluded data can be saved in the interim directory. Data should be saved as a tsv, csv, xml or json file if possible.
     `)
   } else send.clear()
 } catch(e) { }
 </script>
-
 
 @contingent_text(0,`More clinical info, including a comma.`)
 @contingent_text(1,`This content is about omics.`)
@@ -346,7 +351,7 @@ This directory is for practice work generated during clincal research when analy
 
 ![Omics data/interim](media/project_template/interim_omics.gif)
 
-This directory is for the quality control and other reporting created during a bioinformatics workflow, using the sequnce files stored in the _data/raw_ directory.
+This directory is for the quality control and other reporting created during a bioinformatics workflow, using the sequnce files stored in the \_data/raw\_ directory.
 
 - QC metrics Quality Control (QC) metrics are reported at various stages of analysis pipelines and give information about the quality of the data generated. QC metrics files should be in a tabular file format, with .type_metrics or .duplicate_metrics as the extension.
 
@@ -354,7 +359,7 @@ This directory is for the quality control and other reporting created during a b
 
 ![Clinical data/interim](media/project_template/interim_clinical.gif)
 
-This directory is for practice work generated during clincal research when analyzing and sharing original, unmodified data saved in _data/raw_. This can provide be a good insight into the research process and will be archived on a case by case basis. Additionaly, alternatively formatted data, or excluded data can be saved in the interim directory. Data should be saved as a tsv, csv, xml or json file if possible.
+This directory is for practice work generated during clincal research when analyzing and sharing original, unmodified data saved in \_data/raw\_. This can provide be a good insight into the research process and will be archived on a case by case basis. Additionaly, alternatively formatted data, or excluded data can be saved in the interim directory. Data should be saved as a tsv, csv, xml or json file if possible.
 
 ### data/endpoints
 
@@ -365,7 +370,7 @@ The endpoints directory are holds the final results created as part of a researc
 - Data in this directory is managed by the study team.
 - Data in this directory will be saved if the project is archived in Arcus.
 
-**Endpoints** data is differnt depending on the type of research. Please select what type(s) of data you would like more information about, you can select both:
+**Endpoints** data is different depending on the type of research. Please select what type(s) of data you would like more information about, you can select both:
 
 - [ ] omics data
 - [ ] clinical data
@@ -408,7 +413,7 @@ This directory is for any external or public datasets not created by the study t
 
 ## manifests/
 
-Manifests are an inventory of all data in the collection, and provide a mapping between research data in the ~data~ folders, and participant information. The manifests also create a mapping between data and associated pipeline and technical information about workflows. There are three main manifests that are mandatory for every archival collection:
+Manifests are an inventory of all data in the collection, and provide a mapping between research data in the data folders, and participant information. The manifests also create a mapping between data and associated pipeline and technical information about workflows. There are three main manifests that are mandatory for every archival collection:
 
 - file_manifest.csv
 - participant_manifest.csv
@@ -430,7 +435,7 @@ The _file_manifest.csv_ matches the biosample_id to each file in the ~data folde
 - biosample_id is an ID number for each file. For some studies, each file is derived about specific biosamples, so we suggest using the sample id. deally, biosample_id links to the CHOP biobank. When you cannot link the the biobank, treat biosample_id as the IDs you use for samples taken from participants. For studies where there are no biosamples, the biosample_id can be the file name.
 - file_type is the type of file, indicated by the file extension
 - protocol is only for omics data, select the omics data example below for more information
-- file_path is the file path for each file in the _data_ folders. File paths should start with ~data/~ and end with the full file name with extension
+- file*path is the file path for each file in the \_data* folders. File paths should start with ~data/~ and end with the full file name with extension
 
 The **file_manifest.csv** may look differnt depending on the type of research. Please select what below if need need more information about omics data for this directory:
 
@@ -502,9 +507,9 @@ The **participant_manifest.csv** may look differnt depending on the type of rese
 
 column,definition,type,notes
 local_id_type,The type of participant id (local).,String,This will always be local.
-local_participant_id,Id that is used in PARTICIPANT_MANIFEST,String,
-auth_id_type,The type of participant id(chop),String,This will always be chop.
-auth_participant_id,Authorative Id of the participant. (Often MRN),String,Use an 8 digit MRN. Left-pad the MRN with zeroes as necessary.
+local_participant_id,Id that is used in PARTICIPANT*MANIFEST,String,
+auth_id*\type,The type of participant id(chop),String,This will always be chop.
+aut\h_participan\t_id,Authorative Id of the participant. (Often MRN),String,Use an 8 digit MRN. Left-pad the MRN with zeroes as necessary.
 
 ### manifests/participant_family_role
 
@@ -566,7 +571,7 @@ The file_derivation.csv is only required for omics contributions with multiple f
 
 ### manifests/env_manifest.csv
 
-For each script/notebook in _src/_, and each model in _models/_, there should be an env._ file (here env._ refers to a file named env with any extension, so env.yaml or env.txt, for example) that describes the environment in which it was created or run. Environment files should be named as follows: descriptiveName_env.\* and placed in a folder called environments within the _configs/_ directory. Either individuals files or entire folders (whichever is the appropriate level) in scripts and notebooks within the _src/_ directory, or the _models/_ directory will need to be added to the env_manifest.csv file, matching them with their related environment file. See the see below for more infromation about this file:
+For each script/notebook in _src/_, and each model in _models/_, there should be an env._ file (here env._ refers to a file named env with any extension, so env.yaml or env.txt, for example) that describes the environment in which it was created or run. Environment files should be named as follows: descriptiveName*env.\* and placed in a folder called environments within the \_configs/* directory. Either individuals files or entire folders (whichever is the appropriate level) in scripts and notebooks within the _src/_ directory, or the _models/_ directory will need to be added to the env_manifest.csv file, matching them with their related environment file. See the see below for more infromation about this file:
 
 | column                | definition                                                                                                                                                                                                                                                                          | type   |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
@@ -629,8 +634,8 @@ If you are contributing a dataset, them you should includes a data dictionary in
 
 Below are the fields you can consider including in your data dictionary. Only a few are considered truly **required** - the rest are optional but can be extremely helpful, so you should consider whether they make sense to collect in your case. You may also have additional fields to include that are not listed here; you know your data best!
 
-* If your data model follows a specific ontology it is crucial to denote that in your included documentation.
-* NIH has fantastic tools through its Unified Medical Language System (UMLS). These include [extensive vocabulary lists of nearly 200 ontologies](https://www.nlm.nih.gov/research/umls/sourcereleasedocs/index.html) and a [metathesaurus application](https://www.nlm.nih.gov/research/umls/knowledge_sources/metathesaurus/index.html) that crosswalks between validated ontologies.
+- If your data model follows a specific ontology it is crucial to denote that in your included documentation.
+- NIH has fantastic tools through its Unified Medical Language System (UMLS). These include [extensive vocabulary lists of nearly 200 ontologies](https://www.nlm.nih.gov/research/umls/sourcereleasedocs/index.html) and a [metathesaurus application](https://www.nlm.nih.gov/research/umls/knowledge_sources/metathesaurus/index.html) that crosswalks between validated ontologies.
 
 **Name​**: (required) provide the name of the data element you are describing as it appears in the dataset.
 
@@ -746,6 +751,7 @@ meta:
 # reports/
 
 The reports holds published papers and content used for producing papers, presentations, websites, metrics, etc. It can additionaly hold the following information:
+
 - Figures & tables: generated metrics and graphics for supporting reports
 - Log.md: computational notebook (if one was used to create the content)
 - Methods.md: version controlled methods section for the project
