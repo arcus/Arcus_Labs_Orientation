@@ -830,6 +830,10 @@ Only data and manifests are required but more is always better. References and s
 
 4. What folders comprise data?
 
+<script>
+  let input = "@input".trim();
+  /data|manifests/i.test(input);
+</script>
 ***
 <div class = "answer">
 
@@ -840,6 +844,10 @@ data and manifests
 
 5. What folders comprise access tools?
 
+<script>
+  let input = "@input".trim();
+  /models|src/i.test(input);
+</script>
 ***
 <div class = "answer">
 
@@ -850,6 +858,10 @@ models and src
 
 6. What folders comprise contextual files?
 
+<script>
+  let input = "@input".trim();
+  /configs|references|reports|requirements/i.test(input);
+</script>
 ****
 <div class = "answer">
 
