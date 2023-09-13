@@ -12,7 +12,7 @@ title: Arcus Project Template Orientation
 comment:  Learn about the project template directory structure, which is used in Acus labs and for archiving data.
 long_description: Arcus Archives is the canonical repository for research data at CHOP. Archiving research data preserves the important research performed at CHOP according to archival standards while facilitating data sharing. This module reviews reasons to archive research data at Arcus, and the data scoping, privacy review and technical considerations taken before receiving data. Module 2 covers the steps of archiving the data at Arcus.
 
-estimated_time: 30 minutes
+estimated_time: 60 minutes
 
 @pre_reqs
 We recommend completing the Arcus Data Contribution Orientation before doing this module. It's helpful to have reviewed the [Arcus website](https://arcus.chop.edu) at  (available only on the CHOP network), to understand Arcus’s overall goals.
@@ -816,10 +816,44 @@ FALSE. MRNs should only be used as the authoritative id in the participant-cross
 [[X]] data
 [[X]] manifests
 [[ ]] src
+[[ ]] configs
+[[ ]] models
+[[ ]] reports
+[[ ]] requirements
 ***
 <div class = "answer">
 
 Only data and manifests are required but more is always better. References and src are probably the two most common non-required folders generated over the course of research.
+
+</div>
+***
+
+4. What folders comprise data?
+
+***
+<div class = "answer">
+
+data and manifests
+
+</div>
+***
+
+5. What folders comprise access tools?
+
+***
+<div class = "answer">
+
+models and src
+
+</div>
+***
+
+6. What folders comprise contextual files?
+
+****
+<div class = "answer">
+
+configs, references, reports, and requirements
 
 </div>
 ***
