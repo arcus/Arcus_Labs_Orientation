@@ -430,12 +430,12 @@ Additional manifests are only required if needed for the data or collection type
 
 ### manifests/file_manifest
 
-The _file_manifest.csv_ matches the biosample_id to each file in the ~data folders~. Below is more detail about each section in the file:
+The file_manifest.csv matches the biosample_id to each file in the data folders. Below is more detail about each section in the file:
 
-- biosample_id is an ID number for each file. For some studies, each file is derived about specific biosamples, so we suggest using the sample id. deally, biosample_id links to the CHOP biobank. When you cannot link the the biobank, treat biosample_id as the IDs you use for samples taken from participants. For studies where there are no biosamples, the biosample_id can be the file name.
+- biosample_id is an ID number for each file. For some studies, each file is derived about specific biosamples, so we suggest using the sample id. ideally, biosample_id links to the CHOP biobank. When you cannot link the the biobank, treat biosample_id as the IDs you use for samples taken from participants. For studies where there are no biosamples, the biosample_id can be the file name.
 - file_type is the type of file, indicated by the file extension
 - protocol is only for omics data, select the omics data example below for more information
-- file*path is the file path for each file in the \_data* folders. File paths should start with ~data/~ and end with the full file name with extension
+- file_path is the file path for each file in the \_data\* folders. File paths should start with ~data/~ and end with the full file name with extension
 
 The **file_manifest.csv** may look differnt depending on the type of research. Please select what below if need need more information about omics data for this directory:
 
@@ -453,7 +453,7 @@ The **file_manifest.csv** may look differnt depending on the type of research. P
 | protocol                | Each experiment template has protocol yaml files or capture kit information used to describe experiment metadata. This column points to the file path of the protocol or the capture kit information for this file. Paths should start with references/procotols/ or data/ref-data/platform-data                                 | String |
 | file_path               | Use one file path per row. It should start with data/.                                                                                                                                                                                                                                                                           | String |
 | file_groups             | Files in the same group are related. Paired fastq files belong in the same group. A bam file and its index belong in the same group. Plink bfiles belong in the same group.                                                                                                                                                      | String |
-| derived_from_file_group | This column describes relations between file groups. We want to capture consecutive pipeline steps. For example, a bam file is derived from a paired fastq group. Use the name of the file_groups used to construct this file. Delimit multiple groups with a semicolon. Use NA when there are no prior step files to reference. | String |
+| derived\_from\_file\_group | This column describes relations between file groups. We want to capture consecutive pipeline steps. For example, a bam file is derived from a paired fastq group. Use the name of the file_groups used to construct this file. Delimit multiple groups with a semicolon. Use NA when there are no prior step files to reference. | String |
 
 #### manifests/file_manifest clinical example
 
@@ -468,8 +468,8 @@ The **file_manifest.csv** may look differnt depending on the type of research. P
 
 The participant_manifest.csv links identifies which participants information links to each files in the file_manifest. Below is more detail about each section of the file:
 
-- local_patient_id is a local identifier the study team used to identify the patient
-- The biosample_id will be the same as the one listed in the file_manifests.csv. Linking a local_participant_id to a biosample_id identifies which patients information is related to the file.
+- local\_patient\_id is a local identifier the study team used to identify the patient
+- The biosample_id will be the same as the one listed in the file_manifests.csv. Linking a local\_participan\t_id to a biosample_id identifies which patients information is related to the file.
 - cohort is optional, please fill this in if there is additional cohort information or identification needed.
 
 The **participant_manifest.csv** may look differnt depending on the type of research. Please select what below if need need more information about omics data for this directory:
@@ -483,21 +483,21 @@ The **participant_manifest.csv** may look differnt depending on the type of rese
 
 | column               | definition                                                                                                                    | type   |
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------ |
-| local_participant_id | This ID uniquely defined a person, and can be linked to an MRN.                                                               | String |
+| local\_participant\_id | This ID uniquely defined a person, and can be linked to an MRN.                                                               | String |
 | cohort               | Use this column to group participants into cohorts that will be cwopared (For example, case vs healthy control).              | String |
 | biosample_id         | Ideally, this ID can link to the CHOP biobank. When this is not possible, use the sample ID from your project.                | String |
 | family_id            | When participants are related, use family_id to group related participants. With trios or duos, the proband ID is often used. | String |
-| family_role          | Use a term from eHB_relationship_types_as_of_10_30.json to indicate mother, father, proband, sister, etc..                    | String |
+| family_role          | Use a term from eHB\_relationship\_types\_as\_of\_10\_30.json to indicate mother, father, proband, sister, etc..                    | String |
 
 #### manifests/participant_manifest clinical example
 
 - Since clinical research efforts don't always collect biospecimen data.
 - When you cannot link the the biobank, treat instance_id as the IDs you use for samples taken from participants
-- Can use Epic Patient ID (start with Z) as the local_participant_id
+- Can use Epic Patient ID (start with Z) as the local\_participant\_id
 - The list of required files we collect for this file are as follows:
 
 > - participant_manifest.csv
-> - local_participant_id
+> - local\_participant\_id
 > - cohort
 > - instance_id
 
@@ -506,18 +506,18 @@ The **participant_manifest.csv** may look differnt depending on the type of rese
 - participant-crosswalk.txt is a tab delimited file with no header that links local_participant_id in PARTICIPANT_MANIFEST to MRNs.
 
 column,definition,type,notes
-local_id_type,The type of participant id (local).,String,This will always be local.
-local_participant_id,Id that is used in PARTICIPANT*MANIFEST,String,
+local\_id\_type,The type of participant id (local).,String,This will always be local.
+local\_participant\_id,Id that is used in PARTICIPANT*MANIFEST,String,
 auth_id*\type,The type of participant id(chop),String,This will always be chop.
-aut\h_participan\t_id,Authorative Id of the participant. (Often MRN),String,Use an 8 digit MRN. Left-pad the MRN with zeroes as necessary.
+auth\_participant\_id,Authorative Id of the participant. (Often MRN),String,Use an 8 digit MRN. Left-pad the MRN with zeroes as necessary.
 
 ### manifests/participant_family_role
 
-The participant_family_role.csv file is only needed for some omics data MORE DETAIL.
+The participant\_family\_role.csv file is only needed for some omics data MORE DETAIL.
 
-- participant_family_role.csv If you have family data, use this file to describe relationships with terms from data_dicts/eHB_relationship_types_as_of_10_30.json.
+- participant\_family\_role.csv If you have family data, use this file to describe relationships with terms from data_dicts/eHB_relationship_types_as_of_10_30.json.
 
-| local_participant_id | local_relative_id | relative_family_role |
+| local\_participant_\id | local\_relative\_id | relative\_family\_role |
 | -------------------- | ----------------- | -------------------- |
 | participant1         | participant2      | biological mother    |
 | participant2         | participant1      | biological son       |
@@ -528,9 +528,9 @@ The participant_family_role.csv file is only needed for some omics data MORE DET
 
 | column               | defintion                                                                                                             | type   |
 | -------------------- | --------------------------------------------------------------------------------------------------------------------- | ------ |
-| local_participant_id | The local id of a participant.                                                                                        | String |
-| local_relative_id    | The local id of a relative to the participant.                                                                        | String |
-| relative_family_role | The familial relationship of the relative to the participant. Use terms from eHB_relationship_types_as_of_10_30.json. | String |
+| local\_participant\_id | The local id of a participant.                                                                                        | String |
+| local\_relative\_id    | The local id of a relative to the participant.                                                                        | String |
+| relative\_family\_role | The familial relationship of the relative to the participant. Use terms from eHB_relationship_types_as_of_10_30.json. | String |
 
 - familyid_crosswalk.csv This manifest should be used with trio and cohort. A trio will contain three participants, a cohort can contain hundreds. This file walks the name for the trio or cohort file with the local_participant_id's included in it.
 
@@ -553,7 +553,7 @@ The participant_family_role.csv file is only needed for some omics data MORE DET
 
 | family_id            | Required, the family_id for the trio data                                           |
 | -------------------- | ----------------------------------------------------------------------------------- |
-| local_participant_id | Required, the local_particpant_id for each of the participants included in the trio |
+| local\_participant\_id | Required, the local_particpant_id for each of the participants included in the trio |
 | paternal_id          | Optional, the local_participant_id for the father of the participant                |
 | maternal_id          | Optional, the local_participant_id for the mother of the participant                |
 | sex                  | Optional, the sex of the participant. 1 for male, 2 for female                      |
@@ -566,8 +566,8 @@ The file_derivation.csv is only required for omics contributions with multiple f
 
 | column                 | definition                                                      | type   |
 | ---------------------- | --------------------------------------------------------------- | ------ |
-| destination_file_group | The files in this file group is derived from source_file_group. | String |
-| source_file_group      | File group used to derive the destination_file_group.           | String |
+| destination\_fil\e_group | The files in this file group is derived from source_file_group. | String |
+| source\_file\_group      | File group used to derive the destination_file_group.           | String |
 
 ### manifests/env_manifest.csv
 
@@ -665,8 +665,8 @@ Below are the fields you can consider including in your data dictionary. Only a 
 | table_name | field_name               | description                                                                                                | type       | phi | ordinal_position | crosswalk_needed | crosswalk_note |
 | ---------- | ------------------------ | ---------------------------------------------------------------------------------------------------------- | ---------- | --- | ---------------- | ---------------- | -------------- |
 | person     | person_id                | A unique identifier for each person; this is created by each contributing site.                            | BigInteger | 1   | 1                | 1                |                |
-| person     | gender_concept_id        | A foreign key that refers to a standard concept identifier in the Vocabulary for the gender of the person. | Integer    | 0   | 2                | 0                |                |
-| person     | gender_source_concept_id | A foreign key to the gender concept that refers to the code used in the source.                            | Integer    | 0   | 3                | 0                |                |
+| person     | gender\_concept\_id        | A foreign key that refers to a standard concept identifier in the Vocabulary for the gender of the person. | Integer    | 0   | 2                | 0                |                |
+| person     | gender\_source\_concept_id | A foreign key to the gender concept that refers to the code used in the source.                            | Integer    | 0   | 3                | 0                |                |
 
 #### Sample Explanation of Tables from the PEDSnet Data Contribution
 
