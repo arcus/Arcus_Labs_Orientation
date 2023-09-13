@@ -472,7 +472,7 @@ The participant_manifest.csv links identifies which participants information lin
 - The biosample_id will be the same as the one listed in the file_manifests.csv. Linking a local\_participan\t_id to a biosample_id identifies which patients information is related to the file.
 - cohort is optional, please fill this in if there is additional cohort information or identification needed.
 
-The **participant_manifest.csv** may look differnt depending on the type of research. Please select what below if need need more information about omics data for this directory:
+The **participant_manifest.csv** may look different depending on the type of research. Please select what below if need need more information about omics data for this directory:
 
 - [ ] omics data
 - [ ] clinical data
@@ -782,3 +782,53 @@ image here showing structure in ujo
 
 - There should also be a file named lab-image-tag within a folder titled lab-image within the configs/ directory that contains the tag of the Arcus Lab Image that the Lab was using.
 - Though unlikely, if artifacts use more that one image than follow the directions above (in the environments section): add a descriptive name to each lab-image-tag file, and add the file paths and related files or directories to the env_manifest linking them together.
+
+# Concluding Quiz
+
+1. Data in the raw directory can be edited.
+
+[( )] TRUE
+[(X)] FALSE
+
+***
+<div class = "answer">
+
+FALSE. This directory holds authoritative source data that should never be deleted. This folder is where the original, unmodified data for the research project is stored.
+
+</div>
+***
+
+2. MRNs are preferred for use as both the local biosample and/or participant id and the authoritative id.
+
+[( )] TRUE
+[(X)] FALSE
+
+***
+<div class = "answer">
+
+FALSE. MRNs should only be used as the authoritative id in the participant-crosswalk.txt to protect patient privacy and to minimize data leaks.
+
+</div>
+***
+
+3. Which folders in the project template are minimally required?
+
+[( )] references
+[( )] src
+[(X)] data
+[(X)] manifests
+[( )] src
+
+***
+<div class = "answer">
+
+Only data and manifests are required but more is always better. References and src are probably the two most common non-required folders generated over the course of research.
+
+</div>
+***
+
+
+
+
+
+
