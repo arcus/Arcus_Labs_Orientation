@@ -362,7 +362,7 @@ The endpoints directory are holds the final results created as part of a researc
 
 <script modify="false">
 try {
-  let data_type = @input(`data_type_interim`)
+  let data_type = @input(`data_type_endpoints`)
 
   if(data_type[0]) {
     send.liascript(`
@@ -382,7 +382,7 @@ This directory is for files created at the end of a bioinformatics workflow, lik
 
 <script modify="false">
 try {
-  let data_type = @input(`data_type_interim`)
+  let data_type = @input(`data_type_endpoints`)
 
   if(data_type[1]) {
     send.liascript(`
