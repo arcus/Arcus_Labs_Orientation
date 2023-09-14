@@ -729,41 +729,41 @@ Arcus documents the protocol information in structured yaml files. The YAML stru
 
 Below is further description about the metadata elements in a sample fastq protocol:
 
-- **sequencing_type**: Type of sequencing that was performed. You should use the term from the vocabulary list. Common types: WGS, WES, RNA-Seq
+- **sequencing\_type**: Type of sequencing that was performed. You should use the term from the vocabulary list. Common types: WGS, WES, RNA-Seq
 
-- **platform_name**: Platform that was used to perform the sequencing. You should use the term from the vocabulary list. Common platforms: Illumina, Solid, Roche, Ion Torrent
+- **platform\_name**: Platform that was used to perform the sequencing. You should use the term from the vocabulary list. Common platforms: Illumina, Solid, Roche, Ion Torrent
 
-- **instrument_model**: Specific sequencing machine used to produce the sequence file. For a list of illumina platforms, see this link. You should use the term from the vocabulary list.
+- **instrument\_model**: Specific sequencing machine used to produce the sequence file. For a list of illumina platforms, see this link. You should use the term from the vocabulary list.
 
-- **platform_unit**: The platform unit string holds three types of information, the FLOWCELL_BARCODE.LANE.SAMPLE_BARCODE. The FLOWCELL_BARCODE refers to the unique identifier for a particular flow cell. The LANE indicates the lane of the flow cell and the SAMPLE_BARCODE is a sample/library-specific identifier.
+- **platform\_unit**: The platform unit string holds three types of information, the FLOWCELL_BARCODE.LANE.SAMPLE_BARCODE. The FLOWCELL_BARCODE refers to the unique identifier for a particular flow cell. The LANE indicates the lane of the flow cell and the SAMPLE_BARCODE is a sample/library-specific identifier.
 
-- **capture_roi**: File name or file path in the repo for a file that gives specifications and details for the region of interest.
+- **capture\_roi**: File name or file path in the repo for a file that gives specifications and details for the region of interest.
 
-- **capture_kit**: Name of the library preparation kit used with the platform for sequencing the sample. It is important that the name of the kit is standardized and consistent, you should copy the name EXACTLY as it was recorded by the sequencing vendor. Capture kit titles that have been used by previous contributuions are recorded in the the vocabulary list, please use the title listed there when possible.
+- **capture\_kit**: Name of the library preparation kit used with the platform for sequencing the sample. It is important that the name of the kit is standardized and consistent, you should copy the name EXACTLY as it was recorded by the sequencing vendor. Capture kit titles that have been used by previous contributuions are recorded in the the vocabulary list, please use the title listed there when possible.
 
-- **process_description**: Further detail about the library or process used when sequencing the files that is not captured by other metadata terms.
+- **process\_description**: Further detail about the library or process used when sequencing the files that is not captured by other metadata terms.
 
-- **read_group_id**: A tag that identifies which read group each read belongs to. A read group is a set of reads generated from a single run of a sequencing instrument, and should be unique for each group.
+- **read\_group\_id**: A tag that identifies which read group each read belongs to. A read group is a set of reads generated from a single run of a sequencing instrument, and should be unique for each group.
 
 - **aligned**: Fill in: true or false.
 
-- **genome_build**: If the file is aligned, record the genome build the sequence is aligned to. You should use the term from the vocabulary list. Commonly used genome_build terms: HG19 human reference genome, HG38 human reference genome
+- **genome\_build**: If the file is aligned, record the genome build the sequence is aligned to. You should use the term from the vocabulary list. Commonly used genome_build terms: HG19 human reference genome, HG38 human reference genome
 
 - **sequencing_center**: Name of the sequencing center or vendor that did the sequencing of the samples. You should use the term from the vocabulary list. Commonly used sequencing centers: Children's Hospital of Philadelphia (CHOP) Division of Genomic Diagnostics (DGD), Children's Hospital of Philadelphia (CHOP) High Throughput Sequencing (HTS) Center, Children's Hospital of Philadelphia (CHOP) Center for Applied Genomics (CAG), Broad Institute
 
 - **run_date**: Date the sequence was performed on.
 
-- **targeted_depth**: Total amount of sequence data produced by the instrument (pre-alignment), divided by the reference genome size. It should have been provided by the vendor.
+- **targeted\_depth**: Total amount of sequence data produced by the instrument (pre-alignment), divided by the reference genome size. It should have been provided by the vendor.
 
 - **stranded**: ONLY RELEVANT FOR RNA-seq DATA. Whether the strand specificity of origin for each transcript was retained. Fill in: true or false.
 
-- **strand_name**: ONLY RELEVANT FOR RNA-seq DATA, and only filled in if above is true. Strand information or kit used. You should use the term from the vocabulary list.
+- **strand\_name**: ONLY RELEVANT FOR RNA-seq DATA, and only filled in if above is true. Strand information or kit used. You should use the term from the vocabulary list.
 
 - **creator**: Name and job title of the creator of the protocol.
 
-- **info_provider**: Name and job title for the person that provided the information. May be the same as the creator.
+- **info\_provider**: Name and job title for the person that provided the information. May be the same as the creator.
 
-> - Sample Protocol for a RNA-seq Sequencing Run
+##### Sample Protocol for a RNA-seq Sequencing Run
 
 ```yaml
 ---
@@ -855,7 +855,7 @@ Below are the fields you can consider including in your data dictionary. Only a 
 } catch(e) { }
 </script>
 
-# reports/
+## reports/
 
 The reports holds published papers and content used for producing papers, presentations, websites, metrics, etc. It can additionaly hold the following information:
 
@@ -864,26 +864,26 @@ The reports holds published papers and content used for producing papers, presen
 - Methods.md: version controlled methods section for the project
 - Further subdirectories can be customized based on the needs of the collection.
 
-# requirements/
+## requirements/
 
 - Any module or library dependencies for workflows.
 - Additional requirements files can be added as needed.
 
-# configs/
+## configs/
 
 - Configuration files for workflows or applications.
 
-## configs/environments
+### configs/environments
 
 image here showing structure in ujo
 
-### Capturing an Analysis Environment
+**Capturing an Analysis Environment**
 
 - For each script/notebook in src, each model in models, and any files in data/endpoints, there should be an env._ file (here env._ refers to a file named env with any extension, so env.yaml or env.txt, for example) that describes the environment in which it was created or run.
 - Environment files should be named as follows: descriptiveName_env.\* and placed in a folder called environments within the configs/ directory.
 - Either individuals files or entire folders(whichever is the appropriate level) in scripts and notebooks within the src/ directory, the models/ directory, or the data/endpoints folder will need to be added to the env_manifest.csv file, matching them with their related environment file.
 
-### Arcus Lab Images
+**Arcus Lab Images**
 
 - There should also be a file named lab-image-tag within a folder titled lab-image within the configs/ directory that contains the tag of the Arcus Lab Image that the Lab was using.
 - Though unlikely, if artifacts use more that one image than follow the directions above (in the environments section): add a descriptive name to each lab-image-tag file, and add the file paths and related files or directories to the env_manifest linking them together.
@@ -936,13 +936,13 @@ Only data and manifests are required but more is always better. References and s
 4. I am contributing a clinical dataset to Arcus. I have a python script that was used to transform my raw datset for further analysis. What directory should this file be saved in?
 
 [[src]]
-
+***
 <div class = "answer">
 
 The src or sources folder stores the access tools required to work with the research data and repeat the analysis, like scripts. Remember, any scripts saved in the src folder require an environment manifest to document the computing environment the code is run in, see the [environment manifest page](#manifestsenv_manifestcsv) for more information.
 
 </div>
-
+***
 
 
 
