@@ -719,9 +719,9 @@ This directory contains general information about the research effort such as IR
 <script modify="false">
 try {
   let data_type = @input(`data_type_refer`)
-
   if(data_type[0]) {
-    send.liascript(`#### Omics Data
+    send.liascript(`
+#### Omics Data
 
 For Omics data, protocols are the metadata that document the processes, tools and standards used to generate sequencing data. Protocols are important to complete, as the information will be needed for future analysis, pipelines or workflows with the data.
 
@@ -765,7 +765,7 @@ Below is further description about the metadata elements in a sample fastq proto
 
 > - Sample Protocol for a RNA-seq Sequencing Run
 
-```yaml
+'''' yaml
 ---
 sequencing_type: RNA-seq
 platform_name: Illumina
@@ -791,7 +791,7 @@ info_provider: Doctor Quinn, Bioinformatics Scientist
 # information about this template
 meta:
   version: 2.0.0
-```
+''''
     `)
   } else send.clear()
 } catch(e) { }
@@ -800,9 +800,9 @@ meta:
 <script modify="false">
 try {
   let data_type = @input(`data_type_refer`)
-
   if(data_type[1]) {
-    send.liascript(`#### Clinical Data
+    send.liascript(`
+#### Clinical Data
 
 If you are contributing a dataset, them you should includes a data dictionary in the _references/_ directory, in a subdirectory titled _data_dictionary_. A data dictionary will help people better understand the scope, purpose, and nuance of the data you are collecting. Some data dictionaries are extensively detailed, but even a basic minimal data dictionary is better than none at all. Data dictionaries are usually used for tabular datasets, but can be used for data in other formats as well.
 
