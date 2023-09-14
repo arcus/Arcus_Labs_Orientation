@@ -765,7 +765,7 @@ Below is further description about the metadata elements in a sample fastq proto
 
 > - Sample Protocol for a RNA-seq Sequencing Run
 
-'''' yaml
+```yaml
 ---
 sequencing_type: RNA-seq
 platform_name: Illumina
@@ -791,7 +791,7 @@ info_provider: Doctor Quinn, Bioinformatics Scientist
 # information about this template
 meta:
   version: 2.0.0
-''''
+```
     `)
   } else send.clear()
 } catch(e) { }
