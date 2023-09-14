@@ -832,7 +832,7 @@ Only data and manifests are required but more is always better. References and s
 
 <script>
   let input = "@input".trim();
-  'data'|'manifests'i.test(input);
+  /data|manifests/i.test(input);
 </script>
 ***
 <div class = "answer">
@@ -859,11 +859,11 @@ models and src
 6. What folders comprise contextual files?
 
 <script>
-  let input = "@input".trim().toLowerCase();
-  
-  /configs|references|reports|requirements/i.test(input);
+ let input = "@input".trim().toLowerCase();
+ /configs|references|reports|requirements/i.test(input);
 </script>
-****
+***
+
 <div class = "answer">
 
 configs, references, reports, and requirements
