@@ -411,11 +411,11 @@ This directory is for any external or public datasets not created by the study t
 **Ref-data** data is differnt depending on the type of research. Please select what below if need need more information about omics data for this directory:
 
 - [ ] omics data
-<script output="data_type_interim">"@input"</script>
+<script output="data_type_ref">"@input"</script>
 
 <script modify="false">
 try {
-  let data_type = @input(`data_type_interim`)
+  let data_type = @input(`data_type_ref`)
 
   if(data_type[0]) {
     send.liascript(`
@@ -460,12 +460,11 @@ The **file_manifest.csv** may look differnt depending on the type of research. P
 
 - [ ] omics data
 - [ ] clinical data
-
-<script output="data_type_interim">"@input"</script>
+<script output="data_type_fm">"@input"</script>
 
 <script modify="false">
 try {
-  let data_type = @input(`data_type_interim`)
+  let data_type = @input(`data_type_fm`)
 
   if(data_type[0]) {
     send.liascript(`#### Omics Data
@@ -489,7 +488,7 @@ try {
 
 <script modify="false">
 try {
-  let data_type = @input(`data_type_interim`)
+  let data_type = @input(`data_type_fm`)
 
   if(data_type[1]) {
     send.liascript(`
@@ -519,12 +518,11 @@ The **participant_manifest.csv** may look different depending on the type of res
 
 - [ ] omics data
 - [ ] clinical data
-
-<script output="data_type_interim">"@input"</script>
+<script output="data_type_pm">"@input"</script>
 
 <script modify="false">
 try {
-  let data_type = @input(`data_type_interim`)
+  let data_type = @input(`data_type_pm`)
 
   if(data_type[0]) {
     send.liascript(`#### Omics Data
@@ -547,7 +545,7 @@ try {
 
 <script modify="false">
 try {
-  let data_type = @input(`data_type_interim`)
+  let data_type = @input(`data_type_pm`)
 
   if(data_type[1]) {
     send.liascript(`#### Clinical Data
@@ -665,12 +663,11 @@ Version Control is important when working collaboratively with access tools like
 
 - [ ] omics data
 - [ ] clinical data
-
-<script output="data_type_interim">"@input"</script>
+<script output="data_type_src">"@input"</script>
 
 <script modify="false">
 try {
-  let data_type = @input(`data_type_interim`)
+  let data_type = @input(`data_type_src`)
 
   if(data_type[0]) {
     send.liascript(`#### Omics Data
@@ -688,7 +685,7 @@ Workflows documented in WDL or CWL are incredibly useful for both understanding 
 
 <script modify="false">
 try {
-  let data_type = @input(`data_type_interim`)
+  let data_type = @input(`data_type_src`)
 
   if(data_type[1]) {
     send.liascript(`#### Clinical Data
@@ -717,12 +714,11 @@ This directory contains general information about the research effort such as IR
 
 - [ ] omics data
 - [ ] clinical data
-
-<script output="data_type_interim">"@input"</script>
+<script output="data_type_refer">"@input"</script>
 
 <script modify="false">
 try {
-  let data_type = @input(`data_type_interim`)
+  let data_type = @input(`data_type_refer`)
 
   if(data_type[0]) {
     send.liascript(`#### Omics Data
@@ -803,7 +799,7 @@ meta:
 
 <script modify="false">
 try {
-  let data_type = @input(`data_type_interim`)
+  let data_type = @input(`data_type_refer`)
 
   if(data_type[1]) {
     send.liascript(`#### Clinical Data
@@ -941,9 +937,11 @@ Only data and manifests are required but more is always better. References and s
 
 [[src]]
 
+<div class = "answer">
+
 The src or sources folder stores the access tools required to work with the research data and repeat the analysis, like scripts. Remember, any scripts saved in the src folder require an environment manifest to document the computing environment the code is run in, see the [environment manifest page](#manifestsenv_manifestcsv) for more information.
 
-
+</div>
 
 
 
