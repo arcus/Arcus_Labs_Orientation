@@ -357,7 +357,6 @@ The endpoints directory are holds the final results created as part of a researc
 
 - [ ] omics data
 - [ ] clinical data
-
 <script output="data_type_endpoints">"@input"</script>
 
 <script modify="false">
