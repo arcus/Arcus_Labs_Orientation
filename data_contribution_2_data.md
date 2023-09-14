@@ -316,7 +316,7 @@ try {
 
   if(data_type[0]) {
     send.liascript(`
-    #### data/interim/ omics example
+    #### Omics Data
 
 ![Omics data/interim](media/project_template/interim_omics.gif)
 
@@ -334,8 +334,7 @@ try {
 
   if(data_type[1]) {
     send.liascript(`
-    #### data/interim clinical example
-
+    #### Clinical Data
 ![Clinical data/interim](media/project_template/interim_clinical.gif)
 
 This directory is for practice work generated during clincal research when analyzing and sharing original, unmodified data saved in \_data/raw\_. This can provide be a good insight into the research process and will be archived on a case by case basis. Additionaly, alternatively formatted data, or excluded data can be saved in the interim directory. Data should be saved as a tsv, csv, xml or json file if possible.
@@ -344,22 +343,6 @@ This directory is for practice work generated during clincal research when analy
 } catch(e) { }
 </script>
 
-@contingent_text(0,`More clinical info, including a comma.`)
-@contingent_text(1,`This content is about omics.`)
-
-#### data/interim/ omics example
-
-![Omics data/interim](media/project_template/interim_omics.gif)
-
-This directory is for the quality control and other reporting created during a bioinformatics workflow, using the sequnce files stored in the \_data/raw\_ directory.
-
-- QC metrics Quality Control (QC) metrics are reported at various stages of analysis pipelines and give information about the quality of the data generated. QC metrics files should be in a tabular file format, with .type_metrics or .duplicate_metrics as the extension.
-
-#### data/interim clinical example
-
-![Clinical data/interim](media/project_template/interim_clinical.gif)
-
-This directory is for practice work generated during clincal research when analyzing and sharing original, unmodified data saved in \_data/raw\_. This can provide be a good insight into the research process and will be archived on a case by case basis. Additionaly, alternatively formatted data, or excluded data can be saved in the interim directory. Data should be saved as a tsv, csv, xml or json file if possible.
 
 ### data/endpoints
 
@@ -375,7 +358,15 @@ The endpoints directory are holds the final results created as part of a researc
 - [ ] omics data
 - [ ] clinical data
 
-#### data/endpoints omics example
+<script output="data_type_interim">"@input"</script>
+
+<script modify="false">
+try {
+  let data_type = @input(`data_type_interim`)
+
+  if(data_type[0]) {
+    send.liascript(`
+    #### Omics Data
 
 ![Omics data/endpoints](media/project_template/endpoints_omics.gif)<!-- style = "max-height: 500px;" -->
 
@@ -384,7 +375,18 @@ This directory is for files created at the end of a bioinformatics workflow, lik
 - **gvcf** files contain variant information, describing genomic regions with no variants for a single sample. They are used to compare variant calls across samples to make vcf files. We collect them to enable the easy construction of larger cohorts. We collect the compressed version of a gvcf file (g.vcf.gz) which can be made with a lossless compression utility tool like [gzip](https://www.gzip.org). All gvcf files should include an index file, .tbi
 - **vcf** files usually contain multiple samples, and are the starting point for most reserach project's analysis. They are not appropriate for constructing cohorts from multiple projects because they are missing necessary information contained in the gvcf files. We collect the compressed version of a vcf file (vcf.gz), which can be made with a lossless compression utility tool like gzip[gzip](https://www.gzip.org). The variant calls in these files might differ from those in a gvcf file because they are made by considering information from all samples. A researcher would want to use these files when considering each project separately. All vcf files should include an index file, .tbi
 
-#### data/endpoints clinical example
+    `)
+  } else send.clear()
+} catch(e) { }
+</script>
+
+<script modify="false">
+try {
+  let data_type = @input(`data_type_interim`)
+
+  if(data_type[1]) {
+    send.liascript(`
+    #### Clinical Data
 
 ![Clinical data/endpoints](media/project_template/endpoints_clinical.gif)
 
@@ -393,6 +395,11 @@ This directory contains an analyzed version of a dataset or deidentified dataset
 - Sometimes these files can be more cohort scoped or present a refinement into an initial research questions.
 - This data is highly valuable for reuse because often errors in the clinical record emerge from this process and can be illustrative for researchers in an overlapping or similar specialty.
 - Data should be saved as a tsv, csv, xml or json file if possible.
+
+    `)
+  } else send.clear()
+} catch(e) { }
+</script>
 
 ### data/ref-data
 
@@ -405,11 +412,24 @@ This directory is for any external or public datasets not created by the study t
 **Ref-data** data is differnt depending on the type of research. Please select what below if need need more information about omics data for this directory:
 
 - [ ] omics data
+<script output="data_type_interim">"@input"</script>
 
-#### data/ref-data/platform_data omics example
+<script modify="false">
+try {
+  let data_type = @input(`data_type_interim`)
+
+  if(data_type[0]) {
+    send.liascript(`
+    #### Omics Data
 
 - As cram files are a compressed format, some information is needed as a seperate file. If possible we collect a fasta file for the reference genome used. The fasta file describes offsets for each contig, to compute exactly where to find a particular reference base at specific genomic coordinates. Each fasta file requires an index file as fasta.fai
 - bed files are a text file format used to store genomic regions as coordinates and associated annotations, see [documentation](https://samtools.github.io/hts-specs/BEDv1.pdf) for more information on the format. If available, we collect this file as a .bed extension.
+
+
+    `)
+  } else send.clear()
+} catch(e) { }
+</script>
 
 ## manifests/
 
@@ -442,7 +462,14 @@ The **file_manifest.csv** may look differnt depending on the type of research. P
 - [ ] omics data
 - [ ] clinical data
 
-#### manifests/file_manifest omics examples
+<script output="data_type_interim">"@input"</script>
+
+<script modify="false">
+try {
+  let data_type = @input(`data_type_interim`)
+
+  if(data_type[0]) {
+    send.liascript(`#### Omics Data
 
 - file_manifest.csv matches biosample IDs to data files and experimental protocols, described in yaml files. Many files might share the same experimental protocol. These yaml protocol files describe experiment and data processing details (described later).
 
@@ -455,7 +482,19 @@ The **file_manifest.csv** may look differnt depending on the type of research. P
 | file_groups             | Files in the same group are related. Paired fastq files belong in the same group. A bam file and its index belong in the same group. Plink bfiles belong in the same group.                                                                                                                                                      | String |
 | derived\_from\_file\_group | This column describes relations between file groups. We want to capture consecutive pipeline steps. For example, a bam file is derived from a paired fastq group. Use the name of the file_groups used to construct this file. Delimit multiple groups with a semicolon. Use NA when there are no prior step files to reference. | String |
 
-#### manifests/file_manifest clinical example
+
+    `)
+  } else send.clear()
+} catch(e) { }
+</script>
+
+<script modify="false">
+try {
+  let data_type = @input(`data_type_interim`)
+
+  if(data_type[1]) {
+    send.liascript(`
+    #### Clinical Data
 
 - Since clinical research efforts don't always collect biospecimen data.
 - The list of required files we collect for this file are as follows:
@@ -463,6 +502,11 @@ The **file_manifest.csv** may look differnt depending on the type of research. P
 > - instance_id
 > - file_path
 > - file_groups
+
+    `)
+  } else send.clear()
+} catch(e) { }
+</script>
 
 ### manifests/participant_manifest
 
@@ -477,7 +521,14 @@ The **participant_manifest.csv** may look different depending on the type of res
 - [ ] omics data
 - [ ] clinical data
 
-#### manifests/participant_manifest omics example
+<script output="data_type_interim">"@input"</script>
+
+<script modify="false">
+try {
+  let data_type = @input(`data_type_interim`)
+
+  if(data_type[0]) {
+    send.liascript(`#### Omics Data
 
 - participant_manifest.csv matches participants/patients to cohorts and biosample IDs. Ideally, biosample_id links to the CHOP biobank. When you cannot link the the biobank, treat biosample_id as the IDs you use for samples taken from participants. If you deal with only one sample type, you might use the participant ID. If you run a treatment/control experiment, you might use {participantID}\_treat and {participantID}\_control as as a biosample ID scheme. If you work with different tissue samples from participants, you might use {participantID}\*{tissue} as a biosample ID scheme.
 
@@ -489,7 +540,18 @@ The **participant_manifest.csv** may look different depending on the type of res
 | family_id            | When participants are related, use family_id to group related participants. With trios or duos, the proband ID is often used. | String |
 | family_role          | Use a term from eHB\_relationship\_types\_as\_of\_10\_30.json to indicate mother, father, proband, sister, etc..                    | String |
 
-#### manifests/participant_manifest clinical example
+
+    `)
+  } else send.clear()
+} catch(e) { }
+</script>
+
+<script modify="false">
+try {
+  let data_type = @input(`data_type_interim`)
+
+  if(data_type[1]) {
+    send.liascript(`#### Clinical Data
 
 - Since clinical research efforts don't always collect biospecimen data.
 - When you cannot link the the biobank, treat instance_id as the IDs you use for samples taken from participants
@@ -500,6 +562,11 @@ The **participant_manifest.csv** may look different depending on the type of res
 > - local\_participant\_id
 > - cohort
 > - instance_id
+
+    `)
+  } else send.clear()
+} catch(e) { }
+</script>
 
 ### manifests/participant_crosswalk
 
@@ -600,7 +667,32 @@ Version Control is important when working collaboratively with access tools like
 - [ ] omics data
 - [ ] clinical data
 
-### src/subfolders clinical example
+<script output="data_type_interim">"@input"</script>
+
+<script modify="false">
+try {
+  let data_type = @input(`data_type_interim`)
+
+  if(data_type[0]) {
+    send.liascript(`#### Omics Data
+
+[Workflow Development Language](https://terra.bio/deciphering-a-mystery-workflow-written-in-wdl/) or WDL and [Common Workflow Language](https://www.commonwl.org) or CWL are open standard tools for managing computionally intensive bioinformatics workflows. These are not definitionally programming languages but more clearly and interoperably explain parameters for running complex omics command line operations across bioinformatics pipelines. WDL and CWL are commonly used in bioinformatics pipelines to describe and share data processing and analysis workflows. For example, the diagram below displays a Genomic Data Commons Pipeline that converts reads (CRAM or BAM) to FASTQ and (re)aligns them to the latest human reference genome.
+
+![Genomic Data Commons Pipeline that converts reads (CRAM or BAM) to FASTQ and (re)aligns them to the latest human reference genome ](media/sample_gatk_WDL.png)
+
+Workflows documented in WDL or CWL are incredibly useful for both understanding and recreating a bioinformatics workflow. These scripts should be saved in the _src/notebooks_ directory.
+
+    `)
+  } else send.clear()
+} catch(e) { }
+</script>
+
+<script modify="false">
+try {
+  let data_type = @input(`data_type_interim`)
+
+  if(data_type[1]) {
+    send.liascript(`#### Clinical Data
 
 Reproducibility in research is a major goal of the Arcus program and organizing and documentating code so that it can be used beyond the confines of the originally collected dataset is critical to achieving this aim. See the [DART Module on Reproducibility in Research](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/reproducibility/reproducibility.md#5) for more information on this topic. Below are some examples of the type of information commonly saved in the _src_ directory:
 
@@ -609,13 +701,10 @@ Reproducibility in research is a major goal of the Arcus program and organizing 
 - Work done in the R or Jupyter notebook applications can be saved in _src/notebooks_ directory
 - Though Arcus preferes to archive non-proprietary filetypes, some common data analysis programs are not easily exported out of their proprietary formats, such as Stata or SAS. If you work in Stata or SAS, a non propriterary text version of your .dta or .SAS file can be saved in the src folder so that your analysis workflow can be accessed and interpreted by a secondary user. Additionaly for Sata and SAS analysis, if possible export the workflow steps as a txt file.
 
-### src/subfolders omics example
-
-[Workflow Development Language](https://terra.bio/deciphering-a-mystery-workflow-written-in-wdl/) or WDL and [Common Workflow Language](https://www.commonwl.org) or CWL are open standard tools for managing computionally intensive bioinformatics workflows. These are not definitionally programming languages but more clearly and interoperably explain parameters for running complex omics command line operations across bioinformatics pipelines. WDL and CWL are commonly used in bioinformatics pipelines to describe and share data processing and analysis workflows. For example, the diagram below displays a Genomic Data Commons Pipeline that converts reads (CRAM or BAM) to FASTQ and (re)aligns them to the latest human reference genome.
-
-![Genomic Data Commons Pipeline that converts reads (CRAM or BAM) to FASTQ and (re)aligns them to the latest human reference genome ](media/sample_gatk_WDL.png)
-
-Workflows documented in WDL or CWL are incredibly useful for both understanding and recreating a bioinformatics workflow. These scripts should be saved in the _src/notebooks_ directory.
+    `)
+  } else send.clear()
+} catch(e) { }
+</script>
 
 ## models/
 
@@ -630,55 +719,14 @@ This directory contains general information about the research effort such as IR
 - [ ] omics data
 - [ ] clinical data
 
-### references/data_dictionary clinical example
+<script output="data_type_interim">"@input"</script>
 
-If you are contributing a dataset, them you should includes a data dictionary in the _references/_ directory, in a subdirectory titled _data_dictionary_. A data dictionary will help people better understand the scope, purpose, and nuance of the data you are collecting. Some data dictionaries are extensively detailed, but even a basic minimal data dictionary is better than none at all. Data dictionaries are usually used for tabular datasets, but can be used for data in other formats as well.
+<script modify="false">
+try {
+  let data_type = @input(`data_type_interim`)
 
-Below are the fields you can consider including in your data dictionary. Only a few are considered truly **required** - the rest are optional but can be extremely helpful, so you should consider whether they make sense to collect in your case. You may also have additional fields to include that are not listed here; you know your data best!
-
-- If your data model follows a specific ontology it is crucial to denote that in your included documentation.
-- NIH has fantastic tools through its Unified Medical Language System (UMLS). These include [extensive vocabulary lists of nearly 200 ontologies](https://www.nlm.nih.gov/research/umls/sourcereleasedocs/index.html) and a [metathesaurus application](https://www.nlm.nih.gov/research/umls/knowledge_sources/metathesaurus/index.html) that crosswalks between validated ontologies.
-
-**Name​**: (required) provide the name of the data element you are describing as it appears in the dataset.
-
-**Description**​: (required) provide a brief description of the data element. Things to include here if applicable: source of data element, units of measure, formulas for calculated fields, nuances of data capture environment, anything else relevant to understanding what this field means and how to use it.
-
-**Human-readable Name**​: (optional) provide a human readable name / title for the data element. This can be handy if the names in your dataset are hard to parse or hard to understand.
-
-**Type**​: (optional) indicates the type of data i.e. numeric, string, date, etc. If you are collecting data in a database that enforces types, sometimes this can be easily extracted. This is useful to know for future transformation or integration of datasets
-
-**IsNull**​: (optional) this a yes/no field that indicates whether the item can be null (absent of information) or not. If this is set to “no”, this indicates data should ​always​ be present in the field, and is helpful to users who may wonder whether an absence of data is to be expected or indicative of a problem
-
-**Values**​: (optional) if there is a restricted list of values that can populate this field, include that here. An example might be “eye color” with the value list “blue, brown, grey”. Providing the list of values helps users understand why data may be absent. E.g. are there no green-eyed people in the dataset because there were none in the population or because “green” was not one of the available values for this field?
-
-**Date added**​: (optional) indicate the date on which this particular field was added to the dataset. This can be useful for understanding why data may be absent.
-
-**Date removed / Date deprecated**​: (optional) indicate the date on which this particular field ceased to be collected as part of the dataset. This can be useful for understanding why data may be absent.
-
-**Relationships**​: (optional) indicate whether the data element is related to other data elements in your data set (in relational database terms, this is where you would indicate a “foreign key”)
-
-**Additional Documentation**
-
-- In addition to documenting data fields, your data dictionary should also include an overarching description of the dataset itself.
-- If you have more than one dataset, or more than one data table, include a description for each. The descriptions for data tables and datasets should include some idea of the scope of data included, as well as the purpose in collecting or creating the data and its intended use.
-
-#### Sample Data Dictionary from the [PEDSnet Data Contribution](https://chop.alationcloud.com/article/3810/)
-
-| table_name | field_name               | description                                                                                                | type       | phi | ordinal_position | crosswalk_needed | crosswalk_note |
-| ---------- | ------------------------ | ---------------------------------------------------------------------------------------------------------- | ---------- | --- | ---------------- | ---------------- | -------------- |
-| person     | person_id                | A unique identifier for each person; this is created by each contributing site.                            | BigInteger | 1   | 1                | 1                |                |
-| person     | gender\_concept\_id        | A foreign key that refers to a standard concept identifier in the Vocabulary for the gender of the person. | Integer    | 0   | 2                | 0                |                |
-| person     | gender\_source\_concept_id | A foreign key to the gender concept that refers to the code used in the source.                            | Integer    | 0   | 3                | 0                |                |
-
-#### Sample Explanation of Tables from the PEDSnet Data Contribution
-
-| name             | description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| adt_occurrence   | The adt_occurrence table contains information about distinct admission, discharge, or transfer events that occur as part of a clinical visit. The typical use case is to identify portions of an inpatient admission that represent different levels of care or locations within a facility, but it can be used for additional characteristics of a visits (e.g. specialty consultation). The time of each event must fall between the start and end times of the associated visit_occurrence.                                                                                                                                                                                                                                                                                                                                                                    |
-| care_site        | The Care Site domain contains a list of uniquely identified physical or organizational units where healthcare delivery is practiced (offices, wards, hospitals, clinics, etc.).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| concept_ancestor | The CONCEPT_ANCESTOR table is designed to simplify observational analysis by providing the complete hierarchical relationships between Concepts. Only direct parent-child relationships between Concepts are stored in the CONCEPT_RELATIONSHIP table. To determine higher level ancestry connections, all individual direct relationships would have to be navigated at analysis time. The CONCEPT_ANCESTOR table includes records for all parent-child relationships, as well as grandparent-grandchild relationships and those of any other level of lineage. Using the CONCEPT_ANCESTOR table allows for querying for all descendants of a hierarchical concept. For example, drug ingredients and drug products are all descendants of a drug class ancestor. This table is entirely derived from the CONCEPT, CONCEPT_RELATIONSHIP and RELATIONSHIP tables. |
-
-### references/protocols omics examples
+  if(data_type[0]) {
+    send.liascript(`#### Omics Data
 
 For Omics data, protocols are the metadata that document the processes, tools and standards used to generate sequencing data. Protocols are important to complete, as the information will be needed for future analysis, pipelines or workflows with the data.
 
@@ -749,6 +797,68 @@ info_provider: Doctor Quinn, Bioinformatics Scientist
 meta:
   version: 2.0.0
 ```
+    `)
+  } else send.clear()
+} catch(e) { }
+</script>
+
+<script modify="false">
+try {
+  let data_type = @input(`data_type_interim`)
+
+  if(data_type[1]) {
+    send.liascript(`#### Clinical Data
+
+If you are contributing a dataset, them you should includes a data dictionary in the _references/_ directory, in a subdirectory titled _data_dictionary_. A data dictionary will help people better understand the scope, purpose, and nuance of the data you are collecting. Some data dictionaries are extensively detailed, but even a basic minimal data dictionary is better than none at all. Data dictionaries are usually used for tabular datasets, but can be used for data in other formats as well.
+
+Below are the fields you can consider including in your data dictionary. Only a few are considered truly **required** - the rest are optional but can be extremely helpful, so you should consider whether they make sense to collect in your case. You may also have additional fields to include that are not listed here; you know your data best!
+
+- If your data model follows a specific ontology it is crucial to denote that in your included documentation.
+- NIH has fantastic tools through its Unified Medical Language System (UMLS). These include [extensive vocabulary lists of nearly 200 ontologies](https://www.nlm.nih.gov/research/umls/sourcereleasedocs/index.html) and a [metathesaurus application](https://www.nlm.nih.gov/research/umls/knowledge_sources/metathesaurus/index.html) that crosswalks between validated ontologies.
+
+**Name​**: (required) provide the name of the data element you are describing as it appears in the dataset.
+
+**Description**​: (required) provide a brief description of the data element. Things to include here if applicable: source of data element, units of measure, formulas for calculated fields, nuances of data capture environment, anything else relevant to understanding what this field means and how to use it.
+
+**Human-readable Name**​: (optional) provide a human readable name / title for the data element. This can be handy if the names in your dataset are hard to parse or hard to understand.
+
+**Type**​: (optional) indicates the type of data i.e. numeric, string, date, etc. If you are collecting data in a database that enforces types, sometimes this can be easily extracted. This is useful to know for future transformation or integration of datasets
+
+**IsNull**​: (optional) this a yes/no field that indicates whether the item can be null (absent of information) or not. If this is set to “no”, this indicates data should ​always​ be present in the field, and is helpful to users who may wonder whether an absence of data is to be expected or indicative of a problem
+
+**Values**​: (optional) if there is a restricted list of values that can populate this field, include that here. An example might be “eye color” with the value list “blue, brown, grey”. Providing the list of values helps users understand why data may be absent. E.g. are there no green-eyed people in the dataset because there were none in the population or because “green” was not one of the available values for this field?
+
+**Date added**​: (optional) indicate the date on which this particular field was added to the dataset. This can be useful for understanding why data may be absent.
+
+**Date removed / Date deprecated**​: (optional) indicate the date on which this particular field ceased to be collected as part of the dataset. This can be useful for understanding why data may be absent.
+
+**Relationships**​: (optional) indicate whether the data element is related to other data elements in your data set (in relational database terms, this is where you would indicate a “foreign key”)
+
+**Additional Documentation**
+
+- In addition to documenting data fields, your data dictionary should also include an overarching description of the dataset itself.
+- If you have more than one dataset, or more than one data table, include a description for each. The descriptions for data tables and datasets should include some idea of the scope of data included, as well as the purpose in collecting or creating the data and its intended use.
+
+#### Sample Data Dictionary from the [PEDSnet Data Contribution](https://chop.alationcloud.com/article/3810/)
+
+| table_name | field_name               | description                                                                                                | type       | phi | ordinal_position | crosswalk_needed | crosswalk_note |
+| ---------- | ------------------------ | ---------------------------------------------------------------------------------------------------------- | ---------- | --- | ---------------- | ---------------- | -------------- |
+| person     | person_id                | A unique identifier for each person; this is created by each contributing site.                            | BigInteger | 1   | 1                | 1                |                |
+| person     | gender\_concept\_id        | A foreign key that refers to a standard concept identifier in the Vocabulary for the gender of the person. | Integer    | 0   | 2                | 0                |                |
+| person     | gender\_source\_concept_id | A foreign key to the gender concept that refers to the code used in the source.                            | Integer    | 0   | 3                | 0                |                |
+
+#### Sample Explanation of Tables from the PEDSnet Data Contribution
+
+| name             | description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| adt_occurrence   | The adt_occurrence table contains information about distinct admission, discharge, or transfer events that occur as part of a clinical visit. The typical use case is to identify portions of an inpatient admission that represent different levels of care or locations within a facility, but it can be used for additional characteristics of a visits (e.g. specialty consultation). The time of each event must fall between the start and end times of the associated visit_occurrence.                                                                                                                                                                                                                                                                                                                                                                    |
+| care_site        | The Care Site domain contains a list of uniquely identified physical or organizational units where healthcare delivery is practiced (offices, wards, hospitals, clinics, etc.).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| concept_ancestor | The CONCEPT_ANCESTOR table is designed to simplify observational analysis by providing the complete hierarchical relationships between Concepts. Only direct parent-child relationships between Concepts are stored in the CONCEPT_RELATIONSHIP table. To determine higher level ancestry connections, all individual direct relationships would have to be navigated at analysis time. The CONCEPT_ANCESTOR table includes records for all parent-child relationships, as well as grandparent-grandchild relationships and those of any other level of lineage. Using the CONCEPT_ANCESTOR table allows for querying for all descendants of a hierarchical concept. For example, drug ingredients and drug products are all descendants of a drug class ancestor. This table is entirely derived from the CONCEPT, CONCEPT_RELATIONSHIP and RELATIONSHIP tables. |
+
+    `)
+  } else send.clear()
+} catch(e) { }
+</script>
 
 # reports/
 
@@ -828,48 +938,14 @@ Only data and manifests are required but more is always better. References and s
 </div>
 ***
 
-4. What folders comprise data?
+4. I am contributing a clinical dataset to Arcus. I have a python script that was used to transform my raw datset for further analysis. What directory should this file be saved in?
 
-<script>
-  let input = "@input".trim();
-  /data|manifests/i.test(input);
-</script>
-***
-<div class = "answer">
+[[src]]
 
-data and manifests
+The src or sources folder stores the access tools required to work with the research data and repeat the analysis, like scripts. Remember, any scripts saved in the src folder require an environment manifest to document the computing environment the code is run in, see the [environment manifest page](#manifestsenv_manifestcsv) for more information.
 
-</div>
-***
 
-5. What folders comprise access tools?
 
-<script>
-  let input = "@input".trim();
-  /models|src/i.test(input);
-</script>
-***
-<div class = "answer">
-
-models and src
-
-</div>
-***
-
-6. What folders comprise contextual files?
-
-<script>
- let input = "@input".trim().toLowerCase();
- /configs|references|reports|requirements/i.test(input);
-</script>
-***
-
-<div class = "answer">
-
-configs, references, reports, and requirements
-
-</div>
-***
 
 
 
