@@ -449,12 +449,12 @@ Additional manifests are only required if needed for the data or collection type
 
 ### manifests/file_manifest
 
-The file_manifest.csv matches the biosample_id to each file in the data folders. Below is more detail about each section in the file:
+The file\_manifest.csv matches the biosample\_id to each file in the data folders. Below is more detail about each section in the file:
 
-- biosample_id is an ID number for each file. For some studies, each file is derived about specific biosamples, so we suggest using the sample id. ideally, biosample_id links to the CHOP biobank. When you cannot link the the biobank, treat biosample_id as the IDs you use for samples taken from participants. For studies where there are no biosamples, the biosample_id can be the file name.
-- file_type is the type of file, indicated by the file extension
+- biosample\_id is an ID number for each file. For some studies, each file is derived about specific biosamples, so we suggest using the sample id. ideally, biosample\_id links to the CHOP biobank. When you cannot link the the biobank, treat biosample\_id as the IDs you use for samples taken from participants. For studies where there are no biosamples, the biosample_id can be the file name.
+- file\_type is the type of file, indicated by the file extension
 - protocol is only for omics data, select the omics data example below for more information
-- file_path is the file path for each file in the \_data\* folders. File paths should start with ~data/~ and end with the full file name with extension
+- file\_path is the file path for each file in the \_data\* folders. File paths should start with _data/_ and end with the full file name with extension
 
 The **file_manifest.csv** may look differnt depending on the type of research. Please select what below if need need more information about omics data for this directory:
 
@@ -499,9 +499,8 @@ Since clinical research efforts don't always collect biospecimen data, the colum
 | column                  | definition                                                                                                                                                                                                                                                                                                                       | type   |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
 | biosample_id            | This ID links to PARTICIPANT_MANIFEST.                                                                                                                                                                                                                                                                                           | String |
-| file_type               | Each experiment template has a list of required file types. Use those terms.   
-| String |
-| file_path               | Use one file path per row. It should start with data/.                                                                                                                                                                                                                                                                           | String |
+| file_type               | Each experiment template has a list of required file types. Use those terms.   | String |
+| file_path               | Use one file path per row. It should start with data/.                         | String |
 
     `)
   } else send.clear()
@@ -762,32 +761,6 @@ Below is further description about the metadata elements in a sample fastq proto
 
 ##### Sample Protocol for a RNA-seq Sequencing Run
 
----
-sequencing_type: RNA-seq
-platform_name: Illumina
-instrument_model: Illumina HiSeq 2500
-platform_unit: H06HDADXX130110.1.ATCACGAT
-capture_roi:
-capture_kit:
-process_description: Total RNA with RIN values above 6 was normalized to 400ng, converted to cDNA, then used to prepare each library using the Illumina TruSeq Stranded Messenger RNA Library Kit and the IDT for Illumina Unique Dual Index Kit in an automated Sciclone Liquid Handler Instrument. Final libraries were analyzed on a Perkin Elmer Labchip GX for quantification and QC.
-read_group_id: flowcell_laneNameAndNumber
-genome_build: HG38 human reference genome
-sequencing_center: Children's Hospital of Philadelphia (CHOP) Division of Genomic Diagnostics (DGD)
-run_date: 01202019
-targeted_depth: 30
-
-# for RNA-seq files
-stranded: true
-strand_name: Illumina TruSeq Stranded Messenger RNA Library Kit
-
-# information about this file
-creator: Joe Smith, Digital Archivist
-info_provider: Doctor Quinn, Bioinformatics Scientist
-
-# information about this template
-meta:
-  version: 2.0.0
----
     `)
   } else send.clear()
 } catch(e) { }
@@ -800,7 +773,7 @@ try {
     send.liascript(`
 #### Clinical Data
 
-If you are contributing a dataset, them you should includes a data dictionary in the _references/_ directory, in a subdirectory titled _data_dictionary_. A data dictionary will help people better understand the scope, purpose, and nuance of the data you are collecting. Some data dictionaries are extensively detailed, but even a basic minimal data dictionary is better than none at all. Data dictionaries are usually used for tabular datasets, but can be used for data in other formats as well.
+If you are contributing a dataset, them you should includes a data dictionary in the _references/_ directory, in a subdirectory titled _data\_dictionary_. A data dictionary will help people better understand the scope, purpose, and nuance of the data you are collecting. Some data dictionaries are extensively detailed, but even a basic minimal data dictionary is better than none at all. Data dictionaries are usually used for tabular datasets, but can be used for data in other formats as well.
 
 Below are the fields you can consider including in your data dictionary. Only a few are considered truly **required** - the rest are optional but can be extremely helpful, so you should consider whether they make sense to collect in your case. You may also have additional fields to include that are not listed here; you know your data best!
 
