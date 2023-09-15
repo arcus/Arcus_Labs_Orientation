@@ -273,7 +273,7 @@ For a registry, database, or any other type of clinical dataset the raw data wil
 <div class = "important">
 <b style="color: rgb(var(--color-highlight));">Important note</b><br>
 
-- REDCap is a great application for clinical data projects of all sizes available to all CHOP personnel. The REDCap team at CHOP has great resources for [data collection best practices](https://storage.googleapis.com/arcus-edu-libsci/PDFs/Best%20Practices%20for%20REDCap%20Data%20Collection.pdf) for new projects and how to [import data](https://storage.googleapis.com/arcus-edu-libsci/PDFs/REDCap_Data_Import_Instructions.pdf) residing in a different application for complete projects ready to be archived. If you automate data collection directly from patients encounters in the EHR, there are options to feed that data directly into [REDCap via an API](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/using_redcap_api/using_redcap_api.md#1). If you collect data in REDCap, there is an option to both tag data with an identifiability label at the onset of a project as well as export data with all identifiable fields tagged.
+REDCap is a great application for clinical data projects of all sizes available to all CHOP personnel. The REDCap team at CHOP has great resources for [data collection best practices](https://storage.googleapis.com/arcus-edu-libsci/PDFs/Best%20Practices%20for%20REDCap%20Data%20Collection.pdf) for new projects and how to [import data](https://storage.googleapis.com/arcus-edu-libsci/PDFs/REDCap_Data_Import_Instructions.pdf) residing in a different application for complete projects ready to be archived. If you automate data collection directly from patients encounters in the EHR, there are options to feed that data directly into [REDCap via an API](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/using_redcap_api/using_redcap_api.md#1). If you collect data in REDCap, there is an option to both tag data with an identifiability label at the onset of a project as well as export data with all identifiable fields tagged.
 
 </div>
 `)
@@ -469,7 +469,7 @@ try {
   if(data_type[0]) {
     send.liascript(`#### Omics Data
 
-- file_manifest.csv matches biosample IDs to data files and experimental protocols, described in yaml files. Many files might share the same experimental protocol. These yaml protocol files describe experiment and data processing details (described later).
+For Omics data, the **file_manifest.csv** matches biosample IDs to data files and experimental protocols, described in _yaml_ files. More information about the protocols files is available in the [references](#references/) section of this module. Many files might share the same experimental protocol. These yaml protocol files describe experiment and data processing details. See below for the columns in a file_manifest:
 
 | column                  | definition                                                                                                                                                                                                                                                                                                                       | type   |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
@@ -494,12 +494,14 @@ try {
     send.liascript(`
     #### Clinical Data
 
-- Since clinical research efforts don't always collect biospecimen data.
-- The list of required files we collect for this file are as follows:
+Since clinical research efforts don't always collect biospecimen data, the columns in the file_manifest are simpler than an Omics contribution. See below for the columns required in the file_manifest:
 
-> - instance_id
-> - file_path
-> - file_groups
+| column                  | definition                                                                                                                                                                                                                                                                                                                       | type   |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| biosample_id            | This ID links to PARTICIPANT_MANIFEST.                                                                                                                                                                                                                                                                                           | String |
+| file_type               | Each experiment template has a list of required file types. Use those terms.   
+| String |
+| file_path               | Use one file path per row. It should start with data/.                                                                                                                                                                                                                                                                           | String |
 
     `)
   } else send.clear()
@@ -508,10 +510,10 @@ try {
 
 ### manifests/participant_manifest
 
-The participant_manifest.csv links identifies which participants information links to each files in the file_manifest. Below is more detail about each section of the file:
+The participant\_manifest.csv links identifies which participants information links to each files in the file_manifest. Below is more detail about each section of the file:
 
 - local\_patient\_id is a local identifier the study team used to identify the patient
-- The biosample_id will be the same as the one listed in the file_manifests.csv. Linking a local\_participan\t_id to a biosample_id identifies which patients information is related to the file.
+- The biosample_id will be the same as the one listed in the file_manifests.csv. Linking a local\_participant\_id to a biosample\_id identifies which patients information is related to the file.
 - cohort is optional, please fill this in if there is additional cohort information or identification needed.
 
 The **participant_manifest.csv** may look different depending on the type of research. Please select what below if need need more information about omics data for this directory:
@@ -527,7 +529,7 @@ try {
   if(data_type[0]) {
     send.liascript(`#### Omics Data
 
-- participant_manifest.csv matches participants/patients to cohorts and biosample IDs. Ideally, biosample_id links to the CHOP biobank. When you cannot link the the biobank, treat biosample_id as the IDs you use for samples taken from participants. If you deal with only one sample type, you might use the participant ID. If you run a treatment/control experiment, you might use {participantID}\_treat and {participantID}\_control as as a biosample ID scheme. If you work with different tissue samples from participants, you might use {participantID}\*{tissue} as a biosample ID scheme.
+The **participant_manifest.csv** matches participants (or patients) to cohorts and biosample IDs from the **file_manifest.csv**. Ideally, biosample\_id links to the CHOP biobank. When you cannot link to the biobank, treat biosample\_id as the IDs you use for samples taken from participants. If you deal with only one sample type, you might use the participant\_id. If you run a treatment/control experiment, you might use participant\_id and treat participant\_id\_control as as a biosample ID scheme. If you work with different tissue samples from participants, you might use participant\_id\_tissue as a biosample ID scheme.
 
 | column               | definition                                                                                                                    | type   |
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------ |
@@ -550,15 +552,12 @@ try {
   if(data_type[1]) {
     send.liascript(`#### Clinical Data
 
-- Since clinical research efforts don't always collect biospecimen data.
-- When you cannot link the the biobank, treat instance_id as the IDs you use for samples taken from participants
-- Can use Epic Patient ID (start with Z) as the local\_participant\_id
-- The list of required files we collect for this file are as follows:
+Since clinical research efforts don't always collect biospecimen data, you may not use a Biorepository sample ID. When you cannot link the the biobank, treat instance_id as the IDs you use for samples taken from participants. The Epic Patient ID (start with Z) can be used as the local\_participant\_id. The list of required files we collect for this file are as follows:
 
-> - participant_manifest.csv
-> - local\_participant\_id
-> - cohort
-> - instance_id
+  - participant_manifest.csv
+  - local\_participant\_id
+  - cohort
+  - instance_id
 
     `)
   } else send.clear()
@@ -567,7 +566,7 @@ try {
 
 ### manifests/participant_crosswalk
 
-- participant-crosswalk.txt is a tab delimited file with no header that links local\_participant\_id in PARTICIPANT_MANIFEST to MRNs.
+The **participant-crosswalk.txt** manifest is a tab delimited file with no header that links local\_participant\_id in the _participant\_manifest.csv_ to MRNs. See below for the terms in the file:
 
 |column                |definition                                    |type  |notes                                                         |
 |----------------------|----------------------------------------------|------|--------------------------------------------------------------|
@@ -579,11 +578,9 @@ try {
 
 ### manifests/participant\_family\_role
 
-The participant\_family\_role.csv file is only needed for some omics data MORE DETAIL.
+The **participant\_family\_role.csv** file is only needed for some omics data. If you have family data (ie sequencing data from related family members), use this file to describe relationships. See below for an example.
 
-- participant\_family\_role.csv If you have family data, use this file to describe relationships with terms from data_dicts/eHB_relationship_types_as_of_10_30.json.
-
-| local\_participant_\id | local\_relative\_id | relative\_family\_role |
+| local\_participant\_id | local\_relative\_id | relative\_family\_role |
 | -------------------- | ----------------- | -------------------- |
 | participant1         | participant2      | biological mother    |
 | participant2         | participant1      | biological son       |
@@ -626,18 +623,18 @@ The participant\_family\_role.csv file is only needed for some omics data MORE D
 
 ### manifests/file_derivation.csv
 
-The file_derivation.csv is only required for omics contributions with multiple filetypes generated through a bioinformatics pipeline or workflow.
+The **file_derivation.csv** manifest is only required for omics contributions with multiple filetypes generated through a bioinformatics pipeline or workflow.
 
-- file_derivation.csv describes the relationships between files in a pipeline or workflow.
+**file_derivation.csv** describes the relationships between files in a pipeline or workflow.
 
 | column                 | definition                                                      | type   |
 | ---------------------- | --------------------------------------------------------------- | ------ |
-| destination\_fil\e_group | The files in this file group is derived from source_file_group. | String |
+| destination\_file\_group | The files in this file group is derived from source_file_group. | String |
 | source\_file\_group      | File group used to derive the destination_file_group.           | String |
 
-### manifests/env_manifest.csv
+### manifests/env manifest
 
-For each script/notebook in _src/_, and each model in _models/_, there should be an env._ file (here env._ refers to a file named env with any extension, so env.yaml or env.txt, for example) that describes the environment in which it was created or run. Environment files should be named as follows: descriptiveName*env.\* and placed in a folder called environments within the \_configs/* directory. Either individuals files or entire folders (whichever is the appropriate level) in scripts and notebooks within the _src/_ directory, or the _models/_ directory will need to be added to the env_manifest.csv file, matching them with their related environment file. See the see below for more infromation about this file:
+For each script/notebook in _src/_, and each model in _models/_, there should be an env file (here env refers to a file named env with any extension, so env.yaml or env.txt, for example) that describes the environment in which it was created or run. Environment files should be named as follows: descriptiveName_env.\* and placed in a folder called environments within the _configs/environment_ directory. Either individuals files or entire folders (whichever is the appropriate level) in scripts and notebooks within the _src/_ directory, or the _models/_ directory will need to be added to the env manifest file, matching them with their related environment file. See the see below for more infromation about this file:
 
 | column                | definition                                                                                                                                                                                                                                                                          | type   |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
@@ -725,7 +722,7 @@ try {
 
 For Omics data, protocols are the metadata that document the processes, tools and standards used to generate sequencing data. Protocols are important to complete, as the information will be needed for future analysis, pipelines or workflows with the data.
 
-Arcus documents the protocol information in structured yaml files. The YAML structure and information captured depends on the sequencing method (such as High-Throughput sequencing, Microarray or Metabolics) and the file type (like FASTQ, CRAM, VCF, etc.). High-Throughput sequencing data includes whole genome sequencing, whole exome sequencing and RNA-seq data. Microarrays include SNP data. A new yaml file should be created whenever the process, tools or standards are different for a set of files. The protocol yaml is linked to the files in the file_manifest.csv file. Below are descriptions of the information requested in the protocols, a template for all of these is downloadable in a public GitHub repository, [arcus/omics-protocols](https://github.research.chop.edu/arcus/omics-protocols).
+Arcus documents the protocol information in structured [yaml](https://yaml.org/spec/1.2.2/) files. The YAML structure and information captured depends on the sequencing method (such as High-Throughput sequencing, Microarray or Metabolics) and the file type (like FASTQ, CRAM, VCF, etc.). High-Throughput sequencing data includes whole genome sequencing, whole exome sequencing and RNA-seq data. Microarrays include SNP data. A new yaml file should be created whenever the process, tools or standards are different for a set of files. The protocol yaml is linked to the files in the file_manifest.csv file. Below are descriptions of the information requested in the protocols, a template for all of these is downloadable in a public GitHub repository, [arcus/omics-protocols](https://github.research.chop.edu/arcus/omics-protocols).
 
 Below is further description about the metadata elements in a sample fastq protocol:
 
@@ -765,7 +762,6 @@ Below is further description about the metadata elements in a sample fastq proto
 
 ##### Sample Protocol for a RNA-seq Sequencing Run
 
-```yaml
 ---
 sequencing_type: RNA-seq
 platform_name: Illumina
@@ -791,7 +787,7 @@ info_provider: Doctor Quinn, Bioinformatics Scientist
 # information about this template
 meta:
   version: 2.0.0
-```
+---
     `)
   } else send.clear()
 } catch(e) { }
@@ -871,17 +867,16 @@ The reports holds published papers and content used for producing papers, presen
 
 ## configs/
 
-- Configuration files for workflows or applications.
+This directory holds configuration files for workflows or applications. Sub-directories can be added as needed for the collection.
 
 ### configs/environments
 
-image here showing structure in ujo
+Environemnt means the analysis environment for a script or model.
 
-**Capturing an Analysis Environment**
-
-- For each script/notebook in src, each model in models, and any files in data/endpoints, there should be an env._ file (here env._ refers to a file named env with any extension, so env.yaml or env.txt, for example) that describes the environment in which it was created or run.
+- For each script/notebook in src, each model in models, there should be an env.\* file (here env.\* refers to a file named env with any extension, so env.yaml or env.txt, for example) that describes the environment in which it was created or run.
 - Environment files should be named as follows: descriptiveName_env.\* and placed in a folder called environments within the configs/ directory.
 - Either individuals files or entire folders(whichever is the appropriate level) in scripts and notebooks within the src/ directory, the models/ directory, or the data/endpoints folder will need to be added to the env_manifest.csv file, matching them with their related environment file.
+- All environmental files should be documented in an environment manifest, see the [manifests/environment manifests](#manifestsenv-manifest) for more information
 
 **Arcus Lab Images**
 
