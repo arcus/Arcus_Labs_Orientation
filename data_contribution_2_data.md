@@ -575,7 +575,7 @@ The **participant-crosswalk.txt** manifest is a tab delimited file with no heade
 
 ### manifests/participant\_family\_role
 
-The **participant_family_role.csv** file is only needed for some omics data. If you have family data (ie sequencing data from related family members), use this file to describe [relationships]((https://github.research.chop.edu/arcus/rdm-project-template/blob/master/manifests/data_dicts/eHB_relationship_types_as_of_10_30.json). See below for an example.
+The **participant\_family\_role.csv** file is only needed for some omics data. If you have family data (ie sequencing data from related family members), use this file to describe [relationships]((https://github.research.chop.edu/arcus/rdm-project-template/blob/master/manifests/data_dicts/eHB_relationship_types_as_of_10_30.json). See below for an example.
 
 | local\_participant\_id | local\_relative\_id | relative\_family\_role |
 | -------------------- | ----------------- | -------------------- |
@@ -597,22 +597,23 @@ The **participant_family_role.csv** file is only needed for some omics data. If 
 - This manifest should be used with trio and cohort. A trio will contain three participants, a cohort can contain hundreds. This file walks the name for the trio or cohort file with the local_participant_id's included in it.
 - This is also called a PED file in bioinformatics workflows.
 
-| family_id | individual_id | paternal_id | maternal_id | sex |
-| --------- | ------------- | ----------- | ----------- | --- |
-| LML100    | 101354        |             |             | 2   |
-| LML100    | 101355        |             | 101354      | 1   |
-| LML101    | 102454        |             |             | 2   |
-| LML101    | 102455        | 102456      | 102454      | 1   |
-| LML101    | 102456        |             |             | 1   |
-| LML102    | 103767        |             |             | 1   |
-| LML102    | 103768        |             |             | 2   |
-| LML102    | 103769        | 103767      | 103768      | 2   |
-| LML103    | 108976        | 108977      | 108978      | 1   |
-| LML103    | 108977        |             |             | 1   |
-| LML103    | 108978        |             |             | 2   |
-| LML104    | 104666        | 104667      | 104668      | 2   |
-| LML104    | 104667        | -9          | -9          | 1   |
-| LML104    | 104668        | -9          | -9          | 2   |
+|family_id|individual_id|paternal_id    |maternal_id  |sex          |
+|---------|-------------|---------------|-------------|-------------|
+|LML100   |101354       |               |             |2            |
+|LML100   |101355       |               |101354       |1            |
+|LML101   |102454       |               |             |2            |
+|LML101   |102455       |102456         |102454       |1            |
+|LML101   |102456       |               |             |1            |
+|LML102   |103767       |               |             |1            |
+|LML102   |103768       |               |             |2            |
+|LML102   |103769       |103767         |103768       |2            |
+|LML103   |108976       |108977         |108978       |1            |
+|LML103   |108977       |               |             |1            |
+|LML103   |108978       |               |             |2            |
+|LML104   |104666       |104667         |104668       |2            |
+|LML104   |104667       |-9             |-9           |1            |
+|LML104   |104668       |-9             |-9           |2            |
+
 
 | family_id            | Required, the family_id for the trio data                                           |
 | -------------------- | ----------------------------------------------------------------------------------- |
