@@ -568,16 +568,16 @@ The **participant-crosswalk.txt** manifest is a tab delimited file with no heade
 
 | column               | definition                                     | type   | notes                                                          |
 | -------------------- | ---------------------------------------------- | ------ | -------------------------------------------------------------- |
-| local_id_type        | The type of participant id (local).            | String | This will always be local.                                     |
-| local_participant_id | Id that is used in PARTICIPANT_MANIFEST        | String |                                                                |
-| auth_id_type         | The type of participant id(chop)               | String | This will always be chop.                                      |
-| auth_participant_id  | Authorative Id of the participant. (Often MRN) | String | Use an 8 digit MRN. Left-pad the MRN with zeroes as necessary. |
+| local\_id\_type        | The type of participant id (local).            | String | This will always be local.                                     |
+| local\_participant\_id | Id that is used in PARTICIPANT_MANIFEST        | String |                                                                |
+| auth\_id\_type         | The type of participant id(chop)               | String | This will always be chop.                                      |
+| auth\_participant\_id  | Authorative Id of the participant. (Often MRN) | String | Use an 8 digit MRN. Left-pad the MRN with zeroes as necessary. |
 
-### manifests/participant_family_role
+### manifests/participant\_family\_role
 
 The **participant_family_role.csv** file is only needed for some omics data. If you have family data (ie sequencing data from related family members), use this file to describe relationships. See below for an example.
 
-| local_participant_id | local_relative_id | relative_family_role |
+| local\_participant\_id | local\_relative\_id | relative\_family\_role |
 | -------------------- | ----------------- | -------------------- |
 | participant1         | participant2      | biological mother    |
 | participant2         | participant1      | biological son       |
@@ -588,9 +588,9 @@ The **participant_family_role.csv** file is only needed for some omics data. If 
 
 | column               | defintion                                                                                                             | type   |
 | -------------------- | --------------------------------------------------------------------------------------------------------------------- | ------ |
-| local_participant_id | The local id of a participant.                                                                                        | String |
-| local_relative_id    | The local id of a relative to the participant.                                                                        | String |
-| relative_family_role | The familial relationship of the relative to the participant. Use terms from eHB_relationship_types_as_of_10_30.json. | String |
+| local\_participant\_id | The local id of a participant.                                                                                        | String |
+| local\_relative\_id    | The local id of a relative to the participant.                                                                        | String |
+| relative\_family\_role | The familial relationship of the relative to the participant. Use terms from eHB_relationship_types_as_of_10_30.json. | String |
 
 ### manifests/familyid_crosswalk
 
@@ -616,9 +616,9 @@ The **participant_family_role.csv** file is only needed for some omics data. If 
 
 | family_id            | Required, the family_id for the trio data                                           |
 | -------------------- | ----------------------------------------------------------------------------------- |
-| local_participant_id | Required, the local_particpant_id for each of the participants included in the trio |
-| paternal_id          | Optional, the local_participant_id for the father of the participant                |
-| maternal_id          | Optional, the local_participant_id for the mother of the participant                |
+| loca\l_participant\_id | Required, the local\_particpant\_id for each of the participants included in the trio |
+| paternal_id          | Optional, the local\_participant\_id for the father of the participant                |
+| maternal_id          | Optional, the local\_participant\_id for the mother of the participant                |
 | sex                  | Optional, the sex of the participant. 1 for male, 2 for female                      |
 
 ### manifests/file_derivation.csv
@@ -629,8 +629,8 @@ The **file_derivation.csv** manifest is only required for omics contributions wi
 
 | column                 | definition                                                      | type   |
 | ---------------------- | --------------------------------------------------------------- | ------ |
-| destination_file_group | The files in this file group is derived from source_file_group. | String |
-| source_file_group      | File group used to derive the destination_file_group.           | String |
+| destination\_file\_group | The files in this file group is derived from source_file_group. | String |
+| source\_fil\e_group      | File group used to derive the destination_file_group.           | String |
 
 ### manifests/env manifest
 
@@ -810,7 +810,7 @@ Below are the fields you can consider including in your data dictionary. Only a 
 | ---------- | ------------------------ | ---------------------------------------------------------------------------------------------------------- | ---------- | --- | ---------------- | ---------------- | -------------- |
 | person     | person_id                | A unique identifier for each person; this is created by each contributing site.                            | BigInteger | 1   | 1                | 1                |                |
 | person     | gender\_concept\_id        | A foreign key that refers to a standard concept identifier in the Vocabulary for the gender of the person. | Integer    | 0   | 2                | 0                |                |
-| person     | gender\_source\_concept_id | A foreign key to the gender concept that refers to the code used in the source.                            | Integer    | 0   | 3                | 0                |                |
+| person     | gender\_source\_concept\_id | A foreign key to the gender concept that refers to the code used in the source.                            | Integer    | 0   | 3                | 0                |                |
 
 #### Sample Explanation of Tables from the PEDSnet Data Contribution
 
