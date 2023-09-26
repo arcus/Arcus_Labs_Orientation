@@ -575,7 +575,7 @@ The **participant-crosswalk.txt** manifest is a tab delimited file with no heade
 
 ### manifests/participant\_family\_role
 
-The **participant_family_role.csv** file is only needed for some omics data. If you have family data (ie sequencing data from related family members), use this file to describe relationships. See below for an example.
+The **participant_family_role.csv** file is only needed for some omics data. If you have family data (ie sequencing data from related family members), use this file to describe [relationships]((https://github.research.chop.edu/arcus/rdm-project-template/blob/master/manifests/data_dicts/eHB_relationship_types_as_of_10_30.json). See below for an example.
 
 | local\_participant\_id | local\_relative\_id | relative\_family\_role |
 | -------------------- | ----------------- | -------------------- |
@@ -590,7 +590,7 @@ The **participant_family_role.csv** file is only needed for some omics data. If 
 | -------------------- | --------------------------------------------------------------------------------------------------------------------- | ------ |
 | local\_participant\_id | The local id of a participant.                                                                                        | String |
 | local\_relative\_id    | The local id of a relative to the participant.                                                                        | String |
-| relative\_family\_role | The familial relationship of the relative to the participant. Use terms from [eHB\_relationship\_types\_as_of\_10\_30.json](https://github.research.chop.edu/arcus/rdm-project-template/blob/master/manifests/data_dicts/eHB_relationship_types_as_of_10_30.json). | String |
+| relative\_family\_role | The familial relationship of the relative to the participant. Use terms from eHB\_relationship\_types\_as_of\_10\_30.json. | String |
 
 ### manifests/familyid_crosswalk
 
