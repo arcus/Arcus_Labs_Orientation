@@ -15,7 +15,7 @@ long_description: Arcus Archives is the canonical repository for research data a
 estimated_time: 60 minutes
 
 @pre_reqs
-We recommend completing the Arcus Data Contribution Orientation before doing this module. It's helpful to have reviewed the [Arcus website](https://arcus.chop.edu) at  (available only on the CHOP network), to understand Arcus’s overall goals.
+We recommend completing the Arcus Data Contribution Orientation before doing this module. It's helpful to have reviewed the [Arcus website](https://arcus.chop.edu) (available only on the CHOP network), to understand Arcus’s overall goals.
 
 @end
 
@@ -82,7 +82,7 @@ Please note that **many of the links here will only work if you're on the CHOP n
 
 This module introduces the CHOP community to the Project Template, a structured file directory for managing research data. It is useful to ANYONE at CHOP involved in creating, managing or analyzing research data.
 
-The Project Template offers an easy to use and flexible structure for organizing data, and ensures necesary context is preserved for project files and documents. It provides a shared, documented framework for organizing a research effort. This achieves multiple goals:
+The Project Template offers an easy to use and flexible structure for organizing data, and ensures necessary context is preserved for project files and documents. It provides a shared, documented framework for organizing a research effort. This achieves multiple goals:
 
 - It assists research teams in building transparency and reproducible workflows
 - It establishes a structure for easier long-term preservation
@@ -104,7 +104,7 @@ This module can be used as a reference while you navigate the archiving process,
 
 ### Future data contributors
 
-This module is an overview of CHOP's Project Template structure, all contributed data is aranged in this structure for archiving in Arcus. The Project Template is useful at all stages of research, we suggest implementing it as early as possible in your research as it provides a shared, documented framework for organizing a research effort.
+This module is an overview of CHOP's Project Template structure, all contributed data is arranged in this structure for archiving in Arcus. The Project Template is useful at all stages of research, we suggest implementing it as early as possible in your research as it provides a shared, documented framework for organizing a research effort.
 
 Arcus's Library Science team is happy to meet with researchers at all phases of research for research data management consultations and planning for future archival contributions. This includes early in your research project, as we can help set up a project template file directory structure for storing data and recommend metadata and organization best practices. In addition to this module, there are additional data management resources available on CHOP’s [Arcus resources page](https://www.research.chop.edu/applications/arcus/resources).
 
@@ -122,7 +122,7 @@ When you are ready to archive your lab data, please submit the following request
 
 ## Arcus Data Lifecycle
 
-Arcus' goal for research data management and the project template is to provide tools that are relevant throughout the entire lifecycle of research data. The project template is adaptabtable and iterative, as opposed to being a rigid, inflexible solution. The project template exhibits the required flexibility to encompass diverse data capturing needs, while also maintaining a universal quality that facilitates seamless communication among various projects spanning different domains, thereby promoting effective data sharing.
+Arcus' goal for research data management and the project template is to provide tools that are relevant throughout the entire lifecycle of research data. The project template is adaptable and iterative, as opposed to being a rigid, inflexible solution. The project template exhibits the required flexibility to encompass diverse data capturing needs, while also maintaining a universal quality that facilitates seamless communication among various projects spanning different domains, thereby promoting effective data sharing.
 
 **How was this structure developed?**
 
@@ -168,7 +168,7 @@ Below is an image of the entire Project Template Directory, with more detail abo
 
 ### Research Data
 
-The Project Template brings together three categories of information: Research Data, Access Tools and Contextual files. Research data is the actual data collected during the course of research processes used for analysis. The manifests describe this data, crosswalking files to participants. Research data (with manifests) is the minimun required information for all Arcus data contributions.
+The Project Template brings together three categories of information: Research Data, Access Tools and Contextual files. Research data is the actual data collected during the course of research processes used for analysis. The manifests describe this data, crosswalking files to participants. Research data (with manifests) is the mininum required information for all Arcus data contributions.
 
 ![Graphic respresentation of the Project template with that denotes research data sections](media/project_template/research_data.png)
 
@@ -186,9 +186,9 @@ Contextual Files provide information needed to understand the data and analysis.
 
 ## Project Template Directories
 
-The next part of this module will walk through each sub-directory of the project template in detail. Though the project template is flexible enough to handle a wide range of research data, it's application and the filetypes in each directory will be different depending on the type of project. For this reason, we have two differnt examples: clinical data or omics data. In many of the following sections, you can select the option to view examples and specific information for the data type.
+The next part of this module will walk through each sub-directory of the project template in detail. Though the project template is flexible enough to handle a wide range of research data, it's application and the filetypes in each directory will be different depending on the type of project. For this reason, we have two different examples: clinical data or omics data. In many of the following sections, you can select the option to view examples and specific information for the data type.
 
-Regardless of project type, Arcus follows industry standard guidelines for digital archiving and apply these standrds to incoming data contributions. File names should follow a consistent and clear schema, and not contain and spaces, periods or special characters. Further recommendations for filenaming are below:
+Regardless of project type, Arcus follows industry standard guidelines for digital archiving applying these standrds to incoming data contributions. File names should follow a consistent and clear schema, and not contain any spaces, periods or special characters. Further recommendations for filenaming are below:
 
 - [File naming tips sheet](https://storage.googleapis.com/arcus-edu-libsci/Arcus%20RDM%20Resources/fileNaming_bestPractices_MIT.pdf)
 - [File naming conventions and activity sheet](https://storage.googleapis.com/arcus-edu-libsci/Arcus%20RDM%20Resources/arcus_rdm_filenaming_activity.pdf)
@@ -268,7 +268,7 @@ For a registry, database, or any other type of clinical dataset the raw data wil
 - Structured data in the [HL7's FHIR format](https://www.hl7.org/fhir/) or another ontology in the XML or JSON standard are also a preferred option.
 
 **Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
-- Clinical data is often delivered to users in the BigQuery format to optimize search capabilities and performance. This data is accessed using SQL pad, which is preloaded into the lab. For Electronic Health Record (EHR) data, we have an existing workflow with the ADR team for preseving work in this format.
+- Clinical data is often delivered to users in the BigQuery format to optimize search capabilities and performance. This data is accessed using SQL pad, which is preloaded into the lab. For Electronic Health Record (EHR) data, we have an existing workflow with the Arcus Data Repository (ADR) team for preseving work in this format.
 
 <div class = "important">
 <b style="color: rgb(var(--color-highlight));">Important note</b><br>
@@ -296,7 +296,7 @@ try {
 
 ### data/interim
 
-The interim directory is for storing outputs of data processing and analysis completed using the original, unmodified data store in **data/raw**. Further sub-directories can be added to organize data, if necessary.
+The interim directory is for storing outputs of data processing and analysis completed using the original, unmodified data store in **data/raw**. It is generally used for files that do not need to be stored long-term. Further sub-directories can be added to organize data, if necessary.
 
 **Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
 
@@ -342,7 +342,6 @@ This directory is for practice work generated during clincal research when analy
   } else send.clear()
 } catch(e) { }
 </script>
-
 
 ### data/endpoints
 
@@ -449,14 +448,14 @@ Additional manifests are only required if needed for the data or collection type
 
 ### manifests/file_manifest
 
-The file\_manifest.csv matches the biosample\_id to each file in the data folders. Below is more detail about each section in the file:
+The file_manifest.csv matches the biosample_id to each file in the data folders. Below is more detail about each section in the file:
 
-- biosample\_id is an ID number for each file. For some studies, each file is derived about specific biosamples, so we suggest using the sample id. ideally, biosample\_id links to the CHOP biobank. When you cannot link the the biobank, treat biosample\_id as the IDs you use for samples taken from participants. For studies where there are no biosamples, the biosample_id can be the file name.
-- file\_type is the type of file, indicated by the file extension
+- biosample_id is an ID number for each file. For some studies, each file is derived about specific biosamples, so we suggest using the sample id. ideally, biosample_id links to the CHOP biobank. When you cannot link the the biobank, treat biosample_id as the IDs you use for samples taken from participants. For studies where there are no biosamples, the biosample_id can be the file name.
+- file_type is the type of file, indicated by the file extension
 - protocol is only for omics data, select the omics data example below for more information
-- file\_path is the file path for each file in the \_data\* folders. File paths should start with _data/_ and end with the full file name with extension
+- file*path is the file path for each file in the \_data\* folders. File paths should start with \_data/* and end with the full file name with extension
 
-The **file_manifest.csv** may look differnt depending on the type of research. Please select what below if need need more information about omics data for this directory:
+The **file_manifest.csv** may look different depending on the type of research. Please select below if you need more information about either omics or clinical data for this directory: :
 
 - [ ] omics data
 - [ ] clinical data
@@ -509,13 +508,13 @@ Since clinical research efforts don't always collect biospecimen data, the colum
 
 ### manifests/participant_manifest
 
-The participant\_manifest.csv links identifies which participants information links to each files in the file_manifest. Below is more detail about each section of the file:
+The participant_manifest.csv identifies which participants information links to each of the files in the file_manifest. Below is more detail about each section of the file:
 
-- local\_patient\_id is a local identifier the study team used to identify the patient
-- The biosample_id will be the same as the one listed in the file_manifests.csv. Linking a local\_participant\_id to a biosample\_id identifies which patients information is related to the file.
+- local_participant_id is a local identifier the study team used to identify the patient
+- The biosample_id will be the same as the one listed in the file_manifests.csv. Linking a local_participant_id to a biosample_id identifies which patients information is related to the file.
 - cohort is optional, please fill this in if there is additional cohort information or identification needed.
 
-The **participant_manifest.csv** may look different depending on the type of research. Please select what below if need need more information about omics data for this directory:
+The **participant_manifest.csv** may look different depending on the type of research. Please select which type of data from below you need more information about for this directory:
 
 - [ ] omics data
 - [ ] clinical data
@@ -536,7 +535,7 @@ The **participant_manifest.csv** matches participants (or patients) to cohorts a
 | cohort               | Use this column to group participants into cohorts that will be cwopared (For example, case vs healthy control).              | String |
 | biosample_id         | Ideally, this ID can link to the CHOP biobank. When this is not possible, use the sample ID from your project.                | String |
 | family_id            | When participants are related, use family_id to group related participants. With trios or duos, the proband ID is often used. | String |
-| family_role          | Use a term from eHB\_relationship\_types\_as\_of\_10\_30.json to indicate mother, father, proband, sister, etc..                    | String |
+| family_role          | Use a term from [eHB\_relationship\_types\_as\_of\_10\_30.json](https://github.research.chop.edu/arcus/rdm-project-template/blob/master/manifests/data_dicts/eHB_relationship_types_as_of_10_30.json) to indicate mother, father, proband, sister, etc..                    | String |
 
 
     `)
@@ -565,21 +564,20 @@ Since clinical research efforts don't always collect biospecimen data, you may n
 
 ### manifests/participant_crosswalk
 
-The **participant-crosswalk.txt** manifest is a tab delimited file with no header that links local\_participant\_id in the _participant\_manifest.csv_ to MRNs. See below for the terms in the file:
+The **participant-crosswalk.txt** manifest is a tab delimited file with no header that links local*participant_id in the \_participant_manifest.csv* to MRNs. See below for the terms in the file:
 
-|column                |definition                                    |type  |notes                                                         |
-|----------------------|----------------------------------------------|------|--------------------------------------------------------------|
-|local\_id\_type       |The type of participant id (local).           |String|This will always be local.                                    |
-|local\_participant\_id|Id that is used in PARTICIPANT_MANIFEST       |String|                                                              |
-|auth\_id\_type        |The type of participant id(chop)              |String|This will always be chop.                                     |
-|auth\_participant\_id |Authorative Id of the participant. (Often MRN)|String|Use an 8 digit MRN. Left-pad the MRN with zeroes as necessary.|
+| column               | definition                                     | type   | notes                                                          |
+| -------------------- | ---------------------------------------------- | ------ | -------------------------------------------------------------- |
+| local_id_type        | The type of participant id (local).            | String | This will always be local.                                     |
+| local_participant_id | Id that is used in PARTICIPANT_MANIFEST        | String |                                                                |
+| auth_id_type         | The type of participant id(chop)               | String | This will always be chop.                                      |
+| auth_participant_id  | Authorative Id of the participant. (Often MRN) | String | Use an 8 digit MRN. Left-pad the MRN with zeroes as necessary. |
 
+### manifests/participant_family_role
 
-### manifests/participant\_family\_role
+The **participant_family_role.csv** file is only needed for some omics data. If you have family data (ie sequencing data from related family members), use this file to describe relationships. See below for an example.
 
-The **participant\_family\_role.csv** file is only needed for some omics data. If you have family data (ie sequencing data from related family members), use this file to describe relationships. See below for an example.
-
-| local\_participant\_id | local\_relative\_id | relative\_family\_role |
+| local_participant_id | local_relative_id | relative_family_role |
 | -------------------- | ----------------- | -------------------- |
 | participant1         | participant2      | biological mother    |
 | participant2         | participant1      | biological son       |
@@ -590,11 +588,14 @@ The **participant\_family\_role.csv** file is only needed for some omics data. I
 
 | column               | defintion                                                                                                             | type   |
 | -------------------- | --------------------------------------------------------------------------------------------------------------------- | ------ |
-| local\_participant\_id | The local id of a participant.                                                                                        | String |
-| local\_relative\_id    | The local id of a relative to the participant.                                                                        | String |
-| relative\_family\_role | The familial relationship of the relative to the participant. Use terms from eHB_relationship_types_as_of_10_30.json. | String |
+| local_participant_id | The local id of a participant.                                                                                        | String |
+| local_relative_id    | The local id of a relative to the participant.                                                                        | String |
+| relative_family_role | The familial relationship of the relative to the participant. Use terms from eHB_relationship_types_as_of_10_30.json. | String |
 
-- familyid_crosswalk.csv This manifest should be used with trio and cohort. A trio will contain three participants, a cohort can contain hundreds. This file walks the name for the trio or cohort file with the local_participant_id's included in it.
+### manifests/familyid_crosswalk
+
+- This manifest should be used with trio and cohort. A trio will contain three participants, a cohort can contain hundreds. This file walks the name for the trio or cohort file with the local_participant_id's included in it.
+- This is also called a PED file in bioinformatics workflows.
 
 | family_id | individual_id | paternal_id | maternal_id | sex |
 | --------- | ------------- | ----------- | ----------- | --- |
@@ -615,7 +616,7 @@ The **participant\_family\_role.csv** file is only needed for some omics data. I
 
 | family_id            | Required, the family_id for the trio data                                           |
 | -------------------- | ----------------------------------------------------------------------------------- |
-| local\_participant\_id | Required, the local_particpant_id for each of the participants included in the trio |
+| local_participant_id | Required, the local_particpant_id for each of the participants included in the trio |
 | paternal_id          | Optional, the local_participant_id for the father of the participant                |
 | maternal_id          | Optional, the local_participant_id for the mother of the participant                |
 | sex                  | Optional, the sex of the participant. 1 for male, 2 for female                      |
@@ -628,12 +629,12 @@ The **file_derivation.csv** manifest is only required for omics contributions wi
 
 | column                 | definition                                                      | type   |
 | ---------------------- | --------------------------------------------------------------- | ------ |
-| destination\_file\_group | The files in this file group is derived from source_file_group. | String |
-| source\_file\_group      | File group used to derive the destination_file_group.           | String |
+| destination_file_group | The files in this file group is derived from source_file_group. | String |
+| source_file_group      | File group used to derive the destination_file_group.           | String |
 
 ### manifests/env manifest
 
-For each script/notebook in _src/_, and each model in _models/_, there should be an env file (here env refers to a file named env with any extension, so env.yaml or env.txt, for example) that describes the environment in which it was created or run. Environment files should be named as follows: descriptiveName_env.\* and placed in a folder called environments within the _configs/environment_ directory. Either individuals files or entire folders (whichever is the appropriate level) in scripts and notebooks within the _src/_ directory, or the _models/_ directory will need to be added to the env manifest file, matching them with their related environment file. See the see below for more infromation about this file:
+For each script/notebook in _src/_, and each model in _models/_, there should be an env file (here env refers to a file named env with any extension, so env.yaml or env.txt, for example) that describes the environment in which it was created or run. Environment files should be named as follows: descriptiveName*env.\* and placed in a folder called environments within the \_configs/environment* directory. Either individuals files or entire folders (whichever is the appropriate level) in scripts and notebooks within the _src/_ directory, or the _models/_ directory will need to be added to the env manifest file, matching them with their related environment file. See the see below for more infromation about this file:
 
 | column                | definition                                                                                                                                                                                                                                                                          | type   |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
@@ -655,7 +656,7 @@ The src or sources folder stores the access tools required to work with the rese
 Version Control is important when working collaboratively with access tools like scripts and workflows. For a description of version control and version control systems, see the Arcus Education module, [Intro to version control](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/git_intro/git_intro.md#1)
 </div>
 
-**src** files may look differnt depending on the type of research. Please select what below if need need more information about omics data for this directory:
+**src** files may look different depending on the type of research. Please select which type of data below if you need more information about this directory:
 
 - [ ] omics data
 - [ ] clinical data
@@ -706,7 +707,7 @@ The models directory is for saving any type of machine learning models, model pr
 
 This directory contains general information about the research effort such as IRB documents, reference papers, sample information, lab prep information, and data dictionaries. This directory holds the technical information needed to understand the research data. Further subdirectories can be customized depending on the collection.
 
-**references** files may look differnt depending on the type of research. Please select what below if need need more information about omics data for this directory:
+**references** files may look different depending on the type of research. Please select what type of data you need more information about for this directory:
 
 - [ ] omics data
 - [ ] clinical data
@@ -844,7 +845,7 @@ This directory holds configuration files for workflows or applications. Sub-dire
 
 ### configs/environments
 
-Environemnt means the analysis environment for a script or model.
+Environment means the analysis environment for a script or model.
 
 - For each script/notebook in src, each model in models, there should be an env.\* file (here env.\* refers to a file named env with any extension, so env.yaml or env.txt, for example) that describes the environment in which it was created or run.
 - Environment files should be named as follows: descriptiveName_env.\* and placed in a folder called environments within the configs/ directory.
@@ -862,7 +863,9 @@ Environemnt means the analysis environment for a script or model.
 
 [( )] TRUE
 [(X)] FALSE
-***
+
+---
+
 <div class = "answer">
 
 FALSE. This directory holds authoritative source data that should never be deleted. This folder is where the original, unmodified data for the research project is stored.
@@ -874,7 +877,9 @@ FALSE. This directory holds authoritative source data that should never be delet
 
 [( )] TRUE
 [(X)] FALSE
-***
+
+---
+
 <div class = "answer">
 
 FALSE. MRNs should only be used as the authoritative id in the participant-crosswalk.txt to protect patient privacy and to minimize data leaks.
@@ -884,16 +889,17 @@ FALSE. MRNs should only be used as the authoritative id in the participant-cross
 
 3. Which folders in the project template are minimally required?
 
-[[ ]] references
-[[ ]] src
+[[]] references
+[[]] src
 [[X]] data
 [[X]] manifests
-[[ ]] src
-[[ ]] configs
-[[ ]] models
-[[ ]] reports
-[[ ]] requirements
-***
+[[]] configs
+[[]] models
+[[]] reports
+[[]] requirements
+
+---
+
 <div class = "answer">
 
 Only data and manifests are required but more is always better. References and src are probably the two most common non-required folders generated over the course of research.
@@ -904,16 +910,12 @@ Only data and manifests are required but more is always better. References and s
 4. I am contributing a clinical dataset to Arcus. I have a python script that was used to transform my raw datset for further analysis. What directory should this file be saved in?
 
 [[src]]
-***
+
+---
+
 <div class = "answer">
 
 The src or sources folder stores the access tools required to work with the research data and repeat the analysis, like scripts. Remember, any scripts saved in the src folder require an environment manifest to document the computing environment the code is run in, see the [environment manifest page](#manifestsenv_manifestcsv) for more information.
 
 </div>
 ***
-
-
-
-
-
-
