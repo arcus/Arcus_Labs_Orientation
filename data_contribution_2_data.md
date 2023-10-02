@@ -188,6 +188,8 @@ Contextual Files provide information needed to understand the data and analysis.
 
 The next part of this module will walk through each sub-directory of the project template in detail. Though the project template is flexible enough to handle a wide range of research data, it's application and the filetypes in each directory will be different depending on the type of project. For this reason, we have two different examples: clinical data or omics data. In many of the following sections, you can select the option to view examples and specific information for the data type.
 
+### File Naming and File Type Standards
+
 Regardless of project type, Arcus follows industry standard guidelines for digital archiving applying these standrds to incoming data contributions. File names should follow a consistent and clear schema, and not contain any spaces, periods or special characters. Further recommendations for filenaming are below:
 
 - [File naming tips sheet](https://storage.googleapis.com/arcus-edu-libsci/Arcus%20RDM%20Resources/fileNaming_bestPractices_MIT.pdf)
@@ -202,6 +204,8 @@ Whenever feasible, Arcus prefers to archive non-proprietary file formats as oppo
 When it is necessary to save files in a proprietary format, consider including a README file that documents the name and version of the software used to generate the file, as well as the company who made the software. This could help down the road if we need to figure out how to open these files again.
 
 </div>
+
+### Preferred File Formats
 
 For both the clinical data and omics examples in the Project Template walk through, we reference our preferred data formats for each type of data. Below are some general resources to help in choosing file formats:
 
@@ -316,7 +320,7 @@ try {
 
   if(data_type[0]) {
     send.liascript(`
-    #### Omics Data
+    ### Omics Data
 
 ![Omics data/interim](media/project_template/interim_omics.gif)
 
@@ -334,7 +338,7 @@ try {
 
   if(data_type[1]) {
     send.liascript(`
-    #### Clinical Data
+    ### Clinical Data
 ![Clinical data/interim](media/project_template/interim_clinical.gif)
 
 This directory is for practice work generated during clincal research when analyzing and sharing original, unmodified data saved in \_data/raw\_. This can provide be a good insight into the research process and will be archived on a case by case basis. Additionaly, alternatively formatted data, or excluded data can be saved in the interim directory. Data should be saved as a tsv, csv, xml or json file if possible.
@@ -364,7 +368,7 @@ try {
 
   if(data_type[0]) {
     send.liascript(`
-    #### Omics Data
+    ### Omics Data
 
 ![Omics data/endpoints](media/project_template/endpoints_omics.gif)<!-- style = "max-height: 500px;" -->
 
@@ -384,7 +388,7 @@ try {
 
   if(data_type[1]) {
     send.liascript(`
-    #### Clinical Data
+    ### Clinical Data
 
 ![Clinical data/endpoints](media/project_template/endpoints_clinical.gif)
 
@@ -407,9 +411,10 @@ This directory is for any external or public datasets not created by the study t
 
 - External or public datasets not supplied by Research IS or your lab, such as census data, will be available in this directory.
 
-**Ref-data** data is differnt depending on the type of research. Please select what below if need need more information about omics data for this directory:
+**Ref-data** data is different depending on the type of research. Please select what below if need need more information about omics data for this directory:
 
 - [ ] omics data
+- [ ] clinical data
 <script output="data_type_ref">"@input"</script>
 
 <script modify="false">
@@ -418,7 +423,7 @@ try {
 
   if(data_type[0]) {
     send.liascript(`
-    #### Omics Data
+    ### Omics Data
 
 - As cram files are a compressed format, some information is needed as a seperate file. If possible we collect a fasta file for the reference genome used. The fasta file describes offsets for each contig, to compute exactly where to find a particular reference base at specific genomic coordinates. Each fasta file requires an index file as fasta.fai
 - bed files are a text file format used to store genomic regions as coordinates and associated annotations, see [documentation](https://samtools.github.io/hts-specs/BEDv1.pdf) for more information on the format. If available, we collect this file as a .bed extension.
@@ -428,6 +433,25 @@ try {
   } else send.clear()
 } catch(e) { }
 </script>
+
+
+<script modify="false">
+try {
+  let data_type = @input(`data_type_ref`)
+
+  if(data_type[1]) {
+    send.liascript(`
+    ### Clinical Data
+
+- The Arcus Archives does not collect clinical reference data sets but we wanted to share ways to tap into the power of these datasets within Arcus.
+- The Arcus Applied Data Sciences team offers [GIS Data](https://chop.alationcloud.com/domain/30/) of how many high value publicly available regularly refreshed Geographical Information System Datasets.
+- There is also an option via [Jira Service Desk](https://jira.arcus.chop.edu:8443/servicedesk/customer/portal/6/create/355?q=upload&q_time=1696276238126) to upload reference data directly to your lab following disclosure and approval.
+
+    `)
+  } else send.clear()
+} catch(e) { }
+</script>
+
 
 ## manifests/
 
@@ -466,7 +490,7 @@ try {
   let data_type = @input(`data_type_fm`)
 
   if(data_type[0]) {
-    send.liascript(`#### Omics Data
+    send.liascript(`### Omics Data
 
 For Omics data, the **file_manifest.csv** matches biosample IDs to data files and experimental protocols, described in _yaml_ files. More information about the protocols files is available in the [references](#references/) section of this module. Many files might share the same experimental protocol. These yaml protocol files describe experiment and data processing details. See below for the columns in a file_manifest:
 
@@ -491,7 +515,7 @@ try {
 
   if(data_type[1]) {
     send.liascript(`
-    #### Clinical Data
+    ### Clinical Data
 
 Since clinical research efforts don't always collect biospecimen data, the columns in the file_manifest are simpler than an Omics contribution. See below for the columns required in the file_manifest:
 
@@ -525,7 +549,7 @@ try {
   let data_type = @input(`data_type_pm`)
 
   if(data_type[0]) {
-    send.liascript(`#### Omics Data
+    send.liascript(`### Omics Data
 
 The **participant_manifest.csv** matches participants (or patients) to cohorts and biosample IDs from the **file_manifest.csv**. Ideally, biosample\_id links to the CHOP biobank. When you cannot link to the biobank, treat biosample\_id as the IDs you use for samples taken from participants. If you deal with only one sample type, you might use the participant\_id. If you run a treatment/control experiment, you might use participant\_id and treat participant\_id\_control as as a biosample ID scheme. If you work with different tissue samples from participants, you might use participant\_id\_tissue as a biosample ID scheme.
 
@@ -548,7 +572,7 @@ try {
   let data_type = @input(`data_type_pm`)
 
   if(data_type[1]) {
-    send.liascript(`#### Clinical Data
+    send.liascript(`### Clinical Data
 
 Since clinical research efforts don't always collect biospecimen data, you may not use a Biorepository sample ID. When you cannot link the the biobank, treat instance_id as the IDs you use for samples taken from participants. The Epic Patient ID (start with Z) can be used as the local\_participant\_id. The list of required files we collect for this file are as follows:
 
@@ -617,7 +641,7 @@ The **participant\_family\_role.csv** file is only needed for some omics data. I
 
 | family_id            | Required, the family_id for the trio data                                           |
 | -------------------- | ----------------------------------------------------------------------------------- |
-| loca\l_participant\_id | Required, the local\_particpant\_id for each of the participants included in the trio |
+| local\_participant\_id | Required, the local\_particpant\_id for each of the participants included in the trio |
 | paternal_id          | Optional, the local\_participant\_id for the father of the participant                |
 | maternal_id          | Optional, the local\_participant\_id for the mother of the participant                |
 | sex                  | Optional, the sex of the participant. 1 for male, 2 for female                      |
@@ -668,7 +692,7 @@ try {
   let data_type = @input(`data_type_src`)
 
   if(data_type[0]) {
-    send.liascript(`#### Omics Data
+    send.liascript(`### Omics Data
 
 [Workflow Development Language](https://terra.bio/deciphering-a-mystery-workflow-written-in-wdl/) or WDL and [Common Workflow Language](https://www.commonwl.org) or CWL are open standard tools for managing computionally intensive bioinformatics workflows. These are not definitionally programming languages but more clearly and interoperably explain parameters for running complex omics command line operations across bioinformatics pipelines. WDL and CWL are commonly used in bioinformatics pipelines to describe and share data processing and analysis workflows. For example, the diagram below displays a Genomic Data Commons Pipeline that converts reads (CRAM or BAM) to FASTQ and (re)aligns them to the latest human reference genome.
 
@@ -686,7 +710,7 @@ try {
   let data_type = @input(`data_type_src`)
 
   if(data_type[1]) {
-    send.liascript(`#### Clinical Data
+    send.liascript(`### Clinical Data
 
 Reproducibility in research is a major goal of the Arcus program and organizing and documentating code so that it can be used beyond the confines of the originally collected dataset is critical to achieving this aim. See the [DART Module on Reproducibility in Research](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/reproducibility/reproducibility.md#5) for more information on this topic. Below are some examples of the type of information commonly saved in the _src_ directory:
 
@@ -719,7 +743,7 @@ try {
   let data_type = @input(`data_type_refer`)
   if(data_type[0]) {
     send.liascript(`
-#### Omics Data
+### Omics Data
 
 For Omics data, protocols are the metadata that document the processes, tools and standards used to generate sequencing data. Protocols are important to complete, as the information will be needed for future analysis, pipelines or workflows with the data.
 
@@ -773,7 +797,7 @@ try {
   let data_type = @input(`data_type_refer`)
   if(data_type[1]) {
     send.liascript(`
-#### Clinical Data
+### Clinical Data
 
 If you are contributing a dataset, them you should includes a data dictionary in the _references/_ directory, in a subdirectory titled _data\_dictionary_. A data dictionary will help people better understand the scope, purpose, and nuance of the data you are collecting. Some data dictionaries are extensively detailed, but even a basic minimal data dictionary is better than none at all. Data dictionaries are usually used for tabular datasets, but can be used for data in other formats as well.
 
