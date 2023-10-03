@@ -192,7 +192,7 @@ The alignment process will consist of three consecutive steps. As you’ll see b
 #!/bin/bash
 for i in P M F
 do
-bwa mem -M -R “@RG\\tID:FAM1${i}\\tPU:Illumina\\tLB:SureSelect\\tPL:Illumina\\tSM:FAM1${i}” /mnt/arcus/data/references/hs37d5_chr9.fa FAM1${i}_R1.fastq FAM1${i}_R2.fastq > FAM1${i}.sam
+bwa mem -M -R "@RG\\tID:FAM1${i}\\tPU:Illumina\\tLB:SureSelect\\tPL:Illumina\\tSM:FAM1${i}" /mnt/arcus/data/references/hs37d5_chr9.fa FAM1${i}_R1.fastq FAM1${i}_R2.fastq > FAM1${i}.sam
 done
 ```
 
@@ -280,7 +280,7 @@ Once each individual’s gVCF is created, we can combine them. Remember that dow
 ```
 #!/bin/bash
 
-java -Xmx8000m -jar /opt/gatk-4.3.0.0/gatk-package-4.3.0.0-local.jar CombineGVCFs -R /mnt/arcus/data/references/hs37d5_chr9.fa -G StandardAnnotation -G AS_StandardAnnotation -G StandardHCAnnotation --variant FAM1P.sorted/recal_data.gVCF --variant FAM1M.sorted.recal_data.gVCF --variant FAM1F.sorted.recal_data.gVCF -O FAM1.gVCF
+java -Xmx8000m -jar /opt/gatk-4.3.0.0/gatk-package-4.3.0.0-local.jar CombineGVCFs -R /mnt/arcus/data/references/hs37d5_chr9.fa -G StandardAnnotation -G AS_StandardAnnotation -G StandardHCAnnotation --variant FAM1P.sorted.recal_data.gVCF --variant FAM1M.sorted.recal_data.gVCF --variant FAM1F.sorted.recal_data.gVCF -O FAM1.gVCF
 ```
 
 After combining our gVCFs, we have a massive list of possible variants with likelihoods and quality descriptors galore. How do we go from this to knowing that, for instance, one individual is heterozygous for a given variant, while another is homozygous for the reference (does not carry the variant)?
