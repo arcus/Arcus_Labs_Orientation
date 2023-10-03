@@ -9,13 +9,12 @@ docs_version: 1.1.0
 language: en
 narrator: UK English Female
 title: Arcus Project Template Orientation
-comment:  Learn about the project template directory structure, which is used in Acus labs and for archiving data.
-long_description: Arcus Archives is the canonical repository for research data at CHOP. Archiving research data preserves the important research performed at CHOP according to archival standards while facilitating data sharing. This module reviews reasons to archive research data at Arcus, and the data scoping, privacy review and technical considerations taken before receiving data. Module 2 covers the steps of archiving the data at Arcus.
+comment:  Arcus Archives serves as the canonical repository for research data at CHOP. Archiving data with Arcus safeguards and maintains research data in accordance with established archival protocols, also while promoting data sharing. The Data Contribution Module provides an overview of the reasons to archive research data with Arcus, as well as the processes involved in scoping data, conducting privacy assessments, and addressing technical requirements prior to data submission. This Module explores the Project Template directory structure, and delves into the specific steps required for archiving data within the Arcus platform.
 
 estimated_time: 60 minutes
 
 @pre_reqs
-We recommend completing the Arcus Data Contribution Orientation before doing this module. It's helpful to have reviewed the [Arcus website](https://arcus.chop.edu) (available only on the CHOP network), to understand Arcus’s overall goals.
+We recommend completing the [Arcus Data Contribution Orientation](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_data_contribution.md#1) before doing this module. It's helpful to have reviewed the [Arcus website](https://arcus.chop.edu) (available only on the CHOP network), to understand Arcus’s overall goals.
 
 @end
 
@@ -24,7 +23,7 @@ We recommend completing the Arcus Data Contribution Orientation before doing thi
 After the completion of this training module, learners will be able to:
 
 * Use the project template directory structure to organize clinical data and omics data in any storage environment
-* How to use the project template within a Arcus Scientific Computing lab
+* Use the project template within a Arcus Scientific Computing lab
 * Prepare a research data contribution for archiving in Arcus
 
 @end
@@ -116,13 +115,13 @@ The Project Template is added to all Arcus Scientific Computing Labs (Arcus Lab)
 
 As part of the Arcus Lab deployment, your team should have received a Project Template orientation by a member of the Library Science team. If you missed the orientation, or need a refresher on the orientation, please see this [video of the orientation](https://www.youtube.com/watch?v=YJvA_cryI1s). Much of the content covered in the video is also in this module.
 
-When appropriate, archiving your research in Arcus is expected with a Scientific Project with an Arcus Lab. This is documented in the [Arcus Terms of Use](https://arcus.chop.edu/terms-of-use). Archiving is required if you would like to move any data created within an Arcus Lab to a new Scientific Project or if other research teams would like to reuse your data.
+When appropriate, archiving your research in Arcus is expected from Scientific Projects with an Arcus Lab. This is documented in the [Arcus Terms of Use](https://arcus.chop.edu/terms-of-use). Archiving is required if you would like to move any data created within an Arcus Lab to a new Scientific Project or if other research teams would like to reuse your data.
 
 When you are ready to archive your lab data, please submit the following request in the [Arcus Help Center](https://pm.arcus.chop.edu/servicedesk/customer/portal/6/create/256) to begin the data contribution process.
 
 ## Arcus Data Lifecycle
 
-Arcus' goal for research data management and the project template is to provide tools that are relevant throughout the entire lifecycle of research data. The project template is adaptable and iterative, as opposed to being a rigid, inflexible solution. The project template exhibits the required flexibility to encompass diverse data capturing needs, while also maintaining a universal quality that facilitates seamless communication among various projects spanning different domains, thereby promoting effective data sharing.
+Arcus' goal for research data management and the project template is to provide tools that are relevant throughout the entire lifecycle of research data. The project template is designed to be adaptable and iterative to capture the wide range of research activities at CHOP. The project template combines flexibility to encompass diverse data capturing needs, while also maintaining a consist structure for all archived data which facilitates seamless communication among various projects spanning different domains, thereby promoting effective data sharing.
 
 **How was this structure developed?**
 
@@ -217,7 +216,7 @@ For both the clinical data and omics examples in the Project Template walk throu
 
 The data folder is where the data files are organized. Data is the information collected during the course of research processes used for analysis. The data directory maintains descriptions of authoritative source data and their associated files and metadata in both raw and processed formats. There are four sub-directories within the data folder for organizing the data: _raw/_, _interim/_, _endpoints/_, and _ref-data_.
 
-All files within the **data/** folder and its subdirectories will be listed in the **file_manifest.csv**. The manifests are detailed in the [manifests](## manifests) section of this course.
+All files within the **data/** folder and its subdirectories will be listed in the **file_manifest.csv**. The manifests are detailed in the [manifests](#manifests) section of this course.
 
 ### data/raw
 
@@ -240,7 +239,7 @@ try {
   let data_type = @input(`data_type`)
 
   if(data_type[0]) {
-    send.liascript(`### Omics Data
+    send.liascript(`## Omics Data
 
 
 ![Omics data/raw](media/project_template/raw_omics.gif)
@@ -249,7 +248,7 @@ For omics data, the raw folder contains the sequencing data. Most sequencing pro
 * These files contain genomic sequences called reads. With paired reads, there are two fastq files per sample. Cram files are single files aligned to a reference genome.
 
 - We collect the compressed fastq form fastq.gz, which can be made with lossless compression utility tools like gzip. fastq metadata are described in the fastq directory.
-- Cram files are human readable and highly space efficient by using reference-based compression of sequence data. These files enable us to run a complete re-analysis of the data. Cram files require a companion index file, crai.
+- Cram files are human readable and highly space efficient by using reference-based compression of sequence data. These files enable us to run a complete re-analysis of the data. Cram files require a companion index file, .crai.
 
 `)
   } else send.clear()
@@ -261,7 +260,7 @@ try {
   let data_type = @input(`data_type`)
 
   if(data_type[1]) {
-    send.liascript(`### Clinical Data
+    send.liascript(`## Clinical Data
 
 
 ![Clinical data/raw](media/project_template/raw_clinical.gif)
@@ -320,11 +319,11 @@ try {
 
   if(data_type[0]) {
     send.liascript(`
-    ### Omics Data
+    ## Omics Data
 
 ![Omics data/interim](media/project_template/interim_omics.gif)
 
-This directory is for the quality control and other reporting created during a bioinformatics workflow, using the sequnce files stored in the \_data/raw\_ directory.
+This directory is for the quality control and other reporting created during a bioinformatics workflow, using the sequence files stored in the \_data/raw\_ directory.
 
 - QC metrics Quality Control (QC) metrics are reported at various stages of analysis pipelines and give information about the quality of the data generated. QC metrics files should be in a tabular file format, with .type\_metrics or .duplicate\_metrics as the extension.
     `)
@@ -338,7 +337,7 @@ try {
 
   if(data_type[1]) {
     send.liascript(`
-    ### Clinical Data
+    ## Clinical Data
 ![Clinical data/interim](media/project_template/interim_clinical.gif)
 
 This directory is for practice work generated during clincal research when analyzing and sharing original, unmodified data saved in \_data/raw\_. This can provide be a good insight into the research process and will be archived on a case by case basis. Additionaly, alternatively formatted data, or excluded data can be saved in the interim directory. Data should be saved as a tsv, csv, xml or json file if possible.
@@ -349,7 +348,7 @@ This directory is for practice work generated during clincal research when analy
 
 ### data/endpoints
 
-The endpoints directory are holds the final results created as part of a research analysis. Often, these are files created to support papers or grants, and other dissemination. Further sub-directories can be added to organize data, if necessary.
+The endpoints directory holds the final results created as part of a research analysis. Often, these are files created to support papers or grants, and other dissemination. Further sub-directories can be added to organize data, if necessary.
 
 **Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
 
@@ -368,7 +367,7 @@ try {
 
   if(data_type[0]) {
     send.liascript(`
-    ### Omics Data
+    ## Omics Data
 
 ![Omics data/endpoints](media/project_template/endpoints_omics.gif)<!-- style = "max-height: 500px;" -->
 
@@ -388,13 +387,13 @@ try {
 
   if(data_type[1]) {
     send.liascript(`
-    ### Clinical Data
+    ## Clinical Data
 
 ![Clinical data/endpoints](media/project_template/endpoints_clinical.gif)
 
 This directory contains an analyzed version of a dataset or deidentified datasets.
 
-- Sometimes these files can be more cohort scoped or present a refinement into an initial research questions.
+- Sometimes these files can be more cohort scoped or present a refinement into initial research questions.
 - This data is highly valuable for reuse because often errors in the clinical record emerge from this process and can be illustrative for researchers in an overlapping or similar specialty.
 - Data should be saved as a tsv, csv, xml or json file if possible.
 
@@ -423,7 +422,7 @@ try {
 
   if(data_type[0]) {
     send.liascript(`
-    ### Omics Data
+    ## Omics Data
 
 - As cram files are a compressed format, some information is needed as a seperate file. If possible we collect a fasta file for the reference genome used. The fasta file describes offsets for each contig, to compute exactly where to find a particular reference base at specific genomic coordinates. Each fasta file requires an index file as fasta.fai
 - bed files are a text file format used to store genomic regions as coordinates and associated annotations, see [documentation](https://samtools.github.io/hts-specs/BEDv1.pdf) for more information on the format. If available, we collect this file as a .bed extension.
@@ -441,10 +440,10 @@ try {
 
   if(data_type[1]) {
     send.liascript(`
-    ### Clinical Data
+    ## Clinical Data
 
-- The Arcus Archives does not collect clinical reference data sets but we wanted to share ways to tap into the power of these datasets within Arcus.
-- The Arcus Applied Data Sciences team offers [GIS Data](https://chop.alationcloud.com/domain/30/) of how many high value publicly available regularly refreshed Geographical Information System Datasets.
+Arcus Archives does not collect clinical reference data sets but there are ways to tap into the power of these datasets within Arcus.
+- The Arcus Applied Data Sciences team offers [GIS Data](https://chop.alationcloud.com/domain/30/) of many high value publicly available regularly refreshed Geographical Information System Datasets.
 - There is also an option via [Jira Service Desk](https://jira.arcus.chop.edu:8443/servicedesk/customer/portal/6/create/355?q=upload&q_time=1696276238126) to upload reference data directly to your lab following disclosure and approval.
 
     `)
@@ -477,7 +476,7 @@ The file_manifest.csv matches the biosample_id to each file in the data folders.
 - biosample_id is an ID number for each file. For some studies, each file is derived about specific biosamples, so we suggest using the sample id. ideally, biosample_id links to the CHOP biobank. When you cannot link the the biobank, treat biosample_id as the IDs you use for samples taken from participants. For studies where there are no biosamples, the biosample_id can be the file name.
 - file_type is the type of file, indicated by the file extension
 - protocol is only for omics data, select the omics data example below for more information
-- file*path is the file path for each file in the \_data\* folders. File paths should start with \_data/* and end with the full file name with extension
+- file_path is the file path for each file in the **_data\_** folders. File paths should start with **_data\_** and end with the full file name with extension
 
 The **file_manifest.csv** may look different depending on the type of research. Please select below if you need more information about either omics or clinical data for this directory: :
 
@@ -490,9 +489,9 @@ try {
   let data_type = @input(`data_type_fm`)
 
   if(data_type[0]) {
-    send.liascript(`### Omics Data
+    send.liascript(`## Omics Data
 
-For Omics data, the **file_manifest.csv** matches biosample IDs to data files and experimental protocols, described in _yaml_ files. More information about the protocols files is available in the [references](#references/) section of this module. Many files might share the same experimental protocol. These yaml protocol files describe experiment and data processing details. See below for the columns in a file_manifest:
+For Omics data, the **file_manifest.csv** matches biosample IDs to data files and experimental protocols, described in _yaml_ files. More information about the protocols files is available in the references section of this module. Many files might share the same experimental protocol. These yaml protocol files describe experiment and data processing details. See below for the columns in a file_manifest:
 
 | column                  | definition                                                                                                                                                                                                                                                                                                                       | type   |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
@@ -515,7 +514,7 @@ try {
 
   if(data_type[1]) {
     send.liascript(`
-    ### Clinical Data
+    ## Clinical Data
 
 Since clinical research efforts don't always collect biospecimen data, the columns in the file_manifest are simpler than an Omics contribution. See below for the columns required in the file_manifest:
 
@@ -549,7 +548,7 @@ try {
   let data_type = @input(`data_type_pm`)
 
   if(data_type[0]) {
-    send.liascript(`### Omics Data
+    send.liascript(`## Omics Data
 
 The **participant_manifest.csv** matches participants (or patients) to cohorts and biosample IDs from the **file_manifest.csv**. Ideally, biosample\_id links to the CHOP biobank. When you cannot link to the biobank, treat biosample\_id as the IDs you use for samples taken from participants. If you deal with only one sample type, you might use the participant\_id. If you run a treatment/control experiment, you might use participant\_id and treat participant\_id\_control as as a biosample ID scheme. If you work with different tissue samples from participants, you might use participant\_id\_tissue as a biosample ID scheme.
 
@@ -572,7 +571,7 @@ try {
   let data_type = @input(`data_type_pm`)
 
   if(data_type[1]) {
-    send.liascript(`### Clinical Data
+    send.liascript(`## Clinical Data
 
 Since clinical research efforts don't always collect biospecimen data, you may not use a Biorepository sample ID. When you cannot link the the biobank, treat instance_id as the IDs you use for samples taken from participants. The Epic Patient ID (start with Z) can be used as the local\_participant\_id. The list of required files we collect for this file are as follows:
 
@@ -588,7 +587,7 @@ Since clinical research efforts don't always collect biospecimen data, you may n
 
 ### manifests/participant_crosswalk
 
-The **participant-crosswalk.txt** manifest is a tab delimited file with no header that links local*participant_id in the \_participant_manifest.csv* to MRNs. See below for the terms in the file:
+The **participant-crosswalk.txt** manifest is a tab delimited file with no header that links local\_participant\_id in the **participant_manifest.csv** to MRN (Medical Record Number). See below for the terms in the file:
 
 | column               | definition                                     | type   | notes                                                          |
 | -------------------- | ---------------------------------------------- | ------ | -------------------------------------------------------------- |
@@ -599,7 +598,7 @@ The **participant-crosswalk.txt** manifest is a tab delimited file with no heade
 
 ### manifests/participant\_family\_role
 
-The **participant\_family\_role.csv** file is only needed for some omics data. If you have family data (ie sequencing data from related family members), use this file to describe [relationships]((https://github.research.chop.edu/arcus/rdm-project-template/blob/master/manifests/data_dicts/eHB_relationship_types_as_of_10_30.json). See below for an example.
+The **participant\_family\_role.csv** file is only needed for some omics data. If you have family data (ie sequencing data from related family members), use this file to describe [relationships](https://github.research.chop.edu/arcus/rdm-project-template/blob/master/manifests/data_dicts/eHB_relationship_types_as_of_10_30.json). See below for an example.
 
 | local\_participant\_id | local\_relative\_id | relative\_family\_role |
 | -------------------- | ----------------- | -------------------- |
@@ -618,8 +617,8 @@ The **participant\_family\_role.csv** file is only needed for some omics data. I
 
 ### manifests/familyid_crosswalk
 
-- This manifest should be used with trio and cohort. A trio will contain three participants, a cohort can contain hundreds. This file walks the name for the trio or cohort file with the local_participant_id's included in it.
-- This is also called a PED file in bioinformatics workflows.
+- This manifest should be used with trio and cohort omics data. A trio will contain three participants, a cohort can contain hundreds. This file walks the name for the trio or cohort file with the local_participant_id's included in it.
+- This is also called a PED or pedigree file in bioinformatics workflows. A pedigree is a structured description of the familial relationships between samples, see this [link for more information](https://gatk.broadinstitute.org/hc/en-us/articles/360035531972-PED-Pedigree-format). 
 
 |family_id|individual_id|paternal_id    |maternal_id  |sex          |
 |---------|-------------|---------------|-------------|-------------|
@@ -659,7 +658,7 @@ The **file_derivation.csv** manifest is only required for omics contributions wi
 
 ### manifests/env manifest
 
-For each script/notebook in _src/_, and each model in _models/_, there should be an env file (here env refers to a file named env with any extension, so env.yaml or env.txt, for example) that describes the environment in which it was created or run. Environment files should be named as follows: descriptiveName*env.\* and placed in a folder called environments within the \_configs/environment* directory. Either individuals files or entire folders (whichever is the appropriate level) in scripts and notebooks within the _src/_ directory, or the _models/_ directory will need to be added to the env manifest file, matching them with their related environment file. See the see below for more infromation about this file:
+For each script/notebook in _src/_, and each model in _models/_, there should be an env file (here env refers to a file named env with any extension, so env.yaml or env.txt, for example) that describes the environment in which it was created or run. Environment files should be named as follows: **descriptiveName_env** and placed in a folder called environments within the _configs/environment_ directory. Either individuals files or entire folders (whichever is the appropriate level) in scripts and notebooks within the _src/_ directory, or the _models/_ directory will need to be added to the env manifest file, matching them with their related environment file. See the see below for more infromation about this file:
 
 | column                | definition                                                                                                                                                                                                                                                                          | type   |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
@@ -692,7 +691,7 @@ try {
   let data_type = @input(`data_type_src`)
 
   if(data_type[0]) {
-    send.liascript(`### Omics Data
+    send.liascript(`## Omics Data
 
 [Workflow Development Language](https://terra.bio/deciphering-a-mystery-workflow-written-in-wdl/) or WDL and [Common Workflow Language](https://www.commonwl.org) or CWL are open standard tools for managing computionally intensive bioinformatics workflows. These are not definitionally programming languages but more clearly and interoperably explain parameters for running complex omics command line operations across bioinformatics pipelines. WDL and CWL are commonly used in bioinformatics pipelines to describe and share data processing and analysis workflows. For example, the diagram below displays a Genomic Data Commons Pipeline that converts reads (CRAM or BAM) to FASTQ and (re)aligns them to the latest human reference genome.
 
@@ -710,9 +709,9 @@ try {
   let data_type = @input(`data_type_src`)
 
   if(data_type[1]) {
-    send.liascript(`### Clinical Data
+    send.liascript(`## Clinical Data
 
-Reproducibility in research is a major goal of the Arcus program and organizing and documentating code so that it can be used beyond the confines of the originally collected dataset is critical to achieving this aim. See the [DART Module on Reproducibility in Research](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/reproducibility/reproducibility.md#5) for more information on this topic. Below are some examples of the type of information commonly saved in the _src_ directory:
+Reproducibility in research is a major goal of the Arcus program and organizing and documentating code so that it can be used beyond the confines of the originally collected dataset is critical to achieving this aim. See the [DART Module on Reproducibility in Research](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/reproducibility/reproducibility.md#5) for more information on this topic. Below are some examples of the type of information commonly saved in the _src/_ directory:
 
 - History of saved queries in SQLPad can be extracted directly from the sqlite database into the _src/scripts_ directory
 - Code written in the command line interface can be saved in the _src/scripts_ directory
@@ -743,49 +742,11 @@ try {
   let data_type = @input(`data_type_refer`)
   if(data_type[0]) {
     send.liascript(`
-### Omics Data
+## Omics Data
 
 For Omics data, protocols are the metadata that document the processes, tools and standards used to generate sequencing data. Protocols are important to complete, as the information will be needed for future analysis, pipelines or workflows with the data.
 
-Arcus documents the protocol information in structured [yaml](https://yaml.org/spec/1.2.2/) files. The YAML structure and information captured depends on the sequencing method (such as High-Throughput sequencing, Microarray or Metabolics) and the file type (like FASTQ, CRAM, VCF, etc.). High-Throughput sequencing data includes whole genome sequencing, whole exome sequencing and RNA-seq data. Microarrays include SNP data. A new yaml file should be created whenever the process, tools or standards are different for a set of files. The protocol yaml is linked to the files in the file_manifest.csv file. Below are descriptions of the information requested in the protocols, a template for all of these is downloadable in a public GitHub repository, [arcus/omics-protocols](https://github.research.chop.edu/arcus/omics-protocols).
-
-Below is further description about the metadata elements in a sample fastq protocol:
-
-- **sequencing\_type**: Type of sequencing that was performed. You should use the term from the vocabulary list. Common types: WGS, WES, RNA-Seq
-
-- **platform\_name**: Platform that was used to perform the sequencing. You should use the term from the vocabulary list. Common platforms: Illumina, Solid, Roche, Ion Torrent
-
-- **instrument\_model**: Specific sequencing machine used to produce the sequence file. For a list of illumina platforms, see this link. You should use the term from the vocabulary list.
-
-- **platform\_unit**: The platform unit string holds three types of information, the FLOWCELL_BARCODE.LANE.SAMPLE_BARCODE. The FLOWCELL_BARCODE refers to the unique identifier for a particular flow cell. The LANE indicates the lane of the flow cell and the SAMPLE_BARCODE is a sample/library-specific identifier.
-
-- **capture\_roi**: File name or file path in the repo for a file that gives specifications and details for the region of interest.
-
-- **capture\_kit**: Name of the library preparation kit used with the platform for sequencing the sample. It is important that the name of the kit is standardized and consistent, you should copy the name EXACTLY as it was recorded by the sequencing vendor. Capture kit titles that have been used by previous contributuions are recorded in the the vocabulary list, please use the title listed there when possible.
-
-- **process\_description**: Further detail about the library or process used when sequencing the files that is not captured by other metadata terms.
-
-- **read\_group\_id**: A tag that identifies which read group each read belongs to. A read group is a set of reads generated from a single run of a sequencing instrument, and should be unique for each group.
-
-- **aligned**: Fill in: true or false.
-
-- **genome\_build**: If the file is aligned, record the genome build the sequence is aligned to. You should use the term from the vocabulary list. Commonly used genome_build terms: HG19 human reference genome, HG38 human reference genome
-
-- **sequencing_center**: Name of the sequencing center or vendor that did the sequencing of the samples. You should use the term from the vocabulary list. Commonly used sequencing centers: Children's Hospital of Philadelphia (CHOP) Division of Genomic Diagnostics (DGD), Children's Hospital of Philadelphia (CHOP) High Throughput Sequencing (HTS) Center, Children's Hospital of Philadelphia (CHOP) Center for Applied Genomics (CAG), Broad Institute
-
-- **run_date**: Date the sequence was performed on.
-
-- **targeted\_depth**: Total amount of sequence data produced by the instrument (pre-alignment), divided by the reference genome size. It should have been provided by the vendor.
-
-- **stranded**: ONLY RELEVANT FOR RNA-seq DATA. Whether the strand specificity of origin for each transcript was retained. Fill in: true or false.
-
-- **strand\_name**: ONLY RELEVANT FOR RNA-seq DATA, and only filled in if above is true. Strand information or kit used. You should use the term from the vocabulary list.
-
-- **creator**: Name and job title of the creator of the protocol.
-
-- **info\_provider**: Name and job title for the person that provided the information. May be the same as the creator.
-
-##### Sample Protocol for a RNA-seq Sequencing Run
+Arcus documents the protocol information in structured [yaml](https://yaml.org/spec/1.2.2/) files. The YAML structure and information captured depends on the sequencing method (such as High-Throughput sequencing, Microarray or Metabolics) and the file type (like FASTQ, CRAM, VCF, etc.). High-Throughput sequencing data includes whole genome sequencing, whole exome sequencing and RNA-seq data. Microarrays include SNP data. A new yaml file should be created whenever the process, tools or standards are different for a set of files. The protocol yaml is linked to the files in the file_manifest.csv file. Below are descriptions of the information requested in the protocols, a template for all of these is downloadable in a public GitHub repository, [arcus/omics-protocols](https://github.research.chop.edu/arcus/omics-protocols). This repository also describes the metadata collected, and provides resources for finding the information needed.
 
     `)
   } else send.clear()
@@ -797,11 +758,11 @@ try {
   let data_type = @input(`data_type_refer`)
   if(data_type[1]) {
     send.liascript(`
-### Clinical Data
+## Clinical Data
 
-If you are contributing a dataset, them you should includes a data dictionary in the _references/_ directory, in a subdirectory titled _data\_dictionary_. A data dictionary will help people better understand the scope, purpose, and nuance of the data you are collecting. Some data dictionaries are extensively detailed, but even a basic minimal data dictionary is better than none at all. Data dictionaries are usually used for tabular datasets, but can be used for data in other formats as well.
+If you are contributing a dataset, you should include a data dictionary in the _references/_ directory, in a subdirectory titled _data\_dictionary_. A data dictionary documents the scope, purpose, and nuance of the data you are collecting. Some data dictionaries are extensively detailed, but even a basic minimal data dictionary is better than none at all. Data dictionaries are usually used for tabular datasets, but can be used for data in other formats as well.
 
-Below are the fields you can consider including in your data dictionary. Only a few are considered truly **required** - the rest are optional but can be extremely helpful, so you should consider whether they make sense to collect in your case. You may also have additional fields to include that are not listed here; you know your data best!
+Below are the fields often included in your data dictionaries. Only a few are considered truly **required** - the rest are optional but can be extremely helpful, so you should consider whether they make sense to collect in your case. You may also have additional fields to include that are not listed here; you know your data best!
 
 - If your data model follows a specific ontology it is crucial to denote that in your included documentation.
 - NIH has fantastic tools through its Unified Medical Language System (UMLS). These include [extensive vocabulary lists of nearly 200 ontologies](https://www.nlm.nih.gov/research/umls/sourcereleasedocs/index.html) and a [metathesaurus application](https://www.nlm.nih.gov/research/umls/knowledge_sources/metathesaurus/index.html) that crosswalks between validated ontologies.
@@ -852,7 +813,7 @@ Below are the fields you can consider including in your data dictionary. Only a 
 
 ## reports/
 
-The reports holds published papers and content used for producing papers, presentations, websites, metrics, etc. It can additionaly hold the following information:
+The reports directory holds published papers and content used for producing papers, presentations, websites, metrics, etc. It can additionaly hold the following information:
 
 - Figures & tables: generated metrics and graphics for supporting reports
 - Log.md: computational notebook (if one was used to create the content)
@@ -872,7 +833,7 @@ This directory holds configuration files for workflows or applications. Sub-dire
 
 Environment means the analysis environment for a script or model.
 
-- For each script/notebook in src, each model in models, there should be an env.\* file (here env.\* refers to a file named env with any extension, so env.yaml or env.txt, for example) that describes the environment in which it was created or run.
+- For each script/notebook in src, each model in models, there should be an environment manifest and file that describes the environment in which it was created or run.
 - Environment files should be named as follows: descriptiveName_env.\* and placed in a folder called environments within the configs/ directory.
 - Either individuals files or entire folders(whichever is the appropriate level) in scripts and notebooks within the src/ directory, the models/ directory, or the data/endpoints folder will need to be added to the env_manifest.csv file, matching them with their related environment file.
 - All environmental files should be documented in an environment manifest, see the [manifests/environment manifests](#manifestsenv-manifest) for more information
