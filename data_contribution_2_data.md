@@ -144,7 +144,7 @@ The Project Template prioritizes streamlined archiving and reproducible research
 
 The project template provides a shared structure so that institutional knowledge previously held locally by various members of the data creation team becomes centralized.
 
-The utility of the project template for lab drive organization and integration with the Arcus archives is summarized in the graphic below.
+The utility of [the project template](https://github.research.chop.edu/arcus/rdm-project-template) for lab drive organization and integration with the Arcus archives is summarized in the graphic below.
 
 ![Graphic representation of the workflow of research data and the project tempalte](media/project_template/ProjectTemplate_workflow.png)
 
