@@ -217,7 +217,7 @@ For both the clinical data and omics examples in the Project Template walk throu
 
 The data folder is where the data files are organized. Data is the information collected during the course of research processes used for analysis. The data directory maintains descriptions of authoritative source data and their associated files and metadata in both raw and processed formats. There are four sub-directories within the data folder for organizing the data: _raw/_, _interim/_, _endpoints/_, and _ref-data_.
 
-All files within the **data/** folder and its subdirectories will be listed in the **file_manifest.csv**. The manifests are detailed in the [manifests](#manifests) section of this course.
+All files within the **data/** folder and its subdirectories will be listed in the **file_manifest.csv**. The manifests are detailed in the **manifests** section of this course.
 
 ### data/raw
 
@@ -245,8 +245,7 @@ try {
 
 ![Gif showing omics data arrnaged in the raw directory. Read files (cram/fastq/bam) are stored in data/raw.](media/project_template/raw_omics.gif)
 
-For omics data, the raw folder contains the sequencing data. Most sequencing providers will generate a [**fastq**](https://maq.sourceforge.net/fastq.shtml) file or [**cram**](https://samtools.github.io/hts-specs/CRAMv3.pdf) file, we prefer these filetypes for archiving.
-* These files contain genomic sequences called reads. With paired reads, there are two fastq files per sample. Cram files are single files aligned to a reference genome.
+For omics data, the raw folder contains the sequencing data. Most sequencing providers will generate a [**fastq**](https://maq.sourceforge.net/fastq.shtml) file or [**cram**](https://samtools.github.io/hts-specs/CRAMv3.pdf) file, we prefer these file types for archiving. These files contain genomic sequences called reads. With paired reads, there are two fastq files per sample. Cram files are single files aligned to a reference genome.
 
 - We collect the compressed fastq form fastq.gz, which can be made with lossless compression utility tools like gzip. fastq metadata are described in the fastq directory.
 - Cram files are human readable and highly space efficient by using reference-based compression of sequence data. These files enable us to run a complete re-analysis of the data. Cram files require a companion index file, .crai.
@@ -272,6 +271,7 @@ For a registry, database, or any other type of clinical dataset the raw data wil
 - Structured data in the [HL7's FHIR format](https://www.hl7.org/fhir/) or another ontology in the XML or JSON standard are also a preferred option.
 
 **Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
+
 - Clinical data is often delivered to users in the BigQuery format to optimize search capabilities and performance. This data is accessed using SQL pad, which is preloaded into the lab. For Electronic Health Record (EHR) data, we have an existing workflow with the Arcus Data Repository (ADR) team for preseving work in this format.
 
 <div class = "important">
@@ -326,7 +326,7 @@ try {
 
 This directory is for the quality control and other reporting created during a bioinformatics workflow, using the sequence files stored in the \_data/raw\_ directory.
 
-- QC metrics Quality Control (QC) metrics are reported at various stages of analysis pipelines and give information about the quality of the data generated. QC metrics files should be in a tabular file format, with .type\_metrics or .duplicate\_metrics as the extension.
+- QC metrics Quality Control (QC) metrics are reported at various stages of analysis pipelines and give information about the quality of the data generated. QC metrics files should be in a tabular file format, with .type\_metrics\ or .duplicate\_metrics\ as the extension.
     `)
   } else send.clear()
 } catch(e) { }
@@ -375,7 +375,7 @@ try {
 This directory is for files created at the end of a bioinformatics workflow, like gvcf and vcf files.
 
 - **gvcf** files contain variant information, describing genomic regions with no variants for a single sample. They are used to compare variant calls across samples to make vcf files. We collect them to enable the easy construction of larger cohorts. We collect the compressed version of a gvcf file (g.vcf.gz) which can be made with a lossless compression utility tool like [gzip](https://www.gzip.org). All gvcf files should include an index file, .tbi
-- **vcf** files usually contain multiple samples, and are the starting point for most reserach project's analysis. They are not appropriate for constructing cohorts from multiple projects because they are missing necessary information contained in the gvcf files. We collect the compressed version of a vcf file (vcf.gz), which can be made with a lossless compression utility tool like gzip[gzip](https://www.gzip.org). The variant calls in these files might differ from those in a gvcf file because they are made by considering information from all samples. A researcher would want to use these files when considering each project separately. All vcf files should include an index file, .tbi
+- **vcf** files usually contain multiple samples, and are the starting point for most reserach project's analysis. They are not appropriate for constructing cohorts from multiple projects because they are missing necessary information contained in the gvcf files. We collect the compressed version of a vcf file (vcf.gz), which can be made with a lossless compression utility tool like [gzip](https://www.gzip.org). The variant calls in these files might differ from those in a gvcf file because they are made by considering information from all samples. A researcher would want to use these files when considering each project separately. All vcf files should include an index file, .tbi
 
     `)
   } else send.clear()
@@ -444,6 +444,7 @@ try {
     ## Clinical Data
 
 Arcus Archives does not collect clinical reference data sets but there are ways to tap into the power of these datasets within Arcus.
+
 - The Arcus Applied Data Sciences team offers [GIS Data](https://chop.alationcloud.com/domain/30/) of many high value publicly available regularly refreshed Geographical Information System Datasets.
 - There is also an option via [Jira Service Desk](https://jira.arcus.chop.edu:8443/servicedesk/customer/portal/6/create/355?q=upload&q_time=1696276238126) to upload reference data directly to your lab following disclosure and approval.
 
@@ -477,9 +478,9 @@ The file\_manifest.csv matches the biosample\_id to each file in the data folder
 - biosample\_id is an ID number for each file. For some studies, each file is derived about specific biosamples, so we suggest using the sample id. ideally, biosample\_id links to the CHOP biobank. When you cannot link the the biobank, treat biosample\_id as the IDs you use for samples taken from participants. For studies where there are no biosamples, the biosample\_id can be the file name.
 - file_type is the type of file, indicated by the file extension
 - protocol is only for omics data, select the omics data example below for more information
-- file\_path is the file path for each file in the **\_data\_** folders. File paths should start with **\_data\_** and end with the full file name with extension
+- file\_path is the file path for each file in the **data\\** folders. File paths should start with **data\\** and end with the full file name with extension
 
-The **file_manifest.csv** may look different depending on the type of research. Please select below if you need more information about either omics or clinical data for this directory: :
+The **file_manifest.csv** may look different depending on the type of research. Please select below if you need more information about either omics or clinical data for this directory: 
 
 - [ ] omics data
 - [ ] clinical data
@@ -492,7 +493,7 @@ try {
   if(data_type[0]) {
     send.liascript(`## Omics Data
 
-For Omics data, the **file\_manifest.csv** matches biosample IDs to data files and experimental protocols, described in \_yaml\_ files. More information about the protocols files is available in the references section of this module. Many files might share the same experimental protocol. These yaml protocol files describe experiment and data processing details. See below for the columns in a file\_manifest:
+For Omics data, the **file\_manifest.csv** matches biosample IDs to data files and experimental protocols, described in _yaml_ files. More information about the protocols files is available in the references section of this module. Many files might share the same experimental protocol. These _yaml_ protocol files describe experiment and data processing details. See below for the columns in a file\_manifest:
 
 | column                  | definition                                                                                                                                                                                                                                                                                                                       | type   |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
@@ -517,7 +518,7 @@ try {
     send.liascript(`
     ## Clinical Data
 
-Since clinical research efforts don't always collect biospecimen data, the columns in the file_manifest are simpler than an Omics contribution. See below for the columns required in the file_manifest:
+Since clinical research efforts don't always collect biospecimen data, the columns in the file\_manifest are simpler than an Omics contribution. See below for the columns required in the file\_manifest:
 
 | column                  | definition                                                                                                                                                                                                                                                                                                                       | type   |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
@@ -534,8 +535,8 @@ Since clinical research efforts don't always collect biospecimen data, the colum
 
 The participant_manifest.csv identifies which participants information links to each of the files in the file_manifest. Below is more detail about each section of the file:
 
-- local_participant_id is a local identifier the study team used to identify the patient
-- The biosample_id will be the same as the one listed in the file_manifests.csv. Linking a local_participant_id to a biosample_id identifies which patients information is related to the file.
+- local\_participant\_id is a local identifier the study team used to identify the patient
+- The biosample\_id will be the same as the one listed in the file_manifests.csv. Linking a local\_participant\_id to a biosample_id identifies which patients information is related to the file.
 - cohort is optional, please fill this in if there is additional cohort information or identification needed.
 
 The **participant_manifest.csv** may look different depending on the type of research. Please select which type of data from below you need more information about for this directory:
@@ -551,15 +552,15 @@ try {
   if(data_type[0]) {
     send.liascript(`## Omics Data
 
-The **participant_manifest.csv** matches participants (or patients) to cohorts and biosample IDs from the **file_manifest.csv**. Ideally, biosample\_id links to the CHOP biobank. When you cannot link to the biobank, treat biosample\_id as the IDs you use for samples taken from participants. If you deal with only one sample type, you might use the participant\_id. If you run a treatment/control experiment, you might use participant\_id and treat participant\_id\_control as as a biosample ID scheme. If you work with different tissue samples from participants, you might use participant\_id\_tissue as a biosample ID scheme.
+The **participant\_manifest.csv** matches participants (or patients) to cohorts and biosample IDs from the **file\_manifest.csv**. Ideally, biosample\_id links to the CHOP biobank. When you cannot link to the biobank, treat biosample\_id as the IDs you use for samples taken from participants. If you deal with only one sample type, you might use the participant\_id. If you run a treatment/control experiment, you might use participant\_id and treat participant\_id\_control as as a biosample ID scheme. If you work with different tissue samples from participants, you might use participant\_id\_tissue as a biosample ID scheme.
 
 | column               | definition                                                                                                                    | type   |
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------ |
 | local\_participant\_id | This ID uniquely defined a person, and can be linked to an MRN.                                                               | String |
 | cohort               | Use this column to group participants into cohorts that will be cwopared (For example, case vs healthy control).              | String |
-| biosample_id         | Ideally, this ID can link to the CHOP biobank. When this is not possible, use the sample ID from your project.                | String |
-| family_id            | When participants are related, use family_id to group related participants. With trios or duos, the proband ID is often used. | String |
-| family_role          | Use a term from [eHB\_relationship\_types\_as\_of\_10\_30.json](https://github.research.chop.edu/arcus/rdm-project-template/blob/master/manifests/data_dicts/eHB_relationship_types_as_of_10_30.json) to indicate mother, father, proband, sister, etc..                    | String |
+| biosample\_id         | Ideally, this ID can link to the CHOP biobank. When this is not possible, use the sample ID from your project.                | String |
+| family\_id            | When participants are related, use family_id to group related participants. With trios or duos, the proband ID is often used. | String |
+| family\_role          | Use a term from [eHB\_relationship\_types\_as\_of\_10\_30.json](https://github.research.chop.edu/arcus/rdm-project-template/blob/master/manifests/data_dicts/eHB_relationship_types_as_of_10_30.json) to indicate mother, father, proband, sister, etc..                    | String |
 
 
     `)
@@ -574,12 +575,12 @@ try {
   if(data_type[1]) {
     send.liascript(`## Clinical Data
 
-Since clinical research efforts don't always collect biospecimen data, you may not use a Biorepository sample ID. When you cannot link the the biobank, treat instance_id as the IDs you use for samples taken from participants. The Epic Patient ID (start with Z) can be used as the local\_participant\_id. The list of required files we collect for this file are as follows:
+Since clinical research efforts don't always collect biospecimen data, you may not use a Biorepository sample ID. When you cannot link the the biobank, treat instance\_id as the IDs you use for samples taken from participants. The Epic Patient ID (start with Z) can be used as the local\_participant\_id. The list of required files we collect for this file are as follows:
 
-  - participant_manifest.csv
+  - participant\_manifest.csv
   - local\_participant\_id
   - cohort
-  - instance_id
+  - instance\_id
 
     `)
   } else send.clear()
@@ -588,7 +589,7 @@ Since clinical research efforts don't always collect biospecimen data, you may n
 
 ### manifests/participant_crosswalk
 
-The **participant-crosswalk.txt** manifest is a tab delimited file with no header that links local\_participant\_id in the **participant_manifest.csv** to MRN (Medical Record Number). See below for the terms in the file:
+The **participant-crosswalk.txt** manifest is a tab delimited file with no header that links local\_participant\_id in the **participant\_manifest.csv** to MRN (Medical Record Number). See below for the terms in the file:
 
 | column               | definition                                     | type   | notes                                                          |
 | -------------------- | ---------------------------------------------- | ------ | -------------------------------------------------------------- |
@@ -618,7 +619,7 @@ The **participant\_family\_role.csv** file is only needed for some omics data. I
 
 ### manifests/familyid_crosswalk
 
-- This manifest should be used with trio and cohort omics data. A trio will contain three participants, a cohort can contain hundreds. This file walks the name for the trio or cohort file with the local_participant_id's included in it.
+- This manifest should be used with trio and cohort omics data. A trio will contain three participants, a cohort can contain hundreds. This file walks the name for the trio or cohort file with the local\_participant\_id's included in it.
 - This is also called a PED or pedigree file in bioinformatics workflows. A pedigree is a structured description of the familial relationships between samples, see this [link for more information](https://gatk.broadinstitute.org/hc/en-us/articles/360035531972-PED-Pedigree-format). 
 
 <!-- data-type="none" -->
@@ -647,11 +648,11 @@ The **participant\_family\_role.csv** file is only needed for some omics data. I
 | maternal_id          | Optional, the local\_participant\_id for the mother of the participant                |
 | sex                  | Optional, the sex of the participant. 1 for male, 2 for female                      |
 
-### manifests/file_derivation.csv
+### manifests/file\_derivation.csv
 
-The **file_derivation.csv** manifest is only required for omics contributions with multiple filetypes generated through a bioinformatics pipeline or workflow.
+The **file\_derivation.csv** manifest is only required for omics contributions with multiple filetypes generated through a bioinformatics pipeline or workflow.
 
-**file_derivation.csv** describes the relationships between files in a pipeline or workflow.
+**file\_derivation.csv** describes the relationships between files in a pipeline or workflow.
 
 | column                 | definition                                                      | type   |
 | ---------------------- | --------------------------------------------------------------- | ------ |
@@ -660,17 +661,17 @@ The **file_derivation.csv** manifest is only required for omics contributions wi
 
 ### manifests/env manifest
 
-For each script/notebook in \_src/\_, and each model in \_models/\_, there should be an env file (here env refers to a file named env with any extension, so env.yaml or env.txt, for example) that describes the environment in which it was created or run. Environment files should be named as follows: **descriptiveName\_env** and placed in a folder called environments within the \_configs/environment\_ directory. Either individuals files or entire folders (whichever is the appropriate level) in scripts and notebooks within the \_src/\_ directory, or the \_models/\_ directory will need to be added to the env manifest file, matching them with their related environment file. See the see below for more information about this file:
+For each script/notebook in *src/*, and each model in *models/*, there should be an env file (here env refers to a file named env with any extension, so env.yaml or env.txt, for example) that describes the environment in which it was created or run. Environment files should be named as follows: **descriptiveName\_env** and placed in a folder called environments within the *configs/environment/* directory. Either individuals files or entire folders (whichever is the appropriate level) in scripts and notebooks within the *src/* directory, or the *models/* directory will need to be added to the env manifest file, matching them with their related environment file. See the see below for more information about this file:
 
 | column                | definition                                                                                                                                                                                                                                                                          | type   |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
-| programming_filegroup | Enter the highest level folder that the environment file relates to. If the file relates to an entire directory then put the whole directory file path. If the file relates to a suddirectory enter that filepath. If it relates to a single file enter the file path and filename. | String |
-| related_environment   | Enter the environment filename. Some environment files will be entered multiple times as they relate to multiple files.                                                                                                                                                             | String |
+| programming\_filegroup | Enter the highest level folder that the environment file relates to. If the file relates to an entire directory then put the whole directory file path. If the file relates to a suddirectory enter that filepath. If it relates to a single file enter the file path and filename. | String |
+| related\_environment   | Enter the environment filename. Some environment files will be entered multiple times as they relate to multiple files.                                                                                                                                                             | String |
 |                       |
 
 ## src/
 
-The src or sources folder stores the access tools required to work with the research data and repeat the analysis. The need for access tools is dependent on the type of research, not all research has rules, scripts or notebooks. Any scripts saved in the src folder require an environment manifest to document the computing environment the code is run in, see the [environment manifest page](#manifestsenv_manifestcsv) for more information. Subdirectory folders can be customized and added as needed, below are the common directories or data types used in scientific research:
+The src or sources folder stores the access tools required to work with the research data and repeat the analysis. The need for access tools is dependent on the type of research, not all research has rules, scripts or notebooks. Any scripts saved in the src folder require an environment manifest to document the computing environment the code is run in, see the environment manifest section of this module for more information. Subdirectory folders can be customized and added as needed, below are the common directories or data types used in scientific research:
 
 - **notebooks**: Jupyter, Beaker, Zeppelin, WDL, CWL etc.
 - **scripts**: custom software, code, tools
@@ -793,20 +794,23 @@ Below are the fields often included in your data dictionaries. Only a few are co
 - If you have more than one dataset, or more than one data table, include a description for each. The descriptions for data tables and datasets should include some idea of the scope of data included, as well as the purpose in collecting or creating the data and its intended use.
 
 #### Sample Data Dictionary from the [PEDSnet Data Contribution](https://chop.alationcloud.com/article/3810/)
+<!-- data-type="none" -->
 
 | table_name | field_name               | description                                                                                                | type       | phi | ordinal_position | crosswalk_needed | crosswalk_note |
 | ---------- | ------------------------ | ---------------------------------------------------------------------------------------------------------- | ---------- | --- | ---------------- | ---------------- | -------------- |
-| person     | person_id                | A unique identifier for each person; this is created by each contributing site.                            | BigInteger | 1   | 1                | 1                |                |
+| person     | person\_id                | A unique identifier for each person; this is created by each contributing site.                            | BigInteger | 1   | 1                | 1                |                |
 | person     | gender\_concept\_id        | A foreign key that refers to a standard concept identifier in the Vocabulary for the gender of the person. | Integer    | 0   | 2                | 0                |                |
 | person     | gender\_source\_concept\_id | A foreign key to the gender concept that refers to the code used in the source.                            | Integer    | 0   | 3                | 0                |                |
 
 #### Sample Explanation of Tables from the PEDSnet Data Contribution
 
+<!-- data-type="none" -->
+
 | name             | description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| adt_occurrence   | The adt_occurrence table contains information about distinct admission, discharge, or transfer events that occur as part of a clinical visit. The typical use case is to identify portions of an inpatient admission that represent different levels of care or locations within a facility, but it can be used for additional characteristics of a visits (e.g. specialty consultation). The time of each event must fall between the start and end times of the associated visit_occurrence.                                                                                                                                                                                                                                                                                                                                                                    |
-| care_site        | The Care Site domain contains a list of uniquely identified physical or organizational units where healthcare delivery is practiced (offices, wards, hospitals, clinics, etc.).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| concept_ancestor | The CONCEPT_ANCESTOR table is designed to simplify observational analysis by providing the complete hierarchical relationships between Concepts. Only direct parent-child relationships between Concepts are stored in the CONCEPT_RELATIONSHIP table. To determine higher level ancestry connections, all individual direct relationships would have to be navigated at analysis time. The CONCEPT_ANCESTOR table includes records for all parent-child relationships, as well as grandparent-grandchild relationships and those of any other level of lineage. Using the CONCEPT_ANCESTOR table allows for querying for all descendants of a hierarchical concept. For example, drug ingredients and drug products are all descendants of a drug class ancestor. This table is entirely derived from the CONCEPT, CONCEPT_RELATIONSHIP and RELATIONSHIP tables. |
+| adt\_occurrence   | The adt\_occurrence table contains information about distinct admission, discharge, or transfer events that occur as part of a clinical visit. The typical use case is to identify portions of an inpatient admission that represent different levels of care or locations within a facility, but it can be used for additional characteristics of a visits (e.g. specialty consultation). The time of each event must fall between the start and end times of the associated visit_occurrence.                                                                                                                                                                                                                                                                                                                                                                    |
+| care\_site        | The Care Site domain contains a list of uniquely identified physical or organizational units where healthcare delivery is practiced (offices, wards, hospitals, clinics, etc.).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| concept\_ancestor | The CONCEPT\_ANCESTOR table is designed to simplify observational analysis by providing the complete hierarchical relationships between Concepts. Only direct parent-child relationships between Concepts are stored in the CONCEPT\_RELATIONSHIP table. To determine higher level ancestry connections, all individual direct relationships would have to be navigated at analysis time. The CONCEPT\_ANCESTOR table includes records for all parent-child relationships, as well as grandparent-grandchild relationships and those of any other level of lineage. Using the CONCEPT\_ANCESTOR table allows for querying for all descendants of a hierarchical concept. For example, drug ingredients and drug products are all descendants of a drug class ancestor. This table is entirely derived from the CONCEPT, CONCEPT\_RELATIONSHIP and RELATIONSHIP tables. |
 
     `)
   } else send.clear()
