@@ -534,7 +534,7 @@ Since clinical research efforts don't always collect biospecimen data, the colum
 
 The participant_manifest.csv identifies which participants information links to each of the files in the file_manifest. Below is more detail about each section of the file:
 
-- local_participant_id is a local identifier the study team used to identify the patient
+- local\_participant\_id is a local identifier the study team used to identify the patient
 - The biosample_id will be the same as the one listed in the file_manifests.csv. Linking a local_participant_id to a biosample_id identifies which patients information is related to the file.
 - cohort is optional, please fill this in if there is additional cohort information or identification needed.
 
