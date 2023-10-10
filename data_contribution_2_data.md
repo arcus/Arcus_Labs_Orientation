@@ -9,7 +9,8 @@ docs_version: 1.1.0
 language: en
 narrator: UK English Female
 title: Arcus Project Template Orientation
-comment:  Arcus Archives serves as the canonical repository for research data at CHOP. Archiving data with Arcus safeguards and maintains research data in accordance with established archival protocols, also while promoting data sharing. The Data Contribution Module provides an overview of the reasons to archive research data with Arcus, as well as the processes involved in scoping data, conducting privacy assessments, and addressing technical requirements prior to data submission. This Module explores the Project Template directory structure, and delves into the specific steps required for archiving data within the Arcus platform.
+comment: Learn about how to disclose data to CHOP by making a data contribution!
+long_description:  Arcus Archives serves as the canonical repository for research data at CHOP. Archiving data with Arcus safeguards and maintains research data in accordance with established archival protocols, also while promoting data sharing. The Data Contribution Module provides an overview of the reasons to archive research data with Arcus, as well as the processes involved in scoping data, conducting privacy assessments, and addressing technical requirements prior to data submission. This Module explores the Project Template directory structure, and delves into the specific steps required for archiving data within the Arcus platform.
 
 estimated_time: 60 minutes
 
