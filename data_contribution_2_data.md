@@ -492,7 +492,7 @@ try {
   if(data_type[0]) {
     send.liascript(`## Omics Data
 
-For Omics data, the **file_manifest.csv** matches biosample IDs to data files and experimental protocols, described in _yaml_ files. More information about the protocols files is available in the references section of this module. Many files might share the same experimental protocol. These yaml protocol files describe experiment and data processing details. See below for the columns in a file_manifest:
+For Omics data, the **file\_manifest.csv** matches biosample IDs to data files and experimental protocols, described in \_yaml\_ files. More information about the protocols files is available in the references section of this module. Many files might share the same experimental protocol. These yaml protocol files describe experiment and data processing details. See below for the columns in a file\_manifest:
 
 | column                  | definition                                                                                                                                                                                                                                                                                                                       | type   |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
