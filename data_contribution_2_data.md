@@ -474,7 +474,7 @@ Additional manifests are only required if needed for the data or collection type
 
 The file\_manifest.csv matches the biosample\_id to each file in the data folders. Below is more detail about each section in the file:
 
-- biosample_id is an ID number for each file. For some studies, each file is derived about specific biosamples, so we suggest using the sample id. ideally, biosample_id links to the CHOP biobank. When you cannot link the the biobank, treat biosample_id as the IDs you use for samples taken from participants. For studies where there are no biosamples, the biosample_id can be the file name.
+- biosample\_id is an ID number for each file. For some studies, each file is derived about specific biosamples, so we suggest using the sample id. ideally, biosample\_id links to the CHOP biobank. When you cannot link the the biobank, treat biosample\_id as the IDs you use for samples taken from participants. For studies where there are no biosamples, the biosample\_id can be the file name.
 - file_type is the type of file, indicated by the file extension
 - protocol is only for omics data, select the omics data example below for more information
 - file_path is the file path for each file in the **_data\_** folders. File paths should start with **_data\_** and end with the full file name with extension
