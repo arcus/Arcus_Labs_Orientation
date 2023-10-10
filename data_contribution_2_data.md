@@ -122,7 +122,7 @@ When you are ready to archive your lab data, please submit the following request
 
 ## Arcus Data Lifecycle
 
-Arcus' goal for research data management and the project template is to provide tools that are relevant throughout the entire lifecycle of research data. The project template is designed to be adaptable and iterative to capture the wide range of research activities at CHOP. The project template combines flexibility to encompass diverse data capturing needs, while also maintaining a consist structure for all archived data which facilitates seamless communication among various projects spanning different domains, thereby promoting effective data sharing.
+Arcus's goal for research data management and the project template is to provide tools that are relevant throughout the entire lifecycle of research data. The project template is designed to be adaptable and iterative to capture the wide range of research activities at CHOP. The project template combines flexibility to encompass diverse data capturing needs, while also maintaining a consist structure for all archived data which facilitates seamless communication among various projects spanning different domains, thereby promoting effective data sharing.
 
 **How was this structure developed?**
 
