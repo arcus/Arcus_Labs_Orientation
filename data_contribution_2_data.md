@@ -621,6 +621,7 @@ The **participant\_family\_role.csv** file is only needed for some omics data. I
 - This manifest should be used with trio and cohort omics data. A trio will contain three participants, a cohort can contain hundreds. This file walks the name for the trio or cohort file with the local_participant_id's included in it.
 - This is also called a PED or pedigree file in bioinformatics workflows. A pedigree is a structured description of the familial relationships between samples, see this [link for more information](https://gatk.broadinstitute.org/hc/en-us/articles/360035531972-PED-Pedigree-format). 
 
+<!-- data-type="none" -->
 |family_id|individual_id|paternal_id    |maternal_id  |sex          |
 |---------|-------------|---------------|-------------|-------------|
 |LML100   |101354       |               |             |2            |
