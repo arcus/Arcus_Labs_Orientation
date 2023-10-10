@@ -140,13 +140,13 @@ The CHOP project template evolved through iterations and feedback from CHOP rese
 
 The Project Template prioritizes streamlined archiving and reproducible research pathways. It archives a wide range of research types from the Research Institute, making them discoverable through tools like [Arcus Cohort Discovery](https://arcus.chop.edu), [Gene](https://chop.alationcloud.com), and [Omics Variant Browser](https://arcus.chop.edu). The Project Template facilitates organizing diverse research data in a single directory structure, enabling automated archiving, metadata management, and data delivery throughout the research data lifecycle. This file directory structure is used for the entire lifecycle of research data within Arcus:
 
-![Graphic representation of the lifecycle of the project template in Arcus](media/project_template/ProjectTemplate_Lifecycle.png)
+![Flowchart of the lifecycle of research data organized in the project template in Arcus. The main steps are delivering research data into Arcus labs in the project tempalte structure, automated processing to archive the data, and redelivery of that data into an Arcu lab for reuse.](media/project_template/ProjectTemplate_Lifecycle.png)
 
 The project template provides a shared structure so that institutional knowledge previously held locally by various members of the data creation team becomes centralized.
 
 The utility of [the project template](https://github.research.chop.edu/arcus/rdm-project-template) for lab drive organization and integration with the Arcus archives is summarized in the graphic below.
 
-![Graphic representation of the workflow of research data and the project tempalte](media/project_template/ProjectTemplate_workflow.png)
+![Flow chart of the workflow of archiving research data using the project template. The main steps are Organizing the file system, adding the research data, applying a standard piepline, and automated Arcus data ingest](media/project_template/ProjectTemplate_workflow.png)
 
 ## Project Template
 
@@ -163,25 +163,25 @@ The project template structure includes directories for capturing three major as
 
 Below is an image of the entire Project Template Directory, with more detail about each section:
 
-![Graphic respresentation of the Project template with a short explanation of all the different sections](media/project_template/ProjectTemplate_Description.png)
+![Graphic respresentation of the Project template with a short explanation of all the different sections. These sections are described in detail later in this module.](media/project_template/ProjectTemplate_Description.png)
 
 ### Research Data
 
 The Project Template brings together three categories of information: Research Data, Access Tools and Contextual files. Research data is the actual data collected during the course of research processes used for analysis. The manifests describe this data, crosswalking files to participants. Research data (with manifests) is the mininum required information for all Arcus data contributions.
 
-![Graphic respresentation of the Project template with that denotes research data sections](media/project_template/research_data.png)
+![Graphic respresentation of the Project template highlighting the research data directories described above. Research data directories are data and manifests.](media/project_template/research_data.png)
 
 ### Access Tools
 
 Access Tools are the code used to do the analysis. This can include machine models, scripts and Jupyter notebooks.
 
-![Graphic respresentation of the Project template with that denotes access tool sections](media/project_template/access_tools.png)
+![Graphic respresentation of the Project template highlighting the access tool directories, models and src. Subdirectories of src are notebooks, rules, scripts and tests.](media/project_template/access_tools.png)
 
 ### Contextual Files
 
 Contextual Files provide information needed to understand the data and analysis. This can include omics protocols, data dictionaries, reports and diagrams.
 
-![Graphic respresentation of the Project template with that denotes contextual files sections](media/project_template/contextual_files.png)
+![Graphic respresentation of the Project template highlighting the contextual files directories, configs, references, reports and requirements.](media/project_template/contextual_files.png)
 
 ## Project Template Directories
 
@@ -242,7 +242,7 @@ try {
     send.liascript(`## Omics Data
 
 
-![Omics data/raw](media/project_template/raw_omics.gif)
+![Gif showing omics data arrnaged in the raw directory. Read files (cram/fastq/bam) are stored in data/raw.](media/project_template/raw_omics.gif)
 
 For omics data, the raw folder contains the sequencing data. Most sequencing providers will generate a [**fastq**](https://maq.sourceforge.net/fastq.shtml) file or [**cram**](https://samtools.github.io/hts-specs/CRAMv3.pdf) file, we prefer these filetypes for archiving.
 * These files contain genomic sequences called reads. With paired reads, there are two fastq files per sample. Cram files are single files aligned to a reference genome.
@@ -263,7 +263,7 @@ try {
     send.liascript(`## Clinical Data
 
 
-![Clinical data/raw](media/project_template/raw_clinical.gif)
+![Gif showing clinical data arranged in the raw directory. Data directly collected from subjects in CSV/TSV/XML or similar format is stored in data/raw.](media/project_template/raw_clinical.gif)
 
 For a registry, database, or any other type of clinical dataset the raw data will be the research directly collected from subjects whether managed by automated processes or via manual entry. This version of the dataset often contains identifiable information and is most critical for secondary use.
 
@@ -321,7 +321,7 @@ try {
     send.liascript(`
     ## Omics Data
 
-![Omics data/interim](media/project_template/interim_omics.gif)
+![Gif showing omics data arranged in the interim directory. Metrics and reports (recalibration reorts and QC metrics) produced as part of a bioinformatics analysis workflow stored in data/interim.](media/project_template/interim_omics.gif)
 
 This directory is for the quality control and other reporting created during a bioinformatics workflow, using the sequence files stored in the \_data/raw\_ directory.
 
@@ -338,7 +338,7 @@ try {
   if(data_type[1]) {
     send.liascript(`
     ## Clinical Data
-![Clinical data/interim](media/project_template/interim_clinical.gif)
+![Gif showing clinical data arranged in the interim directory. Scratch or alternatively formatted data (CSV/JSON/XML or similar) created during analysis or sharing stored in data/interim.](media/project_template/interim_clinical.gif)
 
 This directory is for practice work generated during clincal research when analyzing and sharing original, unmodified data saved in \_data/raw\_. This can provide be a good insight into the research process and will be archived on a case by case basis. Additionaly, alternatively formatted data, or excluded data can be saved in the interim directory. Data should be saved as a tsv, csv, xml or json file if possible.
     `)
@@ -369,7 +369,7 @@ try {
     send.liascript(`
     ## Omics Data
 
-![Omics data/endpoints](media/project_template/endpoints_omics.gif)<!-- style = "max-height: 500px;" -->
+![Gif showing omics data arranged in the endpoints directory. Gene sequence variantion files (vcf or gvcf) created using a bioinformatics workflow stored in data/endpoints.](media/project_template/endpoints_omics.gif)<!-- style = "max-height: 500px;" -->
 
 This directory is for files created at the end of a bioinformatics workflow, like gvcf and vcf files.
 
@@ -389,7 +389,7 @@ try {
     send.liascript(`
     ## Clinical Data
 
-![Clinical data/endpoints](media/project_template/endpoints_clinical.gif)
+![Gif showing clinical data arranged in the endpoints directory. Analyzed or deidentified versions of data (CSV/JSON/XML or similar) stored in data/endpoints.](media/project_template/endpoints_clinical.gif)
 
 This directory contains an analyzed version of a dataset or deidentified datasets.
 
@@ -462,7 +462,7 @@ Manifests are an inventory of all data in the collection, and provide a mapping 
 
 Additional manifests are only required if needed for the data or collection type. These files are detailed in the next sections. The graphic below illustrates the linking between the files:
 
-![ID Crosswalks between manifests](media/project_template/manifests_linkages.png)
+![ID Crosswalks between file_manifest.csv, participant_manifest.csv and participant-crosswalk.txt](media/project_template/manifests_linkages.png)
 
 **Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
 
