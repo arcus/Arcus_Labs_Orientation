@@ -655,7 +655,7 @@ The **file_derivation.csv** manifest is only required for omics contributions wi
 | column                 | definition                                                      | type   |
 | ---------------------- | --------------------------------------------------------------- | ------ |
 | destination\_file\_group | The files in this file group is derived from source\_file\_group. | String |
-| source\_fil\e_group      | File group used to derive the destination_file_group.           | String |
+| source\_file\_group      | File group used to derive the destination\_file\_group.           | String |
 
 ### manifests/env manifest
 
