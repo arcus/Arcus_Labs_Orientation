@@ -108,7 +108,7 @@ This module is an overview of CHOP's Project Template structure, all contributed
 
 Arcus's Library Science team is happy to meet with researchers at all phases of research for research data management consultations and planning for future archival contributions. This includes early in your research project, as we can help set up a project template file directory structure for storing data and recommend metadata and organization best practices. In addition to this module, there are additional data management resources available on CHOP’s [Arcus resources page](https://www.research.chop.edu/applications/arcus/resources).
 
-If after viewing this module, you are prepared to archive data with Arcus, please fill out [the following request](https://pm.arcus.chop.edu/servicedesk/customer/portal/6/create/256) to start the process.
+If after viewing this module, you are prepared to archive data with Arcus, please fill out [a data contribution request](https://pm.arcus.chop.edu/servicedesk/customer/portal/6/create/256) to start the process.
 
 ### Arcus Lab Users
 
