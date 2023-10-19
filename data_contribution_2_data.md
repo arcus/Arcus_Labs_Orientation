@@ -60,7 +60,7 @@ import: https://raw.githubusercontent.com/arcus/education_modules/main/_module_t
 
 **Estimated time to completion**: @estimated_time
 
-**Pre-requisites**:
+**Prerequisites**:
 
 @pre_reqs
 
@@ -139,7 +139,7 @@ The CHOP project template evolved through iterations and feedback from CHOP rese
 
 **How is the Project Template used at Arcus?**
 
-The Project Template prioritizes streamlined archiving and reproducible research pathways. It archives a wide range of research types from the Research Institute, making them discoverable through tools like Arcus Cohort Discovery, available as an application [on the Arcus website](https://arcus.chop.edu), [Gene](https://chop.alationcloud.com), and Omics Variant Browser, [available as an application [on the Arcus website](https://arcus.chop.edu). The Project Template facilitates organizing diverse research data in a single directory structure, enabling automated archiving, metadata management, and data delivery throughout the research data lifecycle. This file directory structure is used for the entire lifecycle of research data within Arcus:
+The Project Template prioritizes streamlined archiving and reproducible research pathways. It archives a wide range of research types from the Research Institute, making them discoverable through tools like Arcus Cohort Discovery, available as an application [on the Arcus website](https://arcus.chop.edu), [Gene](https://chop.alationcloud.com), and Omics Variant Browser, (available as an application [on the Arcus website](https://arcus.chop.edu)). The Project Template facilitates organizing diverse research data in a single directory structure, enabling automated archiving, metadata management, and data delivery throughout the research data lifecycle. This file directory structure is used for the entire lifecycle of research data within Arcus:
 
 ![Flowchart of the lifecycle of research data organized in the project template in Arcus. The main steps are delivering research data into Arcus labs in the project tempalte structure, automated processing to archive the data, and redelivery of that data into an Arcu lab for reuse.](media/project_template/ProjectTemplate_Lifecycle.png)
 
@@ -326,7 +326,7 @@ try {
 
 This directory is for the quality control and other reporting created during a bioinformatics workflow, using the sequence files stored in the \_data/raw\_ directory.
 
-- QC metrics Quality Control (QC) metrics are reported at various stages of analysis pipelines and give information about the quality of the data generated. QC metrics files should be in a tabular file format, with .type\_metrics\ or .duplicate\_metrics\ as the extension.
+- QC metrics Quality Control (QC) metrics are reported at various stages of analysis pipelines and give information about the quality of the data generated. QC metrics files should be in a tabular file format, with .type\_metrics or .duplicate\_metrics as the extension.
     `)
   } else send.clear()
 } catch(e) { }
@@ -533,10 +533,10 @@ Since clinical research efforts don't always collect biospecimen data, the colum
 
 ### manifests/participant_manifest
 
-The participant_manifest.csv identifies which participants information links to each of the files in the file_manifest. Below is more detail about each section of the file:
+The participant\_manifest.csv identifies which participants information links to each of the files in the file\_manifest. Below is more detail about each section of the file:
 
-- local_participant_id is a local identifier the study team used to identify the patient
-- The biosample_id will be the same as the one listed in the file_manifests.csv. Linking a local_participant_id to a biosample_id identifies which patients information is related to the file.
+- local\_participant\_id is a local identifier the study team used to identify the patient
+- The biosample\_id will be the same as the one listed in the file\_manifests.csv. Linking a local\_participant\_id to a biosample_id identifies which patients information is related to the file.
 - cohort is optional, please fill this in if there is additional cohort information or identification needed.
 
 The **participant_manifest.csv** may look different depending on the type of research. Please select which type of data from below you need more information about for this directory:
@@ -577,10 +577,10 @@ try {
 
 Since clinical research efforts don't always collect biospecimen data, you may not use a Biorepository sample ID. When you cannot link the the biobank, treat instance\_id as the IDs you use for samples taken from participants. The Epic Patient ID (start with Z) can be used as the local\_participant\_id. The list of required files we collect for this file are as follows:
 
-  - participant\_manifest.csv
-  - local\_participant\_id
-  - cohort
-  - instance\_id
+- participant\_manifest.csv
+- local\_participant\_id
+- cohort
+- instance\_id
 
     `)
   } else send.clear()
