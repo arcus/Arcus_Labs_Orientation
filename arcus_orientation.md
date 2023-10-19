@@ -313,6 +313,14 @@ We try to get sufficient information about your proposed project to understand y
 * What is your research question?
 * Who will conduct your data analysis?  
 
+To see an example of the intake form you will fill out to request a lab, see this [sample scientific project intake form](https://forum.arcus.chop.edu/t/sample-scientific-project-intake-form/527).
+
+<div class = "important">
+<b style="color: rgb(var(--color-highlight));">Important note</b><br>
+
+To save time and ensure your request goes as smoothly as possible, read these [questions to consider **before** submitting an Arcus project intake form](https://forum.arcus.chop.edu/t/tips-for-before-you-write-your-project-aims-and-cohort-definition/488) first. 
+
+</div>
 
 **Preliminary Review and Assessment**
 
@@ -322,7 +330,20 @@ The preliminary review is just to determine whether or not to engage in the full
 
 If your request is greenlighted for assessment, then you will be assigned a **Project Owner** among the Arcus staff who will help guide you through the project assessment. The goal of the project assessment is to clarify the needs for the project to make sure that it is something Arcus will be a good fit for.
 
-A major goal of the project assessment is to identify what, specifically, the scientific team will need from Arcus in terms of data, software, training, and support. One component of the project assessment is a **data needs assessment**, to discuss the definition of the cohort to be studied and what information on those patients will be needed (e.g. diagnoses, medications, notes, procedures, demographics, flowsheets). There will also be a **data contribution assessment** to discuss possible data contributions to the [Arcus Archives](https://education.arcus.chop.edu/arcus-data-catalog/) at the end of the project; researchers using Arcus are expected to contribute their data when appropriate.
+A major goal of the project assessment is to identify what, specifically, the scientific team will need from Arcus in terms of data, software, training, and support. One component of the project assessment is a **data needs assessment**, to discuss the definition of the cohort to be studied and what information on those patients will be needed (e.g. diagnoses, medications, notes, procedures, demographics, flowsheets). 
+
+<div class = "important">
+<b style="color: rgb(var(--color-highlight));">Important note</b><br>
+
+**We have guides to help you articulate your project aims and cohort definition**
+
+You may already have language drafted for your project aims and cohort definition from a grant proposal or IRB application, but chances are those descriptions will need to be adapted for implementation in an Arcus lab.
+
+We have instructions and examples available for [writing your project aims](https://forum.arcus.chop.edu/t/tips-for-writing-project-aims-as-part-of-a-new-arcus-scientific-project/486) and [defining a cohort](https://forum.arcus.chop.edu/t/tips-for-writing-a-cohort-definition-as-part-of-a-new-arcus-scientific-project/487) for your Arcus project. 
+
+</div>
+
+There will also be a **data contribution assessment** to discuss possible data contributions to the [Arcus Archives](https://education.arcus.chop.edu/arcus-data-catalog/) at the end of the project; researchers using Arcus are expected to contribute their data when appropriate.
 
 The project assessment will also include a **privacy review** to identify and mitigate any potential privacy risks ([read more about the privacy review here](https://forum.arcus.chop.edu/t/what-is-a-privacy-review-and-what-does-the-process-entail/190)).
 
@@ -710,7 +731,7 @@ The Arcus Library Science team has compiled some excellent resources to help you
 The Arcus Library Science team has put together some great templates and best practices for good data documentation:
 
 - [Recommended practices for data dictionaries](https://storage.googleapis.com/arcus-edu-libsci/Arcus%20RDM%20Resources/Arcus%20RDM%20Data%20Dictionaries%20Best%20Practices.pdf)
-- A [basic ETL (extract, tansform, load) template](https://storage.googleapis.com/arcus-edu-libsci/Arcus%20RDM%20Resources/arcus_rdm_etl_template.csv), and the [README](https://storage.googleapis.com/arcus-edu-libsci/Arcus%20RDM%20Resources/arcus_rdm_etl_template_README.txt) that goes with it
+- A [basic ETL (extract, transform, load) template](https://storage.googleapis.com/arcus-edu-libsci/Arcus%20RDM%20Resources/arcus_rdm_etl_template.csv), and the [README](https://storage.googleapis.com/arcus-edu-libsci/Arcus%20RDM%20Resources/arcus_rdm_etl_template_README.txt) that goes with it
 - A [data collection/processing template](https://storage.googleapis.com/arcus-edu-libsci/Arcus%20RDM%20Resources/Arcus_RDM_DataCollection_Processing_Template.txt), and its [README](https://storage.googleapis.com/arcus-edu-libsci/Arcus%20RDM%20Resources/Arcus_RDM_DataCollection_Processing_README.pdf)
 
 For more background on this topic, see this [post that answers the question "What is metadata?"](https://education.arcus.chop.edu/what-is-metadata/).
