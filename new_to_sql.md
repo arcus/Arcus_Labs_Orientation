@@ -1,5 +1,6 @@
 <!--
-link:   https://storage.googleapis.com/chop-dbhi-arcus-education-website-assets/css/styles.css
+link:  https://chop-dbhi-arcus-education-website-assets.s3.amazonaws.com/css/styles.css
+
 script: https://kit.fontawesome.com/83b2343bd4.js
 
 title: New to SQL
