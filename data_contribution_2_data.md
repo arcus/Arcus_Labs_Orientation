@@ -324,9 +324,9 @@ try {
 
 ![Gif showing omics data arranged in the interim directory. Metrics and reports (recalibration reorts and QC metrics) produced as part of a bioinformatics analysis workflow stored in data/interim.](media/project_template/interim_omics.gif)
 
-This directory is for the quality control and other reporting created during a bioinformatics workflow, using the sequence files stored in the \_data/raw\_ directory.
+This directory is for the quality control and other reporting created during a bioinformatics workflow, using the sequence files stored in the \\_data/raw\\_ directory.
 
-- QC metrics Quality Control (QC) metrics are reported at various stages of analysis pipelines and give information about the quality of the data generated. QC metrics files should be in a tabular file format, with .type\_metrics or .duplicate\_metrics as the extension.
+- QC metrics Quality Control (QC) metrics are reported at various stages of analysis pipelines and give information about the quality of the data generated. QC metrics files should be in a tabular file format, with .type\\_metrics or .duplicate\\_metrics as the extension.
     `)
   } else send.clear()
 } catch(e) { }
@@ -341,7 +341,7 @@ try {
     ## Clinical Data
 ![Gif showing clinical data arranged in the interim directory. Scratch or alternatively formatted data (CSV/JSON/XML or similar) created during analysis or sharing stored in data/interim.](media/project_template/interim_clinical.gif)
 
-This directory is for practice work generated during clincal research when analyzing and sharing original, unmodified data saved in \_data/raw\_. This can provide be a good insight into the research process and will be archived on a case by case basis. Additionaly, alternatively formatted data, or excluded data can be saved in the interim directory. Data should be saved as a tsv, csv, xml or json file if possible.
+This directory is for practice work generated during clincal research when analyzing and sharing original, unmodified data saved in \\_data/raw\\_. This can provide be a good insight into the research process and will be archived on a case by case basis. Additionaly, alternatively formatted data, or excluded data can be saved in the interim directory. Data should be saved as a tsv, csv, xml or json file if possible.
     `)
   } else send.clear()
 } catch(e) { }
@@ -493,7 +493,7 @@ try {
   if(data_type[0]) {
     send.liascript(`## Omics Data
 
-For Omics data, the **file\_manifest.csv** matches biosample IDs to data files and experimental protocols, described in _yaml_ files. More information about the protocols files is available in the references section of this module. Many files might share the same experimental protocol. These _yaml_ protocol files describe experiment and data processing details. See below for the columns in a file\_manifest:
+For Omics data, the **file\\_manifest.csv** matches biosample IDs to data files and experimental protocols, described in _yaml_ files. More information about the protocols files is available in the references section of this module. Many files might share the same experimental protocol. These _yaml_ protocol files describe experiment and data processing details. See below for the columns in a file\\_manifest:
 
 | column                  | definition                                                                                                                                                                                                                                                                                                                       | type   |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
@@ -518,7 +518,7 @@ try {
     send.liascript(`
     ## Clinical Data
 
-Since clinical research efforts don't always collect biospecimen data, the columns in the file\_manifest are simpler than an Omics contribution. See below for the columns required in the file\_manifest:
+Since clinical research efforts don't always collect biospecimen data, the columns in the file\\_manifest are simpler than an Omics contribution. See below for the columns required in the file\\_manifest:
 
 | column                  | definition                                                                                                                                                                                                                                                                                                                       | type   |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
@@ -552,15 +552,15 @@ try {
   if(data_type[0]) {
     send.liascript(`## Omics Data
 
-The **participant\_manifest.csv** matches participants (or patients) to cohorts and biosample IDs from the **file\_manifest.csv**. Ideally, biosample\_id links to the CHOP biobank. When you cannot link to the biobank, treat biosample\_id as the IDs you use for samples taken from participants. If you deal with only one sample type, you might use the participant\_id. If you run a treatment/control experiment, you might use participant\_id and treat participant\_id\_control as as a biosample ID scheme. If you work with different tissue samples from participants, you might use participant\_id\_tissue as a biosample ID scheme.
+The **participant\\_manifest.csv** matches participants (or patients) to cohorts and biosample IDs from the **file\\_manifest.csv**. Ideally, biosample\\_id links to the CHOP biobank. When you cannot link to the biobank, treat biosample\\_id as the IDs you use for samples taken from participants. If you deal with only one sample type, you might use the participant\\_id. If you run a treatment/control experiment, you might use participant\\_id and treat participant\\_id\\_control as as a biosample ID scheme. If you work with different tissue samples from participants, you might use participant\\_id\\_tissue as a biosample ID scheme.
 
 | column               | definition                                                                                                                    | type   |
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------ |
-| local\_participant\_id | This ID uniquely defined a person, and can be linked to an MRN.                                                               | String |
+| local\\_participant\\_id | This ID uniquely defined a person, and can be linked to an MRN.                                                               | String |
 | cohort               | Use this column to group participants into cohorts that will be cwopared (For example, case vs healthy control).              | String |
-| biosample\_id         | Ideally, this ID can link to the CHOP biobank. When this is not possible, use the sample ID from your project.                | String |
-| family\_id            | When participants are related, use family_id to group related participants. With trios or duos, the proband ID is often used. | String |
-| family\_role          | Use a term from [eHB\_relationship\_types\_as\_of\_10\_30.json](https://github.research.chop.edu/arcus/rdm-project-template/blob/master/manifests/data_dicts/eHB_relationship_types_as_of_10_30.json) to indicate mother, father, proband, sister, etc..                    | String |
+| biosample\\_id         | Ideally, this ID can link to the CHOP biobank. When this is not possible, use the sample ID from your project.                | String |
+| family\\_id            | When participants are related, use family_id to group related participants. With trios or duos, the proband ID is often used. | String |
+| family\\_role          | Use a term from [eHB\\_relationship\\_types\\_as\\_of\\_10\\_30.json](https://github.research.chop.edu/arcus/rdm-project-template/blob/master/manifests/data_dicts/eHB_relationship_types_as_of_10_30.json) to indicate mother, father, proband, sister, etc..                    | String |
 
 
     `)
@@ -575,12 +575,12 @@ try {
   if(data_type[1]) {
     send.liascript(`## Clinical Data
 
-Since clinical research efforts don't always collect biospecimen data, you may not use a Biorepository sample ID. When you cannot link the the biobank, treat instance\_id as the IDs you use for samples taken from participants. The Epic Patient ID (start with Z) can be used as the local\_participant\_id. The list of required files we collect for this file are as follows:
+Since clinical research efforts don't always collect biospecimen data, you may not use a Biorepository sample ID. When you cannot link the the biobank, treat instance\\_id as the IDs you use for samples taken from participants. The Epic Patient ID (start with Z) can be used as the local\\_participant\\_id. The list of required files we collect for this file are as follows:
 
-- participant\_manifest.csv
-- local\_participant\_id
+- participant\\_manifest.csv
+- local\\_participant\\_id
 - cohort
-- instance\_id
+- instance\\_id
 
     `)
   } else send.clear()
@@ -763,7 +763,7 @@ try {
     send.liascript(`
 ## Clinical Data
 
-If you are contributing a dataset, you should include a data dictionary in the _references/_ directory, in a subdirectory titled _data\_dictionary_. A data dictionary documents the scope, purpose, and nuance of the data you are collecting. Some data dictionaries are extensively detailed, but even a basic minimal data dictionary is better than none at all. Data dictionaries are usually used for tabular datasets, but can be used for data in other formats as well.
+If you are contributing a dataset, you should include a data dictionary in the _references/_ directory, in a subdirectory titled _data\\_dictionary_. A data dictionary documents the scope, purpose, and nuance of the data you are collecting. Some data dictionaries are extensively detailed, but even a basic minimal data dictionary is better than none at all. Data dictionaries are usually used for tabular datasets, but can be used for data in other formats as well.
 
 Below are the fields often included in your data dictionaries. Only a few are considered truly **required** - the rest are optional but can be extremely helpful, so you should consider whether they make sense to collect in your case. You may also have additional fields to include that are not listed here; you know your data best!
 
@@ -796,11 +796,11 @@ Below are the fields often included in your data dictionaries. Only a few are co
 #### Sample Data Dictionary from the [PEDSnet Data Contribution](https://chop.alationcloud.com/article/3810/)
 <!-- data-type="none" -->
 
-| table_name | field_name               | description                                                                                                | type       | phi | ordinal_position | crosswalk_needed | crosswalk_note |
+| table_name | field_name               | description                                                                                                | type       | phi | ordinal\\_position | crosswalk\\_needed | crosswalk\\_note |
 | ---------- | ------------------------ | ---------------------------------------------------------------------------------------------------------- | ---------- | --- | ---------------- | ---------------- | -------------- |
-| person     | person\_id                | A unique identifier for each person; this is created by each contributing site.                            | BigInteger | 1   | 1                | 1                |                |
-| person     | gender\_concept\_id        | A foreign key that refers to a standard concept identifier in the Vocabulary for the gender of the person. | Integer    | 0   | 2                | 0                |                |
-| person     | gender\_source\_concept\_id | A foreign key to the gender concept that refers to the code used in the source.                            | Integer    | 0   | 3                | 0                |                |
+| person     | person\\_id                | A unique identifier for each person; this is created by each contributing site.                            | BigInteger | 1   | 1                | 1                |                |
+| person     | gender\\_concept\\_id        | A foreign key that refers to a standard concept identifier in the Vocabulary for the gender of the person. | Integer    | 0   | 2                | 0                |                |
+| person     | gender\\_source\\_concept\\_id | A foreign key to the gender concept that refers to the code used in the source.                            | Integer    | 0   | 3                | 0                |                |
 
 #### Sample Explanation of Tables from the PEDSnet Data Contribution
 
@@ -808,9 +808,9 @@ Below are the fields often included in your data dictionaries. Only a few are co
 
 | name             | description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| adt\_occurrence   | The adt\_occurrence table contains information about distinct admission, discharge, or transfer events that occur as part of a clinical visit. The typical use case is to identify portions of an inpatient admission that represent different levels of care or locations within a facility, but it can be used for additional characteristics of a visits (e.g. specialty consultation). The time of each event must fall between the start and end times of the associated visit_occurrence.                                                                                                                                                                                                                                                                                                                                                                    |
-| care\_site        | The Care Site domain contains a list of uniquely identified physical or organizational units where healthcare delivery is practiced (offices, wards, hospitals, clinics, etc.).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| concept\_ancestor | The CONCEPT\_ANCESTOR table is designed to simplify observational analysis by providing the complete hierarchical relationships between Concepts. Only direct parent-child relationships between Concepts are stored in the CONCEPT\_RELATIONSHIP table. To determine higher level ancestry connections, all individual direct relationships would have to be navigated at analysis time. The CONCEPT\_ANCESTOR table includes records for all parent-child relationships, as well as grandparent-grandchild relationships and those of any other level of lineage. Using the CONCEPT\_ANCESTOR table allows for querying for all descendants of a hierarchical concept. For example, drug ingredients and drug products are all descendants of a drug class ancestor. This table is entirely derived from the CONCEPT, CONCEPT\_RELATIONSHIP and RELATIONSHIP tables. |
+| adt\\_occurrence   | The adt\\_occurrence table contains information about distinct admission, discharge, or transfer events that occur as part of a clinical visit. The typical use case is to identify portions of an inpatient admission that represent different levels of care or locations within a facility, but it can be used for additional characteristics of a visits (e.g. specialty consultation). The time of each event must fall between the start and end times of the associated visit_occurrence.                                                                                                                                                                                                                                                                                                                                                                    |
+| care\\_site        | The Care Site domain contains a list of uniquely identified physical or organizational units where healthcare delivery is practiced (offices, wards, hospitals, clinics, etc.).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| concept\\_ancestor | The CONCEPT\\_ANCESTOR table is designed to simplify observational analysis by providing the complete hierarchical relationships between Concepts. Only direct parent-child relationships between Concepts are stored in the CONCEPT\\_RELATIONSHIP table. To determine higher level ancestry connections, all individual direct relationships would have to be navigated at analysis time. The CONCEPT\\_ANCESTOR table includes records for all parent-child relationships, as well as grandparent-grandchild relationships and those of any other level of lineage. Using the CONCEPT\\_ANCESTOR table allows for querying for all descendants of a hierarchical concept. For example, drug ingredients and drug products are all descendants of a drug class ancestor. This table is entirely derived from the CONCEPT, CONCEPT\_RELATIONSHIP and RELATIONSHIP tables. |
 
     `)
   } else send.clear()
