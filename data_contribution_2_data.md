@@ -92,7 +92,7 @@ The Project Template offers an easy to use and flexible structure for organizing
 <div class = "learn-more">
 <b style="color: rgb(var(--color-highlight));">Learning connection</b><br>
 
-The Project Template is useful in creating reproduceable, generalized and reuseable research. To learn more about reproduceable, generalized and reuseable principles in research, check out the [following module](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/reproducibility/reproducibility.md#1) from the Arcus Education team.
+The Project Template is useful in creating reproducible, generalized and reuseable research. To learn more about reproducible, generalized and reuseable principles in research, check out the [following module](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/reproducibility/reproducibility.md#1) from the Arcus Education team.
 
 </div>
 
@@ -126,28 +126,28 @@ Arcus's goal for research data management and the project template is to provide
 
 **How was this structure developed?**
 
-The CHOP project template file directory structure was adapted from [DrivenData’s Cookiecutter Data Science template](https://cookiecutter.readthedocs.io/en/stable/). It was adapted by former Arcus Digital Archivist, Christiana Dobrzynski, and former CHOP Bioinformaticist, Perry Evans. Both Arcus’s and DrivenData’s templates aim to organize research data and tools for accuracy and reproducibility. See [DataDriven's introduction](http://drivendata.github.io/cookiecutter-data-science/) to learn more about the goals and purpose of project template structures for data preservation and sharing.
+The CHOP project template file directory structure was adapted from [DrivenData’s Cookiecutter Data Science template](https://cookiecutter.readthedocs.io/en/stable/). It was adapted by former Arcus Digital Archivist, Christiana Dobrzynski, and former CHOP Bioinformatician, Perry Evans. Both Arcus’s and DrivenData’s templates aim to organize research data and tools for accuracy and reproducibility. See [DataDriven's introduction](http://drivendata.github.io/cookiecutter-data-science/) to learn more about the goals and purpose of project template structures for data preservation and sharing.
 
-The CHOP project template evolved through iterations and feedback from CHOP researchers. A multi-disciplinary groups of practicioners were consulted in the template adaptation development, including:
+The CHOP project template evolved through iterations and feedback from CHOP researchers. A multi-disciplinary groups of practitioners were consulted in the template adaptation development, including:
 
 - Bioinformatics
 - Cancer research
 - Microbiome center
 - Research IT
-- Clinical sequening unit
+- Clinical sequencing unit
 - Medical Informatics Unit
 
 **How is the Project Template used at Arcus?**
 
-The Project Template prioritizes streamlined archiving and reproducible research pathways. It archives a wide range of research types from the Research Institute, making them discoverable through tools like Arcus Cohort Discovery, available as an application [on the Arcus website](https://arcus.chop.edu), [Gene](https://chop.alationcloud.com), and Omics Variant Browser, (available as an application [on the Arcus website](https://arcus.chop.edu)). The Project Template facilitates organizing diverse research data in a single directory structure, enabling automated archiving, metadata management, and data delivery throughout the research data lifecycle. This file directory structure is used for the entire lifecycle of research data within Arcus:
+The Project Template prioritizes streamlined archiving and reproducible research pathways. It archives a wide range of research types from the Research Institute, making them discoverable through tools like Arcus Cohort Discovery, available as an application [on the Arcus website](https://arcus.chop.edu), [Gene](https://chop.alationcloud.com), and the Arcus Variant Browser, (available as an application [on the Arcus website](https://arcus.chop.edu)). The Project Template facilitates organizing diverse research data in a single directory structure, enabling automated archiving, metadata management, and data delivery throughout the research data lifecycle. This file directory structure is used for the entire lifecycle of research data within Arcus:
 
-![Flowchart of the lifecycle of research data organized in the project template in Arcus. The main steps are delivering research data into Arcus labs in the project tempalte structure, automated processing to archive the data, and redelivery of that data into an Arcu lab for reuse.](media/project_template/ProjectTemplate_Lifecycle.png)
+![Flowchart of the lifecycle of research data organized in the project template in Arcus. The main steps are delivering research data into Arcus labs in the project template structure, automated processing to archive the data, and redelivery of that data into an Arcus lab for reuse.](media/project_template/ProjectTemplate_Lifecycle.png)
 
 The project template provides a shared structure so that institutional knowledge previously held locally by various members of the data creation team becomes centralized.
 
 The utility of [the project template](https://github.research.chop.edu/arcus/rdm-project-template) for lab drive organization and integration with the Arcus archives is summarized in the graphic below.
 
-![Flow chart of the workflow of archiving research data using the project template. The main steps are Organizing the file system, adding the research data, applying a standard piepline, and automated Arcus data ingest](media/project_template/ProjectTemplate_workflow.png)
+![Flow chart of the workflow of archiving research data using the project template. The main steps are Organizing the file system, adding the research data, applying a standard pipeline, and automated Arcus data ingest](media/project_template/ProjectTemplate_workflow.png)
 
 ## Project Template
 
@@ -164,25 +164,25 @@ The project template structure includes directories for capturing three major as
 
 Below is an image of the entire Project Template Directory, with more detail about each section:
 
-![Graphic respresentation of the Project template with a short explanation of all the different sections. These sections are described in detail later in this module.](media/project_template/ProjectTemplate_Description.png)
+![Graphic representation of the Project template with a short explanation of all the different sections. These sections are described in detail later in this module.](media/project_template/ProjectTemplate_Description.png)
 
 ### Research Data
 
-The Project Template brings together three categories of information: Research Data, Access Tools and Contextual files. Research data is the actual data collected during the course of research processes used for analysis. The manifests describe this data, crosswalking files to participants. Research data (with manifests) is the mininum required information for all Arcus data contributions.
+The Project Template brings together three categories of information: Research Data, Access Tools and Contextual files. Research data is the actual data collected during the course of research processes used for analysis. The manifests describe this data, crosswalking files to participants. Research data (with manifests) is the minimum required information for all Arcus data contributions.
 
-![Graphic respresentation of the Project template highlighting the research data directories described above. Research data directories are data and manifests.](media/project_template/research_data.png)
+![Graphic representation of the Project template highlighting the research data directories described above. Research data directories are data and manifests.](media/project_template/research_data.png)
 
 ### Access Tools
 
 Access Tools are the code used to do the analysis. This can include machine models, scripts and Jupyter notebooks.
 
-![Graphic respresentation of the Project template highlighting the access tool directories, models and src. Subdirectories of src are notebooks, rules, scripts and tests.](media/project_template/access_tools.png)
+![Graphic representation of the Project template highlighting the access tool directories, models and src. Subdirectories of src are notebooks, rules, scripts and tests.](media/project_template/access_tools.png)
 
 ### Contextual Files
 
 Contextual Files provide information needed to understand the data and analysis. This can include omics protocols, data dictionaries, reports and diagrams.
 
-![Graphic respresentation of the Project template highlighting the contextual files directories, configs, references, reports and requirements.](media/project_template/contextual_files.png)
+![Graphic representation of the Project template highlighting the contextual files directories, configs, references, reports and requirements.](media/project_template/contextual_files.png)
 
 ## Project Template Directories
 
@@ -190,7 +190,7 @@ The next part of this module will walk through each sub-directory of the project
 
 ### File Naming and File Type Standards
 
-Regardless of project type, Arcus follows industry standard guidelines for digital archiving applying these standrds to incoming data contributions. File names should follow a consistent and clear schema, and not contain any spaces, periods or special characters. Further recommendations for filenaming are below:
+Regardless of project type, Arcus follows industry standard guidelines for digital archiving applying these standards to incoming data contributions. File names should follow a consistent and clear schema, and not contain any spaces, periods or special characters. Further recommendations for file naming are below:
 
 - [File naming tips sheet](https://storage.googleapis.com/arcus-edu-libsci/Arcus%20RDM%20Resources/fileNaming_bestPractices_MIT.pdf)
 - [File naming conventions and activity sheet](https://storage.googleapis.com/arcus-edu-libsci/Arcus%20RDM%20Resources/arcus_rdm_filenaming_activity.pdf)
@@ -243,7 +243,7 @@ try {
     send.liascript(`## Omics Data
 
 
-![Gif showing omics data arrnaged in the raw directory. Read files (cram/fastq/bam) are stored in data/raw.](media/project_template/raw_omics.gif)
+![Gif showing omics data arranged in the raw directory. Read files (cram/fastq/bam) are stored in data/raw.](media/project_template/raw_omics.gif)
 
 For omics data, the raw folder contains the sequencing data. Most sequencing providers will generate a [**fastq**](https://maq.sourceforge.net/fastq.shtml) file or [**cram**](https://samtools.github.io/hts-specs/CRAMv3.pdf) file, we prefer these file types for archiving. These files contain genomic sequences called reads. With paired reads, there are two fastq files per sample. Cram files are single files aligned to a reference genome.
 
@@ -272,7 +272,7 @@ For a registry, database, or any other type of clinical dataset the raw data wil
 
 **Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
 
-- Clinical data is often delivered to users in the BigQuery format to optimize search capabilities and performance. This data is accessed using SQL pad, which is preloaded into the lab. For Electronic Health Record (EHR) data, we have an existing workflow with the Arcus Data Repository (ADR) team for preseving work in this format.
+- Clinical data is often delivered to users in the BigQuery format to optimize search capabilities and performance. This data is accessed using SQL pad, which is preloaded into the lab. For Electronic Health Record (EHR) data, we have an existing workflow with the Arcus Data Repository (ADR) team for preserving work in this format.
 
 <div class = "important">
 <b style="color: rgb(var(--color-highlight));">Important note</b><br>
@@ -322,7 +322,7 @@ try {
     send.liascript(`
     ## Omics Data
 
-![Gif showing omics data arranged in the interim directory. Metrics and reports (recalibration reorts and QC metrics) produced as part of a bioinformatics analysis workflow stored in data/interim.](media/project_template/interim_omics.gif)
+![Gif showing omics data arranged in the interim directory. Metrics and reports (recalibration reports and QC metrics) produced as part of a bioinformatics analysis workflow stored in data/interim.](media/project_template/interim_omics.gif)
 
 This directory is for the quality control and other reporting created during a bioinformatics workflow, using the sequence files stored in the \\_data/raw\\_ directory.
 
@@ -341,7 +341,7 @@ try {
     ## Clinical Data
 ![Gif showing clinical data arranged in the interim directory. Scratch or alternatively formatted data (CSV/JSON/XML or similar) created during analysis or sharing stored in data/interim.](media/project_template/interim_clinical.gif)
 
-This directory is for practice work generated during clincal research when analyzing and sharing original, unmodified data saved in \\_data/raw\\_. This can provide be a good insight into the research process and will be archived on a case by case basis. Additionaly, alternatively formatted data, or excluded data can be saved in the interim directory. Data should be saved as a tsv, csv, xml or json file if possible.
+This directory is for practice work generated during clinical research when analyzing and sharing original, unmodified data saved in \\_data/raw\\_. This can provide be a good insight into the research process and will be archived on a case by case basis. Additionally, alternatively formatted data, or excluded data can be saved in the interim directory. Data should be saved as a tsv, csv, xml or json file if possible.
     `)
   } else send.clear()
 } catch(e) { }
@@ -370,12 +370,12 @@ try {
     send.liascript(`
     ## Omics Data
 
-![Gif showing omics data arranged in the endpoints directory. Gene sequence variantion files (vcf or gvcf) created using a bioinformatics workflow stored in data/endpoints.](media/project_template/endpoints_omics.gif)<!-- style = "max-height: 500px;" -->
+![Gif showing omics data arranged in the endpoints directory. Gene sequence variation files (vcf or gvcf) created using a bioinformatics workflow stored in data/endpoints.](media/project_template/endpoints_omics.gif)<!-- style = "max-height: 500px;" -->
 
 This directory is for files created at the end of a bioinformatics workflow, like gvcf and vcf files.
 
 - **gvcf** files contain variant information, describing genomic regions with no variants for a single sample. They are used to compare variant calls across samples to make vcf files. We collect them to enable the easy construction of larger cohorts. We collect the compressed version of a gvcf file (g.vcf.gz) which can be made with a lossless compression utility tool like [gzip](https://www.gzip.org). All gvcf files should include an index file, .tbi
-- **vcf** files usually contain multiple samples, and are the starting point for most reserach project's analysis. They are not appropriate for constructing cohorts from multiple projects because they are missing necessary information contained in the gvcf files. We collect the compressed version of a vcf file (vcf.gz), which can be made with a lossless compression utility tool like [gzip](https://www.gzip.org). The variant calls in these files might differ from those in a gvcf file because they are made by considering information from all samples. A researcher would want to use these files when considering each project separately. All vcf files should include an index file, .tbi
+- **vcf** files usually contain multiple samples, and are the starting point for most research project's analysis. They are not appropriate for constructing cohorts from multiple projects because they are missing necessary information contained in the gvcf files. We collect the compressed version of a vcf file (vcf.gz), which can be made with a lossless compression utility tool like [gzip](https://www.gzip.org). The variant calls in these files might differ from those in a gvcf file because they are made by considering information from all samples. A researcher would want to use these files when considering each project separately. All vcf files should include an index file, .tbi
 
     `)
   } else send.clear()
@@ -405,7 +405,7 @@ This directory contains an analyzed version of a dataset or deidentified dataset
 
 ### data/ref-data
 
-This directory is for any external or public datasets not created by the study team neccessary to understand or repeat the anlysis for the project.
+This directory is for any external or public datasets not created by the study team necessary to understand or repeat the analysis for the project.
 
 **Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
 
@@ -425,7 +425,7 @@ try {
     send.liascript(`
     ## Omics Data
 
-- As cram files are a compressed format, some information is needed as a seperate file. If possible we collect a fasta file for the reference genome used. The fasta file describes offsets for each contig, to compute exactly where to find a particular reference base at specific genomic coordinates. Each fasta file requires an index file as fasta.fai
+- As cram files are a compressed format, some information is needed as a separate file. If possible we collect a fasta file for the reference genome used. The fasta file describes offsets for each contig, to compute exactly where to find a particular reference base at specific genomic coordinates. Each fasta file requires an index file as fasta.fai
 - bed files are a text file format used to store genomic regions as coordinates and associated annotations, see [documentation](https://samtools.github.io/hts-specs/BEDv1.pdf) for more information on the format. If available, we collect this file as a .bed extension.
 
 
@@ -460,7 +460,7 @@ Manifests are an inventory of all data in the collection, and provide a mapping 
 
 - file_manifest.csv
 - participant_manifest.csv
-- partcipant-crosswalk.txt
+- participant-crosswalk.txt
 
 Additional manifests are only required if needed for the data or collection type. These files are detailed in the next sections. The graphic below illustrates the linking between the files:
 
@@ -497,12 +497,12 @@ For Omics data, the **file\\_manifest.csv** matches biosample IDs to data files 
 
 | column                  | definition                                                                                                                                                                                                                                                                                                                       | type   |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
-| biosample_id            | This ID links to PARTICIPANT_MANIFEST.                                                                                                                                                                                                                                                                                           | String |
-| file_type               | Each experiment template has a list of required file types. Use those terms.                                                                                                                                                                                                                                                     | String |
+| biosample\\_id            | This ID links to PARTICIPANT\\_MANIFEST.                                                                                                                                                                                                                                                                                           | String |
+| file\\_type               | Each experiment template has a list of required file types. Use those terms.                                                                                                                                                                                                                                                     | String |
 | protocol                | Each experiment template has protocol yaml files or capture kit information used to describe experiment metadata. This column points to the file path of the protocol or the capture kit information for this file. Paths should start with references/procotols/ or data/ref-data/platform-data                                 | String |
-| file_path               | Use one file path per row. It should start with data/.                                                                                                                                                                                                                                                                           | String |
-| file_groups             | Files in the same group are related. Paired fastq files belong in the same group. A bam file and its index belong in the same group. Plink bfiles belong in the same group.                                                                                                                                                      | String |
-| derived\_from\_file\_group | This column describes relations between file groups. We want to capture consecutive pipeline steps. For example, a bam file is derived from a paired fastq group. Use the name of the file_groups used to construct this file. Delimit multiple groups with a semicolon. Use NA when there are no prior step files to reference. | String |
+| file\\_path               | Use one file path per row. It should start with data/.                                                                                                                                                                                                                                                                           | String |
+| file\\_groups             | Files in the same group are related. Paired fastq files belong in the same group. A bam file and its index belong in the same group. Plink files belong in the same group.                                                                                                                                                      | String |
+| derived\\_from\\_file\\_group | This column describes relations between file groups. We want to capture consecutive pipeline steps. For example, a bam file is derived from a paired fastq group. Use the name of the file_groups used to construct this file. Delimit multiple groups with a semicolon. Use NA when there are no prior step files to reference. | String |
 
 
     `)
@@ -522,9 +522,9 @@ Since clinical research efforts don't always collect biospecimen data, the colum
 
 | column                  | definition                                                                                                                                                                                                                                                                                                                       | type   |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
-| biosample_id            | This ID links to PARTICIPANT_MANIFEST.                                                                                                                                                                                                                                                                                           | String |
-| file_type               | Each experiment template has a list of required file types. Use those terms.   | String |
-| file_path               | Use one file path per row. It should start with data/.                         | String |
+| biosample\\_id            | This ID links to PARTICIPANT\\_MANIFEST.                                                                                                                                                                                                                                                                                           | String |
+| file\\_type               | Each experiment template has a list of required file types. Use those terms.   | String |
+| file\\_path               | Use one file path per row. It should start with data/.                         | String |
 
     `)
   } else send.clear()
@@ -557,7 +557,7 @@ The **participant\\_manifest.csv** matches participants (or patients) to cohorts
 | column               | definition                                                                                                                    | type   |
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------ |
 | local\\_participant\\_id | This ID uniquely defined a person, and can be linked to an MRN.                                                               | String |
-| cohort               | Use this column to group participants into cohorts that will be cwopared (For example, case vs healthy control).              | String |
+| cohort               | Use this column to group participants into cohorts that will be compared (For example, case vs healthy control).              | String |
 | biosample\\_id         | Ideally, this ID can link to the CHOP biobank. When this is not possible, use the sample ID from your project.                | String |
 | family\\_id            | When participants are related, use family_id to group related participants. With trios or duos, the proband ID is often used. | String |
 | family\\_role          | Use a term from [eHB\\_relationship\\_types\\_as\\_of\\_10\\_30.json](https://github.research.chop.edu/arcus/rdm-project-template/blob/master/manifests/data_dicts/eHB_relationship_types_as_of_10_30.json) to indicate mother, father, proband, sister, etc..                    | String |
@@ -611,7 +611,7 @@ The **participant\_family\_role.csv** file is only needed for some omics data. I
 | participant1         | participant4      | biological sister    |
 | participant4         | participant1      | biological brother   |
 
-| column               | defintion                                                                                                             | type   |
+| column               | definition                                                                                                             | type   |
 | -------------------- | --------------------------------------------------------------------------------------------------------------------- | ------ |
 | local\_participant\_id | The local id of a participant.                                                                                        | String |
 | local\_relative\_id    | The local id of a relative to the participant.                                                                        | String |
@@ -665,7 +665,7 @@ For each script/notebook in *src/*, and each model in *models/*, there should be
 
 | column                | definition                                                                                                                                                                                                                                                                          | type   |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
-| programming\_filegroup | Enter the highest level folder that the environment file relates to. If the file relates to an entire directory then put the whole directory file path. If the file relates to a suddirectory enter that filepath. If it relates to a single file enter the file path and filename. | String |
+| programming\_filegroup | Enter the highest level folder that the environment file relates to. If the file relates to an entire directory then put the whole directory file path. If the file relates to a subdirectory enter that filepath. If it relates to a single file enter the file path and filename. | String |
 | related\_environment   | Enter the environment filename. Some environment files will be entered multiple times as they relate to multiple files.                                                                                                                                                             | String |
 |                       |
 
@@ -696,7 +696,7 @@ try {
   if(data_type[0]) {
     send.liascript(`## Omics Data
 
-[Workflow Development Language](https://terra.bio/deciphering-a-mystery-workflow-written-in-wdl/) or WDL and [Common Workflow Language](https://www.commonwl.org) or CWL are open standard tools for managing computionally intensive bioinformatics workflows. These are not definitionally programming languages but more clearly and interoperably explain parameters for running complex omics command line operations across bioinformatics pipelines. WDL and CWL are commonly used in bioinformatics pipelines to describe and share data processing and analysis workflows. For example, the diagram below displays a Genomic Data Commons Pipeline that converts reads (CRAM or BAM) to FASTQ and (re)aligns them to the latest human reference genome.
+[Workflow Development Language](https://terra.bio/deciphering-a-mystery-workflow-written-in-wdl/) or WDL and [Common Workflow Language](https://www.commonwl.org) or CWL are open standard tools for managing computationally intensive bioinformatics workflows. These are not definitionally programming languages but more clearly and interoperably explain parameters for running complex omics command line operations across bioinformatics pipelines. WDL and CWL are commonly used in bioinformatics pipelines to describe and share data processing and analysis workflows. For example, the diagram below displays a Genomic Data Commons Pipeline that converts reads (CRAM or BAM) to FASTQ and (re)aligns them to the latest human reference genome.
 
 ![Genomic Data Commons Pipeline that converts reads (CRAM or BAM) to FASTQ and (re)aligns them to the latest human reference genome ](media/sample_gatk_WDL.png)
 
@@ -714,12 +714,12 @@ try {
   if(data_type[1]) {
     send.liascript(`## Clinical Data
 
-Reproducibility in research is a major goal of the Arcus program and organizing and documentating code so that it can be used beyond the confines of the originally collected dataset is critical to achieving this aim. See the [DART Module on Reproducibility in Research](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/reproducibility/reproducibility.md#5) for more information on this topic. Below are some examples of the type of information commonly saved in the _src/_ directory:
+Reproducibility in research is a major goal of the Arcus program and organizing and documenting code so that it can be used beyond the confines of the originally collected dataset is critical to achieving this aim. See the [DART Module on Reproducibility in Research](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/reproducibility/reproducibility.md#5) for more information on this topic. Below are some examples of the type of information commonly saved in the _src/_ directory:
 
 - History of saved queries in SQLPad can be extracted directly from the sqlite database into the _src/scripts_ directory
 - Code written in the command line interface can be saved in the _src/scripts_ directory
 - Work done in the R or Jupyter notebook applications can be saved in _src/notebooks_ directory
-- Though Arcus preferes to archive non-proprietary filetypes, some common data analysis programs are not easily exported out of their proprietary formats, such as Stata or SAS. If you work in Stata or SAS, a non propriterary text version of your .dta or .SAS file can be saved in the src folder so that your analysis workflow can be accessed and interpreted by a secondary user. Additionaly for Sata and SAS analysis, if possible export the workflow steps as a txt file.
+- Though Arcus prefers to archive non-proprietary filetypes, some common data analysis programs are not easily exported out of their proprietary formats, such as Stata or SAS. If you work in Stata or SAS, a non proprietary text version of your .dta or .SAS file can be saved in the src folder so that your analysis workflow can be accessed and interpreted by a secondary user. Additionally for Sata and SAS analysis, if possible export the workflow steps as a txt file.
 
     `)
   } else send.clear()
@@ -728,7 +728,7 @@ Reproducibility in research is a major goal of the Arcus program and organizing 
 
 ## models/
 
-The models directory is for saving any type of machine learning models, model predictions, model summaries, datasheets for model training data. Please consult with the Library Science team on your specific model type for more information about formats and directory structure for archiving.
+The models directory is for saving any type of machine learning models, model predictions, model summaries, data sheets for model training data. Please consult with the Library Science team on your specific model type for more information about formats and directory structure for archiving.
 
 ## references/
 
@@ -810,7 +810,7 @@ Below are the fields often included in your data dictionaries. Only a few are co
 | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | adt\\_occurrence   | The adt\\_occurrence table contains information about distinct admission, discharge, or transfer events that occur as part of a clinical visit. The typical use case is to identify portions of an inpatient admission that represent different levels of care or locations within a facility, but it can be used for additional characteristics of a visits (e.g. specialty consultation). The time of each event must fall between the start and end times of the associated visit_occurrence.                                                                                                                                                                                                                                                                                                                                                                    |
 | care\\_site        | The Care Site domain contains a list of uniquely identified physical or organizational units where healthcare delivery is practiced (offices, wards, hospitals, clinics, etc.).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| concept\\_ancestor | The CONCEPT\\_ANCESTOR table is designed to simplify observational analysis by providing the complete hierarchical relationships between Concepts. Only direct parent-child relationships between Concepts are stored in the CONCEPT\\_RELATIONSHIP table. To determine higher level ancestry connections, all individual direct relationships would have to be navigated at analysis time. The CONCEPT\\_ANCESTOR table includes records for all parent-child relationships, as well as grandparent-grandchild relationships and those of any other level of lineage. Using the CONCEPT\\_ANCESTOR table allows for querying for all descendants of a hierarchical concept. For example, drug ingredients and drug products are all descendants of a drug class ancestor. This table is entirely derived from the CONCEPT, CONCEPT\_RELATIONSHIP and RELATIONSHIP tables. |
+| concept\\_ancestor | The CONCEPT\\_ANCESTOR table is designed to simplify observational analysis by providing the complete hierarchical relationships between Concepts. Only direct parent-child relationships between Concepts are stored in the CONCEPT\\_RELATIONSHIP table. To determine higher level ancestry connections, all individual direct relationships would have to be navigated at analysis time. The CONCEPT\\_ANCESTOR table includes records for all parent-child relationships, as well as grandparent-grandchild relationships and those of any other level of lineage. Using the CONCEPT\\_ANCESTOR table allows for querying for all descendants of a hierarchical concept. For example, drug ingredients and drug products are all descendants of a drug class ancestor. This table is entirely derived from the CONCEPT, CONCEPT\\_RELATIONSHIP and RELATIONSHIP tables. |
 
     `)
   } else send.clear()
@@ -819,7 +819,7 @@ Below are the fields often included in your data dictionaries. Only a few are co
 
 ## reports/
 
-The reports directory holds published papers and content used for producing papers, presentations, websites, metrics, etc. It can additionaly hold the following information:
+The reports directory holds published papers and content used for producing papers, presentations, websites, metrics, etc. It can additionally hold the following information:
 
 - Figures & tables: generated metrics and graphics for supporting reports
 - Log.md: computational notebook (if one was used to create the content)
