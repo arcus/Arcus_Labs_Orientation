@@ -224,7 +224,7 @@ Before transferring any data, the Digital Archivist will manage the process of: 
 
 ### Scope of Contribution
 
-Arcus has standards for contributing data that require some remediation. This is covered in the the second module of this series focused on the [Project Template Directory Structure](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/data_contribution_2_data.md#1) we go into the data preparation workflow in greater detail. If your research is deliberately phased or continually enrolls participants, we can establish a plan of work and cadence for your data submissions.
+Arcus has standards for contributing data that require some remediation. This is covered in the the second module of this series focused on the [Project Template Directory Structure](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/data_contribution_2_data.md#1) that covers the data preparation workflow in greater detail. If your research is deliberately phased or continually enrolls participants, we can establish a plan of work and cadence for your data submissions.
 
 Data generated in the course of CHOP research will be archived in approved formats, including, but not limited to:
 
