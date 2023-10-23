@@ -102,28 +102,21 @@ This example will be a trio exome; that is, whole-exome sequencing of a proband 
 In order to discover variants, we will work through a pipeline that begins with very raw sequencing data (FASTQ/CRAM/BAM) and ends with a table of possible variants (VCF/CSV). The essential rationale behind this extensive workflow is that the overwhelming majority of deviations from the reference genome are false positives, and by using measured confidence at every step of the process, we can eliminate most of these false positives at different stages.
 
 The key steps in this process are as follows:
-1. Procure raw data for processing
-2. Map raw sequences to a reference
-3. Detect variants
-4. Filter for likely real variants
-5. Annotate and filter further to identify possibly causative variant(s)
 
-1. Procure raw data for processing
-First, we will realign the exomes. The data we received is in CRAM format, which is already aligned to a reference genome. First, we will realign the exomes. We will decompress the CRAM files to obtain BAM files and de-align these to retrieve the original raw FASTQ files, which will be the starting point for the pipeline.
+1. **Procure raw data for processing**: First, we will realign the exomes. The data we received is in CRAM format, which is already aligned to a reference genome. First, we will realign the exomes. We will decompress the CRAM files to obtain BAM files and de-align these to retrieve the original raw FASTQ files, which will be the starting point for the pipeline.
 
-2. Map raw sequences to a reference
-Next, we will align the raw sequence reads (FASTQ) to the reference genome, with a few extra quality-control steps to prepare for more accurate variant calling. The prepared file will be in BAM format.
+2. **Map raw sequences to a reference**: Next, we will align the raw sequence reads (FASTQ) to the reference genome, with a few extra quality-control steps to prepare for more accurate variant calling. The prepared file will be in BAM format.
 
-3. Detect actual variants
-We will obtain variant calls for every position where something differs from the reference as per our generated BAM file. Then, we will compute how many copies of the variant, if any, each family member likely has, resulting in a VCF.
+3. **Detect variants**: We will obtain variant calls for every position where something differs from the reference as per our generated BAM file. Then, we will compute how many copies of the variant, if any, each family member likely has, resulting in a VCF.
 
-4. Filter for likely real variants
-We will use quality measures for each variant call to filter and label the variants which are high confidence, along with a few adjustment steps to prepare for annotation and possible identification of a causative variant.
+4. **Filter for likely real variants**: We will use quality measures for each variant call to filter and label the variants which are high confidence, along with a few adjustment steps to prepare for annotation and possible identification of a causative variant.
 
-5. Annotate and filter further to identify possibly causative variant(s)
-From the fully processed VCF file, we will label variants with useful information, such as genes they are located in and frequencies in population databases. We will also compute whether each variant in the proband is inherited from the mother, father, or neither (de novo). This will allow us to filter and search for variants more meaningfully, hopefully revealing a causative variant for the proband’s neurodevelopmental disorder.
+5. **Annotate and filter further to identify possibly causative variant(s)**: From the fully processed VCF file, we will label variants with useful information, such as genes they are located in and frequencies in population databases. We will also compute whether each variant in the proband is inherited from the mother, father, or neither (de novo). This will allow us to filter and search for variants more meaningfully, hopefully revealing a causative variant for the proband’s neurodevelopmental disorder.
 
-This workflow is run primarily with command line tools using bash scripting. In order to make the exome data accessible to typical computational environments, we will work only with one chromosome, chromosome 2. We supply two folders. The first, raw_cram, stores the original CRAM files and associated index files for each of the family members. The second, ref_files, has all the accompanying files that will be necessary at different steps of the pipeline.
+
+This workflow is run primarily with command line tools using bash scripting. In order to make the exome data accessible to typical computational environments, we will work only with one chromosome, chromosome 2. We supply two folders. The first, `raw_cram`, stores the original CRAM files and associated index files for each of the family members. The second, `ref_files`, has all the accompanying files that will be necessary at different steps of the pipeline.
+
+### Obtaining FASTQ from CRAM files
 
 We’ll now take the first step to obtain our FASTQ files. If you’re wondering why we bother going “backwards” from data that are already aligned, that’s a totally fair question! We choose to realign for the following reasons:
 
@@ -210,6 +203,8 @@ done
 
 As always, it’s nice to check the output here!
 
+### Sorting and Recalibration
+
 There are two more operations to carry out for our BAM files to be optimally ready for variant calling: we need to coordinate-sort the file and then recalibrate the base quality scores.
 
 Our newly aligned BAM file has reads in a certain order. Sequencers will cover the same region of the genome with several reads of varying lengths, starting positions, and ending positions. These overlapping reads are typically not output in “order” by position in the genome. It is helpful to sort the reads in our alignment map by the leftmost (5’-most) coordinate for one key reason: indexing. Indexing is necessary for many programs to use BAM files as inputs. This is because they need to quickly access the file’s contents without going through the entire massive alignment map every time. So, if we want to visualize or call variants, we need to index by position—which requires first that the BAM file be organized by position, i.e., coordinate- sorted!
@@ -225,7 +220,7 @@ samtools index FAM1${i}.sorted.bam
 done
 ```
 
-The next step is to recalibrate the base quality scores. Base quality score recalibration (BQSR) is a deep topic to discuss. The GATK website discusses this at length and is highly [interesting reading](https://gatk.broadinstitute.org/hc/en-us/articles/360035890531-Base-Quality-Score-Recalibration-BQSR-), but we will only briefly summarize the idea here. Essentially, base quality scores can suffer from bias. Recall that BQ scores are part of our raw sequence data and represent the sequencer’s confidence that a given base was correctly called. BQSR analyzes the entire set of BQ scores to assess what factors of the sequence might contribute to a sequencer being over- or under-confident in its calls. This produces a table, which it uses to adjust these scores up or down accordingly. By mitigating sequencer bias, BQSR makes it more likely that variants we call going forward are genuine and unbiased. We use two lines of code for BQSR, one to generate the recalibration table and one to transform the actual scores:
+The next step is to recalibrate the base quality scores. [Base quality score recalibration (BQSR)](https://gatk.broadinstitute.org/hc/en-us/articles/360035890531-Base-Quality-Score-Recalibration-BQSR-) is a deep topic to discuss. The GATK website discusses this at length and is highly interesting reading, but we will only briefly summarize the idea here. Essentially, base quality scores can suffer from bias. Recall that BQ scores are part of our raw sequence data and represent the sequencer’s confidence that a given base was correctly called. BQSR analyzes the entire set of BQ scores to assess what factors of the sequence might contribute to a sequencer being over- or under-confident in its calls. This produces a table, which it uses to adjust these scores up or down accordingly. By mitigating sequencer bias, BQSR makes it more likely that variants we call going forward are genuine and unbiased. We use two lines of code for BQSR, one to generate the recalibration table and one to transform the actual scores:
 
 ```
 #!/bin/bash
