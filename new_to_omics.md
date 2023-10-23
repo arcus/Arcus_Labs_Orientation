@@ -6,112 +6,92 @@ title: Arcus Labs Orientation
 
 # Arcus Omics Guide to Exome Analysis
 
-Shridhar can we write a short summary of this document? 
+So you’ve got an Arcus lab and an exome sequence! Maybe even several. But how do you find “real” variants among the maze of gigabytes of A, T, C, and G?
 
-## Audience
+In this guide, we will explore how to prepare and analyze whole-exome sequencing data to identify sequence variants. We will use an example to walk through the analysis pipeline step by step with the goal of identifying a disease-causing variant. The same basic workflows and principles can apply to other sequencing data as well, including panel data, whole-genome or RNAseq data.
 
-The aim of this training is to bring researchers at the Children's Hospital of Philadelphia up to speed fast on:
+You may find it helpful to refresh, review, or introduce yourself to some of the fundamentals, including [DNA and sequencing methods](https://github.com/shiva-g/arcus_omics_edu/blob/main/media/AOS_PMBIO_Module02_Inputs_subset.pdf) (adapted from [this guide provided by the Griffith Lab](https://pmbio.org/course/#module-02-inputs/)).
 
-* What an Arcus lab is
-* What the Arcus Lab includes
+## Introduction
 
-This training module will be useful for you whether you already have an Arcus Lab as part of an Arcus Scientific Project or you're just getting to know what the various Arcus tools are. 
+When working with DNA sequences, you often need different information for different tasks. For example, you might want or need the original data without adulteration-- the raw sequence, usually along with information about the sequence quality. Then you might need to compare that sequence to a reference in order to find places where your sequence of interest varies, and so you'll need to generate an alignment map. However, as all of these deviations from the reference sequence are not likely to be "real" genetic variation, we'll need to refine our data further, a process called **variant calling**. Finally, if you want to uncover a disease-causing variant, you'll need to know information like where the variant is and what kind of change it is. 
 
-Some materials here are practical instructions for people who already have Arcus labs, and some materials are introductory and explain what an Arcus lab is.  The table of contents on the left can help you navigate through the materials and allow you to learn just what matters most to you.
+<div class = "important">
+<b style="color: rgb(var(--color-highlight));">Important note</b><br>
 
-<div style = "clear: both;"></div>
+Before working through this module, we would recommend being familiar with the [command line](https://digitalrepository.chop.edu/commandline_computingtools/), as nearly all of this workflow takes place within the terminal. It would also be helpful to know some [R](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_r.md) or [Python](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_python.md) for the final steps of variant discovery. While you will be using reference files and raw data that are in a shared directory within the Arcus lab space, please ensure your working directory is your folder, `/mnt/arcus/lab/users/[username]`. All of your scripts and all files you generate should appear there! We also supply a copy of all intermediate files that you will create during the workflow, although you likely will not need to use them; these are located at `/mnt/arcus/lab/shared/raw_data/intermediate_files`.
 
-### Future Lab Users
+</div>
 
-If you don't have an Arcus Scientific Project with an Arcus Lab and you're just here to browse and learn, welcome! 
+### Sequencing data: FASTA and FASTQ
 
-Here you'll learn about what an Arcus lab is and how to work with it.  But even if you have no interest in an Arcus Lab, this document might be useful.  
+Raw sequencing data typically have two components. First, there’s the sequence itself, or more accurately, many small sequence reads. This is typically formatted as FASTA:
 
-While most of the information here is designed for Arcus Labs, our linked material about various topics like R and SQL is broadly applicable, even to folks who aren't working with Arcus. We hope you find it helpful. 
-
-If you would like to learn more about what Arcus is and what we do, check out the [Arcus website](https://arcus.chop.edu).  We'd also suggest you check out the "New to" documents, which are good for every researcher to learn about:
-
-* [New to data science](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_data_science.md)
-* [New to SQL](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_sql.md)
-* [New to R](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_r.md)
-* [New to Python](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_python.md)
-* [New to version control](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_version_control.md)
-
-
-## Chapter 1 - Introduction
-
-You’ve got an exome sequence! Maybe even several. But how do you find “real” variants among the maze of gigabytes of A, T, C, and G?
-
-Here, we will explore how to handle whole-exome sequencing data and analyze to identify sequence variants. We will use an example to walk through the analysis pipeline step by step with the goal of identifying a disease-causing variant. The same basic workflows and principles can apply to other sequencing data as well, including panel data, whole-genome or RNAseq data.
-
-You may find it helpful to refresh, review, or introduce yourself to some of the fundamentals, including DNA and sequencing methods: ([separate file](https://github.com/shiva-g/arcus_omics_edu/blob/main/media/AOS_PMBIO_Module02_Inputs_subset.pdf), adapted from [Griffith Lab](https://pmbio.org/course/#module-02-inputs/))
-
-When working with DNA sequences, you often need different information for different tasks. For example, you might want or need the original, raw data without adulteration. This typically has two components. First, there’s the sequence itself, or more accurately, many small sequence reads. This is typically formatted as FASTA:
-
-![](media/fasta_screenshot.png)
-
-*Figure 1. A few lines of a FASTA file, which contains raw nucleotide sequences as a string or set of strings, one letter per base.*
+![""](media/fasta_screenshot.png "Figure 1. A few lines of a FASTA file, which contains raw nucleotide sequences as a string or set of strings, one letter per base.")
 
 The second element is quality information. For instance, for every base that the sequencer calls—for every A, T, C, or G in a read—the machine cannot claim to be 100% accurate, and instead measures how confident it is that it has called that base correctly. These base quality scores are historically stored in a QUAL file:
 
-![](media/fasta_qual_screenshot.png)
-
-*Figure 2. A few lines of a QUAL file, which lists base quality (BQ) scores in a sequence for each base in a sequencing read. Reads are demarcated with a header line beginning with “>”.*
+![""](media/fasta_qual_screenshot.png "Figure 2. A few lines of a QUAL file, which lists base quality (BQ) scores in a sequence for each base in a sequencing read. Reads are demarcated with a header line beginning with “>”.")
 
 Usually when handling large sequencing data, both FASTA and QUAL files are merged so that each read and its quality scores are directly associated. This is called a FASTQ file. Sequencing usually includes paired-end reads, where a given fragment of DNA is typically read from both ends instead of just one. Accordingly, there are two reads per fragment in different directions. All reads in one direction are conventionally stored in one FASTQ, and those in the other direction go in a second FASTQ. For example:
 
-![](media/fastq_screenshot.png)
+![""](media/fastq_screenshot.png "Figure 3. A portion of a FASTQ file. Each sequencing read is represented in four lines: (1) a header beginning with “@”, (2) the base calls for that read, (3) a “+” character which is just a separator, and (4) the base quality scores in an encoded format.")
 
-*Figure 3. A portion of a FASTQ file. Each sequencing read is represented in four lines: (1) a header beginning with “@”, (2) the base calls for that read, (3) a “+” character which is just a separator, and (4) the base quality scores in an encoded format.*
+### Alignment maps: SAM, BAM, and CRAM
 
 Having the sequence read along with quality doesn’t help us to infer much from the data. So, the first step we must take is to compare it to a reference. This requires an alignment map. There are three main file formats for alignment maps, all including the same information (a header, individual sequencing reads from your sample, and the reference genome). They are called SAM (sequence alignment map), BAM (binary alignment map), and CRAM (compressed alignment map).
 
 [SAM](https://samtools.github.io/hts-specs/SAMv1.pdf) files are human-readable; that is, if you know what each part of the file means, you can read it line-by-line. A SAM file looks like this:
 
-![](media/sam_screenshot.png)
-
-*Figure 4. A portion of a SAM file, which contains a header followed by lists of mapped reads. Each row includes identifying information, the read sequence and base quality scores, and details about mapping and alignment.*
+![""](media/sam_screenshot.png "Figure 4. A portion of a SAM file, which contains a header followed by lists of mapped reads. Each row includes identifying information, the read sequence and base quality scores, and details about mapping and alignment.")
 
 In contrast, BAM and CRAM files are in binary format. They are legible to the computer but not to us directly—if you tried to open or view a BAM, this is what you’d see:
 
-![](media/bam_binary_screenshot.png)
-
-*Figure 5. A few lines of a raw BAM file, which is in binary format.*
+![""](media/bam_binary_screenshot.png "Figure 5. A few lines of a raw BAM file, which is in binary format.")
 
 But this really does contain the same information. Using some software (which we will discuss later), the BAM or CRAM file can be read or inspected if necessary:
 
-![](media/bam_screenshot.png)
+![""](media/bam_screenshot.png "Figure 6. Part of a BAM file, viewed using the Samtools software, which is identical in format and content to a SAM file.")
 
-*Figure 6. Part of a BAM file, viewed using the Samtools software, which is identical in format and content to a SAM file.*
+### VCFs
 
 Sometimes you might need to look specifically at variant calls. Maybe you need to see the differences between your sample sequence and the reference genome. Alternatively, you might just need a list of known, common variants in the population to use as a reference. For these applications, variants are almost always in [Variant Call Format](https://samtools.github.io/hts-specs/VCFv4.2.pdf) (VCF), a very specific tab- delimited text file. VCFs have a header giving specifications for the contents of the file, and then have a table-like structure where variants are the rows and individuals are the columns, looking something like this:
 
-![](media/vcf_header_screenshot.png)
+![""](media/vcf_header_screenshot.png "Figure 7. A VCF header, including information, definitions, and additional details for the content of every field in the VCF body.")
 
-*Figure 7. A VCF header, including information, definitions, and additional details for the content of every field in the VCF body.*
-
-![](media/vcf_screenshot.png)
-
-*Figure 8. A few lines of the contents of a VCF file. Variants are specified by chromosome, position, reference nucleotide, and alternate allele. For each variant, variant quality, filter details, and numerous additional metrics are also provided in the QUAL, FILTER, INFO, and sample columns.*
+![""](media/vcf_screenshot.png "Figure 8. A few lines of the contents of a VCF file. Variants are specified by chromosome, position, reference nucleotide, and alternate allele. For each variant, variant quality, filter details, and numerous additional metrics are also provided in the QUAL, FILTER, INFO, and sample columns.")
 
 For each variant, the position in the genome, the reference, and the alternate (or mutation) are noted along with additional filtration, quality, format, genotype, and related information. When we encounter VCFs later, we will have a clearer idea of what the most relevant information is.
 
 VCF is also used for a special filetype called a genomic VCF or gVCF, which differs in that there is a row for every single position in the genome, regardless of a variant being detected. In our workflow, we will see that gVCFs also contain some additional confidence measures and information which can be used to obtain a much smaller VCF file that is easier to work with.
 
+### Other file types
+
 A few other files we will encounter along the way are index files with suffixes fai/bai/idx/tbi. These files contain information about corresponding files—FASTA, BAM, VCF, etc.—that allow faster viewing, traversing, and processing these large sequencing files. In fact, many tools often will not function without these index files.
 
 Lastly, a BED file is a tab-delimited file that is used to specify regions of the genome. This has a variety of applications, including telling us what parts of the genome are targeted by the sequencer as exonic regions, and therefore where the “exome” is within the genome. For example:
 
-![](media/bed_screenshot.png)
-
-*Figure 9. Portion of a BED file, which specifies regions of the genome by chromosome, start position, and end position.*
-
-There are also several different software tools that have been developed to work with different genomic data, all run from the [command line](https://digitalrepository.chop.edu/commandline_computingtools/). [Samtools](http://www.htslib.org/) is our main set of programs for working with alignment maps. In order to generate these alignments, we will use [BWA](http://bio-bwa.sourceforge.net/) or the Burrows- Wheeler Aligner software together with [Samblaster](https://github.com/GregoryFaust/samblaster). [PicardTools](https://broadinstitute.github.io/picard/) is another set of command line tools, developed by the Broad Institute in Java, for working with sequencing data. Our standard workflow relies mainly on a suite known as [Genome Analysis ToolKit](https://gatk.broadinstitute.org/) (GATK) developed by the Broad Institute. GATK is based in Java and includes many tools for calling, genotyping, and filtering variants. Finally, the variant output will be processed using [Annovar](https://annovar.openbioinformatics.org/), a tool to annotate variants to better understand their impact. Don’t worry too much about the specifics yet—we will work with features of each of these during our exome tutorial.
-
-Before working through this module, we would recommend being familiar with the [command line](https://digitalrepository.chop.edu/commandline_computingtools/), as nearly all of this workflow takes place within the terminal. It would also be helpful to know some [R](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_r.md) or [Python](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_python.md) for the final steps of variant discovery. While you will be using reference files and raw data that are in a shared directory within the Arcus lab space, please ensure your working directory is your folder, `/mnt/arcus/lab/users/[username]`. All of your scripts and all files you generate should appear there! We also supply a copy of all intermediate files that you will create during the workflow, although you likely will not need to use them; these are located at `/mnt/arcus/lab/shared/raw_data/intermediate_files`.
+![""](media/bed_screenshot.png "Figure 9. Portion of a BED file, which specifies regions of the genome by chromosome, start position, and end position.")
 
 
-## Chapter 2 - Getting Started with Exome
+### Tools
+
+There are also several different software tools that have been developed to work with different genomic data, all run from the [command line](https://digitalrepository.chop.edu/commandline_computingtools/):
+
+- [Samtools](http://www.htslib.org/) is our main set of programs for working with alignment maps.
+
+- In order to generate these alignments, we will use [the Burrows- Wheeler Aligner, or BWA](http://bio-bwa.sourceforge.net/) software together with [Samblaster](https://github.com/GregoryFaust/samblaster).
+
+- [PicardTools](https://broadinstitute.github.io/picard/) is another set of command line tools, developed by the Broad Institute in Java, for working with sequencing data. 
+
+- Our standard workflow relies mainly on a suite known as [Genome Analysis ToolKit](https://gatk.broadinstitute.org/) (GATK) developed by the Broad Institute. GATK is based in Java and includes many tools for calling, genotyping, and filtering variants. 
+
+- Finally, the variant output will be processed using [Annovar](https://annovar.openbioinformatics.org/), a tool to annotate variants to better understand their impact. 
+
+Don’t worry too much about the specifics yet—we will work with features of each of these during our exome tutorial.
+
+
+## Getting Started with Exome
 
 Before we begin the exome analysis tutorial in full force, let’s take a high-level look at our case example, goals, and workflow.
 
@@ -182,7 +162,7 @@ less -S FAM1M_R1.fastq
 
 Congratulations! You now have the raw sequencing reads. Onward to variant discovery!
 
-## Chapter 3 – Aligning Sequences
+## Aligning Sequences
 
 Raw reads are of limited value unless we know where in the genome they are from, and so aligning to a reference genome is the first major step in analyzing any sequencing data.
 
@@ -260,7 +240,7 @@ done
 A quick check that our sorted, recalibrated BAM is there ... and with that, we are finally ready to find variants!
 
 
-## Chapter 4 – Finding Variants in the Haystack
+## Finding Variants in the Haystack
 
 After completing the previous steps, we have alignment maps that compare our sequences to the reference genome. If you take a close look at these alignments, you will see many, many deviations across the exome. One read might look like it has a gap; another might have a different base call. There are far, far more differences than real variants! Separating signal from noise is a complex task demanding machine learning algorithms that use a variety of inputs, including read depth and base and mapping quality scoress, to determine the likelihood that a deviation is a real variant.
 
@@ -281,6 +261,7 @@ Once each individual’s gVCF is created, we can combine them. Remember that dow
 #!/bin/bash
 
 java -Xmx8000m -jar /opt/gatk-4.3.0.0/gatk-package-4.3.0.0-local.jar CombineGVCFs -R /mnt/arcus/data/references/hs37d5_chr9.fa -G StandardAnnotation -G AS_StandardAnnotation -G StandardHCAnnotation --variant FAM1P.sorted.recal_data.gVCF --variant FAM1M.sorted.recal_data.gVCF --variant FAM1F.sorted.recal_data.gVCF -O FAM1.gVCF
+
 ```
 
 After combining our gVCFs, we have a massive list of possible variants with likelihoods and quality descriptors galore. How do we go from this to knowing that, for instance, one individual is heterozygous for a given variant, while another is homozygous for the reference (does not carry the variant)?
@@ -291,6 +272,7 @@ This requires a step called “genotyping.” We want to use all of the metrics 
 #!/bin/bash
 
 java -Xmx8000m -jar /opt/gatk-4.3.0.0/gatk-package-4.3.0.0-local.jar GenotypeGVCFs -R /mnt/arcus/data/references/hs37d5_chr9.fa -G StandardAnnotation -G AS_StandardAnnotation --variant FAM1.gVCF -O genotyped_FAM1.vcf
+
 ```
 
 Remember to check your VCF! In addition to the standard VCF header and columns, you should see a column named for each of our three samples that provides genotyping information for that sample. VCFs are much smaller than gVCFs or BAMs, so expect this file to be around 10MB for this example, and around 50MB for a full exome sequence.
@@ -301,7 +283,7 @@ less -S genotyped_FAM1.vcf
 
 If all looks good, you’re ready to filter in the next section.
 
-## Chapter 5 – Filter, Filter, Filter! 
+## Filter, Filter, Filter! 
 
 At this point, there’s good news and bad news. The good news is that you’ve managed to dodge an immense quantity of would-be fake calls and “variants.” The bad news is that the majority of what’s left is still mostly just that—bad calls. Sorting out the remainder requires that we take advantage of a few measurements we have in our VCF.
 
@@ -313,6 +295,7 @@ An important note here is that different types of variants are measured, and nee
 java -Xmx8000m -jar /opt/gatk-4.3.0.0/gatk-package-4.3.0.0-local.jar SelectVariants -R /mnt/arcus/data/references/hs37d5_chr9.fa -V genotyped_FAM1.vcf --select-type SNP -O raw_snp.vcf
 
 java -Xmx8000m -jar /opt/gatk-4.3.0.0/gatk-package-4.3.0.0-local.jar SelectVariants -R /mnt/arcus/data/references/hs37d5_chr9.fa -V genotyped_FAM1.vcf --select-type INDEL -O raw_indels.vcf
+
 ```
 
 Next, we can look at a whole slew of metrics to filter on. For large cohorts, GATK would recommend [variant quality score recalibration](https://gatk.broadinstitute.org/hc/en-us/articles/360035531612-Variant-Quality-Score-Recalibration-VQSR-) (VQSR), which uses information for variant calls from a large set of individuals to filter using statistical models. In contrast, for our single trio, we will practice hard-filtering, which uses predetermined threshold values for some metrics to filter variants that are unlikely to be real. These are based on [recommendations](https://gatk.broadinstitute.org/hc/en-us/articles/360035890471-Hard-filtering-germline-short-variants) from GATK. We will briefly summarize the rationale for each.
@@ -335,6 +318,7 @@ java -Xmx8000m -jar /opt/gatk-4.3.0.0/gatk-package-4.3.0.0-local.jar VariantFilt
 java -Xmx8000m -jar /opt/gatk-4.3.0.0/gatk-package-4.3.0.0-local.jar VariantFiltration -R /mnt/arcus/data/references/hs37d5_chr9.fa -V raw_indels.vcf --filter-expression "QD < 2.0 || FS > 200.0 || ReadPosRankSum < -20.0" --filter-name "my_indel_filter" -O filtered_indels.vcf
 
 java -Xmx8000m -jar /usr/local/bin/picard.jar MergeVcfs R=/mnt/arcus/data/references/hs37d5_chr9.fa I=filtered_snp.vcf I=filtered_indels.vcf O=genotyped_FAM1_filtered.vcf
+
 ```
 
 The two final processing steps for the VCF are decomposition and normalization. Decomposition turns the file from one position per line to one variant per line. Here are two VCFs showing identical variants:
@@ -354,6 +338,7 @@ especially compared to the lower file (decomposed), where each variant gets its 
 ```
 #!/bin/bash
 vt decompose -s genotyped_FAM1_filtered.vcf -o genotyped_FAM1_filtered_decomposed.vcf
+
 ```
 
 Left-normalization helps ensure consistent notation of indel variants. Here’s a nice figure from Michigan’s [Genome Analysis Wiki](https://genome.sph.umich.edu/wiki/Variant_Normalization/) showing the same variant written five different ways:
@@ -367,13 +352,14 @@ However, there is only one simplest, standardized representation—the latter in
 ```
 #!/bin/bash
 vt normalize -n -r /mnt/arcus/data/references/hs37d5_chr9.fa genotyped_FAM1_filtered_decomposed.vcf -o FAM1_final.vcf
+
 ```
 
 Don’t forget to inspect your VCF quickly! Some variants should now have a “my_snp_filter” or “my_indel_filter” in the FILTER column, resulting from our filtration. The header also maintains a record of what the filters themselves entailed.
 
 Ready to see what these variants are? Let’s find out in the next chapter!
 
-## Chapter 6 – Annotate... and Maybe Find a Diagnosis?
+## Annotate... and Maybe Find a Diagnosis?
 
 A fully processed VCF captures a massive list of likely variants. What remains to be seen, though, is what these variants actually are. Where is this variant located? What gene is it in? How can we classify it—is it missense, frameshift, synonymous, intronic? Is it commonly seen in healthy individuals? Many of these details can be incredibly useful in variant interpretation.
 
@@ -394,6 +380,7 @@ Here’s how we annotate:
 #!/bin/bash
 
 perl /mnt/arcus/lab/shared/annovar/table_annovar.pl FAM1_final.vcf /mnt/arcus/data/references/ -buildver hg19 -out FAM1_myanno -remove -protocol refGeneWithVer,gnomad211_exome -operation g,f -nastring . -vcfinput
+
 ```
 
 Take a quick look at your outputs. If you indeed have a tab-separated Annovar output, you’re almost there!
@@ -448,7 +435,7 @@ It can also be useful to supplement our annotated data with additional sources, 
 
 Hopefully, you find what you believe is a diagnostic variant for this proband. If so, we reveal this and conclude in the next section!
 
-## Chapter 7 – Tying it All Together
+## Tying it All Together
 
 Now that you’ve run your first exome, let’s recap the scenario. Our proband had a developmental and epileptic encephalopathy, an epilepsy that is associated with variants in a large number of genes, but did not have a clinical finding of a disease-causing variant. We aimed to find a variant that is (a) real and (b) likely causative of the proband’s disorder.
 
