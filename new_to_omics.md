@@ -237,7 +237,7 @@ A quick check that our sorted, recalibrated BAM is there ... and with that, we a
 
 ## Finding Variants in the Haystack
 
-After completing the previous steps, we have alignment maps that compare our sequences to the reference genome. If you take a close look at these alignments, you will see many, many deviations across the exome. One read might look like it has a gap; another might have a different base call. There are far, far more differences than real variants! Separating signal from noise is a complex task demanding machine learning algorithms that use a variety of inputs, including read depth and base and mapping quality scoress, to determine the likelihood that a deviation is a real variant.
+After completing the previous steps, we have alignment maps that compare our sequences to the reference genome. If you take a close look at these alignments, you will see many, many deviations across the exome. One read might look like it has a gap; another might have a different base call. There are far, far more differences than real variants! Separating signal from noise is a complex task demanding machine learning algorithms that use a variety of inputs, including read depth and base and mapping quality scores, to determine the likelihood that a deviation is a real variant.
 
 The likelihood of a real non-reference allele, or difference from the reference genome, can be thus measured for every position in the genome. We often want to compare these calls across multiple individuals who will have deviations at numerous, but not always the same, position. So, it is useful and customary to describe every position in the genome to facilitate this. Accordingly, these likelihoods are listed in a gVCF file, which represents variant calls as tab- delimited rows, one corresponding to each position in the reference. For compression purposes, though, large blocks without any deviation can be represented by a single row.
 
@@ -318,17 +318,11 @@ java -Xmx8000m -jar /usr/local/bin/picard.jar MergeVcfs R=/mnt/arcus/data/refere
 
 The two final processing steps for the VCF are decomposition and normalization. Decomposition turns the file from one position per line to one variant per line. Here are two VCFs showing identical variants:
 
-![](media/vcf_ma_screenshot.png)
+![""](media/vcf_ma_screenshot.png "Figure 10. An example of a multiallelic variant, i.e., a variant in which two different bases are in the “ALT” column of the VCF.")
 
-*Figure 10. An example of a multiallelic variant, i.e., a variant in which two different bases are in the “ALT” column of the VCF.*
+![""](media/vcf_decomp_screenshot.png "Figure 11. An example of a decomposed multiallelic variant, i.e., a pair of variants with the same position and reference, but different alternate bases, which are on distinct lines of the VCF.")
 
-![](media/vcf_decomp_screenshot.png)
-
-*Figure 11. An example of a decomposed multiallelic variant, i.e., a pair of variants with the same position and reference, but different alternate bases, which are on distinct lines of the VCF.*
-
-Note how in the first image, multiple variants are called at the same position and are in the same row. This is more difficult to work with when analyzing variants in an automated fashion,
-  
-especially compared to the lower file (decomposed), where each variant gets its own row. Accordingly, we choose to decompose our VCF:
+Note how in the first image, multiple variants are called at the same position and are in the same row. This is more difficult to work with when analyzing variants in an automated fashion, especially compared to the second (decomposed) file, where each variant gets its own row. Accordingly, we choose to decompose our VCF:
 
 ```
 #!/bin/bash
@@ -338,11 +332,9 @@ vt decompose -s genotyped_FAM1_filtered.vcf -o genotyped_FAM1_filtered_decompose
 
 Left-normalization helps ensure consistent notation of indel variants. Here’s a nice figure from Michigan’s [Genome Analysis Wiki](https://genome.sph.umich.edu/wiki/Variant_Normalization/) showing the same variant written five different ways:
 
-![](media/normalization_screenshot.png)
+![""](media/normalization_screenshot.png "Figure 12. Graphic showing the effects of normalization. Since the reference and alternate alleles are just strings of bases, a deletion can be written variably depending on how the alternate sequence is aligned and notated. Normalization ensures such variants are notated with consistent left-alignment and parsimony.")
 
-*Figure 12. Graphic showing the effects of normalization. Since the reference and alternate alleles are just strings of bases, a deletion can be written variably depending on how the alternate sequence is aligned and notated. Normalization ensures such variants are notated with consistent left-alignment and parsimony.*
-
-However, there is only one simplest, standardized representation—the latter in purple. Normalization automatically takes care of this for us:
+However, there is only one simplest, standardized representation—represented in purple in the figure above. Normalization automatically takes care of this for us:
 
 ```
 #!/bin/bash
@@ -350,15 +342,16 @@ vt normalize -n -r /mnt/arcus/data/references/hs37d5_chr9.fa genotyped_FAM1_filt
 
 ```
 
-Don’t forget to inspect your VCF quickly! Some variants should now have a “my_snp_filter” or “my_indel_filter” in the FILTER column, resulting from our filtration. The header also maintains a record of what the filters themselves entailed.
+Don’t forget to inspect your VCF quickly! Some variants should now have a `my_snp_filter` or `my_indel_filter` in the FILTER column, resulting from our filtration. The header also maintains a record of what the filters themselves entailed.
 
-Ready to see what these variants are? Let’s find out in the next chapter!
+Ready to see what these variants are? Let’s find out in the next section!
 
 ## Annotate... and Maybe Find a Diagnosis?
 
 A fully processed VCF captures a massive list of likely variants. What remains to be seen, though, is what these variants actually are. Where is this variant located? What gene is it in? How can we classify it—is it missense, frameshift, synonymous, intronic? Is it commonly seen in healthy individuals? Many of these details can be incredibly useful in variant interpretation.
 
 Accordingly, we want to annotate every variant in this VCF with corresponding details. Tools such as the Ensembl [Variant Effect Predictor](https://useast.ensembl.org/info/docs/tools/vep/index.html) (VEP) and [Annovar](https://annovar.openbioinformatics.org/en/latest/) take advantage of massive databases to label variants with large quantities of additional data. They can tell you, among other things:
+
 - what gene a variant is located in
 - what its consequence on that gene is
 - where on the chromosome the variant is
@@ -392,36 +385,31 @@ A hint here is that this genotype information was obtained at the VCF stage, so 
 
 You could reasonably use any language you’re comfortable with for these downstream analyses, but we typically use R. Your task is to use the genotyping and annotation data you’ve generated to filter for the most likely disease-causing variants.
 
+### Variant Visualization: IGV
+
 Once you have potential variant(s) on hand, it’s useful to quickly check how reliable the variant is in two ways. First, it’s good to have a quick inspection of the preserved VCF data, especially the AD and DP fields. If these values are higher (>10), this indicates that the region was highly covered during sequencing, with large numbers of reads supporting the variant.
 
-Secondly, visualizing the putative variant is immensely useful. The Integrative Genomics Viewer is the preferred tool for this. It can be installed locally or used as a [web app](http://igv.org/app); we will use a version of the latter. We can view the aligned sequencing reads along with any differences present in these reads by loading the sorted BAM file and its index.
+Secondly, visualizing the putative variant is immensely useful. The Integrative Genomics Viewer is the preferred tool for this. It can be installed locally or you can use the [IGV web app](http://igv.org/app); we will use a version of the latter. We can view the aligned sequencing reads along with any differences present in these reads by loading the sorted BAM file and its index.
 
-Ensure you have the correct reference genome, hg19, loaded:
+First, ensure you have the correct reference genome, hg19, loaded:
 
-![](media/igv_options_screenshot.png)
-
-*Figure 13. Snapshot from the IGV web app. Users should select ‘Human (GRCh37/hg19)’ from the Genome dropdown menu before uploading the aligned file.*
+![""](media/igv_options_screenshot.png "Figure 13. Genome dropdown menu from the IGV web app. Users should select ‘Human (GRCh37/hg19)’ before uploading the aligned file.")
 
 Next, load a local file using the “Tracks” menu, being sure to select both the sorted BAM and its index simultaneously. You can then specify the genomic position of the variant you want to view using the search box. Automatically, reads will be displayed as a “track” in the window. This will allow us to visually confirm that the variant is believable. For example, here’s a high- and low-quality variant visualized in IGV:
 
-![](media/igv_clean_var_screenshot.png)
+![""](media/igv_clean_var_screenshot.png "Figure 14. An example of a clean variant call in IGV. There is high read depth and coverage at this and surrounding positions. The variant is detected in reads in either direction, as well as both in the middle of some reads and at the end of others. Roughly 50% of reads capture the variant. The variant is surrounded by very little additional deviation from the reference, suggesting it is not in a sequencing error-prone region.")
 
-*Figure 14. An example of a clean variant call in IGV. There is high read depth and coverage at this and surrounding positions. The variant is detected in reads in either direction, as well as both in the middle of some reads and at the end of others. Roughly 50% of reads capture the variant. The variant is surrounded by very little additional deviation from the reference, suggesting it is not in a sequencing error-prone region.
-*
-
-![](media/igv_messy_var_screenshot.png)
-
-*Figure 15. An example of a messy variant call in IGV. There is low read depth and coverage at this and surrounding positions. The variant is detected in reads in either direction, as well as both in the middle of some reads and at the end of others. However, fewer than 50% of reads capture the variant. The variant is surrounded by frequent deviation from the reference, suggesting it is in a sequencing error-prone region.*
+![""](media/igv_messy_var_screenshot.png "Figure 15. An example of a messy variant call in IGV. There is low read depth and coverage at this and surrounding positions. The variant is detected in reads in either direction, as well as both in the middle of some reads and at the end of others. However, fewer than 50% of reads capture the variant. The variant is surrounded by frequent deviation from the reference, suggesting it is in a sequencing error-prone region.")
 
 Notice how compared to the high-quality variant, the “bad” variant is:
+
 - in a low-coverage region, i.e., not as many reads overlapping at this position
 - surrounded by several deviations, i.e., likely in a sequencing error-prone region
-- skewed in allele ratio, i.e., not a good balance in reads showing reference and alternate
-alleles
+- skewed in allele ratio, i.e., not a good balance in reads showing reference and alternate alleles
 
-As you can see, IGV is fantastic for additional visual confirmation of variant quality! You can even view multiple tracks at once. If you want to confirm a variant’s inheritance, it’s helpful to view the proband and both parents’ exomes at same region simultaneously to see reads supporting the inheritance model you predicted.
+IGV is fantastic for additional visual confirmation of variant quality! You can even view multiple tracks at once. If you want to confirm a variant’s inheritance, it’s helpful to view the proband and both parents’ exomes at same region simultaneously to see reads supporting the inheritance model you predicted.
 
-It can also be useful to supplement our annotated data with additional sources, especially for potential variants that are not obviously pathogenic or in well-established disease genes. Here are some suggestions!
+It can also be useful to supplement our annotated data with additional sources, especially for potential variants that are not obviously pathogenic or in well-established disease genes. Here are some suggestions:
 
 - [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/) for previous reports of a variant
 - [OMIM](https://www.omim.org/) for possible gene-disease associations
