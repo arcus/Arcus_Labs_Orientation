@@ -72,7 +72,7 @@ import: https://raw.githubusercontent.com/arcus/education_modules/main/_module_t
 
 <div class = "important">
 
-Hi! This document is still under construction and testing. We apologize in advance for any broken links or unclear language. We invite your feedback. Please add a [support ticket](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/249) or [email Arcus Library Sciences](mailto:dlarcuslibraryscience@chop.edu) to let us know what we can improve or suggest additional topics.
+Hi! This document is still under construction and testing. We apologize in advance for any broken links or unclear language. We invite your feedback. Please add a [support ticket](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/249) or [email Arcus Library Science](mailto:dlarcuslibraryscience@chop.edu) to let us know what we can improve or suggest additional topics.
 
 Please note that **many of the links here will only work if you're on the CHOP network**.
 
