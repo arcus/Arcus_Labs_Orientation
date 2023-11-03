@@ -63,6 +63,7 @@ The aim of this training is to bring researchers at the Children's Hospital of P
 * What the Arcus Lab includes
 * What to expect when working with Arcus
 * Links to how to perform the data science DIY you'll need to do
+* Links to understand how to work with our librarians for your data contribution
 
 This training module will be useful for you whether you already have an Arcus Lab as part of an Arcus Scientific Project or you're just getting to know what the various Arcus tools are. 
 
@@ -78,11 +79,24 @@ You should begin by working in this training document, which constitutes an Arcu
 
 <div style = "clear: both;"></div>
 
+Quick Overview of Arcus Data
+-----
+
+We have some documentation here about [data](#included-data) that can be provided in an Arcus lab, specifically in terms of the [Arcus Data Repository](https://chop.alationcloud.com/data/23/), which is a data source that includes clinical data from CHOP's EHR.  You may have your own data as well, which you're bringing to your Arcus lab, and you may also be using contributed data sets from the [Arcus Archives](https://chop.alationcloud.com/data/29/) as well.
+
+Importantly, Arcus exists in order to promote research reproducibility and data discovery and reuse.  For that reason, when you work with Arcus, we will plan with you how you will contribute your data sets, scripts, cohorts, or findings back to the Arcus ecosystem via a data contribution to the Arcus Archives.  We do this in a way that respects your scientific stewardship of data and scholarship, and we can work with you so that your data contribution takes place at the right time and in the right way.  To learn more about Arcus data contributions, please read our [Arcus Data Contribution Orientation](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_data_contribution.md#1).
+
+Our librarians have worked hard to create some suggested ways to organize your data such that your work is contribution-ready.  The Arcus Project Template they've developed also works to help you keep your work well-organized and easy to navigate. Please read our [Arcus Project Template Orientation](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/data_contribution_2_data.md#1) to find out the many advantages of a well-structured project in Arcus labs!
+
+Quick Overview of Data Science Skills
+-----
+
 If you're already comfortable with data science tools like SQL, R, Python, and version control, then this document may be enough to get you going. Most researchers will benefit from working through some or all of the other linked documents as well, though:
 
 - **[New to data science](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_data_science.md)** is a document that introduces helpful tools and tips for working on data science projects that will be useful to scientists coming from other types of research. Even if you have experience in data science already, you may find it worthwhile to skim the subtopics in that section so you know what's available should you want to come back to it to reference later.
 - **[New to version control](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_version_control.md)** is a document that will help you get started with git, a powerful program for helping you keep track of your research documents over time. If you don't currently use git or another form of version control, we strongly recommend you work through that section. Version control is an extremely valuable tool for reproducible research, and although there is a bit of a learning curve, it really pays off.
 - **[New to SQL](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_sql.md)**, **[New to R](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_r.md)** and **[New to Python](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_python.md)** are documents that introduce you to the three languages most important to your work in an Arcus Lab: SQL, R, and python. You will need at least some familiarity with SQL in order to access any tabular data in your lab (data that takes the forms of rows and columns). Depending on your research needs, you can pick whether to learn Python or R or use some of both. If you're new to SQL, R, and Python, we recommend you focus on SQL first, since that's the first thing you'll need to be able to apply in your own lab.
+- **[New to Omics](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_omics.md#1)** will get you started if you're using the Arcus Omics Training Lab.  Note that this document is best used specifically within our Omics Training Lab, where we have pre-defined data that you can work with.  The instructions in this document presuppose that these files exist and that you're working in the Omics Training Lab.
 
 ### Future Lab Users
 
@@ -98,7 +112,8 @@ If you would like to learn more about what Arcus is and what we do, check out th
 * [New to SQL](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_sql.md)
 * [New to R](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_r.md)
 * [New to Python](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_python.md)
-* [New to version control](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_version_control.md)
+* [New to Version Control](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_version_control.md)
+* [New to Omics](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_omics.md#1)
 
 ## Arcus Lab Basics
 
