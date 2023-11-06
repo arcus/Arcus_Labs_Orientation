@@ -169,7 +169,9 @@ Arcus Data Repository (ADR) clinical data contains many frequently used fields f
 
 Requesting data means describing both the cohort you want data from (for example, male patients currently aged 13 or above who have an ICD E or F diagnosis code) and the fields you want (for example, demographic data, diagnoses, and emergency department encounter information).
 
-If you need help determining which data you need from the Arcus Data Repository, you can work on defining your [clinical cohort](https://education.arcus.chop.edu/arcus-clinical-cohorts/) by using the [Arcus cohort discovery tool](https://arcus.chop.edu/cohort-discovery). If you need help using Arcus cohort discovery, you can visit our [resources page](https://www.research.chop.edu/applications/arcus/resources) to find the Cohort Discovery Job Aid.  You may also ask your Project Owner, if you have a scientific project, or submit a ticket at the [Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/302) for assistance.
+If you need help determining which data you need from the Arcus Data Repository, you can work on defining your [clinical cohort](https://education.arcus.chop.edu/arcus-clinical-cohorts/) by using the [Arcus cohort discovery tool](https://arcus.chop.edu/cohort-discovery). 
+If you need help using Arcus cohort discovery, check out the [Cohort Discovery Job Aid](https://forum.arcus.chop.edu/t/cohort-discovery-tool-job-aid/590) on the Arcus Forum.  
+You may also ask your Project Owner, if you have a scientific project, or submit a ticket at the [Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/302) for assistance.
 
 To explore the tables and variables available in the [Arcus Data Repository (ADR)](https://education.arcus.chop.edu/arcus-data-repository/), you can use the [ADR Data Model Browser](https://adr-mdm.arcus.chop.edu/browser/). Note that the data model browser is most useful for folks who have already built some familiarity with the ADR --- if you're still finding your way around, then please reach out to Arcus staff for help deciding which tables and variables you will need.
 
