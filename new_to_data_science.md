@@ -12,19 +12,14 @@ We're still working out what might be most useful here for people who are new to
 
 </div>
 
-First, some various and sundry things that might interest you, beginning with an introductory module from [an NIH grant aimed at educating biomedical researchers](https://www.research.chop.edu/announcements/dbhi-and-drexel-collaborate-to-advance-biomedical-data-science-education).
+First, some various and sundry things that might interest you, beginning with some introductory modules from the [DART (Data and Analytics for Research Training) program](https://arcus.github.io/education_modules/).
 
-This grant includes the creation of dozens of modules that are aimed at being 1 hour or less in duration and each have a narrow focus and clear learning objectives.  They are asynchronous and you can take them at any time!
+DART includes dozens of data science modules that are each 1 hour or less in duration and with a narrow focus and clear learning objectives.  They are asynchronous and you can take them at any time!
 
 <div class = "cool-fact">
 
-If you think you'd like to participate in a research study about the educational effectiveness of data science training modules, please reach out to Arcus Education's DART program via:
-
-* Filling out our [interest form](https://redcap.link/dart-interest)
-* Taking the [screening for participation in the study](https://redcap.link/DART-survey)
-* Emailing us at dart@chop.edu
-
-If you meet our research criteria and decide to enroll as a study participant, you'll receive additional data science learning support, including a customized curriculum of materials and the peership and support of a community of learners like you. 
+Arcus Education's DART program is the result of [an NIH grant aimed at educating biomedical researchers](https://www.research.chop.edu/announcements/dbhi-and-drexel-collaborate-to-advance-biomedical-data-science-education).
+If you'd like to learn more about DART, fill out our [interest form](https://redcap.link/dart-interest) or email us at dart@chop.edu.
 
 </div>
 
@@ -34,7 +29,7 @@ Training Modules:
 * [Reproducibility](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/reproducibility/reproducibility.md)
 * [How to Troubleshoot](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/how_to_troubleshoot/how_to_troubleshoot.md)
 
-Additionally, beyond the NIH grant, we have other articles and miscellany we suggest, whether those are resources we've created in Arcus, or things we recommend from the larger R community.
+Additionally, beyond the NIH grant, we have other articles and miscellany we suggest, whether those are resources we've created in Arcus, or things we recommend from the larger data science community.
 
 **Other Resources**:
 

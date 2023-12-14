@@ -20,19 +20,14 @@ Learning Git can be tricky, because a lot of the training out there for Git is i
 
 That said, we think the benefits of using Git outweigh the sometimes intimidating learning curve.  There are a number of university classes, online courses and live workshops that go in depth about how to use Git (a kind of software) and GitHub (a website that many people who use Git use for working with their files).  Simply search for courses at the university or MOOC (e.g. Coursera) you prefer to use.
 
-If you prefer something a bit more "just in time", however, we suggest some resources that the Arcus Education team has crafted as part of [an NIH grant aimed at educating biomedical researchers](https://www.research.chop.edu/announcements/dbhi-and-drexel-collaborate-to-advance-biomedical-data-science-education).
+If you prefer something a bit more "just in time", however, we suggest the version control modules from the [DART (Data and Analytics for Research Training) program](https://arcus.github.io/education_modules/).
 
-This grant includes the creation of dozens of modules that are aimed at being 1 hour or less in duration and each have a narrow focus and clear learning objectives.  They are asynchronous and you can take them at any time!
+DART includes dozens of data science modules that are each 1 hour or less in duration and with a narrow focus and clear learning objectives.  They are asynchronous and you can take them at any time!
 
 <div class = "cool-fact">
 
-If you think you'd like to participate in a research study about the educational effectiveness of data science training modules, please reach out to Arcus Education's DART program via:
-
-* Filling out our [interest form](https://redcap.link/dart-interest)
-* Taking the [screening for participation in the study](https://redcap.link/DART-survey)
-* Emailing us at dart@chop.edu
-
-If you meet our research criteria and decide to enroll as a study participant, you'll receive additional data science learning support, including a customized curriculum of materials and the peership and support of a community of learners like you. 
+Arcus Education's DART program is the result of [an NIH grant aimed at educating biomedical researchers](https://www.research.chop.edu/announcements/dbhi-and-drexel-collaborate-to-advance-biomedical-data-science-education).
+If you'd like to learn more about DART, fill out our [interest form](https://redcap.link/dart-interest) or email us at dart@chop.edu.
 
 </div>
 

@@ -33,29 +33,27 @@ But they aren't enough to get you started **really** learning SQL.  You have sev
 
 There are a number of university classes, online courses and live workshops that go in depth about how to use SQL.  Simply search for courses at the university or MOOC (e.g. Coursera) you prefer to use.
 
-If you prefer something a bit more "just in time", however, we suggest some resources that the Arcus Education team has crafted as part of [an NIH grant aimed at educating biomedical researchers](https://www.research.chop.edu/announcements/dbhi-and-drexel-collaborate-to-advance-biomedical-data-science-education).
+If you prefer something a bit more "just in time", however, we suggest the SQL modules from the [DART (Data and Analytics for Research Training) program](https://arcus.github.io/education_modules/).
 
-This grant includes the creation of dozens of modules that are aimed at being 1 hour or less in duration and each have a narrow focus and clear learning objectives.  They are asynchronous and you can take them at any time!
+DART includes dozens of data science modules that are each 1 hour or less in duration and with a narrow focus and clear learning objectives.  They are asynchronous and you can take them at any time!
 
 <div class = "cool-fact">
 
-If you think you'd like to participate in a research study about the educational effectiveness of data science training modules, please reach out to Arcus Education's DART program via:
-
-* Filling out our [interest form](https://redcap.link/dart-interest)
-* Taking the [screening for participation in the study](https://redcap.link/DART-survey)
-* Emailing us at dart@chop.edu
-
-If you meet our research criteria and decide to enroll as a study participant, you'll receive additional data science learning support, including a customized curriculum of materials and the peership and support of a community of learners like you. 
+Arcus Education's DART program is the result of [an NIH grant aimed at educating biomedical researchers](https://www.research.chop.edu/announcements/dbhi-and-drexel-collaborate-to-advance-biomedical-data-science-education).
+If you'd like to learn more about DART, fill out our [interest form](https://redcap.link/dart-interest) or email us at dart@chop.edu.
 
 </div>
 
 Training modules:
 
 * [Demystifying SQL](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/demystifying_sql/demystifying_sql.md)
+* [Database Normalization](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/database_normalization/database_normalization.md)
 * [SQL Basics](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/sql_basics/sql_basics.md)
 * [SQL Intermediate](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/sql_intermediate/sql_intermediate.md)
-* [Database Normalization](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/database_normalization/database_normalization.md)
 * [SQL Joins](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/sql_joins/sql_joins.md)
+
+Also check out the Arcus Skill Series [Beyond the Spreadsheet:  
+Understanding SQL and Relational Databases](https://arcus.github.io/arcus_skill_series_sql/) (links to slides, and workshop recordings on the website).
 
 -----
 
