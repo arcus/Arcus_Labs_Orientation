@@ -41,7 +41,7 @@ CHOP has a vibrant R User Group made up of employees from all over the instituti
 
 Please fill out this form to [join the CHOPR User Group](https://bit.ly/chopRusers)!  This will add you to the Outlook distribution list for emails as well as give you instructions on how to add yourself to our Slack workspace, where people ask coding questions (and answer them!).
 
-Joining the R User Group means you'll be informed about periodic intro to R workshops, R User Group talks, and other resources you'll find useful.  Especially if you're the only person in your lab who uses R, it can be important to find a community of practice that can help guide you.  Intro to R workshops are given a few times a year and include five hours of hands-on, synchronous work intended to get you started working with R as a brand-new beginner.  To learn more about the course, visit the [R101 course website](https://arcus.github.io/intro-to-r-for-clinicians-chop/).
+Joining the R User Group means you'll be informed about periodic intro to R workshops, R User Group talks, and other resources you'll find useful.  Especially if you're the only person in your lab who uses R, it can be important to find a community of practice that can help guide you.  Intro to R workshops are given a few times a year and include five hours of hands-on, synchronous work intended to get you started working with R as a brand-new beginner.  To learn more about the course, visit the [R101 course website](https://arcus.github.io/intro-to-r-for-clinical-data/).
 
 As you gain expertise, we also invite you to participate by leading an R User Group meeting!  You don't have to be an expert for years in order to share your skills.  Even if you only know a little, you know more than some people, and you can share pitfalls to avoid and the routes to success for data analysis tasks you conducted on your type of research data.
 
@@ -63,19 +63,14 @@ But they aren't enough to get you started **really** learning R.  You have sever
 
 There are a number of university classes, online courses and live workshops that go in depth about how to use R.  Simply search for courses at the university or MOOC (e.g. Coursera) you prefer to use.
 
-If you prefer something a bit more "just in time", however, we suggest some resources that the Arcus Education team has crafted as part of [an NIH grant aimed at educating biomedical researchers](https://www.research.chop.edu/announcements/dbhi-and-drexel-collaborate-to-advance-biomedical-data-science-education).
+If you prefer something a bit more "just in time", however, we suggest the R modules from the [DART (Data and Analytics for Research Training) program](https://arcus.github.io/education_modules/).
 
-This grant includes the creation of dozens of modules that are aimed at being 1 hour or less in duration and each have a narrow focus and clear learning objectives.  They are asynchronous and you can take them at any time!
+DART includes dozens of data science modules that are each 1 hour or less in duration and with a narrow focus and clear learning objectives.  They are asynchronous and you can take them at any time!
 
 <div class = "cool-fact">
 
-If you think you'd like to participate in a research study about the educational effectiveness of data science training modules, please reach out to Arcus Education's DART program via:
-
-* Filling out our [interest form](https://redcap.link/dart-interest)
-* Taking the [screening for participation in the study](https://redcap.link/DART-survey)
-* Emailing us at dart@chop.edu
-
-If you meet our research criteria and decide to enroll as a study participant, you'll receive additional data science learning support, including a customized curriculum of materials and the peership and support of a community of learners like you. 
+Arcus Education's DART program is the result of [an NIH grant aimed at educating biomedical researchers](https://www.research.chop.edu/announcements/dbhi-and-drexel-collaborate-to-advance-biomedical-data-science-education).
+If you'd like to learn more about DART, fill out our [interest form](https://redcap.link/dart-interest) or email us at dart@chop.edu.
 
 </div>
 
@@ -86,7 +81,8 @@ Training modules:
 * [R Basics: Visualize Data](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_basics_visualize_data/r_basics_visualize_data.md)
 * [Reshaping Data in R: Long and Wide Data](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_reshape_long_wide/r_reshape_long_wide.md)
 * [Missing Values in R](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_missing_values/r_missing_values.md)
-* [Data Visualization in ggplot2](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/data_visualization_in_ggplot2/data_visualization_ggplot2.md)
+* [Data Visualization in ggplot2](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/data_visualization_in_ggplot2/data_visualization_in_ggplot2.md)
+* [Summary Statistics in R](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_summary_stats/r_summary_stats.md)
 
 Additionally, beyond the NIH grant, we have other articles and miscellany we suggest, whether those are resources we've created in Arcus, or things we recommend from the larger R community.
 
