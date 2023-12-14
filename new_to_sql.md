@@ -52,8 +52,7 @@ Training modules:
 * [SQL Intermediate](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/sql_intermediate/sql_intermediate.md)
 * [SQL Joins](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/sql_joins/sql_joins.md)
 
-Also check out the Arcus Skill Series [Beyond the Spreadsheet:  
-Understanding SQL and Relational Databases](https://arcus.github.io/arcus_skill_series_sql/) (links to slides, and workshop recordings on the website).
+Also check out the Arcus Skill Series [Beyond the Spreadsheet: Understanding SQL and Relational Databases](https://arcus.github.io/arcus_skill_series_sql/) (links to slides, and workshop recordings on the website).
 
 -----
 
