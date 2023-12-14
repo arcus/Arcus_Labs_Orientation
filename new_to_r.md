@@ -81,7 +81,7 @@ Training modules:
 * [R Basics: Visualize Data](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_basics_visualize_data/r_basics_visualize_data.md)
 * [Reshaping Data in R: Long and Wide Data](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_reshape_long_wide/r_reshape_long_wide.md)
 * [Missing Values in R](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_missing_values/r_missing_values.md)
-* [Data Visualization in ggplot2](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/data_visualization_in_ggplot2/data_visualization_ggplot2.md)
+* [Data Visualization in ggplot2](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/data_visualization_in_ggplot2/data_visualization_in_ggplot2.md)
 * [Summary Statistics in R](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_summary_stats/r_summary_stats.md)
 
 Additionally, beyond the NIH grant, we have other articles and miscellany we suggest, whether those are resources we've created in Arcus, or things we recommend from the larger R community.
