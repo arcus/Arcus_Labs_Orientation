@@ -1,5 +1,5 @@
 <!--
-link:  https://chop-dbhi-arcus-education-website-assets.s3.amazonaws.com/css/styles.css
+link:  https://storage.googleapis.com/chop-dbhi-arcus-education-website-assets/css/styles.css
 script: https://kit.fontawesome.com/83b2343bd4.js
 title: Arcus Labs Orientation
 -->
@@ -12,30 +12,140 @@ We're still working out what might be most useful here for people who are new to
 
 </div>
 
-First, some various and sundry things that might interest you, beginning with an introductory module from [an NIH grant aimed at educating biomedical researchers](https://www.research.chop.edu/announcements/dbhi-and-drexel-collaborate-to-advance-biomedical-data-science-education).
+First, some various and sundry things that might interest you, beginning with some introductory modules from the [DART (Data and Analytics for Research Training) program](https://arcus.github.io/education_modules/).
 
-This grant includes the creation of dozens of modules that are aimed at being 1 hour or less in duration and each have a narrow focus and clear learning objectives.  They are asynchronous and you can take them at any time!
+DART includes dozens of data science modules that are each 1 hour or less in duration and with a narrow focus and clear learning objectives.  They are asynchronous and you can take them at any time!
 
-<div class = "warning">
-If you think you'd like to participate in a research study about the educational effectiveness of data science training modules, please reach out to Arcus Education's DART program via:
+<div class = "cool-fact">
 
-* Our interest form at https://redcap.link/dart-interest
-* Taking the screening for participation in the study at https://redcap.link/DART-survey
-* Emailing us at dart@chop.edu
-
-and consider **not** consuming these modules.
-
-Consuming these modules will **render you ineligible to participate** in our research.  However, we know that they're useful on their own, outside of our conduct of research, so we're fast-tracking access to these materials.
+Arcus Education's DART program is the result of [an NIH grant aimed at educating biomedical researchers](https://www.research.chop.edu/announcements/dbhi-and-drexel-collaborate-to-advance-biomedical-data-science-education).
+If you'd like to learn more about DART, fill out our [interest form](https://redcap.link/dart-interest) or email us at dart@chop.edu.
 
 </div>
 
-Training Modules:
+**Training Modules:**
 
-* [Learning How to Learn Data Science](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/learning_to_learn/learning_to_learn.md)
+To begin learning about data science, we recommend starting with these modules: 
+
 * [Reproducibility](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/reproducibility/reproducibility.md)
 * [How to Troubleshoot](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/how_to_troubleshoot/how_to_troubleshoot.md)
+* [Learning How to Learn Data Science](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/learning_to_learn/learning_to_learn.md)
 
-Additionally, beyond the NIH grant, we have other articles and miscellany we suggest, whether those are resources we've created in Arcus, or things we recommend from the larger R community.
+<br>
+<details>
+<summary><strong>For a deeper introduction to biomedical data science, click to see the full 15 module pathway.</strong></summary>
+<br>
+<hr>
+<br>
+<table>
+<thead>
+<tr>
+<th>Order</th>
+<th>Module</th>
+<th>Description</th>
+<th>Estimated Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/reproducibility/reproducibility.md">Reproducibility, Generalizability, and Reuse</a></td>
+<td>This module provides learners with an approachable introduction to the concepts and impact of <strong>research reproducibility</strong>, <strong>generalizability</strong>, and <strong>data reuse</strong>, and how technical approaches can help make these goals more attainable.</td>
+<td>60 min</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/how_to_troubleshoot/how_to_troubleshoot.md">How to Troubleshoot</a></td>
+<td>Learning to use technical methods like coding and version control in your research inevitably means running into problems.  Learn practical methods for troubleshooting and moving past error codes and other difficulties.</td>
+<td>30 min</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/learning_to_learn/learning_to_learn.md">Learning to Learn Data Science</a></td>
+<td>Discover how learning data science is different than learning other subjects.</td>
+<td>20 min</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/demystifying_geospatial_data/demystifying_geospatial_data.md">Demystifying Geospatial Data</a></td>
+<td>This module is a brief introduction to geospatial (location) data.</td>
+<td>15 min</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/omics_orientation/omics_orientation.md">Omics Orientation</a></td>
+<td>This module provides a brief introduction to omics and its associated fields.</td>
+<td>15 min</td>
+</tr>
+<tr>
+<td>6</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/demystifying_sql/demystifying_sql.md">Demystifying SQL</a></td>
+<td>SQL is a relational database solution that has been around for decades.  Learn more about this technology at a high level, without having to write code.</td>
+<td>40 min</td>
+</tr>
+<tr>
+<td>7</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/demystifying_machine_learning/demystifying_machine_learning.md">Demystifying Machine Learning</a></td>
+<td>An approachable and practical introduction to machine learning for biomedical researchers.</td>
+<td>60 min</td>
+</tr>
+<tr>
+<td>8</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/demystifying_large_language_models/demystifying_large_language_models.md">Demystifying Large Language Models</a></td>
+<td>Learn about large language models (LLM) like ChatGPT.</td>
+<td>60 min</td>
+</tr>
+<tr>
+<td>9</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/demystifying_python/demystifying_python.md">Demystifying Python</a></td>
+<td>This module introduces the Python programming language, explores why Python is useful in research, and describes how to download Python and Jupyter.</td>
+<td>20 min</td>
+</tr>
+<tr>
+<td>10</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/demystifying_regular_expressions/demystifying_regular_expressions.md">Demystifying Regular Expressions</a></td>
+<td>Learn about pattern matching using regular expressions, or regex.</td>
+<td>30 min</td>
+</tr>
+<tr>
+<td>11</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/citizen_science/citizen_science.md">Citizen Science</a></td>
+<td>This is an overview of citizen science for biomedical researchers.</td>
+<td>45 min</td>
+</tr>
+<tr>
+<td>12</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/demystifying_containers/demystifying_containers.md">Demystifying Containers</a></td>
+<td>Containers can be a useful tool for reproducible workflows and collaboration. This module describes what containers are, why a researcher might want to use them, and what your options are for implementation.</td>
+<td>20 min</td>
+</tr>
+<tr>
+<td>13</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/git_intro/git_intro.md">Intro to Version Control</a></td>
+<td>An introduction to what version control systems do and why you might want to use one.</td>
+<td>15 min</td>
+</tr>
+<tr>
+<td>14</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/directories_and_file_paths/directories_and_file_paths.md">Directories and File Paths</a></td>
+<td>In this module, learners will explore what a directory is and how to describe the location of a file using its file path.</td>
+<td>15 min</td>
+</tr>
+<tr>
+<td>15</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/data_management_basics/data_management_basics.md">Research Data Management Basics</a></td>
+<td>Learn the basics about research data management.</td>
+<td>40 min</td>
+</tr>
+</tbody>
+</table>
+<br>
+<hr>
+<br>
+</details>
+<br>
+
+Additionally, beyond the NIH grant, we have other articles and miscellany we suggest, whether those are resources we've created in Arcus, or things we recommend from the larger data science community.
 
 **Other Resources**:
 
@@ -45,7 +155,7 @@ Additionally, beyond the NIH grant, we have other articles and miscellany we sug
 
 ## Pivoting to data science
 
-Pivoting to a data science methodology, one that prioritizes writing code and using version control, can be challenging!  We invite you to consider an overview of why this approach is helpful in our NIH R25 training module called [Reproducibility](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/reproducibility/reproducibility.md).  This can help give you additional motivation when you're struggling with common challenges like:
+Pivoting to a data science methodology, one that prioritizes writing code and using version control, can be challenging!  We invite you to consider an overview of why this approach is helpful in our [Reproducibility training module](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/reproducibility/reproducibility.md).  This can help give you additional motivation when you're struggling with common challenges like:
 
 - Typing computer commands when you're used to point and click
 - Programming when you're used to spreadsheet data analysis
@@ -64,11 +174,11 @@ Literate statistical programming resources you might find useful include:
 
 If you aren't used to working with raw data that hasn't been pre-groomed, you might feel overwhelmed.  Here's a few things to consider that can help!
 
-- Clinical data at CHOP: What is where? [https://education.arcus.chop.edu/clinical-data-at-chop/](https://education.arcus.chop.edu/clinical-data-at-chop/)
+- [Clinical data at CHOP: What is where?](https://education.arcus.chop.edu/clinical-data-at-chop/)
 - Data dictionaries and variable names: make sure you watch the SQL training videos in your lab, where we go over the use of `dd_field` and `dd_table`, to help you work with data dictionaries.
 - Errors, outliers, and typos do exist, because people make mistakes in charting, and the medical record system isn't foolproof.  What will you do with unexpected or unlikely data?
-- Repeated versions of a variable [https://education.arcus.chop.edu/date-pairing-in-r/](https://education.arcus.chop.edu/date-pairing-in-r/)
-- Missing values: None, NULL, NaN, etc. may also be a challenge.  Consider [https://education.arcus.chop.edu/do-patterns-in-missing-data-matter/](https://education.arcus.chop.edu/do-patterns-in-missing-data-matter/).
+- Repeated versions of a variable -- Here's [an article that looks at repeated variable versions in R](https://education.arcus.chop.edu/date-pairing-in-r/)
+- Missing values: None, NULL, NaN, etc. may also be a challenge.  Check out this [article on missing data](https://education.arcus.chop.edu/do-patterns-in-missing-data-matter/).
 
 
 ## Framing your questions so the computer will understand
@@ -77,7 +187,7 @@ Sometimes, facing an empty screen without any code yet written can feel like an 
 
 - Breaking ideas down into steps (for example, use pseudocode, a fancy word for "steps written out in fake code" to plan your data selection and data analysis)
 - Finding where to start (what fields already exist in the data vs. what will you need to refine/calculate/reformat)
-- Learning to work with your lab directory structure.  A resource that might help is our short [Directories and File Paths](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/directories_and_file_paths/directories_and_file_paths.md) course or the article [https://education.arcus.chop.edu/file-paths/](https://education.arcus.chop.edu/file-paths/)
+- Learning to work with your lab directory structure.  A resource that might help is our short [Directories and File Paths](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/directories_and_file_paths/directories_and_file_paths.md) course or the article [File Paths for Data Scientists](https://education.arcus.chop.edu/file-paths/)
 - Conventions for naming files.  You want to be on the same page as the rest of the team and watch out for things to avoid (like spaces in file names, which can be annoying in some environments).
 - Translating ideas into questions, and questions into tests: what is your algorithm to get from data to publication?
 

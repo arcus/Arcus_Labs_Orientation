@@ -1,6 +1,5 @@
 <!--
-link:  https://chop-dbhi-arcus-education-website-assets.s3.amazonaws.com/css/styles.css
-
+link:  https://storage.googleapis.com/chop-dbhi-arcus-education-website-assets/css/styles.css
 script: https://kit.fontawesome.com/83b2343bd4.js
 
 title: New to SQL
@@ -10,7 +9,7 @@ title: New to SQL
 
 **What is SQL? SQLPad?**
 
-![](media/sqlpad.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 600px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
+![""](media/sqlpad.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 600px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 SQL, or Structured Query Language, is a way to interact with data that is stored in a special kind of storage called a relational database.  This kind of data is stored in tables which have rows and columns.
 
@@ -18,7 +17,7 @@ SQLPad is a software package that allows you to send SQL queries to a connected 
 
 ## Arcus-Specific SQL Training
 
-![](media/training_videos.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 600px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
+![""](media/training_videos.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 600px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 For an example of how to use SQL data in your Arcus lab, start with the training videos on your lab's landing page.
 
@@ -34,30 +33,26 @@ But they aren't enough to get you started **really** learning SQL.  You have sev
 
 There are a number of university classes, online courses and live workshops that go in depth about how to use SQL.  Simply search for courses at the university or MOOC (e.g. Coursera) you prefer to use.
 
-If you prefer something a bit more "just in time", however, we suggest some resources that the Arcus Education team has crafted as part of [an NIH grant aimed at educating biomedical researchers](https://www.research.chop.edu/announcements/dbhi-and-drexel-collaborate-to-advance-biomedical-data-science-education).
+If you prefer something a bit more "just in time", however, we suggest the SQL modules from the [DART (Data and Analytics for Research Training) program](https://arcus.github.io/education_modules/).
 
-This grant includes the creation of dozens of modules that are aimed at being 1 hour or less in duration and each have a narrow focus and clear learning objectives.  They are asynchronous and you can take them at any time!
+DART includes dozens of data science modules that are each 1 hour or less in duration and with a narrow focus and clear learning objectives.  They are asynchronous and you can take them at any time!
 
-<div class = "warning">
-If you think you'd like to participate in a research study about the educational effectiveness of data science training modules, please reach out to Arcus Education's DART program via:
+<div class = "cool-fact">
 
-* Our interest form at https://redcap.link/dart-interest
-* Taking the screening for participation in the study at https://redcap.link/DART-survey
-* Emailing us at dart@chop.edu
-
-and consider **not** consuming these modules.
-
-Consuming these modules will **render you ineligible to participate** in our research.  However, we know that they're useful on their own, outside of our conduct of research, so we're fast-tracking access to these materials.
+Arcus Education's DART program is the result of [an NIH grant aimed at educating biomedical researchers](https://www.research.chop.edu/announcements/dbhi-and-drexel-collaborate-to-advance-biomedical-data-science-education).
+If you'd like to learn more about DART, fill out our [interest form](https://redcap.link/dart-interest) or email us at dart@chop.edu.
 
 </div>
 
 Training modules:
 
 * [Demystifying SQL](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/demystifying_sql/demystifying_sql.md)
+* [Database Normalization](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/database_normalization/database_normalization.md)
 * [SQL Basics](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/sql_basics/sql_basics.md)
 * [SQL Intermediate](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/sql_intermediate/sql_intermediate.md)
-* [Database Normalization](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/database_normalization/database_normalization.md)
 * [SQL Joins](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/sql_joins/sql_joins.md)
+
+Also check out the Arcus Skill Series [Beyond the Spreadsheet: Understanding SQL and Relational Databases](https://arcus.github.io/arcus_skill_series_sql/) (links to slides, and workshop recordings on the website).
 
 -----
 
