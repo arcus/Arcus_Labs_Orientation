@@ -6,7 +6,7 @@ title: Arcus Labs Orientation
 
 # New to Bash?
 
-![](media/terminal.png)
+![""](media/terminal.png)
 
 Do you need to how to use the "shell" (or bash, the command line, or the terminal) and don't know where to start? This guide will provide a very brief overview of what these are, and will give you some resources where you can find more information. 
 
@@ -16,39 +16,20 @@ The "shell" is an program that allows you to interface with your computer by pas
 
 **Why use bash in the Terminal?**
 
-Interacting with your computer using bash and a CLI like the Terminal has several benefits:
+Interacting with a computer using bash and a CLI like the Terminal has several benefits:
 
 * Preparing files for processing, and actually processing them, can be time-consuming and error-prone to do one file at a time. 
 * By writing bash **scripts** and running them in the Terminal, you can repeatedly perform a series of commands on a file (or multiple files). 
 * Bash scripts can make use of other programming languages (like R or Python), other applications, and APIs. 
-* Using scripts (which can be saved and run over and over again on new data) helps your analyses reproducible! 
+* Using scripts (which can be saved and run over and over again on new data) helps make your analyses reproducible! 
 
-## Arcus-Specific Training
+##  Resources
 
+Bash can be challenging to learn, but you have several options when it comes to growing in your skills.
 
+We have created several bash training modules as part of the [DART (Data and Analytics for Research Training) program](https://arcus.github.io/education_modules/).
 
-## Additional Resources
-
-The training videos barely scratch the surface of how to get started.  We did that on purpose, so that they're short enough that everyone can watch them.
-
-But they aren't enough to get you started **really** learning Bash/Terminal.  You have several options when it comes to growing in your skills.
-
-If you prefer something a bit more "just in time", however, we suggest some resources that the Arcus Education team has crafted as part of [an NIH grant aimed at educating biomedical researchers](https://www.research.chop.edu/announcements/dbhi-and-drexel-collaborate-to-advance-biomedical-data-science-education).
-
-This grant includes the creation of dozens of modules that are aimed at being 1 hour or less in duration and each have a narrow focus and clear learning objectives.  They are asynchronous and you can take them at any time!
-
-<div class = "warning">
-If you think you'd like to participate in a research study about the educational effectiveness of data science training modules, please reach out to Arcus Education's DART program via:
-
-* Our interest form at https://redcap.link/dart-interest
-* Taking the screening for participation in the study at https://redcap.link/DART-survey
-* Emailing us at dart@chop.edu
-
-and consider **not** consuming these modules.
-
-Consuming these modules will **render you ineligible to participate** in our research.  However, we know that they're useful on their own, outside of our conduct of research, so we're fast-tracking access to these materials.
-
-</div>
+DART includes dozens of data science modules that are each 1 hour or less in duration and with a narrow focus and clear learning objectives.  They are asynchronous and you can take them at any time!
 
 Training modules:
 
@@ -62,7 +43,7 @@ Training modules:
 
 [Bash: Reusable Scripts](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/bash_scripts/bash_scripts.md)
 
-Additionally, beyond the NIH grant, we have other articles and miscellany we suggest, whether those are resources we've created in Arcus.
+Additionally, beyond the DART modules, we have other articles and miscellany we suggest, whether those are resources we've created in Arcus.
 
 **Compendia of Resources**:
 
@@ -76,11 +57,4 @@ Cheat sheets:
 
 * [https://github.com/RehanSaeed/Bash-Cheat-Sheet](https://github.com/RehanSaeed/Bash-Cheat-Sheet)
 * [https://devhints.io/bash](https://devhints.io/bash)
-
-Videos:
-
-* [Unix Command Line I Arcus Education Webinar](https://digitalrepository.chop.edu/commandline_computingtools/3/)
-* [Unix Command Line II Arcus Education Webinar](https://digitalrepository.chop.edu/commandline_computingtools/2/)
-* [Intermediate Bash Scripting Arcus Education Webinar](https://digitalrepository.chop.edu/commandline_computingtools/1/)
-
 
