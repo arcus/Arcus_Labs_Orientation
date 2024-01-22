@@ -23,11 +23,127 @@ If you'd like to learn more about DART, fill out our [interest form](https://red
 
 </div>
 
-Training Modules:
+**Training Modules:**
 
-* [Learning How to Learn Data Science](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/learning_to_learn/learning_to_learn.md)
+To begin learning about data science, we recommend starting with these modules: 
+
 * [Reproducibility](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/reproducibility/reproducibility.md)
 * [How to Troubleshoot](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/how_to_troubleshoot/how_to_troubleshoot.md)
+* [Learning How to Learn Data Science](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/learning_to_learn/learning_to_learn.md)
+
+<br>
+<details>
+<summary><strong>For a deeper introduction to biomedical data science, click to see the full 15 module pathway.</strong></summary>
+<br>
+<hr>
+<br>
+<table>
+<thead>
+<tr>
+<th>Order</th>
+<th>Module</th>
+<th>Description</th>
+<th>Estimated Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/reproducibility/reproducibility.md">Reproducibility, Generalizability, and Reuse</a></td>
+<td>This module provides learners with an approachable introduction to the concepts and impact of <strong>research reproducibility</strong>, <strong>generalizability</strong>, and <strong>data reuse</strong>, and how technical approaches can help make these goals more attainable.</td>
+<td>60 min</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/how_to_troubleshoot/how_to_troubleshoot.md">How to Troubleshoot</a></td>
+<td>Learning to use technical methods like coding and version control in your research inevitably means running into problems.  Learn practical methods for troubleshooting and moving past error codes and other difficulties.</td>
+<td>30 min</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/learning_to_learn/learning_to_learn.md">Learning to Learn Data Science</a></td>
+<td>Discover how learning data science is different than learning other subjects.</td>
+<td>20 min</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/demystifying_geospatial_data/demystifying_geospatial_data.md">Demystifying Geospatial Data</a></td>
+<td>This module is a brief introduction to geospatial (location) data.</td>
+<td>15 min</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/omics_orientation/omics_orientation.md">Omics Orientation</a></td>
+<td>This module provides a brief introduction to omics and its associated fields.</td>
+<td>15 min</td>
+</tr>
+<tr>
+<td>6</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/demystifying_sql/demystifying_sql.md">Demystifying SQL</a></td>
+<td>SQL is a relational database solution that has been around for decades.  Learn more about this technology at a high level, without having to write code.</td>
+<td>40 min</td>
+</tr>
+<tr>
+<td>7</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/demystifying_machine_learning/demystifying_machine_learning.md">Demystifying Machine Learning</a></td>
+<td>An approachable and practical introduction to machine learning for biomedical researchers.</td>
+<td>60 min</td>
+</tr>
+<tr>
+<td>8</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/demystifying_large_language_models/demystifying_large_language_models.md">Demystifying Large Language Models</a></td>
+<td>Learn about large language models (LLM) like ChatGPT.</td>
+<td>60 min</td>
+</tr>
+<tr>
+<td>9</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/demystifying_python/demystifying_python.md">Demystifying Python</a></td>
+<td>This module introduces the Python programming language, explores why Python is useful in research, and describes how to download Python and Jupyter.</td>
+<td>20 min</td>
+</tr>
+<tr>
+<td>10</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/demystifying_regular_expressions/demystifying_regular_expressions.md">Demystifying Regular Expressions</a></td>
+<td>Learn about pattern matching using regular expressions, or regex.</td>
+<td>30 min</td>
+</tr>
+<tr>
+<td>11</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/citizen_science/citizen_science.md">Citizen Science</a></td>
+<td>This is an overview of citizen science for biomedical researchers.</td>
+<td>45 min</td>
+</tr>
+<tr>
+<td>12</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/demystifying_containers/demystifying_containers.md">Demystifying Containers</a></td>
+<td>Containers can be a useful tool for reproducible workflows and collaboration. This module describes what containers are, why a researcher might want to use them, and what your options are for implementation.</td>
+<td>20 min</td>
+</tr>
+<tr>
+<td>13</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/git_intro/git_intro.md">Intro to Version Control</a></td>
+<td>An introduction to what version control systems do and why you might want to use one.</td>
+<td>15 min</td>
+</tr>
+<tr>
+<td>14</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/directories_and_file_paths/directories_and_file_paths.md">Directories and File Paths</a></td>
+<td>In this module, learners will explore what a directory is and how to describe the location of a file using its file path.</td>
+<td>15 min</td>
+</tr>
+<tr>
+<td>15</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/data_management_basics/data_management_basics.md">Research Data Management Basics</a></td>
+<td>Learn the basics about research data management.</td>
+<td>40 min</td>
+</tr>
+</tbody>
+</table>
+<br>
+<hr>
+<br>
+</details>
+<br>
 
 Additionally, beyond the NIH grant, we have other articles and miscellany we suggest, whether those are resources we've created in Arcus, or things we recommend from the larger data science community.
 

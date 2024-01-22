@@ -74,7 +74,9 @@ If you'd like to learn more about DART, fill out our [interest form](https://red
 
 </div>
 
-Training modules:
+**Training modules:**
+
+To begin learning R, we recommend starting with these modules: 
 
 * [R Basics: Introduction](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_basics_introduction/r_basics_introduction.md)
 * [R Basics: Transform Data](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_basics_transform_data/r_basics_transform_data.md)
@@ -83,6 +85,140 @@ Training modules:
 * [Missing Values in R](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_missing_values/r_missing_values.md)
 * [Data Visualization in ggplot2](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/data_visualization_in_ggplot2/data_visualization_in_ggplot2.md)
 * [Summary Statistics in R](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_summary_stats/r_summary_stats.md)
+
+
+<br>
+<details>
+<summary><strong>For a deeper introduction to Data Analysis in R, click to see the full 18 module pathway.</strong></summary>
+<br>
+<hr>
+<br>
+<table>
+<thead>
+<tr>
+<th>Order</th>
+<th>Module</th>
+<th>Description</th>
+<th>Estimated Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/reproducibility/reproducibility.md">Reproducibility, Generalizability, and Reuse</a></td>
+<td>This module provides learners with an approachable introduction to the concepts and impact of <strong>research reproducibility</strong>, <strong>generalizability</strong>, and <strong>data reuse</strong>, and how technical approaches can help make these goals more attainable.</td>
+<td>60 min</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/how_to_troubleshoot/how_to_troubleshoot.md">How to Troubleshoot</a></td>
+<td>Learning to use technical methods like coding and version control in your research inevitably means running into problems.  Learn practical methods for troubleshooting and moving past error codes and other difficulties.</td>
+<td>30 min</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_basics_introduction/r_basics_introduction.md">R Basics: Introduction</a></td>
+<td>Introduction to R and hands-on first steps for brand new beginners.</td>
+<td>60 min</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_basics_visualize_data/r_basics_visualize_data.md">R Basics: Visualizing Data With ggplot2</a></td>
+<td>Learn how to visualize data using R&#39;s <code>ggplot2</code> package.</td>
+<td>60 min</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_basics_transform_data/r_basics_transform_data.md">R Basics: Transforming Data With dplyr</a></td>
+<td>Learn how to transform (or wrangle) data using R&#39;s <code>dplyr</code> package.</td>
+<td>60 min</td>
+</tr>
+<tr>
+<td>6</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/tidy_data/tidy_data.md">Tidy Data</a></td>
+<td>Tidy is a technical term in data analysis and describes an optimal way for organizing data that will be analyzed computationally.</td>
+<td>45 min</td>
+</tr>
+<tr>
+<td>7</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/directories_and_file_paths/directories_and_file_paths.md">Directories and File Paths</a></td>
+<td>In this module, learners will explore what a directory is and how to describe the location of a file using its file path.</td>
+<td>15 min</td>
+</tr>
+<tr>
+<td>8</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_basics_practice/r_basics_practice.md">R Basics Practice</a></td>
+<td>Use the basics of R coding, data transformation, and data visualization to work with real data.</td>
+<td>60 min</td>
+</tr>
+<tr>
+<td>9</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_reshape_long_wide/r_reshape_long_wide.md">Reshaping Data in R: Long and Wide Data</a></td>
+<td>A module that teaches how to reshape tabular data in R, concentrating on some typical shapes known as "long" and "wide" data.</td>
+<td>60 min</td>
+</tr>
+<tr>
+<td>10</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_missing_values/r_missing_values.md">Missing Values in R</a></td>
+<td>A practical demonstration of how missing values show up in R and how to deal with them. Note that this module does <strong>not</strong> cover statistical approaches for handling missing data, but instead focuses on the code you need to find, work with, and assign missing values in R.</td>
+<td>45 min</td>
+</tr>
+<tr>
+<td>11</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_summary_stats/r_summary_stats.md">Summary Statistics in R</a></td>
+<td>Learn to calculate summary statistics in R, and how to present them in a table for publication.</td>
+<td>30 min</td>
+</tr>
+<tr>
+<td>12</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/data_visualization_in_open_source_software/data_visualization_in_open_source_software.md">Data Visualization in Open Source Software</a></td>
+<td>Introduction to principles of data visualization and typical data visualization workflows using two common open source libraries: ggplot2 and seaborn.</td>
+<td>20 min</td>
+</tr>
+<tr>
+<td>13</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/data_visualization_in_ggplot2/data_visualization_in_ggplot2.md">Data Visualization in ggplot2</a></td>
+<td>This module includes code and explanations for several popular data visualizations, using R&#39;s ggplot2 package. It also includes examples of how to modify ggplot2 plots to customize them for different uses (e.g. adhering to journal requirements for visualizations).</td>
+<td>60 min</td>
+</tr>
+<tr>
+<td>14</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/intro_to_nhst/intro_to_nhst.md">Introduction to Null Hypothesis Significance Testing</a></td>
+<td>This is an introduction to NHST for biomedical researchers.</td>
+<td>40 min</td>
+</tr>
+<tr>
+<td>15</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/statistical_tests/statistical_tests.md">Statistical Tests in Open Source Software</a></td>
+<td>This module provides an overview of the most commonly used kinds of statistical tests and links to code for running many of them in both R and python.</td>
+<td>20 min</td>
+</tr>
+<tr>
+<td>16</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_practice/r_practice.md">R Practice</a></td>
+<td>Use the basics of R coding, data transformation, and data visualization to work with real data.</td>
+<td>60 min</td>
+</tr>
+<tr>
+<td>17</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/demystifying_machine_learning/demystifying_machine_learning.md">Demystifying Machine Learning</a></td>
+<td>An approachable and practical introduction to machine learning for biomedical researchers.</td>
+<td>60 min</td>
+</tr>
+<tr>
+<td>18</td>
+<td><a href="https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/bias_variance_tradeoff/bias_variance_tradeoff.md">Understanding the Bias-Variance Tradeoff</a></td>
+<td>The bias-variance tradeoff is a central issue in nearly all machine learning analyses. This module explains what the tradeoff is, why it matters for machine learning, and what you can do to manage it in your own analyses.</td>
+<td>20 min</td>
+</tr>
+</tbody>
+</table>
+<br>
+<hr>
+<br>
+</details>
+<br>
+
 
 Additionally, beyond the NIH grant, we have other articles and miscellany we suggest, whether those are resources we've created in Arcus, or things we recommend from the larger R community.
 
