@@ -25,7 +25,7 @@ If you'd like to learn more about DART, fill out our [interest form](https://red
 
 **Training Modules:**
 
-To get started learning about data science, we recommend starting with these modules: 
+To begin learning about data science, we recommend starting with these modules: 
 
 * [Reproducibility](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/reproducibility/reproducibility.md)
 * [How to Troubleshoot](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/how_to_troubleshoot/how_to_troubleshoot.md)
