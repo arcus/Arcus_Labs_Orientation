@@ -33,7 +33,7 @@ To begin learning about data science, we recommend starting with these modules:
 
 <br>
 <details>
-<summary><strong>For a deeper introduction to biomedical data science click to see the full 15 module pathway.</strong></summary>
+<summary><strong>For a deeper introduction to biomedical data science, click to see the full 15 module pathway.</strong></summary>
 <br>
 <hr>
 <br>

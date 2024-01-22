@@ -89,7 +89,7 @@ To begin learning R, we recommend starting with these modules:
 
 <br>
 <details>
-<summary><strong>For a deeper introduction to Data Analysis in R click to see the full 18 module pathway.</strong></summary>
+<summary><strong>For a deeper introduction to Data Analysis in R, click to see the full 18 module pathway.</strong></summary>
 <br>
 <hr>
 <br>
