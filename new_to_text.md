@@ -122,3 +122,67 @@ If you request an Arcus lab with clinical note annotations from cTAKES, you'll h
 | 123 | 328 | 335 | SignSymptomMention | false | true |  patient | Seizures |
 | 123 | 320 | 335 | DiseaseDisorderMention | false | true |  patient | Febrile Convulsions |
 
+
+## Using Large Language Models
+
+Have you been captivated by the possibilities of using large language models to generate text, such as composing an overview of a patient's medical history, translating clinical records from another language into English, summarizing a journal article, or helping draft emails?  You're not alone!
+
+You can learn more about LLMs like ChatGPT in our [Demystifying Large Language Models](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/demystifying_large_language_models/demystifying_large_language_models.md#1) module!
+
+## Manually annotating text (BRAT annotator)
+
+Perhaps you want to make notes (annotations) on clinical notes fields.  As a nurse educator who works with patients, you're interested in the psychological impact to patients in the days leading up to having a port placed. You want to examine the evidence from clinical notes where there's some mention that patients are experiencing fear, anxiety, or sadness related to their port placement.  For example, you might want to flag a few phrases in this fictional note, which we've bolded here:
+
+> Pt is **worried about** port placement, **sad** about not being able to play sports.  Expresses some **concerns** about proper port hygiene and risks associated with infection.  Parents v supportive. Suggest working with child life / occupational health wrt sports-adjacent activities.  pt and family scheduled for port hygiene education / wound care education on Sept 4.
+
+You've tried automated annotation, for example, by using cTAKES, but the tools available aren't reliably detecting what you want to capture.  So, you've pivoted in your research approach.  You requested from Arcus all the clinical notes within 3 days of port placement for patients who received ports in the past two years.  
+
+Those notes have been delivered to an Arcus lab, and you and your colleague are now manually going through the notes, identifying text that indicates anxiety, grief, sadness, anger, fear or similar emotional reactions that are directly related to port placement.  These notes already have some annotations (added, for example, by cTAKES), but you are pretty sure you'll need to correct or enrich those annotations. By annotating the text yourselves, you're spending a lot of time, but you're also identifying patterns that might later be used for automation, multiplying your expertise by applying it computationally.  
+
+You can annotate text in Arcus Labs using a tool called BRAT.  This allows you to open a note, display it in a visually clean and appealing way, and highlight text that has salient characteristics.
+
+Let's consider what using BRAT is like:
+
+Step 1: Open the BRAT annotator
+------
+
+In the dashboard of an Arcus lab, if the BRAT note annotator has been added, you'll see it in your list of tools:
+
+![A list of Arcus lab tools, at the bottom of which appears the text "Note Annotator".](media/note_annotator_dashboard.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px;"-->
+
+Click on the text "Note Annotator" to enter the annotation tool, and you'll first see a bit of basic instruction.  Please read this over, and click "OK" to make this initial info screen go away.
+
+![A help screen that begins "Welcome to the brat annotation tool!" and includes an "OK" button at the bottom right.](media/brat_instructions.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px;"-->
+
+Step 2: Log in  
+-----
+
+In order to make changes to (not just view) notes, you'll need to log in.  You'll want to first close any dialog boxes or file pickers, so that your annotation application is empty:
+
+![BRAT annotator screen that reads "No document selected..."](media/brat_blank.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 500px;"-->
+
+Notice that there's an application toolbar at the top, in blue.  It has arrows on the left side and the "brat" logo on the right.  If you hover over that toolbar, it will expand, and you can choose "log in."    Credentials for how to log in will be shared with you by the Arcus Applied Data Science team.  
+
+![BRAT annotator screen that includes clickable buttons.  The one on the far left says "Login".](media/brat_login.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 500px;"-->
+
+Once you log in, you won't get any sort of message saying that it worked, but if you hover again over the toolbar, you'll see a logout button with the appropriate user name.  That's how you'll know you're appropriately logged in!
+
+![BRAT annotator screen that includes clickable buttons.  The one on the far left says "Logout".](media/brat_successful_login.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 500px;"-->
+
+
+Step 3: Open a note.
+-----
+
+Hover over the toolbar so that you can click on "Collection", and navigate in the file structure until you reach the note you want to annotate.  You may have several different folders, organized according to the needs of the project.  
+
+If you go too deeply into a folder structure and need to "back out" to the parent folder, that's what `../` signifies!
+
+Once you see the icon of a piece of paper followed by the name of a note you want to annotate (or check the annotations of), you can double-click on it to open, or click once and then choose "OK" in the lower right.  
+
+![A list of files in the port attitudes folder in BRAT, including five files shown.](media/port_attitudes_brat.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 500px;"-->
+
+Step 4: Annotate!
+----
+
+
+
