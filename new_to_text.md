@@ -184,5 +184,7 @@ Once you see the icon of a piece of paper followed by the name of a note you wan
 Step 4: Annotate!
 ----
 
+Once you have a note open, you can select a single word by double-clicking it, or you can use click and drag to highlight a multi-word phrase.  In the example shown, we highlight the word "worried" and then add an annotation.
 
+The annotations that are possible to add can be widely varied.  Maybe you want to apply a very rich and multi-faceted ontology that already exists and is well defined, and you want to be able to link a word or a phrase with one or several terms in that ontology.  Or maybe you're defining your own group of terms, as we have here: Anxiety, Depression, Other.
 
