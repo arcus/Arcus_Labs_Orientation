@@ -122,13 +122,6 @@ If you request an Arcus lab with clinical note annotations from cTAKES, you'll h
 | 123 | 328 | 335 | SignSymptomMention | false | true |  patient | Seizures |
 | 123 | 320 | 335 | DiseaseDisorderMention | false | true |  patient | Febrile Convulsions |
 
-
-## Using Large Language Models
-
-Have you been captivated by the possibilities of using large language models to generate text, such as composing an overview of a patient's medical history, translating clinical records from another language into English, summarizing a journal article, or helping draft emails?  You're not alone!
-
-You can learn more about LLMs like ChatGPT in our [Demystifying Large Language Models](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/demystifying_large_language_models/demystifying_large_language_models.md#1) module!
-
 ## Manually annotating text (BRAT annotator)
 
 Perhaps you want to make notes (annotations) on clinical notes fields.  As a nurse educator who works with patients, you're interested in the psychological impact to patients in the days leading up to having a port placed. You want to examine the evidence from clinical notes where there's some mention that patients are experiencing fear, anxiety, or sadness related to their port placement.  For example, you might want to flag a few phrases in this fictional note, which we've bolded here:
@@ -137,20 +130,30 @@ Perhaps you want to make notes (annotations) on clinical notes fields.  As a nur
 
 You've tried automated annotation, for example, by using cTAKES, but the tools available aren't reliably detecting what you want to capture.  So, you've pivoted in your research approach.  You requested from Arcus all the clinical notes within 3 days of port placement for patients who received ports in the past two years.  
 
-Those notes have been delivered to an Arcus lab, and you and your colleague are now manually going through the notes, identifying text that indicates anxiety, grief, sadness, anger, fear or similar emotional reactions that are directly related to port placement.  These notes already have some annotations (added, for example, by cTAKES), but you are pretty sure you'll need to correct or enrich those annotations. By annotating the text yourselves, you're spending a lot of time, but you're also identifying patterns that might later be used for automation, multiplying your expertise by applying it computationally.  
+Those notes have been delivered to an Arcus lab, and you and your colleague are now manually going through the notes, identifying text that indicates anxiety, grief, sadness, anger, fear or similar emotional reactions that are directly related to port placement.  These notes may already have some annotations (added, for example, by cTAKES), but you are pretty sure you'll need to correct or enrich those annotations or add new ones. 
 
-You can annotate text in Arcus Labs using a tool called BRAT.  This allows you to open a note, display it in a visually clean and appealing way, and highlight text that has salient characteristics.
+Why manual annotation?
+-------
 
-Let's consider what using BRAT is like:
+By annotating the text yourselves, you're spending a lot of time, but you're also identifying patterns that might later be used for automation.  The main goal of manual annotation is to create a gold standard dataset for training a machine learning model.  
 
-Step 1: Open the BRAT annotator
+A machine learning model can relate to classification (for example, classifying hospital-generated emails as "billing related", "scheduling related", "results related", or "other").  Or maybe it's a model aimed at some advanced named entity recognition (NER), such as noticing all the different ways that providers describe paradoxical reactions to sedation ("adverse effect", "unexpected agitation", "needed reversal agent after violent reaction", etc.).  Maybe the model aims to detect overall sentiment ("pt is a charming, bubbly 4y f"), or aims to detect some other linguistic pattern.  Regardless of what you're trying to identify, having a gold standard set of texts that were annotated by experts is often key to creating an advanced model.
+
+Annotation in Arcus
+-----
+
+You can annotate text in Arcus Labs using a tool called brat (a [recursive acronym](https://en.wikipedia.org/wiki/Recursive_acronym) for "brat rapid annotation tool").  This tool allows you to open a note, display it in a visually clean and appealing way, highlight text that has salient characteristics, and add details about those characteristics.
+
+Let's consider what using brat is like:
+
+Step 1: Open the brat tool
 ------
 
-In the dashboard of an Arcus lab, if the BRAT note annotator has been added, you'll see it in your list of tools:
+In the dashboard of an Arcus lab, if the brat note annotator has been added, you'll see it in your list of tools:
 
 ![A list of Arcus lab tools, at the bottom of which appears the text "Note Annotator".](media/note_annotator_dashboard.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px;"-->
 
-Click on the text "Note Annotator" to enter the annotation tool, and you'll first see a bit of basic instruction.  Please read this over, and click "OK" to make this initial info screen go away.
+Click on the text "Note Annotator" to enter the annotation tool, and you'll first see a bit of basic instruction.  Please read this over, and click "OK" to make this initial info screen go away.  If you want more details on how to use brat, you can always read [the online manual](https://brat.nlplab.org/manual.html).
 
 ![A help screen that begins "Welcome to the brat annotation tool!" and includes an "OK" button at the bottom right.](media/brat_instructions.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px;"-->
 
