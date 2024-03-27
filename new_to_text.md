@@ -252,7 +252,7 @@ Once you have a note open, you can select a single word by double-clicking it, o
 
 <figure>
 
-  <img src="https://github.com/arcus/Arcus_Labs_Orientation/blob/main/media/annotation_example.png?raw=true" height="880" width="791" alt="Clicking on a word allows you to add an annotation like 'anxiety' or 'depression'." data-alt="https://github.com/arcus/Arcus_Labs_Orientation/blob/main/media/annotation_example.gif?raw=true" style = "border: 1px solid rgb(var(--color-highlight));">
+  <img src="https://github.com/arcus/Arcus_Labs_Orientation/blob/main/media/annotation_example.png?raw=true" height="657" width="538" alt="Clicking on a word allows you to add an annotation like 'anxiety' or 'depression'." data-alt="https://github.com/arcus/Arcus_Labs_Orientation/blob/main/media/annotation_example.gif?raw=true" style = "border: 1px solid rgb(var(--color-highlight));">
 
 <figcaption style = "font-size: 1em;">
 
@@ -264,3 +264,8 @@ Click on the image to play the demo of running the chunk that imports data.
 
 The annotations that are possible to add can be widely varied.  Maybe you want to apply a very rich and multi-faceted ontology that already exists and is well defined, and you want to be able to link a word or a phrase with one or several terms in that ontology.  Or maybe you're defining your own group of terms, as we have here: Anxiety, Depression, Other.
 
+## Using Large Language Models
+
+Have you been captivated by the possibilities of using large language models to generate text, such as composing an overview of a patient's medical history, translating clinical records from another language into English, summarizing a journal article, or helping draft emails?  You're not alone!
+
+You can learn more about LLMs like ChatGPT in our [Demystifying Large Language Models](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/demystifying_large_language_models/demystifying_large_language_models.md#1) module!

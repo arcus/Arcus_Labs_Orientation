@@ -139,11 +139,26 @@ Arcus labs are per-project. Each Arcus Lab is associated with a specific Arcus S
 
 ### Included Tools
 
+Statistical Analysis Software
+------
+
 Currently, Arcus Computational Labs are populated with open source statistical and data analytics software.  These software (JupyterLab with lanugage kernels such as Python and RStudio using R) allow for scripted data ingestion, cleaning, preparation, analysis, and visualization. 
 
 Licensed point and click commercial software such as Excel, SAS, and SPSS **are not supported**.  The paid, commercial license for a Stata language kernel for Jupyter (not the Stata point-and-click desktop application) can be requested if necessary for the project.
 
 Why is this tool suite what we provide in Arcus?  We want to position researchers to work in reproducible ways that set them up for career success and publication opportunities.  Increasingly, top tier journals demand scripted (not point-and-click) data analysis, and we believe this trend will continue and become industry standard.  We also believe that scripted analysis is the most reproducible way to conduct science and is best practice for the conduct of research.
+
+
+Text Tools
+-----
+
+We also have a text annotator, brat, which is useful for reading text files like clinical notes, as well as for adding any annotations.
+
+![Clicking on a word allows you to add an annotation like 'anxiety' or 'depression'.](media/annotation_example.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 500px;"-->
+
+
+Learning to use the tools
+------
 
 It can be a big change to start to use scripted analysis instead of using point-and-click software! It requires time, effort, and lots of trial and error.  Arcus Education has many educational resources that may interest you. For more information, [put in a help ticket](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/248?q=education&q_time=1676498496556), visit [Education Office Hours](https://outlook.office365.com/owa/calendar/BKG-StandardArcusEducationOfficeHours@chop.edu/bookings/) or email [`arcus-support@chop.edu`](mailto:arcus-support@chop.edu).  We'd also suggest you check out the "New to" documents, which are good for every researcher to learn about:
 
@@ -159,6 +174,7 @@ It can be a big change to start to use scripted analysis instead of using point-
 We estimate that completing the learning in the above "New to" modules as well as this module will require around 30-40 hours, depending on how deeply you engage with the materials. We suggest that you spread out your learning over several weeks to allow for practicing the skills you're learning in your Arcus lab.
 
 If you don't have time to learn SQL, R, and Python, consider having your junior staff train in these skills.  When RAs and study coordinators apply to graduate school, they're now being asked about their ability to write code.  Therefore, giving junior staff an opportunity to learn scripted analysis can help you have an affordable asset in your team who can do the work and will also set them up for greater career success.
+
 
 ### Included Data
 
