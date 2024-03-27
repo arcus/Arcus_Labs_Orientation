@@ -1,13 +1,68 @@
 <!--
 author:   Arcus Education
 email:    arcus-support@chop.edu
-version:  1.0.0
+version:  1.0.1
 language: en
 narrator: US English Female
 title: New to Text Data
 
+
+
+@gifPreload
+<script>
+(function($) {
+
+  // Get the .gif images from the "data-alt".
+	var getGif = function() {
+		var gif = [];
+		$('img').each(function() {
+			var data = $(this).data('alt');
+			gif.push(data);
+		});
+		return gif;
+	}
+
+	var gif = getGif();
+
+	// Preload all the gif images.
+	var image = [];
+
+	$.each(gif, function(index) {
+		image[index]     = new Image();
+		image[index].src = gif[index];
+	});
+
+	// Change the image to .gif when clicked and vice versa.
+	$('figure').on('click', function() {
+
+		var $this   = $(this),
+				$index  = $this.index(),
+
+				$img    = $this.children('img'),
+				$imgSrc = $img.attr('src'),
+				$imgAlt = $img.attr('data-alt'),
+				$imgExt = $imgAlt.split('.');
+
+		if($imgExt[1] === 'gif') {
+			$img.attr('src', $img.data('alt')).attr('data-alt', $imgSrc);
+		} else {
+			$img.attr('src', $imgAlt).attr('data-alt', $img.data('alt'));
+		}
+
+		// Add play class to help with the styling.
+		$this.toggleClass('play');
+
+	});
+
+})(jQuery);
+</script>
+@end
+
 link:   https://storage.googleapis.com/chop-dbhi-arcus-education-website-assets/css/styles.css
 script: https://kit.fontawesome.com/83b2343bd4.js
+script:  https://code.jquery.com/jquery-3.6.0.slim.min.js
+
+
 
 -->
 
@@ -187,7 +242,25 @@ Once you see the icon of a piece of paper followed by the name of a note you wan
 Step 4: Annotate!
 ----
 
-Once you have a note open, you can select a single word by double-clicking it, or you can use click and drag to highlight a multi-word phrase.  In the example shown, we highlight the word "worried" and then add an annotation.
+Once you have a note open, you can select a single word by double-clicking it, or you can use click and drag to highlight a multi-word phrase.  In the example shown, we highlight a couple of significant words and then add an annotation appropriate for each one.
+
+<div style="display:none">
+
+@gifPreload
+
+</div>
+
+<figure>
+
+  <img src="https://github.com/arcus/Arcus_Labs_Orientation/blob/main/media/annotation_example.png?raw=true" height="880" width="791" alt="Clicking on a word allows you to add an annotation like 'anxiety' or 'depression'." data-alt="https://github.com/arcus/Arcus_Labs_Orientation/blob/main/media/annotation_example.gif?raw=true" style = "border: 1px solid rgb(var(--color-highlight));">
+
+<figcaption style = "font-size: 1em;">
+
+Click on the image to play the demo of running the chunk that imports data.
+
+</figcaption>
+
+</figure>
 
 The annotations that are possible to add can be widely varied.  Maybe you want to apply a very rich and multi-faceted ontology that already exists and is well defined, and you want to be able to link a word or a phrase with one or several terms in that ontology.  Or maybe you're defining your own group of terms, as we have here: Anxiety, Depression, Other.
 
