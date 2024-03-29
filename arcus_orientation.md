@@ -1,24 +1,25 @@
 <!--
 author:   Arcus Education
 email:    arcus-support@chop.edu
-version:  1.0.3
+version:  1.1.0
 language: en
 narrator: US English Female
 title: Arcus Lab Orientation
 comment:  Learn what an Arcus Lab is and how to work with it.
 long_description: In the Research Institute of the Children's Hospital of Philadelphia, Arcus Computational Labs (or Arcus Labs for short) are computer systems that researchers on an Arcus Scientific Project can access in a web browser via a URL. This document describes what an Arcus lab is, what it does, and how researchers can work with an Arcus lab.  It also contains links to useful training materials in specific skills like R, Python, and SQL.
 estimated_time: 1h
-@learning_objectives  
+@learning_objectives 
 
 After completion of this training module, learners will be able to:
 
-- Explain what an Arcus lab is 
-- Understand the steps of getting an Arcus Lab 
-- Choose training options related to data science skills like R, Python, and SQL
+* Explain what Arcus is and describe a bit about what Arcus offers
+* Describe what an Arcus Scientific Lab is
+* Describe what an Arcus Scientific Lab includes and how to start the process of getting a Lab
+* Choose training options related to data science skills like R, Python, and SQL
 
 @end
 
-link:   https://storage.googleapis.com/chop-dbhi-arcus-education-website-assets/css/styles.css
+link:  https://cdn.jsdelivr.net/gh/arcus/education_modules@main/assets/styles.css
 script: https://kit.fontawesome.com/83b2343bd4.js
 script: https://cdn.jsdelivr.net/npm/mermaid@9.4.3/dist/mermaid.min.js
 -->
@@ -53,75 +54,69 @@ Hi!  This document is still under construction and testing.  We apologize in adv
 
 Please note that **many of the links here will only work if you're on the CHOP network**.
 
+Also, you can use the buttons in the upper right to change the size of the text, translate this to another language, or view a high-contrast version of this document!
+
 </div>
+
+## What is Arcus?
+
+Work With Human Data?
+----
+
+Arcus is a program of the Children's Hospital of Philadelphia Research Institute meant to improve **research rigor and reproducibility** and **data discovery and reuse** within research at CHOP, especially in the area of human and human-derived data and research.  We can provide you with data (data we give you via an Arcus Scientific Lab), archive your research data, help you learn data science skills, help you with research data management, and more!
+
+Not a Human Subjects Researcher?
+-----
+
+While some of our tools and services are very expressly related to **human** data (e.g. data from the clinical record, biosamples, and human subject research data), we are also able to help researchers in all domains (basic, non-human models, etc.) at CHOP with other services (e.g. research data lifecycle consultations, data science education).
+
+
+Not at CHOP?
+-----
+If you're **not** at CHOP, you can still benefit from some of our suggestions and training, even though we can't support you with things like providing datasets.
+
+The Arcus Scientific Lab 
+----
+Arcus has tools and products that can be helpful to you at various stages of the research life cycle.  In this document, we're going to talk mostly about **Arcus Scientific Labs**, which are environments that are available via web browser and come pre-populated with reproducible tools and data you specify.  
+
+The Arcus Scientific Lab (we'll shorten here to "lab" or "Arcus lab" many times) exists to allow you to answer a specific scientific question you have posed in the most reproducible, re-usable way possible, with standard file structures and toolsets.  This means that it will be easy for other researchers to re-use your data at a later date.  Working with Arcus labs has benefits now and in the future, when other investigators reuse your analyses or data and provide citations or co-authorship opportunities that will bolster your career.
 
 ## Audience
 
-The aim of this training is to bring researchers at the Children's Hospital of Philadelphia up to speed fast on:
-
-* What an Arcus lab is
-* What the Arcus Lab includes
-* What to expect when working with Arcus
-* Links to how to perform the data science DIY you'll need to do
-* Links to understand how to work with our librarians for your data contribution
-
-This training module will be useful for you whether you already have an Arcus Lab as part of an Arcus Scientific Project or you're just getting to know what the various Arcus tools are. 
+This training module will be useful for you whether you already have an Arcus Lab as part of an Arcus scientific project or you're just getting to know what the various Arcus tools are. 
 
 Some materials here are practical instructions for people who already have Arcus labs, and some materials are introductory and explain what an Arcus lab is.  The table of contents on the left can help you navigate through the materials and allow you to learn just what matters most to you.
 
-<div style = "clear: both;"></div>
+Log in, Learn More!
+----
 
-### Current Arcus Lab Users
+If you would like to learn more about what Arcus is and what we do, check out the **[Arcus website](https://arcus.chop.edu)** (available only on the CHOP network).  Even without logging in, you can see **announcements and support services** there that might be interesting to you, such as research data management consultations.
 
-If you're here because you've just started with a new Arcus Scientific Project with an Arcus Lab, congratulations! This goal of this guide is to get you up and running with your new Arcus lab, regardless of your research background and expertise.
+Once you log in to https://arcus.chop.edu, (you'll need to have CITI training and sign our terms of use), you'll also have access to our **self-service tools**.  These allow you to do things like browse available genomic variants, visit CHOP's data catalog, and construct clinical cohorts that meet some basic inclusion and exclusion criteria.  These self-service tools are intended to provide you some level of autonomy and awareness about Arcus data -- data which is sourced from research and clinical origins.  These tools are not exhaustive and won't be enough to actually provide you with the raw data you need, but they will give you important information about how much data is available, how many patients or human subjects are included, and characteristics about the data that can help you decide if you want to request the data.  If you do request data, it will be provided to you in an Arcus Scientific Lab!
+
+Potential Arcus Customers
+-----
+
+If you're just learning about Arcus, no worries!  If you conduct research at the Children's Hospital of Philadelphia, chances are we might have some tools, services, or resources that can help you.  We're going to concentrate mostly on a product we call an Arcus Scientific Lab, but if you don't have a project that uses an Arcus Lab and you're just here to browse and learn, you'll still learn a lot about what's possible.
+
+Here you'll learn about what an Arcus lab is and how to work with it.  While most of the information in the rest of this document is designed for Arcus Labs, our linked material about various data science topics like R and SQL is broadly applicable, even to folks who aren't working with Arcus. We hope you find it helpful. 
+
+Current Arcus Customers
+-----
+
+If you're here because you've recently signed the terms of use at https://arcus.chop.edu and you're ready to learn more, welcome!  And if you just started with a new Arcus scientific project with an Arcus Lab, congratulations! This goal of this guide is to get you up and running with your new Arcus lab, regardless of your research background and expertise.
 
 You should begin by working in this training document, which constitutes an Arcus Lab Overview. There are other documents we will suggest you look at as well, which cover additional skills. 
 
 <div style = "clear: both;"></div>
 
-Quick Overview of Arcus Data
------
-
-We have some documentation here about [data](#included-data) that can be provided in an Arcus lab, specifically in terms of the [Arcus Data Repository](https://chop.alationcloud.com/data/23/), which is a data source that includes clinical data from CHOP's EHR.  You may have your own data as well, which you're bringing to your Arcus lab, and you may also be using contributed data sets from the [Arcus Archives](https://chop.alationcloud.com/data/29/) as well.
-
-Importantly, Arcus exists in order to promote research reproducibility and data discovery and reuse.  For that reason, when you work with Arcus, we will plan with you how you will contribute your data sets, scripts, cohorts, or findings back to the Arcus ecosystem via a data contribution to the Arcus Archives.  We do this in a way that respects your scientific stewardship of data and scholarship, and we can work with you so that your data contribution takes place at the right time and in the right way.  To learn more about Arcus data contributions, please read our [Arcus Data Contribution Orientation](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_data_contribution.md#1).
-
-Our librarians have worked hard to create some suggested ways to organize your data such that your work is contribution-ready.  The Arcus Project Template they've developed also works to help you keep your work well-organized and easy to navigate. Please read our [Arcus Project Template Orientation](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/data_contribution_2_data.md#1) to find out the many advantages of a well-structured project in Arcus labs!
-
-Quick Overview of Data Science Skills
------
-
-If you're already comfortable with data science tools like SQL, R, Python, and version control, then this document may be enough to get you going. Most researchers will benefit from working through some or all of the other linked documents as well, though:
-
-- **[New to data science](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_data_science.md)** is a document that introduces helpful tools and tips for working on data science projects that will be useful to scientists coming from other types of research. Even if you have experience in data science already, you may find it worthwhile to skim the subtopics in that section so you know what's available should you want to come back to it to reference later.
-- **[New to version control](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_version_control.md)** is a document that will help you get started with git, a powerful program for helping you keep track of your research documents over time. If you don't currently use git or another form of version control, we strongly recommend you work through that section. Version control is an extremely valuable tool for reproducible research, and although there is a bit of a learning curve, it really pays off.
-- **[New to SQL](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_sql.md)**, **[New to R](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_r.md)** and **[New to Python](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_python.md)** are documents that introduce you to the three languages most important to your work in an Arcus Lab: SQL, R, and python. You will need at least some familiarity with SQL in order to access any tabular data in your lab (data that takes the forms of rows and columns). Depending on your research needs, you can pick whether to learn Python or R or use some of both. If you're new to SQL, R, and Python, we recommend you focus on SQL first, since that's the first thing you'll need to be able to apply in your own lab.
-- **[New to Omics](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_omics.md#1)** will get you started if you're using the Arcus Omics Training Lab. The instructions in this document presuppose that specific files, containing pre-defined data, exist and that you're working in the Omics Training Lab.
-- **[New to Text Data](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_text.md#1)** is a very cursory introduction to some topics related to working with text data.
-
-### Future Lab Users
-
-If you don't have an Arcus Scientific Project with an Arcus Lab and you're just here to browse and learn, welcome! 
-
-Here you'll learn about what an Arcus lab is and how to work with it.  But even if you have no interest in an Arcus Lab, this document might be useful.  
-
-While most of the information here is designed for Arcus Labs, our linked material about various topics like R and SQL is broadly applicable, even to folks who aren't working with Arcus. We hope you find it helpful. 
-
-If you would like to learn more about what Arcus is and what we do, check out the [Arcus website](https://arcus.chop.edu).  We'd also suggest you check out the "New to" documents, which are good for every researcher to learn about:
-
-* [New to data science](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_data_science.md)
-* [New to SQL](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_sql.md)
-* [New to R](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_r.md)
-* [New to Python](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_python.md)
-* [New to Version Control](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_version_control.md)
-* [New to Omics](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_omics.md#1)
-* [New to Text Data](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_text.md#1)
-
 ## Arcus Lab Basics
 
-Arcus Computational Labs (or Arcus Labs for short) exist to provide a robust, configurable computational environment that has the level of computation you need (often, more than you can get from your laptop) and is secure, compliant, and reproducible.   
+Arcus Computational Labs (or Arcus Labs for short) exist to provide a robust, configurable computational environment that has the level of computation you need (often, more than you can get from your laptop) and is secure, compliant, and reproducible.
 
-Instead of receiving your data in files that you download to your local system to work with, Arcus supplies you with a Lab which has pre-installed [data](#included-data) and [tools](#included-tools). This lab is available by using a web browser to access a URL, which means you no longer need to download software to your computing device. It also means that all members of your team with access to the lab will have the same environment, access to the same data, and be able to share scripts more easily. See below an example of what you might see when you visit your lab’s website via Google Chrome.
+**When you request CHOP data from Arcus, we deliver it in an Arcus lab**.  Instead of receiving your data in files that you download to your local system to work with, Arcus supplies you with a Lab which has pre-installed [data](#included-data) and [tools](#included-tools). This lab is available by using a web browser to access a URL, which means you no longer need to download software to your computing device. It also means that all members of your team with access to the lab will have the same environment, access to the same data, and be able to share scripts more easily. See below an example of what you might see when you visit your lab’s website via Google Chrome.
+
+Even if you're not requesting data from Arcus, but bringing your own, you might find that working in an Arcus lab is beneficial.
 
 ![](media/arcus_lab_screenshot.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 600px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
@@ -137,16 +132,79 @@ Keep in mind that some group-level data may be overly disclosive in the case of 
 
 Arcus labs are per-project. Each Arcus Lab is associated with a specific Arcus Scientific Project, is open to only the approved users for that project, and is isolated from every other Arcus Lab.  
 
+### Included Data
+
+What Can I Get?
+-----
+
+Lots of different, interrelated datasets can be provided in an Arcus lab.  You can add clinical data, for example from the [Arcus Data Repository](https://chop.alationcloud.com/data/23/), which is a data source that includes clinical data from CHOP's EHR.  You may also be using contributed data sets that other researchers generated and listed as part of the [Arcus Archives](https://chop.alationcloud.com/data/29/) as well.  In fact, any data listed in [CHOP's Enterprise Data Catalog, Gene](https://gene.chop.edu) can be added to an Arcus lab.  You may have your own data as well, in a database or in files, which you want added to your Arcus lab.
+
+Deidentified only? Or IRB Projects, Too?
+----
+
+You can combine data from multiple sources in an Arcus project, and you can work with deidentified data or with identified data that you're using under an IRB protocol.
+
+Paying it Forward
+-----
+
+Importantly, Arcus exists in order to promote **research reproducibility** and **data discovery and reuse**.  For that reason, when you work with Arcus, we will plan with you how you will contribute your data sets, scripts, cohorts, or findings back to the Arcus ecosystem via a data contribution to the Arcus Archives.  We do this in a way that respects your scientific stewardship of data and scholarship, and we can work with you so that your data contribution takes place at the right time and in the right way.  To learn more about Arcus data contributions, please read our [Arcus Data Contribution Orientation](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_data_contribution.md#1).
+
+Organizing Your Data 
+-----
+
+Our librarians have worked hard to create some suggested ways to organize your data such that your work is contribution-ready.  The Arcus Project Template they've developed also works to help you keep your work well-organized and easy to navigate. Please read our [Arcus Project Template Orientation](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/data_contribution_2_data.md#1) to find out the many advantages of a well-structured project in Arcus labs!
+
+Getting the Right Data Into Your Lab 
+-----
+
+An initial **data needs assessment** takes place during the project assessment for new Scientific Projects.  This process will determine the data that is provisioned to your lab to start.  You can learn more about this process in the [Getting an Arcus Lab](#getting-an-arcus-lab) section. 
+
+However, some researchers find that they need to modify their data request at some point during the life of their project. To do that, you can fill out a request form.  The [general request area](https://support.arcus.chop.edu/servicedesk/customer/portal/6) of the Arcus Service Desk includes forms for requesting geospatial data, images, and ADR data.  
+
+Importantly, additional **privacy and data assessment work** will be needed as part of the consideration of your request to expand your data.  It is useful to plan data use (your explanatory and outcome variables, any demographic information you need, inclusion and exclusion criteria, etc.) **well ahead of time** to reduce delays caused by data requests made after a project is already underway. 
+
+What's the Arcus Data Repository?
+-----
+
+If you're planning on using clinical data, you'll likely be receiving data from the Arcus Data Repository, which includes a simplified version of data from CHOP's EHR.  
+
+Arcus Data Repository (ADR) clinical data contains many frequently used fields from Epic data, but is not a complete duplicate of Epic.  Additionally, data in the ADR has been shaped into tables that are more intuitive than raw data from Epic.
+
+How Do I Make a Request?
+-----
+
+Requesting data means (eventually) describing both the **cohort you want data from** (for example, male patients currently aged 13 or above who have an ICD E or F diagnosis code) and the **fields you want** (for example, demographic data, diagnoses, and emergency department encounter information).  You can start a request without having all the information complete.  In fact, our self-service tools have data request buttons that allow you to kick off a request and start the dialogue with Arcus about honing your data request to the precise data you need.
+
+If you need help determining which data you need from the Arcus Data Repository, you can work on defining your [clinical cohort](https://education.arcus.chop.edu/arcus-clinical-cohorts/) by using the [Arcus cohort discovery tool](https://arcus.chop.edu/cohort-discovery). 
+
+If you need help using Arcus cohort discovery, check out the [Cohort Discovery Job Aid](https://forum.arcus.chop.edu/t/cohort-discovery-tool-job-aid/590) on the Arcus Forum.  
+
+Want to explore research data sets and other enterprise data?  Visit [Gene](https://gene.chop.edu)!
+
+Special Data Types
+-----
+
+Many researchers bring in other data sources to analyze in Arcus. Talk to your Project Owner about any additional data needs ([genomics data](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/270), [images](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/268), [geospatial data](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/265), data from other previous or ongoing research projects, etc.).  Keep in mind that all data requests are subject to review by the privacy team and that changing the scope of your project once it has been launched may result in delays.  It's best to know what data you'd like to use at the project assessment phase.
+
+
+Getting Help
+----
+
+If you need help describing the data you need, you may also ask your Project Owner, if you have a scientific project, or submit a ticket at the [Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/302) for assistance.
+
+When you are ready to place a request for additional data, new services, or want to learn more about scientific labs or report a problem, you may do so through the [Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/portal/6/group/65).
+
+
 ### Included Tools
 
 Statistical Analysis Software
 ------
 
-Currently, Arcus Computational Labs are populated with open source statistical and data analytics software.  These software (JupyterLab with lanugage kernels such as Python and RStudio using R) allow for scripted data ingestion, cleaning, preparation, analysis, and visualization. 
+Currently, Arcus Computational Labs are populated with open source statistical and data analytics software.  These software (JupyterLab with language kernels such as Python and RStudio using R) allow for scripted data ingestion, cleaning, preparation, analysis, and visualization. 
 
-Licensed point and click commercial software such as Excel, SAS, and SPSS **are not supported**.  The paid, commercial license for a Stata language kernel for Jupyter (not the Stata point-and-click desktop application) can be requested if necessary for the project.
+Licensed point and click commercial software such as Excel, SAS, and SPSS **are not supported at this time**.  The paid, commercial license for a Stata language kernel for Jupyter (not the Stata point-and-click desktop application) can be requested if necessary for the project.
 
-Why is this tool suite what we provide in Arcus?  We want to position researchers to work in reproducible ways that set them up for career success and publication opportunities.  Increasingly, top tier journals demand scripted (not point-and-click) data analysis, and we believe this trend will continue and become industry standard.  We also believe that scripted analysis is the most reproducible way to conduct science and is best practice for the conduct of research.
+Why is this tool suite what we provide in Arcus?  We want to position researchers to work in reproducible ways that set them up for career success and publication opportunities.  Increasingly, top tier journals demand scripted (not point-and-click) data analysis, and we believe this trend will continue and become industry standard.  We also believe that scripted analysis is the most reproducible way to conduct science and is best practice for the conduct of research.  Finally, Free and Open Source Software (FOSS) like R and Python are one of the most open ways to share data with researchers in lower-resourced settings, who may not be able to afford high license costs of proprietary software like SAS.  Because Arcus is deeply invested in research rigor and reproducibility, we suggest wherever possible that researchers use scripted analysis tools that are free and open source.
 
 
 Text Tools
@@ -160,45 +218,26 @@ We also have a text annotator, brat, which is useful for reading text files like
 Learning to use the tools
 ------
 
-It can be a big change to start to use scripted analysis instead of using point-and-click software! It requires time, effort, and lots of trial and error.  Arcus Education has many educational resources that may interest you. For more information, [put in a help ticket](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/248?q=education&q_time=1676498496556), visit [Education Office Hours](https://outlook.office365.com/owa/calendar/BKG-StandardArcusEducationOfficeHours@chop.edu/bookings/) or email [`arcus-support@chop.edu`](mailto:arcus-support@chop.edu).  We'd also suggest you check out the "New to" documents, which are good for every researcher to learn about:
+It can be a big change to start to use scripted analysis instead of using point-and-click software! It requires time, effort, and lots of trial and error.  Arcus Education has many educational resources that may interest you. For more information, [put in a help ticket](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/248?q=education&q_time=1676498496556), visit [Education Office Hours](https://outlook.office365.com/owa/calendar/BKG-StandardArcusEducationOfficeHours@chop.edu/bookings/), visit our [list of self-guided tutorials](https://arcus.github.io/education_modules) that you can do on your own,  or email [`arcus-support@chop.edu`](mailto:arcus-support@chop.edu).  We'd also suggest you check out the "New to" documents, which are good for every researcher to learn about:
 
-* [New to data science](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_data_science.md)
-* [New to SQL](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_sql.md)
-* [New to R](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_r.md)
-* [New to Python](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_python.md)
-* [New to Version Control](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_version_control.md)
-* [New to Omics](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_omics.md#1)
-* [New to Text Data](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_text.md#1)
+- **[New to data science](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_data_science.md)** is a document that introduces helpful tools and tips for working on data science projects that will be useful to scientists coming from other types of research. Even if you have experience in data science already, you may find it worthwhile to skim the subtopics in that section so you know what's available should you want to come back to it to reference later.
+- **[New to version control](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_version_control.md)** is a document that will help you get started with git, a powerful program for helping you keep track of your research documents over time. If you don't currently use git or another form of version control, we strongly recommend you work through that section. Version control is an extremely valuable tool for reproducible research, and although there is a bit of a learning curve, it really pays off.
+- **[New to SQL](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_sql.md)**, **[New to R](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_r.md)** and **[New to Python](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_python.md)** are documents that introduce you to the three languages most important to your work in an Arcus Lab: SQL, R, and python. You will need at least some familiarity with SQL in order to access any tabular data in your lab (data that takes the forms of rows and columns). Depending on your research needs, you can pick whether to learn Python or R or use some of both. If you're new to SQL, R, and Python, we recommend you focus on SQL first, since that's the first thing you'll need to be able to apply in your own lab.
+- **[New to Omics](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_omics.md#1)** will get you started if you're using the Arcus Omics Training Lab. The instructions in this document presuppose that specific files, containing pre-defined data, exist and that you're working in the Omics Training Lab.
+- **[New to Text Data](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_text.md#1)** is a very cursory introduction to some topics related to working with text data.
 
+We estimate that completing the learning in the above "New to" modules as well as this module will require around 35-45 hours, depending on how deeply you engage with the materials. We suggest that you spread out your learning over several weeks to allow for practicing the skills you're learning in your Arcus lab.
 
-We estimate that completing the learning in the above "New to" modules as well as this module will require around 30-40 hours, depending on how deeply you engage with the materials. We suggest that you spread out your learning over several weeks to allow for practicing the skills you're learning in your Arcus lab.
+I Don't Have Time to Learn!
+------
 
-If you don't have time to learn SQL, R, and Python, consider having your junior staff train in these skills.  When RAs and study coordinators apply to graduate school, they're now being asked about their ability to write code.  Therefore, giving junior staff an opportunity to learn scripted analysis can help you have an affordable asset in your team who can do the work and will also set them up for greater career success.
+If you don't have time to learn SQL, R, and Python, consider having your junior staff train in these skills.  When RAs and study coordinators apply to graduate school, they're now being asked about their ability to write code.  Therefore, giving junior staff an opportunity to learn scripted analysis can help you have an affordable asset in your team who can do the work and will also set them up for greater career success. 
 
+Can't I Just Pay Someone?
+-----
 
-### Included Data
+Additionally, the Department of Biomedical and Health Informatics (DBHI) at CHOP has staff that you can use in a billback model who can handle analysis for you, if you don't have the staff or time to acquire R, Python, and SQL skills.
 
-An initial data needs assessment takes place during the project assessment for new Scientific Projects.  This process will determine the data that is provisioned to your lab to start.  You can learn more about this process in the [Getting an Arcus Lab](#getting-an-arcus-lab) section. 
-
-However, some researchers find that they need to modify their data request at some point during the life of their project. To do that, you can fill out a request form.  The [general request area](https://support.arcus.chop.edu/servicedesk/customer/portal/6) of the Arcus Service Desk includes forms for requesting geospatial data, images, and ADR data.  
-
-Importantly, additional privacy and data assessment work will be needed as part of the consideration of your request.  It is useful to plan data use (your explanatory and outcome variables, any demographic information you need, inclusion and exclusion criteria, etc.) well ahead of time to reduce delays caused by data requests made after a project is already underway. 
-
-If you're planning on using clinical data, you'll likely be receiving data from the Arcus Data Repository, which includes a simplified version of data from CHOP's EHR.  
-
-Arcus Data Repository (ADR) clinical data contains many frequently used fields from Epic data, but is not a complete duplicate of Epic.  Additionally, data in the ADR has been shaped into tables that are more intuitive than raw data from Epic.
-
-Requesting data means describing both the cohort you want data from (for example, male patients currently aged 13 or above who have an ICD E or F diagnosis code) and the fields you want (for example, demographic data, diagnoses, and emergency department encounter information).
-
-If you need help determining which data you need from the Arcus Data Repository, you can work on defining your [clinical cohort](https://education.arcus.chop.edu/arcus-clinical-cohorts/) by using the [Arcus cohort discovery tool](https://arcus.chop.edu/cohort-discovery). 
-If you need help using Arcus cohort discovery, check out the [Cohort Discovery Job Aid](https://forum.arcus.chop.edu/t/cohort-discovery-tool-job-aid/590) on the Arcus Forum.  
-You may also ask your Project Owner, if you have a scientific project, or submit a ticket at the [Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/302) for assistance.
-
-To explore the tables and variables available in the [Arcus Data Repository (ADR)](https://education.arcus.chop.edu/arcus-data-repository/), you can use the [ADR Data Model Browser](https://adr-mdm.arcus.chop.edu/browser/). Note that the data model browser is most useful for folks who have already built some familiarity with the ADR --- if you're still finding your way around, then please reach out to Arcus staff for help deciding which tables and variables you will need.
-
-You are not limited to what's in the ADR! Many researchers bring in other data sources to analyze in Arcus. Talk to your Project Owner about any additional data needs ([genomics data](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/270), [images](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/268), [geospatial data](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/265), data from other previous or ongoing research projects, etc.).  Keep in mind that all data requests are subject to review by the privacy team and that changing the scope of your project once it has been launched may result in delays or costs.  It's best to know what data you'd like to use at the project assessment phase.
-
-When you are ready to place a request for additional data, new services, or want to learn more about scientific labs or report a problem, you may do so through the [Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/portal/6/group/65).
 
 ### Knowledge Check 1
 
@@ -426,7 +465,7 @@ function(g) {
 
 </div>
 
-When the lab is built, the Arcus data team will provision your lab with the required data, as determined during your project assessment. For more information about the data in Arcus, see [requesting data for your lab](#requesting-data-for-your-lab).
+When the lab is built, the Arcus data team will provision your lab with the required data, as determined during your project assessment. For more information about the data in Arcus, see [Included Data](#included-data).
 
 You'll receive an email letting you know when your lab is available, and providing the URL for you to access your lab. Your Project Owner will meet with you and your team to introduce you to the lab environment.
 
