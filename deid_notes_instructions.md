@@ -77,7 +77,7 @@ That includes information like diagnoses, treatment, procedures, prescriptions, 
 It also includes information like facility or provider information, such as the name of the doctor seen or which clinic the patient came to. 
 And it covers information about payment, like what kind of health insurance a patient has. 
 
-## Quiz
+## Quiz: What is identifying information?
 
 Which of the following pieces of information would typically count as **identifying information** in the Safe Harbor method? 
 Select all that apply.
@@ -112,6 +112,8 @@ In particular, the treating physician's last name, the fact that the patient was
 If you struggled with this question, go back and review the [Guidance on Satisfying the Safe Harbor Method](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html#safeharborguidance) again.
 
 ****
+
+## Quiz: Is this PHI?
 
 For each of the following fake clinical notes, identify whether or not there is PHI present. 
 (All of the example notes in this training are fake, written for this exercise. 
@@ -160,18 +162,18 @@ See [What are examples of dates that are not permitted according to the Safe Har
 
 ****
 
-> Pt seen for BL wrist stiffness and pain. She is an Olympic swimmer, and will be competing in the 2016 games. Work closely with both patient and coach to develop a treatment plan that takes her training into account. 
+> Pt complains of BL wrist stiffness and pain. She is an Olympic swimmer (won two gold and two silver medals in the 2016 games!). Work closely with both patient and coach to develop a treatment plan that takes her training into account. 
 
 [(X)] Yes, this has PHI
 [( )] No, this does not have PHI
 ****
 
-Yes, this contains both health information (wrist stiffness and pain) and potentially identifying information (the fact that she will compete in the 2016 Olympics).
+Yes, this contains both health information (wrist stiffness and pain) and potentially identifying information (the fact that she won gold and silver medals in the 2016 Olympics).
 Note that "BL" often stands for "bilateral", and in this context that appears to be what it means. 
 If it were the patient's initials, then that would be identifying as well.
 
-This is a situation where the identifying information is not of a typical category (name, age, MRN), but nevertheless it is specific enough that someone might be able to figure out who this patient is by looking at the list of Olympic swimmers from 2016. 
-Especially since Olympic athletes are often the subject of news coverage, there is a reasonable chance of there being an article mentioning this patient that would allow someone to identify her as the person referenced in this note.
+This is a situation where the identifying information is not of a typical category (name, age, MRN), but nevertheless it is specific enough that someone might reasonably be able to figure out who this patient is by looking at the list of Olympic medalists from 2016. 
+In this case, her fame as an athlete is an "identifying characteristic" under HIPAA. 
 
 See [What constitutes “any other unique identifying number, characteristic, or code” with respect to the Safe Harbor method of the Privacy Rule?](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html#uniquenumber).
 
@@ -195,7 +197,7 @@ Similarly, the name, address, and phone number of the department in which the pa
 
 Keep in mind that in some cases, knowledge that a patient was treated by a particular person or at a particular facility might be identifying if it would provide information about an identifying characteristic of the patient. 
 For example, knowing that a patient was treated by Dr. Ali could be identifying if it is known that Dr. Ali is the private physician for the Philadelphia Flyers ice hockey team -- knowing the year and the fact that Dr. Ali treated the patient for some specific condition or symptom could be enough to identify who the patient was by reading news coverage about the team. 
-But other than rare exceptions, the presence of identifying information about health care providers does make a note PHI.
+But other than rare exceptions, the presence of identifying information about health care providers does **not** make a note PHI.
 
 See [Must a covered entity suppress all personal names, such as physician names, from health information for it to be designated as de-identified?](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html#supress)
 
