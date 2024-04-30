@@ -43,15 +43,13 @@ import: https://raw.githubusercontent.com/arcus/education_modules/main/_module_t
 
 # Instructions for De-identification of Notes
 
-**Who this is for:** This is the training document for human coders who will be checking the annotations produced by [NLP](#nlp) (natural language processing) models on clinical notes. 
+**Who this is for:** 
+This is the training document for human coders who will be checking the annotations produced by [NLP](#nlp) (natural language processing) models. 
+The annotations are an attempt to find identifying information in clinical notes. 
 
-**Project overview:**
-
-Clinical notes contain a tremendous amount of valuable information, but because of the open-ended nature of notes fields they have to be considered identifying (and, indeed, notes do often contain things like names, dates, and contact information that does clearly identify the patient the note is about). 
-When de-identified data is appropriate for a given research question, it would be ideal to be able to provide a de-identified version of clinical notes along with those data, but manual review of each note for [PHI](#phi) (private health information) by an expert is prohibitively time consuming. 
-
-To address this issue, we are working on an NLP pipeline that will automatically tag identifying information in notes, so that it can then be removed or replaced with dummy text as needed. 
-In order to evaluate the performance of the models being tested, we need a set of "gold standard" annotations created by humans who understand what does and doesn't qualify as PHI under [HIPAA](#hipaa). 
+**What this covers:**
+This training includes a review of what constitutes [PHI](#phi) (private health information) under [HIPAA](#hipaa), and practical instructions about how to parse clinical notes for PHI. 
+There are quiz questions available to check your understanding.   
 
 ## What is PHI?
 
@@ -60,22 +58,16 @@ PHI is **individually identifiable health information**, so for a given piece of
 Text describing diagnoses, procedures, symptoms, treatment, etc. is *not* PHI if it doesn't also include some information that could be used to link that health information to an individual. 
 Because of this, HIPAA allows for the de-identification of clinical notes; after successfully de-identifying them, the notes are no longer PHI. 
 
-## De-identification
-
-From https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html: 
-
-> **De-Identified Health Information**. There are no restrictions on the use or disclosure of de-identified health information. De-identified health information neither identifies nor provides a reasonable basis to identify an individual. There are two ways to de-identify information; either: (1) a formal determination by a qualified statistician; or (2) the removal of specified identifiers of the individual and of the individual's relatives, household members, and employers is required, and is adequate only if the covered entity has no actual knowledge that the remaining information could be used to identify the individual.
-
 ### What counts as identifying information?
 
-There are 18 specific kinds of identifying information, listed in the "Safe Harbor" method for de-identification.
+There are 18 specific kinds of identifying information listed in the "Safe Harbor" method for de-identification.
 
 Carefully read through the [Guidance on Satisfying the Safe Harbor Method](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html#safeharborguidance).
 
 
 ### What counts as health information?
 
-From https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html#protected: 
+From [HHS's definition of protected health information](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html#protected): 
 
 > the individual’s past, present, or future physical or mental health or condition,
 >
@@ -87,9 +79,9 @@ That includes information like diagnoses, treatment, procedures, prescriptions, 
 It also includes information like facility or provider information, such as the name of the doctor seen or which clinic the patient came to. 
 And it covers information about payment, like what kind of health insurance a patient has. 
 
-## Quiz: What counts as identifying information?
+## Quiz
 
-Which of the following pieces of information would count as **identifying information** in the Safe Harbor method? 
+Which of the following pieces of information would typically count as **identifying information** in the Safe Harbor method? 
 Select all that apply.
 
 [[X]] Patient's last name
@@ -111,6 +103,7 @@ Select all that apply.
 [[ ]] A photo of a mole on the patient's back
 [[X]] The patient's clinical trial record number
 [[X]] The date the patient's blood work was analyzed
+[[ ]] The fact that the patient was accompanied by their mom
 ****
 <div class = "answer">
 
@@ -124,9 +117,9 @@ If you struggled with this question, go back and review the [Guidance on Satisfy
 </div>
 ****
 
-## Quiz: Is this PHI?
-
-**All of the example notes in this training are fake, written for this exercise. None are from real patient records.**
+For each of the following fake clinical notes, identify whether or not there is PHI present. 
+(All of the example notes in this training are fake, written for this exercise. 
+None are from real patient records.)
 
 > HT, 3yo male, presented with headache and fever. This is his third visit to ED in a week, mom expressed concern that fever isn't resolving. 
 
@@ -184,7 +177,7 @@ See [What are examples of dates that are not permitted according to the Safe Har
 ****
 <div class = "answer">
 
-Yes, this contains both health information (wrist pain) and potentially identifying information (the fact that she will compete in the 2016 Olympics).
+Yes, this contains both health information (wrist stiffness and pain) and potentially identifying information (the fact that she will compete in the 2016 Olympics).
 Note that "BL" often stands for "bilateral", and in this context that appears to be what it means. 
 If it were the patient's initials, then that would be identifying as well.
 
@@ -200,7 +193,7 @@ See [What constitutes “any other unique identifying number, characteristic, or
 > 
 > Dept phone: 215-590-3480
 > 
-> Patient presents with abdominal bruising and tenderness. Dad said he fell at the playground, not sure whether or not he hit his head. Ordered ct. GHT, RN
+> 4yo male presents with abdominal bruising and tenderness. Dad said he fell at the playground, not sure whether or not he hit his head. Ordered ct. GHT, RN
 
 [( )] Yes, this has PHI
 [(X)] No, this does not have PHI
@@ -215,6 +208,7 @@ Similarly, the name, address, and phone number of the department in which the pa
 
 Keep in mind that in some cases, knowledge that a patient was treated by a particular person or at a particular facility might be identifying if it would provide information about an identifying characteristic of the patient. 
 For example, knowing that a patient was treated by Dr. Ali could be identifying if it is known that Dr. Ali is the private physician for the Philadelphia Flyers ice hockey team -- knowing the year and the fact that Dr. Ali treated the patient for some specific condition or symptom could be enough to identify who the patient was by reading news coverage about the team. 
+But other than rare exceptions, the presence of identifying information about health care providers does make a note PHI.
 
 See [Must a covered entity suppress all personal names, such as physician names, from health information for it to be designated as de-identified?](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html#supress)
 
@@ -236,13 +230,14 @@ Note that even though the phone number in question doesn't belong to the patient
 
 Also note that the time of the acetaminophen dose (8:34am) **is not** identifying. 
 A date would be identifying, but just the time on its own is not. 
+Similarly, "DAILY NOTE 5" is not identifying, although a date would be.
 
 </div>
 ****
 
 > 2023-05-03 
 > 
-> Session 3
+> Session 3/5
 > 
 > Worked on UB strength and coordination, especially crossing midline. Focusing on ADLs such as brushing teeth, donning UB clothing. 
 
@@ -251,10 +246,13 @@ A date would be identifying, but just the time on its own is not.
 ****
 <div class = "answer">
 
-This contains both health information (the exercises done) and identifying information (the date of the session, "2023-05-03").
+This contains both health information (the exercises done, how many sessions) and identifying information (the date of the session, "2023-05-03").
 
-This example also includes a number of abbreviations ("UB" for "upper body", and "ADLs" for "activities of daily living"), which can be very hard to parse without some experience with medical jargon.
+This example also includes a number of abbreviations ("UB" for "upper body", and "ADLs" for "activities of daily living"), which can be hard to parse without some experience with medical jargon.
 From how they're used in the sentences here, though, it seems very unlikely that they are identifying information (such as patient initials).
+
+Note that "Session 3/5" refers to the third of five sessions, and while it is health information it is not identifying. 
+Fractions and ratios are sometimes hard to distinguish from dates.
 
 </div>
 ****
@@ -266,10 +264,10 @@ From how they're used in the sentences here, though, it seems very unlikely that
 ****
 <div class = "answer">
 
-Yes, this contains both health information (family history information, the fact that patient has an implant) and identifying information (the ID of the implanted device, "ML-987650-08").
+Yes, this contains both health information (the fact that patient has an implant, family history information) and identifying information (the ID of the implanted device, "ML-987650-08").
 
 Note that health information refers to the individual’s past, present, or future physical or mental health or condition, the provision of health care to the individual, or the past, present, or future payment for the provision of health care to the individual.
-It may seem that the family history information here wouldn't qualify since it isn't directly about the individual patient, but medical information about people related to the patient does provide some medical information about the patient as well -- in this case it suggests an elevated risk of cardiovascular disease. 
+It may seem that the family history information here wouldn't qualify as health information since it isn't directly about the individual patient, but medical information about people related to the patient does provide some medical information about the patient as well -- in this case it suggests an elevated risk of cardiovascular disease. 
 
 </div>
 ****
@@ -295,6 +293,4 @@ This contains both health information (the patient's blood pressure and temperat
 <a name="phi">PHI</a>: Protected Health Information. PHI is a specific term for the kind of information that is protected by the [HIPAA Privacy Rule](https://www.hhs.gov/hipaa/for-professionals/privacy/index.html). PHI is "individually identifiable health information".
 
 <a name="nlp">NLP</a>: Natural Language Processing. A category of machine learning models that analyze text data. 
-
-
 
