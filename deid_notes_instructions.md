@@ -37,8 +37,6 @@ None.
 No previous versions.
 @end
 
-import: https://raw.githubusercontent.com/arcus/education_modules/main/_module_templates/macros.md
-
 -->
 
 # Instructions for De-identification of Notes
@@ -105,7 +103,6 @@ Select all that apply.
 [[X]] The date the patient's blood work was analyzed
 [[ ]] The fact that the patient was accompanied by their mom
 ****
-<div class = "answer">
 
 Recall that information is identifying under the Safe Harbor method if it falls into any of the 18 categories listed there and relates to the individual or to relatives, employers, or household members of the individual.
 
@@ -114,7 +111,6 @@ In particular, the treating physician's last name, the fact that the patient was
 
 If you struggled with this question, go back and review the [Guidance on Satisfying the Safe Harbor Method](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html#safeharborguidance) again.
 
-</div>
 ****
 
 For each of the following fake clinical notes, identify whether or not there is PHI present. 
@@ -126,14 +122,12 @@ None are from real patient records.)
 [(X)] Yes, this has PHI
 [( )] No, this does not have PHI
 ****
-<div class = "answer">
 
 Yes, this contains both health information (symptoms, was seen in the emergency department) and identifying information (the patient's initials, "HT"). 
 
 Note that the patient's age ("3yo") is not identifying
 (although remember that age **is** identifying if it is over 89, unless it's given only as "90 or older" or equivalent). 
 
-</div>
 ****
 
 > Patient referred to OT. 
@@ -143,13 +137,11 @@ Note that the patient's age ("3yo") is not identifying
 [(X)] Yes, this has PHI
 [( )] No, this does not have PHI
 ****
-<div class = "answer">
 
 Yes, this contains both health information (referred to OT, occupational therapy) and identifying information (the last four digits of the patient's social security number).
 
 See [May parts or derivatives of any of the listed identifiers be disclosed consistent with the Safe Harbor Method?](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html#listed).
 
-</div>
 ****
 
 > Pt immunized against polio in 09
@@ -157,7 +149,6 @@ See [May parts or derivatives of any of the listed identifiers be disclosed cons
 [( )] Yes, this has PHI
 [(X)] No, this does not have PHI
 ****
-<div class = "answer">
 
 This is not PHI because although it contains health information (immunization against polio), it does not include a way to identify the individual. 
 
@@ -167,7 +158,6 @@ But if it were something else (such as this person's initials) then that would b
 
 See [What are examples of dates that are not permitted according to the Safe Harbor Method?](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html#dates).
 
-</div>
 ****
 
 > Pt seen for BL wrist stiffness and pain. She is an Olympic swimmer, and will be competing in the 2016 games. Work closely with both patient and coach to develop a treatment plan that takes her training into account. 
@@ -175,7 +165,6 @@ See [What are examples of dates that are not permitted according to the Safe Har
 [(X)] Yes, this has PHI
 [( )] No, this does not have PHI
 ****
-<div class = "answer">
 
 Yes, this contains both health information (wrist stiffness and pain) and potentially identifying information (the fact that she will compete in the 2016 Olympics).
 Note that "BL" often stands for "bilateral", and in this context that appears to be what it means. 
@@ -186,7 +175,6 @@ Especially since Olympic athletes are often the subject of news coverage, there 
 
 See [What constitutes “any other unique identifying number, characteristic, or code” with respect to the Safe Harbor method of the Privacy Rule?](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html#uniquenumber).
 
-</div>
 ****
 
 > Emergency Department, Main Hospital. 3401 Civic Center Boulevard, Philadelphia, PA 19104
@@ -198,7 +186,6 @@ See [What constitutes “any other unique identifying number, characteristic, or
 [( )] Yes, this has PHI
 [(X)] No, this does not have PHI
 ****
-<div class = "answer">
 
 This contains health information (symptoms, was seen in the CHOP emergency department, a CT scan was ordered) but it does not contain any identifying information **about the individual, or of relatives, employers, or household members of the individual**, so it is not PHI.
 
@@ -212,7 +199,6 @@ But other than rare exceptions, the presence of identifying information about he
 
 See [Must a covered entity suppress all personal names, such as physician names, from health information for it to be designated as de-identified?](https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html#supress)
 
-</div>
 ****
 
 > DAILY NOTE 5
@@ -222,7 +208,6 @@ See [Must a covered entity suppress all personal names, such as physician names,
 [(X)] Yes, this has PHI
 [( )] No, this does not have PHI
 ****
-<div class = "answer">
 
 This contains both health information (in recovery and doing well, received acetaminophen, the fact that his stats have been dropping) and identifying information (the patient's name, "Carlos", as well as his grandpa's phone number, "555-098-9876").
 
@@ -232,7 +217,6 @@ Also note that the time of the acetaminophen dose (8:34am) **is not** identifyin
 A date would be identifying, but just the time on its own is not. 
 Similarly, "DAILY NOTE 5" is not identifying, although a date would be.
 
-</div>
 ****
 
 > 2023-05-03 
@@ -244,7 +228,6 @@ Similarly, "DAILY NOTE 5" is not identifying, although a date would be.
 [(X)] Yes, this has PHI
 [( )] No, this does not have PHI
 ****
-<div class = "answer">
 
 This contains both health information (the exercises done, how many sessions) and identifying information (the date of the session, "2023-05-03").
 
@@ -254,7 +237,6 @@ From how they're used in the sentences here, though, it seems very unlikely that
 Note that "Session 3/5" refers to the third of five sessions, and while it is health information it is not identifying. 
 Fractions and ratios are sometimes hard to distinguish from dates.
 
-</div>
 ****
 
 > Pt has implant (ML-987650-08). Reported paternal aunt had MI at 46, paternal grandfather died of stroke. 
@@ -262,14 +244,12 @@ Fractions and ratios are sometimes hard to distinguish from dates.
 [(X)] Yes, this has PHI
 [( )] No, this does not have PHI
 ****
-<div class = "answer">
 
 Yes, this contains both health information (the fact that patient has an implant, family history information) and identifying information (the ID of the implanted device, "ML-987650-08").
 
 Note that health information refers to the individual’s past, present, or future physical or mental health or condition, the provision of health care to the individual, or the past, present, or future payment for the provision of health care to the individual.
 It may seem that the family history information here wouldn't qualify as health information since it isn't directly about the individual patient, but medical information about people related to the patient does provide some medical information about the patient as well -- in this case it suggests an elevated risk of cardiovascular disease. 
 
-</div>
 ****
 
 > Jan 3, 2020 18:23 
@@ -279,11 +259,9 @@ It may seem that the family history information here wouldn't qualify as health 
 [(X)] Yes, this has PHI
 [( )] No, this does not have PHI
 ****
-<div class = "answer">
 
 This contains both health information (the patient's blood pressure and temperature) as well as identifying information (the date the individual was treated).
 
-</div>
 ****
 
 ## Glossary
