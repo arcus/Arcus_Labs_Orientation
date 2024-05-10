@@ -46,58 +46,73 @@ The annotations are an attempt to find identifying information in clinical notes
 **What this covers:**
 This document is a full description of the ontology used to code notes, with definitions and examples for each category.  
 
+## General tips
+
+**HIPAA is the baseline.** 
+You may be familiar already with the 18 categories of identifying information listed under the HIPAA safe harbor method. 
+Most of the text you'll be annotating fall into one of those categories, but we're also annotating some things that are *not* required to be removed under HIPAA, such as provider names, ages under 90, and location information coarser than state. 
+It's crucial that we cover all the HIPAA categories, but know that these guidelines also intentionally extend beyond HIPAA in a few ways. 
+
+**When in doubt, annotate.** 
+If you're not sure whether or not a span is identifying, annotate it (and use the [unsure](#unsure) option to flag it for review).
+It's always better to over-annotate than under-annotate.
+
+**Your input matters!** 
+As a coder, you will spend a lot of time reading the text of the notes -- much more time than most other researchers on the project, probably. 
+You are in a uniquely valuable position to be able to notice unexpected patterns or problems in the text data, or in the annotation procedures.
+If you think something is off, please bring it to the attention of the rest of the team. 
+Thank you for practicing with a questioning attitude! 
+
 ## Ontology
 
+Here is the full coding ontology, as you'll see it in the brat annotation tool. 
+
 ```
-names
-    HOSPITAL
-    NAME
-    PATIENT
-    PIC-NAMES
-    STAFF
-    VENDOR
-geographic_subdivisions
-    LOCATION
-dates_ages
-    AGE
-    DATE
-telephone_numbers
-    PHONE
-vehicle_identifiers
-    VIN
-fax_numbers
-    FAX
-device_identifiers_and_serial_numbers
-    DEVICE
-email_addresses
-    EMAIL
-web_urls
-    URL
-social_security_numbers
-    SSN
-ip_addresses
-    IP
-medical_record_numbers
-    MRN
-biometric_identifiers
-    BIOMETRIC
-health_plan_beneficiary_numbers
-    HEALTHPLAN
-photographs_and_images
-    PHOTO
-account_numbers
-    ACCOUNT
-other_unique_identifying_number_code_characteristic
-    ID
-    PIC-MISC
-certificate_liscence_numbers
-    LICENSE
-misc_other_nonidentifying_information
-    NPII
-    OTHER
+NAMES
+	PATIENT
+	STAFF
+	HOSPITAL
+	DEPARTMENT
+	ORGANIZATION
+	OTHER IDENTIFYING (Ex. Family Names)
+LOCATION (Geographic Subdivisions)
+	STREET (Number and Name)
+	CITY
+	COUNTY
+	ZIPCODE
+	STATE
+	COUNTRY
+DATES
+	MONTH
+	DAY
+	YEAR
+	OTHER IDENTIFYING (Ex. Holiday Names)
+AGES
+	AGE-90PLUS
+MEDICAL RECORD NUMBERS
+OTHER MISC (Numbers/Codes/Characteristics)
+	ID
+	USERNAMES
+TELEPHONE NUMBERS
+FAX NUMBERS
+ACCOUNT NUMBERS
+CERTIFICATE LICENSE NUMBERS
+HEALTH PLAN BENEFICIARY NUMBERS
+SOCIAL SECURITY NUMBERS
+EMAIL
+WEB URLS
+DEVICE IDENTIFIERS AND SERIAL NUMBERS
+VEHICLE IDENTIFIERS
+IP ADDRESSES
+BIOMETRIC IDENTIFIERS
+PHOTOGRAPHS AND IMAGES
 ```
 
-### age
+### names
+
+### 
+
+### ages
 
 Label every instance of age. 
 Note that HIPAA does not consider age to be PII unless it is 90 or greater, but we're still labeling every instance of age. 
