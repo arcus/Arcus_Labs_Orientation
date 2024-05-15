@@ -2,34 +2,14 @@
 
 author:   Rose Hartman
 email:    hartmanr1@chop.edu
-version: 0.0.0
+version: 1.0.0
+logo: https://commons.wikimedia.org/wiki/File:20210304191333_IMG_3364-01.jpg
 language: en
 narrator: UK English Female
 mode: Textbook
 title: Annotation Guidelines
 
-comment:  
-
-estimated_time_in_minutes: 30
-
-@pre_reqs
-None.
-@end
-
-@learning_objectives
-
-- 
-
-@end
-
-
-@sets_you_up_for
-
-@end
-
-@depends_on_knowledge_available_in
-
-@end
+comment:  This is the full description of the ontology used to annotate identifying information in clinical notes for Arcus Projects. 
 
 @version_history 
 No previous versions.
