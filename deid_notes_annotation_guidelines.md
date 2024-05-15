@@ -198,10 +198,11 @@ Examples of HOSPITAL, with the span bolded:
 Examples of DEPARTMENT, with the span bolded:
 
 - Seen by Dr. Gloria de la Vega, MD, Children's Hospital of Philadelphia **ADHD Management Center**
+- Pt came to **ER** for persistent fever (4 days), admitted to **PICU**
+- Sample sent to **dermatology**
 
-Note that sufficiently generic departments do NOT need to be labeled. 
-The most common example is "ED" or "ER", referring to Emergency Department/Emergency Room, but other common examples are "radiology", "OT/occupational therapy", etc. 
-In general, a department is generic if knowing the name of the department would not help you to identify the hospital or facility (e.g. "ER" could refer to almost any hospital, but "Anxiety Behaviors Clinic (ABC)" is something that might be particular to a given hospital).
+Note that sometimes the same phrase might refer to a department or not depending on context. 
+For example, "she was seen in **dermatology**" should be labeled DEPARTMENT, but "she had a number of dermatology tests" wouldn't be labeled because in that case it refers to the general medical field of dermatology, not the department at this hospital. 
 
 The label ORGANIZATION is for entities other than hospitals or other healthcare facilities.
 The most common examples are employers or schools (of the patient, or relatives, or household members).
