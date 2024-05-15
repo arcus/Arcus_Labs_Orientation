@@ -3,7 +3,7 @@
 author:   Rose Hartman
 email:    hartmanr1@chop.edu
 version: 1.0.0
-logo: https://upload.wikimedia.org/wikipedia/commons/a/ae/20210304191333_IMG_3364-01.jpg
+logo: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/20210304191333_IMG_3364-01.jpg/512px-20210304191333_IMG_3364-01.jpg?20210325173111
 language: en
 narrator: UK English Female
 mode: Textbook
@@ -14,7 +14,6 @@ comment:  This is the full description of the ontology used to annotate identify
 @version_history 
 No previous versions.
 @end
-
 -->
 
 # Annotation Guidelines
