@@ -3,7 +3,7 @@
 author:   Rose Hartman
 email:    hartmanr1@chop.edu
 version: 1.0.0
-logo: https://commons.wikimedia.org/wiki/File:20210304191333_IMG_3364-01.jpg
+logo: https://upload.wikimedia.org/wikipedia/commons/a/ae/20210304191333_IMG_3364-01.jpg
 language: en
 narrator: UK English Female
 mode: Textbook
