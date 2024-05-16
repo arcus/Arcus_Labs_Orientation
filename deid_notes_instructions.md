@@ -113,6 +113,19 @@ If you struggled with this question, go back and review the [Guidance on Satisfy
 
 ****
 
+## When to diverge from HIPAA guidelines
+
+Any de-identification procedure must cover, at minimum, everything considered identifying under HIPAA. 
+
+But many researchers opt to define "identifying information" a little more broadly than HIPAA, partially to reduce the risk of accidentally failing to remove identifying information (or [allowing for reidentification](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=3ed381089830deb0f714729a46704da6a626a968)) and partially for the convenience of being able to more easily align with output from NLP models (such as those based on named entity recognition, NER).
+For an example, see [Uzuner, Luo, and Szolovits (2007)](https://academic.oup.com/jamia/article/14/5/550/720189?searchresult=1#12658203).
+
+In particular, the following types of information should be coded as identifying, even though they aren't required by HIPAA:
+
+- Information identifying healthcare providers or facilities, such as names, address, phone, fax, email, provider number, etc.
+- Ages under 90
+- Year component of dates (HIPAA would allow removing just the month and day and preserving the year)
+
 ## Quiz: Is this PHI?
 
 For each of the following fake clinical notes, identify whether or not there is PHI present. 
