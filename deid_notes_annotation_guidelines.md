@@ -196,7 +196,7 @@ The label OTHER IDENTIFYING is for people connected with the patient (other than
 Examples of OTHER IDENTIFYING, with the span bolded:
 
 - Pt was brought in by neighbor, **Zahir**<!-- style="background-color: rgba(var(--color-highlight), .2)" -->, who found him collapsed in backyard.
-- Dear Mr. **Tsui**<!-- style="background-color: rgba(var(--color-highlight), .2)" -->, I am writing to follow up on your child's recent appointment at our clinic. 
+- Dear Ms. **Daniali**<!-- style="background-color: rgba(var(--color-highlight), .2)" -->, I am writing to follow up on your child's recent appointment at our clinic. 
 - Mom reports that pt's younger sister, **Rae**<!-- style="background-color: rgba(var(--color-highlight), .2)" -->, has had similar sx.
 
 When the name is NOT related to the patient (or relatives, employer, or household members of the patient) or to the healthcare providers or facilities providing care (including past, present, or future care), then it should also be checked as "[NonIdentifying](#nonindentifying)". 
@@ -375,7 +375,7 @@ In the three examples above, the first two should just be labeled as EMAIL, and 
 Annotate every instance of a web address. 
 Examples of URLs, with the span bolded:
 
-- Instructed patient to review resources on our website **https://www.chop.edu/centers-programs/center-management-adhd**<!-- style="background-color: rgba(var(--color-highlight), .2)" -->
+- Instructed patient to review resources on our website **www.chop.edu/centers-programs/center-management-adhd**<!-- style="background-color: rgba(var(--color-highlight), .2)" -->
 - Pt does hourly online transcription work at **www.rev.com**<!-- style="background-color: rgba(var(--color-highlight), .2)" -->
 - As per national guidelines (**www.aap.org/**<!-- style="background-color: rgba(var(--color-highlight), .2)" -->), screening should begin at age 3. 
 
