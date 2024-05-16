@@ -8,7 +8,7 @@ narrator: UK English Female
 mode: Textbook
 title: Training Procedure for Coding Clinical Notes for De-identification
 
-comment:  
+comment:  This is the training procedure for human coders who will be annotating identifying information in clinical notes in an Arcus lab.
 
 import: https://raw.githubusercontent.com/arcus/education_modules/main/_module_templates/macros.md
 -->
@@ -25,7 +25,7 @@ It includes the following steps:
 1. Background reading on HIPAA, and on the specific coding ontology for this project
 2. A quiz to test understanding of HIPAA's definition of PHI
 3. An overview of how to use brat, the Arcus text annotation tool
-4. Instructions for completing the reliability test, the last step in the new coder training procedure.
+4. Instructions for completing the reliability test, the last step in the new coder training procedure
 
 There is also additional information about what to expect after you pass the reliability test (regular check-in meetings with other coders) and a note about plans to test for coder reliability on the full dataset after annotation is complete.
 
