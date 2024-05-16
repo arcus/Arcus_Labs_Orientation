@@ -243,21 +243,7 @@ They will set up a meeting with you to ask about your experience with the coding
 
 If your annotations are too different from the standard set, you'll be asked to re-do the reliability test on five new notes. 
 
-<!--
-Copy same five notes, with model annotations, into directories called reliability_test_1, reliability_test_2, etc. (would be better with initials).
-reliability_test_standard has the "correct" annotations for these five notes.
-
-Can we create automated reports that do any of the following: 
-- Identify points of disagreement with reliability_test_standard for any given reliability_test directory
-- Provide an overall measure of agreement
-
-Have a second set of five notes available for a re-test if a coder fails the initial test.-->
-
 ## Check-ins
-
-<!--
-Provide real notes in folder "buckets", to help with coordination across coders?
-Can a coder rename a bucket, to indicate they're working on it?-->
 
 After you pass the reliability test, you'll start annotating notes for real. 
 You'll have regular check-in meetings with the other coders (ideally, all together, but in 1:1 sessions with a supervisor instead if needed) to address the following: 
@@ -265,9 +251,6 @@ You'll have regular check-in meetings with the other coders (ideally, all togeth
 - Review tricky annotations together (anything flagged with Unsure)
 - Discuss whether or not the ontology guidelines need to be updated
 
-<!--
-
-Can we automate a report of annotations flagged as unsure?-->
 
 ## Ongoing Coding Reliability 
 
