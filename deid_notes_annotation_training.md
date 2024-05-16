@@ -16,9 +16,18 @@ import: https://raw.githubusercontent.com/arcus/education_modules/main/_module_t
 # Training Procedure for Coding Clinical Notes for De-identification
 
 **Who this is for:** 
-
+This is for human coders who will be annotating identifying information in clinical notes in an Arcus lab.
 
 **What this covers:**
+This is the procedure for training new coders. 
+It includes the following steps: 
+
+1. Background reading on HIPAA, and on the specific coding ontology for this project
+2. A quiz to test understanding of HIPAA's definition of PHI
+3. An overview of how to use brat, the Arcus text annotation tool
+4. Instructions for completing the reliability test, the last step in the new coder training procedure.
+
+There is also additional information about what to expect after you pass the reliability test (regular check-in meetings with other coders) and a note about plans to test for coder reliability on the full dataset after annotation is complete.
 
 ## Background Reading
 
@@ -234,7 +243,6 @@ They will set up a meeting with you to ask about your experience with the coding
 If your annotations are too different from the standard set, you'll be asked to re-do the reliability test on five new notes. 
 
 <!--
-
 Copy same five notes, with model annotations, into directories called reliability_test_1, reliability_test_2, etc. (would be better with initials).
 reliability_test_standard has the "correct" annotations for these five notes.
 
@@ -242,18 +250,13 @@ Can we create automated reports that do any of the following:
 - Identify points of disagreement with reliability_test_standard for any given reliability_test directory
 - Provide an overall measure of agreement
 
-Have a second set of five notes available for a re-test if a coder fails the initial test.
-
--->
+Have a second set of five notes available for a re-test if a coder fails the initial test.-->
 
 ## Check-ins
 
 <!--
-
 Provide real notes in folder "buckets", to help with coordination across coders?
-Can a coder rename a bucket, to indicate they're working on it?
-
--->
+Can a coder rename a bucket, to indicate they're working on it?-->
 
 After you pass the reliability test, you'll start annotating notes for real. 
 You'll have regular check-in meetings with the other coders (ideally, all together, but in 1:1 sessions with a supervisor instead if needed) to address the following: 
@@ -263,9 +266,7 @@ You'll have regular check-in meetings with the other coders (ideally, all togeth
 
 <!--
 
-Can we automate a report of annotations flagged as unsure?
-
--->
+Can we automate a report of annotations flagged as unsure?-->
 
 ## Ongoing Coding Reliability 
 
