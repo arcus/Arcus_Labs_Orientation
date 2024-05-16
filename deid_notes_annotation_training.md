@@ -2,7 +2,8 @@
 
 author:   Rose Hartman
 email:    hartmanr1@chop.edu
-version: 0.0.0
+version: 1.0.0
+logo: https://upload.wikimedia.org/wikipedia/commons/5/50/Assessment_icon.png?20210717095410
 language: en
 narrator: UK English Female
 mode: Textbook
