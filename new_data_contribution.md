@@ -148,7 +148,7 @@ Digital preservation is more than file transfers and secure storage, it’s abou
 
 ![Graphic representation of the lifecycle of research data in Arcus](media/data_life_cycle.png)
 
-Arcus maintains a lifecycle of all archived research data. All data archived with Arcus is available to other CHOP researchers and registered NTPs for reuse. This data is discoverable through three Arcus data discovery tools: Arcus Cohort Discovery, Arcus Variant Browser and the Gene Data Catalog.
+Arcus maintains a lifecycle of all archived research data. This data is discoverable through three Arcus data discovery tools: Arcus Cohort Discovery, Arcus Variant Browser and the Gene Data Catalog.
 
 - **Arcus Cohort Discovery**: filters deidentified clinical data based on the cohort for the research data set
 - **Arcus Omics Variant Browser**: view and filter all annotated variant information for all genomic files in the Arcus archives
