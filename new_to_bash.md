@@ -48,6 +48,7 @@ Additionally, beyond the DART modules, we have other articles and miscellany we 
 **Compendia of Resources**:
 
 Tutorials: 
+
 * [Learning the Shell from LinuxCommand.org](https://linuxcommand.org/lc3_learning_the_shell.php)
 * Software Carpentries offers an [open source course introducing new users to the Unix Shell](https://swcarpentry.github.io/shell-novice/)
 * The Earth Lab at University of Colorado, Boulder has a nice [bash tutorial](https://www.earthdatascience.org/courses/intro-to-earth-data-science/open-reproducible-science/bash/bash-commands-to-manage-directories-files/)
