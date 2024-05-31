@@ -229,8 +229,8 @@ You can set git up to clear your Jupyter notebook output for you automatically b
 2. Open pre-commit.sample and delete the contents (don't worry --- it's just example text that isn't doing anything). Replace them with:
 
 ```
-#!/bin/sh
-jupyter nbconvert --ClearOutputPreprocessor.enabled=True --inplace notebooks/*.ipynb
+#!/bin/bash
+/opt/conda/bin/jupyter nbconvert --ClearOutputPreprocessor.enabled=True --inplace notebooks/*.ipynb
 
 if [[ `git diff --name-only` ]]; then
   echo "Commit stopped. There was output in one or more notebooks. You'll need to re-stage and then re-commit."
