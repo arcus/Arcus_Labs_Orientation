@@ -1,7 +1,7 @@
 <!--
 author:   Arcus Education
 email:    arcus-support@chop.edu
-version:  1.1.0
+version:  2.0.0
 language: en
 narrator: US English Female
 title: Arcus Lab Orientation
