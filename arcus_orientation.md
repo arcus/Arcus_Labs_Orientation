@@ -339,153 +339,7 @@ Access to Arcus Computational Lab system is generally limited to the CHOP networ
 
 Users access the Lab via a URL, so it is advisable to have the most current version of a modern Web browser installed (preferably Google Chrome). Internet Explorer or out-of-date versions of modern browsers like Chrome or Firefox may not always render lab services well.
 
-
-### Arcus Scientific Project Request Stages
-
-This section covers the typical stages from initial Scientific Project request to deployment of a new Arcus Lab associated with the project.  
-
-<div style = "background-color:white;">
-
-<script style="display: block" run-once="true" modify="false">
-mermaid.initialize({});
-
-var svg = mermaid.render(
-'approval_flowchart',
-`flowchart LR
-  A[Initial Request\\nfor Consideration] --> B{Preliminary Review};
-  B -- Advanced --> C[Project Owner Assigned\\nto Conduct Assessment];
-  B -- Declined --> D[Request Closed];
-  C --> E[Privacy Review];
-  C --> F[Data Needs Assessment];
-  C --> G[Data Contribution Assessment];
-  C --> H[CITI Training Verification];
-  E --> I{Final Approval};
-  F --> I;
-  G --> I;
-  H --> I;
-  I -- Approved --> J[Scientific Project Begins];
-  I -- Declined --> D;
-`,
-function(g) {
-    return true;
-})
-
-"HTML: " + svg
-</script>
-
-</div>
-
-**Initial Request for Consideration**
-
-Your first point of contact with Arcus may be informal conversations with one or more Arcus staff members to determine whether or not your project would be a good fit.
-
-Emailing [`arcus-support@chop.edu`](mailto:arcus-support@chop.edu) is one great place to start a request, or you may go directly to [submitting a request for a new scientific project](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/307). Note that you need to be on the CHOP network to submit a request.
-
-We try to get sufficient information about your proposed project to understand your needs and constraints.  We'll want to know things like:
-
-* What data, if any, are you interested in from the clinical data in the Arcus Data Repository?
-* What data already under your stewardship, if any, will you be bringing to the project?
-* Who needs to be able to participate in this project?
-* Do you have an IRB protocol?
-* What is your research question?
-* Who will conduct your data analysis?  
-
-To see an example of the intake form you will fill out to request a lab, see this [sample scientific project intake form](https://forum.arcus.chop.edu/t/sample-scientific-project-intake-form/527).
-
-<div class = "important">
-<b style="color: rgb(var(--color-highlight));">Important note</b><br>
-
-To save time and ensure your request goes as smoothly as possible, read these [questions to consider **before** submitting an Arcus project intake form](https://forum.arcus.chop.edu/t/tips-for-before-you-write-your-project-aims-and-cohort-definition/488) first. 
-
-</div>
-
-**Preliminary Review and Assessment**
-
-When you submit a request for a lab, it goes through a preliminary review and then a more formal project assessment before your lab is created and made available to you.
-
-The preliminary review is just to determine whether or not to engage in the full project assessment.
-
-If your request is greenlighted for assessment, then you will be assigned a **Project Owner** among the Arcus staff who will help guide you through the project assessment. The goal of the project assessment is to clarify the needs for the project to make sure that it is something Arcus will be a good fit for.
-
-A major goal of the project assessment is to identify what, specifically, the scientific team will need from Arcus in terms of data, software, training, and support. One component of the project assessment is a **data needs assessment**, to discuss the definition of the cohort to be studied and what information on those patients will be needed (e.g. diagnoses, medications, notes, procedures, demographics, flowsheets). 
-
-<div class = "important">
-<b style="color: rgb(var(--color-highlight));">Important note</b><br>
-
-**We have guides to help you articulate your project aims and cohort definition**
-
-You may already have language drafted for your project aims and cohort definition from a grant proposal or IRB application, but chances are those descriptions will need to be adapted for implementation in an Arcus lab.
-
-We have instructions and examples available for [writing your project aims](https://forum.arcus.chop.edu/t/tips-for-writing-project-aims-as-part-of-a-new-arcus-scientific-project/486) and [defining a cohort](https://forum.arcus.chop.edu/t/tips-for-writing-a-cohort-definition-as-part-of-a-new-arcus-scientific-project/487) for your Arcus project. 
-
-</div>
-
-There will also be a **data contribution assessment** to discuss possible data contributions to the [Arcus Archives](https://education.arcus.chop.edu/arcus-data-catalog/) at the end of the project; researchers using Arcus are expected to contribute their data when appropriate.
-
-The project assessment will also include a **privacy review** to identify and mitigate any potential privacy risks ([read more about the privacy review here](https://forum.arcus.chop.edu/t/what-is-a-privacy-review-and-what-does-the-process-entail/190)).
-
-The project assessment can vary greatly in length, with particularly well-defined and straightforward projects being assessed in a matter of days and more complex projects or projects that are still in early stages of development taking months. For researchers working under a deadline (e.g. for a grant application), Arcus will try to accommodate your timeline; one of the first questions your Project Owner will ask you during the project assessment is if there are any time constraints we should be aware of.
-
-Before your lab can be approved, everyone who will have access to your lab will need to have verification of their [CITI training](https://about.citiprogram.org/) on file (this is a requirement for all Arcus users and will be the case even if you'll only be accessing deidentified data). They will also need to agree to the Arcus Terms of Use.
-
-![Arcus home screen showing green checkmarks for CITI training and Arcus Terms of Use](media/login.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
-
-To check that they meet these requirements, everyone who will need access to your lab should go to [https://arcus.chop.edu](https://arcus.chop.edu) (only accessible behind CHOP's firewall) and log in with their CHOP credentials using the button in the top right corner of the screen. If your CITI training is on file and you've agreed to the [Arcus Terms of Use](https://arcus.chop.edu/terms-of-use), then you should see two green checkmarks under "Your Account".  
-
-Note that for work in Arcus labs, human subjects protection training is required, which in CHOP's CITI account resolves to the  courses titled "Social-Behavioral-Educational Researchers" and "Biomedical Researchers".  Either course fulfills the human research protections training required to participate fully in Arcus labs.  For more information about signing up with CITI, please see [instructions on the CHOP Research Institute](https://www.research.chop.edu/sites/default/files/web/sites/default/files/pdfs/ORC_CITI.pdf).
-
-### When Your Lab is Approved
-
-When the project assessment is complete and your lab is approved, then the team of Arcus developers will build a computational lab environment for you, based on the needs determined during your project assessment.
-
-<div style = "background-color:white;">
-
-<script style="display: block" run-once="true" modify="false">
-mermaid.initialize({});
-
-var svg = mermaid.render(
-'lab_process_flowchart',
-`flowchart LR
-  J[Scientific Project Begins] --> K[Project Owner\\nCoordinates Resources];
-  K --> L[Provision Data];
-  K --> M[Provision\\nScientific Lab];
-  K --> N[Other Tasks\\nAs Needed];
-  L --> O[Project Owner\\nVerifies Resources];
-  M --> O;
-  N --> O;
-  O --> P[Project Owner\\nDelivers Lab\\nTo Requestor];
-  P --> Q[Requestor Begins\\nData Analysis Work];
-`,
-function(g) {
-    return true;
-})
-
-"HTML: " + svg
-</script>
-
-</div>
-
-When the lab is built, the Arcus data team will provision your lab with the required data, as determined during your project assessment. For more information about the data in Arcus, see [Included Data](#included-data).
-
-You'll receive an email letting you know when your lab is available, and providing the URL for you to access your lab. Your Project Owner will meet with you and your team to introduce you to the lab environment.
-
-### Knowledge Check 2
-
-True or False: In most cases, your new Arcus lab will be made available to you immediately after your request.
-
-[( )] True
-[(X)] False
-***
-
-<div class = "answer">
-
-There is a preliminary review and then a more detailed project assessment to determine whether or not Arcus can support your project before your lab will be issued.
-
-Note that if you're on a tight timeline, Arcus may be able to work with you to speed things up. Talk to your Project Owner.
-
-</div>
-
-***
+### Knowledge Check
 
 Which of the following are required to access **identified** patient data via Arcus? Select all that apply.
 
@@ -523,6 +377,144 @@ For more details, see this [Arcus forum post from our legal team on when to appl
 </div>
 
 ***
+
+## Arcus Scientific Project Process
+
+This section covers the typical stages from initial Scientific Project request to deployment of a new Arcus Lab associated with the project.  
+
+![The 5 steps of an Arcus project. ](media/Arcus_Lab_Process.png)
+
+The five steps of working with an Arcus Lab are:
+
+1. Project Submission
+2. Assessment & Review
+3. Lab Development & Deployment
+4. Data Analysis
+5. Publication
+
+### Project Submission
+
+Your first point of contact with Arcus may be informal conversations with one or more Arcus staff members to determine whether or not your project would be a good fit.
+
+Emailing [`arcus-support@chop.edu`](mailto:arcus-support@chop.edu) is one great place to start a request, or you may go directly to [submitting a request for a new scientific project](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/307). Note that you need to be on the CHOP network to submit a request.
+
+We try to get sufficient information about your proposed project to understand your needs and constraints.  We'll want to know things like:
+
+* What data, if any, are you interested in from the clinical data in the Arcus Data Repository?
+* What data already under your stewardship, if any, will you be bringing to the project?
+* Who needs to be able to participate in this project?
+* Do you have an IRB protocol?
+* What is your research question?
+* Who will conduct your data analysis?  
+
+To see an example of the intake form you will fill out to request a lab, see this [sample scientific project intake form](https://forum.arcus.chop.edu/t/sample-scientific-project-intake-form/527).
+
+<div class = "important">
+<b style="color: rgb(var(--color-highlight));">Important note</b><br>
+
+To save time and ensure your request goes as smoothly as possible, read these [questions to consider **before** submitting an Arcus project intake form](https://forum.arcus.chop.edu/t/tips-for-before-you-write-your-project-aims-and-cohort-definition/488) first. 
+
+</div>
+
+### Assessment & Review
+
+When you submit a request for a lab, it goes through a preliminary review and then a more formal project assessment before your lab is created and made available to you.
+
+The preliminary review is just to determine whether or not to engage in the full project assessment.
+
+If your request is greenlighted for assessment, then you will be assigned a **Project Owner** among the Arcus staff who will help guide you through the project assessment. The goal of the project assessment is to clarify the needs for the project to make sure that it is something Arcus will be a good fit for.
+
+A major goal of the project assessment is to identify what, specifically, the scientific team will need from Arcus in terms of data, software, training, and support. One component of the project assessment is a **data needs assessment**, to discuss the definition of the cohort to be studied and what information on those patients will be needed (e.g. diagnoses, medications, notes, procedures, demographics, flowsheets). 
+
+<div class = "important">
+<b style="color: rgb(var(--color-highlight));">Important note</b><br>
+
+**We have guides to help you articulate your project aims and cohort definition**
+
+You may already have language drafted for your project aims and cohort definition from a grant proposal or IRB application, but chances are those descriptions will need to be adapted for implementation in an Arcus lab.
+
+We have instructions and examples available for [writing your project aims](https://forum.arcus.chop.edu/t/tips-for-writing-project-aims-as-part-of-a-new-arcus-scientific-project/486) and [defining a cohort](https://forum.arcus.chop.edu/t/tips-for-writing-a-cohort-definition-as-part-of-a-new-arcus-scientific-project/487) for your Arcus project. 
+
+</div>
+
+There will also be a **data contribution assessment** to discuss possible data contributions to the [Arcus Archives](https://education.arcus.chop.edu/arcus-data-catalog/) at the end of the project; researchers using Arcus are expected to contribute their data when appropriate.
+
+The project assessment will also include a **privacy review** to identify and mitigate any potential privacy risks ([read more about the privacy review here](https://forum.arcus.chop.edu/t/what-is-a-privacy-review-and-what-does-the-process-entail/190)).
+
+The project assessment can vary greatly in length, with particularly well-defined and straightforward projects being assessed in a matter of days and more complex projects or projects that are still in early stages of development taking months. For researchers working under a deadline (e.g. for a grant application), Arcus will try to accommodate your timeline; one of the first questions your Project Owner will ask you during the project assessment is if there are any time constraints we should be aware of.
+
+Before your lab can be approved, everyone who will have access to your lab will need to have verification of their [CITI training](https://about.citiprogram.org/) on file (this is a requirement for all Arcus users and will be the case even if you'll only be accessing deidentified data). They will also need to agree to the Arcus Terms of Use.
+
+![Arcus home screen showing green checkmarks for CITI training and Arcus Terms of Use](media/login.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
+
+To check that they meet these requirements, everyone who will need access to your lab should go to [https://arcus.chop.edu](https://arcus.chop.edu) (only accessible behind CHOP's firewall) and log in with their CHOP credentials using the button in the top right corner of the screen. If your CITI training is on file and you've agreed to the [Arcus Terms of Use](https://arcus.chop.edu/terms-of-use), then you should see two green checkmarks under "Your Account".  
+
+Note that for work in Arcus labs, human subjects protection training is required, which in CHOP's CITI account resolves to the  courses titled "Social-Behavioral-Educational Researchers" and "Biomedical Researchers".  Either course fulfills the human research protections training required to participate fully in Arcus labs.  For more information about signing up with CITI, please see [instructions on the CHOP Research Institute](https://www.research.chop.edu/sites/default/files/web/sites/default/files/pdfs/ORC_CITI.pdf).
+
+### Lab Development & Deployment
+
+When the project assessment is complete and your lab is approved, then the team of Arcus developers will build a computational lab environment for you, based on the needs determined during your project assessment.
+
+<div style = "background-color:white;">
+
+<script style="display: block" run-once="true" modify="false">
+mermaid.initialize({});
+
+var svg = mermaid.render(
+'lab_process_flowchart',
+`flowchart LR
+  J[Scientific Project Begins] --> K[Project Owner\\nCoordinates Resources];
+  K --> L[Provision Data];
+  K --> M[Provision\\nScientific Lab];
+  K --> N[Other Tasks\\nAs Needed];
+  L --> O[Project Owner\\nVerifies Resources];
+  M --> O;
+  N --> O;
+  O --> P[Project Owner\\nDelivers Lab\\nTo Requestor];
+  P --> Q[Requestor Begins\\nData Analysis Work];
+`,
+function(g) {
+    return true;
+})
+
+"HTML: " + svg
+</script>
+
+</div>
+
+When the lab is built, the Arcus data team will provision your lab with the required data, as determined during your project assessment. For more information about the data in Arcus, see [Included Data](#included-data).
+
+You'll receive an email letting you know when your lab is available, and providing the URL for you to access your lab. Your Project Owner will meet with you and your team to introduce you to the lab environment.
+
+### Data Analysis
+
+Once your lab has been deployed, you can perform your data analysis. We will discuss what the lab environment will look like in the next section.
+
+### Publication
+
+Once you have analyzed your the data in your lab, Arcus's digital archivists will archive your project and you can publish your work in a scientific journal. 
+
+Researchers using Arcus are required to contribute their data unless it would be inappropriate to do so.
+
+### Knowledge Check 2
+
+True or False: In most cases, your new Arcus lab will be made available to you immediately after your request.
+
+[( )] True
+[(X)] False
+***
+
+<div class = "answer">
+
+There is a preliminary review and then a more detailed project assessment to determine whether or not Arcus can support your project before your lab will be issued.
+
+Note that if you're on a tight timeline, Arcus may be able to work with you to speed things up. Talk to your Project Owner.
+
+</div>
+
+***
+
+
 
 Which of the following best describes Arcus data contributions?
 
