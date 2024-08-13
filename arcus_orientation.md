@@ -238,7 +238,7 @@ Can't I Just Pay Someone?
 
 Additionally, the Department of Biomedical and Health Informatics (DBHI) at CHOP has staff that you can use in a billback model who can handle analysis for you, if you don't have the staff or time to acquire R, Python, and SQL skills.
 
-## Lab Security
+### Lab Security
 
 
 ### Knowledge Check 1
