@@ -124,7 +124,7 @@ Even if you're not requesting data from Arcus, but bringing your own, you might 
 
 Each lab will be configured to meet the needs of the research team, with appropriate memory, CPU, and storage capabilities, as well as any additional infrastructure required, such as GPUs.
 
-Arcus labs are governed by important rules that spell out what can be exported from the environment. The Arcus lab is in some ways a "clean room" -- everything needed, data and tools, is set up by Arcus staff for use by researchers.  Data loaded in the lab should be analyzed within the Arcus lab, and very little should enter or leave the Arcus lab once it is set up.  For example, lab users should not, in general, export or download individual level data from an Arcus lab.  Lab import or export of data or other assets is governed by [Arcus Terms of Use](https://arcus.chop.edu/terms-of-use) and our privacy controls.  You can read more in our [Arcus Data Access Standard Operating Procedure](https://chop.policymedical.net/policymed/anonymous/docViewer?stoken=14de2fa8-d9f5-4188-983b-29545b20809f&dtoken=a8f05e20-ab72-4bf2-a402-60e07a2ca7da) and [Arcus Data Use Standard Operating Procedure](https://chop.policymedical.net/policymed/anonymous/docViewer?stoken=14de2fa8-d9f5-4188-983b-29545b20809f&dtoken=243b8188-914e-4ab1-b445-97083c60a0d5).
+Arcus labs are governed by important rules that spell out what can be exported from the environment. The Arcus lab is in some ways a "clean room" -- everything needed, data and tools, is set up by Arcus staff for use by researchers.  Data loaded in the lab should be analyzed within the Arcus lab, and very little should enter or leave the Arcus lab once it is set up.  By default, labs are in "Internet Disabled" mode to prevent the accidental exfiltration of data.  Lab users should not, in general, export or download individual level data from an Arcus lab.  Lab import or export of data or other assets is governed by [Arcus Terms of Use](https://arcus.chop.edu/terms-of-use) and our privacy controls.  You can read more in our [Arcus Data Access Standard Operating Procedure](https://chop.policymedical.net/policymed/anonymous/docViewer?stoken=14de2fa8-d9f5-4188-983b-29545b20809f&dtoken=a8f05e20-ab72-4bf2-a402-60e07a2ca7da) and [Arcus Data Use Standard Operating Procedure](https://chop.policymedical.net/policymed/anonymous/docViewer?stoken=14de2fa8-d9f5-4188-983b-29545b20809f&dtoken=243b8188-914e-4ab1-b445-97083c60a0d5).
 
 By signing the [Arcus Terms of Use](https://arcus.chop.edu/terms-of-use), you agree to follow Arcus policies related to the export of data.  For both identified and de-identified research, it is possible to download and export aggregate descriptive statistics, data visualizations, tables that demonstrate group differences, the results of statistical comparisons, and other de-identified, whole-dataset level analysis. This may require the assistance of your Arcus project owner, depending on what you would like to export.
 
@@ -202,7 +202,7 @@ Statistical Analysis Software
 
 Currently, Arcus Computational Labs are populated with open source statistical and data analytics software.  These software (JupyterLab with language kernels such as Python and RStudio using R) allow for scripted data ingestion, cleaning, preparation, analysis, and visualization. 
 
-Licensed point and click commercial software such as Excel, SAS, and SPSS **are not supported at this time**.  The paid, commercial license for a Stata language kernel for Jupyter (not the Stata point-and-click desktop application) can be requested if necessary for the project.
+While most licensed point and click commercial software such as Excel, SAS, and SPSS **are not supported at this time** you can request alternatives for your lab.  The paid, commercial license for a Stata language kernel for Jupyter can be requested if necessary for the project. Other tools, such as a Spreadsheet tool, the point and click version of Stata, PSPP (an SPSS alternative), QGIS, QuPath, and 3D Slicer can also be requested as necessary for individual Arcus projects. 
 
 Why is this tool suite what we provide in Arcus?  We want to position researchers to work in reproducible ways that set them up for career success and publication opportunities.  Increasingly, top tier journals demand scripted (not point-and-click) data analysis, and we believe this trend will continue and become industry standard.  We also believe that scripted analysis is the most reproducible way to conduct science and is best practice for the conduct of research.  Finally, Free and Open Source Software (FOSS) like R and Python are one of the most open ways to share data with researchers in lower-resourced settings, who may not be able to afford high license costs of proprietary software like SAS.  Because Arcus is deeply invested in research rigor and reproducibility, we suggest wherever possible that researchers use scripted analysis tools that are free and open source.
 
@@ -551,6 +551,10 @@ We'll go over the various panes that appear in your landing page in the next few
 
 ### Lab Status Pane
 
+![`An Arcus lab settings panel, showing Internet Disabled`](media/lab_clock.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
+
+By default, the internet will be disabled in your lab. When the internet is disabled, you will need to use the "Install Packages" tool to install packages or libraries from the internet.
+
 ![`An Arcus lab currently running, showing clock`](media/lab_clock.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 When your lab is running, you'll see a clock counting down until it will shut down. Labs cost a fair amount of computational power when they're running, so they are set to automatically pause after a period of time to save resources. If you need to keep your lab active for longer than that, you can always extend the time.  Don't worry, your lab "shutting down" doesn't delete any files or data!  It's more akin to your computer going into "sleep" mode after a period of inactivity.
@@ -560,9 +564,9 @@ If you finish using your lab before the clock runs out, please pause your lab us
 
 ### Project Members Pane
 
-On the left side of your lab, you'll see a list of approved users for your lab. This will include everyone on your research team, your Project Owner, all of the members of the Arcus Education team (Arcus Education staff help with training and troubleshooting for all of the scientific labs), and any other Arcus staff associated with your project.
+On the left side of your lab, you'll see a list of approved users for your lab. This will include everyone on your research team. To better support you, some members of Arcus staff will also have access, although their names will not appear in this panel. These include your Project Owner, all of the members of the Arcus Education team (Arcus Education staff help with training and troubleshooting for all of the scientific labs), and any other Arcus staff associated with your project.
 
-If you notice someone missing from that list who should have access, or if you see someone you don't think should have access, alert your Project Owner.
+If you notice [someone missing from that list who should have access](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/259?q=user&q_time=1722527654548), or if you see someone you don't think should have access, alert your Project Owner.
 
 ### Arcus Lab Tools Pane
 
@@ -595,6 +599,10 @@ You won't see any data files in your lab when you log in; instead, you will be a
 ### Education Resources Pane
 
 This is a very important section for new Arcus users.  The Education Resources pane has important links to help you get started as well as useful training videos.
+
+![Arcus Education resources](media/education_resources.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
+
+The "Getting Started?" pane links to useful documentation, including this orientation document. The "Need Extra Support?" pane contains links to reach out to helpful people. If you are an R user, the [R User Group](https://bit.ly/chopRusers) could be a great community to get coding support. The [Arcus Forum](https://forum.arcus.chop.edu) is a place to interact with Arcus staff and other users, or see if someone has already answered a question you have. You can also [book at time to talk directly to members of the Arcus Education team](https://outlook.office365.com/owa/calendar/BKG-StandardArcusEducationOfficeHours@chop.edu/bookings/) about anything Arcus or coding related.
 
 ![Arcus Education training videos](media/training_videos.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
