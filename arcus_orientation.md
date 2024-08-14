@@ -341,7 +341,7 @@ Access to Arcus Computational Lab system is generally limited to the CHOP networ
 
 Users access the Lab via a URL, so it is advisable to have the most current version of a modern Web browser installed (preferably Google Chrome). Internet Explorer or out-of-date versions of modern browsers like Chrome or Firefox may not always render lab services well.
 
-### Knowledge Check
+### Knowledge Check 2
 
 Which of the following are required to access **identified** patient data via Arcus? Select all that apply.
 
@@ -498,7 +498,7 @@ Once you have analyzed your the data in your lab, Arcus's digital archivists wil
 
 Researchers using Arcus are required to contribute their data unless it would be inappropriate to do so.
 
-### Knowledge Check 2
+### Knowledge Check 3
 
 True or False: In most cases, your new Arcus lab will be made available to you immediately after your request.
 
@@ -626,7 +626,7 @@ Arcus labs are built to be like "clean rooms" or gloveboxes, in that your data a
 
 But you have to have tables, figures, and statistical test outputs for your publications!  What to do?  Arcus distinguishes between individual-level data, the export of which is generally prohibited, and aggregate data, such as group-level summary statistics or data visualizations for figures.  This latter type of data can be downloaded by [request](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/348).  Once your request is approved, you can [download data](https://forum.arcus.chop.edu/t/how-do-i-download-files-from-labs/512) to use for publications.  
 
-### Knowledge Check 3
+### Knowledge Check 4
 
 Which of the following best describes an Arcus lab?
 
@@ -715,7 +715,7 @@ You need to be behind CHOP's firewall to access the [Arcus Help Center](https://
 **Arcus Forum** ([https://forum.arcus.chop.edu/](https://forum.arcus.chop.edu/)) is a question-and-answer site (it uses the same format as [StackOverflow](https://stackoverflow.com/), for those familiar with that). Arcus staff also use the [Arcus Forum](https://forum.arcus.chop.edu/) to post announcements about technical updates and fixes to labs, as well as how-to guides for frequently asked questions. You need to be behind the CHOP firewall to access the [Arcus Forum](https://forum.arcus.chop.edu/).
 
 
-### Knowledge Check 4
+### Knowledge Check 5
 
 Which of the following best describes the role of the Project Owner?
 
