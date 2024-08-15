@@ -700,6 +700,34 @@ The [training videos](#training-videos) walk through everything you need to get 
 
 ### Using R with Internet Disabled
 
+Most functions in R run locally -- once you install the package they're in, they're saved on your machine (or in this case, in your Arcus Lab) for you to use whenever you like, without requiring you to have an internet connection. 
+If you already have R code written for your analysis, chances are all of that code will continue to work in exactly the same way whether or not you have internet disabled. 
+
+We've also set up your Arcus Lab to allow some common remote connections in a secure way, so you can have internet disabled in your lab but still maintain access to certain secure services. 
+Here are some things you can **always** access from R, even with internet disabled: 
+
+- Your Arcus data (for example, using commands like `bq_table_download()` from the `bigrquery` package)
+- Repositories on CHOP's Enterprise GitHub (for example, using `clone`, `push`, and `pull`)
+- Opening external links from within RStudio, such as clicking a link for a vignette from within help documentation in R
+
+However, there are a few important R functions that require an internet connection to work (especially [install.packages()](#installing-and-updating-packages-in-r)), potentially posing a security risk for your data. 
+To provide peace of mind for researchers working in Arcus, we provide a secure method for you to install R packages and download other necessary files without having to enable internet. 
+And if you find you have something you need to do in R that requires an internet connection, you can always [change your lab's security settings](#lab-status-pane) while you run that code and then return to internet disabled mode afterward. 
+
+#### Installing and Updating Packages in R
+
+#### When you Might Need to Enable Internet in R
+
+Most workflows in R won't require you to enable internet connectivity at any point. 
+
+- APIs
+- pushing to a repository on public GitHub (not CHOP's Enterprise GitHub)
+
+warning
+
+If your code stops working when you disable internet and you don't understand why, **stop** before enabling internet and [reach out for help](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/303) to better understand what the code is doing. 
+Some functions include API calls you may not be aware of, including potentially sending your data to remote servers, which is a violation of the [Arcus Terms of Use](https://arcus.chop.edu/terms-of-use) and may even be a HIPAA breach. 
+
 
 ### Using Python with Internet Disabled
 
