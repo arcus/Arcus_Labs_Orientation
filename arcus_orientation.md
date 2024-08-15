@@ -238,9 +238,6 @@ Can't I Just Pay Someone?
 
 Additionally, the Department of Biomedical and Health Informatics (DBHI) at CHOP has staff that you can use in a billback model who can handle analysis for you, if you don't have the staff or time to acquire R, Python, and SQL skills.
 
-### Lab Security
-
-
 ### Knowledge Check 1
 
 True or False: Each Arcus computational lab provides access to all of the data in the Arcus Data Repository (ADR)
@@ -696,6 +693,23 @@ The [training videos](#training-videos) walk through everything you need to get 
 </div>
 
 ***
+
+## Lab Security
+
+(here's where general content about why we disable internet goes)
+
+### Using R with Internet Disabled
+
+
+### Using Python with Internet Disabled
+
+
+### Using GitHub with Internet Disabled
+
+
+### Using the Command Line with Internet Disabled
+
+
 
 ## Ongoing Communication
 
