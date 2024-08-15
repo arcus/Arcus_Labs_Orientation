@@ -712,21 +712,96 @@ Here are some things you can **always** access from R, even with internet disabl
 
 However, there are a few important R functions that require an internet connection to work (especially [install.packages()](#installing-and-updating-packages-in-r)), potentially posing a security risk for your data. 
 To provide peace of mind for researchers working in Arcus, we provide a secure method for you to install R packages and download other necessary files without having to enable internet. 
-And if you find you have something you need to do in R that requires an internet connection, you can always [change your lab's security settings](#lab-status-pane) while you run that code and then return to internet disabled mode afterward. 
+
+And if you find you have something you need to do in R that requires an internet connection, you can always [change your lab's security settings](#lab-status-pane) to run that code and then return to internet disabled mode afterward. 
 
 #### Installing and Updating Packages in R
+
+As you work in R, you may find you need to install new R packages or update existing ones. 
+Usually the way to do that is via the `install.packages()` function in R, which uses an internet connection to access [CRAN](https://cran.r-project.org/), the online repository of code and documentation for R. 
+However, maintaining an internet connection while you work with sensitive data can pose security risks. 
+To give researchers peace of mind, Arcus provides a tool that allows you to install packages without enabling internet.
+
+You can reach the Install form from your lab dashboard, under Tools.
+
+![](media/install_dashboard.png)
+
+If you have RStudio open, you can also go directly to the Install packages Tool by clicking "Install a Package" in the banner at the top of your lab.
+
+![](media/install_banner.png)
+
+When you open the Install Packages tool, you'll see a dropdown menu for "Select install option". 
+If you want the most recent version of the package(s) you'll be installing (this is usually the case), select "R Packages".
+If you want to specify a particular version to install other than the most recent version (this is rare), select "R Remote packages" instead, and then supply the version number.
+
+![](media/install_r_packages.png)
+
+Write in the name of the package you want to install. The form will also automatically install any required dependencies for the packages you list.
+
+![](media/install_package_name_1.png)
+
+If you have multiple packages you need to install, you can add them at the same time by clicking "Add package".
+
+![](media/install_package_name_2.png)
+
+Click "Submit" to begin installation. While the package(s) and their dependencies download and install, you'll see log messages (these are the same messages that you might otherwise see in the R console if you installed via `install.packages()`).
+
+![](media/install_processing.png)
+
+When installation is complete, click "Ok" to close the installation window. 
+
+![](media/install_finished.png)
+
+You can now return to R and your packages will be available. You can load them with `library()` or `require()` as you normally would.
+
+Note that if you forget and attempt to run `install.packages()` when you have internet disabled, you should see a helpful error message reminding you to use the install form instead. 
+
+![](media/install_error_msg.png)
 
 #### When you Might Need to Enable Internet in R
 
 Most workflows in R won't require you to enable internet connectivity at any point. 
+If you find you need to install or update an R package while you're working, you can use the Install form on your lab's dashboard to do that while staying in internet disabled mode. 
+Keeping your lab's internet connection disabled while you work is the best way to protect your data and ensure you're not accidentally disclosing protected information to outsiders. 
 
-- APIs
-- pushing to a repository on public GitHub (not CHOP's Enterprise GitHub)
+<div class = "warning">
+<b style="color: rgb(var(--color-highlight));">Warning!</b><br>
 
-warning
+If your code stops working when you have internet disabled and you don't understand why, **stop** before enabling internet and [reach out for help](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/303) to better understand what the code is doing. 
 
-If your code stops working when you disable internet and you don't understand why, **stop** before enabling internet and [reach out for help](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/303) to better understand what the code is doing. 
 Some functions include API calls you may not be aware of, including potentially sending your data to remote servers, which is a violation of the [Arcus Terms of Use](https://arcus.chop.edu/terms-of-use) and may even be a HIPAA breach. 
+
+For example, the R package [tidygeocoder](https://cran.r-project.org/web/packages/tidygeocoder/readme/README.html) includes a number of handy functions for working with addresses and location data in R; some of those functions work by sending data (addresses) to an online service for [geocoding](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/geocode_lat_long/geocode_lat_long.md#geocoding). 
+That means when you run those functions, if you have an internet connection it will **send your data to outside servers** -- and there's no message in R to warn you beforehand that the data will be shared with an outside service.
+The best way to prevent that kind of accidental disclosure is to keep your lab's internet disabled.
+
+</div>
+
+<div class = "important">
+<b style="color: rgb(var(--color-highlight));">Tip</b><br>
+
+Never use an online service to geocode patient addresses.
+
+If you need geocoding in your Arcus Lab, we can provide it in a secure way! 
+[Submit a request to attach GIS Service to your lab](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/289) to get started.
+
+</div>
+
+There are a few situations where you may find you need internet enabled. 
+The most common scenarios are: 
+
+- code that uses an [API](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/demystifying_apis/demystifying_apis.md#1)
+- pushing code to a repository on public GitHub (not CHOP's Enterprise GitHub)
+
+<div class = "help">
+<b style="color: rgb(var(--color-highlight));">Troubleshooting help</b><br>
+
+If you're currently using an API to bring any **data** into your lab (including publicly available data), please [reach out to the Arcus Privacy Team](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/355).
+It is a violation of the [Arcus Terms of Use](https://arcus.chop.edu/terms-of-use) to bring data into an Arcus Lab without oversight from the Privacy team. 
+
+</div>
+
+GitHub is 
 
 
 ### Using Python with Internet Disabled
