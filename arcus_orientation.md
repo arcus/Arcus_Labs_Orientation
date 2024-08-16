@@ -706,7 +706,7 @@ The [training videos](#training-videos) walk through everything you need to get 
 
 ### Using GitHub with Internet Disabled
 
-Git and GitHub are important tools for researchers, both for their own file management and also for sharing and archiving code transparently. 
+Git and GitHub are important tools for researchers, both for their own file management and also for sharing and archiving research code. 
 
 <div class = "learn-more">
 <b style="color: rgb(var(--color-highlight));">Learning connection</b><br>
@@ -738,7 +738,7 @@ To learn more, read about how to [avoid unintentional data exposure](https://lia
 
 </div>
 
-You can clone a repository on public GitHub without having to enable internet by using the Install Form in the Tools section on your Lab dashboard.
+You can clone a repository on public GitHub without having to enable internet by using the Install form in the Tools section on your Lab dashboard.
 But in order to pull from or push to a repository on public GitHub you will have to [enable internet](#lab-status-pane) (and then you can disable it again afterward).
 
 #### Cloning from Public GitHub with the Install Form
@@ -752,8 +752,8 @@ When you open the Install Form tool, select "Git" from the install option drop d
 ![The Arcus Install tool, with "Git" selected from the install option drop down menu.](media/install_git.png)
 
 Copy the URL for the repository you wish to clone. 
-Also fill in what you want to use as the local repository name; usually, this will be the same as the repository name, but you can write in something else if you prefer. 
-This will be the name of the directory the files will be saved in in your lab, under the `git` subdirectory within your home directory.
+Also fill in what you want to use as the local repository name; usually, this will be the same as the repository name on GitHub, but you can write in something else if you prefer. 
+This will be the name of the directory the files will be saved in in your lab.
 Enter the name of the branch you wish to clone; if you leave it blank, it will clone the default branch for that repository (usually `main`, or `master` for older repositories).
 
 ![The Arcus Install tool, with "https://github.com/arcus/Arcus_Labs_Orientation" entered for "Enter the URL to the repository you would like to clone." "Arcus_Labs_Orientation" is entered for "Enter local repository name." "Enter branch name" is left blank.](media/install_git_repository.png)
@@ -769,7 +769,7 @@ When cloning is complete, click OK to close the submission status box.
 ![When cloning is complete, the text at the bottom of the box is replaced with "Submissions have finished processing" followed by a button that says "OK."](media/install_git_finished.png)
 
 This repository is now available locally in your lab, saved within the `git` subdirectory of your home directory.
-You can navigate to that directory from within any of the other tools in your Arcus Lab (RStudio, Jupyter, etc.).
+You can navigate to that directory from within any of the other tools in your Arcus Lab (RStudio, Jupyter, etc.) to access the files.
 
 Note that [files in your home directory are visible only to you](https://forum.arcus.chop.edu/t/which-files-in-my-lab-are-shared-with-the-rest-of-my-team-and-which-are-just-mine/686).
 If you wish to share these files with the other users in your lab, you'll need to move them to a shared directory, such as your `project` folder.
