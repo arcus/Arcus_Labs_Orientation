@@ -747,14 +747,42 @@ If you want to clone a repository hosted on github.com, you can do that while ke
 
 ![An Arcus Lab dashboard, showing the Tools section with "Install packages, downloads, and more" at the end of the list.](media/install_dashboard.png)
 
+When you open the Install Form tool, select "Git" from the install option drop down menu.
+
 ![The Arcus Install tool, with "Git" selected from the install option drop down menu.](media/install_git.png)
+
+Copy the URL for the repository you wish to clone. 
+Also fill in what you want to use as the local repository name; usually, this will be the same as the repository name, but you can write in something else if you prefer. 
+This will be the name of the directory the files will be saved in in your lab, under the `git` subdirectory within your home directory.
+Enter the name of the branch you wish to clone; if you leave it blank, it will clone the default branch for that repository (usually `main`, or `master` for older repositories).
 
 ![The Arcus Install tool, with "https://github.com/arcus/Arcus_Labs_Orientation" entered for "Enter the URL to the repository you would like to clone." "Arcus_Labs_Orientation" is entered for "Enter local repository name." "Enter branch name" is left blank.](media/install_git_repository.png)
 
+After you click "Submit", it will begin cloning the repository.
+You'll see the directory it's cloning to in the messages on the screen -- this will be `~/git/repository_name` where `~` is your home directory (your CHOP username), and `repository_name` is whatever you entered in the Install form.
+In this example, it's `/home/hartmanr1/git/Arcus_Labs_Orientation`.
+
 ![After you click "Submit," the install form is replaced by a box showing progress cloning the repository. A printed message at the bottom of the box reads "Submissions still processing..."](media/install_git_processing.png)
+
+When cloning is complete, click OK to close the submission status box. 
 
 ![When cloning is complete, the text at the bottom of the box is replaced with "Submissions have finished processing" followed by a button that says "OK."](media/install_git_finished.png)
 
+This repository is now available locally in your lab, saved within the `git` subdirectory of your home directory.
+You can navigate to that directory from within any of the other tools in your Arcus Lab (RStudio, Jupyter, etc.).
+
+Note that [files in your home directory are visible only to you](https://forum.arcus.chop.edu/t/which-files-in-my-lab-are-shared-with-the-rest-of-my-team-and-which-are-just-mine/686).
+If you wish to share these files with the other users in your lab, you'll need to move them to a shared directory, such as your `project` folder.
+
+<div class = "help">
+<b style="color: rgb(var(--color-highlight));">Troubleshooting help</b><br>
+
+Remember that you still won't be able to push to or pull from a repository on public GitHub with internet disabled. 
+The Install form can clone repositories only. 
+
+If you need to push or pull to a repository on public GitHub, you'll need to [enable internet](#lab-status-pane) while you do that, and then you can disable it again afterward.
+
+</div>
 
 ### Using the Command Line with Internet Disabled
 
