@@ -53,7 +53,9 @@ That can be found at https://github.research.chop.edu.
 <div class = "important">
 <b style="color: rgb(var(--color-highlight));">Important note</b><br>
 
-We recommend using [CHOP's enterprise GitHub](https://github.research.chop.edu) for the code from your Arcus project, because it provides an additional layer of security as the files remain on CHOP's servers. 
+We recommend using [CHOP's Enterprise GitHub](https://github.research.chop.edu) for the code from your Arcus project, because it provides an additional layer of security as the files remain on CHOP's servers. 
+
+You'll also still be able to connect to a repository on CHOP's Enterprise GitHub (but not public GitHub) when your lab has **internet disabled**, allowing you to take advantage of the [additional security of keeping your lab environment isolated from the internet](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#lab-security).
 
 </div>
 
@@ -165,6 +167,16 @@ We can set up a meeting to walk you through the steps.
 </div>
 
 ## Using git and GitHub in your Arcus lab
+
+<div class = "important">
+<b style="color: rgb(var(--color-highlight));">Important note</b><br>
+
+The methods described here will work for repositories hosted on CHOP's Enterprise GitHub (github.research.chop.edu) whether or not you have [internet disabled](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#lab-status-pane) in your lab. 
+If you need to work with a repository on github.com, the process is a little different. 
+
+To learn more, read [Using GitHub with Internet Disabled](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#using-github-with-internet-disabled).
+
+</div>
 
 There are two main ways to use git in an Arcus lab: 
 
