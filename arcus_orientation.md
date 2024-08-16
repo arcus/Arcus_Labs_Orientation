@@ -724,39 +724,40 @@ To give researchers peace of mind, Arcus provides a tool that allows you to inst
 
 You can reach the Install form from your lab dashboard, under Tools.
 
-![](media/install_dashboard.png)
+![An Arcus Lab dashboard, showing the Tools section with "Install packages, downloads, and more" at the end of the list.](media/install_dashboard.png)
 
 If you have RStudio open, you can also go directly to the Install packages Tool by clicking "Install a Package" in the banner at the top of your lab.
 
-![](media/install_banner.png)
+![The banner across the top of an Arcus Lab running RStudio. The first link in the top right corner is "Install a Package."](media/install_banner.png)
 
 When you open the Install Packages tool, you'll see a dropdown menu for "Select install option". 
 If you want the most recent version of the package(s) you'll be installing (this is usually the case), select "R Packages".
 If you want to specify a particular version to install other than the most recent version (this is rare), select "R Remote packages" instead, and then supply the version number.
 
-![](media/install_r_packages.png)
+![The Arcus Install tool, with "R Packages" selected from the install option drop down menu.](media/install_r_packages.png)
 
 Write in the name of the package you want to install. The form will also automatically install any required dependencies for the packages you list.
 
-![](media/install_package_name_1.png)
+![The Arcus Install tool, with "ggplot2" entered under package name. Install option is set to "R Packages" and library sub path is left blank.](media/install_package_name_1.png)
 
 If you have multiple packages you need to install, you can add them at the same time by clicking "Add package".
+Click "Submit" to begin installation. 
 
-![](media/install_package_name_2.png)
+![The Arcus Install tool, with "ggplot2" and "flextable" entered in the two visible package name fields. The button "Add Package" at the bottom of the package fields adds fields to list additional packages. The buttons at the bottom right of the tool are "Add Item" and "Submit."](media/install_package_name_2.png)
 
-Click "Submit" to begin installation. While the package(s) and their dependencies download and install, you'll see log messages (these are the same messages that you might otherwise see in the R console if you installed via `install.packages()`).
+While the package(s) and their dependencies download and install, you'll see log messages (these are the same messages that you might otherwise see in the R console if you installed via `install.packages()`).
 
-![](media/install_processing.png)
+![After you click "Submit," the install form is replaced by a box showing installation progress. A printed message at the bottom of the box reads "Submissions still processing..."](media/install_processing.png)
 
-When installation is complete, click "Ok" to close the installation window. 
+When installation is complete, click "OK" to close the installation window. 
 
-![](media/install_finished.png)
+![When installation is complete, the text at the bottom of the box is replaced with "Submissions have finished processing" followed by a button that says "OK."](media/install_finished.png)
 
 You can now return to R and your packages will be available. You can load them with `library()` or `require()` as you normally would.
 
 Note that if you forget and attempt to run `install.packages()` when you have internet disabled, you should see a helpful error message reminding you to use the install form instead. 
 
-![](media/install_error_msg.png)
+![A screenshot of RStudio's console pane, where the command "install.packages('ggplot2')" is followed by the error message "Internet connection is Disabled. Installing packages with install.packages() from within an Arcus lab will not work. Instead, use the install form available in the Tools section of your lab dashboard. For help, submit a ticket at https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/303"](media/install_error_msg.png)
 
 #### When you Might Need to Enable Internet in R
 
@@ -769,13 +770,13 @@ Keeping your lab's internet connection disabled while you work is the best way t
 
 If your code stops working when you have internet disabled and you don't understand why, **stop** before enabling internet and [reach out for help](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/303) to better understand what the code is doing. 
 
+</div>
+
 Some functions include API calls you may not be aware of, including potentially sending your data to remote servers, which is a violation of the [Arcus Terms of Use](https://arcus.chop.edu/terms-of-use) and may even be a HIPAA breach. 
 
 For example, the R package [tidygeocoder](https://cran.r-project.org/web/packages/tidygeocoder/readme/README.html) includes a number of handy functions for working with addresses and location data in R; some of those functions work by sending data (addresses) to an online service for [geocoding](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/geocode_lat_long/geocode_lat_long.md#geocoding). 
 That means when you run those functions, if you have an internet connection it will **send your data to outside servers** -- and there's no message in R to warn you beforehand that the data will be shared with an outside service.
 The best way to prevent that kind of accidental disclosure is to keep your lab's internet disabled.
-
-</div>
 
 <div class = "important">
 <b style="color: rgb(var(--color-highlight));">Tip</b><br>
