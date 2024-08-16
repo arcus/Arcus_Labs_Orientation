@@ -706,6 +706,55 @@ The [training videos](#training-videos) walk through everything you need to get 
 
 ### Using GitHub with Internet Disabled
 
+Git and GitHub are important tools for researchers, both for their own file management and also for sharing and archiving code transparently. 
+
+<div class = "learn-more">
+<b style="color: rgb(var(--color-highlight));">Learning connection</b><br>
+
+Are you interested in getting started with Git and GitHub? 
+Check out these resources: 
+
+- [New to version control](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_version_control.md) is a document that will help you get started with git, a powerful program for helping you keep track of your research documents over time.
+- [Git Command Line Interface vs. Graphical User Interface](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/git_cli_vs_gui/git_cli_vs_gui.md#1) provides more guidance about tools for using git for version control.
+- [New to GitHub](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_github.md#1) explains the difference between Git and GitHub and walks through creating and exploring a repository on CHOP's Enterprise GitHub site.
+
+</div>
+
+When you use Git for version control, most actions (such as creating new commits or merging branches) do not require an internet connection, so they work exactly the same whether you have internet disabled or not. 
+The exception is any actions that connect to a remote repository -- usually hosted on github.com (public GitHub) or github.research.chop.edu (CHOP's Enterprise GitHub) -- such as **cloning**, **pulling**, or **pushing**. 
+
+#### Public GitHub vs. CHOP's Enterprise GitHub
+
+Because files hosted on CHOP's Enterprise GitHub (github.research.chop.edu) remain on CHOP's servers, we can set up a secure connection to repositories there even when you have internet disabled in your lab. 
+That means you can clone, push, and pull to and from repositories on CHOP's Enterprise GitHub without having to enable internet in your Arcus Lab. 
+
+For tips on connecting to CHOP's Enterprise GitHub from your Arcus Lab, see [Using Git and GitHub in your Arcus Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_github.md#using-git-and-github-in-your-arcus-lab).
+
+<div class = "important">
+<b style="color: rgb(var(--color-highlight));">Important note</b><br>
+
+Note: It's still **your responsibility** to make sure you're not inappropriately sharing protected information when you push files to CHOP's Enterprise GitHub. 
+To learn more, read about how to [avoid unintentional data exposure](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_github.md#avoid-unintentional-data-exposure).
+
+</div>
+
+You can clone a repository on public GitHub without having to enable internet by using the Install Form in the Tools section on your Lab dashboard.
+But in order to pull from or push to a repository on public GitHub you will have to [enable internet](#lab-status-pane) (and then you can disable it again afterward).
+
+#### Cloning from Public GitHub with the Install Form
+
+If you want to clone a repository hosted on github.com, you can do that while keeping internet disabled by using the Install Form in the Tools section on your Lab dashboard.
+
+![An Arcus Lab dashboard, showing the Tools section with "Install packages, downloads, and more" at the end of the list.](media/install_dashboard.png)
+
+![The Arcus Install tool, with "Git" selected from the install option drop down menu.](media/install_git.png)
+
+![The Arcus Install tool, with "https://github.com/arcus/Arcus_Labs_Orientation" entered for "Enter the URL to the repository you would like to clone." "Arcus_Labs_Orientation" is entered for "Enter local repository name." "Enter branch name" is left blank.](media/install_git_repository.png)
+
+![After you click "Submit," the install form is replaced by a box showing progress cloning the repository. A printed message at the bottom of the box reads "Submissions still processing..."](media/install_git_processing.png)
+
+![When cloning is complete, the text at the bottom of the box is replaced with "Submissions have finished processing" followed by a button that says "OK."](media/install_git_finished.png)
+
 
 ### Using the Command Line with Internet Disabled
 
