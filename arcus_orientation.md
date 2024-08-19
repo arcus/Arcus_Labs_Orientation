@@ -703,6 +703,46 @@ The [training videos](#training-videos) walk through everything you need to get 
 
 ### Using Python with Internet Disabled
 
+Most functions in Python run locally -- once you install the package they're in, they're saved on your machine (or in this case, in your Arcus Lab) for you to use whenever you like, without requiring you to have an internet connection. 
+If you already have Python code written for your analysis, chances are all of that code will continue to work in exactly the same way whether or not you have internet disabled. 
+
+We've also set up your Arcus Lab to allow some common remote connections in a secure way, so you can have internet disabled in your lab but still maintain access to certain secure services. 
+Here are some things you can **always** access from Python/Jupyter, even with internet disabled: 
+
+- Your Arcus data (for example, downloading your data in Python using `bigquery`)
+- Repositories on CHOP's Enterprise GitHub (for example, using `clone`, `push`, and `pull`)
+- Opening external links by clicking on them, such as from within a Jupyter notebook
+
+However, there are a few important Python actions that require an internet connection to work (especially [installing new packages](#installing-and-updating-packages-in-python)), potentially posing a security risk for your data. 
+To provide peace of mind for researchers working in Arcus, we provide a secure method for you to install Python packages and download other necessary files without having to enable internet. 
+
+And if you find you have something you need to do in Python that requires an internet connection, you can always [change your lab's security settings](#lab-status-pane) to run that code and then return to internet disabled mode afterward. 
+
+#### Installing and Updating Packages in Python
+
+You can reach the Install form from your lab dashboard, under Tools.
+
+![An Arcus Lab dashboard, showing the Tools section with "Install packages, downloads, and more" at the end of the list.](media/install_dashboard.png)
+
+If you have Jupyter open, you can also go directly to the Install packages Tool by clicking "Install a Package" in the banner at the top of your lab.
+
+![The banner across the top of an Arcus Lab running Jupyter. The first link in the top right corner is "Install a Package."](media/install_banner.png)
+
+#### When you Might Need to Enable Internet in Python
+
+Most workflows in Python won't require you to enable internet connectivity at any point. 
+If you find you need to install or update a package while you're working, you can use the Install form on your lab's dashboard to do that while staying in internet disabled mode. 
+Keeping your lab's internet connection disabled while you work is the best way to protect your data and ensure you're not accidentally disclosing protected information to outsiders. 
+
+<div class = "warning">
+<b style="color: rgb(var(--color-highlight));">Warning!</b><br>
+
+If your code stops working when you have internet disabled and you don't understand why, **stop** before enabling internet and [reach out for help](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/303) to better understand what the code is doing. 
+
+</div>
+
+Some functions include API calls you may not be aware of, including potentially sending your data to remote servers, which is a violation of the [Arcus Terms of Use](https://arcus.chop.edu/terms-of-use) and may even be a HIPAA breach. 
+
 
 ### Using GitHub with Internet Disabled
 
