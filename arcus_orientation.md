@@ -784,6 +784,24 @@ If you need to push or pull to a repository on public GitHub, you'll need to [en
 
 </div>
 
+#### Cloning a Private Repository
+
+If the repository you want to clone from github.com is private, you will need to set up proper authentication for your account to access the repository before you can clone it with the Install form. 
+
+For more background, see [Connecting to GitHub with SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
+
+
+1. First, check whether you already have an SSH key saved in your Arcus Lab. To do that, log into your lab and [turn it on with internet disabled](#lab-status-pane). 
+1. Open the Terminal application from the Tools menu in your lab dashboard. 
+1. Type (or copy-paste) the following command and hit Enter to run: `ls -al ~/.ssh` (this command will list any files in your .ssh directory). 
+  * If you see one or more files with names like `id_rsa.pub`, `id_ecdsa.pub`, or `id_ed25519.pub`, those are existing SSH keys that you can use to authenticate with GitHub.
+  * If you don't see a file with one of those names (or if you get an error that the .ssh directory doesn't exist), that means you don't already have an SSH key saved. 
+1. If you already have an SSH key to use, you can skip this step. If you don't already have an SSH key, create one now. To do that, in Terminal, run the following command (replacing `your_email@example.com` with the email you use for your GitHub account): `ssh-keygen -t ed25519 -C "your_email@example.com"`
+1. Copy the content of the SSH key file (either the one you just made, or an existing SSH key you already had). Do this by running the following command in Terminal: `cat ~/.ssh/id_ed25519.pub` (if the SSH key you want to use has a different name, like `id_rsa.pub` or `id_ecdsa.pub`, then replace that in the command) and then highlight the text displayed and copy it. 
+1. In a different tab or window in your browser, log into your GitHub account (or create a new account for free, if you don't already have one) at [github.com](https://github.com/)
+1. Go to your [profile settings](https://github.com/settings/profile), and click "SSH and GPG keys" in the menu on the left side of the page.
+1. 
+
 ### Using the Command Line with Internet Disabled
 
 
