@@ -720,13 +720,118 @@ And if you find you have something you need to do in Python that requires an int
 
 #### Installing and Updating Packages in Python
 
+There are two main sources for installing new packages (or update existing ones) in Python in Arcus: Anaconda (conda) or PyPi (pip).
+For either, you can use the Install form, which is more secure than installing packages by commands like `conda install` or `pip install`, and also works even when you have internet disabled in your lab.
+
+<div class = "learn-more">
+<b style="color: rgb(var(--color-highlight));">Learning connection</b><br>
+
+To learn more about the differences between Conda and Pip, read our Arcus Forum post on [package management for reproducible analysis](https://forum.arcus.chop.edu/t/package-management-for-reproducible-analysis/384).
+
+</div>
+
 You can reach the Install form from your lab dashboard, under Tools.
 
 ![An Arcus Lab dashboard, showing the Tools section with "Install packages, downloads, and more" at the end of the list.](media/install_dashboard.png)
 
 If you have Jupyter open, you can also go directly to the Install packages Tool by clicking "Install a Package" in the banner at the top of your lab.
 
-![The banner across the top of an Arcus Lab running Jupyter. The first link in the top right corner is "Install a Package."](media/install_banner.png)
+![The banner across the top of an Arcus Lab running Jupyter. The first link in the top right corner is "Install a Package."](media/install_banner_jupyter.png)
+
+The procedure is a little different depending on if you want to install a package [with Conda](#install-with-conda) or [with Pip](#install-with-pip); the following sections provide instructions and screenshots. 
+
+<div class = "help">
+<b style="color: rgb(var(--color-highlight));">Troubleshooting help</b><br>
+
+Note that if you forget and attempt to run commands like `conda install` or `pip install` in Python when you have internet disabled, the kernel may hang (the code will keep trying unsuccessfully to run until it times out).
+
+You can fix this by refreshing the page. 
+Then you can open the Install form to install the package(s) you need that way.
+
+</div>
+
+##### Install with Conda
+
+When you install a package hosted on Anaconda, you need to specify whether you want to install it into a Conda environment you already have, or a new Conda environment. 
+If you want to install it into an existing Conda environment, you'll need to **make a note of your Conda environment** before going to the Install form.
+
+
+You can see the Conda environment (prefixed with `.conda-`) for a given Jupyter notebook in the upper right corner of the screen when you have that notebook open. The default [Arcus-provided Conda environment](https://forum.arcus.chop.edu/t/arcus-provided-conda-environments/573) is called `arcus`. 
+
+![The banner across the top of an Arcus Lab running Jupyter. In the upper right corner of the notebook, text reads ".conda-arcus", so `arcus` is the name of this Conda environment.](media/install_check_conda_env.png)
+
+You can also see a complete list of all the Conda environments you have by running `! ls ~/.conda/envs` in a Jupyter cell. 
+
+When you open the Install Packages tool, you'll see a dropdown menu for "Select install option". 
+Select "Conda".
+
+![The Arcus Install tool, with "Conda" selected from the install option drop down menu.](media/install_conda_packages.png)
+
+**If you wish to install the package into an existing Conda environment, change "New environment" to "false".** 
+Otherwise it will attempt to create a new Conda environment for you when you install.
+
+![The Arcus Install tool, with install option "Conda" and new environment changed from "true" to "false".](media/install_conda_new_env.png)
+
+Write in the name of the Conda environment you wish to install into. If you are creating a new environment, then write in a string here that you want the environment saved as; this will be saved as a new directory under `~/.conda/env`.
+
+<div class = "warning">
+<b style="color: rgb(var(--color-highlight));">Warning</b><br>
+
+When creating a new Conda environment, the string you provide here must not already be a subdirectory under `~/.conda/env`.
+
+If you want to overwrite an existing Conda environment, you'll need to manually delete it first.
+
+</div>
+
+![The Arcus Install tool, with install option "Conda", new environment set to "false", and "arcus" entered as the environment name.](media/install_conda_env_name.png)
+
+Write in the name of the package you want to install. 
+If you leave package version blank, it will get the most recent version.
+The form will also automatically install any required dependencies for the package(s) you list.
+
+![The Arcus Install tool, with "tableone" entered under package name. Install option is set to "Conda" and package version is left blank.](media/install_conda_package_name_1.png)
+
+If you have multiple packages you need to install, you can add them at the same time by clicking "Add package".
+
+![The Arcus Install tool, with "tableone" and "seaborn" entered in the two visible package name fields. The button "Add Package" at the bottom of the package fields adds fields to list additional packages. The buttons at the bottom right of the tool are "Add Item" and "Submit."](media/install_conda_package_name_2.png)
+
+Click "Submit" to begin installation.
+
+![](media/install_conda_submit.png)
+
+![](media/install_conda_processing.png)
+
+When installation is complete, click "OK" to close the installation window. 
+
+![When installation is complete, the text at the bottom of the box will say "Submissions have finished processing" followed by a button that says "OK."](media/install_conda_finished.png)
+
+You can now return to Jupyter and your packages will be available, in the Conda environment you specified. 
+You can load them with `import` statements as you normally would.
+
+##### Install with Pip
+
+When you open the Install Packages tool, you'll see a dropdown menu for "Select install option". 
+Select "Pip".
+
+![The Arcus Install tool, with "Pip" selected from the install option drop down menu.](media/install_pip_packages.png)
+
+Write in the name of the package you want to install. 
+If you leave package version blank, it will get the most recent version.
+The form will also automatically install any required dependencies for the package(s) you list.
+
+![The Arcus Install tool, with "tableone" entered under package name. Install option is set to "Pip" and package version is left blank.](media/install_pip_package_name_1.png)
+
+If you have multiple packages you need to install, you can add them at the same time by clicking "Add package".
+Click "Submit" to begin installation. 
+
+![The Arcus Install tool, with "tableone" and "seaborn" entered in the two visible package name fields. The button "Add Package" at the bottom of the package fields adds fields to list additional packages. The buttons at the bottom right of the tool are "Add Item" and "Submit."](media/install_pip_package_name_2.png)
+
+When installation is complete, click "OK" to close the installation window. 
+
+![When installation is complete, the text at the bottom of the box will say "Submissions have finished processing" followed by a button that says "OK."](media/install_pip_finished.png)
+
+You can now return to your Python code and your packages will be available. 
+You can load them with `import` statements as you normally would.
 
 #### When you Might Need to Enable Internet in Python
 
