@@ -797,9 +797,11 @@ If you have multiple packages you need to install, you can add them at the same 
 
 Click "Submit" to begin installation.
 
-![](media/install_conda_submit.png)
+![The "Submit" button is at the bottom right of the Arcus Install tool.](media/install_conda_submit.png)
 
-![](media/install_conda_processing.png)
+While the installation processes, you'll see a box reporting progress.
+
+![After you click "Submit," the install form is replaced by a box showing installation progress. A printed message at the bottom of the box reads "Submissions still processing..."](media/install_conda_processing.png)
 
 When installation is complete, click "OK" to close the installation window. 
 
@@ -822,9 +824,12 @@ The form will also automatically install any required dependencies for the packa
 ![The Arcus Install tool, with "tableone" entered under package name. Install option is set to "Pip" and package version is left blank.](media/install_pip_package_name_1.png)
 
 If you have multiple packages you need to install, you can add them at the same time by clicking "Add package".
-Click "Submit" to begin installation. 
 
 ![The Arcus Install tool, with "tableone" and "seaborn" entered in the two visible package name fields. The button "Add Package" at the bottom of the package fields adds fields to list additional packages. The buttons at the bottom right of the tool are "Add Item" and "Submit."](media/install_pip_package_name_2.png)
+
+Click "Submit" to begin installation. 
+
+![The "Submit" button is at the bottom right of the Arcus Install tool.](media/install_pip_submit.png)
 
 When installation is complete, click "OK" to close the installation window. 
 
