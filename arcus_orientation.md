@@ -805,6 +805,8 @@ For more background, see [Connecting to GitHub with SSH](https://docs.github.com
 ### Using the Command Line with Internet Disabled
 
 
+### Using GIS service with the Internet Disabled
+
 
 ## Ongoing Communication
 
