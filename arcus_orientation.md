@@ -860,6 +860,8 @@ Some functions include API calls you may not be aware of, including potentially 
 ### Using the Command Line with Internet Disabled
 
 
+### Using GIS service with the Internet Disabled
+
 
 ## Ongoing Communication
 
