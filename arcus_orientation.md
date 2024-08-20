@@ -710,6 +710,8 @@ The [training videos](#training-videos) walk through everything you need to get 
 ### Using the Command Line with Internet Disabled
 
 
+### Using GIS service with the Internet Disabled
+
 
 ## Ongoing Communication
 
