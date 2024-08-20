@@ -760,7 +760,7 @@ You can see the Conda environment (prefixed with `.conda-`) for a given Jupyter 
 
 ![The banner across the top of an Arcus Lab running Jupyter. In the upper right corner of the notebook, text reads ".conda-arcus", so `arcus` is the name of this Conda environment.](media/install_check_conda_env.png)
 
-You can also see a complete list of all the Conda environments you have by running `! ls ~/.conda/envs` in a Jupyter cell. 
+You can also see a complete list of all the Conda environments you have by running `! arcus list-conda-env` in a Jupyter cell. 
 
 When you open the Install Packages tool, you'll see a dropdown menu for "Select install option". 
 Select "Conda".
