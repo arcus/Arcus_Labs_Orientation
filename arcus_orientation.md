@@ -817,6 +817,8 @@ Remember that you do not need an internet connection to do most actions using Gi
 ### Using the Command Line with Internet Disabled
 
 
+### Using GIS service with the Internet Disabled
+
 
 ## Ongoing Communication
 
