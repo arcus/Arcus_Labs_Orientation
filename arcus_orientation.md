@@ -728,7 +728,7 @@ You can reach the Install form from your lab dashboard, under Tools.
 
 If you have RStudio open, you can also go directly to the Install packages Tool by clicking "Install a Package" in the banner at the top of your lab.
 
-![The banner across the top of an Arcus Lab running RStudio. The first link in the top right corner is "Install a Package."](media/install_rtsudio_banner.png)
+![The banner across the top of an Arcus Lab running RStudio. The first link in the top right corner is "Install a Package."](media/install_rstudio_banner.png)
 
 When you open the Install Packages tool, you'll see a dropdown menu for "Select install option". 
 If you want the most recent version of the package(s) you'll be installing (this is usually the case), select "R Packages".
