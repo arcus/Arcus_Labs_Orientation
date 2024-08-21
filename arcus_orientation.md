@@ -696,7 +696,22 @@ The [training videos](#training-videos) walk through everything you need to get 
 
 ## Lab Security
 
-(here's where general content about why we disable internet goes)
+While there are myriad benefits to taking a scripted approach to data analysis, it does also introduce some specific privacy and security risks. Thankfully, Arcus has taken these risks into consideration, and developed our [Internet Disabled Mode](https://forum.arcus.chop.edu/t/about-the-arcus-lab-security-setting-for-disabling-internet-in-labs/741) feature. The feature provides peace of mind by allowing you to work on your code in an environment that is entirely disconnected from the internet, keeping your data and code safer. 
+
+There are two primary kinds of problems that could occur: 
+**1. Malicious Packages**
+  Writing code involves downloading a variety of packages to use in your scripts, which could contain malicious code (code which is intended to harm a system or cause a security breach). This is a less likely risk, especially if only using well established packages. 
+
+**2. Internet Reliant Features**
+  Some legitimate, non-malicious packages are useful in part because they send data out to external servers where additional processing is done. Unfortunately, it is not always easy to tell when a package relies upon sending data over the internet. This may not be a concern for a hobby programmer, but when working with PHI and other sensitive data, this presents a huge risk. 
+
+Using Internet Disabled Mode helps protect you from both of these risks, by allowing you to work on your code in a space that is entirely disconnected from the internet. 
+
+Of course, you'll still need to be able to install packages to do your work. For this, we've developed the **Package Installation Form**. Rather than installing your packages in the same environment that includes your data, filling out this form instantly installs the necessary packages in a separate environment that doesn't have any data in it. This ensures that, even if there is any malicious code in the package you've installed, it doesn't have any access to your data when it executes. The package is then immediately made available for your use in your Internet Disabled lab. 
+
+Again, as mentioned, since its not always easy to tell when legitimate packages may be accessing the internet, **we recommend always using Internet Disabled mode**, not just when installing packages. That being said, it is still possible to enable access to the internet if needed, such as during particularly complex package installations. 
+
+In the following sections, we'll review more specific details about how to work with a variety of tools while using Internet Disabled Mode. 
 
 ### Using R with Internet Disabled
 
