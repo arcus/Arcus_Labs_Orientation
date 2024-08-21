@@ -9,11 +9,12 @@ Title: New to R?
 
 **What is R?  RStudio?**
 
-![""](media/rstudio.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 600px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
-
 R is a free, open source language that is specifically focused on statistical data analysis.  It is [increasing in market share among researchers](https://r4stats.com/articles/popularity/) (second only to SPSS and outpacing SAS, Stata, JMP, Matlab, and other solutions you may have used) and has multiple advantages over "point and click" statistical data analysis.
 
 RStudio is a free tool made by Posit (formerly RStudio) that makes using R much simpler than using R alone.  RStudio is provided as a tool in Arcus labs and is nearly identical to the RStudio you might be accustomed to using in CHOP's HPC, on CHOP's RStudio Connect server, or on your computer.  It allows you to analyze data stored in your lab for your research project.
+
+![""](media/rstudio.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 600px;  margin-right: 2rem; margin-bottom: 2rem;"-->
+
 
 In R, you write scripts.  Scripts are computer code that record a series of operations you want to perform on your data.  Operations could include things like:
 
@@ -41,11 +42,19 @@ CHOP has a vibrant R User Group made up of employees from all over the instituti
 
 Please fill out this form to [join the CHOPR User Group](https://bit.ly/chopRusers)!  This will add you to the Outlook distribution list for emails as well as give you instructions on how to add yourself to our Slack workspace, where people ask coding questions (and answer them!).
 
-Joining the R User Group means you'll be informed about periodic intro to R workshops, R User Group talks, and other resources you'll find useful.  Especially if you're the only person in your lab who uses R, it can be important to find a community of practice that can help guide you.  Intro to R workshops are given a few times a year and include five hours of hands-on, synchronous work intended to get you started working with R as a brand-new beginner.  To learn more about the course, visit the [R101 course website](https://arcus.github.io/intro-to-r-for-clinical-data/).
+Joining the R User Group means you'll be informed about periodic intro to R workshops, R User Group talks, and other resources you'll find useful.  Especially if you're the only person in your lab who uses R, it can be important to find a community of practice that can help guide you.  The R User Group, along with Arcus, provides introduction to R training periodically.  To learn more about the Introduction to R for Clinical Data course, visit the [R101 course website](https://arcus.github.io/intro-to-r-for-clinical-data/).
 
 As you gain expertise, we also invite you to participate by leading an R User Group meeting!  You don't have to be an expert for years in order to share your skills.  Even if you only know a little, you know more than some people, and you can share pitfalls to avoid and the routes to success for data analysis tasks you conducted on your type of research data.
 
 ## Arcus-Specific R Training
+
+Arcus On-Ramp 
+-----
+
+If you're already an Arcus user (you've signed our Terms of Use and completed CITI training), you can sign up for our Arcus On-Ramp webinars.  In these webinars, you work in a real Arcus lab analyzing CHOP's electronic health record (EHR) to replicate an actual published study. Workshops focus either on exploring the data and defining a query for your study using SQL, or running the analysis in R/Python. No coding experience is required to attend. Registration closes one week before each workshop so we have time to add registered attendees as users in the webinar training lab.  To sign up, please visit [https://arcus.chop.edu/education/webinar-signup/](https://arcus.chop.edu/education/webinar-signup/).  This link is only available for Arcus customers on the CHOP network.
+
+Lab Training Videos 
+-----
 
 ![""](media/training_videos.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 600px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
