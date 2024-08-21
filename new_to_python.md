@@ -8,11 +8,11 @@ title: Arcus Labs Orientation
 
 **What is Python?**
 
-![""](media/jupyterlab.png)<!-- style = "max-width:400px; float:left; margin-right: 2rem; margin-bottom: 2rem;"-->
-
 Python is a general purpose programming language that can be used in a number of settings, from website development to robotics.  For our purposes, one common usage of Python is in data analysis and machine learning.  
 
 While many researchers use R, a different language, for data analysis, Python also has important strengths in data analytics, especially in image analysis and natural language processing.  Often, data analysis takes place in a special format of Python language called a "notebook".  If you've heard of "iPython" notebooks or "Jupyter" notebooks or labs, that's the format we're talking about.  You may have also seen a notebook format in Google Collaboratory (or Colab) notebooks.  These notebooks allow your code to be interspersed with formatted text that is intended to communicate with other humans, not with a computer.  In Arcus, we provide the JupyterLab environment to provide users with notebook functionality.
+
+![""](media/jupyterlab.png)<!-- style = "max-width:400px; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 Additionally, Python is widely used in machine learning, a computational method that helps develop models that can classify data and make predictions on new data.  Often the development of machine learning takes place in notebooks, which makes trial and error and human intervention easy, and is then, once successful, is scaled up for production use in an automated form that doesn't use notebooks but rather raw python code for speed and efficiency.
 
@@ -21,6 +21,14 @@ Additionally, Python is widely used in machine learning, a computational method 
 Like R, Python is free and open source, and promotes research reproducibility.
 
 ## Arcus-Specific Python Training
+
+Arcus On-Ramp 
+-----
+
+If you're already an Arcus user (you've signed our Terms of Use and completed CITI training), you can sign up for our Arcus On-Ramp webinars.  In these webinars, you work in a real Arcus lab analyzing CHOP's electronic health record (EHR) to replicate an actual published study. Workshops focus either on exploring the data and defining a query for your study using SQL, or running the analysis in R/Python. No coding experience is required to attend. Registration closes one week before each workshop so we have time to add registered attendees as users in the webinar training lab.  To sign up, please visit [https://arcus.chop.edu/education/webinar-signup/](https://arcus.chop.edu/education/webinar-signup/).  This link is only available for Arcus customers on the CHOP network.
+
+Lab Training Videos 
+-----
 
 ![""](media/training_videos.png)<!--
 style = "max-width:400px; float:right; margin-left: 2em;"-->
@@ -33,9 +41,9 @@ We strongly encourage you to watch **all of the videos**, in order, even the one
 
 ## Additional Resources
 
-The training videos barely scratch the surface of how to get started.  We did that on purpose, so that they're short enough that everyone can watch them.
+Arcus training is a great place to get started with your Python education, but you will probably want to continue your education on your own, growing in skills that are specific to your own research goals or career needs.
 
-But they aren't enough to get you started **really** learning Python.  You have several options when it comes to growing in your Python skills.
+You have several options when it comes to growing in your Python skills.
 
 There are a number of university classes, online courses and live workshops that go in depth about how to use Python.  Simply search for courses at the university or MOOC (e.g. Coursera) you prefer to use.  
 
@@ -50,26 +58,20 @@ DART includes dozens of data science modules that are each 1 hour or less in dur
 
 <div class = "cool-fact">
 
-Arcus Education's DART program is the result of [an NIH grant aimed at educating biomedical researchers](https://www.research.chop.edu/announcements/dbhi-and-drexel-collaborate-to-advance-biomedical-data-science-education).
-If you'd like to learn more about DART, fill out our [interest form](https://redcap.link/dart-interest) or email us at dart@chop.edu.
+Arcus Education's DART modules are the result of a study funded by [an NIH grant aimed at educating biomedical researchers](https://www.research.chop.edu/announcements/dbhi-and-drexel-collaborate-to-advance-biomedical-data-science-education).
+The active research phase of this program is complete, so we are no longer recruiting learners to be our subjects.  However, if you'd like to receive updates about publications or applications of this research, please email us at dart@chop.edu.
 
 </div>
 
 **Training modules:**
 
-To begin learning Python, we recommend starting with these modules: 
+To begin learning R, there are a couple of options with regard to the DART self-guided tutorial modules.
 
-* [Demystifying Python](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/demystifying_python/demystifying_python.md)
-* [Python Basics: Functions, Methods, and Variables](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/python_basics_variables_functions_methods/python_basics_variables_functions_methods.md)
-* [Python Basics: Lists and Dictionaries](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/python_basics_lists_dictionaries/python_basics_lists_dictionaries.md)
-* [Python Basics: Loops and Conditionals](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/python_basics_loops_conditionals/python_basics_loops_conditionals.md)
-* [Transform Data with pandas](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/pandas_transform/pandas_transform.md)
-* [Data Visualization in seaborn](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/data_visualization_in_seaborn/data_visualization_in_seaborn.md)
-
+If you want a comprehensive curriculum of nearly twenty modules, you might enjoy our [Suggested Pathway 5: Analysis in Python](https://arcus.github.io/education_modules/example_pathways#:~:text=Pathway%205%3A%20Analysis%20in%20Python) curriculum, which includes overview materials about reproducible research and data organization, introductory material in Python, and some advanced topics you'll need as a biomedical researcher. While you're there, check out the other suggested pathways, too!
 
 <br>
 <details>
-<summary><strong>For a deeper introduction to Data Analysis in Python, click to see the full 18 module pathway.</strong></summary>
+<summary><strong>Expand to see a sneak preview of Suggested Pathway 5: Analysis in Python!</strong></summary>
 <br>
 <hr>
 <br>
@@ -198,6 +200,19 @@ To begin learning Python, we recommend starting with these modules:
 <br>
 </details>
 <br>
+
+
+If these pathways are close, but not quite right, you can also build your own pathway through these materials using our prototype curriculum development tool at [https://learn.arcus.chop.edu](https://learn.arcus.chop.edu).
+
+If you're in a hurry and and you want to just get a bit of specific Python instruction, we recommend starting with these modules: 
+
+
+* [Demystifying Python](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/demystifying_python/demystifying_python.md)
+* [Python Basics: Functions, Methods, and Variables](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/python_basics_variables_functions_methods/python_basics_variables_functions_methods.md)
+* [Python Basics: Lists and Dictionaries](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/python_basics_lists_dictionaries/python_basics_lists_dictionaries.md)
+* [Python Basics: Loops and Conditionals](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/python_basics_loops_conditionals/python_basics_loops_conditionals.md)
+* [Transform Data with pandas](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/pandas_transform/pandas_transform.md)
+* [Data Visualization in seaborn](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/data_visualization_in_seaborn/data_visualization_in_seaborn.md)
 
 Additionally, beyond the NIH grant, we have other articles and miscellany we suggest, whether those are resources we've created in Arcus, or things we recommend from the larger Python community.
 

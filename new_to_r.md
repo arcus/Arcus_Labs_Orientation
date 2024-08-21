@@ -66,9 +66,9 @@ We strongly encourage you to watch **all of the videos**, in order, even the one
 
 ## Additional Resources
 
-The training videos barely scratch the surface of how to get started.  We did that on purpose, so that they're short enough that everyone can watch them.
+Arcus training is a great place to get started with your R education, but you will probably want to continue your education on your own, growing in skills that are specific to your own research goals or career needs.
 
-But they aren't enough to get you started **really** learning R.  You have several options when it comes to growing in your R skills.
+You have several options when it comes to growing in your R skills.
 
 There are a number of university classes, online courses and live workshops that go in depth about how to use R.  Simply search for courses at the university or MOOC (e.g. Coursera) you prefer to use.
 
@@ -78,27 +78,20 @@ DART includes dozens of data science modules that are each 1 hour or less in dur
 
 <div class = "cool-fact">
 
-Arcus Education's DART program is the result of [an NIH grant aimed at educating biomedical researchers](https://www.research.chop.edu/announcements/dbhi-and-drexel-collaborate-to-advance-biomedical-data-science-education).
-If you'd like to learn more about DART, fill out our [interest form](https://redcap.link/dart-interest) or email us at dart@chop.edu.
+Arcus Education's DART modules are the result of a study funded by [an NIH grant aimed at educating biomedical researchers](https://www.research.chop.edu/announcements/dbhi-and-drexel-collaborate-to-advance-biomedical-data-science-education).
+The active research phase of this program is complete, so we are no longer recruiting learners to be our subjects.  However, if you'd like to receive updates about publications or applications of this research, please email us at dart@chop.edu.
 
 </div>
 
 **Training modules:**
 
-To begin learning R, we recommend starting with these modules: 
+To begin learning R, there are a couple of options with regard to the DART self-guided tutorial modules.
 
-* [R Basics: Introduction](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_basics_introduction/r_basics_introduction.md)
-* [R Basics: Transform Data](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_basics_transform_data/r_basics_transform_data.md)
-* [R Basics: Visualize Data](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_basics_visualize_data/r_basics_visualize_data.md)
-* [Reshaping Data in R: Long and Wide Data](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_reshape_long_wide/r_reshape_long_wide.md)
-* [Missing Values in R](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_missing_values/r_missing_values.md)
-* [Data Visualization in ggplot2](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/data_visualization_in_ggplot2/data_visualization_in_ggplot2.md)
-* [Summary Statistics in R](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_summary_stats/r_summary_stats.md)
-
+If you want a comprehensive curriculum of nearly twenty modules, you might enjoy our [Suggested Pathway 4: Analysis in R](https://arcus.github.io/education_modules/example_pathways#:~:text=Pathway%204%3A%20Analysis%20in%20R) curriculum, which includes overview materials about reproducible research and data organization, introductory material in R, and some advanced topics you'll need as a biomedical researcher.  While you're there, check out the other suggested pathways, too!
 
 <br>
 <details>
-<summary><strong>For a deeper introduction to Data Analysis in R, click to see the full 18 module pathway.</strong></summary>
+<summary><strong>Expand to see a sneak preview of Suggested Pathway 4: Analysis in R!</strong></summary>
 <br>
 <hr>
 <br>
@@ -228,6 +221,17 @@ To begin learning R, we recommend starting with these modules:
 </details>
 <br>
 
+If these pathways are close, but not quite right, you can also build your own pathway through these materials using our prototype curriculum development tool at [https://learn.arcus.chop.edu](https://learn.arcus.chop.edu).
+
+If you're in a hurry and you want to just get a bit of specific R instruction, we recommend starting with these modules: 
+
+* [R Basics: Introduction](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_basics_introduction/r_basics_introduction.md)
+* [R Basics: Transform Data](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_basics_transform_data/r_basics_transform_data.md)
+* [R Basics: Visualize Data](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_basics_visualize_data/r_basics_visualize_data.md)
+* [Reshaping Data in R: Long and Wide Data](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_reshape_long_wide/r_reshape_long_wide.md)
+* [Missing Values in R](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_missing_values/r_missing_values.md)
+* [Data Visualization in ggplot2](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/data_visualization_in_ggplot2/data_visualization_in_ggplot2.md)
+* [Summary Statistics in R](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/r_summary_stats/r_summary_stats.md)
 
 Additionally, beyond the NIH grant, we have other articles and miscellany we suggest, whether those are resources we've created in Arcus, or things we recommend from the larger R community.
 
