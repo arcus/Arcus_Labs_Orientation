@@ -765,7 +765,7 @@ Also fill in what you want to use as the local repository name; usually, this wi
 This will be the name of the directory the files will be saved in in your lab.
 Enter the name of the branch you wish to clone; if you leave it blank, it will clone the default branch for that repository (usually `main`, or `master` for older repositories).
 
-![The Arcus Install tool, with "https://github.com/arcus/Arcus_Labs_Orientation" entered for "Enter the URL to the repository you would like to clone." "Arcus_Labs_Orientation" is entered for "Enter local repository name." "Enter branch name" is left blank.](media/install_git_repository.png)
+![`The Arcus Install tool, with "https://github.com/arcus/Arcus_Labs_Orientation" entered for "Enter the URL to the repository you would like to clone." "Arcus_Labs_Orientation" is entered for "Enter local repository name." "Enter branch name" is left blank.`](media/install_git_repository.jpg)
 
 After you click "Submit", it will begin cloning the repository.
 You'll see the directory it's cloning to in the messages on the screen -- this will be `~/git/repository_name` where `~` is your home directory (your CHOP username), and `repository_name` is whatever you entered in the Install form.
