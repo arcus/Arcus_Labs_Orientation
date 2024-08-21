@@ -715,63 +715,11 @@ The [training videos](#training-videos) walk through everything you need to get 
 When you have GIS service attached to your Arcus Lab, the first time you use it you'll need to [create a new python kernel to run GIS](https://forum.arcus.chop.edu/t/gis-data-in-arcus-labs/233). 
 If you have already built the `arcus-gis` kernel, then **you won't need to do it again** -- your code will continue to work whether or not you have internet disabled. 
 
-However, if your lab is new (or if GIS service is newly added to your lab), you have two options for building the GIS conda environment: 
+However, if your lab is new (or if GIS service is newly added to your lab), you will need to get the Conda environment for GIS.  
+You can do that by running `! arcus get-conda-env arcus-gis` in a code cell in your Jupyter notebook.
 
-- You can [enable internet](#lab-status-pane) temporarily while you run the `build_gis_env.sh` script and then disabled it again afterward
-- You can keep internet disabled and create the new conda environment with the Install form (instructions in the next section)
-
-#### Create the GIS Conda Environment with Install Form
-
-You can reach the Install form from your lab dashboard, under Tools.
-
-![An Arcus Lab dashboard, showing the Tools section with "Install packages, downloads, and more" at the end of the list.](media/install_dashboard.png)
-
-If you have Jupyter open, you can also go directly to the Install packages Tool by clicking "Install a Package" in the banner at the top of your lab.
-
-![The banner across the top of an Arcus Lab running Jupyter. The first link in the top right corner is "Install a Package."](media/install_banner_jupyter.png)
-
-When you open the Install Packages tool, you'll see a dropdown menu for "Select install option". 
-Select "Conda".
-
-![The Arcus Install tool, with "Conda" selected from the install option drop down menu.](media/install_conda_packages.png)
-
-In this case, we want to create a new Conda environment, not add packages to an existing one, so be sure "New environment" is set to true. 
-For environment name, enter `arcus-gis`.
-
-![The Arcus Install tool, with "New environment" set to true and "arcus-gis" entered as environment name.](media/install_gis_env_name.png)
-
-You'll need to enter the name and version number for each package as follows: 
-
-- `sqlalchemy` 2.0.23
-- `psycopg2` 2.9.7 
-- `pandasql` 0.7.3 
-- `contextily` 1.4.0
-- `seaborn` 0.13.0
-- `rasterio` 1.3.8 
-- `geocube` 0.4.2 
-- `pygeos` 0.14 
-- `cartopy`
-- `cloud-sql-python-connector` 1.4.3 pg8000
-- `rioxarray['complete']` 0.15.0
-
-Click "Add Package" to create more fields. 
-
-![The Arcus Install tool, with all of the above packages listed with their version numbers, each in a separate field. At the bottom of the list of packages is the "Add Package" button.](media/install_gis_packages.png)
-
-Click "Submit" to begin installation.
-
-![The "Submit" button is at the bottom right of the Arcus Install tool.](media/install_gis_submit.png)
-
-While the installation processes, you'll see a box reporting progress.
-
-![After you click "Submit," the install form is replaced by a box showing installation progress. A printed message at the bottom of the box reads "Submissions still processing..."](media/install_conda_processing.png)
-
-When installation is complete, click "OK" to close the installation window. 
-
-![When installation is complete, the text at the bottom of the box will say "Submissions have finished processing" followed by a button that says "OK."](media/install_conda_finished.png)
-
-You can now return to Jupyter and your packages will be available, in the `arcus-gis` environment you created. 
-Make sure you select `arcus-gis` as the kernel for your notebook, and then you can load the GIS packages with `import` statements as you normally would.
+Note that it will take a long time for that code to run, and you only need to do it the first time you use GIS service.
+Once you've run it, comment that line out by adding `#` at the beginning, so it won't re-run every time you run the rest of the code in your notebook.
 
 ## Ongoing Communication
 
