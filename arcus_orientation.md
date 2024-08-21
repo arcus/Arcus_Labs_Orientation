@@ -706,7 +706,7 @@ The [training videos](#training-videos) walk through everything you need to get 
 
 ### Using GitHub with Internet Disabled
 
-Git and GitHub are important tools for researchers, both for their own file management and also for sharing and archiving research code. 
+Git and GitHub are important tools for researchers, both for your own file management and also for sharing and archiving your research code. 
 
 <div class = "learn-more">
 <b style="color: rgb(var(--color-highlight));">Learning connection</b><br>
@@ -743,7 +743,16 @@ But in order to pull from or push to a repository on public GitHub you will have
 
 #### Cloning from Public GitHub with the Install Form
 
-If you want to clone a repository hosted on github.com, you can do that while keeping internet disabled by using the Install Form in the Tools section on your Lab dashboard.
+<div class = "help">
+<b style="color: rgb(var(--color-highlight));">Troubleshooting help</b><br>
+
+Note that the Install form currently works only for cloning publicly-visible repositories. 
+
+If the repository you want to clone is private, you'll need to [enable internet](#lab-status-pane) temporarily to clone the repository, and then you can disable it again afterward.
+
+</div>
+
+If you want to clone a publicly-visible repository hosted on github.com, you can do that while keeping internet disabled by using the Install Form in the Tools section on your Lab dashboard.
 
 ![An Arcus Lab dashboard, showing the Tools section with "Install packages, downloads, and more" at the end of the list.](media/install_dashboard.png)
 
@@ -783,24 +792,6 @@ The Install form can clone repositories only.
 If you need to push or pull to a repository on public GitHub, you'll need to [enable internet](#lab-status-pane) while you do that, and then you can disable it again afterward.
 
 </div>
-
-#### Cloning a Private Repository
-
-If the repository you want to clone from github.com is private, you will need to set up proper authentication for your account to access the repository before you can clone it with the Install form. 
-
-For more background, see [Connecting to GitHub with SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh).
-
-
-1. First, check whether you already have an SSH key saved in your Arcus Lab. To do that, log into your lab and [turn it on with internet disabled](#lab-status-pane). 
-1. Open the Terminal application from the Tools menu in your lab dashboard. 
-1. Type (or copy-paste) the following command and hit Enter to run: `ls -al ~/.ssh` (this command will list any files in your .ssh directory). 
-  * If you see one or more files with names like `id_rsa.pub`, `id_ecdsa.pub`, or `id_ed25519.pub`, those are existing SSH keys that you can use to authenticate with GitHub.
-  * If you don't see a file with one of those names (or if you get an error that the .ssh directory doesn't exist), that means you don't already have an SSH key saved. 
-1. If you already have an SSH key to use, you can skip this step. If you don't already have an SSH key, create one now. To do that, in Terminal, run the following command (replacing `your_email@example.com` with the email you use for your GitHub account): `ssh-keygen -t ed25519 -C "your_email@example.com"`
-1. Copy the content of the SSH key file (either the one you just made, or an existing SSH key you already had). Do this by running the following command in Terminal: `cat ~/.ssh/id_ed25519.pub` (if the SSH key you want to use has a different name, like `id_rsa.pub` or `id_ecdsa.pub`, then replace that in the command) and then highlight the text displayed and copy it. 
-1. In a different tab or window in your browser, log into your GitHub account (or create a new account for free, if you don't already have one) at [github.com](https://github.com/)
-1. Go to your [profile settings](https://github.com/settings/profile), and click "SSH and GPG keys" in the menu on the left side of the page.
-1. 
 
 ### Using the Command Line with Internet Disabled
 
