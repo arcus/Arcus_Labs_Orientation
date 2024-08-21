@@ -20,6 +20,7 @@ After completion of this training module, learners will be able to:
 @end
 
 link:  https://cdn.jsdelivr.net/gh/arcus/education_modules@main/assets/styles.css
+link:  https://cdn.jsdelivr.net/gh/arcus/Arcus_Labs_Orientation@internet_disabled_github/assets/styles.css
 script: https://kit.fontawesome.com/83b2343bd4.js
 script: https://cdn.jsdelivr.net/npm/mermaid@9.4.3/dist/mermaid.min.js
 -->
