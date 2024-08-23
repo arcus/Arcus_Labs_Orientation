@@ -699,11 +699,14 @@ The [training videos](#training-videos) walk through everything you need to get 
 While there are myriad benefits to taking a scripted approach to data analysis, it does also introduce some specific privacy and security risks. Thankfully, Arcus has taken these risks into consideration, and developed our [Internet Disabled Mode](https://forum.arcus.chop.edu/t/about-the-arcus-lab-security-setting-for-disabling-internet-in-labs/741) feature. The feature provides peace of mind by allowing you to work on your code in an environment that is entirely disconnected from the internet, keeping your data and code safer. 
 
 There are two primary kinds of problems that could occur: 
-**1. Malicious Packages**
-  Writing code involves downloading a variety of packages to use in your scripts, which could contain malicious code (code which is intended to harm a system or cause a security breach). This is a less likely risk, especially if only using well established packages. 
 
-**2. Internet Reliant Features**
-  Some legitimate, non-malicious packages are useful in part because they send data out to external servers where additional processing is done. Unfortunately, it is not always easy to tell when a package relies upon sending data over the internet. This may not be a concern for a hobby programmer, but when working with PHI and other sensitive data, this presents a huge risk. 
+1. **Malicious Packages**
+
+    Writing code involves downloading a variety of packages to use in your scripts, which could contain malicious code (code which is intended to harm a system or cause a security breach). This is a less likely risk, especially if only using well established packages. 
+
+2. **Internet Reliant Features**
+
+    Some legitimate, non-malicious packages are useful in part because they send data out to external servers where additional processing is done. Unfortunately, it is not always easy to tell when a package relies upon sending data over the internet. This may not be a concern for a hobby programmer, but when working with PHI and other sensitive data, this presents a huge risk. 
 
 Using Internet Disabled Mode helps protect you from both of these risks, by allowing you to work on your code in a space that is entirely disconnected from the internet. 
 
