@@ -800,6 +800,9 @@ If you need to push or pull to a repository on public GitHub, you'll need to [en
 ### Using GIS service with the Internet Disabled
 
 
+### Using SQLPad with Internet Disabled
+
+
 ## Ongoing Communication
 
 Once you have an approved lab request, your primary point of contact is your assigned **Project Owner**. This person will be an Arcus staff member, and their role is to act as a concierge ensuring that your project is set up with what you need to help make your scientific project experience a success.
