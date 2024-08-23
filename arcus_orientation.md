@@ -713,6 +713,9 @@ The [training videos](#training-videos) walk through everything you need to get 
 ### Using GIS service with the Internet Disabled
 
 
+### Using SQLPad with Internet Disabled
+
+
 ## Ongoing Communication
 
 Once you have an approved lab request, your primary point of contact is your assigned **Project Owner**. This person will be an Arcus staff member, and their role is to act as a concierge ensuring that your project is set up with what you need to help make your scientific project experience a success.
