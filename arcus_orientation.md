@@ -821,6 +821,7 @@ An important aspect of research data management is the history of your files.  G
 To go more in depth, consider:
 
 * [New to version control](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_version_control.md#1)
+* [New to GitHub](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_version_control.md#1)
 * [GitHub's guide to getting started with git](https://docs.github.com/en/get-started/using-git/about-git)
 
 For R users, check out this excellent resource: [Happy Git with R](https://happygitwithr.com/). It is a full and detailed set of instructions for how to get started using git if you're already using R and RStudio.
