@@ -702,7 +702,7 @@ There are two primary kinds of problems that could occur:
 
 1. **Malicious Packages**
 
-    Writing code involves downloading a variety of packages to use in your scripts, which could contain malicious code (code which is intended to harm a system or cause a security breach). This is a less likely risk, especially if only using well established packages. 
+    Writing code involves downloading a variety of packages to use in your scripts, which could contain malicious code (code which is intended to harm a system or cause a security breach). [Malicious packages can be found even popular package repositories like PyPI](https://thehackernews.com/2023/11/27-malicious-pypi-packages-with.html), and in some instances, [well-known, legitimate packages have been hacked and had malicious code inserted](https://therecord.media/malware-found-in-npm-package-with-millions-of-weekly-downloads).
 
 2. **Internet Reliant Features**
 
