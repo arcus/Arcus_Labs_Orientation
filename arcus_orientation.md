@@ -715,6 +715,8 @@ The [training videos](#training-videos) walk through everything you need to get 
 
 ### Using SQLPad with Internet Disabled
 
+There is no difference in using SQLPad in Internet Disabled mode versus Internet Enabled mode. That being said, since we suggest always using Internet Disabled mode unless you have a specific reason to use Internet Enabled, we recommend using SQLPad with Internet Disabled mode on. 
+
 
 ## Ongoing Communication
 
