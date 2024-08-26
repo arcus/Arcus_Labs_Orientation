@@ -746,6 +746,10 @@ Click "Submit" to begin installation.
 
 ![The Arcus Install tool, with "ggplot2" and "flextable" entered in the two visible package name fields. The button "Add Package" at the bottom of the package fields adds fields to list additional packages. The buttons at the bottom right of the tool are "Add Item" and "Submit."](media/install_r_package_name_2.png)
 
+Click "Submit" to begin installation.
+
+![The "Submit" button is at the bottom right of the Arcus Install tool.](media/install_r_submit.png)
+
 While the package(s) and their dependencies download and install, you'll see log messages (these are the same messages that you might otherwise see in the R console if you installed via `install.packages()`).
 
 ![After you click "Submit," the install form is replaced by a box showing installation progress. A printed message at the bottom of the box reads "Submissions still processing..."](media/install_r_processing.png)
