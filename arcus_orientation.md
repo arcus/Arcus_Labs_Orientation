@@ -720,7 +720,18 @@ However, if your lab is new (or if GIS service is newly added to your lab), you 
 You can do that by running `! arcus get-conda-env arcus-gis` in a code cell in your Jupyter notebook.
 
 Note that it will take a long time for that code to run, and you only need to do it the first time you use GIS service.
-Once you've run it, comment that line out by adding `#` at the beginning, so it won't re-run every time you run the rest of the code in your notebook.
+
+<div class = "important">
+<b style="color: rgb(var(--color-highlight));">Tip</b><br>
+
+If you're exploring GIS data in your lab for the first time, we recommend you start by using Jupyter to open the GIS demo notebooks available within your Arcus Lab: 
+
+- `arcus/project/src/notebooks/GIS/gis_datasets_demo.ipynb`
+- `arcus/project/src/notebooks/GIS/gis_data_joins_demo.ipynb`
+
+The notebook `gis_datasets_demo.ipynb` will walk you through connecting to your GIS data, including starting with instructions to run `! arcus get-conda-env arcus-gis` the first time you use it.
+
+</div>
 
 ## Ongoing Communication
 
