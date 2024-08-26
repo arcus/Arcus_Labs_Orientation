@@ -707,8 +707,30 @@ The [training videos](#training-videos) walk through everything you need to get 
 ### Using GitHub with Internet Disabled
 
 
-### Using the Command Line with Internet Disabled
+### Using the Terminal with Internet Disabled
 
+While many Arcus lab users will never need to use the Terminal (or Command Line, as you may sometimes see it called), it can be a very useful tool for processing files, running scripts, and navigating the directory structure of your Arcus lab. In most cases, these processes will not require reaching out to the internet; one notable exception would be connecting to remote repositories on github.com, which was discussed in the previous section. Another time you might need to access the internet through the Terminal is if you need to download files from the web, such as reference sequences or annotations for genomics work. 
+
+If you would like to learn more about using the Terminal/Command Line, check out the [New to Bash](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_bash.md) module for help getting started!
+
+When the internet is "enabled", such files can be downloaded in the typical fashion, using a command line tool such as `wget`:
+
+![Terminal window showing using the wget command to download a reference file from gdc.cancer.gov.](media/ref_file_download_terminal.png)
+
+However, the more secure way to download files to your Arcus lab is to use the Install form:
+
+![Install form with the Download option selected, a reference file download URL, and the filename changed.](media/file_download_install_form_rename.png)
+
+Using the Install form does not require that the internet be enabled in your lab, and you can rename the downloaded file right in the form! The downloaded file(s) will appear in the `.downloads` folder in your home directory:
+
+![Terminal window showing two files in the .downloads folder, including the file downloaded using the install form.](media/downloads_folder_terminal.png)
+
+<div class = "help">
+<b style="color: rgb(var(--color-highlight));">Troubleshooting help</b><br>
+
+If you are trying to download file to your Arcus lab in the Terminal using a tool like `wget` and the process hangs and isn't seeming to progress, check and see if you have the internet disabled! If this is the case, you can use the Install form to more securely download your files.  
+
+</div>
 
 
 ## Ongoing Communication
