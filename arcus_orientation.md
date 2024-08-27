@@ -977,6 +977,96 @@ Some functions include API calls you may not be aware of, including potentially 
 
 ### Using GitHub with Internet Disabled
 
+Git and GitHub are important tools for researchers, both for your own file management and also for sharing and archiving your research code. 
+
+<div class = "learn-more">
+<b style="color: rgb(var(--color-highlight));">Learning connection</b><br>
+
+Are you interested in getting started with Git and GitHub? 
+Check out these resources: 
+
+- [New to version control](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_version_control.md) is a document that will help you get started with git, a powerful program for helping you keep track of your research documents over time.
+- [Git Command Line Interface vs. Graphical User Interface](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/git_cli_vs_gui/git_cli_vs_gui.md#1) provides more guidance about tools for using git for version control.
+- [New to GitHub](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_github.md#1) explains the difference between Git and GitHub and walks through creating and exploring a repository on CHOP's Enterprise GitHub site.
+
+</div>
+
+When you use Git for version control, most actions (such as creating new commits or merging branches) do not require an internet connection, so they work exactly the same whether you have internet disabled or not. 
+
+The exception is any actions that connect to a remote repository, usually hosted on github.com (public GitHub) or github.research.chop.edu (CHOP's Enterprise GitHub), such as **cloning**, **pulling**, or **pushing**. 
+
+#### Public GitHub vs. CHOP's Enterprise GitHub
+
+Because files hosted on CHOP's Enterprise GitHub (github.research.chop.edu) remain on CHOP's servers, we can set up a secure connection to repositories there even when you have your lab in Internet Disabled Mode. 
+That means you can clone, push, and pull to and from repositories on CHOP's Enterprise GitHub without having to enable internet in your Arcus Lab. 
+
+For tips on connecting to CHOP's Enterprise GitHub from your Arcus Lab, see [Using Git and GitHub in your Arcus Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_github.md#using-git-and-github-in-your-arcus-lab).
+
+<div class = "important">
+<b style="color: rgb(var(--color-highlight));">Important note</b><br>
+
+Note: It's still **your responsibility** to make sure you're not inappropriately sharing protected information when you push files to CHOP's Enterprise GitHub. 
+To learn more, read about how to [avoid unintentional data exposure](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_github.md#avoid-unintentional-data-exposure).
+
+</div>
+
+You can clone a repository on public GitHub without having to enable internet by using the Install Tool in the Tools section on your Lab dashboard.
+But in order to pull from or push to a repository on public GitHub you will have to [enable internet](#lab-status-pane) (and then you can disable it again afterward).
+
+#### Cloning from Public GitHub with the Install Form
+
+<div class = "help">
+<b style="color: rgb(var(--color-highlight));">Troubleshooting help</b><br>
+
+Note that the Install Tool currently works only for cloning publicly-visible repositories. 
+
+If the repository you want to clone is private, you'll need to [enable internet](#lab-status-pane) temporarily to clone the repository and then return to Internet Disabled Mode again afterward.
+
+</div>
+
+If you want to clone a publicly-visible repository hosted on github.com while in Internet Disabled Mode, use the Install Tool, found in the Tools section on your Lab dashboard.
+
+![An Arcus Lab dashboard, showing the Tools section with "Install packages, downloads, and more" at the end of the list.](media/install_dashboard.png)
+
+When you open the Install Tool, select "Git" from the install option drop down menu.
+
+![The Arcus Install Tool, with "Git" selected from the install option drop down menu.](media/install_git.png)
+
+Copy the URL for the repository you wish to clone. 
+Also fill in what you want to use as the local repository name; usually, this will be the same as the repository name on GitHub, but you can write in something else if you prefer. 
+This will be the name of the directory the files will be saved in in your lab.
+Enter the name of the branch you wish to clone; if you leave it blank, it will clone the default branch for that repository (usually `main`, or `master` for older repositories).
+
+![`The Arcus Install tool, with "https://github.com/arcus/Arcus_Labs_Orientation" entered for "Enter the URL to the repository you would like to clone." "Arcus_Labs_Orientation" is entered for "Enter local repository name." "Enter branch name" is left blank.`](media/install_git_repository.png)
+
+Click "Submit" to start cloning the repository.
+
+![The "Submit" button is at the bottom right of the Arcus Install tool.](media/install_git_submit.png)
+
+You'll see the directory it's cloning to in the messages on the screen -- this will be `~/git/repository_name` where `~` is your home directory (your CHOP username), and `repository_name` is whatever you entered in the Install Tool.
+In this example, it's `/home/hartmanr1/git/Arcus_Labs_Orientation`.
+
+![After you click "Submit," the install form is replaced by a box showing progress cloning the repository. A printed message at the bottom of the box reads "Submissions still processing..."](media/install_git_processing.png)
+
+When cloning is complete, click OK to close the submission status box. 
+
+![When cloning is complete, the text at the bottom of the box is replaced with "Submissions have finished processing" followed by a button that says "OK."](media/install_git_finished.png)
+
+This repository is now available locally in your lab, saved within the `git` subdirectory of your home directory.
+You can navigate to that directory from within any of the other tools in your Arcus Lab (RStudio, Jupyter, etc.) to access the files.
+
+Note that [files in your home directory are visible only to you](https://forum.arcus.chop.edu/t/which-files-in-my-lab-are-shared-with-the-rest-of-my-team-and-which-are-just-mine/686).
+If you wish to share these files with the other users in your lab, you'll need to move them to a shared directory, such as your `project` folder.
+
+<div class = "help">
+<b style="color: rgb(var(--color-highlight));">Troubleshooting help</b><br>
+
+Remember that you still won't be able to push to or pull from a repository on public GitHub while in Internet Disabled Mode. 
+The Install Tool can clone repositories only (not push and pull). 
+
+If you need to push or pull to a repository on public GitHub, you'll need to [enable internet](#lab-status-pane) while you do that and then return to Internet Disabled Mode again afterward.
+
+</div>
 
 ### Using the Command Line with Internet Disabled
 
@@ -1012,7 +1102,6 @@ Be sure to select `arcus-gis` as the Conda environment for the new package(s).
 ### Using SQLPad with Internet Disabled
 
 There is no difference in using SQLPad in Internet Disabled mode versus Internet Enabled mode. In fact, you can even access SQLPad without turning your lab on at all! That being said, since we suggest always using Internet Disabled mode unless you have a specific reason to use Internet Enabled, we recommend that if you're using SQLPad while your lab is on, that you do so with Internet Disabled mode on. 
-
 
 ## Ongoing Communication
 
