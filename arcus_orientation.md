@@ -715,6 +715,8 @@ The [training videos](#training-videos) walk through everything you need to get 
 
 ### Using SQLPad with Internet Disabled
 
+There is no difference in using SQLPad in Internet Disabled mode versus Internet Enabled mode. In fact, you can even access SQLPad without turning your lab on at all! That being said, since we suggest always using Internet Disabled mode unless you have a specific reason to use Internet Enabled, we recommend that if you're using SQLPad while your lab is on, that you do so with Internet Disabled mode on. 
+
 
 ## Ongoing Communication
 
