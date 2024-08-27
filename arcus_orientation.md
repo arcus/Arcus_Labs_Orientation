@@ -714,7 +714,7 @@ Here are some things you can **always** access from R, even with internet disabl
 However, there are a few important R functions that require an internet connection to work (especially [install.packages()](#installing-and-updating-packages-in-r)), potentially posing a security risk for your data. 
 To provide peace of mind for researchers working in Arcus, we provide a secure method for you to install R packages and download other necessary files without having to enable internet. 
 
-And if you find you have something you need to do in R that requires an internet connection, you can always [change your lab's security settings](#lab-status-pane) to run that code and then return to internet disabled mode afterward. 
+And if you find you have something you need to do in R that requires an internet connection, you can always [change your lab's security settings](#lab-status-pane) to run that code and then return to Internet Disabled Mode afterward. 
 
 #### Installing and Updating Packages in R
 
@@ -723,23 +723,23 @@ Usually the way to do that is via the `install.packages()` function in R, which 
 However, maintaining an internet connection while you work with sensitive data can pose security risks. 
 To give researchers peace of mind, Arcus provides a tool that allows you to install packages without enabling internet.
 
-You can reach the Install form from your lab dashboard, under Tools.
+You can reach the Install Tool from your lab dashboard, under Tools.
 
 ![An Arcus Lab dashboard, showing the Tools section with "Install packages, downloads, and more" at the end of the list.](media/install_dashboard.png)
 
-If you have RStudio open, you can also go directly to the Install packages Tool by clicking "Install a Package" in the banner at the top of your lab.
+If you have RStudio open, you can also go directly to the Install Tool by clicking "Install a Package" in the banner at the top of your lab.
 
 ![The banner across the top of an Arcus Lab running RStudio. The first link in the top right corner is "Install a Package."](media/install_rstudio_banner.png)
 
-When you open the Install Packages tool, you'll see a dropdown menu for "Select install option". 
+When you open the Install Tool, you'll see a dropdown menu for "Select install option". 
 If you want the most recent version of the package(s) you'll be installing (this is usually the case), select "R Packages".
-If you want to specify a particular version to install other than the most recent version (this is rare), select "R Remote packages" instead, and then supply the version number.
+If you want to specify a particular version to install other than the most recent version (this is rare), select "R Package with Version" instead, and then supply the version number.
 
-![The Arcus Install tool, with "R Packages" selected from the install option drop down menu.](media/install_r_packages.png)
+![The Arcus Install Tool, with "R Packages" selected from the install option drop down menu.](media/install_r_packages.png)
 
-Write in the name of the package you want to install. The form will also automatically install any required dependencies for the packages you list.
+Write in the name of the package you want to install. The Install Tool will also automatically install any required dependencies for the packages you list.
 
-![The Arcus Install tool, with "ggplot2" entered under package name. Install option is set to "R Packages" and library sub path is left blank.](media/install_r_package_name_1.png)
+![The Arcus Install Tool, with "ggplot2" entered under package name. Install option is set to "R Packages" and library sub path is left blank.](media/install_r_package_name_1.png)
 
 If you have multiple packages you need to install, you can add them at the same time by clicking "Add package".
 Click "Submit" to begin installation. 
@@ -758,7 +758,8 @@ When installation is complete, click "OK" to close the installation window.
 
 ![When installation is complete, the text at the bottom of the box is replaced with "Submissions have finished processing" followed by a button that says "OK."](media/install_r_finished.png)
 
-You can now return to R and your packages will be available. You can load them with `library()` or `require()` as you normally would.
+You can now return to R and your packages will be available. 
+You can load them with `library()` or `require()` as you normally would.
 
 Note that if you forget and attempt to run `install.packages()` when you have internet disabled, you should see a helpful error message reminding you to use the install form instead. 
 
@@ -783,8 +784,8 @@ For example, the R package [tidygeocoder](https://cran.r-project.org/web/package
 That means when you run those functions, if you have an internet connection it will **send your data to outside servers** -- and there's no message in R to warn you beforehand that the data will be shared with an outside service.
 The best way to prevent that kind of accidental disclosure is to keep your lab's internet disabled.
 
-<div class = "important">
-<b style="color: rgb(var(--color-highlight));">Tip</b><br>
+<div class = "warning">
+<b style="color: rgb(var(--color-highlight));">Warning!</b><br>
 
 Never use an online service to geocode patient addresses.
 
