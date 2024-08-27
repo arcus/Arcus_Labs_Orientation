@@ -722,11 +722,12 @@ Check out these resources:
 </div>
 
 When you use Git for version control, most actions (such as creating new commits or merging branches) do not require an internet connection, so they work exactly the same whether you have internet disabled or not. 
-The exception is any actions that connect to a remote repository -- usually hosted on github.com (public GitHub) or github.research.chop.edu (CHOP's Enterprise GitHub) -- such as **cloning**, **pulling**, or **pushing**. 
+
+The exception is any actions that connect to a remote repository, usually hosted on github.com (public GitHub) or github.research.chop.edu (CHOP's Enterprise GitHub), such as **cloning**, **pulling**, or **pushing**. 
 
 #### Public GitHub vs. CHOP's Enterprise GitHub
 
-Because files hosted on CHOP's Enterprise GitHub (github.research.chop.edu) remain on CHOP's servers, we can set up a secure connection to repositories there even when you have internet disabled in your lab. 
+Because files hosted on CHOP's Enterprise GitHub (github.research.chop.edu) remain on CHOP's servers, we can set up a secure connection to repositories there even when you have your lab in Internet Disabled Mode. 
 That means you can clone, push, and pull to and from repositories on CHOP's Enterprise GitHub without having to enable internet in your Arcus Lab. 
 
 For tips on connecting to CHOP's Enterprise GitHub from your Arcus Lab, see [Using Git and GitHub in your Arcus Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_github.md#using-git-and-github-in-your-arcus-lab).
@@ -739,7 +740,7 @@ To learn more, read about how to [avoid unintentional data exposure](https://lia
 
 </div>
 
-You can clone a repository on public GitHub without having to enable internet by using the Install form in the Tools section on your Lab dashboard.
+You can clone a repository on public GitHub without having to enable internet by using the Install Tool in the Tools section on your Lab dashboard.
 But in order to pull from or push to a repository on public GitHub you will have to [enable internet](#lab-status-pane) (and then you can disable it again afterward).
 
 #### Cloning from Public GitHub with the Install Form
@@ -747,19 +748,19 @@ But in order to pull from or push to a repository on public GitHub you will have
 <div class = "help">
 <b style="color: rgb(var(--color-highlight));">Troubleshooting help</b><br>
 
-Note that the Install form currently works only for cloning publicly-visible repositories. 
+Note that the Install Tool currently works only for cloning publicly-visible repositories. 
 
-If the repository you want to clone is private, you'll need to [enable internet](#lab-status-pane) temporarily to clone the repository, and then you can disable it again afterward.
+If the repository you want to clone is private, you'll need to [enable internet](#lab-status-pane) temporarily to clone the repository and then return to Internet Disabled Mode again afterward.
 
 </div>
 
-If you want to clone a publicly-visible repository hosted on github.com, you can do that while keeping internet disabled by using the Install Form in the Tools section on your Lab dashboard.
+If you want to clone a publicly-visible repository hosted on github.com while in Internet Disabled Mode, use the Install Tool, found in the Tools section on your Lab dashboard.
 
 ![An Arcus Lab dashboard, showing the Tools section with "Install packages, downloads, and more" at the end of the list.](media/install_dashboard.png)
 
-When you open the Install Form tool, select "Git" from the install option drop down menu.
+When you open the Install Tool, select "Git" from the install option drop down menu.
 
-![The Arcus Install tool, with "Git" selected from the install option drop down menu.](media/install_git.png)
+![The Arcus Install Tool, with "Git" selected from the install option drop down menu.](media/install_git.png)
 
 Copy the URL for the repository you wish to clone. 
 Also fill in what you want to use as the local repository name; usually, this will be the same as the repository name on GitHub, but you can write in something else if you prefer. 
@@ -772,7 +773,7 @@ Click "Submit" to start cloning the repository.
 
 ![The "Submit" button is at the bottom right of the Arcus Install tool.](media/install_git_submit.png)
 
-You'll see the directory it's cloning to in the messages on the screen -- this will be `~/git/repository_name` where `~` is your home directory (your CHOP username), and `repository_name` is whatever you entered in the Install form.
+You'll see the directory it's cloning to in the messages on the screen -- this will be `~/git/repository_name` where `~` is your home directory (your CHOP username), and `repository_name` is whatever you entered in the Install Tool.
 In this example, it's `/home/hartmanr1/git/Arcus_Labs_Orientation`.
 
 ![After you click "Submit," the install form is replaced by a box showing progress cloning the repository. A printed message at the bottom of the box reads "Submissions still processing..."](media/install_git_processing.png)
@@ -790,10 +791,10 @@ If you wish to share these files with the other users in your lab, you'll need t
 <div class = "help">
 <b style="color: rgb(var(--color-highlight));">Troubleshooting help</b><br>
 
-Remember that you still won't be able to push to or pull from a repository on public GitHub with internet disabled. 
-The Install form can clone repositories only. 
+Remember that you still won't be able to push to or pull from a repository on public GitHub while in Internet Disabled Mode. 
+The Install Tool can clone repositories only (not push and pull). 
 
-If you need to push or pull to a repository on public GitHub, you'll need to [enable internet](#lab-status-pane) while you do that, and then you can disable it again afterward.
+If you need to push or pull to a repository on public GitHub, you'll need to [enable internet](#lab-status-pane) while you do that and then return to Internet Disabled Mode again afterward.
 
 </div>
 
