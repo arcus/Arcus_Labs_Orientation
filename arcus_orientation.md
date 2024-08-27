@@ -754,8 +754,7 @@ Then you can open the Install form to install the package(s) you need that way.
 ##### Install with Conda
 
 When you install a package hosted on Anaconda, you need to specify whether you want to install it into a Conda environment you already have, or a new Conda environment. 
-If you want to install it into an existing Conda environment, you'll need to **make a note of your Conda environment** before going to the Install form.
-
+If you want to install it into the Conda environment you're already using for a given analysis, you'll need to **make a note of your Conda environment** before going to the Install form.
 
 You can see the Conda environment (prefixed with `.conda-`) for a given Jupyter notebook in the upper right corner of the screen when you have that notebook open. The default [Arcus-provided Conda environment](https://forum.arcus.chop.edu/t/arcus-provided-conda-environments/573) is called `arcus`. 
 
@@ -768,23 +767,18 @@ Select "Conda".
 
 ![The Arcus Install tool, with "Conda" selected from the install option drop down menu.](media/install_conda_packages.png)
 
-**If you wish to install the package into an existing Conda environment, change "New environment" to "false".** 
-Otherwise it will attempt to create a new Conda environment for you when you install.
+Select the name of the Conda environment you wish to install into from the dropdown, or select "Create new..." to create a new environment. If you are creating a new environment, then write in the name that you want the environment saved as; this will be saved as a new directory under `~/.conda/env`.
 
-![The Arcus Install tool, with install option "Conda" and new environment changed from "true" to "false".](media/install_conda_new_env.png)
+![The Arcus Install tool, with install option "Conda" and environment name changed from "Create new..." to "arcus".](media/install_conda_env.png)
 
-Write in the name of the Conda environment you wish to install into. If you are creating a new environment, then write in a string here that you want the environment saved as; this will be saved as a new directory under `~/.conda/env`.
-
-<div class = "warning">
-<b style="color: rgb(var(--color-highlight));">Warning</b><br>
+<div class = "help">
+<b style="color: rgb(var(--color-highlight));">Troubleshooting help</b><br>
 
 When creating a new Conda environment, the string you provide here must not already be a subdirectory under `~/.conda/env`.
 
 If you want to overwrite an existing Conda environment, you'll need to manually delete it first.
 
 </div>
-
-![The Arcus Install tool, with install option "Conda", new environment set to "false", and "arcus" entered as the environment name.](media/install_conda_env_name.png)
 
 Write in the name of the package you want to install. 
 If you leave package version blank, it will get the most recent version.
