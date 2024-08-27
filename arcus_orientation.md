@@ -709,7 +709,7 @@ The [training videos](#training-videos) walk through everything you need to get 
 
 ### Using the Terminal with Internet Disabled
 
-While many Arcus lab users will never need to use the Terminal (or Command Line, as you may sometimes see it called), it can be a very useful tool for processing files, running scripts, and navigating the directory structure of your Arcus lab. In most cases, these processes will not require reaching out to the internet; one notable exception would be connecting to remote repositories on [github.com](https://github.com/), which was discussed in the previous section. Another time you might need to access the internet through the Terminal is if you need to download files from the web, such as reference sequences or annotations for genomics work. 
+While many Arcus lab users will never need to use the Terminal (or Command Line, as you will sometimes see it called), it can be a very useful tool for processing files, running scripts, and navigating the directory structure of your Arcus lab. In most cases, these processes will not require reaching out to the internet; one notable exception would be connecting to remote repositories on [github.com](https://github.com/), which was discussed in the previous section. Another time you might need to access the internet through the Terminal is if you need to download files from the web, such as reference sequences or annotations for genomics work. 
 
 If you would like to learn more about using the Terminal/Command Line, check out the [New to Bash](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_bash.md) module for help getting started!
 
