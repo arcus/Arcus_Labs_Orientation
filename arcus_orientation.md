@@ -983,6 +983,31 @@ Some functions include API calls you may not be aware of, including potentially 
 
 ### Using GIS service with the Internet Disabled
 
+**You can access your GIS data within your Arcus lab in exactly the same way whether or not your lab is in Internet Disabled mode.**
+You'll be able to create the GIS Conda environment with relevant Python packages and access the GIS data all while staying in Internet Disabled mode, using the same steps you would with internet enabled.
+
+When you have GIS service attached to your Arcus Lab, the first time you use it you'll need to [create a new python kernel to run GIS](https://forum.arcus.chop.edu/t/gis-data-in-arcus-labs/233). 
+If you have already built the `arcus-gis` kernel, then **you don't need to do it again**. 
+
+However, if your lab is new (or if GIS service is newly added to your lab), you will need to get the Conda environment for GIS.  
+You can do that by running `! arcus get-conda-env arcus-gis` in a code cell in your Jupyter notebook.
+
+Note that it will take a long time for that code to run, and you only need to do it the first time you use GIS service.
+
+<div class = "important">
+<b style="color: rgb(var(--color-highlight));">Tip</b><br>
+
+If you're exploring GIS data in your lab for the first time, we recommend you start by using Jupyter to open the GIS demo notebooks available within your Arcus Lab: 
+
+- `arcus/project/src/notebooks/GIS/gis_datasets_demo.ipynb`
+- `arcus/project/src/notebooks/GIS/gis_data_joins_demo.ipynb`
+
+The notebook `gis_datasets_demo.ipynb` will walk you through connecting to your GIS data, including starting with instructions to run `! arcus get-conda-env arcus-gis` the first time you use it.
+
+</div>
+
+If you find you want to install additional Python packages to use while analyzing your GIS data, you can [install them in Internet Disabled mode with the Install Tool](#install-with-conda).
+Be sure to select `arcus-gis` as the Conda environment for the new package(s). 
 
 ### Using SQLPad with Internet Disabled
 
