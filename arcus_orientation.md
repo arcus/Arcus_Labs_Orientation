@@ -705,24 +705,23 @@ The [training videos](#training-videos) walk through everything you need to get 
 ### Using Python with Internet Disabled
 
 Most functions in Python run locally -- once you install the package they're in, they're saved on your machine (or in this case, in your Arcus Lab) for you to use whenever you like, without requiring you to have an internet connection. 
-If you already have Python code written for your analysis, chances are all of that code will continue to work in exactly the same way whether or not you have internet disabled. 
+If you already have Python code written for your analysis, chances are all of that code will continue to work in exactly the same way whether or not you keep your lab in Internet Disabled Mode. 
 
-We've also set up your Arcus Lab to allow some common remote connections in a secure way, so you can have internet disabled in your lab but still maintain access to certain secure services. 
-Here are some things you can **always** access from Python/Jupyter, even with internet disabled: 
+We've also set up your Arcus Lab to allow some common remote connections in a secure way, so you can use Internet Disabled Mode in your lab but still maintain access to certain secure services. 
+Here are some things you can **always** access from Python/Jupyter, even in Internet Disabled Mode: 
 
 - Your Arcus data (for example, downloading your data in Python using `bigquery`)
 - Repositories on CHOP's Enterprise GitHub (for example, using `clone`, `push`, and `pull`)
-- Opening external links by clicking on them, such as from within a Jupyter notebook
 
 However, there are a few important Python actions that require an internet connection to work (especially [installing new packages](#installing-and-updating-packages-in-python)), potentially posing a security risk for your data. 
 To provide peace of mind for researchers working in Arcus, we provide a secure method for you to install Python packages and download other necessary files without having to enable internet. 
 
-And if you find you have something you need to do in Python that requires an internet connection, you can always [change your lab's security settings](#lab-status-pane) to run that code and then return to internet disabled mode afterward. 
+And if you find you have something you need to do in Python that requires an internet connection, you can always [change your lab's security settings](#lab-status-pane) to run that code and then return to Internet Disabled Mode afterward. 
 
 #### Installing and Updating Packages in Python
 
 There are two main sources for installing new packages (or update existing ones) in Python in Arcus: Anaconda (conda) or PyPi (pip).
-For either, you can use the Install form, which is more secure than installing packages by commands like `conda install` or `pip install`, and also works even when you have internet disabled in your lab.
+For either, you can use the Install Tool, which is more secure than installing packages by commands like `conda install` or `pip install`, and also works even when you have internet disabled in your lab.
 
 <div class = "learn-more">
 <b style="color: rgb(var(--color-highlight));">Learning connection</b><br>
@@ -731,11 +730,11 @@ To learn more about the differences between Conda and Pip, read our Arcus Forum 
 
 </div>
 
-You can reach the Install form from your lab dashboard, under Tools.
+You can reach the Install Tool from your lab dashboard, under Tools.
 
 ![An Arcus Lab dashboard, showing the Tools section with "Install packages, downloads, and more" at the end of the list.](media/install_dashboard.png)
 
-If you have Jupyter open, you can also go directly to the Install packages Tool by clicking "Install a Package" in the banner at the top of your lab.
+If you have Jupyter open, you can also go directly to the Install Tool by clicking "Install a Package" in the banner at the top of your lab.
 
 ![The banner across the top of an Arcus Lab running Jupyter. The first link in the top right corner is "Install a Package."](media/install_banner_jupyter.png)
 
@@ -746,23 +745,24 @@ The procedure is a little different depending on if you want to install a packag
 
 Note that if you forget and attempt to run commands like `conda install` or `pip install` in Python when you have internet disabled, the kernel may hang (the code will keep trying unsuccessfully to run until it times out).
 
-You can fix this by refreshing the page. 
-Then you can open the Install form to install the package(s) you need that way.
+You can fix this by refreshing the page (using Ctrl-C if you're working in a Terminal window). 
+Then you can open the Install Tool to install the package(s) you need that way.
 
 </div>
 
 ##### Install with Conda
 
 When you install a package hosted on Anaconda, you need to specify whether you want to install it into a Conda environment you already have, or a new Conda environment. 
-If you want to install it into the Conda environment you're already using for a given analysis, you'll need to **make a note of your Conda environment** before going to the Install form.
+If you want to install it into the Conda environment you're already using for a given analysis, you may want to **make a note of your Conda environment** before going to the Install Tool.
 
-You can see the Conda environment (prefixed with `.conda-`) for a given Jupyter notebook in the upper right corner of the screen when you have that notebook open. The default [Arcus-provided Conda environment](https://forum.arcus.chop.edu/t/arcus-provided-conda-environments/573) is called `arcus`. 
+You can see the Conda environment (prefixed with `.conda-`) for a given Jupyter notebook in the upper right corner of the screen when you have that notebook open. 
+The standard [Arcus-provided Conda environment](https://forum.arcus.chop.edu/t/arcus-provided-conda-environments/573) is called `arcus`. 
 
 ![The banner across the top of an Arcus Lab running Jupyter. In the upper right corner of the notebook, text reads ".conda-arcus", so `arcus` is the name of this Conda environment.](media/install_check_conda_env.png)
 
 You can also see a complete list of all the Conda environments you have by running `! arcus list-conda-env` in a Jupyter cell. 
 
-When you open the Install Packages tool, you'll see a dropdown menu for "Select install option". 
+When you open the Install Tool, you'll see a dropdown menu for "Select install option". 
 Select "Conda".
 
 ![The Arcus Install tool, with "Conda" selected from the install option drop down menu.](media/install_conda_packages.png)
@@ -782,13 +782,13 @@ If you want to overwrite an existing Conda environment, you'll need to manually 
 
 Write in the name of the package you want to install. 
 If you leave package version blank, it will get the most recent version.
-The form will also automatically install any required dependencies for the package(s) you list.
+The tool will also automatically install any required dependencies for the package(s) you list.
 
 ![The Arcus Install tool, with "tableone" entered under package name. Install option is set to "Conda" and package version is left blank.](media/install_conda_package_name_1.png)
 
 If you have multiple packages you need to install, you can add them at the same time by clicking "Add package".
 
-![The Arcus Install tool, with "tableone" and "seaborn" entered in the two visible package name fields. The button "Add Package" at the bottom of the package fields adds fields to list additional packages. The buttons at the bottom right of the tool are "Add Item" and "Submit."](media/install_conda_package_name_2.png)
+![The Arcus Install tool, with "tableone" and "seaborn" entered in the two visible package name fields. The button "Add Package" at the bottom of the package fields adds fields to list additional packages. The buttons at the bottom right of the tool are "Add another install" and "Submit."](media/install_conda_package_name_2.png)
 
 Click "Submit" to begin installation.
 
@@ -804,23 +804,36 @@ When installation is complete, click "OK" to close the installation window.
 
 You can now return to Jupyter and your packages will be available, in the Conda environment you specified. 
 You can load them with `import` statements as you normally would.
+If you need to change the Conda environment for a Jupyter notebook (for example, if you used the Install Tool to create a new environment and now you wish to use it), you can do so by clicking the environment name in the upper right corner of your notebook, and then selecting the Conda environment you wish to use. 
 
 ##### Install with Pip
 
-When you open the Install Packages tool, you'll see a dropdown menu for "Select install option". 
+When you open the Install Tool, you'll see a dropdown menu for "Select install option". 
 Select "Pip".
 
-![The Arcus Install tool, with "Pip" selected from the install option drop down menu.](media/install_pip_packages.png)
+![The Arcus Install Tool, with "Pip" selected from the install option drop down menu.](media/install_pip_packages.png)
+
+You'll need to select an existing Conda environment to install into. 
+The standard [Arcus-provided Conda environment](https://forum.arcus.chop.edu/t/arcus-provided-conda-environments/573) is called `arcus`.  
+
+<div class = "learn-more">
+<b style="color: rgb(var(--color-highlight));">Learning connection</b><br>
+
+To learn more about Conda environments, read our Arcus Forum post on [package management for reproducible analysis](https://forum.arcus.chop.edu/t/package-management-for-reproducible-analysis/384).
+
+</div>
+
+![The Arcus Install Tool, with "Pip" selected as install option and "arcus" selected as the Conda environment name (it is the only option available in this example).](media/install_pip_env.png)
 
 Write in the name of the package you want to install. 
 If you leave package version blank, it will get the most recent version.
-The form will also automatically install any required dependencies for the package(s) you list.
+The tool will also automatically install any required dependencies for the package(s) you list.
 
 ![The Arcus Install tool, with "tableone" entered under package name. Install option is set to "Pip" and package version is left blank.](media/install_pip_package_name_1.png)
 
 If you have multiple packages you need to install, you can add them at the same time by clicking "Add package".
 
-![The Arcus Install tool, with "tableone" and "seaborn" entered in the two visible package name fields. The button "Add Package" at the bottom of the package fields adds fields to list additional packages. The buttons at the bottom right of the tool are "Add Item" and "Submit."](media/install_pip_package_name_2.png)
+![The Arcus Install tool, with "tableone" and "seaborn" entered in the two visible package name fields. The button "Add Package" at the bottom of the package fields adds fields to list additional packages. The buttons at the bottom right of the tool are "Add another install" and "Submit."](media/install_pip_package_name_2.png)
 
 Click "Submit" to begin installation. 
 
@@ -836,7 +849,7 @@ You can load them with `import` statements as you normally would.
 #### When you Might Need to Enable Internet in Python
 
 Most workflows in Python won't require you to enable internet connectivity at any point. 
-If you find you need to install or update a package while you're working, you can use the Install form on your lab's dashboard to do that while staying in internet disabled mode. 
+If you find you need to install or update a package while you're working, you can use the Install Tool on your lab's dashboard to do that while staying in internet disabled mode. 
 Keeping your lab's internet connection disabled while you work is the best way to protect your data and ensure you're not accidentally disclosing protected information to outsiders. 
 
 <div class = "warning">
