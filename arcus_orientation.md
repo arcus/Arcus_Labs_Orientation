@@ -814,6 +814,7 @@ You can always use repositories on CHOP's Enterprise GitHub from your Arcus Lab,
 If you plan to use a repository on [www.github.com](https://github.com/)(public GitHub) to share the R code from your Arcus Lab, you will need to enable internet when it's time to push commits to the repository. 
 Remember that you do not need an internet connection to do most actions using Git, such as creating new commits or merging branches, so you can wait until it's time to push to [enable internet](#lab-status-pane), and then disable internet again afterward. 
 
+
 ### Using Python with Internet Disabled
 
 
