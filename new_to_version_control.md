@@ -51,3 +51,8 @@ Additionally, beyond the NIH grant, we have other articles and miscellany we sug
 **External Resources**:
 
 For R users, check out this excellent resource: [Happy Git with R](https://happygitwithr.com/). It is a full and detailed set of instructions for how to get started using git if you're already using R and RStudio.  This will be very helpful in your scientific lab!
+
+GitHub publishes [lots of great training content for Git](https://docs.github.com/en/get-started/start-your-journey/git-and-github-learning-resources). 
+For a quick overview of how to get started with using Git on the command line check out the video below:
+
+!?[A brief introduction to Git for beginners.](https://youtu.be/r8jQ9hVA2qs)

@@ -701,8 +701,278 @@ The [training videos](#training-videos) walk through everything you need to get 
 
 ### Using R with Internet Disabled
 
+Most functions in R run locally -- once you install the package they're in, they're saved on your machine (or in this case, in your Arcus Lab) for you to use whenever you like, without requiring you to have an internet connection. 
+If you already have R code written for your analysis, chances are all of that code will continue to work in exactly the same way whether or not you have internet disabled. 
+
+We've also set up your Arcus Lab to allow some common remote connections in a secure way, so you can have internet disabled in your lab but still maintain access to certain secure services. 
+Here are some things you can **always** access from R, even with internet disabled: 
+
+- Your Arcus data (for example, using commands like `bq_table_download()` from the `bigrquery` package)
+- Repositories on CHOP's Enterprise GitHub (for example, using `clone`, `push`, and `pull`)
+- Opening external links from within RStudio, such as clicking a link for a vignette from within help documentation in R
+
+However, there are a few important R functions that require an internet connection to work (especially [install.packages()](#installing-and-updating-packages-in-r)), potentially posing a security risk for your data. 
+To provide peace of mind for researchers working in Arcus, we provide a secure method for you to install R packages and download other necessary files without having to enable internet. 
+
+And if you find you have something you need to do in R that requires an internet connection, you can always [change your lab's security settings](#lab-status-pane) to run that code and then return to Internet Disabled Mode afterward. 
+
+#### Installing and Updating Packages in R
+
+As you work in R, you may find you need to install new R packages or update existing ones. 
+Usually the way to do that is via the `install.packages()` function in R, which uses an internet connection to access [CRAN](https://cran.r-project.org/), the online repository of code and documentation for R. 
+However, maintaining an internet connection while you work with sensitive data can pose security risks. 
+To give researchers peace of mind, Arcus provides a tool that allows you to install packages without enabling internet.
+
+You can reach the Install Tool from your lab dashboard, under Tools.
+
+![An Arcus Lab dashboard, showing the Tools section with "Install packages, downloads, and more" at the end of the list.](media/install_dashboard.png)
+
+If you have RStudio open, you can also go directly to the Install Tool by clicking "Install a Package" in the banner at the top of your lab.
+
+![The banner across the top of an Arcus Lab running RStudio. The first link in the top right corner is "Install a Package."](media/install_rstudio_banner.png)
+
+When you open the Install Tool, you'll see a dropdown menu for "Select install option". 
+If you want the most recent version of the package(s) you'll be installing (this is usually the case), select "R Packages".
+If you want to specify a particular version to install other than the most recent version (this is rare), select "R Package with Version" instead, and then supply the version number.
+
+![The Arcus Install Tool, with "R Packages" selected from the install option drop down menu.](media/install_r_packages.png)
+
+Write in the name of the package you want to install. The Install Tool will also automatically install any required dependencies for the packages you list.
+
+![The Arcus Install Tool, with "ggplot2" entered under package name. Install option is set to "R Packages" and library sub path is left blank.](media/install_r_package_name_1.png)
+
+If you have multiple packages you need to install, you can add them at the same time by clicking "Add package".
+Click "Submit" to begin installation. 
+
+![The Arcus Install tool, with "ggplot2" and "flextable" entered in the two visible package name fields. The button "Add Package" at the bottom of the package fields adds fields to list additional packages. The buttons at the bottom right of the tool are "Add Item" and "Submit."](media/install_r_package_name_2.png)
+
+Click "Submit" to begin installation.
+
+![The "Submit" button is at the bottom right of the Arcus Install tool.](media/install_r_submit.png)
+
+While the package(s) and their dependencies download and install, you'll see log messages (these are the same messages that you might otherwise see in the R console if you installed via `install.packages()`).
+
+![After you click "Submit," the install form is replaced by a box showing installation progress. A printed message at the bottom of the box reads "Submissions still processing..."](media/install_r_processing.png)
+
+When installation is complete, click "OK" to close the installation window. 
+
+![When installation is complete, the text at the bottom of the box is replaced with "Submissions have finished processing" followed by a button that says "OK."](media/install_r_finished.png)
+
+You can now return to R and your packages will be available. 
+You can load them with `library()` or `require()` as you normally would.
+
+Note that if you forget and attempt to run `install.packages()` when you have internet disabled, you should see a helpful error message reminding you to use the install form instead. 
+
+![A screenshot of RStudio's console pane, where the command "install.packages('ggplot2')" is followed by the error message "Internet connection is Disabled. Installing packages with install.packages() from within an Arcus lab will not work. Instead, use the install form available in the Tools section of your lab dashboard. For help, submit a ticket at https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/303"](media/install_r_error_msg.png)
+
+#### When you Might Need to Enable Internet in R
+
+Most workflows in R won't require you to enable internet connectivity at any point. 
+If you find you need to install or update an R package while you're working, you can use the Install form on your lab's dashboard to do that while staying in internet disabled mode. 
+Keeping your lab's internet connection disabled while you work is the best way to protect your data and ensure you're not accidentally disclosing protected information to outsiders. 
+
+<div class = "warning">
+<b style="color: rgb(var(--color-highlight));">Warning!</b><br>
+
+If your code stops working when you have internet disabled and you don't understand why, **stop** before enabling internet and [reach out for help](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/303) to better understand what the code is doing. 
+
+</div>
+
+Some functions include API calls you may not be aware of, including potentially sending your data to remote servers, which is a violation of the [Arcus Terms of Use](https://arcus.chop.edu/terms-of-use) and may even be a HIPAA breach. 
+
+For example, the R package [tidygeocoder](https://cran.r-project.org/web/packages/tidygeocoder/readme/README.html) includes a number of handy functions for working with addresses and location data in R; some of those functions work by sending data (addresses) to an online service for [geocoding](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/geocode_lat_long/geocode_lat_long.md#geocoding). 
+That means when you run those functions, if you have an internet connection it will **send your data to outside servers** -- and there's no message in R to warn you beforehand that the data will be shared with an outside service.
+The best way to prevent that kind of accidental disclosure is to keep your lab's internet disabled.
+
+<div class = "warning">
+<b style="color: rgb(var(--color-highlight));">Warning!</b><br>
+
+Never use an online service to geocode patient addresses.
+
+If you need geocoding in your Arcus Lab, we can provide it in a secure way! 
+[Submit a request to attach GIS Service to your lab](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/289) to get started.
+
+</div>
+
+There are a few situations where you may find you need internet enabled. 
+The most common scenarios are: 
+
+- code that uses an [API](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/demystifying_apis/demystifying_apis.md#1)
+- pushing code to a repository on public GitHub (not CHOP's Enterprise GitHub)
+
+<div class = "help">
+<b style="color: rgb(var(--color-highlight));">Troubleshooting help</b><br>
+
+If you're currently using an API to bring any **data** into your lab (including publicly available data), please [reach out to the Arcus Privacy Team](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/355).
+It is a violation of the [Arcus Terms of Use](https://arcus.chop.edu/terms-of-use) to bring data into an Arcus Lab without oversight from the Privacy team. 
+
+</div>
+
+Many researchers use GitHub to archive and share code for their analyses, often as part of the process of publishing a scientific paper.
+You can always use repositories on CHOP's Enterprise GitHub from your Arcus Lab, whether or not you have internet disabled, but CHOP's Enterprise GitHub is insufficient for sharing code as part of a publication because it's visible only to people with CHOP credentials. 
+
+If you plan to use a repository on [www.github.com](https://github.com/)(public GitHub) to share the R code from your Arcus Lab, you will need to enable internet when it's time to push commits to the repository. 
+Remember that you do not need an internet connection to do most actions using Git, such as creating new commits or merging branches, so you can wait until it's time to push to [enable internet](#lab-status-pane), and then disable internet again afterward. 
+
 
 ### Using Python with Internet Disabled
+
+Most functions in Python run locally -- once you install the package they're in, they're saved on your machine (or in this case, in your Arcus Lab) for you to use whenever you like, without requiring you to have an internet connection. 
+If you already have Python code written for your analysis, chances are all of that code will continue to work in exactly the same way whether or not you keep your lab in Internet Disabled Mode. 
+
+We've also set up your Arcus Lab to allow some common remote connections in a secure way, so you can use Internet Disabled Mode in your lab but still maintain access to certain secure services. 
+Here are some things you can **always** access from Python/Jupyter, even in Internet Disabled Mode: 
+
+- Your Arcus data (for example, downloading your data in Python using `bigquery`)
+- Repositories on CHOP's Enterprise GitHub (for example, using `clone`, `push`, and `pull`)
+
+However, there are a few important Python actions that require an internet connection to work (especially [installing new packages](#installing-and-updating-packages-in-python)), potentially posing a security risk for your data. 
+To provide peace of mind for researchers working in Arcus, we provide a secure method for you to install Python packages and download other necessary files without having to enable internet. 
+
+And if you find you have something you need to do in Python that requires an internet connection, you can always [change your lab's security settings](#lab-status-pane) to run that code and then return to Internet Disabled Mode afterward. 
+
+#### Installing and Updating Packages in Python
+
+There are two main sources for installing new packages (or update existing ones) in Python in Arcus: Anaconda (conda) or PyPi (pip).
+For either, you can use the Install Tool, which is more secure than installing packages by commands like `conda install` or `pip install`, and also works even when you have internet disabled in your lab.
+
+<div class = "learn-more">
+<b style="color: rgb(var(--color-highlight));">Learning connection</b><br>
+
+To learn more about the differences between Conda and Pip, read our Arcus Forum post on [package management for reproducible analysis](https://forum.arcus.chop.edu/t/package-management-for-reproducible-analysis/384).
+
+</div>
+
+You can reach the Install Tool from your lab dashboard, under Tools.
+
+![An Arcus Lab dashboard, showing the Tools section with "Install packages, downloads, and more" at the end of the list.](media/install_dashboard.png)
+
+If you have Jupyter open, you can also go directly to the Install Tool by clicking "Install a Package" in the banner at the top of your lab.
+
+![The banner across the top of an Arcus Lab running Jupyter. The first link in the top right corner is "Install a Package."](media/install_banner_jupyter.png)
+
+The procedure is a little different depending on if you want to install a package [with Conda](#install-with-conda) or [with Pip](#install-with-pip); the following sections provide instructions and screenshots. 
+
+<div class = "help">
+<b style="color: rgb(var(--color-highlight));">Troubleshooting help</b><br>
+
+Note that if you forget and attempt to run commands like `conda install` or `pip install` in Python when you have internet disabled, the kernel may hang (the code will keep trying unsuccessfully to run until it times out).
+
+You can fix this by refreshing the page (using Ctrl-C if you're working in a Terminal window). 
+Then you can open the Install Tool to install the package(s) you need that way.
+
+</div>
+
+##### Install with Conda
+
+When you install a package hosted on Anaconda, you need to specify whether you want to install it into a Conda environment you already have, or a new Conda environment. 
+If you want to install it into the Conda environment you're already using for a given analysis, you may want to **make a note of your Conda environment** before going to the Install Tool.
+
+You can see the Conda environment (prefixed with `.conda-`) for a given Jupyter notebook in the upper right corner of the screen when you have that notebook open. 
+The standard [Arcus-provided Conda environment](https://forum.arcus.chop.edu/t/arcus-provided-conda-environments/573) is called `arcus`. 
+
+![The banner across the top of an Arcus Lab running Jupyter. In the upper right corner of the notebook, text reads ".conda-arcus", so `arcus` is the name of this Conda environment.](media/install_check_conda_env.png)
+
+You can also see a complete list of all the Conda environments you have by running `! arcus list-conda-env` in a Jupyter cell. 
+
+When you open the Install Tool, you'll see a dropdown menu for "Select install option". 
+Select "Conda".
+
+![The Arcus Install tool, with "Conda" selected from the install option drop down menu.](media/install_conda_packages.png)
+
+Select the name of the Conda environment you wish to install into from the dropdown, or select "Create new..." to create a new environment. If you are creating a new environment, then write in the name that you want the environment saved as; this will be saved as a new directory under `~/.conda/env`.
+
+![The Arcus Install tool, with install option "Conda" and environment name changed from "Create new..." to "arcus".](media/install_conda_env.png)
+
+<div class = "help">
+<b style="color: rgb(var(--color-highlight));">Troubleshooting help</b><br>
+
+When creating a new Conda environment, the string you provide here must not already be a subdirectory under `~/.conda/env`.
+
+If you want to overwrite an existing Conda environment, you'll need to manually delete it first.
+
+</div>
+
+Write in the name of the package you want to install. 
+If you leave package version blank, it will get the most recent version.
+The tool will also automatically install any required dependencies for the package(s) you list.
+
+![The Arcus Install tool, with "tableone" entered under package name. Install option is set to "Conda" and package version is left blank.](media/install_conda_package_name_1.png)
+
+If you have multiple packages you need to install, you can add them at the same time by clicking "Add package".
+
+![The Arcus Install tool, with "tableone" and "seaborn" entered in the two visible package name fields. The button "Add Package" at the bottom of the package fields adds fields to list additional packages. The buttons at the bottom right of the tool are "Add another install" and "Submit."](media/install_conda_package_name_2.png)
+
+Click "Submit" to begin installation.
+
+![The "Submit" button is at the bottom right of the Arcus Install tool.](media/install_conda_submit.png)
+
+While the installation processes, you'll see a box reporting progress.
+
+![After you click "Submit," the install form is replaced by a box showing installation progress. A printed message at the bottom of the box reads "Submissions still processing..."](media/install_conda_processing.png)
+
+When installation is complete, click "OK" to close the installation window. 
+
+![When installation is complete, the text at the bottom of the box will say "Submissions have finished processing" followed by a button that says "OK."](media/install_conda_finished.png)
+
+You can now return to Jupyter and your packages will be available, in the Conda environment you specified. 
+You can load them with `import` statements as you normally would.
+If you need to change the Conda environment for a Jupyter notebook (for example, if you used the Install Tool to create a new environment and now you wish to use it), you can do so by clicking the environment name in the upper right corner of your notebook, and then selecting the Conda environment you wish to use. 
+
+##### Install with Pip
+
+When you open the Install Tool, you'll see a dropdown menu for "Select install option". 
+Select "Pip".
+
+![The Arcus Install Tool, with "Pip" selected from the install option drop down menu.](media/install_pip_packages.png)
+
+You'll need to select an existing Conda environment to install into. 
+The standard [Arcus-provided Conda environment](https://forum.arcus.chop.edu/t/arcus-provided-conda-environments/573) is called `arcus`.  
+
+<div class = "learn-more">
+<b style="color: rgb(var(--color-highlight));">Learning connection</b><br>
+
+To learn more about Conda environments, read our Arcus Forum post on [package management for reproducible analysis](https://forum.arcus.chop.edu/t/package-management-for-reproducible-analysis/384).
+
+</div>
+
+![The Arcus Install Tool, with "Pip" selected as install option and "arcus" selected as the Conda environment name (it is the only option available in this example).](media/install_pip_env.png)
+
+Write in the name of the package you want to install. 
+If you leave package version blank, it will get the most recent version.
+The tool will also automatically install any required dependencies for the package(s) you list.
+
+![The Arcus Install tool, with "tableone" entered under package name. Install option is set to "Pip" and package version is left blank.](media/install_pip_package_name_1.png)
+
+If you have multiple packages you need to install, you can add them at the same time by clicking "Add package".
+
+![The Arcus Install tool, with "tableone" and "seaborn" entered in the two visible package name fields. The button "Add Package" at the bottom of the package fields adds fields to list additional packages. The buttons at the bottom right of the tool are "Add another install" and "Submit."](media/install_pip_package_name_2.png)
+
+Click "Submit" to begin installation. 
+
+![The "Submit" button is at the bottom right of the Arcus Install tool.](media/install_pip_submit.png)
+
+When installation is complete, click "OK" to close the installation window. 
+
+![When installation is complete, the text at the bottom of the box will say "Submissions have finished processing" followed by a button that says "OK."](media/install_pip_finished.png)
+
+You can now return to your Python code and your packages will be available. 
+You can load them with `import` statements as you normally would.
+
+#### When you Might Need to Enable Internet in Python
+
+Most workflows in Python won't require you to enable internet connectivity at any point. 
+If you find you need to install or update a package while you're working, you can use the Install Tool on your lab's dashboard to do that while staying in internet disabled mode. 
+Keeping your lab's internet connection disabled while you work is the best way to protect your data and ensure you're not accidentally disclosing protected information to outsiders. 
+
+<div class = "warning">
+<b style="color: rgb(var(--color-highlight));">Warning!</b><br>
+
+If your code stops working when you have internet disabled and you don't understand why, **stop** before enabling internet and [reach out for help](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/303) to better understand what the code is doing. 
+
+</div>
+
+Some functions include API calls you may not be aware of, including potentially sending your data to remote servers, which is a violation of the [Arcus Terms of Use](https://arcus.chop.edu/terms-of-use) and may even be a HIPAA breach. 
 
 
 ### Using GitHub with Internet Disabled
@@ -803,9 +1073,35 @@ If you need to push or pull to a repository on public GitHub, you'll need to [en
 
 ### Using GIS service with the Internet Disabled
 
+**You can access your GIS data within your Arcus lab in exactly the same way whether or not your lab is in Internet Disabled mode.**
+You'll be able to create the GIS Conda environment with relevant Python packages and access the GIS data all while staying in Internet Disabled mode, using the same steps you would with internet enabled.
+
+When you have GIS service attached to your Arcus Lab, the first time you use it you'll need to [create a new python kernel to run GIS](https://forum.arcus.chop.edu/t/gis-data-in-arcus-labs/233). 
+If you have already built the `arcus-gis` kernel, then **you don't need to do it again**. 
+
+However, if your lab is new (or if GIS service is newly added to your lab), you will need to get the Conda environment for GIS.  
+You can do that by running `! arcus get-conda-env arcus-gis` in a code cell in your Jupyter notebook.
+
+Note that it will take a long time for that code to run, and you only need to do it the first time you use GIS service.
+
+<div class = "important">
+<b style="color: rgb(var(--color-highlight));">Tip</b><br>
+
+If you're exploring GIS data in your lab for the first time, we recommend you start by using Jupyter to open the GIS demo notebooks available within your Arcus Lab: 
+
+- `arcus/project/src/notebooks/GIS/gis_datasets_demo.ipynb`
+- `arcus/project/src/notebooks/GIS/gis_data_joins_demo.ipynb`
+
+The notebook `gis_datasets_demo.ipynb` will walk you through connecting to your GIS data, including starting with instructions to run `! arcus get-conda-env arcus-gis` the first time you use it.
+
+</div>
+
+If you find you want to install additional Python packages to use while analyzing your GIS data, you can [install them in Internet Disabled mode with the Install Tool](#install-with-conda).
+Be sure to select `arcus-gis` as the Conda environment for the new package(s). 
 
 ### Using SQLPad with Internet Disabled
 
+There is no difference in using SQLPad in Internet Disabled mode versus Internet Enabled mode. In fact, you can even access SQLPad without turning your lab on at all! That being said, since we suggest always using Internet Disabled mode unless you have a specific reason to use Internet Enabled, we recommend that if you're using SQLPad while your lab is on, that you do so with Internet Disabled mode on. 
 
 ## Ongoing Communication
 
