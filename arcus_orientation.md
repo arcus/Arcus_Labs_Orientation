@@ -713,13 +713,16 @@ While many Arcus lab users will never need to use the Terminal (or Command Line,
 
 If you would like to learn more about using the Terminal/Command Line, check out the [New to Bash](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_bash.md) module for help getting started!
 
-When the internet is "enabled", such files can be downloaded in the typical fashion, using a command line tool such as `wget`:
-
-![Terminal window showing using the wget command to download a reference file from gdc.cancer.gov.](media/ref_file_download_terminal.png)
-
-However, the more secure way to download files to your Arcus lab is to use the Install form:
+When the internet is "enabled", such files can be downloaded using a command line tool such as `wget`. However, the more secure way to download files to your Arcus lab is to use the Install tool:
 
 ![Install form with the Download option selected, a reference file download URL, and the filename changed.](media/file_download_install_form_rename.png)
+
+<div class = "help">
+<b style="color: rgb(var(--color-highlight));">Troubleshooting help</b><br>
+
+If you are trying to download file to your Arcus lab in the Terminal using a tool like `wget` and the process hangs and isn't seeming to progress, check and see if you have the internet disabled! If this is the case, you can use the Install form to more securely download your files.  
+
+</div>
 
 Using the Install form does not require that the internet be enabled in your lab, and you can rename the downloaded file right in the form! The downloaded file(s) will appear in the `.downloads` folder in your home directory:
 
@@ -728,7 +731,7 @@ Using the Install form does not require that the internet be enabled in your lab
 <div class = "help">
 <b style="color: rgb(var(--color-highlight));">Troubleshooting help</b><br>
 
-If you are trying to download file to your Arcus lab in the Terminal using a tool like `wget` and the process hangs and isn't seeming to progress, check and see if you have the internet disabled! If this is the case, you can use the Install form to more securely download your files.  
+`.downloads` is a folder in your home directory that is **hidden**, which you can tell because it starts with a `.`. To see hidden files and folders in the Terminal you can use the command `ls -la`; `ls` is the command to "list" the contents of a directory, and the `-la` flag indicates that all files and folders should be listed, even the hidden ones. You can then go to this directory using `cd` like normal. 
 
 </div>
 
