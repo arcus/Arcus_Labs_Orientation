@@ -720,7 +720,7 @@ When Internet Enabled Mode is "on", such files can be downloaded using a command
 <div class = "help">
 <b style="color: rgb(var(--color-highlight));">Troubleshooting help</b><br>
 
-If you are trying to download file to your Arcus lab in the Terminal using a tool like `wget` and the process hangs and isn't seeming to progress, check and see if you have the internet disabled! If this is the case, refresh the page to stop the process. Then you can use the Install tool to more securely download your files.  
+If you are trying to download a file to your Arcus lab in the Terminal using a tool like `wget` and the process hangs and isn't seeming to progress, check and see if you have the internet disabled! If this is the case, refresh the page to stop the process. Then you can use the Install tool to more securely download your files.  
 
 </div>
 
