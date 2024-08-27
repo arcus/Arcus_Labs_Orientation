@@ -1068,8 +1068,35 @@ If you need to push or pull to a repository on public GitHub, you'll need to [en
 
 </div>
 
-### Using the Command Line with Internet Disabled
+### Using the Terminal with Internet Disabled
 
+While many Arcus lab users will never need to use the Terminal (or Command Line, as you will sometimes see it called), it can be a very useful tool for processing files, running scripts, and navigating the directory structure of your Arcus lab. In most cases, these processes will not require reaching out to the internet; one notable exception would be connecting to remote repositories on [github.com](https://github.com/), which was discussed in the previous section. Another time you might need to access the internet through the Terminal is if you need to download files from the web, such as reference sequences or annotations for genomics work. 
+
+If you would like to learn more about using the Terminal/Command Line, check out the [New to Bash](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_bash.md) module for help getting started!
+
+When Internet Enabled Mode is "on", such files can be downloaded using a command line tool such as `wget`. However, the more secure way to download files to your Arcus lab is to use the Install tool. Below is a screenshot of the Install tool with the **Download** option selected. We've entered the URL of a reference file from the [National Cancer Institute Genomic Data Commons](https://gdc.cancer.gov/about-data/gdc-data-processing/gdc-reference-files) and renamed it to `Antibody_Description_Files_for_TCGA_RPPA_Data_(v36)`. 
+
+![ ](media/file_download_install_form_rename.png)
+
+<div class = "help">
+<b style="color: rgb(var(--color-highlight));">Troubleshooting help</b><br>
+
+If you are trying to download a file to your Arcus lab in the Terminal using a tool like `wget` and the process hangs and isn't seeming to progress, check and see if you have the internet disabled! If this is the case, refresh the page to stop the process. Then you can use the Install tool to more securely download your files.  
+
+</div>
+
+Using the Install tool does not require that Internet Enabled Mode is on in your lab, and the downloaded file(s) will appear in the `.downloads` folder in your home directory:
+
+![Terminal window showing two files in the .downloads folder, including the file downloaded using the install form.](media/downloads_folder_terminal.png)
+
+From there, you can move the file to the directory where you would like to store it. 
+
+<div class = "help">
+<b style="color: rgb(var(--color-highlight));">Troubleshooting help</b><br>
+
+`.downloads` is a folder in your home directory that is **hidden**, which you can tell because it starts with a `.`. To see hidden files and folders in the Terminal you can use the command `ls -la`; `ls` is the command to "list" the contents of a directory, and the `-la` flag indicates that all files and folders should be listed, even the hidden ones. You can then go to this directory using `cd` like normal. Because it is a hidden folder, you will not be able to see it when you are navigating your folders in RStudio by default, but you can [change this setting](https://docs.posit.co/ide/user/ide/guide/ui/files.html#display-hidden-files).
+
+</div>
 
 ### Using GIS service with the Internet Disabled
 
