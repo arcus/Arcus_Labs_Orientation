@@ -718,6 +718,15 @@ When should I use Internet Disabled Mode?
 ---
 Since its not always easy to tell when legitimate packages may be accessing the internet, **we recommend always using Internet Disabled mode**, not just when installing packages. That being said, it is still possible to enable access to the internet if needed, such as during particularly complex package installations. (Note that it is possible to allow Internet Enabled mode only for certain users of a lab.)
 
+### Switching Modes
+
+Once you've opened your lab, on the top left-hand side of the screen is a "Lab Settings" box, which contains options for "Internet Disabled" and "Internet Enabled" You can click on the question mark symbol next to the word "Security", which provides condensed information about when to use each mode. When you turn your lab on, it will automatically be booted in whichever mode has been selected. In the example of the screenshot below, turning the lab on would start it in the secure Internet Disabled Mode. 
+
+![The lab settings contains a security section with two radio buttons: one for Internet Disabled, which is selected here, and one for Internet Enabled. Changing this setting requires the lab to be restarted.](media/arcus_lab_screenshot.png)
+
+If you'd like to switch to a different mode, you can select the option you'd like to switch to. If your lab is already running when you do this, you'll receive a pop-up warning message which informs you that your lab will need to restart in order to apply the new settings. 
+
+![Warning message which reads "You are about to enable the internet for your lab. Changing the setting to Internet Enabled puts your data at a greater security risk. You can reduce risks by keeping the internet disabled in your lab and using the Install Form when installing packages.If you choose to proceed, this action will restart your lab with the new setting. All your data is stored and will be available upon restart. Would you like to proceed?](media/internet-enabled-warning.png)
 
 In the following sections, we'll review more specific details about how to work with a variety of tools while using Internet Disabled Mode. 
 
