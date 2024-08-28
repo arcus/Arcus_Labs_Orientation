@@ -1076,7 +1076,7 @@ If you would like to learn more about using the Terminal/Command Line, check out
 
 When Internet Enabled Mode is "on", such files can be downloaded using a command line tool such as `wget`. However, the more secure way to download files to your Arcus lab is to use the Install tool. Below is a screenshot of the Install tool with the **Download** option selected. We've entered the URL of a reference file from the [National Cancer Institute Genomic Data Commons](https://gdc.cancer.gov/about-data/gdc-data-processing/gdc-reference-files) and renamed it to `Antibody_Description_Files_for_TCGA_RPPA_Data_(v36)`. 
 
-![ ](media/file_download_install_form_rename.png)
+![ ](media/install_ref_file_v2.png)
 
 <div class = "help">
 <b style="color: rgb(var(--color-highlight));">Troubleshooting help</b><br>
