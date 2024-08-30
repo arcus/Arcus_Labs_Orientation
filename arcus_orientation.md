@@ -712,11 +712,11 @@ Using Internet Disabled Mode helps protect you from both of these risks, by allo
 
 But how do I install packages without internet?
 ------
-Of course, you'll still need to be able to install packages to do your work. For this, we've developed the **Package Installation Form**. Rather than installing your packages in the same environment that includes your data, filling out this form instantly installs the necessary packages in a separate environment that doesn't have any data in it. This ensures that, even if there is any malicious code in the package you've installed, it doesn't have any access to your data when it executes. The package is then immediately made available for your use in your Internet Disabled lab. 
+Of course, you'll still need to be able to install packages or download files to do your work. For this, we've developed the **Installation Form**. Rather than installing your packages in the same environment that includes your data, when you fill out this form, the packages automatically begin installing in a separate environment that doesn't have any data in it.This ensures that, if there is any malicious code in the scripts that govern the installation process, it does not have any access to your data while it executes. Once the packages have finished installing, they become available to you in your lab. At this point, by subsequently running your code in your lab in Internet Disabled mode, even if there is any malicious code in the package you've installed, it doesn't have any access to the Internet in order to exfiltrate your data.
 
 When should I use Internet Disabled Mode?
 ---
-Since its not always easy to tell when legitimate packages may be accessing the internet, **we recommend always using Internet Disabled mode**, not just when installing packages. That being said, it is still possible to enable access to the internet if needed, such as during particularly complex package installations. (Note that it is possible to allow Internet Enabled mode only for certain users of a lab.)
+Since its not always easy to tell when legitimate packages may be accessing the internet, **we recommend always using Internet Disabled mode**, not just when installing packages. That being said, it is still possible to enable access to the internet if needed, such as during particularly complex package installations. (Note that the PI is able to completely restrict Internet access for some users. In those cases, users will either need to use the install form or talk to their PI.)
 
 ### Switching Modes
 
