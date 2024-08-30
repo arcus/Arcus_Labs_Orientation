@@ -695,9 +695,41 @@ The [training videos](#training-videos) walk through everything you need to get 
 
 ***
 
-## Lab Security
+## Security Feature: Internet Disabled Mode
 
-(here's where general content about why we disable internet goes)
+While there are myriad benefits to taking a scripted approach to data analysis, it does also introduce some specific privacy and security risks. Thankfully, Arcus has taken these risks into consideration, and developed our [Internet Disabled Mode](https://forum.arcus.chop.edu/t/about-the-arcus-lab-security-setting-for-disabling-internet-in-labs/741) feature. The feature provides peace of mind by allowing you to work on your code in an environment that is entirely disconnected from the internet, keeping your data and code safer. 
+
+There are two primary kinds of problems that could occur: 
+
+1. **Malicious Packages**
+
+    Writing code involves downloading a variety of packages to use in your scripts, which could contain malicious code (code which is intended to harm a system or cause a security breach). [Malicious packages can be found even popular package repositories like PyPI](https://thehackernews.com/2023/11/27-malicious-pypi-packages-with.html), and in some instances, [well-known, legitimate packages have been hacked and had malicious code inserted](https://therecord.media/malware-found-in-npm-package-with-millions-of-weekly-downloads).
+
+2. **Internet Reliant Features**
+
+    Some legitimate, non-malicious packages are useful in part because they send data out to external servers where additional processing is done. Unfortunately, it is not always easy to tell when a package relies upon sending data over the internet. This may not be a concern for a hobby programmer, but when working with PHI and other sensitive data, this presents a huge risk. 
+
+Using Internet Disabled Mode helps protect you from both of these risks, by allowing you to work on your code in a space that is entirely disconnected from the internet. 
+
+But how do I install packages without internet?
+------
+Of course, you'll still need to be able to install packages or download files to do your work. For this, we've developed the **Installation Form**. Rather than installing your packages in the same environment that includes your data, when you fill out this form, the packages automatically begin installing in a separate environment that doesn't have any data in it.This ensures that, if there is any malicious code in the scripts that govern the installation process, it does not have any access to your data while it executes. Once the packages have finished installing, they become available to you in your lab. At this point, by subsequently running your code in your lab in Internet Disabled mode, even if there is any malicious code in the package you've installed, it doesn't have any access to the Internet in order to exfiltrate your data.
+
+When should I use Internet Disabled Mode?
+---
+Since its not always easy to tell when legitimate packages may be accessing the internet, **we recommend always using Internet Disabled mode**, not just when installing packages. That being said, it is still possible to enable access to the internet if needed, such as during particularly complex package installations. (Note that the PI is able to completely restrict Internet access for some users. In those cases, users will either need to use the install form or talk to their PI.)
+
+### Switching Modes
+
+Once you've opened your lab, on the top left-hand side of the screen is a "Lab Settings" box, which contains options for "Internet Disabled" and "Internet Enabled" You can click on the question mark symbol next to the word "Security", which provides condensed information about when to use each mode. When you turn your lab on, it will automatically be booted in whichever mode has been selected. In the example of the screenshot below, turning the lab on would start it in the secure Internet Disabled Mode. 
+
+![The lab settings contains a security section with two radio buttons: one for Internet Disabled, which is selected here, and one for Internet Enabled. Changing this setting requires the lab to be restarted.](media/arcus_lab_screenshot.png)
+
+If you'd like to switch to a different mode, you can select the option you'd like to switch to. If your lab is already running when you do this, you'll receive a pop-up warning message which informs you that your lab will need to restart in order to apply the new settings. 
+
+![Warning message which reads "You are about to enable the internet for your lab. Changing the setting to Internet Enabled puts your data at a greater security risk. You can reduce risks by keeping the internet disabled in your lab and using the Install Form when installing packages.If you choose to proceed, this action will restart your lab with the new setting. All your data is stored and will be available upon restart. Would you like to proceed?](media/internet-enabled-warning.png)
+
+In the following sections, we'll review more specific details about how to work with a variety of tools while using Internet Disabled Mode. 
 
 ### Using R with Internet Disabled
 
