@@ -713,7 +713,7 @@ Using Internet Disabled Mode helps protect you from both of these risks, by allo
 
 But how do I install packages without internet?
 ------
-Of course, you'll still need to be able to install packages or download files to do your work. For this, we've developed the **Installation Form**. Rather than installing your packages in the same environment that includes your data, when you fill out this form, the packages automatically begin installing in a separate environment that doesn't have any data in it.This ensures that, if there is any malicious code in the scripts that govern the installation process, it does not have any access to your data while it executes. Once the packages have finished installing, they become available to you in your lab. At this point, by subsequently running your code in your lab in Internet Disabled mode, even if there is any malicious code in the package you've installed, it doesn't have any access to the Internet in order to exfiltrate your data.
+Of course, you'll still need to be able to install packages or download files to do your work. For this, we've developed the **Install Tool**. Rather than installing your packages in the same environment that includes your data, when you fill out this form, the packages automatically begin installing in a separate environment that doesn't have any data in it.This ensures that, if there is any malicious code in the scripts that govern the installation process, it does not have any access to your data while it executes. Once the packages have finished installing, they become available to you in your lab. At this point, by subsequently running your code in your lab in Internet Disabled mode, even if there is any malicious code in the package you've installed, it doesn't have any access to the Internet in order to exfiltrate your data.
 
 When should I use Internet Disabled Mode?
 ---
@@ -721,13 +721,13 @@ Since its not always easy to tell when legitimate packages may be accessing the 
 
 ### Switching Modes
 
-Once you've opened your lab, on the top left-hand side of the screen is a "Lab Settings" box, which contains options for "Internet Disabled" and "Internet Enabled" You can click on the question mark symbol next to the word "Security", which provides condensed information about when to use each mode. When you turn your lab on, it will automatically be booted in whichever mode has been selected. In the example of the screenshot below, turning the lab on would start it in the secure Internet Disabled Mode. 
+Once you've opened your lab, on the top left-hand side of the screen is a "Lab Settings" box, which contains options for "Internet Disabled" and "Internet Enabled." You can click on the question mark symbol next to the word "Security", which provides condensed information about when to use each mode. When you turn your lab on, it will be booted in whichever mode has been selected. In the example of the screenshot below, turning the lab on would start it in Internet Disabled Mode. 
 
 ![The lab settings contains a security section with two radio buttons: one for Internet Disabled, which is selected here, and one for Internet Enabled. Changing this setting requires the lab to be restarted.](media/arcus_lab_screenshot.png)
 
 If you'd like to switch to a different mode, you can select the option you'd like to switch to. If your lab is already running when you do this, you'll receive a pop-up warning message which informs you that your lab will need to restart in order to apply the new settings. 
 
-![Warning message which reads "You are about to enable the internet for your lab. Changing the setting to Internet Enabled puts your data at a greater security risk. You can reduce risks by keeping the internet disabled in your lab and using the Install Form when installing packages.If you choose to proceed, this action will restart your lab with the new setting. All your data is stored and will be available upon restart. Would you like to proceed?](media/internet-enabled-warning.png)
+![Warning message which reads "You are about to enable the internet for your lab. Changing the setting to Internet Enabled puts your data at a greater security risk. You can reduce risks by keeping the internet disabled in your lab and using the Install Form when installing packages. If you choose to proceed, this action will restart your lab with the new setting. All your data is stored and will be available upon restart. Would you like to proceed?"](media/internet-enabled-warning.png)<!-- style = "max-width: 400px;"-->
 
 In the following sections, we'll review more specific details about how to work with a variety of tools while using Internet Disabled Mode. 
 
@@ -743,10 +743,10 @@ Here are some things you can **always** access from R, even with internet disabl
 - Repositories on CHOP's Enterprise GitHub (for example, using `clone`, `push`, and `pull`)
 - Opening external links from within RStudio, such as clicking a link for a vignette from within help documentation in R
 
-However, there are a few important R functions that require an internet connection to work (especially [install.packages()](#installing-and-updating-packages-in-r)), potentially posing a security risk for your data. 
+However, there are a few important R functions that require an internet connection to work (especially `install.packages()`), potentially posing a security risk for your data. 
 To provide peace of mind for researchers working in Arcus, we provide a secure method for you to install R packages and download other necessary files without having to enable internet. 
 
-And if you find you have something you need to do in R that requires an internet connection, you can always [change your lab's security settings](#lab-status-pane) to run that code and then return to Internet Disabled Mode afterward. 
+And if you find you have something you need to do in R that requires an internet connection, you can always [change your lab's security settings](#switching-modes) to run that code and then return to Internet Disabled Mode afterward. 
 
 #### Installing and Updating Packages in R
 
@@ -844,7 +844,7 @@ Many researchers use GitHub to archive and share code for their analyses, often 
 You can always use repositories on CHOP's Enterprise GitHub from your Arcus Lab, whether or not you have internet disabled, but CHOP's Enterprise GitHub is insufficient for sharing code as part of a publication because it's visible only to people with CHOP credentials. 
 
 If you plan to use a repository on [www.github.com](https://github.com/)(public GitHub) to share the R code from your Arcus Lab, you will need to enable internet when it's time to push commits to the repository. 
-Remember that you do not need an internet connection to do most actions using Git, such as creating new commits or merging branches, so you can wait until it's time to push to [enable internet](#lab-status-pane), and then disable internet again afterward. 
+Remember that you do not need an internet connection to do most actions using Git, such as creating new commits or merging branches, so you can wait until it's time to push to [enable internet](#switching-modes), and then disable internet again afterward. 
 
 
 ### Using Python with Internet Disabled
@@ -861,7 +861,7 @@ Here are some things you can **always** access from Python/Jupyter, even in Inte
 However, there are a few important Python actions that require an internet connection to work (especially [installing new packages](#installing-and-updating-packages-in-python)), potentially posing a security risk for your data. 
 To provide peace of mind for researchers working in Arcus, we provide a secure method for you to install Python packages and download other necessary files without having to enable internet. 
 
-And if you find you have something you need to do in Python that requires an internet connection, you can always [change your lab's security settings](#lab-status-pane) to run that code and then return to Internet Disabled Mode afterward. 
+And if you find you have something you need to do in Python that requires an internet connection, you can always [change your lab's security settings](#switching-modes) to run that code and then return to Internet Disabled Mode afterward. 
 
 #### Installing and Updating Packages in Python
 
@@ -1043,7 +1043,7 @@ To learn more, read about how to [avoid unintentional data exposure](https://lia
 </div>
 
 You can clone a repository on public GitHub without having to enable internet by using the Install Tool in the Tools section on your Lab dashboard.
-But in order to pull from or push to a repository on public GitHub you will have to [enable internet](#lab-status-pane) (and then you can disable it again afterward).
+But in order to pull from or push to a repository on public GitHub you will have to [enable internet](#switching-modes) (and then you can disable it again afterward).
 
 #### Cloning from Public GitHub with the Install Form
 
@@ -1052,7 +1052,7 @@ But in order to pull from or push to a repository on public GitHub you will have
 
 Note that the Install Tool currently works only for cloning publicly-visible repositories. 
 
-If the repository you want to clone is private, you'll need to [enable internet](#lab-status-pane) temporarily to clone the repository and then return to Internet Disabled Mode again afterward.
+If the repository you want to clone is private, you'll need to [enable internet](#switching-modes) temporarily to clone the repository and then return to Internet Disabled Mode again afterward.
 
 </div>
 
@@ -1096,7 +1096,7 @@ If you wish to share these files with the other users in your lab, you'll need t
 Remember that you still won't be able to push to or pull from a repository on public GitHub while in Internet Disabled Mode. 
 The Install Tool can clone repositories only (not push and pull). 
 
-If you need to push or pull to a repository on public GitHub, you'll need to [enable internet](#lab-status-pane) while you do that and then return to Internet Disabled Mode again afterward.
+If you need to push or pull to a repository on public GitHub, you'll need to [enable internet](#switching-modes) while you do that and then return to Internet Disabled Mode again afterward.
 
 </div>
 
