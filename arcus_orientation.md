@@ -119,7 +119,7 @@ Arcus Computational Labs (or Arcus Labs for short) exist to provide a robust, co
 
 Even if you're not requesting data from Arcus, but bringing your own, you might find that working in an Arcus lab is beneficial.
 
-![](media/arcus_lab_screenshot.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 600px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
+![The dashboard of an Arcus Lab, with panes for Lab Settings, Tools (including RStudio, Jupyter, Terminal, Editor, SQLPad, and the Install Tool), and Education Resources.](media/arcus_lab_screenshot.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 600px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 <div style = "clear:both;"></div>
 
