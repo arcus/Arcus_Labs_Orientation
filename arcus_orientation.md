@@ -713,11 +713,11 @@ Using Internet Disabled Mode helps protect you from both of these risks, by allo
 
 But how do I install packages without internet?
 ------
-Of course, you'll still need to be able to install packages or download files to do your work. For this, we've developed the **Install Tool**. Rather than installing your packages in the same environment that includes your data, when you fill out this form, the packages automatically begin installing in a separate environment that doesn't have any data in it.This ensures that, if there is any malicious code in the scripts that govern the installation process, it does not have any access to your data while it executes. Once the packages have finished installing, they become available to you in your lab. At this point, by subsequently running your code in your lab in Internet Disabled mode, even if there is any malicious code in the package you've installed, it doesn't have any access to the Internet in order to exfiltrate your data.
+Of course, you'll still need to be able to install packages or download files to do your work. For this, we've developed the **Install Tool**. Rather than installing your packages in the same environment that includes your data, when you use this tool, the packages automatically begin installing in a separate environment that doesn't have any data in it.This ensures that, if there is any malicious code in the scripts that govern the installation process, it does not have any access to your data while it executes. Once the packages have finished installing, they become available to you in your lab. At this point, by subsequently running your code in your lab in Internet Disabled mode, even if there is any malicious code in the package you've installed, it doesn't have any access to the Internet in order to exfiltrate your data.
 
 When should I use Internet Disabled Mode?
 ---
-Since its not always easy to tell when legitimate packages may be accessing the internet, **we recommend always using Internet Disabled mode**, not just when installing packages. That being said, it is still possible to enable access to the internet if needed, such as during particularly complex package installations. (Note that the PI is able to completely restrict Internet access for some users. In those cases, users will either need to use the install form or talk to their PI.)
+Since its not always easy to tell when legitimate packages may be accessing the internet, **we recommend always using Internet Disabled mode**, not just when installing packages. That being said, it is still possible to enable access to the internet if needed, such as during particularly complex package installations. (Note that the PI is able to completely restrict Internet access for some users. In those cases, users will either need to use the Install Tool or talk to their PI.)
 
 ### Switching Modes
 
@@ -776,11 +776,11 @@ Write in the name of the package you want to install. The Install Tool will also
 If you have multiple packages you need to install, you can add them at the same time by clicking "Add package".
 Click "Submit" to begin installation. 
 
-![The Arcus Install tool, with "ggplot2" and "flextable" entered in the two visible package name fields. The button "Add Package" at the bottom of the package fields adds fields to list additional packages. The buttons at the bottom right of the tool are "Add Item" and "Submit."](media/install_r_package_name_2.png)
+![The Arcus Install Tool, with "ggplot2" and "flextable" entered in the two visible package name fields. The button "Add Package" at the bottom of the package fields adds fields to list additional packages. The buttons at the bottom right of the tool are "Add Item" and "Submit."](media/install_r_package_name_2.png)
 
 Click "Submit" to begin installation.
 
-![The "Submit" button is at the bottom right of the Arcus Install tool.](media/install_r_submit.png)
+![The "Submit" button is at the bottom right of the Arcus Install Tool.](media/install_r_submit.png)
 
 While the package(s) and their dependencies download and install, you'll see log messages (these are the same messages that you might otherwise see in the R console if you installed via `install.packages()`).
 
@@ -800,7 +800,7 @@ Note that if you forget and attempt to run `install.packages()` when you have in
 #### When you Might Need to Enable Internet in R
 
 Most workflows in R won't require you to enable internet connectivity at any point. 
-If you find you need to install or update an R package while you're working, you can use the Install form on your lab's dashboard to do that while staying in internet disabled mode. 
+If you find you need to install or update an R package while you're working, you can use the Install Tool on your lab's dashboard to do that while staying in internet disabled mode. 
 Keeping your lab's internet connection disabled while you work is the best way to protect your data and ensure you're not accidentally disclosing protected information to outsiders. 
 
 <div class = "warning">
@@ -910,11 +910,11 @@ You can also see a complete list of all the Conda environments you have by runni
 When you open the Install Tool, you'll see a dropdown menu for "Select install option". 
 Select "Conda".
 
-![The Arcus Install tool, with "Conda" selected from the install option drop down menu.](media/install_conda_packages.png)
+![The Arcus Install Tool, with "Conda" selected from the install option drop down menu.](media/install_conda_packages.png)
 
 Select the name of the Conda environment you wish to install into from the dropdown, or select "Create new..." to create a new environment. If you are creating a new environment, then write in the name that you want the environment saved as; this will be saved as a new directory under `~/.conda/env`.
 
-![The Arcus Install tool, with install option "Conda" and environment name changed from "Create new..." to "arcus".](media/install_conda_env.png)
+![The Arcus Install Tool, with install option "Conda" and environment name changed from "Create new..." to "arcus".](media/install_conda_env.png)
 
 <div class = "help">
 <b style="color: rgb(var(--color-highlight));">Troubleshooting help</b><br>
@@ -929,15 +929,15 @@ Write in the name of the package you want to install.
 If you leave package version blank, it will get the most recent version.
 The tool will also automatically install any required dependencies for the package(s) you list.
 
-![The Arcus Install tool, with "tableone" entered under package name. Install option is set to "Conda" and package version is left blank.](media/install_conda_package_name_1.png)
+![The Arcus Install Tool, with "tableone" entered under package name. Install option is set to "Conda" and package version is left blank.](media/install_conda_package_name_1.png)
 
 If you have multiple packages you need to install, you can add them at the same time by clicking "Add package".
 
-![The Arcus Install tool, with "tableone" and "seaborn" entered in the two visible package name fields. The button "Add Package" at the bottom of the package fields adds fields to list additional packages. The buttons at the bottom right of the tool are "Add another install" and "Submit."](media/install_conda_package_name_2.png)
+![The Arcus Install Tool, with "tableone" and "seaborn" entered in the two visible package name fields. The button "Add Package" at the bottom of the package fields adds fields to list additional packages. The buttons at the bottom right of the tool are "Add another install" and "Submit."](media/install_conda_package_name_2.png)
 
 Click "Submit" to begin installation.
 
-![The "Submit" button is at the bottom right of the Arcus Install tool.](media/install_conda_submit.png)
+![The "Submit" button is at the bottom right of the Arcus Install Tool.](media/install_conda_submit.png)
 
 While the installation processes, you'll see a box reporting progress.
 
@@ -974,15 +974,15 @@ Write in the name of the package you want to install.
 If you leave package version blank, it will get the most recent version.
 The tool will also automatically install any required dependencies for the package(s) you list.
 
-![The Arcus Install tool, with "tableone" entered under package name. Install option is set to "Pip" and package version is left blank.](media/install_pip_package_name_1.png)
+![The Arcus Install Tool, with "tableone" entered under package name. Install option is set to "Pip" and package version is left blank.](media/install_pip_package_name_1.png)
 
 If you have multiple packages you need to install, you can add them at the same time by clicking "Add package".
 
-![The Arcus Install tool, with "tableone" and "seaborn" entered in the two visible package name fields. The button "Add Package" at the bottom of the package fields adds fields to list additional packages. The buttons at the bottom right of the tool are "Add another install" and "Submit."](media/install_pip_package_name_2.png)
+![The Arcus Install Tool, with "tableone" and "seaborn" entered in the two visible package name fields. The button "Add Package" at the bottom of the package fields adds fields to list additional packages. The buttons at the bottom right of the tool are "Add another install" and "Submit."](media/install_pip_package_name_2.png)
 
 Click "Submit" to begin installation. 
 
-![The "Submit" button is at the bottom right of the Arcus Install tool.](media/install_pip_submit.png)
+![The "Submit" button is at the bottom right of the Arcus Install Tool.](media/install_pip_submit.png)
 
 When installation is complete, click "OK" to close the installation window. 
 
@@ -1045,7 +1045,7 @@ To learn more, read about how to [avoid unintentional data exposure](https://lia
 You can clone a repository on public GitHub without having to enable internet by using the Install Tool in the Tools section on your Lab dashboard.
 But in order to pull from or push to a repository on public GitHub you will have to [enable internet](#switching-modes) (and then you can disable it again afterward).
 
-#### Cloning from Public GitHub with the Install Form
+#### Cloning from Public GitHub with the Install Tool
 
 <div class = "help">
 <b style="color: rgb(var(--color-highlight));">Troubleshooting help</b><br>
@@ -1069,11 +1069,11 @@ Also fill in what you want to use as the local repository name; usually, this wi
 This will be the name of the directory the files will be saved in in your lab.
 Enter the name of the branch you wish to clone; if you leave it blank, it will clone the default branch for that repository (usually `main`, or `master` for older repositories).
 
-![`The Arcus Install tool, with "https://github.com/arcus/Arcus_Labs_Orientation" entered for "Enter the URL to the repository you would like to clone." "Arcus_Labs_Orientation" is entered for "Enter local repository name." "Enter branch name" is left blank.`](media/install_git_repository.png)
+![`The Arcus Install Tool, with "https://github.com/arcus/Arcus_Labs_Orientation" entered for "Enter the URL to the repository you would like to clone." "Arcus_Labs_Orientation" is entered for "Enter local repository name." "Enter branch name" is left blank.`](media/install_git_repository.png)
 
 Click "Submit" to start cloning the repository.
 
-![The "Submit" button is at the bottom right of the Arcus Install tool.](media/install_git_submit.png)
+![The "Submit" button is at the bottom right of the Arcus Install Tool.](media/install_git_submit.png)
 
 You'll see the directory it's cloning to in the messages on the screen -- this will be `~/git/repository_name` where `~` is your home directory (your CHOP username), and `repository_name` is whatever you entered in the Install Tool.
 In this example, it's `/home/hartmanr1/git/Arcus_Labs_Orientation`.
@@ -1106,20 +1106,20 @@ While many Arcus lab users will never need to use the Terminal (or Command Line,
 
 If you would like to learn more about using the Terminal/Command Line, check out the [New to Bash](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_bash.md) module for help getting started!
 
-When Internet Enabled Mode is "on", such files can be downloaded using a command line tool such as `wget`. However, the more secure way to download files to your Arcus lab is to use the Install tool. Below is a screenshot of the Install tool with the **Download** option selected. We've entered the URL of a reference file from the [National Cancer Institute Genomic Data Commons](https://gdc.cancer.gov/about-data/gdc-data-processing/gdc-reference-files) and renamed it to `Antibody_Description_Files_for_TCGA_RPPA_Data_(v36)`. 
+When Internet Enabled Mode is "on", such files can be downloaded using a command line tool such as `wget`. However, the more secure way to download files to your Arcus lab is to use the Install Tool. Below is a screenshot of the Install Tool with the **Download** option selected. We've entered the URL of a reference file from the [National Cancer Institute Genomic Data Commons](https://gdc.cancer.gov/about-data/gdc-data-processing/gdc-reference-files) and renamed it to `Antibody_Description_Files_for_TCGA_RPPA_Data_(v36)`. 
 
 ![ ](media/install_ref_file_v2.png)
 
 <div class = "help">
 <b style="color: rgb(var(--color-highlight));">Troubleshooting help</b><br>
 
-If you are trying to download a file to your Arcus lab in the Terminal using a tool like `wget` and the process hangs and isn't seeming to progress, check and see if you have the internet disabled! If this is the case, refresh the page to stop the process. Then you can use the Install tool to more securely download your files.  
+If you are trying to download a file to your Arcus lab in the Terminal using a tool like `wget` and the process hangs and isn't seeming to progress, check and see if you have the internet disabled! If this is the case, refresh the page to stop the process. Then you can use the Install Tool to more securely download your files.  
 
 </div>
 
-Using the Install tool does not require that Internet Enabled Mode is on in your lab, and the downloaded file(s) will appear in the `.downloads` folder in your home directory:
+Using the Install Tool does not require that Internet Enabled Mode is on in your lab, and the downloaded file(s) will appear in the `.downloads` folder in your home directory:
 
-![Terminal window showing two files in the .downloads folder, including the file downloaded using the install form.](media/downloads_folder_terminal.png)
+![Terminal window showing two files in the .downloads folder, including the file downloaded using the Install Tool.](media/downloads_folder_terminal.png)
 
 From there, you can move the file to the directory where you would like to store it. 
 
