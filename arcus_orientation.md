@@ -547,17 +547,18 @@ We'll go over the various panes that appear in your landing page in the next few
 
 <div style = "clear:both;"></div>
 
-### Lab Status Pane
+### Lab Settings Pane
 
-![`An Arcus lab settings panel, showing Internet Disabled`](media/lab_clock.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
+![`An Arcus Lab Settings pane, showing Internet Disabled`](media/lab_settings.png)<!-- style = "max-width: 400px; margin-right: 2rem; margin-bottom: 2rem;"-->
 
-By default, the internet will be disabled in your lab. When the internet is disabled, you will need to use the "Install Packages" tool to install packages or libraries from the internet.
+By default, your lab will start in [Internet Disabled mode](#security-feature-internet-disabled-mode). 
+Internet Disabled mode provides an extra layer of security to protect your data.
 
-![`An Arcus lab currently running, showing clock`](media/lab_clock.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
+![`An Arcus lab currently running, showing clock`](media/lab_clock.png)<!-- style = "max-width: 400px; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 When your lab is running, you'll see a clock counting down until it will shut down. Labs cost a fair amount of computational power when they're running, so they are set to automatically pause after a period of time to save resources. If you need to keep your lab active for longer than that, you can always extend the time.  Don't worry, your lab "shutting down" doesn't delete any files or data!  It's more akin to your computer going into "sleep" mode after a period of inactivity.
 
-If you finish using your lab before the clock runs out, please pause your lab using the "power" button in the top right corner of your screen or the toggle switch in the "Lab Status" pane.
+If you finish using your lab before the clock runs out, please pause your lab using the "power" button in the top right corner of your screen or the toggle switch in the "Lab Settings" pane.
 
 
 ### Project Members Pane
