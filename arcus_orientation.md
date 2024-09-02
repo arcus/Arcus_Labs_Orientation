@@ -119,7 +119,7 @@ Arcus Computational Labs (or Arcus Labs for short) exist to provide a robust, co
 
 Even if you're not requesting data from Arcus, but bringing your own, you might find that working in an Arcus lab is beneficial.
 
-![The dashboard of an Arcus Lab, with panes for Lab Settings, Tools (including RStudio, Jupyter, Terminal, Editor, SQLPad, and the Install Tool), and Education Resources.](media/arcus_lab_screenshot.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 600px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
+![The dashboard of an Arcus Lab, with panes for Lab Settings, Tools (including RStudio, Jupyter, Terminal, Editor, SQLPad, and the Install Tool), and Education Resources.](media/arcus_lab_screenshot.png)
 
 <div style = "clear:both;"></div>
 
@@ -758,7 +758,7 @@ To give researchers peace of mind, Arcus provides a tool that allows you to inst
 
 You can reach the Install Tool from your lab dashboard, under Tools.
 
-![An Arcus Lab dashboard, showing the Tools section with "Install packages, downloads, and more" at the end of the list.](media/install_dashboard.png)
+![An Arcus Lab dashboard, showing the Arcus Lab Tools section with "New Install Tool" at the end of the list.](media/install_dashboard.png)
 
 If you have RStudio open, you can also go directly to the Install Tool by clicking "Install a Package" in the banner at the top of your lab.
 
@@ -877,7 +877,7 @@ To learn more about the differences between Conda and Pip, read our Arcus Forum 
 
 You can reach the Install Tool from your lab dashboard, under Tools.
 
-![An Arcus Lab dashboard, showing the Tools section with "Install packages, downloads, and more" at the end of the list.](media/install_dashboard.png)
+![An Arcus Lab dashboard, showing the Arcus Lab Tools section with "New Install Tool" at the end of the list.](media/install_dashboard.png)
 
 If you have Jupyter open, you can also go directly to the Install Tool by clicking "Install a Package" in the banner at the top of your lab.
 
@@ -1058,7 +1058,7 @@ If the repository you want to clone is private, you'll need to [enable internet]
 
 If you want to clone a publicly-visible repository hosted on github.com while in Internet Disabled mode, use the Install Tool, found in the Tools section on your Lab dashboard.
 
-![An Arcus Lab dashboard, showing the Tools section with "Install packages, downloads, and more" at the end of the list.](media/install_dashboard.png)
+![An Arcus Lab dashboard, showing the Arcus Lab Tools section with "New Install Tool" at the end of the list.](media/install_dashboard.png)
 
 When you open the Install Tool, select "Git" from the install option drop down menu.
 
