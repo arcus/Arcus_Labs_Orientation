@@ -710,11 +710,11 @@ There are two primary kinds of problems that could occur:
 
     Some legitimate, non-malicious packages are useful in part because they send data out to external servers where additional processing is done. Unfortunately, it is not always easy to tell when a package relies upon sending data over the internet. This may not be a concern for a hobby programmer, but when working with PHI and other sensitive data, this presents a huge risk. 
 
-Using Internet Disabled mode helps protect you from both of these risks, by allowing you to work on your code in a space that is entirely disconnected from the internet. 
+Using Internet Disabled mode helps protect you from both of these risks, by allowing you to work on your code in a space that is entirely disconnected from the public internet. 
 
 But how do I install packages without internet?
 ------
-Of course, you'll still need to be able to install packages or download files to do your work. For this, we've developed the **Install Tool**. Rather than installing your packages in the same environment that includes your data, when you use this tool, the packages automatically begin installing in a separate environment that doesn't have any data in it.This ensures that, if there is any malicious code in the scripts that govern the installation process, it does not have any access to your data while it executes. Once the packages have finished installing, they become available to you in your lab. At this point, by subsequently running your code in your lab in Internet Disabled mode, even if there is any malicious code in the package you've installed, it doesn't have any access to the Internet in order to exfiltrate your data.
+Of course, you'll still need to be able to install packages or download files to do your work. For this, we've developed the **Install Tool**. Rather than installing your packages in the same environment that includes your data, when you use this tool, the packages automatically begin installing in a separate environment that doesn't have any data in it. This ensures that, if there is any malicious code in the scripts that govern the installation process, it does not have any access to your data while it executes. Once the packages have finished installing, they become available to you in your lab. At this point, by subsequently running your code in your lab in Internet Disabled mode, even if there is any malicious code in the package you've installed, it doesn't have any access to the Internet in order to exfiltrate your data.
 
 When should I use Internet Disabled mode?
 ---
@@ -722,7 +722,7 @@ Since its not always easy to tell when legitimate packages may be accessing the 
 
 ### Switching Modes
 
-Once you've opened your lab, on the top left-hand side of the screen is a "Lab Settings" box, which contains options for "Internet Disabled" and "Internet Enabled." You can click on the question mark symbol next to the word "Security", which provides condensed information about when to use each mode. When you turn your lab on, it will be booted in whichever mode has been selected. In the example of the screenshot below, turning the lab on would start it in Internet Disabled mode. 
+Once you've opened your lab, on the top left-hand side of the screen is a "Lab Settings" box, which contains Security options for "Internet Disabled" and "Internet Enabled." You can click on the question mark symbol next to the word "Security", which provides condensed information about when to use each mode. When you turn your lab on, it will be booted in whichever mode has been selected. In the example of the screenshot below, turning the lab on would start it in Internet Disabled mode. 
 
 ![The lab settings contains a security section with two radio buttons: one for Internet Disabled, which is selected here, and one for Internet Enabled. Changing this setting requires the lab to be restarted.](media/lab_settings.png)<!-- style = "max-width: 400px;"-->
 
@@ -762,7 +762,7 @@ You can reach the Install Tool from your lab dashboard, under Tools.
 
 If you have RStudio open, you can also go directly to the Install Tool by clicking "Install a Package" in the banner at the top of your lab.
 
-![The banner across the top of an Arcus Lab running RStudio. The first link in the top right corner is "Install a Package."](media/install_rstudio_banner.png)
+![The banner across the top of an Arcus Lab running RStudio. The first link in the top right corner is "Install a Package."](media/install_banner_rstudio.png)
 
 When you open the Install Tool, you'll see a dropdown menu for "Select install option". 
 If you want the most recent version of the package(s) you'll be installing (this is usually the case), select "R Packages".
@@ -775,7 +775,6 @@ Write in the name of the package you want to install. The Install Tool will also
 ![The Arcus Install Tool, with "ggplot2" entered under package name. Install option is set to "R Packages" and library sub path is left blank.](media/install_r_package_name_1.png)
 
 If you have multiple packages you need to install, you can add them at the same time by clicking "Add package".
-Click "Submit" to begin installation. 
 
 ![The Arcus Install Tool, with "ggplot2" and "flextable" entered in the two visible package name fields. The button "Add Package" at the bottom of the package fields adds fields to list additional packages. The buttons at the bottom right of the tool are "Add Item" and "Submit."](media/install_r_package_name_2.png)
 
@@ -842,10 +841,10 @@ It is a violation of the [Arcus Terms of Use](https://arcus.chop.edu/terms-of-us
 </div>
 
 Many researchers use GitHub to archive and share code for their analyses, often as part of the process of publishing a scientific paper.
-You can always use repositories on CHOP's Enterprise GitHub from your Arcus Lab, whether or not you have internet disabled, but CHOP's Enterprise GitHub is insufficient for sharing code as part of a publication because it's visible only to people with CHOP credentials. 
+You can use repositories on CHOP's Enterprise GitHub from your Arcus Lab in Internet Disabled mode, but CHOP's Enterprise GitHub is insufficient for sharing code as part of a publication because it's visible only to people with CHOP credentials. 
 
-If you plan to use a repository on [www.github.com](https://github.com/)(public GitHub) to share the R code from your Arcus Lab, you will need to enable internet when it's time to push commits to the repository. 
-Remember that you do not need an internet connection to do most actions using Git, such as creating new commits or merging branches, so you can wait until it's time to push to [enable internet](#switching-modes), and then disable internet again afterward. 
+If you plan to use a repository on [www.github.com](https://github.com/) (public GitHub) to share the R code from your Arcus Lab, you will need to enable internet when it's time to push commits to the repository. 
+Remember that you do not need an internet connection to do most actions using Git, such as creating new commits or merging branches, so you can wait until it's time to push to [enable internet](#switching-modes), and then return to Internet Disabled mode again afterward. 
 
 
 ### Using Python with Internet Disabled
@@ -866,7 +865,7 @@ And if you find you have something you need to do in Python that requires an int
 
 #### Installing and Updating Packages in Python
 
-There are two main sources for installing new packages (or update existing ones) in Python in Arcus: Anaconda (conda) or PyPi (pip).
+There are two main sources for installing new packages (or updating existing ones) in Python in Arcus: Anaconda (conda) or PyPi (pip).
 For either, you can use the Install Tool, which is more secure than installing packages by commands like `conda install` or `pip install`, and also works even with your lab in Internet Disabled mode.
 
 <div class = "learn-more">
