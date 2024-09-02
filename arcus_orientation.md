@@ -724,7 +724,7 @@ Since its not always easy to tell when legitimate packages may be accessing the 
 
 Once you've opened your lab, on the top left-hand side of the screen is a "Lab Settings" box, which contains options for "Internet Disabled" and "Internet Enabled." You can click on the question mark symbol next to the word "Security", which provides condensed information about when to use each mode. When you turn your lab on, it will be booted in whichever mode has been selected. In the example of the screenshot below, turning the lab on would start it in Internet Disabled mode. 
 
-![The lab settings contains a security section with two radio buttons: one for Internet Disabled, which is selected here, and one for Internet Enabled. Changing this setting requires the lab to be restarted.](media/arcus_lab_screenshot.png)
+![The lab settings contains a security section with two radio buttons: one for Internet Disabled, which is selected here, and one for Internet Enabled. Changing this setting requires the lab to be restarted.](media/lab_settings.png)<!-- style = "max-width: 400px;"-->
 
 If you'd like to switch to a different mode, you can select the option you'd like to switch to. If your lab is already running when you do this, you'll receive a pop-up warning message which informs you that your lab will need to restart in order to apply the new settings. 
 
