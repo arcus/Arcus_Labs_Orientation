@@ -718,7 +718,15 @@ Of course, you'll still need to be able to install packages or download files to
 
 When should I use Internet Disabled mode?
 ---
-Since its not always easy to tell when legitimate packages may be accessing the internet, **we recommend always using Internet Disabled mode**, not just when installing packages. That being said, it is still possible to enable access to the internet if needed, such as during particularly complex package installations. (Note that the PI is able to completely restrict Internet access for some users. In those cases, users will either need to use the Install Tool or talk to their PI.)
+Since its not always easy to tell when legitimate packages may be accessing the internet, **we recommend always using Internet Disabled mode**, not just when installing packages. That being said, it is still possible to enable access to the internet if needed, such as during particularly complex package installations. 
+
+<div class = "important">
+<b style="color: rgb(var(--color-highlight));">Important note</b><br>
+
+Note that the PI is able to completely restrict Internet access for some users. 
+In those cases, users will either need to use the Install Tool or talk to their PI.
+
+</div>
 
 ### Switching Modes
 
