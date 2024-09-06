@@ -730,7 +730,7 @@ In those cases, users will either need to use the Install Tool or talk to their 
 
 ### Switching Modes
 
-Once you've opened your lab, on the top left-hand side of the screen is a "Lab Settings" box, which contains Security options for "Internet Disabled" and "Internet Enabled." You can click on the question mark symbol next to the word "Security", which provides condensed information about when to use each mode. When you turn your lab on, it will be booted in whichever mode has been selected. In the example of the screenshot below, turning the lab on would start it in Internet Disabled mode. 
+Once you've opened your lab, on the top left-hand side of the screen is a "Lab Settings" box, which contains Security options for "Internet Disabled" and "Internet Enabled." You can click on the question mark symbol next to the word "Security," which provides condensed information about when to use each mode. When you turn your lab on, it will be booted in whichever mode has been selected. In the example of the screenshot below, turning the lab on would start it in Internet Disabled mode. 
 
 ![The lab settings contains a security section with two radio buttons: one for Internet Disabled, which is selected here, and one for Internet Enabled. Changing this setting requires the lab to be restarted.](media/lab_settings.png)<!-- style = "max-width: 400px;"-->
 
@@ -772,8 +772,8 @@ If you have RStudio open, you can also go directly to the Install Tool by clicki
 
 ![The banner across the top of an Arcus Lab running RStudio. The first link in the top right corner is "Install a Package."](media/install_banner_rstudio.png)
 
-When you open the Install Tool, you'll see a dropdown menu for "Select install option". 
-If you want the most recent version of the package(s) you'll be installing (this is usually the case), select "R Packages".
+When you open the Install Tool, you'll see a dropdown menu for "Select install option." 
+If you want the most recent version of the package(s) you'll be installing (this is usually the case), select "R Packages."
 If you want to specify a particular version to install other than the most recent version (this is rare), select "R Package with Version" instead, and then supply the version number.
 
 ![The Arcus Install Tool, with "R Packages" selected from the install option drop down menu.](media/install_r_packages.png)
@@ -782,7 +782,7 @@ Write in the name of the package you want to install. The Install Tool will also
 
 ![The Arcus Install Tool, with "ggplot2" entered under package name. Install option is set to "R Packages" and library sub path is left blank.](media/install_r_package_name_1.png)
 
-If you have multiple packages you need to install, you can add them at the same time by clicking "Add package".
+If you have multiple packages you need to install, you can add them at the same time by clicking "Add package."
 
 ![The Arcus Install Tool, with "ggplot2" and "flextable" entered in the two visible package name fields. The button "Add Package" at the bottom of the package fields adds fields to list additional packages. The buttons at the bottom right of the tool are "Add Item" and "Submit."](media/install_r_package_name_2.png)
 
@@ -1114,7 +1114,7 @@ While many Arcus lab users will never need to use the Terminal (or Command Line,
 
 If you would like to learn more about using the Terminal/Command Line, check out the [New to Bash](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_bash.md) module for help getting started!
 
-When Internet Enabled Mode is "on", such files can be downloaded using a command line tool such as `wget`. However, the more secure way to download files to your Arcus lab is to use the Install Tool. Below is a screenshot of the Install Tool with the **Download** option selected. We've entered the URL of a reference file from the [National Cancer Institute Genomic Data Commons](https://gdc.cancer.gov/about-data/gdc-data-processing/gdc-reference-files) and renamed it to `Antibody_Description_Files_for_TCGA_RPPA_Data_(v36)`. 
+When Internet Enabled mode is "on," such files can be downloaded using a command line tool such as `wget`. However, the more secure way to download files to your Arcus lab is to use the Install Tool. Below is a screenshot of the Install Tool with the **Download** option selected. We've entered the URL of a reference file from the [National Cancer Institute Genomic Data Commons](https://gdc.cancer.gov/about-data/gdc-data-processing/gdc-reference-files) and renamed it to `Antibody_Description_Files_for_TCGA_RPPA_Data_(v36)`. 
 
 ![ ](media/install_ref_file_v2.png)
 
