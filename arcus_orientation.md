@@ -552,7 +552,7 @@ We'll go over the various panes that appear in your landing page in the next few
 ![`An Arcus Lab Settings pane, showing Internet Disabled`](media/lab_settings.png)<!-- style = "max-width: 400px; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 By default, your lab will start in [Internet Disabled mode](#security-feature-internet-disabled-mode). 
-Internet Disabled mode provides an extra layer of security to protect your data.
+Internet Disabled mode provides an extra layer of security to protect your data. We have built an "Install Tool" to allow you to still install new packages and libraries even while in Internet Disabled mode. 
 
 ![`An Arcus lab currently running, showing clock`](media/lab_clock.png)<!-- style = "max-width: 400px; margin-right: 2rem; margin-bottom: 2rem;"-->
 
@@ -698,7 +698,7 @@ The [training videos](#training-videos) walk through everything you need to get 
 
 ## Security Feature: Internet Disabled Mode
 
-While there are myriad benefits to taking a scripted approach to data analysis, it does also introduce some specific privacy and security risks. Thankfully, Arcus has taken these risks into consideration, and developed our [Internet Disabled mode](https://forum.arcus.chop.edu/t/about-the-arcus-lab-security-setting-for-disabling-internet-in-labs/741) feature. The feature provides peace of mind by allowing you to work on your code in an environment that is entirely disconnected from the internet, keeping your data and code safer. 
+While there are myriad benefits to taking a scripted approach to data analysis, it does also introduce some specific privacy and security risks. Arcus has taken these risks into consideration, and developed our [Internet Disabled mode](https://forum.arcus.chop.edu/t/about-the-arcus-lab-security-setting-for-disabling-internet-in-labs/741) feature for labs. The feature provides peace of mind by allowing you to work on your code in an environment that is entirely disconnected from the internet, keeping your data and code safer. 
 
 There are two primary kinds of problems that could occur: 
 
@@ -732,7 +732,7 @@ In those cases, users will either need to use the Install Tool or talk to their 
 
 Once you've opened your lab, on the top left-hand side of the screen is a "Lab Settings" box, which contains Security options for "Internet Disabled" and "Internet Enabled." You can click on the question mark symbol next to the word "Security," which provides condensed information about when to use each mode. When you turn your lab on, it will be booted in whichever mode has been selected. In the example of the screenshot below, turning the lab on would start it in Internet Disabled mode. 
 
-![The lab settings contains a security section with two radio buttons: one for Internet Disabled, which is selected here, and one for Internet Enabled. Changing this setting requires the lab to be restarted.](media/lab_settings.png)<!-- style = "max-width: 400px;"-->
+![The lab settings pane contains a security section with two radio buttons: one for Internet Disabled, which is selected here, and one for Internet Enabled. Changing this setting requires the lab to be restarted.](media/lab_settings.png)<!-- style = "max-width: 400px;"-->
 
 If you'd like to switch to a different mode, you can select the option you'd like to switch to. If your lab is already running when you do this, you'll receive a pop-up warning message which informs you that your lab will need to restart in order to apply the new settings. 
 
@@ -753,7 +753,7 @@ Here are some things you can **always** access from R, even with internet disabl
 - Opening external links from within RStudio, such as clicking a link for a vignette from within help documentation in R
 
 However, there are a few important R functions that require an internet connection to work (especially `install.packages()`), potentially posing a security risk for your data. 
-To provide peace of mind for researchers working in Arcus, we provide a secure method for you to install R packages and download other necessary files without having to enable internet. 
+To provide peace of mind for researchers working in Arcus, the Install Tool lets you install R packages and download other necessary files without having to enable internet. 
 
 And if you find you have something you need to do in R that requires an internet connection, you can always [change your lab's security settings](#switching-modes) to run that code and then return to Internet Disabled mode afterward. 
 
@@ -766,7 +766,7 @@ To give researchers peace of mind, Arcus provides a tool that allows you to inst
 
 You can reach the Install Tool from your lab dashboard, under Tools.
 
-![An Arcus Lab dashboard, showing the Arcus Lab Tools section with "New Install Tool" at the end of the list.](media/install_dashboard.png)
+![An Arcus Lab dashboard, showing the Arcus Lab Tools section with "Install Tool" at the end of the list.](media/install_dashboard.png)
 
 If you have RStudio open, you can also go directly to the Install Tool by clicking "Install a Package" in the banner at the top of your lab.
 
@@ -852,7 +852,7 @@ Many researchers use GitHub to archive and share code for their analyses, often 
 You can use repositories on CHOP's Enterprise GitHub from your Arcus Lab in Internet Disabled mode, but CHOP's Enterprise GitHub is insufficient for sharing code as part of a publication because it's visible only to people with CHOP credentials. 
 
 If you plan to use a repository on [www.github.com](https://github.com/) (public GitHub) to share the R code from your Arcus Lab, you will need to enable internet when it's time to push commits to the repository. 
-Remember that you do not need an internet connection to do most actions using Git, such as creating new commits or merging branches, so you can wait until it's time to push to [enable internet](#switching-modes), and then return to Internet Disabled mode again afterward. 
+Remember that you do not need an internet connection to do most actions using Git, such as creating new commits or merging branches, so you can wait until it's time to push to turn on [Internet Enabled mode](#switching-modes), and then return to Internet Disabled mode again afterward. 
 
 
 ### Using Python with Internet Disabled
@@ -867,9 +867,9 @@ Here are some things you can **always** access from Python/Jupyter, even in Inte
 - Repositories on CHOP's Enterprise GitHub (for example, using `clone`, `push`, and `pull`)
 
 However, there are a few important Python actions that require an internet connection to work (especially [installing new packages](#installing-and-updating-packages-in-python)), potentially posing a security risk for your data. 
-To provide peace of mind for researchers working in Arcus, we provide a secure method for you to install Python packages and download other necessary files without having to enable internet. 
+To provide peace of mind for researchers working in Arcus, we provide a secure method for you to install Python packages and download other necessary files without having to enable internet: the Install Tool. 
 
-And if you find you have something you need to do in Python that requires an internet connection, you can always [change your lab's security settings](#switching-modes) to run that code and then return to Internet Disabled mode afterward. 
+And if you find you have something you need to do in Python that requires an internet connection, you can always [change to Internet Enabled mode](#switching-modes) to run that code and then return to Internet Disabled mode afterward. 
 
 #### Installing and Updating Packages in Python
 
@@ -885,7 +885,7 @@ To learn more about the differences between Conda and Pip, read our Arcus Forum 
 
 You can reach the Install Tool from your lab dashboard, under Tools.
 
-![An Arcus Lab dashboard, showing the Arcus Lab Tools section with "New Install Tool" at the end of the list.](media/install_dashboard.png)
+![An Arcus Lab dashboard, showing the Arcus Lab Tools section with "Install Tool" at the end of the list.](media/install_dashboard.png)
 
 If you have Jupyter open, you can also go directly to the Install Tool by clicking "Install a Package" in the banner at the top of your lab.
 
@@ -1066,7 +1066,7 @@ If the repository you want to clone is private, you'll need to [enable internet]
 
 If you want to clone a publicly-visible repository hosted on github.com while in Internet Disabled mode, use the Install Tool, found in the Tools section on your Lab dashboard.
 
-![An Arcus Lab dashboard, showing the Arcus Lab Tools section with "New Install Tool" at the end of the list.](media/install_dashboard.png)
+![An Arcus Lab dashboard, showing the Arcus Lab Tools section with "Install Tool" at the end of the list.](media/install_dashboard.png)
 
 When you open the Install Tool, select "Git" from the install option drop down menu.
 
@@ -1104,7 +1104,7 @@ If you wish to share these files with the other users in your lab, you'll need t
 Remember that you still won't be able to push to or pull from a repository on public GitHub while in Internet Disabled mode. 
 The Install Tool can clone repositories only (not push and pull). 
 
-If you need to push or pull to a repository on public GitHub, you'll need to [enable internet](#switching-modes) while you do that and then return to Internet Disabled mode again afterward.
+If you need to push or pull to a repository on public GitHub, you'll need to switch to [Internet Enabled mode](#switching-modes) while you do that and then return to Internet Disabled mode again afterward.
 
 </div>
 
