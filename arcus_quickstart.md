@@ -81,3 +81,6 @@ You will need one of the following:
 
 If you do not have any of the above, Arcus is not a good fit for your project.
 
+### Hone your data request beforehand
+
+### Security, privacy, and the Arcus Terms of Use
