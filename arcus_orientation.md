@@ -746,7 +746,7 @@ In the following sections, we'll review more specific details about how to work 
 
 If you don't see radio buttons for Internet Disabled and Internet Enabled like the ones shown above, it's because you don't have permissions to change the mode of your lab.  We offer principal investigators the ability to extend this right only to some of their team.  If that's the case for you, you'll see a message that reads "The PI of this project has specified that internet access should be disabled for this lab. For any related questions, please contact the PI."  It will look like this:
 
-![](media/pi_restricted.png)<!-- style = "max-width: 300px;"-->
+![Lab Settings pane with message about PI restriction and links for help](media/pi_restricted.png)<!-- style = "max-width: 300px;"-->
 
 </div>
 
@@ -1283,7 +1283,9 @@ It's designed to save researchers time, improve reproducibility, and make it eas
 
 Your lab will come with the project template already in place, so all you have to do is set up your workflows to conform to the template.
 
-To get learn more, read [this Forum post about Arcus's Project Template](https://forum.arcus.chop.edu/t/the-arcus-project-template/255).  
+To get learn more, read [this Forum post about Arcus's Project Template](https://forum.arcus.chop.edu/t/the-arcus-project-template/255) or view the [ guide](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/data-contribution-2/data_contribution_2_data.md#1) which is linked in the dashboard of your lab:
+
+![Getting started documents with Arcus Project Template circled](media/project_template_link.png)
 
 In addition to the project template, there are a number of other Research Data Management best practices you can implement to save yourself time.
 
