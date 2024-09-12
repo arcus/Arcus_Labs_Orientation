@@ -605,7 +605,7 @@ The "Getting Started?" pane links to useful documentation, including this orient
 
 ![Arcus Education training videos](media/training_videos.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 800px; margin-right: 2rem; margin-bottom: 2rem;"-->
 
-Beneath the lab environment links, you will see a list of training videos available. These step through everything you need to get started in your lab. If you are new to Arcus, you will likely find most of your questions answered in these training videos.  We **urge** you to watch all of the videos.  This will take about an hour of your time but we think that it is time well spent.  Even if a topic doesn't seem applicable to you, please watch the associated video -- we aim to make them short and general.
+Beneath the lab environment links, you will see a list of training videos available. These step through everything you need to get started in your lab. If you are new to Arcus, you will likely find most of your questions answered in these training videos.  We **urge** you to watch all of the videos.  This will take about two hours of your time but we think that it is time well spent.  Even if a topic doesn't seem applicable to you, please watch the associated video -- we aim to make them short and general.
 
 <div style = "clear: both"></div>
 
@@ -740,6 +740,15 @@ If you'd like to switch to a different mode, you can select the option you'd lik
 ![Warning message which reads "You are about to enable the internet for your lab. Changing the setting to Internet Enabled puts your data at a greater security risk. You can reduce risks by keeping the internet disabled in your lab and using the Install Tool when installing packages. If you choose to proceed, this action will restart your lab with the new setting. All your data is stored and will be available upon restart. Would you like to proceed?"](media/internet_enabled_warning.png)<!-- style = "max-width: 400px;"-->
 
 In the following sections, we'll review more specific details about how to work with a variety of tools while using Internet Disabled mode. 
+
+<div class = "help">
+<b style="color: rgb(var(--color-highlight));">Troubleshooting help</b><br>
+
+If you don't see radio buttons for Internet Disabled and Internet Enabled like the ones shown above, it's because you don't have permissions to change the mode of your lab.  We offer principal investigators the ability to extend this right only to some of their team.  If that's the case for you, you'll see a message that reads "The PI of this project has specified that internet access should be disabled for this lab. For any related questions, please contact the PI."  It will look like this:
+
+![](media/pi_restricted.png)<!-- style = "max-width: 300px;"-->
+
+</div>
 
 ### Using R with Internet Disabled
 
