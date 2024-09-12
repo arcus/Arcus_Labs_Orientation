@@ -543,7 +543,7 @@ When you go to your lab's URL, you will be prompted to log in with your CHOP cre
 
 We'll go over the various panes that appear in your landing page in the next few sections.
 
-![An Arcus lab landing page](media/arcus_lab_screenshot.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
+![An Arcus lab landing page](media/arcus_lab_screenshot.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 800px;  margin-right: 2rem; margin-bottom: 2rem;"-->
 
 <div style = "clear:both;"></div>
 
