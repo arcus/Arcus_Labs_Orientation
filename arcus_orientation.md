@@ -51,7 +51,7 @@ script: https://cdn.jsdelivr.net/npm/mermaid@9.4.3/dist/mermaid.min.js
 
 <div class = "important">
 
-Hi!  This document is still under construction and testing.  We apologize in advance for any broken links or unclear language.  We invite your feedback.  Please add a [support ticket](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/249) or [email Arcus Education](mailto:paytonk@chop.edu) to let us know what we can improve or suggest additional topics.
+Hi!  This document is still under construction and testing.  We apologize in advance for any broken links or unclear language.  We invite your feedback.  Please add a [support ticket](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/249) or email the manager of Arcus Education at [paytonk@chop.edu](mailto:paytonk@chop.edu) to let us know what we can improve or suggest additional topics.
 
 Please note that **many of the links here will only work if you're on the CHOP network**.
 
@@ -93,7 +93,7 @@ Log in, Learn More!
 
 If you would like to learn more about what Arcus is and what we do, check out the **[Arcus website](https://arcus.chop.edu)** (available only on the CHOP network).  Even without logging in, you can see **announcements and support services** there that might be interesting to you, such as research data management consultations.
 
-Once you log in to https://arcus.chop.edu, (you'll need to have CITI training and sign our terms of use), you'll also have access to our **self-service tools**.  These allow you to do things like browse available genomic variants, visit CHOP's data catalog, and construct clinical cohorts that meet some basic inclusion and exclusion criteria.  These self-service tools are intended to provide you some level of autonomy and awareness about Arcus data -- data which is sourced from research and clinical origins.  These tools are not exhaustive and won't be enough to actually provide you with the raw data you need, but they will give you important information about how much data is available, how many patients or human subjects are included, and characteristics about the data that can help you decide if you want to request the data.  If you do request data, it will be provided to you in an Arcus Scientific Lab!
+Once you log in to [https://arcus.chop.edu](https://arcus.chop.edu), (you'll need to have CITI training and sign our terms of use), you'll also have access to our **self-service tools**.  These allow you to do things like browse available genomic variants, visit CHOP's data catalog, and construct clinical cohorts that meet some basic inclusion and exclusion criteria.  These self-service tools are intended to provide you some level of autonomy and awareness about Arcus data -- data which is sourced from research and clinical origins.  These tools are not exhaustive and won't be enough to actually provide you with the raw data you need, but they will give you important information about how much data is available, how many patients or human subjects are included, and characteristics about the data that can help you decide if you want to request the data.  If you do request data, it will be provided to you in an Arcus Scientific Lab!
 
 Potential Arcus Customers
 -----
@@ -125,7 +125,7 @@ Even if you're not requesting data from Arcus, but bringing your own, you might 
 
 Each lab will be configured to meet the needs of the research team, with appropriate memory, CPU, and storage capabilities, as well as any additional infrastructure required, such as GPUs.
 
-Arcus labs are governed by important rules that spell out what can be exported from the environment. The Arcus lab is in some ways a "clean room" -- everything needed, data and tools, is set up by Arcus staff for use by researchers.  Data loaded in the lab should be analyzed within the Arcus lab, and very little should enter or leave the Arcus lab once it is set up.  By default, labs start in [Internet Disabled mode](#security-feature:-internet-disabled-mode) to prevent the accidental exfiltration of data.  Lab users should not, in general, export or download individual level data from an Arcus lab.  Lab import or export of data or other assets is governed by [Arcus Terms of Use](https://arcus.chop.edu/terms-of-use) and our privacy controls.  You can read more in our [Arcus Data Access Standard Operating Procedure](https://chop.policymedical.net/policymed/anonymous/docViewer?stoken=14de2fa8-d9f5-4188-983b-29545b20809f&dtoken=a8f05e20-ab72-4bf2-a402-60e07a2ca7da) and [Arcus Data Use Standard Operating Procedure](https://chop.policymedical.net/policymed/anonymous/docViewer?stoken=14de2fa8-d9f5-4188-983b-29545b20809f&dtoken=243b8188-914e-4ab1-b445-97083c60a0d5).
+Arcus labs are governed by important rules that spell out what can be exported from the environment. The Arcus lab is in some ways a "clean room" -- everything needed, data and tools, is set up by Arcus staff for use by researchers.  Data loaded in the lab should be analyzed within the Arcus lab, and very little should enter or leave the Arcus lab once it is set up.  By default, labs start in [Internet Disabled mode](#security-feature%3A-internet-disabled-mode) to prevent the accidental exfiltration of data.  Lab users should not, in general, export or download individual level data from an Arcus lab.  Lab import or export of data or other assets is governed by [Arcus Terms of Use](https://arcus.chop.edu/terms-of-use) and our privacy controls.  You can read more in our [Arcus Data Access Standard Operating Procedure](https://chop.policymedical.net/policymed/anonymous/docViewer?stoken=14de2fa8-d9f5-4188-983b-29545b20809f&dtoken=a8f05e20-ab72-4bf2-a402-60e07a2ca7da) and [Arcus Data Use Standard Operating Procedure](https://chop.policymedical.net/policymed/anonymous/docViewer?stoken=14de2fa8-d9f5-4188-983b-29545b20809f&dtoken=243b8188-914e-4ab1-b445-97083c60a0d5).
 
 By signing the [Arcus Terms of Use](https://arcus.chop.edu/terms-of-use), you agree to follow Arcus policies related to the export of data.  For both identified and de-identified research, it is possible to download and export aggregate descriptive statistics, data visualizations, tables that demonstrate group differences, the results of statistical comparisons, and other de-identified, whole-dataset level analysis. This may require the assistance of your Arcus project owner, depending on what you would like to export.
 
@@ -306,7 +306,7 @@ To use Arcus (whether Labs or other Arcus tools such as Cohort Discovery), you m
   - Administration Supporting Research Course
 
 * If you have completed [CITI trainings](https://about.citiprogram.org/) at an institution other than CHOP (or the University of Pennsylvania, for Penn-based faculty), you must affiliate with CHOP and complete any additional required modules in order to access Arcus.
-  - If you don’t have the appropriate CITI training completed, visit the [ATOP Human Subjects Protections page](https://intranet.research.chop.edu/display/deptatop/Human+Subjects+Protection+Training?preview=%2F87758768%2F87761316%2FCITI+Basic+Course+Instructions+2018.pdf) on the Research Intranet for more information.
+  - If you don’t have the appropriate CITI training completed, visit the [Office of Research Compliance page on Human Research Protection page](https://www.research.chop.edu/services/human-research-protection-program-training) for more information.
 
 In addition to [CITI training](https://about.citiprogram.org/), you must also comply with the following requirements:
 
@@ -437,7 +437,7 @@ We have instructions and examples available for [writing your project aims](http
 
 </div>
 
-There will also be a **data contribution assessment** to discuss possible data contributions to the [Arcus Archives](https://education.arcus.chop.edu/arcus-data-catalog/) at the end of the project; researchers using Arcus are expected to contribute their data when appropriate.
+There will also be a **data contribution assessment** to discuss possible data contributions to the [Arcus Archives](https://chop.alationcloud.com/data/29/) at the end of the project; researchers using Arcus are expected to contribute their data when appropriate.
 
 The project assessment will also include a **privacy review** to identify and mitigate any potential privacy risks ([read more about the privacy review here](https://forum.arcus.chop.edu/t/what-is-a-privacy-review-and-what-does-the-process-entail/190)).
 
