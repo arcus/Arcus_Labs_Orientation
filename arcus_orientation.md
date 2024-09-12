@@ -599,11 +599,11 @@ You won't see any data files in your lab when you log in; instead, you will be a
 
 This is a very important section for new Arcus users.  The Education Resources pane has important links to help you get started as well as useful training videos.
 
-![Arcus Education resources](media/education_resources.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
+![Arcus Education resources](media/education_resources.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 600px; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 The "Getting Started?" pane links to useful documentation, including this orientation document. The "Need Extra Support?" pane contains links to reach out to helpful people. If you are an R user, the [R User Group](https://bit.ly/chopRusers) could be a great community to get coding support. The [Arcus Forum](https://forum.arcus.chop.edu) is a place to interact with Arcus staff and other users, or see if someone has already answered a question you have. You can also [book at time to talk directly to members of the Arcus Education team](https://outlook.office365.com/owa/calendar/BKG-StandardArcusEducationOfficeHours@chop.edu/bookings/) about anything Arcus or coding related.
 
-![Arcus Education training videos](media/training_videos.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
+![Arcus Education training videos](media/training_videos.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 800px; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 Beneath the lab environment links, you will see a list of training videos available. These step through everything you need to get started in your lab. If you are new to Arcus, you will likely find most of your questions answered in these training videos.  We **urge** you to watch all of the videos.  This will take about an hour of your time but we think that it is time well spent.  Even if a topic doesn't seem applicable to you, please watch the associated video -- we aim to make them short and general.
 
@@ -611,13 +611,14 @@ Beneath the lab environment links, you will see a list of training videos availa
 
 Topics currently covered in the training videos include:
 
-- Logging in
-- Data dictionaries and intro to SQLPad
-- Obtaining data in SQLPad
-- Saving queries in SQLPad
-- Ingesting and analyzing data in Jupyter
-- Ingesting and analyzing data in RStudio
-- Working with files using a file browser
+- Internet Disabled Mode: Why it's Important
+- Install Tool: Safer Software Installation
+- Introduction to SQLPad
+- Introduction to Python and Jupyter
+- Introduction to R and RStudio
+- Working With Files Using a File Browser
+- Adding Tables to SQL From R 
+- Adding Tables to SQL From Python
 
 ### Exporting 
 
@@ -723,7 +724,7 @@ Since its not always easy to tell when legitimate packages may be accessing the 
 <div class = "important">
 <b style="color: rgb(var(--color-highlight));">Important note</b><br>
 
-Note that the PI is able to completely restrict Internet access for some users. 
+Note that the principal investigator (PI) is able to completely restrict Internet access for some users. 
 In those cases, users will either need to use the Install Tool or talk to their PI.
 
 </div>
