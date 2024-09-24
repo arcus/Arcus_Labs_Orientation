@@ -25,27 +25,17 @@ script: https://kit.fontawesome.com/83b2343bd4.js
 script: https://cdn.jsdelivr.net/npm/mermaid@9.4.3/dist/mermaid.min.js
 -->
 
-## Arcus Lab Orientation
+# Arcus Computational Labs
 
 <div class = "overview">
 
 ## Overview
 
-@comment
-
-### Is this module right for me?
-
 @long_description
 
-### Details
+## Quick Start Guide
 
-**Estimated time to completion**: @estimated_time
-
-**Pre-requisites**: It's helpful to have reviewed the Arcus website at https://arcus.chop.edu (available only on the CHOP network), to understand Arcus overall goals.
-
-**Learning Objectives**:
-
-@learning_objectives
+Just want to get started using your Arcus Lab? Go to [our quick start guide]().
 
 </div>
 
