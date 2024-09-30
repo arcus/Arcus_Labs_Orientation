@@ -6,7 +6,7 @@ language: en
 narrator: US English Female
 title: Arcus Lab Orientation
 comment:  Learn what an Arcus Lab is and how to work with it.
-long_description: In the Research Institute of the Children's Hospital of Philadelphia, Arcus Computational Labs (or Arcus Labs for short) are computer systems that researchers on an Arcus Scientific Project can access in a web browser via a URL. This document describes what an Arcus lab is, what it does, and how researchers can work with an Arcus lab.  It also contains links to useful training materials in specific skills like R, Python, and SQL.
+long_description: In the Research Institute of the Children's Hospital of Philadelphia, Arcus Computational Labs (or Arcus Labs for short) are computer systems that researchers on an Arcus Scientific Project can access in a web browser via a URL. This document describes in detail what an Arcus lab is, what it does, and how researchers can work with an Arcus lab.  It also contains links to useful training materials in specific skills like R, Python, and SQL.
 estimated_time: 1h
 @learning_objectives 
 
@@ -33,15 +33,15 @@ script: https://cdn.jsdelivr.net/npm/mermaid@9.4.3/dist/mermaid.min.js
 
 @long_description
 
-## Quick Start Guide
+### Quick Start Guide
 
-Just want to get started using your Arcus Lab? Go to [our quick start guide]().
+Just want to jump into how to get an Arcus Lab, or using one you already have? Go to [our quick start guide](arcus_quickstart.md). 
 
 </div>
 
 <div class = "important">
 
-Hi!  This document is still under construction and testing.  We apologize in advance for any broken links or unclear language.  We invite your feedback.  Please add a [support ticket](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/249) or email the manager of Arcus Education at [paytonk@chop.edu](mailto:paytonk@chop.edu) to let us know what we can improve or suggest additional topics.
+Hi! This document is still under construction and testing. We apologize in advance for any broken links or unclear language. We invite your feedback. Please add a [support ticket](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/249) or email the manager of Arcus Education at [paytonk@chop.edu](mailto:paytonk@chop.edu) to let us know what we can improve or suggest additional topics.
 
 Please note that **many of the links here will only work if you're on the CHOP network**.
 
