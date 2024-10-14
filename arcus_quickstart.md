@@ -26,26 +26,13 @@ When you [request an Arcus Lab](https://support.arcus.chop.edu/servicedesk/custo
 This process takes time and coordination across multiple groups within Arcus. 
 Here's what you can do to make the process as smooth as possible: 
 
-<div class = "version-update">
-<b style="color: rgb(var(--color-highlight));">Check first</b><br>
+<br>
 
-[Is your proposed study a good fit for Arcus?](#is-your-proposed-study-a-good-fit-for-arcus)
+<i class="fa-solid fa-list-check fa-lg" style = "color: rgb(var(--color-highlight));"></i> **Check first:** [Is your proposed study a good fit for Arcus?](#is-your-proposed-study-a-good-fit-for-arcus)
 
-</div>
+<i class="fa-solid fa-filter fa-lg" style = "color: rgb(var(--color-highlight));"></i> **Save time:** [Hone your data request beforehand](#hone-your-data-request-beforehand)
 
-<div class = "history">
-<b style="color: rgb(var(--color-highlight));">Save time</b><br>
-
-[Hone your data request beforehand](#hone-your-data-request-beforehand)
-
-</div>
-
-<div class = "learn-more">
-<b style="color: rgb(var(--color-highlight));">Know the rules</b><br>
-
-[Security, privacy, and the Arcus Terms of Use](#security-privacy-and-the-arcus-terms-of-use)
-
-</div>
+<i class="fa-solid fa-book-open fa-lg" style = "color: rgb(var(--color-highlight));"></i> **Know the rules:** [Security, privacy, and the Arcus Terms of Use](#security-privacy-and-the-arcus-terms-of-use)
 
 ### Is your proposed study a good fit for Arcus?
 
