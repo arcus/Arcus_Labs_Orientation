@@ -35,7 +35,7 @@ script: https://cdn.jsdelivr.net/npm/mermaid@9.4.3/dist/mermaid.min.js
 
 ### Quick Start Guide
 
-Just want to jump into how to get an Arcus Lab, or using one you already have? Go to [our quick start guide](arcus_quickstart.md). 
+Just want to jump into how to get an Arcus Lab, or using one you already have? Go to [our quick start guide](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_quickstart.md#1). 
 
 </div>
 
