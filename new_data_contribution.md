@@ -120,7 +120,7 @@ As mentioned, contributing research data is prerequisite to working with that da
 
 **Open Science initiatives**
 
-Broadly speaking, Open Science Initiatives promote making publicly funded research data more widely available and collecting and organizing these data in a way that makes them reusable. For example, as of 2023, all NIH funded studies regardless of size must develop a [data management and sharing plan](https://www.research.chop.edu/sites/default/files/2022-11/DBHi_Converting_Resource_DMSP.pdf) which stipulates data is ultimately deposited in a searchable data repository. Archiving your data in Arcus ensures that your data is in compliance with this requirement.
+Broadly speaking, Open Science Initiatives promote making publicly funded research data more widely available and collecting and organizing these data in a way that makes them reusable. For example, as of 2023, all NIH funded studies regardless of size must develop a [data management and sharing plan](https://www.research.chop.edu/sites/default/files/2022-11/DBHi_Converting_Resource_DMSP.pdf) which stipulates data is ultimately deposited in a searchable data repository. Archiving your data in Arcus ensures that your data is in compliance with this requirement.If requested, Arcus can make deidentified datasets publicly downloadable through the [CHOP Dataverse](https://dataverse.harvard.edu/dataverse/chop).
 
 ### Grant Requirements
 
@@ -214,6 +214,19 @@ For more information about requesting and using an Arcus Lab, please see the [Ar
 
 </div>
 
+### CHOP Dataverse
+All the options above only share data within the CHOP enterprise, with access only available outside CHOP through NTP status. To meet the growing need for CHOP researchers to share data outside the enterprise, Arcus has partnered with Harvard Dataverse to create a Public Access Repository. By using Harvard Dataverse, researchers can fulfill grant and publication requirements for public data sharing, enhance the visibility of their work, promote collaboration, and contribute to a repository that supports data reproducibility and reuse. Harvard Dataverse, part of the NIH GREI initiative, is recognized by the NIH as a suitable generalist repository for biomedical data. 
+
+Sharing data on the CHOP Dataverse is voluntary, and is only appropriate for deidentified, non-omics data.
+
+<div class = "learn-more">
+<b style="color: rgb(var(--color-highlight));">Learning connection</b><br>
+
+For more information about Dataverse, see the [Harvard Dataverse information page](https://support.dataverse.harvard.edu).
+
+Follow this link to view the [CHOP Dataverse](https://dataverse.harvard.edu/dataverse/chop)
+</div>
+
 ## Pre-Data Contribution 
 
 ![Graphic of a server with a plus sign](media/data_contribution_server.png)<!-- style = "max-width: 150px;" -->
@@ -248,7 +261,7 @@ In addition, data and files that provide valuable context and support reusabilit
 
 ### Privacy Review  
 
-Before any data is archived in Arcus, it is thoroughly reviewed by an Arcus Privacy Analyst to identify potential privacy and regulatory issues. The Privacy Analyst will review the IRB protocol, all consent agreements and data, to determine if it can be shared, and any restrictions on reuse. If the IRB needs to be amended to allow or clarify data reuse, the Privacy Analyst will consult on completing the amendment, including an extensive set of templated language that expedites this process. Arcus can accept a full range of Data Contributions, from those that are completely de-identified to those that are fully identified and including ones that must remain coded. For coded data sets, Arcus offers honest broker services so that data retains its linkages without violating the privacy concerns of patients and researchers.
+Before any data is archived in Arcus, it is thoroughly reviewed by an Arcus Privacy Analyst to identify potential privacy and regulatory issues. The Privacy Analyst will review the IRB protocol, all consent agreements and data, to determine if it can be shared, how publicly it can be shared, and any restrictions on reuse. If the IRB needs to be amended to allow or clarify data reuse, the Privacy Analyst will consult on completing the amendment, including an extensive set of templated language that expedites this process. Arcus can accept a full range of Data Contributions, from those that are completely de-identified to those that are fully identified and including ones that must remain coded. For coded data sets, Arcus offers honest broker services so that data retains its linkages without violating the privacy concerns of patients and researchers. If sharing publicly through CHOP Dataverse, we will need either a deidentified dataset or a listing of all possible identifiers in the datssets, so they can be removed before sharing.  
 
 Based on the privacy review, a Data Contribution Agreement will be created that will be signed by the Principal Investigator. The Data Contribution Agreement is an agreement between the Data Contributor and Arcus that outlines a Contributor’s role in contributing archival data to Arcus and allowing for the sharing and use of such archival data.
 
