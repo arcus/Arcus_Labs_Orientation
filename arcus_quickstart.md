@@ -33,9 +33,13 @@ When you [request an Arcus Lab](https://support.arcus.chop.edu/servicedesk/custo
 This process takes time and coordination across multiple groups within Arcus. 
 Here's what you can do to make the process as smooth as possible: 
 
-- Check first: Is Arcus a good fit for your proposed study? 
-- Save time: Hone your data request beforehand
-- Know the rules: Security, privacy, and the [Arcus Terms of Use](https://arcus.chop.edu/terms-of-use).
+<div class = "version-update">
+
+- Check first: [Is Arcus a good fit for your proposed study?](#is-arcus-a-good-fit-for-your-proposed-study%3F) 
+- Save time: [Hone your data request beforehand](#hone-your-data-request-beforehand)
+- Know the rules: [Security, privacy, and the Arcus Terms of Use](#security%2C-privacy%2C-and-the-arcus-terms-of-use)
+
+</div>
 
 ### Is Arcus a good fit for your proposed study?
 
