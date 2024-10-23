@@ -8,8 +8,8 @@ title: Arcus Lab Orientation
 comment:  Learn what an Arcus Lab is and how to work with it.
 long_description: In the Research Institute of the Children's Hospital of Philadelphia, Arcus Computational Labs (or Arcus Labs for short) are computer systems that researchers on an Arcus Scientific Project can access in a web browser via a URL. This document describes what an Arcus lab is, what it does, and how researchers can work with an Arcus lab.  It also contains links to useful training materials in specific skills like R, Python, and SQL.
 estimated_time: 1h
-@learning_objectives 
 
+@learning_objectives 
 After completion of this training module, learners will be able to:
 
 * Explain what Arcus is and describe a bit about what Arcus offers
