@@ -41,7 +41,7 @@ Just want to jump into how to get an Arcus Lab, or using one you already have? G
 
 <div class = "important">
 
-Hi! This document is still under construction and testing. We apologize in advance for any broken links or unclear language. We invite your feedback. Please add a [support ticket](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/249) or email the manager of Arcus Education at [paytonk@chop.edu](mailto:paytonk@chop.edu) to let us know what we can improve or suggest additional topics.
+Hi! This document is still under construction and testing. We apologize in advance for any broken links or unclear language. We invite your feedback. Please add a [support ticket](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/249) or [email Arcus Education](mailto:arcus-education@chop.edu) to let us know what we can improve or suggest additional topics.
 
 Please note that **many of the links here will only work if you're on the CHOP network**.
 

@@ -89,7 +89,7 @@ You will need at least one of the following:
 
 - Someone on your team who is ready to do the data cleaning and analysis work using the [tools in an Arcus Lab](https://forum.arcus.chop.edu/t/what-applications-are-available-in-arcus-labs/781)
 - Someone on your team with the time and motivation to learn to use Arcus tools, with the support of [Arcus Education](https://arcus.chop.edu/i-want-to/arcus-education)
-- Funding for data cleaning and analysis support, such as from the [Clinical Reporting Unit (CRU)](https://www.research.chop.edu/clinical-reporting-unit), the [Data Science and Biostatistics Unit (DSBU)](https://www.research.chop.edu/data-science-and-biostatistics-unit), or the [Translational Research Informatics Group (TRiG)](https://www.research.chop.edu/dbhi-translational-informatics) (collectively, these groups are also known as the Collaborative Research Units, or CoRU).
+- Funding for data cleaning and analysis support, such as from the [Clinical Reporting Unit (CRU)](https://www.research.chop.edu/clinical-reporting-unit), the [Data Science and Biostatistics Unit (DSBU)](https://www.research.chop.edu/data-science-and-biostatistics-unit), or the [Translational Research Informatics Group (TRiG)](https://www.research.chop.edu/dbhi-translational-informatics) (collectively, these groups are also known as the Collaborative Research Units, or CoRU)
 
 If you do not have any of the above, Arcus may not be the best fit for your project.
 
