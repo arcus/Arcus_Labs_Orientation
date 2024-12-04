@@ -27,15 +27,15 @@ Before working through this module, we would recommend being familiar with the [
 
 Raw sequencing data typically have two components. First, there’s the sequence itself, or more accurately, many small sequence reads. This is typically formatted as FASTA:
 
-![""](media/fasta_screenshot.png "Figure 1. A few lines of a FASTA file, which contains raw nucleotide sequences as a string or set of strings, one letter per base.")
+![ ](media/fasta_screenshot.png "Figure 1. A few lines of a FASTA file, which contains raw nucleotide sequences as a string or set of strings, one letter per base.")
 
 The second element is quality information. For instance, for every base that the sequencer calls—for every A, T, C, or G in a read—the machine cannot claim to be 100% accurate, and instead measures how confident it is that it has called that base correctly. These base quality scores are historically stored in a QUAL file:
 
-![""](media/fasta_qual_screenshot.png "Figure 2. A few lines of a QUAL file, which lists base quality (BQ) scores in a sequence for each base in a sequencing read. Reads are demarcated with a header line beginning with “>”.")
+![ ](media/fasta_qual_screenshot.png "Figure 2. A few lines of a QUAL file, which lists base quality (BQ) scores in a sequence for each base in a sequencing read. Reads are demarcated with a header line beginning with “>”.")
 
 Usually when handling large sequencing data, both FASTA and QUAL files are merged so that each read and its quality scores are directly associated. This is called a FASTQ file. Sequencing usually includes paired-end reads, where a given fragment of DNA is typically read from both ends instead of just one. Accordingly, there are two reads per fragment in different directions. All reads in one direction are conventionally stored in one FASTQ, and those in the other direction go in a second FASTQ. For example:
 
-![""](media/fastq_screenshot.png "Figure 3. A portion of a FASTQ file. Each sequencing read is represented in four lines: (1) a header beginning with “@”, (2) the base calls for that read, (3) a “+” character which is just a separator, and (4) the base quality scores in an encoded format.")
+![ ](media/fastq_screenshot.png "Figure 3. A portion of a FASTQ file. Each sequencing read is represented in four lines: (1) a header beginning with “@”, (2) the base calls for that read, (3) a “+” character which is just a separator, and (4) the base quality scores in an encoded format.")
 
 ### Alignment maps: SAM, BAM, and CRAM
 
@@ -43,23 +43,23 @@ Having the sequence read along with quality doesn’t help us to infer much from
 
 [SAM](https://samtools.github.io/hts-specs/SAMv1.pdf) files are human-readable; that is, if you know what each part of the file means, you can read it line-by-line. A SAM file looks like this:
 
-![""](media/sam_screenshot.png "Figure 4. A portion of a SAM file, which contains a header followed by lists of mapped reads. Each row includes identifying information, the read sequence and base quality scores, and details about mapping and alignment.")
+![ ](media/sam_screenshot.png "Figure 4. A portion of a SAM file, which contains a header followed by lists of mapped reads. Each row includes identifying information, the read sequence and base quality scores, and details about mapping and alignment.")
 
 In contrast, BAM and CRAM files are in binary format. They are legible to the computer but not to us directly—if you tried to open or view a BAM, this is what you’d see:
 
-![""](media/bam_binary_screenshot.png "Figure 5. A few lines of a raw BAM file, which is in binary format.")
+![ ](media/bam_binary_screenshot.png "Figure 5. A few lines of a raw BAM file, which is in binary format.")
 
 But this really does contain the same information. Using some software (which we will discuss later), the BAM or CRAM file can be read or inspected if necessary:
 
-![""](media/bam_screenshot.png "Figure 6. Part of a BAM file, viewed using the Samtools software, which is identical in format and content to a SAM file.")
+![ ](media/bam_screenshot.png "Figure 6. Part of a BAM file, viewed using the Samtools software, which is identical in format and content to a SAM file.")
 
 ### VCFs
 
 Sometimes you might need to look specifically at variant calls. Maybe you need to see the differences between your sample sequence and the reference genome. Alternatively, you might just need a list of known, common variants in the population to use as a reference. For these applications, variants are almost always in [Variant Call Format](https://samtools.github.io/hts-specs/VCFv4.2.pdf) (VCF), a very specific tab- delimited text file. VCFs have a header giving specifications for the contents of the file, and then have a table-like structure where variants are the rows and individuals are the columns, looking something like this:
 
-![""](media/vcf_header_screenshot.png "Figure 7. A VCF header, including information, definitions, and additional details for the content of every field in the VCF body.")
+![ ](media/vcf_header_screenshot.png "Figure 7. A VCF header, including information, definitions, and additional details for the content of every field in the VCF body.")
 
-![""](media/vcf_screenshot.png "Figure 8. A few lines of the contents of a VCF file. Variants are specified by chromosome, position, reference nucleotide, and alternate allele. For each variant, variant quality, filter details, and numerous additional metrics are also provided in the QUAL, FILTER, INFO, and sample columns.")
+![ ](media/vcf_screenshot.png "Figure 8. A few lines of the contents of a VCF file. Variants are specified by chromosome, position, reference nucleotide, and alternate allele. For each variant, variant quality, filter details, and numerous additional metrics are also provided in the QUAL, FILTER, INFO, and sample columns.")
 
 For each variant, the position in the genome, the reference, and the alternate (or mutation) are noted along with additional filtration, quality, format, genotype, and related information. When we encounter VCFs later, we will have a clearer idea of what the most relevant information is.
 
@@ -71,7 +71,7 @@ A few other files we will encounter along the way are index files with suffixes 
 
 Lastly, a BED file is a tab-delimited file that is used to specify regions of the genome. This has a variety of applications, including telling us what parts of the genome are targeted by the sequencer as exonic regions, and therefore where the “exome” is within the genome. For example:
 
-![""](media/bed_screenshot.png "Figure 9. Portion of a BED file, which specifies regions of the genome by chromosome, start position, and end position.")
+![ ](media/bed_screenshot.png "Figure 9. Portion of a BED file, which specifies regions of the genome by chromosome, start position, and end position.")
 
 
 ### Tools
@@ -318,9 +318,9 @@ java -Xmx8000m -jar /usr/local/bin/picard.jar MergeVcfs R=/mnt/arcus/data/refere
 
 The two final processing steps for the VCF are decomposition and normalization. Decomposition turns the file from one position per line to one variant per line. Here are two VCFs showing identical variants:
 
-![""](media/vcf_ma_screenshot.png "Figure 10. An example of a multiallelic variant, i.e., a variant in which two different bases are in the “ALT” column of the VCF.")
+![ ](media/vcf_ma_screenshot.png "Figure 10. An example of a multiallelic variant, i.e., a variant in which two different bases are in the “ALT” column of the VCF.")
 
-![""](media/vcf_decomp_screenshot.png "Figure 11. An example of a decomposed multiallelic variant, i.e., a pair of variants with the same position and reference, but different alternate bases, which are on distinct lines of the VCF.")
+![ ](media/vcf_decomp_screenshot.png "Figure 11. An example of a decomposed multiallelic variant, i.e., a pair of variants with the same position and reference, but different alternate bases, which are on distinct lines of the VCF.")
 
 Note how in the first image, multiple variants are called at the same position and are in the same row. This is more difficult to work with when analyzing variants in an automated fashion, especially compared to the second (decomposed) file, where each variant gets its own row. Accordingly, we choose to decompose our VCF:
 
@@ -332,7 +332,7 @@ vt decompose -s genotyped_FAM1_filtered.vcf -o genotyped_FAM1_filtered_decompose
 
 Left-normalization helps ensure consistent notation of indel variants. Here’s a nice figure from Michigan’s [Genome Analysis Wiki](https://genome.sph.umich.edu/wiki/Variant_Normalization/) showing the same variant written five different ways:
 
-![""](media/normalization_screenshot.png "Figure 12. Graphic showing the effects of normalization. Since the reference and alternate alleles are just strings of bases, a deletion can be written variably depending on how the alternate sequence is aligned and notated. Normalization ensures such variants are notated with consistent left-alignment and parsimony.")
+![ ](media/normalization_screenshot.png "Figure 12. Graphic showing the effects of normalization. Since the reference and alternate alleles are just strings of bases, a deletion can be written variably depending on how the alternate sequence is aligned and notated. Normalization ensures such variants are notated with consistent left-alignment and parsimony.")
 
 However, there is only one simplest, standardized representation—represented in purple in the figure above. Normalization automatically takes care of this for us:
 
@@ -393,13 +393,13 @@ Secondly, visualizing the putative variant is immensely useful. The Integrative 
 
 First, ensure you have the correct reference genome, hg19, loaded:
 
-![""](media/igv_options_screenshot.png "Figure 13. Genome dropdown menu from the IGV web app. Users should select ‘Human (GRCh37/hg19)’ before uploading the aligned file.")
+![ ](media/igv_options_screenshot.png "Figure 13. Genome dropdown menu from the IGV web app. Users should select ‘Human (GRCh37/hg19)’ before uploading the aligned file.")
 
 Next, load a local file using the “Tracks” menu, being sure to select both the sorted BAM and its index simultaneously. You can then specify the genomic position of the variant you want to view using the search box. Automatically, reads will be displayed as a “track” in the window. This will allow us to visually confirm that the variant is believable. For example, here’s a high- and low-quality variant visualized in IGV:
 
-![""](media/igv_clean_var_screenshot.png "Figure 14. An example of a clean variant call in IGV. There is high read depth and coverage at this and surrounding positions. The variant is detected in reads in either direction, as well as both in the middle of some reads and at the end of others. Roughly 50% of reads capture the variant. The variant is surrounded by very little additional deviation from the reference, suggesting it is not in a sequencing error-prone region.")
+![ ](media/igv_clean_var_screenshot.png "Figure 14. An example of a clean variant call in IGV. There is high read depth and coverage at this and surrounding positions. The variant is detected in reads in either direction, as well as both in the middle of some reads and at the end of others. Roughly 50% of reads capture the variant. The variant is surrounded by very little additional deviation from the reference, suggesting it is not in a sequencing error-prone region.")
 
-![""](media/igv_messy_var_screenshot.png "Figure 15. An example of a messy variant call in IGV. There is low read depth and coverage at this and surrounding positions. The variant is detected in reads in either direction, as well as both in the middle of some reads and at the end of others. However, fewer than 50% of reads capture the variant. The variant is surrounded by frequent deviation from the reference, suggesting it is in a sequencing error-prone region.")
+![ ](media/igv_messy_var_screenshot.png "Figure 15. An example of a messy variant call in IGV. There is low read depth and coverage at this and surrounding positions. The variant is detected in reads in either direction, as well as both in the middle of some reads and at the end of others. However, fewer than 50% of reads capture the variant. The variant is surrounded by frequent deviation from the reference, suggesting it is in a sequencing error-prone region.")
 
 Notice how compared to the high-quality variant, the “bad” variant is:
 
