@@ -117,9 +117,9 @@ You'll find short, practical video tutorials on your lab's dashboard, in the **E
 Be sure to check them out!
 For example, the three videos below (only available if you're on CHOP's network) answer many of the most common questions we see from new Arcus researchers.
 
-?![Introduction to SQLPad](https://assets.arcus.chop.edu/arcus_education_assets/training_lab_videos/sqlpad_captioned.mp4)
-?![Introduction to Python and Jupyter](https://assets.arcus.chop.edu/arcus_education_assets/training_lab_videos/python_jupyter_captioned.mp4)
-?![Introduction to R and RStudio](https://assets.arcus.chop.edu/arcus_education_assets/training_lab_videos/r_rstudio_captioned.mp4)
+!?[Introduction to SQLPad](https://assets.arcus.chop.edu/arcus_education_assets/training_lab_videos/sqlpad_captioned.mp4)
+!?[Introduction to Python and Jupyter](https://assets.arcus.chop.edu/arcus_education_assets/training_lab_videos/python_jupyter_captioned.mp4)
+!?[Introduction to R and RStudio](https://assets.arcus.chop.edu/arcus_education_assets/training_lab_videos/r_rstudio_captioned.mp4)
 
 For a more general overview, we suggest you check out our "New to" documents:
 
