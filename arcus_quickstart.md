@@ -103,15 +103,56 @@ Additionally, before you can see any data or get access to an Arcus lab, you'll 
 
 
 ## Using your Arcus Lab
-So once your project has been approved and you have an Arcus lab, what then? We also have many resources to help you get the most out of your Arcus lab. 
 
-- [Learn to use the tools in your lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#6) by checking out our educational modules.
+So once your project has been approved and you have an Arcus lab, what then? 
+We also have many resources to help you get the most out of your Arcus lab. 
 
-- [Schedule office hours, an educational consultation, or a lab walkthrough with Arcus Data Education](https://outlook.office365.com/book/BKG-StandardArcusEducationOfficeHours@chop.edu/), where you can work with a Data Educator about your specific questions.
+### Learn to use the tools in your lab
 
-- [Attend an Arcus On-Ramp workshop](https://arcus.chop.edu/education/webinar-signup#), where you can see an Arcus lab in action using real EHR data. 
+Your Arcus Lab is a flexible and powerful platform.
+For a list of available tools and options, see [Arcus Lab Options Overview](https://forum.arcus.chop.edu/t/arcus-lab-options-overview/840).
+Arcus Education provides support to researchers learning to use the tools in their Arcus Lab. 
 
-- Connect with Arcus staff and other Arcus users in our [Arcus Users Group](https://teams.microsoft.com/l/team/19%3AUa9xxH-Wc6tcXYT0Ju3M-6M_f0yk4yR2qcAbIPF16hM1%40thread.tacv2/conversations?groupId=00909f4a-1401-46fd-9f0a-531498e1aef6&tenantId=a6112416-07b0-41a5-9bb1-d146b575c975).
+You'll find short, practical video tutorials on your lab's dashboard, in the **Education Resources** section, to help you get started. 
+Be sure to check them out!
+For example, the three videos below (only available if you're on CHOP's network) answer many of the most common questions we see from new Arcus researchers.
+
+?![Introduction to SQLPad](https://assets.arcus.chop.edu/arcus_education_assets/training_lab_videos/sqlpad_captioned.mp4)
+?![Introduction to Python and Jupyter](https://assets.arcus.chop.edu/arcus_education_assets/training_lab_videos/python_jupyter_captioned.mp4)
+?![Introduction to R and RStudio](https://assets.arcus.chop.edu/arcus_education_assets/training_lab_videos/r_rstudio_captioned.mp4)
+
+For a more general overview, we suggest you check out our "New to" documents:
+
+- **[New to data science](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_data_science.md#1)** is a document that introduces helpful tools and tips for working on data science projects that will be useful to scientists coming from other types of research. Even if you have experience in data science already, you may find it worthwhile to skim the subtopics in that section so you know what's available should you want to come back to it to reference later.
+- **[New to version control](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_version_control.md#1)** is a document that will help you get started with git, a powerful program for helping you keep track of your research documents over time. If you don't currently use git or another form of version control, we strongly recommend you work through that section. Version control is an extremely valuable tool for reproducible research, and although there is a bit of a learning curve, it really pays off.
+- **[New to GitHub](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_version_control.md#1)** covers the difference between Git, the popular version control system, and GitHub, a website for hosting Git repositories. CHOP researchers also have access to a special version of GitHub, CHOP's Enterprise GitHub. This guide explains your options and walks through exploring a repository on CHOP's Enterprise GitHub, as well as how to create your own repository and connect it to your Arcus Lab.
+- **[New to SQL](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_sql.md#1)**, **[New to R](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_r.md#1)** and **[New to Python](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_python.md#1)** are documents that introduce you to the three languages most important to your work in an Arcus Lab: SQL, R, and python. You will need at least some familiarity with SQL in order to access any tabular data in your lab (data that takes the forms of rows and columns). Depending on your research needs, you can pick whether to learn Python or R or use some of both. If you're new to SQL, R, and Python, we recommend you focus on SQL first, since that's the first thing you'll need to be able to apply in your own lab.
+- **[New to Omics](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_omics.md#1)** will get you started if you're using the Arcus Omics Training Lab. The instructions in this document presuppose that specific files, containing pre-defined data, exist and that you're working in the Omics Training Lab.
+- **[New to Text Data](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_text.md#1)** is a very cursory introduction to some topics related to working with text data.
+
+### Get 1:1 support
+
+[Schedule office hours, an educational consultation, or a lab walkthrough with Arcus Data Education](https://outlook.office365.com/book/BKG-StandardArcusEducationOfficeHours@chop.edu/), where you can talk with an Arcus Data Science Educator about your specific questions.
+
+### Attend an Arcus On-Ramp workshop
+
+We offer a regular rotation of Arcus On-Ramp workshops, all featuring hands-on practice with real data in an Arcus lab. 
+If you're new to Arcus, these workshops are a great way to get up to speed fast.
+
+**Important note:** Because these workshops involve work with real (deidentified) patient data, you need to have completed CITI training and attested the Arcus terms of use before you can attend. 
+If you're unsure if you've met both requirements, you can [check your Arcus status online](https://arcus.chop.edu/access-status). 
+
+[Sign up to attend an Arcus On-Ramp workshop](https://arcus.chop.edu/education/webinar-signup#).
+
+The notebooks we use for the workshops are also available online (you'll need to be on CHOP's network to access them), so you can work through that content on your own and/or return to review it after attending a workshop:
+
+- [Retrospective EHR Analysis: Build the SQL Query](https://github.research.chop.edu/arcus/notebooks/blob/onramp_patient_encounter/arcus_on_ramp/Build_SQL_query.md)
+- [Retrospective EHR Analysis: Analysis in R](https://github.research.chop.edu/arcus/notebooks/blob/onramp_patient_encounter/arcus_on_ramp/Analyze_in_R.Rmd)
+- [Retrospective EHR Analysis: Analysis in Python](https://github.research.chop.edu/arcus/notebooks/blob/onramp_patient_encounter/arcus_on_ramp/Analyze_in_Python.ipynb)
+
+### Arcus Users Group
+
+Connect with Arcus staff and other Arcus users in our [Arcus Users Group](https://teams.microsoft.com/l/team/19%3AUa9xxH-Wc6tcXYT0Ju3M-6M_f0yk4yR2qcAbIPF16hM1%40thread.tacv2/conversations?groupId=00909f4a-1401-46fd-9f0a-531498e1aef6&tenantId=a6112416-07b0-41a5-9bb1-d146b575c975).
 
 
 
