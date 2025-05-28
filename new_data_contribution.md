@@ -227,6 +227,10 @@ For more information about Dataverse, see the [Harvard Dataverse information pag
 Follow this link to view the [CHOP Dataverse](https://dataverse.harvard.edu/dataverse/chop)
 </div>
 
+#### Testing
+
+Before transferring the data, data contributors will meet with an Arcus Digital Archivist to determine whether the data is appropriate for archiving in Arcus. These conversation will determine the data to be contributed, discuss the data contribution process and figure out responsibilities for preparing information.
+
 ## Pre-Data Contribution 
 
 ![Graphic of a server with a plus sign](media/data_contribution_server.png)<!-- style = "max-width: 150px;" -->
@@ -261,7 +265,7 @@ In addition, data and files that provide valuable context and support reusabilit
 
 ### Privacy Review  
 
-Before any data is archived in Arcus, it is thoroughly reviewed by an Arcus Privacy Analyst to identify potential privacy and regulatory issues. The Privacy Analyst will review the IRB protocol, all consent agreements and data, to determine if it can be shared, how publicly it can be shared, and any restrictions on reuse. If the IRB needs to be amended to allow or clarify data reuse, the Privacy Analyst will consult on completing the amendment, including an extensive set of templated language that expedites this process. Arcus can accept a full range of Data Contributions, from those that are completely de-identified to those that are fully identified and including ones that must remain coded. For coded data sets, Arcus offers honest broker services so that data retains its linkages without violating the privacy concerns of patients and researchers. If sharing publicly through CHOP Dataverse, we will need either a deidentified dataset or a listing of all possible identifiers in the datssets, so they can be removed before sharing.  
+Before any data is archived in Arcus, it is thoroughly reviewed by an Arcus Privacy Analyst to identify potential privacy and regulatory issues. The Privacy Analyst will review the IRB protocol, all consent agreements and data, to determine if it can be shared, how publicly it can be shared, and any restrictions on reuse. If the IRB needs to be amended to allow or clarify data reuse, the Privacy Analyst will consult on completing the amendment, including an extensive set of templated language that expedites this process. Arcus can accept a full range of Data Contributions, from those that are completely de-identified to those that are fully identified and including ones that must remain coded. For coded data sets, Arcus offers honest broker services so that data retains its linkages without violating the privacy concerns of patients and researchers. If sharing publicly through CHOP Dataverse, we will need either a deidentified dataset or a listing of all possible identifiers in the datasets, so they can be removed before sharing.  
 
 Based on the privacy review, a Data Contribution Agreement will be created that will be signed by the Principal Investigator. The Data Contribution Agreement is an agreement between the Data Contributor and Arcus that outlines a Contributor’s role in contributing archival data to Arcus and allowing for the sharing and use of such archival data.
 
