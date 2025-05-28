@@ -112,9 +112,9 @@ If after viewing this module, you are prepared to archive data with Arcus, pleas
 
 The Project Template is added to all Arcus Scientific Computing Labs (Arcus Lab), so all you have to do is set up your workflows to conform to the template. This module describes all sections of the project template structure, what data goes in each section, and shows examples of research data arranged in the template.
 
-As part of the Arcus Lab deployment, your team should have received a Project Template orientation by a member of the Library Science team. If you missed the orientation, or need a refresher on the orientation, please see this [video of the orientation](https://www.youtube.com/watch?v=YJvA_cryI1s). Much of the content covered in the video is also in this module.
+As part of the Arcus Lab deployment, your team should have received a Project Template orientation by a member of the Library Science team. If you missed the orientation, or need a refresher on the orientation, please see this [video of the orientation](ADD NEW LINK). Much of the content covered in the video is also in this module.
 
-When appropriate, archiving your research in Arcus is expected from Scientific Projects with an Arcus Lab. This is documented in the [Arcus Terms of Use](https://arcus.chop.edu/terms-of-use). Archiving is required if you would like to move any data created within an Arcus Lab to a new Scientific Project or if other research teams would like to reuse your data.
+When appropriate, archiving your research in Arcus is expected from Scientific Projects with an Arcus Lab. This is documented in the [Arcus Terms of Use](https://arcus.chop.edu/terms-of-use). Archiving is required if you would like to move any data created within an Arcus Lab to a new Scientific Project or if other research teams would like to reuse your data. For an overview of archiving your lab, [see this guide](https://chop365.sharepoint.com/sites/Arcus/SitePages/Archiving-Your-Lab--A-User-Guide.aspx)
 
 When you are ready to archive your lab data, please submit the following request in the [Arcus Help Center](https://pm.arcus.chop.edu/servicedesk/customer/portal/6/create/256) to begin the data contribution process.
 
@@ -143,7 +143,7 @@ The Project Template prioritizes streamlined archiving and reproducible research
 
 The project template provides a shared structure so that institutional knowledge previously held locally by various members of the data creation team becomes centralized.
 
-The utility of [the project template](https://github.research.chop.edu/arcus/rdm-project-template) for lab drive organization and integration with the Arcus archives is summarized in the graphic below.
+The utility of [the project template](https://github.research.chop.edu/arcus/arcus-project-template) for lab drive organization and integration with the Arcus archives is summarized in the graphic below.
 
 ![Flow chart of the workflow of archiving research data using the project template. The main steps are Organizing the file system, adding the research data, applying a standard pipeline, and automated Arcus data ingest](media/project_template/ProjectTemplate_workflow.png)
 
@@ -151,36 +151,43 @@ The utility of [the project template](https://github.research.chop.edu/arcus/rdm
 
 The project template structure includes directories for capturing three major aspects of a research effort: the data (data), the tools needed to work with that data (access tools), and the contextual information needed to understand the effort and its constituent parts (contextual). The high level directories are as follows (items with asterix are required):
 
-- **_Configs_** (contextual)
+- **_Read Me file_** (contextual)\*
 - **_Data_** (data)\*
 - **_Manifests_** (data)\*
-- **_Models_** (access tools)
 - **_References_** (contextual)
-- **_Reports_** (contextual)
-- **_Requirements_** (contextual)
 - **_SRC_** (access tools)
 
 Below is an image of the entire Project Template Directory, with more detail about each section:
 
-![Graphic representation of the Project template with a short explanation of all the different sections. These sections are described in detail later in this module.](media/project_template/ProjectTemplate_Description.png)
+![Graphic representation of the Project template with a short explanation of all the different sections. These sections are described in detail later in this module.](ADD NEW GUIDE ONCE EDITED)
+
+<div class = "options">
+<b style="color: rgb(var(--color-highlight));">Another option</b><br>
+
+There is an expanded version of the Project Template that includes additional contextual and access tools sections. Please see the expanded version of the [Project Template Module](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/data-contribution-2/data_contribution_2_data.md#1) for more information.
+
+</div>
+
 
 ### Research Data
 
 The Project Template brings together three categories of information: Research Data, Access Tools and Contextual files. Research data is the actual data collected during the course of research processes used for analysis. The manifests describe this data, crosswalking files to participants. Research data (with manifests) is the minimum required information for all Arcus data contributions.
 
-![Graphic representation of the Project template highlighting the research data directories described above. Research data directories are data and manifests.](media/project_template/research_data.png)
+SHOULD WE MAKE A NEW TEMPLATE?
+
+![Graphic representation of the Project template highlighting the research data directories described above. Research data directories are data and manifests.]()
 
 ### Access Tools
 
 Access Tools are the code used to do the analysis. This can include machine models, scripts and Jupyter notebooks.
 
-![Graphic representation of the Project template highlighting the access tool directories, models and src. Subdirectories of src are notebooks, rules, scripts and tests.](media/project_template/access_tools.png)
+![Graphic representation of the Project template highlighting the access tool directories, models and src. Subdirectories of src are notebooks, rules, scripts and tests.]()
 
 ### Contextual Files
 
 Contextual Files provide information needed to understand the data and analysis. This can include omics protocols, data dictionaries, reports and diagrams.
 
-![Graphic representation of the Project template highlighting the contextual files directories, configs, references, reports and requirements.](media/project_template/contextual_files.png)
+![Graphic representation of the Project template highlighting the contextual files directories, configs, references, reports and requirements.]()
 
 ## Project Template Directories
 
@@ -210,6 +217,9 @@ For both the clinical data and omics examples in the Project Template walk throu
 - [Library of Congress Recommended Formats Statement](https://www.loc.gov/preservation/resources/rfs/)
 - [UCSC Glossary of Omics File Formats](https://genome.ucsc.edu/FAQ/FAQformat.html)
 - [NIH Clinical Trials Data Formats Overview](https://rethinkingclinicaltrials.org/chapters/conduct/acquiring-real-world-data/data-formats/#:~:text=XML%20is%20used%20as%20the,number%20of%20defined%20document%20templates.)
+
+## Read Me 
+Add information about read me template.
 
 ## data/
 
@@ -401,57 +411,6 @@ This directory contains an analyzed version of a dataset or deidentified dataset
 } catch(e) { }
 </script>
 
-### data/ref-data
-
-This directory is for any external or public datasets not created by the study team necessary to understand or repeat the analysis for the project.
-
-**Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
-
-- External or public datasets not supplied by Research IS or your lab, such as census data, will be available in this directory.
-
-**Ref-data** data is different depending on the type of research. Please select what below if need need more information about omics data for this directory:
-
-- [ ] omics data
-- [ ] clinical data
-<script output="data_type_ref">"@input"</script>
-
-<script modify="false">
-try {
-  let data_type = @input(`data_type_ref`)
-
-  if(data_type[0]) {
-    send.liascript(`
-    ## Omics Data
-
-- As cram files are a compressed format, some information is needed as a separate file. If possible we collect a fasta file for the reference genome used. The fasta file describes offsets for each contig, to compute exactly where to find a particular reference base at specific genomic coordinates. Each fasta file requires an index file as fasta.fai
-- bed files are a text file format used to store genomic regions as coordinates and associated annotations, see [documentation](https://samtools.github.io/hts-specs/BEDv1.pdf) for more information on the format. If available, we collect this file as a .bed extension.
-
-
-    `)
-  } else send.clear()
-} catch(e) { }
-</script>
-
-
-<script modify="false">
-try {
-  let data_type = @input(`data_type_ref`)
-
-  if(data_type[1]) {
-    send.liascript(`
-    ## Clinical Data
-
-Arcus Archives does not collect clinical reference data sets but there are ways to tap into the power of these datasets within Arcus.
-
-- The Arcus Applied Data Sciences team offers [GIS Data](https://chop.alationcloud.com/domain/30/) of many high value publicly available regularly refreshed Geographical Information System Datasets.
-- There is also an option via [Jira Service Desk](https://jira.arcus.chop.edu:8443/servicedesk/customer/portal/6/create/355?q=upload&q_time=1696276238126) to upload reference data directly to your lab following disclosure and approval.
-
-    `)
-  } else send.clear()
-} catch(e) { }
-</script>
-
-
 ## manifests/
 
 Manifests are an inventory of all data in the collection, and provide a mapping between research data in the data folders, and participant information. The manifests also create a mapping between data and associated pipeline and technical information about workflows. There are three main manifests that are mandatory for every archival collection:
@@ -615,58 +574,6 @@ The **participant\_family\_role.csv** file is only needed for some omics data. I
 | local\_relative\_id    | The local id of a relative to the participant.                                                                        | String |
 | relative\_family\_role | The familial relationship of the relative to the participant. Use terms from eHB\_relationship\_types\_as_of\_10\_30.json. | String |
 
-### manifests/familyid_crosswalk
-
-- This manifest should be used with trio and cohort omics data. A trio will contain three participants, a cohort can contain hundreds. This file walks the name for the trio or cohort file with the local\_participant\_id's included in it.
-- This is also called a PED or pedigree file in bioinformatics workflows. A pedigree is a structured description of the familial relationships between samples, see this [link for more information](https://gatk.broadinstitute.org/hc/en-us/articles/360035531972-PED-Pedigree-format). 
-
-<!-- data-type="none" -->
-|family_id|individual_id|paternal_id    |maternal_id  |sex          |
-|---------|-------------|---------------|-------------|-------------|
-|LML100   |101354       |               |             |2            |
-|LML100   |101355       |               |101354       |1            |
-|LML101   |102454       |               |             |2            |
-|LML101   |102455       |102456         |102454       |1            |
-|LML101   |102456       |               |             |1            |
-|LML102   |103767       |               |             |1            |
-|LML102   |103768       |               |             |2            |
-|LML102   |103769       |103767         |103768       |2            |
-|LML103   |108976       |108977         |108978       |1            |
-|LML103   |108977       |               |             |1            |
-|LML103   |108978       |               |             |2            |
-|LML104   |104666       |104667         |104668       |2            |
-|LML104   |104667       |-9             |-9           |1            |
-|LML104   |104668       |-9             |-9           |2            |
-
-
-| family_id            | Required, the family_id for the trio data                                           |
-| -------------------- | ----------------------------------------------------------------------------------- |
-| local\_participant\_id | Required, the local\_particpant\_id for each of the participants included in the trio |
-| paternal_id          | Optional, the local\_participant\_id for the father of the participant                |
-| maternal_id          | Optional, the local\_participant\_id for the mother of the participant                |
-| sex                  | Optional, the sex of the participant. 1 for male, 2 for female                      |
-
-### manifests/file\_derivation.csv
-
-The **file\_derivation.csv** manifest is only required for omics contributions with multiple filetypes generated through a bioinformatics pipeline or workflow.
-
-**file\_derivation.csv** describes the relationships between files in a pipeline or workflow.
-
-| column                 | definition                                                      | type   |
-| ---------------------- | --------------------------------------------------------------- | ------ |
-| destination\_file\_group | The files in this file group is derived from source\_file\_group. | String |
-| source\_file\_group      | File group used to derive the destination\_file\_group.           | String |
-
-### manifests/env manifest
-
-For each script/notebook in *src/*, and each model in *models/*, there should be an env file (here env refers to a file named env with any extension, so env.yaml or env.txt, for example) that describes the environment in which it was created or run. Environment files should be named as follows: **descriptiveName\_env** and placed in a folder called environments within the *configs/environment/* directory. Either individuals files or entire folders (whichever is the appropriate level) in scripts and notebooks within the *src/* directory, or the *models/* directory will need to be added to the env manifest file, matching them with their related environment file. See the see below for more information about this file:
-
-| column                | definition                                                                                                                                                                                                                                                                          | type   |
-| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
-| programming\_filegroup | Enter the highest level folder that the environment file relates to. If the file relates to an entire directory then put the whole directory file path. If the file relates to a subdirectory enter that filepath. If it relates to a single file enter the file path and filename. | String |
-| related\_environment   | Enter the environment filename. Some environment files will be entered multiple times as they relate to multiple files.                                                                                                                                                             | String |
-|                       |
-
 ## src/
 
 The src or sources folder stores the access tools required to work with the research data and repeat the analysis. The need for access tools is dependent on the type of research, not all research has rules, scripts or notebooks. Any scripts saved in the src folder require an environment manifest to document the computing environment the code is run in, see the environment manifest section of this module for more information. Subdirectory folders can be customized and added as needed, below are the common directories or data types used in scientific research:
@@ -724,9 +631,6 @@ Reproducibility in research is a major goal of the Arcus program and organizing 
 } catch(e) { }
 </script>
 
-## models/
-
-The models directory is for saving any type of machine learning models, model predictions, model summaries, data sheets for model training data. Please consult with the Library Science team on your specific model type for more information about formats and directory structure for archiving.
 
 ## references/
 
@@ -815,37 +719,7 @@ Below are the fields often included in your data dictionaries. Only a few are co
 } catch(e) { }
 </script>
 
-## reports/
-
-The reports directory holds published papers and content used for producing papers, presentations, websites, metrics, etc. It can additionally hold the following information:
-
-- Figures & tables: generated metrics and graphics for supporting reports
-- Log.md: computational notebook (if one was used to create the content)
-- Methods.md: version controlled methods section for the project
-- Further subdirectories can be customized based on the needs of the collection.
-
-## requirements/
-
-- Any module or library dependencies for workflows.
-- Additional requirements files can be added as needed.
-
-## configs/
-
-This directory holds configuration files for workflows or applications. Sub-directories can be added as needed for the collection.
-
-### configs/environments
-
-Environment means the analysis environment for a script or model.
-
-- For each script/notebook in src, each model in models, there should be an environment manifest and file that describes the environment in which it was created or run.
-- Environment files should be named as follows: descriptiveName_env.\* and placed in a folder called environments within the configs/ directory.
-- Either individuals files or entire folders(whichever is the appropriate level) in scripts and notebooks within the src/ directory, the models/ directory, or the data/endpoints folder will need to be added to the env_manifest.csv file, matching them with their related environment file.
-- All environmental files should be documented in an environment manifest, see the [manifests/environment manifests](#manifestsenv-manifest) for more information
-
-**Arcus Lab Images**
-
-- There should also be a file named lab-image-tag within a folder titled lab-image within the configs/ directory that contains the tag of the Arcus Lab Image that the Lab was using.
-- Though unlikely, if artifacts use more that one image than follow the directions above (in the environments section): add a descriptive name to each lab-image-tag file, and add the file paths and related files or directories to the env_manifest linking them together.
+## Expanded Project Template
 
 # Concluding Quiz
 
