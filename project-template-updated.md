@@ -218,8 +218,12 @@ For both the clinical data and omics examples in the Project Template walk throu
 - [UCSC Glossary of Omics File Formats](https://genome.ucsc.edu/FAQ/FAQformat.html)
 - [NIH Clinical Trials Data Formats Overview](https://rethinkingclinicaltrials.org/chapters/conduct/acquiring-real-world-data/data-formats/#:~:text=XML%20is%20used%20as%20the,number%20of%20defined%20document%20templates.)
 
-## Read Me 
-Add information about read me template.
+## Readme 
+
+A Project level Readme is strongly suggested for all Arcus Labs and Data Contributions. A Readme text file provides information about the files in the collection and is intended to help ensure that the data can be correctly interpreted, by yourself at a later date or by others when sharing or publishing data. Our template was adapted from Cornell University’s Data Service Readme guides, [see this link](https://data.research.cornell.edu/data-management/sharing/readme/) for more information.
+
+There are two versions available, a full Readme template and a simplified template. The [simplified version](https://github.research.chop.edu/arcus/arcus-project-template/blob/main/readme_template_short.txt) is appropriate for most Arcus related labs and data contributions and is recommended as the starting point for most researchers working with Arcus. The [full template](https://github.research.chop.edu/arcus/arcus-project-template/blob/main/readme_template_full.txt) is suggested when there is additional information to be documented, such as data cases and rows, variables, experiments and restrictions.
+
 
 ## data/
 
