@@ -168,7 +168,6 @@ There is an expanded version of the Project Template that includes additional co
 
 </div>
 
-
 ### Research Data
 
 The Project Template brings together three categories of information: Research Data, Access Tools and Contextual files. Research data is the actual data collected during the course of research processes used for analysis. The manifests describe this data, crosswalking files to participants. Research data (with manifests) is the minimum required information for all Arcus data contributions.
@@ -218,12 +217,11 @@ For both the clinical data and omics examples in the Project Template walk throu
 - [UCSC Glossary of Omics File Formats](https://genome.ucsc.edu/FAQ/FAQformat.html)
 - [NIH Clinical Trials Data Formats Overview](https://rethinkingclinicaltrials.org/chapters/conduct/acquiring-real-world-data/data-formats/#:~:text=XML%20is%20used%20as%20the,number%20of%20defined%20document%20templates.)
 
-## Readme 
+## Readme
 
 A Project level Readme is strongly suggested for all Arcus Labs and Data Contributions. A Readme text file provides information about the files in the collection and is intended to help ensure that the data can be correctly interpreted, by yourself at a later date or by others when sharing or publishing data. Our template was adapted from Cornell University’s Data Service Readme guides, [see this link](https://data.research.cornell.edu/data-management/sharing/readme/) for more information.
 
 There are two versions available, a full Readme template and a simplified template. The [simplified version](https://github.research.chop.edu/arcus/arcus-project-template/blob/main/readme_template_short.txt) is appropriate for most Arcus related labs and data contributions and is recommended as the starting point for most researchers working with Arcus. The [full template](https://github.research.chop.edu/arcus/arcus-project-template/blob/main/readme_template_full.txt) is suggested when there is additional information to be documented, such as data cases and rows, variables, experiments and restrictions.
-
 
 ## data/
 
@@ -434,14 +432,14 @@ Additional manifests are only required if needed for the data or collection type
 
 ### manifests/file_manifest
 
-The file\_manifest.csv matches the biosample\_id to each file in the data folders. Below is more detail about each section in the file:
+The file_manifest.csv matches the biosample_id to each file in the data folders. Below is more detail about each section in the file:
 
-- biosample\_id is an ID number for each file. For some studies, each file is derived about specific biosamples, so we suggest using the sample id. ideally, biosample\_id links to the CHOP biobank. When you cannot link the the biobank, treat biosample\_id as the IDs you use for samples taken from participants. For studies where there are no biosamples, the biosample\_id can be the file name.
+- biosample_id is an ID number for each file. For some studies, each file is derived about specific biosamples, so we suggest using the sample id. ideally, biosample_id links to the CHOP biobank. When you cannot link the the biobank, treat biosample_id as the IDs you use for samples taken from participants. For studies where there are no biosamples, the biosample_id can be the file name.
 - file_type is the type of file, indicated by the file extension
 - protocol is only for omics data, select the omics data example below for more information
-- file\_path is the file path for each file in the **data\\** folders. File paths should start with **data\\** and end with the full file name with extension
+- file_path is the file path for each file in the **data\\** folders. File paths should start with **data\\** and end with the full file name with extension
 
-The **file_manifest.csv** may look different depending on the type of research. Please select below if you need more information about either omics or clinical data for this directory: 
+The **file_manifest.csv** may look different depending on the type of research. Please select below if you need more information about either omics or clinical data for this directory:
 
 - [ ] omics data
 - [ ] clinical data
@@ -494,10 +492,10 @@ Since clinical research efforts don't always collect biospecimen data, the colum
 
 ### manifests/participant_manifest
 
-The participant\_manifest.csv identifies which participants information links to each of the files in the file\_manifest. Below is more detail about each section of the file:
+The participant_manifest.csv identifies which participants information links to each of the files in the file_manifest. Below is more detail about each section of the file:
 
-- local\_participant\_id is a local identifier the study team used to identify the patient
-- The biosample\_id will be the same as the one listed in the file\_manifests.csv. Linking a local\_participant\_id to a biosample_id identifies which patients information is related to the file.
+- local_participant_id is a local identifier the study team used to identify the patient
+- The biosample_id will be the same as the one listed in the file_manifests.csv. Linking a local_participant_id to a biosample_id identifies which patients information is related to the file.
 - cohort is optional, please fill this in if there is additional cohort information or identification needed.
 
 The **participant_manifest.csv** may look different depending on the type of research. Please select which type of data from below you need more information about for this directory:
@@ -550,20 +548,20 @@ Since clinical research efforts don't always collect biospecimen data, you may n
 
 ### manifests/participant_crosswalk
 
-The **participant-crosswalk.txt** manifest is a tab delimited file with no header that links local\_participant\_id in the **participant\_manifest.csv** to MRN (Medical Record Number). See below for the terms in the file:
+The **participant-crosswalk.txt** manifest is a tab delimited file with no header that links local_participant_id in the **participant_manifest.csv** to MRN (Medical Record Number). See below for the terms in the file:
 
 | column               | definition                                     | type   | notes                                                          |
 | -------------------- | ---------------------------------------------- | ------ | -------------------------------------------------------------- |
-| local\_id\_type        | The type of participant id (local).            | String | This will always be local.                                     |
-| local\_participant\_id | Id that is used in PARTICIPANT_MANIFEST        | String |                                                                |
-| auth\_id\_type         | The type of participant id(chop)               | String | This will always be chop.                                      |
-| auth\_participant\_id  | Authorative Id of the participant. (Often MRN) | String | Use an 8 digit MRN. Left-pad the MRN with zeroes as necessary. |
+| local_id_type        | The type of participant id (local).            | String | This will always be local.                                     |
+| local_participant_id | Id that is used in PARTICIPANT_MANIFEST        | String |                                                                |
+| auth_id_type         | The type of participant id(chop)               | String | This will always be chop.                                      |
+| auth_participant_id  | Authorative Id of the participant. (Often MRN) | String | Use an 8 digit MRN. Left-pad the MRN with zeroes as necessary. |
 
-### manifests/participant\_family\_role
+### manifests/participant_family_role
 
-The **participant\_family\_role.csv** file is only needed for some omics data. If you have family data (ie sequencing data from related family members), use this file to describe [relationships](https://github.research.chop.edu/arcus/rdm-project-template/blob/master/manifests/data_dicts/eHB_relationship_types_as_of_10_30.json). See below for an example.
+The **participant_family_role.csv** file is only needed for some omics data. If you have family data (ie sequencing data from related family members), use this file to describe [relationships](https://github.research.chop.edu/arcus/rdm-project-template/blob/master/manifests/data_dicts/eHB_relationship_types_as_of_10_30.json). See below for an example.
 
-| local\_participant\_id | local\_relative\_id | relative\_family\_role |
+| local_participant_id | local_relative_id | relative_family_role |
 | -------------------- | ----------------- | -------------------- |
 | participant1         | participant2      | biological mother    |
 | participant2         | participant1      | biological son       |
@@ -572,25 +570,33 @@ The **participant\_family\_role.csv** file is only needed for some omics data. I
 | participant1         | participant4      | biological sister    |
 | participant4         | participant1      | biological brother   |
 
-| column               | definition                                                                                                             | type   |
+| column               | definition                                                                                                            | type   |
 | -------------------- | --------------------------------------------------------------------------------------------------------------------- | ------ |
-| local\_participant\_id | The local id of a participant.                                                                                        | String |
-| local\_relative\_id    | The local id of a relative to the participant.                                                                        | String |
-| relative\_family\_role | The familial relationship of the relative to the participant. Use terms from eHB\_relationship\_types\_as_of\_10\_30.json. | String |
+| local_participant_id | The local id of a participant.                                                                                        | String |
+| local_relative_id    | The local id of a relative to the participant.                                                                        | String |
+| relative_family_role | The familial relationship of the relative to the participant. Use terms from eHB_relationship_types_as_of_10_30.json. | String |
 
 ## src/
 
-The src or sources folder stores the access tools required to work with the research data and repeat the analysis. The need for access tools is dependent on the type of research, not all research has rules, scripts or notebooks. Any scripts saved in the src folder require an environment manifest to document the computing environment the code is run in, see the environment manifest section of this module for more information. Subdirectory folders can be customized and added as needed, below are the common directories or data types used in scientific research:
+Also known as the sources folder. Stores access tools required to work with the research data and repeat analysis. Any script or notebook saved requires an environment manifest.
 
-- **notebooks**: Jupyter, Beaker, Zeppelin, WDL, CWL etc.
-- **scripts**: custom software, code, tools
-- **rules**: for computational workflows
-- **test**: unit testing for code, customizable to team needs
+<div class = "learn-more">
+<b style="color: rgb(var(--color-highlight));">Learning connection</b><br>
+
+To learn more about how to properly fill out the environment manifest document, review the environment manifest section in the [expanded project template module](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/data-contribution-2/data_contribution_2_data.md#26).
+
+</div>
 
 <div class = "important">
 <b style="color: rgb(var(--color-highlight));">Important note</b><br>
 Version Control is important when working collaboratively with access tools like scripts and workflows. For a description of version control and version control systems, see the Arcus Education module, [Intro to version control](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/git_intro/git_intro.md#1)
 </div>
+
+###src/scripts
+
+- Custom scripts that are created/used to work with the data.
+- History of saved queries in SQLPad can be extracted into thisdirectory along with any code written in the CLI (Command Line Interface), saved as code files such as a .py file for python code.
+- Also includes computational notebooks such as Jupyter, WDL (Workflow Development Language), CWL (Common Workflow Language). Any work done in R can also be saved here.
 
 **src** files may look different depending on the type of research. Please select which type of data below if you need more information about this directory:
 
@@ -609,7 +615,7 @@ try {
 
 ![Genomic Data Commons Pipeline that converts reads (CRAM or BAM) to FASTQ and (re)aligns them to the latest human reference genome ](media/sample_gatk_WDL.png)
 
-Workflows documented in WDL or CWL are incredibly useful for both understanding and recreating a bioinformatics workflow. These scripts should be saved in the _src/notebooks_ directory.
+Workflows documented in WDL or CWL are incredibly useful for both understanding and recreating a bioinformatics workflow. These scripts should be saved in the _src/scripts.
 
     `)
   } else send.clear()
@@ -627,14 +633,13 @@ Reproducibility in research is a major goal of the Arcus program and organizing 
 
 - History of saved queries in SQLPad can be extracted directly from the sqlite database into the _src/scripts_ directory
 - Code written in the command line interface can be saved in the _src/scripts_ directory
-- Work done in the R or Jupyter notebook applications can be saved in _src/notebooks_ directory
+- Work done in the R or Jupyter notebook applications can be saved in _src/scripts_ directory
 - Though Arcus prefers to archive non-proprietary filetypes, some common data analysis programs are not easily exported out of their proprietary formats, such as Stata or SAS. If you work in Stata or SAS, a non proprietary text version of your .dta or .SAS file can be saved in the src folder so that your analysis workflow can be accessed and interpreted by a secondary user. Additionally for Sata and SAS analysis, if possible export the workflow steps as a txt file.
 
     `)
   } else send.clear()
 } catch(e) { }
 </script>
-
 
 ## references/
 
