@@ -730,6 +730,15 @@ Below are the fields often included in your data dictionaries. Only a few are co
 
 ## Expanded Project Template
 
+- The Expanded Project Template was originally deployed in all Arcus Labs and may still be appropriate for certain types of research projects.
+- The Expanded Project Template is available to any Arcus user by request.
+
+### Projects that may require the Expanded Project Template
+
+- Deep dive translational research projects that integrate across several data modalities like imaging and omics data.
+- AI/ML projects where tracking of code and models is more granular and iterative.
+- Projects that incorporate publicly available datasets in which a clearer bifurcation is needed between reference data and analyzed outputs.
+
 # Concluding Quiz
 
 1. True or False: Data in the raw directory can be edited.
