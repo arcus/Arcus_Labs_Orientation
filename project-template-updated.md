@@ -172,21 +172,19 @@ There is an expanded version of the Project Template that includes additional co
 
 The Project Template brings together three categories of information: Research Data, Access Tools and Contextual files. Research data is the actual data collected during the course of research processes used for analysis. The manifests describe this data, crosswalking files to participants. Research data (with manifests) is the minimum required information for all Arcus data contributions.
 
-SHOULD WE MAKE A NEW TEMPLATE?
-
-![Graphic representation of the Project template highlighting the research data directories described above. Research data directories are data and manifests.]()
+![Graphic representation of the Project template highlighting the research data directories described above. Research data directories are data and manifests.](media/project_template/simple_research_data.png)
 
 ### Access Tools
 
-Access Tools are the code used to do the analysis. This can include machine models, scripts and Jupyter notebooks.
+Access Tools are the code used to do the analysis. This can include scripts, saved SQLPad queries, CLI code files (e.g., Python), and computational notebooks (e.g., Jupyter, WDL, CWL, R).
 
-![Graphic representation of the Project template highlighting the access tool directories, models and src. Subdirectories of src are notebooks, rules, scripts and tests.]()
+![Graphic representation of the Project template highlighting the access tool directories, models and src. Subdirectories of src are notebooks, rules, scripts and tests.](media/project_template/simple_access_tools.png)
 
 ### Contextual Files
 
-Contextual Files provide information needed to understand the data and analysis. This can include omics protocols, data dictionaries, reports and diagrams.
+Contextual Files provide information needed to understand the data and analysis. This can include omics protocols, data dictionaries, and a project level README file.
 
-![Graphic representation of the Project template highlighting the contextual files directories, configs, references, reports and requirements.]()
+![Graphic representation of the Project template highlighting the contextual files directories, configs, references, reports and requirements.](media/project_template/simple_contextual_files.png)
 
 ## Project Template Directories
 
