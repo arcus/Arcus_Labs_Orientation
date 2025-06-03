@@ -151,11 +151,11 @@ The utility of [the project template](https://github.research.chop.edu/arcus/arc
 
 The project template structure includes directories for capturing three major aspects of a research effort: the data (data), the tools needed to work with that data (access tools), and the contextual information needed to understand the effort and its constituent parts (contextual). The high level directories are as follows (items with asterix are required):
 
-- **_Read Me file_** (contextual)\*
+- **_README file_** (contextual)\*
 - **_Data_** (data)\*
 - **_Manifests_** (data)\*
 - **_References_** (contextual)
-- **_SRC_** (access tools)
+- **_Src_** (access tools)
 
 Below is an image of the entire Project Template Directory, with more detail about each section:
 
@@ -170,7 +170,7 @@ There is an expanded version of the Project Template that includes additional co
 
 ### Research Data
 
-The Project Template brings together three categories of information: Research Data, Access Tools and Contextual files. Research data is the actual data collected during the course of research processes used for analysis. The manifests describe this data, crosswalking files to participants. Research data (with manifests) is the minimum required information for all Arcus data contributions.
+The Project Template brings together three categories of information: Research Data, Access Tools and Contextual files. Research data is the actual data collected during the course of research processes used for analysis. The manifests describe this data, cross-walking files to participants. Research data (with manifests) is the minimum required information for all Arcus data contributions.
 
 ![Graphic representation of the Project template highlighting the research data directories described above. Research data directories are data and manifests.](media/project_template/simple_research_data.png)
 
@@ -215,15 +215,15 @@ For both the clinical data and omics examples in the Project Template walk throu
 - [UCSC Glossary of Omics File Formats](https://genome.ucsc.edu/FAQ/FAQformat.html)
 - [NIH Clinical Trials Data Formats Overview](https://rethinkingclinicaltrials.org/chapters/conduct/acquiring-real-world-data/data-formats/#:~:text=XML%20is%20used%20as%20the,number%20of%20defined%20document%20templates.)
 
-## Readme
+## README
 
-A Project level Readme is strongly suggested for all Arcus Labs and Data Contributions. A Readme text file provides information about the files in the collection and is intended to help ensure that the data can be correctly interpreted, by yourself at a later date or by others when sharing or publishing data. Our template was adapted from Cornell University’s Data Service Readme guides, [see this link](https://data.research.cornell.edu/data-management/sharing/readme/) for more information.
+A Project level README is strongly suggested for all Arcus Labs and Data Contributions. A README text file provides information about the files in the collection and is intended to help ensure that the data can be correctly interpreted, by yourself at a later date or by others when sharing or publishing data. Our template was adapted from Cornell University’s Data Service README guides, [see this link](https://data.research.cornell.edu/data-management/sharing/readme/) for more information.
 
-There are two versions available, a full Readme template and a simplified template. The [simplified version](https://github.research.chop.edu/arcus/arcus-project-template/blob/main/readme_template_short.txt) is appropriate for most Arcus related labs and data contributions and is recommended as the starting point for most researchers working with Arcus. The [full template](https://github.research.chop.edu/arcus/arcus-project-template/blob/main/readme_template_full.txt) is suggested when there is additional information to be documented, such as data cases and rows, variables, experiments and restrictions.
+There are two versions available, a full README template and a simplified template. The [simplified version](https://github.research.chop.edu/arcus/arcus-project-template/blob/main/readme_template_short.txt) is appropriate for most Arcus related labs and data contributions and is recommended as the starting point for most researchers working with Arcus. The [full template](https://github.research.chop.edu/arcus/arcus-project-template/blob/main/readme_template_full.txt) is suggested when there is additional information to be documented, such as data cases and rows, variables, experiments and restrictions.
 
 ## data/
 
-The data folder is where the data files are organized. Data is the information collected during the course of research processes used for analysis. The data directory maintains descriptions of authoritative source data and their associated files and metadata in both raw and processed formats. There are four sub-directories within the data folder for organizing the data: _raw/_, _interim/_, _endpoints/_, and _ref-data_.
+The data folder is where the data files are organized. Data is the information collected during the course of research processes used for analysis. The data directory maintains descriptions of authoritative source data and their associated files and metadata in both raw and processed formats. There are four sub-directories within the data folder for organizing the data: _raw/_, _interim/_, _endpoints/_.
 
 All files within the **data/** folder and its subdirectories will be listed in the **file_manifest.csv**. The manifests are detailed in the **manifests** section of this course.
 
@@ -233,8 +233,7 @@ This directory holds authoritative source data that should never be deleted. Thi
 
 **Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
 
-- Arcus delivered archival data will be found here.
-- Study team generated data brought into Arcus goes here.
+- Arcus delivered archival data, requested radiology images and study team generated data brought into Arcus will be found here.
 - This data is managed by Arcus, and should not be modified by the research team.
 
 **Raw** data is different depending on the type of research. Please select what type(s) of data you would like more information about, you can select both:
@@ -419,14 +418,26 @@ Manifests are an inventory of all data in the collection, and provide a mapping 
 - participant_manifest.csv
 - participant-crosswalk.txt
 
-Additional manifests are only required if needed for the data or collection type. These files are detailed in the next sections. The graphic below illustrates the linking between the files:
+The graphic below illustrates the linking between the files:
 
 ![ID Crosswalks between file_manifest.csv, participant_manifest.csv and participant-crosswalk.txt](media/project_template/manifests_linkages.png)
+
+Creation and formatting of the manifests will be the shared responsibility of the study team and Arcus Library Science Team, but the following two crosswalk files must be provided by the study team:
+
+- A CSV file mapping each file in data/raw and data/endpoints to the corresponding subject identifiers for patients represented in the file.
+- A CSV file mapping subject identifiers to MRNs, ensuring internal linkage to clinical data.
 
 **Within an [Arcus Scientific Lab](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/arcus_orientation.md#1)**
 
 - Managed by Arcus, you will not need to create these for yourselves
 - This will only appear in the lab if archival data is delivered
+
+<div class = "important">
+<b style="color: rgb(var(--color-highlight));">Important note</b><br>
+
+Arcus requires these mapping files in the archive submission to enable internal linkage of the dataset with other research data for secondary research and for the Arcus Cohort Discovery tool. However, Arcus will not share these ID mappings with researchers unless they are given explicit IRB approval to view them.
+
+</div>
 
 ### manifests/file_manifest
 
@@ -554,25 +565,6 @@ The **participant-crosswalk.txt** manifest is a tab delimited file with no heade
 | local_participant_id | Id that is used in PARTICIPANT_MANIFEST        | String |                                                                |
 | auth_id_type         | The type of participant id(chop)               | String | This will always be chop.                                      |
 | auth_participant_id  | Authorative Id of the participant. (Often MRN) | String | Use an 8 digit MRN. Left-pad the MRN with zeroes as necessary. |
-
-### manifests/participant_family_role
-
-The **participant_family_role.csv** file is only needed for some omics data. If you have family data (ie sequencing data from related family members), use this file to describe [relationships](https://github.research.chop.edu/arcus/rdm-project-template/blob/master/manifests/data_dicts/eHB_relationship_types_as_of_10_30.json). See below for an example.
-
-| local_participant_id | local_relative_id | relative_family_role |
-| -------------------- | ----------------- | -------------------- |
-| participant1         | participant2      | biological mother    |
-| participant2         | participant1      | biological son       |
-| participant1         | participant3      | biological father    |
-| participant3         | participant1      | biological son       |
-| participant1         | participant4      | biological sister    |
-| participant4         | participant1      | biological brother   |
-
-| column               | definition                                                                                                            | type   |
-| -------------------- | --------------------------------------------------------------------------------------------------------------------- | ------ |
-| local_participant_id | The local id of a participant.                                                                                        | String |
-| local_relative_id    | The local id of a relative to the participant.                                                                        | String |
-| relative_family_role | The familial relationship of the relative to the participant. Use terms from eHB_relationship_types_as_of_10_30.json. | String |
 
 ## src/
 
