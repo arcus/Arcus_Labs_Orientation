@@ -159,7 +159,7 @@ The project template structure includes directories for capturing three major as
 
 Below is an image of the entire Project Template Directory, with more detail about each section:
 
-![Graphic representation of the Project template with a short explanation of all the different sections. These sections are described in detail later in this module.](ADD NEW GUIDE ONCE EDITED)
+![Graphic representation of the Project template with a short explanation of all the different sections. These sections are described in detail later in this module.](media/project_template/ProjectTemplate_Description.png)
 
 <div class = "options">
 <b style="color: rgb(var(--color-highlight));">Another option</b><br>
@@ -720,8 +720,14 @@ Below are the fields often included in your data dictionaries. Only a few are co
 
 ## Expanded Project Template
 
-- The Expanded Project Template was originally deployed in all Arcus Labs and may still be appropriate for certain types of research projects.
-- The Expanded Project Template is available to any Arcus user by request.
+The Expanded Project Template was th eoriginal verison of the Arcus Project Template, that was simplified based on user feedback. This is the versions that was originally deployed in all Arcus Labs, and is the version you will see if your labe was deployed before Fall 2025. The expanded version may still be appropriate for certain types of research projects and is available to any Arcus user by request.
+
+<div class = "external-resource">
+<b style="color: rgb(var(--color-highlight));">External Content</b><br>
+
+Visit the Learning module for the [expanded project template](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/data-contribution-2/data_contribution_2_data.md#1) or visit the [Expanded Project Template GitHub repository](https://github.research.chop.edu/arcus/rdm-project-template) to clone for use.
+
+</div>
 
 ### Projects that may require the Expanded Project Template
 
