@@ -729,7 +729,7 @@ Visit the Learning module for the [expanded project template](https://liascript.
 
 </div>
 
-### Projects that may require the Expanded Project Template
+**Projects that may require the Expanded Project Template**
 
 - Deep dive translational research projects that integrate across several data modalities like imaging and omics data.
 - AI/ML projects where tracking of code and models is more granular and iterative.
