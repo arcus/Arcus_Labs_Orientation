@@ -718,9 +718,15 @@ Below are the fields often included in your data dictionaries. Only a few are co
 } catch(e) { }
 </script>
 
-## Expanded Project Template
+# Expanded Project Template
 
-The Expanded Project Template was th eoriginal verison of the Arcus Project Template, that was simplified based on user feedback. This is the versions that was originally deployed in all Arcus Labs, and is the version you will see if your labe was deployed before Fall 2025. The expanded version may still be appropriate for certain types of research projects and is available to any Arcus user by request.
+The Expanded Project Template was th eoriginal verison of the Arcus Project Template, that was simplified based on user feedback. This is the versions that was originally deployed in all Arcus Labs, and is the version you will see if your lab was deployed before Fall 2025. The expanded version may still be appropriate for certain types of research projects and is available to any Arcus user by request.
+
+**Projects that may require the Expanded Project Template**
+
+- Deep dive translational research projects that integrate across several data modalities like imaging and omics data.
+- AI/ML projects where tracking of code and models is more granular and iterative.
+- Projects that incorporate publicly available datasets in which a clearer bifurcation is needed between reference data and analyzed outputs.
 
 <div class = "external-resource">
 <b style="color: rgb(var(--color-highlight));">External Content</b><br>
@@ -728,12 +734,6 @@ The Expanded Project Template was th eoriginal verison of the Arcus Project Temp
 Visit the Learning module for the [expanded project template](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/data-contribution-2/data_contribution_2_data.md#1) or visit the [Expanded Project Template GitHub repository](https://github.research.chop.edu/arcus/rdm-project-template) to clone for use.
 
 </div>
-
-**Projects that may require the Expanded Project Template**
-
-- Deep dive translational research projects that integrate across several data modalities like imaging and omics data.
-- AI/ML projects where tracking of code and models is more granular and iterative.
-- Projects that incorporate publicly available datasets in which a clearer bifurcation is needed between reference data and analyzed outputs.
 
 # Concluding Quiz
 
