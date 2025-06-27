@@ -30,14 +30,14 @@ There are quite a few names and acronyms related to clinical data at CHOP, some 
 For researchers wanting to perform retrospective analyses on clinical data, there are a variety of problems they might face:
 
 * The purposes are not the same: Clinical data is not collected with research in mind! 
-*  Data organization: The organizational systems that make patient care more efficient might be quite different from those needed for research. 
+* Data organization: The organizational systems that make patient care more efficient might be quite different from those needed for research. 
 * Data access/privacy: Not all clinical data should be made available for all types of research.
 * Performance: The database that stores patient data for clinical use (Chronicles) would be very inefficient for returning research-relevant information. Also, crucially, we can't risk burdening Chronicles with computationally-intensive research queries because it could pose a safety risk to patients.
 
 These are some of the problems that the Arcus Data Repository (ADR) aims to address. So what is the ADR? 
 
-* A relational database, stored in Google BigQuery, of most frequently requested EHR data, pulled from Clarity
-* The ADR has identified or de-identified datasets available, depending on your needs and regulatory status (IRB, non human subjects, etc.)
+* A relational database, stored in Google BigQuery, of most frequently requested EHR data, pulled from Clarity and Helix
+* The ADR has identified or de-identified datasets available, depending on your needs and regulatory status (IRB, non human subjects research, etc.)
 
 **Important note**: This does not mean that the data are "pre-cleaned"! Data will still be messy or incomplete.
 
@@ -60,13 +60,13 @@ Because medical data contains many **one-to-many** relationships and a lot of in
 <div class = "learn-more">
 <b style="color: rgb(var(--color-highlight));">Learning connection</b><br>
 
-For more information about this topic see out [database normalization module](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/database_normalization/database_normalization.md#1).
+For more information about this topic see our [database normalization module](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/education_modules/main/database_normalization/database_normalization.md#1).
 
 </div>
 
 ## Exploring the ADR
 
-The ADR currently contains more than 50 tables, but it continues to grow. It represents a "greatest hits" selection of the most commonly requested data. There are identified and de-identified versions available, depending on your research needs.
+The ADR currently contains more than 50 tables, and it continues to grow. It represents a "greatest hits" selection of the most commonly requested data for research. There are identified and de-identified versions available, depending on your research needs.
 
 You can read more about the ADR and look at some of the metadata about the tables in the ADR in the [CHOP Data Catalog](https://chop.alationcloud.com/data/23/).
 
@@ -104,7 +104,7 @@ Each row is a single encounter (patients can have more than one!), and each row 
 
 Besides the `encounter` table itself, there several other tables in the encounter domain: 
 
-- `encounter_adr`
+- `encounter_adt`
 - `encounter_chief_complaint`
 - `encounter_reason`
 - `encounter_diagnosis` 
@@ -119,6 +119,8 @@ These tables contain additional information related to specific encounters, such
 
 This was just a brief overview of the clinical data in the Arcus data repository, but you may have more questions! There are a few places you can get more information:
 
+- Browse data available in the ADR using the [Clinical Data Finder Tool](https://arcus.chop.edu/apps/clinical-data-finder)
+- Read the [metadata for ADR tables and fields](https://chop.alationcloud.com/data/23/) in Gene, CHOP's enterprise data catalog
 - [Explore data in Arcus](https://arcus.chop.edu/i-want-to/explore-data)
 - [Book time with Arcus Education](https://outlook.office365.com/owa/calendar/BKG-StandardArcusEducationOfficeHours@chop.edu/bookings/)
 - [Book time with the Arcus data team](https://outlook.office365.com/owa/calendar/ArcusDataRepositoryOfficeHours@CHOP365.onmicrosoft.com/bookings/)
