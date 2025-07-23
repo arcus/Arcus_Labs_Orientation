@@ -46,6 +46,12 @@ import: https://raw.githubusercontent.com/arcus/education_modules/main/_module_t
 
 # Arcus Project Template Orientation
 
+<div class = "important">
+<b style="color: rgb(var(--color-highlight));">Important note</b><br>
+
+This is the Project Template Orientation for Arcus Labs created before ? 2025. If your lab was created after ??? ??, 2025, go to the new version of this orientation [using this link](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/project-template-updated.md#1 ).
+</div>
+
 <div class = "overview">
 
 ## Overview
@@ -70,9 +76,7 @@ import: https://raw.githubusercontent.com/arcus/education_modules/main/_module_t
 
 </div>
 
-<div class = "important">
-
-Hi! This document is still under construction and testing. We apologize in advance for any broken links or unclear language. We invite your feedback. Please add a [support ticket](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/249) or [email Arcus Library Science](mailto:dlarcuslibraryscience@chop.edu) to let us know what we can improve or suggest additional topics.
+<div class = "warning">
 
 Please note that **many of the links here will only work if you're on the CHOP network**.
 
