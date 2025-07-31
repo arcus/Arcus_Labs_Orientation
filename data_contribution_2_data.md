@@ -49,7 +49,7 @@ import: https://raw.githubusercontent.com/arcus/education_modules/main/_module_t
 <div class = "important">
 <b style="color: rgb(var(--color-highlight));">Important note</b><br>
 
-This is the Project Template Orientation for Arcus Labs created before ? 2025. If your lab was created after ??? ??, 2025, go to the new version of this orientation [using this link](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/project-template-updated.md#1 ).
+This is the Project Template Orientation for Arcus Labs created before July 31st, 2025. If your lab was created after July 31st, 2025, go to the new version of this orientation [using this link](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/project-template-updated.md#1 ).
 </div>
 
 <div class = "overview">
