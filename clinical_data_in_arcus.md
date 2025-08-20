@@ -10,7 +10,7 @@ In Arcus, we aim to make getting access to and working with clinical data for re
 
 ## Clinical data
 
-For our purposes, when we say "clinical data", we mean data from the electronic health record that relates to patient encounters. We are not including data collected on research subjects for the purpose of research, even if these research subjects are also patients of CHOP.  Please note, however, that data collected for research is also available through Arcus, as is any dataset available in CHOP's enterprise data catalog (https://gene.chop.edu).
+For our purposes, when we say "clinical data", we mean data from the electronic health record that relates to patient encounters. We are not including data collected on research subjects for the purpose of research, even if these research subjects are also patients of CHOP.  Please note, however, that data collected for research is also available through Arcus, as is any dataset available in [CHOP's enterprise data catalog](https://gene.chop.edu).
 
 Clinical data includes information about patients, medication administrations, procedures, and many, many other entities and encounters at CHOP!
 
@@ -34,20 +34,28 @@ For researchers wanting to perform retrospective analyses on clinical data, ther
 * Data access/privacy: Not all clinical data should be made available for all types of research.
 * Performance: The database that stores patient data for clinical use (Chronicles) would be very inefficient for returning research-relevant information. Also, crucially, we can't risk burdening Chronicles with computationally-intensive research queries because it could pose a safety risk to patients.
 
-These are some of the problems that the Arcus Data Repository (ADR) aims to address. So what is the ADR? 
+These are some of the problems that the Arcus Data Repository (ADR) aims to address. 
 
-* A relational database, stored in Google BigQuery, of most frequently requested EHR data, pulled from Clarity and Helix
-* The ADR has identified or de-identified datasets available, depending on your needs and regulatory status (IRB, non human subjects research, etc.)
+So what is the ADR? 
+
+* A relational database of most frequently requested EHR data. These data are pulled from Clarity and Helix and stored in Google BigQuery.
+* The ADR has identified or de-identified datasets available, depending on your needs and regulatory status (IRB, non human subjects research, etc.).
 
 **Important note**: This does not mean that the data are "pre-cleaned"! Data will still be messy or incomplete.
 
 ## Clinical data journey to the ADR
 
-![Journey of clinical data at CHOP, beginning in Epic Chronicles, flowing into Epic Clarity, and from there into two branches, the CHOP Data Warehouse or the Arcus Data Repository.](media/chop_clinical_data_overview_updated.png)
+![Journey of clinical data at CHOP, beginning in Epic Chronicles, flowing into Epic Clarity, and from there into two branches, the CHOP Data Warehouse or the Arcus Data Repository.](media/clinical_data_sources.jpg)
 
-CHOP stores a _vast_ amount of clinical data, and it is incredibly complex! For efficient storage and access, data from Epic Chronicles is uploaded to Clarity (a SQL database) nightly. This database is where the ADR gets its data. The ADR documentation in the CHOP data catalog contains information about the lineage of the data; [check out this lineage of the contact date field in the encounter table](https://chop.alationcloud.com/attribute/933634/lineage/) as an example.
+CHOP stores a _vast_ amount of clinical data, and it is incredibly complex! For efficient storage and access, data from Epic Chronicles is uploaded to Clarity (a SQL database) nightly. From there, data are loaded into Helix, a cloud-based data warehouse that supports reporting and analytics (Helix also contains data from non-Epic sources, such as Workday, ServiceNow, and REDCap). These databases are where the ADR gets its data. The ADR documentation in the CHOP data catalog contains information about the lineage of the data; [check out this lineage of the contact date field in the encounter table](https://chop.alationcloud.com/attribute/933634/lineage/) as an example. 
 
-While Epic does have some data analysis tools, they are not built with research as the primary focus. The ADR _is_ designed for research, and because it is a curated list, it is much easier to find and deliver exactly what you need to answer your research question.  
+You might be wondering why the ADR exists at all, if Clarity and Helix are available. There are a few reasons for this: 
+
+- When data is pulled into the ADR from Helix and Clarity, some records are removed, such as duplicate patient records, encounters that never actually happened, or "test" records. This means that you don't need to account for these kinds of records in your analyses.
+
+- The ADR is a curated list of the most requested data from researchers, so Arcus can often find what researchers are looking for quickly.
+
+You might also ask, why not just get the data straight from Epic in Hyperspace (Epic's user interface)? While Epic does have some data analysis and visualization tools, such as SlicerDicer, they are not built with research as the primary focus. The ADR _is_ designed for research, and because it is a curated list, it is much easier to find and deliver exactly what you need to answer your research question.  
 
 ### Relational databases
 
@@ -70,7 +78,7 @@ The ADR currently contains more than 50 tables, and it continues to grow. It rep
 
 You can read more about the ADR and look at some of the metadata about the tables in the ADR in the [CHOP Data Catalog](https://chop.alationcloud.com/data/23/).
 
-The next few sections will go through two of the central tables in the ADR, to which many others connect: Patients and Encounters.
+The next few sections will go through some of the tables in the ADR. While there are a variety of entities represented in these tables, many of the tables that you'll start with represent either **patients** or **encounters**. 
 
 ## Patient
 
@@ -81,14 +89,9 @@ The `patient` table in the ADR is a table containing information about patient d
 - Sex
 - Contact information 
 
-The entity being represented is **patients**. The patient table contains one patient per row, which their uniques identifiers and demographic information. Each row is identified by a unique `pat_id`, assigned by Arcus (this is not the same as the MRN). All patients included in the ADR have had at least one CHOP encounter.
+The entity being represented is **patients**. The patient table contains one patient per row, with their identifiers and demographic information. Each row is identified by a unique `pat_id`, assigned by Arcus (this is not the same as the MRN). All patients included in the ADR have had at least one CHOP encounter. 
 
-### Patient: Entity relationship diagram
-
-Below is an [entity relationship diagram](https://www.lucidchart.com/pages/er-diagrams#discoveryTop) for the `patient` table, which illustrates the relationships between the `patient` table and other tables. If this isn't helpful to you, feel free to move on ahead! 
-
-![Entity relationship diagram of the patient table in the ADR.](media/patient_erd.png)
-
+Besides the `patient` table itself, there are several other tables that contain information at the patient level, such as `patient_geospatial`, `patient_race`, and `demographic_history`. Like in the `patient` table, the information in these tables is not associated with a specific encounter. 
 
 ## Encounter
 
@@ -100,7 +103,7 @@ The `encounter` table in the ADR contains information about encounters at CHOP. 
 
 But there are many other types of encounters.
 
-Each row is a single encounter (patients can have more than one!), and each row is identified by a unique `encounter_id`. The table contains information about the patient who had the encounter, the time, date, place, duration, admission status, and much more; this also includes canceled visits and no-shows. 
+Each row is a single encounter (a single patient can have more than one encounter!), and each row is identified by a unique `encounter_id`. The table contains information about the patient who had the encounter, the time, date, place, duration, admission status, and much more; this also includes canceled visits and no-shows. 
 
 Besides the `encounter` table itself, there several other tables in the encounter domain: 
 
@@ -109,11 +112,18 @@ Besides the `encounter` table itself, there several other tables in the encounte
 - `encounter_reason`
 - `encounter_diagnosis` 
 
-These tables contain additional information related to specific encounters, such as admissions or diagnoses. For more information, check out the [ADR in the CHOP data catalog](https://chop.alationcloud.com/data/23/).  
+These tables contain additional information related to specific encounters, such as admissions or diagnoses.  
 
-### Encounter: Entity relationship diagram
+## Other kinds of tables
 
-![Entity relationship diagram of the encounters table in the ADR.](media/patient_erd.png)
+Patients and encounters are not the only entities represented in the ADR. Some tables will represent entities such as medications, procedures, providers, diagnosis codes, and more. These tables will contain information about the entity they represent; for example, the `medication` table contains information such as the generic name of the medication, administration route, and various associated classes and codes. Just like `patient` and `encounter`, these tables will have unique identifiers that allow you to join to other tables as needed. 
+
+Still other tables, such as `problem_list`, `anesthesia_event`, and `immunization`, also represent entities that aren't patients or encounters, but are _related_ to specific patients and encounters. The `immunization` table, for example, contains information about immunization records, but there are specific patients and encounters associated with them. 
+
+## So how do I find what I need?
+
+
+
 
 ## Getting more information
 
