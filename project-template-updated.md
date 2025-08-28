@@ -117,7 +117,7 @@ If after viewing this module, you are prepared to archive data with Arcus, pleas
 
 The Project Template is added to all Arcus Scientific Computing Labs (Arcus Lab), so all you have to do is set up your workflows to conform to the template. This module describes all sections of the project template structure, what data goes in each section, and shows examples of research data arranged in the template.
 
-As part of the Arcus Lab deployment, your team should have received a Project Template orientation by a member of the Library Science team. If you missed the orientation, or need a refresher on the orientation, please see this [video of the orientation](ADD NEW LINK). Much of the content covered in the video is also in this module.
+As part of the Arcus Lab deployment, your team should have received a Project Template orientation by a member of the Library Science team. If you missed the orientation, or need a refresher on the orientation, please see this [video of the orientation](https://youtu.be/Tg0aWjLwK20). Much of the content covered in the video is also in this module.
 
 When appropriate, archiving your research in Arcus is expected from Scientific Projects with an Arcus Lab. This is documented in the [Arcus Terms of Use](https://arcus.chop.edu/terms-of-use). Archiving is required if you would like to move any data created within an Arcus Lab to a new Scientific Project or if other research teams would like to reuse your data. For an overview of archiving your lab, [see this guide](https://chop365.sharepoint.com/sites/Arcus/SitePages/Archiving-Your-Lab--A-User-Guide.aspx)
 
