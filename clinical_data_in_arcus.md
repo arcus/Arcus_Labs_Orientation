@@ -1,5 +1,6 @@
 <!--
-link:   https://storage.googleapis.com/chop-dbhi-arcus-education-website-assets/css/styles.css
+link:  https://cdn.jsdelivr.net/gh/arcus/education_modules@main/assets/styles.css
+link:  https://cdn.jsdelivr.net/gh/arcus/Arcus_Labs_Orientation@main/assets/styles.css
 script: https://kit.fontawesome.com/83b2343bd4.js
 title: Clinical Data and the ADR
 -->
@@ -34,11 +35,13 @@ For researchers wanting to perform retrospective analyses on clinical data, ther
 * Data access/privacy: Not all clinical data should be made available for all types of research.
 * Performance: The database that stores patient data for clinical use (Chronicles) would be very inefficient for returning research-relevant information. Also, crucially, we can't risk burdening Chronicles with computationally-intensive research queries because it could pose a safety risk to patients.
 
-These are some of the problems that the Arcus Data Repository (ADR) aims to address. 
+These are some of the problems that the Arcus Data Repository (ADR) aims to address.
+
 
 So what is the ADR? 
+-----
 
-* A relational database of most frequently requested EHR data. These data are pulled from Clarity and Helix and stored in Google BigQuery.
+* The ADR is a relational database of most frequently requested EHR data. These data are pulled from Clarity and Helix and stored in Google BigQuery.
 * The ADR has identified or de-identified datasets available, depending on your needs and regulatory status (IRB, non human subjects research, etc.).
 
 **Important note**: This does not mean that the data are "pre-cleaned"! Data will still be messy or incomplete.
@@ -239,7 +242,6 @@ This was just a brief overview of the clinical data in the Arcus data repository
 - Browse data available in the ADR using the [Clinical Data Finder Tool](https://arcus.chop.edu/apps/clinical-data-finder)
 - Read the [metadata for ADR tables and fields](https://chop.alationcloud.com/data/23/) in Gene, CHOP's enterprise data catalog
 - [Explore data in Arcus](https://arcus.chop.edu/i-want-to/explore-data)
-- [Book time with Arcus Education](https://outlook.office365.com/owa/calendar/BKG-StandardArcusEducationOfficeHours@chop.edu/bookings/)
 - [Book time with the Arcus data team](https://outlook.office365.com/owa/calendar/ArcusDataRepositoryOfficeHours@CHOP365.onmicrosoft.com/bookings/)
 
 ## Starting a research project with Arcus
