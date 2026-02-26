@@ -29,7 +29,7 @@ The goal is to provide you, the researcher, with an environment that supports re
 
 To work with data provided by Arcus, you'll need an Arcus Computational Lab (called an Arcus Lab for short).
 
-When you [request an Arcus Lab](https://pm.arcus.chop.edu/servicedesk/customer/portal/1/create/400), we evaluate your proposed study to make sure that our services are a good fit for your project, then build the computational environment and provision the data for your team so you can start work. 
+When you [request an Arcus Lab](https://support.arcus.chop.edu/servicedesk/customer/portal/1/create/400), we evaluate your proposed study to make sure that our services are a good fit for your project, then build the computational environment and provision the data for your team so you can start work. 
 This process takes time and coordination across multiple groups within Arcus. 
 Here's what you can do to make the process as smooth as possible: 
 
