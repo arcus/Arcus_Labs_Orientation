@@ -690,6 +690,8 @@ The [training videos](#training-videos) walk through everything you need to get 
 
 ## Security Feature: Internet Disabled Mode
 
+**Under construction**
+
 While there are myriad benefits to taking a scripted approach to data analysis, it does also introduce some specific privacy and security risks. Arcus has taken these risks into consideration, and developed our [Internet Disabled mode](https://forum.arcus.chop.edu/t/about-the-arcus-lab-security-setting-for-disabling-internet-in-labs/741) feature for labs. The feature provides peace of mind by allowing you to work on your code in an environment that is entirely disconnected from the internet, keeping your data and code safer. 
 
 There are two primary kinds of problems that could occur: 
