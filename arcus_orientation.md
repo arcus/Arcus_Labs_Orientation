@@ -126,7 +126,7 @@ Keep in mind that some group-level data may be overly disclosive in the case of 
 What Can I Get?
 -----
 
-Lots of different, interrelated datasets can be provided in an Arcus lab.  You can add clinical data, for example from the [Arcus Data Repository](https://chop.alationcloud.com/data/23/), which is a data source that includes clinical data from CHOP's EHR.  You may also be using contributed data sets that other researchers generated and listed as part of the [Arcus Archives](https://chop.alationcloud.com/data/29/) as well.  In fact, any data listed in [CHOP's Enterprise Data Catalog, Gene](https://gene.chop.edu) can be added to an Arcus lab.  You may have your own data as well, in a database or in files, which you want added to your Arcus lab.
+Lots of different, interrelated datasets can be provided in an Arcus lab.  You can add clinical data, for example from the [Arcus Data Repository](https://chop.alationcloud.com/data/23/), which is a data source that includes clinical data from CHOP's EHR.  You may also use contributed data sets that other researchers generated and listed as part of the [Arcus Archives](https://chop.alationcloud.com/data/29/) as well.  In fact, any data listed in [CHOP's Enterprise Data Catalog, Gene](https://gene.chop.edu) can be added to an Arcus lab.  You may have your own data as well, in a database or in files, that can be added to your Arcus lab.
 
 Deidentified only? Or IRB Projects, Too?
 ----
@@ -136,12 +136,12 @@ You can combine data from multiple sources in an Arcus project, and you can work
 Paying it Forward
 -----
 
-Importantly, Arcus exists in order to promote **research reproducibility** and **data discovery and reuse**.  For that reason, when you work with Arcus, we will plan with you how you will contribute your data sets, scripts, cohorts, or findings back to the Arcus ecosystem via a data contribution to the Arcus Archives.  We do this in a way that respects your scientific stewardship of data and scholarship, and we can work with you so that your data contribution takes place at the right time and in the right way.  To learn more about Arcus data contributions, please read our [Arcus Data Contribution Orientation](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_data_contribution.md#1).
+Importantly, Arcus exists in order to promote **research reproducibility** and **data discovery and reuse**.  To support these goals, we will partner with you to develop a plan for contributing your data sets, scripts, cohorts, or findings to the Arcus Archives.  We do this in a way that respects your scientific stewardship of data and scholarship, and we can work with you so that your data contribution takes place at the right time and in the right way.  To learn more about Arcus data contributions, please read our [Arcus Data Contribution Orientation](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_data_contribution.md#1).
 
 Organizing Your Data 
 -----
 
-Our librarians have worked hard to create some suggested ways to organize your data such that your work is contribution-ready.  The Arcus Project Template they've developed also works to help you keep your work well-organized and easy to navigate. Please read our [Arcus Project Template Orientation](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/data_contribution_2_data.md#1) to find out the many advantages of a well-structured project in Arcus labs!
+Our librarians have worked hard to create suggested approaches for organizing your data so that your work is contribution-ready. The Library Science team's Arcus Project Template provides a framework for keeping your work organized and easy to navigate. Please read our [Arcus Project Template Orientation](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/data_contribution_2_data.md#1) to find out the many advantages of a well-structured project in Arcus labs.
 
 Getting the Right Data Into Your Lab 
 -----
