@@ -164,7 +164,7 @@ How Do I Make a Request?
 
 Requesting data means (eventually) describing both the **cohort you want data from** (for example, male patients currently aged 13 or above who have an ICD E or F diagnosis code) and the **fields you want** (for example, demographic data, diagnoses, and emergency department encounter information).  You can start a request without having all the information complete.  In fact, our self-service tools have data request buttons that allow you to kick off a request and start the dialogue with Arcus about honing your data request to the precise data you need.
 
-If you need help determining which data you need from the Arcus Data Repository, you can work on defining your [clinical cohort](https://education.arcus.chop.edu/arcus-clinical-cohorts/) by using the [Arcus cohort discovery tool](https://arcus.chop.edu/cohort-discovery). 
+If you need help determining which data you need from the Arcus Data Repository, you can work on defining your [clinical cohort](https://forum.arcus.chop.edu/t/tips-for-writing-a-cohort-definition-as-part-of-a-new-arcus-scientific-project/487) by using the [Arcus cohort discovery tool](https://arcus.chop.edu/cohort-discovery). 
 
 If you need help using Arcus cohort discovery, check out the [Cohort Discovery Job Aid](https://forum.arcus.chop.edu/t/cohort-discovery-tool-job-aid/590) on the Arcus Forum.  
 
@@ -173,7 +173,7 @@ Want to explore research data sets and other enterprise data?  Visit [Gene](http
 Special Data Types
 -----
 
-Many researchers bring in other data sources to analyze in Arcus. Talk to your Project Owner about any additional data needs ([genomics data](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/270), [images](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/268), [geospatial data](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/265), data from other previous or ongoing research projects, etc.).  Keep in mind that all data requests are subject to review by the privacy team and that changing the scope of your project once it has been launched may result in delays.  It's best to know what data you'd like to use at the project assessment phase.
+Many researchers bring in other data sources to analyze in Arcus. Talk to your Project Owner about any [additional data needs](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/397) (genomics data, images, geospatial data, data from other previous or ongoing research projects, etc.).  Keep in mind that all data requests are subject to review by the privacy team and that changing the scope of your project once it has been launched may result in delays.  It's best to know what data you'd like to use at the project assessment phase.
 
 
 Getting Help
@@ -181,7 +181,7 @@ Getting Help
 
 If you need help describing the data you need, you may also ask your Project Owner, if you have a scientific project, or submit a ticket at the [Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/302) for assistance.
 
-When you are ready to place a request for additional data, new services, or want to learn more about scientific labs or report a problem, you may do so through the [Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/portal/6/group/65).
+When you are ready to place a request for additional data, [new services](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/396) (such as GIS, AI, MAP, or other computational services and tools), or want to learn more about scientific labs or report a problem, you may do so through the [Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/portal/6/group/65).
 
 
 ### Included Tools
@@ -189,7 +189,7 @@ When you are ready to place a request for additional data, new services, or want
 Statistical Analysis Software
 ------
 
-Currently, Arcus Computational Labs are populated with open source statistical and data analytics software.  These software (JupyterLab with language kernels such as Python and RStudio using R) allow for scripted data ingestion, cleaning, preparation, analysis, and visualization. 
+Currently, Arcus Computational Labs are populated with open source statistical and data analytics software.  These software (JupyterLab with language kernels such as Python and RStudio using R) allow for scripted data ingestion, cleaning, preparation, analysis, and visualization. You can also [add, remove, or configure additional resources for your lab](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/263). 
 
 While most licensed point and click commercial software such as Excel, SAS, and SPSS **are not supported at this time** you can request alternatives for your lab.  The paid, commercial license for a Stata language kernel for Jupyter can be requested if necessary for the project. Other tools, such as a Spreadsheet tool, the point and click version of Stata, PSPP (an SPSS alternative), QGIS, QuPath, and 3D Slicer can also be requested as necessary for individual Arcus projects. 
 
@@ -199,7 +199,7 @@ Why is this tool suite what we provide in Arcus?  We want to position researcher
 Text Tools
 -----
 
-We also have a text annotator, brat, which is useful for reading text files like clinical notes, as well as for adding any annotations.
+We also have a text annotator, [brat](https://chop.alationcloud.com/app/document/20297/overview), which is useful for reading text files like clinical notes, as well as for adding any annotations. Researchers can add this to their lab by using the [request form](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/396).
 
 ![Clicking on a word allows you to add an annotation like 'anxiety' or 'depression'.](media/annotation_example.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 500px;"-->
 
@@ -207,7 +207,7 @@ We also have a text annotator, brat, which is useful for reading text files like
 Learning to use the tools
 ------
 
-It can be a big change to start to use scripted analysis instead of using point-and-click software! It requires time, effort, and lots of trial and error.  Arcus Education has many educational resources that may interest you. For more information, [put in a help ticket](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/248?q=education&q_time=1676498496556), visit [Education Office Hours](https://outlook.office365.com/owa/calendar/BKG-StandardArcusEducationOfficeHours@chop.edu/bookings/), visit our [list of self-guided tutorials](https://arcus.github.io/education_modules) that you can do on your own,  or email [`arcus-support@chop.edu`](mailto:arcus-support@chop.edu).  We'd also suggest you check out the "New to" documents, which are good for every researcher to learn about:
+While there are [prerequisitve skills and knowledge required for an Arcus project](https://forum.arcus.chop.edu/t/what-skills-and-knowledge-are-required-for-an-arcus-project/973), we offer complementary educational materials and support services. If you are used to point-and-click software, using scripted analysis for your research may take some time, effort, and trial and error. Arcus Education has many educational resources that may interest you. [Education Office Hours](https://outlook.office365.com/owa/calendar/BKG-StandardArcusEducationOfficeHours@chop.edu/bookings/), visit our [list of self-guided tutorials](https://arcus.github.io/education_modules) that you can do on your own,  or email [`arcus-support@chop.edu`](mailto:arcus-support@chop.edu).  We'd also suggest you check out the "New to" documents, which are good for every researcher to learn about:
 
 - **[New to data science](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_data_science.md#1)** is a document that introduces helpful tools and tips for working on data science projects that will be useful to scientists coming from other types of research. Even if you have experience in data science already, you may find it worthwhile to skim the subtopics in that section so you know what's available should you want to come back to it to reference later.
 - **[New to version control](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_version_control.md#1)** is a document that will help you get started with git, a powerful program for helping you keep track of your research documents over time. If you don't currently use git or another form of version control, we strongly recommend you work through that section. Version control is an extremely valuable tool for reproducible research, and although there is a bit of a learning curve, it really pays off.
@@ -228,51 +228,7 @@ Can't I Just Pay Someone?
 
 Additionally, the Department of Biomedical and Health Informatics (DBHI) at CHOP has staff that you can use in a billback model who can handle analysis for you, if you don't have the staff or time to acquire R, Python, and SQL skills.
 
-### Knowledge Check 1
 
-True or False: Each Arcus computational lab provides access to all of the data in the Arcus Data Repository (ADR)
-
-[( )] True
-[(X)] False
-***
-
-<div class = "answer">
-
-Each Arcus lab is provisioned just with the data required for that project as determined in the data needs assessment. If you find you need additional data, you can always request more.
-
-</div>
-
-***
-
-True or False: Arcus labs are limited to analysis of data from the ADR.
-
-[( )] True
-[(X)] False
-***
-
-<div class = "answer">
-
-Although Arcus makes access to the ADR very easy, it's not your only option! Most researchers use a combination of ADR data and data from other sources.
-
-</div>
-
-***
-
-True or False: The Arcus Data Repository (ADR) contains everything from Epic Clarity.
-
-[( )] True
-[(X)] False
-***
-
-<div class = "answer">
-
-The ADR is a streamlined selection of information from Epic Clarity, not the entire thing. It includes the patient information most commonly requested by researchers (a sort of "greatest hits" of electronic health records), such as demographics, diagnoses, medications, encounters, etc.
-
-If you're used to working in Epic, this means there will be fields you're used to seeing that won't be in the ADR. If you want information that's not in the ADR, you can make a request and the Arcus data and privacy teams can determine what's possible.
-
-</div>
-
-***
 
 ## Getting an Arcus Lab 
 
