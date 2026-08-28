@@ -480,7 +480,7 @@ During your project assessment, you will meet with an archivist from the Arcus t
 
 ## Using an Arcus Lab
 
-Each Lab will have its own unique URL that allows project stakeholders (defined by project leaders on both the scientific and Arcus side) to log in.  Not sure what this URL is?  Log in to the main Arcus site at https://arcus.chop.edu and look in the "My Labs" tab to see all the Arcus labs you have access to, with clickable links to allow you to go to those labs directly.
+Each Lab will have its own unique URL that allows project stakeholders (defined by project leaders on both the scientific and Arcus side) to log in.  Not sure what this URL is?  Log in to the main Arcus site at https://arcus.chop.edu and look in the "My Labs" tab under "Applications" to see all the Arcus labs you have access to, with clickable links to allow you to go to those labs directly.
 
 We recommend using the Chrome browser to access your lab.
 
@@ -488,27 +488,27 @@ When you go to your lab's URL, you will be prompted to log in with your CHOP cre
 
 We'll go over the various panes that appear in your landing page in the next few sections.
 
-![An Arcus lab landing page](media/arcus_lab_screenshot.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 800px;  margin-right: 2rem; margin-bottom: 2rem;"-->
+![An Arcus lab landing page](media/lab_landing_page_screenshot.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 800px;  margin-right: 2rem; margin-bottom: 2rem;"-->
 
 <div style = "clear:both;"></div>
 
 ### Lab Settings Pane
 
-![`An Arcus Lab Settings pane, showing Internet Disabled`](media/lab_settings.png)<!-- style = "max-width: 400px; margin-right: 2rem; margin-bottom: 2rem;"-->
+![`An Arcus Lab Settings pane, showing Internet Disabled`](media/internet_off_screenshot.png)<!-- style = "max-width: 400px; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 By default, your lab will start in [Internet Disabled mode](#security-feature:-internet-disabled-mode). 
 Internet Disabled mode provides an extra layer of security to protect your data. We have built an "Install Tool" to allow you to still install new packages and libraries even while in Internet Disabled mode. 
 
-![`An Arcus lab currently running, showing clock`](media/lab_clock.png)<!-- style = "max-width: 400px; margin-right: 2rem; margin-bottom: 2rem;"-->
+![`An Arcus lab currently running, showing clock`](media/lab_time_remaining_screenshot.png)<!-- style = "max-width: 400px; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 When your lab is running, you'll see a clock counting down until it will shut down. Labs cost a fair amount of computational power when they're running, so they are set to automatically pause after a period of time to save resources. If you need to keep your lab active for longer than that, you can always extend the time.  Don't worry, your lab "shutting down" doesn't delete any files or data!  It's more akin to your computer going into "sleep" mode after a period of inactivity.
 
-If you finish using your lab before the clock runs out, please pause your lab using the "power" button in the top right corner of your screen or the toggle switch in the "Lab Settings" pane.
+If you finish using your lab before the clock runs out, make a habit to turn off your lab using the "power" button in the top left corner of your screen, which will save on storage costs and power usage.
 
 
 ### Project Members Pane
 
-On the left side of your lab, you'll see a list of approved users for your lab. This will include everyone on your research team. To better support you, some members of Arcus staff will also have access, although their names will not appear in this panel. These include your Project Owner, all of the members of the Arcus Education team (Arcus Education staff help with training and troubleshooting for all of the scientific labs), and any other Arcus staff associated with your project.
+On the bottom left side of your lab, you'll see a list of approved users for your lab. This will include everyone on your research team. To better support you, some members of Arcus staff will also have access, although their names will not appear in this panel. These include your Project Owner, all of the members of the Arcus Education team (Arcus Education staff help with training and troubleshooting for all of the scientific labs), and any other Arcus staff associated with your project.
 
 If you notice [someone missing from that list who should have access](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/259?q=user&q_time=1722527654548), or if you see someone you don't think should have access, alert your Project Owner.
 
@@ -516,13 +516,13 @@ If you notice [someone missing from that list who should have access](https://su
 
 The top right part of the screen includes links to the tools in your lab environment itself. When you first access your lab (or access it after a time of inactivity), most of the tools will be greyed out and labeled as "Currently Offline".
 
-![Available Tools section of an Arcus Lab landing page](media/tools.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
+![Available Tools section of an Arcus Lab landing page](media/lab_tools_screenshot.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 400px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 Once your lab is running, you can open any of the tools by clicking on them. Each tool has a small question mark icon next to it; if you click the question mark icon, it will show more details about that tool, including links to documentation to help you get started.
 
 Here is an example of what some commonly provisioned tools might look like after clicking the question mark icon:
 
-![](media/tools_question_mark.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 600px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
+![](media/lab_tool_info_example_screenshot.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 600px; float: left; margin-right: 2rem; margin-bottom: 2rem;"-->
 
 <div style = "clear:both;"></div>
 
@@ -530,13 +530,6 @@ Most Arcus users working with tabular data (data in rows and columns) will use S
 
 <div style = "clear: both;"></div>
 
-Here are some introductory materials that might be helpful:
-
-* [New to SQL](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_sql.md#1)
-* [New to R](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_r.md#1)
-* [New to Python](https://liascript.github.io/course/?https://raw.githubusercontent.com/arcus/Arcus_Labs_Orientation/main/new_to_python.md#1)
-* [SQL Article](https://education.arcus.chop.edu/sql-intro/)
-* [R or Python?](https://education.arcus.chop.edu/statistical-programming-languages/)
 
 You won't see any data files in your lab when you log in; instead, you will be able to access the data via SQL queries and bring it into an analysis environment (e.g. using R or Python). For initial exploration of your data, SQLPad is probably the best place to start. You can see examples of how to access your data via SQLPad, RStudio, and python Jupyter notebooks in the [training videos](#training-videos).
 
@@ -565,80 +558,14 @@ Topics currently covered in the training videos include:
 - Adding Tables to SQL From R 
 - Adding Tables to SQL From Python
 
-### Exporting 
+### Adding and Exporting Data
 
-Arcus labs are built to be like "clean rooms" or gloveboxes, in that your data and tools are provided for you in a specific way, and you cannot, as a researcher, bring data in or out of your lab.
+It is possible to add data to and download data from your Arcus lab. To add data to your lab, initiate the process by filling in [this form](https://pm.arcus.chop.edu/servicedesk/customer/portal/6/create/397). Keep in mind that adding additional data, in some cases, may require additional data assessment, depending on the regulatory status of your lab, the type of data you wish to add, and any sensitive categories applicable to the data. 
 
-But you have to have tables, figures, and statistical test outputs for your publications!  What to do?  Arcus distinguishes between individual-level data, the export of which is generally prohibited, and aggregate data, such as group-level summary statistics or data visualizations for figures.  This latter type of data can be downloaded by [request](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/348).  Once your request is approved, you can [download data](https://forum.arcus.chop.edu/t/how-do-i-download-files-from-labs/512) to use for publications.  
+Want to download de-identified data, analysis results, or code from your Arcus lab? Arcus distinguishes between individual-level data, the export of which is generally prohibited, and aggregate data, such as group-level summary statistics or data visualizations for figures.  This latter type of data can be downloaded by [request](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/348Arcus).  Once your request is approved, you can [download data](https://forum.arcus.chop.edu/t/how-do-i-download-files-from-labs/512) to use for publications.  
 
-### Knowledge Check 4
 
-Which of the following best describes an Arcus lab?
 
-[( )] Your Arcus lab is a secure environment for you to access data, which you can then download and analyze on your computer
-[( )] Your Arcus lab is a piece of software you will have to install on your machine to be able to use
-[(X)] Your Arcus lab is a secure environment for you to access and analyze your data within your web browser without downloading or installing anything
-***
-
-<div class = "answer">
-
-An Arcus lab is a secure computational environment that exists in your browser, so you don't have to install any software on your computer to be able to use it. You access and analyze your data all within this secure environment.
-
-Note that "the systems and tools developed for Arcus are designed to further your work while protecting patient/study subject privacy and institutional security" (from the [Arcus Terms of Use](https://arcus.chop.edu/terms-of-use)). You may not download the data to analyze or store elsewhere.
-
-</div>
-
-***
-
-True or False: Each member of your team will have their own Arcus lab, but they'll all have access to the same data.
-
-[( )] True
-[(X)] False
-***
-
-<div class = "answer">
-
-You will have one URL for your lab, and each member of your team will access it there.
-
-Each team member will have personal folders within the lab that they can use to save work in progress or personal notes, but we strongly recommend that you avail yourself of the `/shared` folder to collaborate and add resources like scripts that everyone can work with.
-
-</div>
-
-***
-
-Which of the following is available on the landing page for your Arcus lab? Select all that apply.
-
-[[X]] A list of the people who have access to your lab
-[[ ]] A summary of your data files
-[[X]] A clock showing time remaining until your lab pauses
-[[X]] A list of training videos that show you how to get started in your new lab
-[[X]] Links to open the software available to use in your lab
-[[X]] A link to the [Arcus Help Center](https://support.arcus.chop.edu/servicedesk/customer/portals)
-***
-
-<div class = "answer">
-
-Remember that you won't directly see your data in your lab (on the landing page, or in the applications). To access your data you need to use SQL queries to bring it into your analysis environment.
-
-</div>
-
-***
-
-If you're new to Arcus, what is the best place on the landing page to start?  We're looking for a two-word answer (all lowercase).
-
-[[training videos]]
-[[?]] Hint: Check [this section](#training-videos) again.  The answer rhymes with "braining videos".
-<script>
-  let input = "@input".trim();
-  /video/i.test(input);
-</script>
-***
-
-<div class = "answer">
-
-The [training videos](#training-videos) walk through everything you need to get started in your lab. Many questions new users have are covered in those videos.  We aim to make these brief enough to not slow you down but helpful enough so that you can get started.  These videos are not intended to be deep data science training education, but we have suggestions for how to get that training, too!
-
-</div>
 
 ***
 
