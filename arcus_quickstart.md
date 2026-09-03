@@ -43,29 +43,7 @@ Here's what you can do to make the process as smooth as possible:
 
 ### Is Arcus a good fit for your proposed study?
 
-<div style = "background-color:white;">
-
-<script style="display: block" run-once="true" modify="false">
-mermaid.initialize({});
-
-var svg = mermaid.render(
-'arcus_fit_flowchart',
-`flowchart TB
- accTitle: Is Arcus a good fit for your proposed study?
- accDescr: In order for Arcus to be  a good fit for your proposed study, everyone on your team must have (or be able to get) CHOP login credentials, your proposed project must be research, and your team must be prepared to work with Arcus tools. 
-  A[Does everyone on your team have,\\nor can acquire through NTP status,\\nCHOP credentials?] --Yes--> B[Is your proposed project research?];
-  A --No--> C([Arcus might not be the best fit, but we\\nencourage you to reach out for a conversation\\nabout how we might meet your needs.]);
-  B --Yes--> D[Is your team prepared to clean and\\nanalyze your data using Arcus tools,\\nor hire someone who is?]
-  D --Yes---> E([Arcus is likely a good\\nfit for your project!]);
-  B --No--> C;
-  D --No--> C;
-`,
-function(g) {
-    return true;
-})
-
-"HTML: " + svg
-</script>
+![Arcus fit flowchart](media/arcus_fit_flowchart.png)<!-- style = "border: 1px solid rgb(var(--color-highlight)); max-width: 800px;  margin-right: 2rem; margin-bottom: 2rem;"-->
 
 </div>
 
@@ -86,7 +64,7 @@ Your team will likely need to do substantial data cleaning work before you can a
 You will need at least one of the following: 
 
 - Someone on your team who is ready to do the data cleaning and analysis work using the [tools in an Arcus Lab](https://forum.arcus.chop.edu/t/what-applications-are-available-in-arcus-labs/781). We recommend that you review [this post about the skills and knowledge required for an Arcus lab](https://forum.arcus.chop.edu/t/what-skills-and-knowledge-are-required-for-an-arcus-project/973) to evaluate your readiness. 
-- Someone on your team with the time and motivation to learn to use Arcus tools, with the support of [Arcus Education](https://chop365.sharepoint.com/sites/Arcus/SitePages/Arcus-Education%281%29.aspx?csf=1&web=1&e=pDWkFS&CID=2287732a-2e67-4c0f-a002-7270edba5058).
+- Someone on your team with the time and motivation to learn to use Arcus tools, with the support of [Arcus Education](https://chop365.sharepoint.com/sites/Arcus/SitePages/Education.aspx).
 - Funding for data cleaning and analysis support, such as from the [Clinical Reporting Unit (CRU)](https://www.research.chop.edu/clinical-reporting-unit), the [Data Science and Biostatistics Unit (DSBU)](https://www.research.chop.edu/data-science-and-biostatistics-unit), or the [Translational Research Informatics Group (TRiG)](https://www.research.chop.edu/dbhi-translational-informatics) (collectively, these groups are also known as the Collaborative Research Units, or CoRU).
 
 If you do not have any of the above, Arcus may not be the best fit for your project.
