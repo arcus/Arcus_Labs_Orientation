@@ -562,7 +562,7 @@ Topics currently covered in the training videos include:
 
 It is possible to add data to and download data from your Arcus lab. To add data to your lab, initiate the process by filling in [this form](https://pm.arcus.chop.edu/servicedesk/customer/portal/6/create/397). Keep in mind that adding additional data, in some cases, may require additional data assessment, depending on the regulatory status of your lab, the type of data you wish to add, and any sensitive categories applicable to the data. 
 
-Want to download de-identified data, analysis results, or code from your Arcus lab? Arcus distinguishes between individual-level data, the export of which is generally prohibited, and aggregate data, such as group-level summary statistics or data visualizations for figures.  This latter type of data can be downloaded by [request](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/348Arcus).  Once your request is approved, you can [download data](https://forum.arcus.chop.edu/t/how-do-i-download-files-from-labs/512) to use for publications.  
+Want to download de-identified data, analysis results, or code from your Arcus lab? Fill in this [help ticket](https://pm.arcus.chop.edu/servicedesk/customer/portal/6/create/348). Once your request is approved, you can [download data](https://forum.arcus.chop.edu/t/how-do-i-download-files-from-labs/512) to use for publications.  
 
 
 
