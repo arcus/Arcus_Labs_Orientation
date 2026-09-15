@@ -1,3 +1,177 @@
 img {
     border: 1px solid rgb(var(--color-highlight));
 }
+
+h2, h3, h4 {
+  margin: 1.5em 0em;
+}
+
+.overview {
+  border-left: 4px solid rgba(var(--color-highlight));
+  padding-left: 1em;
+  margin: 1em;
+}
+
+/* general info about how icons should render (see https://fontawesome.com/v5.15/how-to-use/on-the-web/advanced/css-pseudo-elements) */
+/* upgraded to 6 https://fontawesome.com/docs/web/setup/upgrade/pseudo-elements#contentHeader */
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.answer,
+.behind-the-scenes,
+.care,
+.cool-fact,
+.external-resource,
+.gratitude,
+.help,
+.history,
+.important,
+.learn-more,
+.options,
+.version-update,
+.warning
+{
+  position: relative;
+  padding: 1em 1em 1em 1em;
+  margin: 3rem 0rem;
+  display: table;
+  border: 1px solid rgba(var(--color-highlight));
+  width = 100%;
+}
+
+.answer:before,
+.behind-the-scenes:before,
+.care:before,
+.cool-fact:before,
+.external-resource:before,
+.gratitude:before,
+.help:before,
+.history:before,
+.important:before,
+.learn-more:before,
+.options:before,
+.version-update::before,
+.warning:before
+{
+  display: table-cell;
+  vertical-align: middle;
+  padding: inherit;
+  font: var(--fa-font-solid);
+  font-size: 2.5em;
+  color: rgb(var(--color-highlight));
+}
+
+
+.answer:before {
+  content: "\f058";
+}
+
+
+.behind-the-scenes:before {
+  content: "\f085";
+}
+
+
+.care:before {
+  content: "\f4be";
+}
+
+.cool-fact:before {
+  content: "\f5dc";
+}
+
+.external-resource:before {
+  content: "\f08e";
+}
+
+.gratitude:before {
+  content: "\f004";
+}
+
+.help:before {
+  content: "\f059";
+}
+
+.history:before {
+  content: "\f1da";
+}
+
+
+.important:before {
+  content: "\f005";
+}
+
+
+.learn-more:before {
+  content: "\f518";
+}
+
+
+.options:before {
+  content: "\f337";
+}
+
+.version-update:before {
+  content: "\f303";
+}
+
+.warning:before {
+  content: "\f071";
+}
+
+
+.lia_header__logo {
+  display: none;
+}
+
+.lia-header__middle {
+  background: url(https://github.com/arcus/education_modules/raw/main/assets/media/chop-logo.svg);
+  background-repeat: no-repeat;
+}
+
+.lia-quote{
+  position: relative;
+  padding-left: 5rem;
+  margin: 3rem 0rem;
+
+}
+.lia-quote:before {
+    display: block;
+    padding-left: 1rem;
+    content: "\201C";
+    font-size: 7rem;
+    position: absolute;
+    left: 0rem;
+    top: -1rem;
+    color: rgb(var(--color-highlight));
+}
+
+.lia-code--inline {
+    border: 0px;
+    margin-bottom: 0;
+    padding: 0px;
+    font-size: 0.9em;
+    color: rgb(var(--color-text));
+    background: rgba(var(--lia-grey),0.2);
+}
+
+
+.icon-compile-circle:before {
+content: "\f144";
+font-family: "Font Awesome 5 Free";
+}
+
+table.tight-table {
+  width: unset !important;
+  max-width: 100% !important;
+}
+
+table.tight-table th,
+table.tight-table td
+ {
+    min-width: unset !important;
+}
