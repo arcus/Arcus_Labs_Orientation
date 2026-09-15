@@ -19,8 +19,7 @@ After completion of this training module, learners will be able to:
 
 @end
 
-link:  https://cdn.jsdelivr.net/gh/arcus/education_modules@main/assets/styles.css
-link:  https://cdn.jsdelivr.net/gh/arcus/Arcus_Labs_Orientation@main/assets/styles.css
+link:  https://cdn.jsdelivr.net/gh/arcus/Arcus_Labs_Orientation@lab-guide-overhaul/assets/styles.css
 script: https://kit.fontawesome.com/83b2343bd4.js
 script: https://cdn.jsdelivr.net/npm/mermaid@9.4.3/dist/mermaid.min.js
 -->
@@ -616,9 +615,7 @@ In the following sections, we'll review more specific details about how to work 
 <div class = "help">
 <b style="color: rgb(var(--color-highlight));">Troubleshooting help</b><br>
 
-If you don't see radio buttons for Internet Disabled and Internet Enabled like the ones shown above, it's because you don't have permissions to change the mode of your lab.  We offer principal investigators the ability to extend this right only to some of their team.  If that's the case for you, you'll see a message that reads "The PI of this project has specified that internet access should be disabled for this lab. For any related questions, please contact the PI."  It will look like this:
-
-![Lab Settings pane with message about PI restriction and links for help](media/pi_restricted.png)<!-- style = "max-width: 300px;"-->
+If you don't see an option to switch from Internet Disabled mode, it's because you don't have permissions to change the mode of your lab.  We offer principal investigators the ability to extend this right only to some of their team.  If that's the case for you, you'll see a message that reads "The PI of this project has specified that internet access should be disabled for this lab. For any related questions, please contact the PI."  
 
 </div>
 
