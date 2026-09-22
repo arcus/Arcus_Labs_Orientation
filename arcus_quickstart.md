@@ -93,9 +93,9 @@ You'll find short, practical video tutorials on your lab's dashboard, in the **E
 Be sure to check them out!
 For example, the three videos below (only available if you're on CHOP's network) answer many of the most common questions we see from new Arcus researchers.
 
-!?[Introduction to SQLPad](https://chop365.sharepoint.com/:v:/r/teams/RSCH-Arcus/Shared%20Documents/Arcus%20Drive/Education/3_Resources/sqlpad_captioned.mp4?d=w97d1d7f23ad44362a27fa52b86a4d887&csf=1&web=1&e=rWFigp&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
-!?[Introduction to Python and Jupyter](https://chop365.sharepoint.com/:v:/r/teams/RSCH-Arcus/Shared%20Documents/Arcus%20Drive/Education/3_Resources/python_jupyter_captioned.mp4?d=wded2da1b079f4c0fb5e8fa7e38124b69&csf=1&web=1&e=H32OVh&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
-!?[Introduction to R and RStudio](https://chop365.sharepoint.com/:v:/r/teams/RSCH-Arcus/Shared%20Documents/Arcus%20Drive/Education/3_Resources/r_rstudio_captioned.mp4?d=w74d6f4511f0745a094f9f8e0737a5a80&csf=1&web=1&e=bHVCwc)
+1. [Introduction to SQLPad](https://assets.arcus.chop.edu/arcus_education_assets/training_lab_videos/sqlpad_captioned.mp4)
+2. [Introduction to Python and Jupyter](https://assets.arcus.chop.edu/arcus_education_assets/training_lab_videos/python_jupyter_captioned.mp4)
+3. [Introduction to R and RStudio](https://assets.arcus.chop.edu/arcus_education_assets/training_lab_videos/r_rstudio_captioned.mp4)
 
 For a more general overview, we suggest you check out our "New to" documents:
 
